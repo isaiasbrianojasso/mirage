@@ -566,7 +566,7 @@
                         data-widget_type="shortcode.default">
                         <div class="elementor-widget-container">
                             <div class="elementor-shortcode">
-                                <div class="su-image-carousel  fpb-carousel su-image-carousel-columns-2 su-image-carousel-adaptive su-image-carousel-slides-style-minimal su-image-carousel-controls-style-light su-image-carousel-align-center"
+                                <div class="su-image-carousel fpb-carousel su-image-carousel-columns-2 su-image-carousel-adaptive su-image-carousel-slides-style-minimal su-image-carousel-controls-style-light su-image-carousel-align-center"
                                     style="max-width:2560px"
                                     data-flickity-options='{"groupCells":true,"cellSelector":".su-image-carousel-item","adaptiveHeight":true,"cellAlign":"left","prevNextButtons":true,"pageDots":false,"autoPlay":15000,"imagesLoaded":true,"contain":false,"selectedAttraction":0.025000000000000001387778780781445675529539585113525390625,"friction":0.2800000000000000266453525910037569701671600341796875}'
                                     id="su_image_carousel_6a316b792df5d">

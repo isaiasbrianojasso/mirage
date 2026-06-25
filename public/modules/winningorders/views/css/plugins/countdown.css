@@ -1,0 +1,288 @@
+/**
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@prestashop.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+ * versions in the future. If you wish to customize PrestaShop for your
+ * needs please refer to http://www.prestashop.com for more information.
+ *
+ *  @author    Dvit <support@dvit.fr>
+ *  @copyright 2016 Dvit
+ *  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*/
+
+.winningorder_promote  .countdown{
+    color: #555454;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+#winningorder_promote_home .countdown{
+    margin: 20px 0px;
+}
+
+.winningorder_promote  .countdown > div{
+    width: 60px;
+    margin-bottom: 5px;
+    display: inline-block;
+    -moz-box-shadow: 0px 0px 5px 0px #c0c0c0;
+    -webkit-box-shadow: 0px 0px 5px 0px #c0c0c0;
+    -o-box-shadow: 0px 0px 5px 0px #c0c0c0;
+    box-shadow: 0px 0px 5px 0px #c0c0c0;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#c0c0c0, Direction=NaN, Strength=5);
+}
+
+.winningorder_promote  .countdown div > span{
+    padding: 10px;
+    display: inline-block;
+    font-size: 21px;
+}
+
+.winningorder_promote  .countdown .smalltext{
+    padding: 5px 0px;
+    font-size: 11px;
+    background-color: rgba(128, 128, 128, 0.4);
+    color: white;
+    font-weight: normal;
+}
+
+.winningorder_promote  .countdown.circle [class^='circle_']{
+    position: relative;
+    width: 64px;
+    box-shadow: none;
+}
+
+.winningorder_promote  .countdown.circle .text{
+    position: absolute;
+    top: 12px;
+    width: 64px;
+    height: 64px;
+}
+
+.winningorder_promote  .countdown.circle .type{
+    margin: 0px;
+    font-size: 16px;
+}
+
+.winningorder_promote  .countdown.circle .smalltext{
+    font-size: 11px;
+    background: none;
+    color: inherit;
+    padding: 0px;
+    margin: 0px;
+}
+
+.winningorder_promote  .countdown.circle svg {
+    width: 64px;
+    height: 64px;
+   -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.winningorder_promote  .countdown.circle .circle_animation{
+    stroke: rgba(128, 128, 128, 0.4);
+    stroke-width: 4px;
+    stroke-linecap: round;
+    fill: none;
+    stroke-dasharray: 189;
+    stroke-dashoffset: 189;
+    transition: all 0.5s linear;
+}
+
+.winningorder_promote  .countdown .circle_back{
+    stroke: black;
+    stroke-width: 4px;
+    stroke-opacity: 0.1;
+    fill: none;
+    stroke-dasharray: 2;
+}
+
+.winningorder_promote  .countdown.circle2 svg {
+    width: 150px;
+    height: 150px;
+   -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.winningorder_promote  .countdown.circle2 .circle_animation{
+    stroke: rgba(128, 128, 128, 0.1);
+    stroke-width: 4px;
+    stroke-linecap: round;
+    fill: none;
+    transition: all 0.5s linear;
+}
+
+.winningorder_promote  .countdown.circle2 .circle_main{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    box-shadow: none;
+}
+
+.winningorder_promote  .countdown.circle2 .circle_flex,
+.winningorder_promote  .countdown.clock .clock_flex{
+    position: absolute;
+    top: 35px;
+    left: 45px;
+    width: 75px;
+    height: 90px;
+    text-align: left;
+}
+
+.winningorder_promote  .countdown.circle2 .type,
+.winningorder_promote  .countdown.clock .type{
+    margin: 0px 5px 0px 0px;
+    font-size: 16px;
+}
+
+.winningorder_promote  .countdown.circle2 .smalltext,
+.winningorder_promote  .countdown.clock .smalltext{
+    font-size: 11px;
+    background: none;
+    color: inherit;
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+}
+
+.winningorder_promote  .countdown.circle2 .smalltext.marginr,
+.winningorder_promote  .countdown.clock .smalltext.marginr{
+    margin-right:10px;
+}
+
+/* Clock*/
+.winningorder_promote  .countdown.clock svg {
+    width: 200px;
+    height: 200px;
+   -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-filter: drop-shadow( 2px 2px 11px rgba(0,0,0,.14) );
+    filter: drop-shadow( 2px 2px 11px rgba(0,0,0,.14) ); 
+}
+
+.winningorder_promote  .countdown.clock .circle_clock{
+    stroke-opacity: 0;
+    stroke-dasharray: 2136.283;
+    stroke-dashoffset: 0;
+    stroke-width: 155px;
+    transition: all 0.8s linear;
+}
+stop#stop0{
+    stop-color: #000000;
+    stop-opacity: 1;
+}
+stop#stop1{
+    stop-color: #000000;
+    stop-opacity: 1;
+}
+stop#stop2{
+    stop-color: #000000;
+    stop-opacity: 0.9;
+}
+stop#stop3{
+    stop-color: #000000;
+    stop-opacity: 0.05;
+}
+
+.winningorder_promote  .countdown.clock .clock_main{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    box-shadow: none;
+}
+
+.winningorder_promote  .countdown.clock .clock_flex{
+    top: 60px;
+    left: 68px;
+}
+
+.winningorder_promote  .countdown.circle2 .circle_flex>div,
+.winningorder_promote  .countdown.clock .clock_flex>div{
+    display: flex;
+}
+    
+
+.winningorder_promote  .countdown.newps div > span{
+    font-size: 1.4rem;
+}
+.winningorder_promote  .countdown.circle2.newps .text{
+    line-height: 1.1em;
+}
+
+.winningorder_promote  .countdown.newps .smalltext{
+    font-size: 0.7rem;
+}
+
+.winningorder_promote  .countdown.circle.newps .type,
+.winningorder_promote  .countdown.circle2.newps .type{
+    font-size: 1rem;
+    color: #414141;
+    font-weight: 600;
+}
+
+.winningorder_promote  .countdown.newps > div,
+.winningorder_promote  .countdown.circle.newps [class^='circle_']{
+    margin: 5px;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+    
+    #winningorder_promote_block_left.winningorder_promote .countdown.circle2 .circle_main{
+            margin: 0;
+            transform: scale(0.8);
+            width: auto;
+    }
+    #winningorder_promote_block_left.winningorder_promote .countdown.circle2 svg{
+    }
+    #winningorder_promote_block_left.winningorder_promote .countdown.clock .clock_main{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    
+    #winningorder_promote_block_left.winningorder_promote .countdown.clock svg {
+        width: 100%;
+        height: auto;
+    }
+    #winningorder_promote_block_left.winningorder_promote .countdown.clock .clock_flex {
+        top: 16%;
+        left: 26%;
+        -webkit-transform: scale(0.7);
+            -ms-transform: scale(0.7);
+                transform: scale(0.7);
+    }
+}
+@media (min-width: 768px) and (max-width: 860px){
+    #winningorder_promote_block_left.winningorder_promote .countdown.circle2 .circle_main{
+        margin-left: -10px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    #winningorder_promote_block_left.winningorder_promote .countdown.clock .clock_main{
+        width: 155px;
+        height: 155px;
+        margin: 0;
+    }
+    #winningorder_promote_block_left.winningorder_promote .countdown.clock svg {
+        width: 155px;
+        height: 155px;
+    }
+    #winningorder_promote_block_left.winningorder_promote .countdown.clock .clock_flex {
+        top: 36px;
+        left: 41px;
+        -webkit-transform: scale(0.78);
+            -ms-transform: scale(0.78);
+                transform: scale(0.78);
+    }
+}

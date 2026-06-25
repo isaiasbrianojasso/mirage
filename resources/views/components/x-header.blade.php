@@ -561,7 +561,7 @@
             href="https://fonts.googleapis.com/css?family=Lora%3A400%2C400italic%2C700%2C700italic%7CPoppins%3A400%2C500%2C600%2C700&#038;display=swap">
     </noscript>
     <link rel="preload" data-rocket-preload as="image"
-        href="https://mirage.mx/wp-content/uploads/2023/07/followme_cover.webp" fetchpriority="high">
+        href="{{ asset('wp-content/uploads/2023/07/followme_cover.webp') }}" fetchpriority="high">
     <meta name='robots' content='max-image-preview:large' />
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
     <link rel='dns-prefetch' href='//code.ionicframework.com' />
@@ -577,7 +577,7 @@
     <meta property="og:description"
         content="La principal marca de aires acondicionados tipo minisplit, líder nacional en ventas." />
     <meta property="og:url" content="https://mirage.mx/" />
-    <meta property="og:image" content="https://mirage.mx/wp-content/uploads/2023/05/mirage_icon.png" />
+    <meta property="og:image" content="{{ asset('wp-content/uploads/2023/05/mirage_icon.png') }}" />
     <meta property="og:image:width" content="512" />
     <meta property="og:image:height" content="512" />
     <meta property="og:image:alt" content="{{config('app.name') }}" />
@@ -589,7 +589,7 @@
         /*# sourceURL=wp-img-auto-sizes-contain-inline-css */
     </style>
     <link rel='stylesheet' id='digital-pro-css'
-        href='https://mirage.mx/wp-content/themes/digital-pro/style.css?ver=1.1.3' media='all' />
+        href='{{ asset("wp-content/themes/digital-pro/style.css") }}?ver=1.1.3' media='all' />
     <style id="digital-pro-inline-css">
         a:focus,
         a:hover,
@@ -1328,21 +1328,21 @@
         /*# sourceURL=global-styles-inline-css */
     </style>
     <link rel='stylesheet' id='dashicons-css'
-        href='https://mirage.mx/wp-includes/css/dashicons.min.css?ver=fd0786a45cbc4281d58a506762eefc8f' media='all' />
+        href='{{ asset("wp-includes/css/dashicons.min.css") }}?ver=fd0786a45cbc4281d58a506762eefc8f' media='all' />
     <link rel='stylesheet' id='woocommerce-events-front-style-css'
-        href='https://mirage.mx/wp-content/plugins/fooevents/css/events-frontend.css?ver=1.19.22' media='all' />
+        href='{{ asset("wp-content/plugins/fooevents/css/events-frontend.css") }}?ver=1.19.22' media='all' />
     <link rel='stylesheet' id='woocommerce-events-zoom-frontend-style-css'
-        href='https://mirage.mx/wp-content/plugins/fooevents/css/events-zoom-frontend.css?ver=1.19.22' media='all' />
+        href='{{ asset("wp-content/plugins/fooevents/css/events-zoom-frontend.css") }}?ver=1.19.22' media='all' />
     <link rel='stylesheet' id='woocommerce-layout-css'
-        href='https://mirage.mx/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=10.8.1'
+        href='{{ asset("wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css") }}?ver=10.8.1'
         media='all' />
     <link rel='stylesheet' id='woocommerce-smallscreen-css'
-        href='https://mirage.mx/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=10.8.1'
+        href='{{ asset("wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css") }}?ver=10.8.1'
         media='only screen and (max-width: 800px)' />
     <link rel='stylesheet' id='woocommerce-general-css'
-        href='https://mirage.mx/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=10.8.1' media='all' />
+        href='{{ asset("wp-content/plugins/woocommerce/assets/css/woocommerce.css") }}?ver=10.8.1' media='all' />
     <link rel='stylesheet' id='digital-woocommerce-styles-css'
-        href='https://mirage.mx/wp-content/themes/digital-pro/lib/woocommerce/digital-woocommerce.css?ver=1.1.3'
+        href='{{ asset("wp-content/themes/digital-pro/lib/woocommerce/digital-woocommerce.css") }}?ver=1.1.3'
         media='screen' />
     <style id="digital-woocommerce-styles-inline-css">
         .woocommerce a.button,
@@ -1376,20 +1376,19 @@
         /*# sourceURL=woocommerce-inline-inline-css */
     </style>
     <link rel='stylesheet' id='wpsl-styles-css'
-        href='https://mirage.mx/wp-content/plugins/wp-store-locator/css/styles.min.css?ver=2.3.2' media='all' />
+        href='{{ asset("wp-content/plugins/wp-store-locator/css/styles.min.css") }}?ver=2.3.2' media='all' />
     <link rel='stylesheet' id='url-shortify-css'
-        href='https://mirage.mx/wp-content/plugins/url-shortify-premium/lite/dist/styles/url-shortify.css?ver=2.4.1'
+        href='{{ asset("wp-content/plugins/url-shortify-premium/lite/dist/styles/url-shortify.css") }}?ver=2.4.1'
         media='all' />
 
     <link rel='stylesheet' id='ionicons-css'
-        href='//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css?ver=1.1.3' media='all' />
+        href='{{ asset("vendor/ionicons/css/ionicons.min.css") }}?ver=2.0.1' media='all' />
     <link rel='stylesheet' id='simple-social-icons-font-css'
-        href='https://mirage.mx/wp-content/plugins/simple-social-icons/css/style.css?ver=4.0.0' media='all' />
+        href='{{ asset("wp-content/plugins/simple-social-icons/css/style.css") }}?ver=4.0.0' media='all' />
     <link rel='stylesheet' id='digital-front-styles-css'
-        href='https://mirage.mx/wp-content/themes/digital-pro/style-front.css?ver=1.1.3' media='all' />
-    <script id="jquery-core-js" src="https://mirage.mx/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
-    <script id="jquery-migrate-js" src="https://mirage.mx/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1">
-    </script>
+        href='{{ asset("wp-content/themes/digital-pro/style-front.css") }}?ver=1.1.3' media='all' />
+    <script id="jquery-core-js" src="{{ asset('wp-includes/js/jquery/jquery.min.js') }}?ver=3.7.1"></script>
+    <script id="jquery-migrate-js" src="{{ asset('wp-includes/js/jquery/jquery-migrate.min.js') }}?ver=3.4.1"></script>
     <script id="file_uploads_nfpluginsettings-js-extra">
         var params = {
             "clearLogRestUrl": "https://mirage.mx/wp-json/nf-file-uploads/debug-log/delete-all",
@@ -1478,7 +1477,7 @@
     <!-- End Facebook Pixel Code -->
     <style type="text/css">
         .site-title a {
-            background: url(https://www.mirage.mx/wp-content/uploads/2017/03/cropped-logo-aires-mirage.png) no-repeat !important;
+            background: url({{ asset('wp-content/uploads/2017/03/cropped-logo-aires-mirage.png') }}) no-repeat !important;
         }
     </style>
     <!-- Google Tag Manager -->
@@ -1518,14 +1517,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             }
         }
     </style>
-    <link rel="icon" href="https://mirage.mx/wp-content/uploads/2017/03/cropped-ms-icon-310x310-32x32.png"
+    <link rel="icon" href="{{ asset('wp-content/uploads/2017/03/cropped-ms-icon-310x310-32x32.png') }}"
         sizes="32x32" />
-    <link rel="icon" href="https://mirage.mx/wp-content/uploads/2017/03/cropped-ms-icon-310x310-192x192.png"
+    <link rel="icon" href="{{ asset('wp-content/uploads/2017/03/cropped-ms-icon-310x310-192x192.png') }}"
         sizes="192x192" />
     <link rel="apple-touch-icon"
-        href="https://mirage.mx/wp-content/uploads/2017/03/cropped-ms-icon-310x310-180x180.png" />
+        href="{{ asset('wp-content/uploads/2017/03/cropped-ms-icon-310x310-180x180.png') }}" />
     <meta name="msapplication-TileImage"
-        content="https://mirage.mx/wp-content/uploads/2017/03/cropped-ms-icon-310x310-270x270.png" />
+        content="{{ asset('wp-content/uploads/2017/03/cropped-ms-icon-310x310-270x270.png') }}" />
     <style>
         .shorten_url {
             padding: 10px 10px 10px 10px;

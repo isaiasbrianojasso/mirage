@@ -1,83 +1,74 @@
-<footer class="site-footer">
-    <div class="footer-widgets">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>Soporte</h4>
-                    <ul>
-                        <li><a href="#">Preguntas Frecuentes</a></li>
-                        <li><a href="#">Registro de equipos</a></li>
-                        <li><a href="#">Centros de Servicio</a></li>
-                    </ul>
+<footer class="bg-gray-900 text-gray-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Columna 1 -->
+            <div>
+                <h4 class="text-white text-lg font-bold mb-4">Soporte</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-white transition-colors">Preguntas Frecuentes</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Registro de equipos</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Centros de Servicio</a></li>
+                </ul>
+            </div>
+            
+            <!-- Columna 2 -->
+            <div>
+                <h4 class="text-white text-lg font-bold mb-4">Aplicaciones Móviles</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-white transition-colors">App de Control WiFi</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Mirage Home</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Códigos de Diagnóstico</a></li>
+                </ul>
+            </div>
+            
+            <!-- Columna 3 -->
+            <div>
+                <h4 class="text-white text-lg font-bold mb-4">Corporativo</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-white transition-colors">Semblanza Empresarial</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Certificaciones</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Infraestructura</a></li>
+                    <li><a href="{{ route('tienda.index') }}" class="hover:text-white transition-colors text-indigo-400 font-semibold">Tienda en línea</a></li>
+                </ul>
+            </div>
+            
+            <!-- Columna 4 (Marca) -->
+            <div>
+                <div class="text-2xl font-black text-white tracking-widest mb-4">MIRAGE</div>
+                <p class="text-sm text-gray-400 mb-4 leading-relaxed">
+                    Somos la principal marca mexicana de aires acondicionados tipo minisplit, líder nacional en ventas.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Direcciones CEDIF -->
+    <div class="border-t border-gray-800 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <h4 class="text-white text-sm font-bold uppercase tracking-wider mb-6">Nuestros CEDIF</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-gray-500">
+                <div>
+                    <h5 class="text-gray-300 font-semibold">Corporativo Nacional</h5>
+                    <p>Ciudad Obregón, Sonora.</p>
                 </div>
-                <div class="footer-col">
-                    <h4>Aplicaciones Móviles</h4>
-                    <ul>
-                        <li><a href="#">App de Control WiFi</a></li>
-                        <li><a href="#">Mirage Home</a></li>
-                        <li><a href="#">Códigos de Diagnóstico</a></li>
-                    </ul>
+                <div>
+                    <h5 class="text-gray-300 font-semibold">CEDIF Guadalajara</h5>
+                    <p>Tlajomulco de Zúñiga, Jalisco.</p>
                 </div>
-                <div class="footer-col">
-                    <h4>Corporativo</h4>
-                    <ul>
-                        <li><a href="#">Semblanza Empresarial</a></li>
-                        <li><a href="#">Certificaciones</a></li>
-                        <li><a href="#">Infraestructura Operativa</a></li>
-                        <li><a href="#">Infraestructura Tecnológica</a></li>
-                        <li><a href="#">Tienda en línea</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col footer-brand">
-                    <div class="footer-logo">MIRAGE</div>
-                    <p>Somos la principal marca mexicana de aires acondicionados tipo minisplit, líder nacional en ventas.</p>
-                    <p>Ampliamos nuestra gama de productos introduciendo componentes de línea blanca que integran los mismos estándares de eficiencia en ahorro energético.</p>
-                    <div class="footer-social">
-                        <a href="#" class="social-link">f</a>
-                    </div>
+                <div>
+                    <h5 class="text-gray-300 font-semibold">CEDIF Monterrey</h5>
+                    <p>San Nicolás de los Garza. N.L.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="footer-addresses">
-        <div class="container">
-            <div class="addresses-grid">
-                <div class="address-item">
-                    <h5>Corporativo Nacional</h5>
-                    <p>Puebla #270 Sur, Col. Centro. Ciudad Obregón, Sonora. C.P. 85000<br>Tel (644) 410 9800</p>
-                </div>
-                <div class="address-item">
-                    <h5>CEDIF Guadalajara</h5>
-                    <p>Carr. Guadalajara-Morelia No. 19200 Col. Buenavista, Tlajomulco de Zúñiga, Jalisco</p>
-                </div>
-                <div class="address-item">
-                    <h5>CEDIF Veracruz</h5>
-                    <p>Calle Fidelidad Lote 2 Mz 1. Fraccionamiento Bruno Pagliai. Veracruz, Ver.</p>
-                </div>
-                <div class="address-item">
-                    <h5>CEDIF Monterrey</h5>
-                    <p>Carretera Miguel Alemán #800, Col. La Fe, San Nicolás de los Garza. N.L.<br>Tel (818) 298 2310</p>
-                </div>
-                <div class="address-item">
-                    <h5>CEDIF Mérida</h5>
-                    <p>Perif. de Mérida Lic. Manuel Berzunza 33, Ampliación, 97312 Mérida, Yuc.</p>
-                </div>
-                <div class="address-item">
-                    <h5>CEDIF Querétaro</h5>
-                    <p>Parque Industrial Kaizen IP, Carr. Estatal 100 No. 8820, Galeras, Mpio de Colón, Querétaro.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer-bottom">
-        <div class="container">
-            <p>© Copyright {{ date('Y') }} Mirage México · Todos los derechos reservados · <a href="#">Aviso de privacidad</a></p>
-            <div class="footer-bottom-links">
-                <a href="#">Centro Digital</a>
-                <a href="#">Certificación Mirage</a>
-                <a href="#">Facebook</a>
+    <div class="bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+            <p>&copy; {{ date('Y') }} Mirage México. Todos los derechos reservados.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-white">Aviso de Privacidad</a>
+                <a href="#" class="hover:text-white">Centro Digital</a>
             </div>
         </div>
     </div>
