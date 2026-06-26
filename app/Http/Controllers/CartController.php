@@ -23,7 +23,7 @@ class CartController extends Controller
         $product = Product::with('images')->findOrFail($request->product_id);
         $cart = session()->get('cart', []);
 
-        $price = $product->sale_price ?? $product->price;
+        $price = $product->discount_price ?? $product->price;
         $primaryImage = $product->images->where('is_primary', true)->first() ?? $product->images->first();
         $imageUrl = $primaryImage ? $primaryImage->image_url : null;
 

@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\Product;
+use App\Models\Review;
+use App\Models\BusinessSetting;
 
 class TiendaController extends Controller
 {
@@ -19,12 +21,18 @@ class TiendaController extends Controller
             ->get();
     }
 
+    private function getBusinessSetting()
+    {
+        return BusinessSetting::first();
+    }
+
     public function index()
     {
         $categories   = $this->getMenuCategories();
+        $businessSetting = $this->getBusinessSetting();
         $featuredProducts = Product::with('images', 'category')->where('is_active', true)->take(8)->get();
         $banners = \App\Models\Banner::where('is_active', true)->orderBy('order')->get();
-        return view('tienda.index', compact('categories', 'featuredProducts', 'banners'));
+        return view('tienda.index', compact('categories', 'featuredProducts', 'banners', 'businessSetting'));
     }
 
     public function category($slug)
@@ -46,8 +54,9 @@ class TiendaController extends Controller
         }
 
         $categories = $this->getMenuCategories();
+        $businessSetting = $this->getBusinessSetting();
 
-        return view('tienda.category', compact('category', 'products', 'categories'));
+        return view('tienda.category', compact('category', 'products', 'categories', 'businessSetting'));
     }
 
     public function product($slug)
@@ -60,6 +69,40 @@ class TiendaController extends Controller
             abort(404);
         }
         $categories = $this->getMenuCategories();
-        return view('tienda.product', compact('product', 'categories'));
+        $businessSetting = $this->getBusinessSetting();
+
+        // Obtener opiniones aprobadas
+        $reviews = Review::where('product_id', $product->id)
+            ->where('is_approved', true)
+            ->orderBy('created_at', 'desc')
+            ->get();
+
+        return view('tienda.product', compact('product', 'categories', 'reviews', 'businessSetting'));
+    }
+
+    public function storeReview(Request $request, $slug)
+    {
+        $product = Product::where('slug', $slug)->firstOrFail();
+
+        $request->validate([
+            'customer_name' => 'required|string|max:255',
+            'customer_email' => 'nullable|email|max:255',
+            'rating' => 'required|integer|min:1|max:5',
+            'comment' => 'required|string|min:5',
+        ]);
+
+        Review::create([
+            'product_id' => $product->id,
+            'user_id' => auth()->check() ? auth()->id() : null,
+            'customer_name' => $request->customer_name,
+            'customer_email' => $request->customer_email,
+            'rating' => $request->rating,
+            'comment' => $request->comment,
+            'is_approved' => true, // Aprobación automática en el ambiente local
+        ]);
+
+        session()->flash('success', '¡Gracias! Tu opinión ha sido publicada con éxito.');
+
+        return redirect()->back();
     }
 }

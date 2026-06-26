@@ -36,7 +36,7 @@ class ProductController extends Controller
             'name' => 'required|string|max:255',
             'description' => 'nullable|string',
             'price' => 'nullable|numeric|min:0',
-            'sale_price' => 'nullable|numeric|min:0',
+            'discount_price' => 'nullable|numeric|min:0',
             'sku' => 'nullable|string|max:100',
             'stock' => 'integer|min:0',
             'is_active' => 'boolean',
@@ -44,6 +44,12 @@ class ProductController extends Controller
         ]);
         
         $validated['slug'] = Str::slug($validated['name']);
+        
+        // Map form 'description' to the DB column 'short_description'
+        if (array_key_exists('description', $validated)) {
+            $validated['short_description'] = $validated['description'];
+            unset($validated['description']);
+        }
         
         $product = Product::create(\Illuminate\Support\Arr::except($validated, ['images']));
         
@@ -77,7 +83,7 @@ class ProductController extends Controller
             'name' => 'required|string|max:255',
             'description' => 'nullable|string',
             'price' => 'nullable|numeric|min:0',
-            'sale_price' => 'nullable|numeric|min:0',
+            'discount_price' => 'nullable|numeric|min:0',
             'sku' => 'nullable|string|max:100',
             'stock' => 'integer|min:0',
             'is_active' => 'boolean',
@@ -87,6 +93,12 @@ class ProductController extends Controller
         ]);
         
         $validated['slug'] = Str::slug($validated['name']);
+        
+        // Map form 'description' to the DB column 'short_description'
+        if (array_key_exists('description', $validated)) {
+            $validated['short_description'] = $validated['description'];
+            unset($validated['description']);
+        }
         
         $product->update(\Illuminate\Support\Arr::except($validated, ['images', 'delete_images']));
         

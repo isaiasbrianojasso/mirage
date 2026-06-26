@@ -23,7 +23,7 @@ const form = useForm({
     category_id: props.product?.category_id || '',
     description: props.product?.description || '',
     price: props.product?.price || '',
-    sale_price: props.product?.sale_price || '',
+    discount_price: props.product?.discount_price || '',
     sku: props.product?.sku || '',
     stock: props.product?.stock || 0,
     is_active: props.product ? !!props.product.is_active : true,
@@ -122,9 +122,9 @@ const removeExistingImage = (imageId) => {
                                         <InputError class="mt-2" :message="form.errors.price" />
                                     </div>
                                     <div>
-                                        <InputLabel for="sale_price" value="Precio Oferta ($)" />
-                                        <TextInput id="sale_price" v-model="form.sale_price" type="number" step="0.01" class="mt-1 block w-full" />
-                                        <InputError class="mt-2" :message="form.errors.sale_price" />
+                                        <InputLabel for="discount_price" value="Precio Oferta ($)" />
+                                        <TextInput id="discount_price" v-model="form.discount_price" type="number" step="0.01" class="mt-1 block w-full" />
+                                        <InputError class="mt-2" :message="form.errors.discount_price" />
                                     </div>
                                 </div>
 

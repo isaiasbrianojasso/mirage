@@ -32,5 +32,7 @@
 
     <!-- Componente de Footer (existente) -->
     <x-footer />
+    
+    @include('tienda.partials.modals')
 </body>
 </html>

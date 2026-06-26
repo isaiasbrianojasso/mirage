@@ -29,6 +29,7 @@ class DatabaseSeeder extends Seeder
             MirageProductsSeeder::class,
             BannerSeeder::class,
             BusinessSettingSeeder::class,
+            LoremIpsumSeeder::class,
         ]);
     }
 }

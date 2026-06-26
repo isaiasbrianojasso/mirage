@@ -2,3 +2,42 @@
  * Custom code goes here.
  * A template should always ship with an empty custom.css
  */
+
+/* Corrección de desbordamiento en menú horizontal superior */
+.cbp-horizontal > ul > li > a,
+.cbp-horizontal > ul > li > a:not([href]):not([tabindex]),
+.cbp-horizontal > ul > li > .cbp-main-link {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+}
+
+@media (max-width: 1300px) {
+    .cbp-horizontal .cbp-tab-title {
+        font-size: 0.9rem !important;
+    }
+    .cbp-horizontal > ul > li > a,
+    .cbp-horizontal > ul > li > a:not([href]):not([tabindex]),
+    .cbp-horizontal > ul > li > .cbp-main-link {
+        padding-left: 0.8rem !important;
+        padding-right: 0.8rem !important;
+    }
+}
+
+/* ===== PRODUCT PAGE: Tab visibility fix ===== */
+/* The Bootstrap theme hides all .tab-pane with display:none.
+   We rely entirely on jQuery inline style to show the active pane.
+   This rule ensures no external CSS overrides our jQuery .css() calls. */
+#product-tabs-content .tab-pane {
+    /* jQuery will set display:none/block via .css() — no CSS here overrides it */
+    overflow: visible !important;
+}
+
+/* ===== PRODUCT PAGE: Short description specs list ===== */
+.short-description ul li {
+    list-style: none !important;
+}
+
+/* ===== PRODUCT PAGE: Specs table alternating rows ===== */
+#tab-sheet table tr:nth-child(even) {
+    background-color: #f8fafc;
+}

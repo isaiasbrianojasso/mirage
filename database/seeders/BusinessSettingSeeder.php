@@ -12,11 +12,11 @@ class BusinessSettingSeeder extends Seeder
      */
     public function run(): void
     {
-        \App\Models\BusinessSetting::firstOrCreate(
+        \App\Models\BusinessSetting::updateOrCreate(
             ['id' => 1],
             [
                 'name' => 'Mirage',
-                'logo_path' => '/tienda/img/mirage-logo-1534899548.jpg',
+                'logo_path' => '/tienda_assets/img/mirage-logo-1534899548.jpg',
             ]
         );
     }

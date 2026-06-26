@@ -42,8 +42,8 @@ defineProps({
                                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{{ product.name }}</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ product.category ? product.category.name : 'N/A' }}</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                        <span v-if="product.sale_price" class="text-red-500 font-bold mr-2">${{ product.sale_price }}</span>
-                                        <span :class="{'line-through text-gray-400': product.sale_price}">${{ product.price }}</span>
+                                        <span v-if="product.discount_price" class="text-red-500 font-bold mr-2">${{ product.discount_price }}</span>
+                                        <span :class="{'line-through text-gray-400': product.discount_price}">${{ product.price }}</span>
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ product.stock }}</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">

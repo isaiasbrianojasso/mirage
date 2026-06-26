@@ -691,7 +691,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     @endif
 @endforeach
 <li class="cbp-hrmenu-tab">
-    <a href="{{ url('/tienda_assets/contactenos') }}" class="nav-link">
+    <a href="{{ url('/tienda/contactenos') }}" class="nav-link">
         <span class="cbp-tab-title">CONTACTO</span>
     </a>
 </li>
@@ -1101,21 +1101,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     @endif
                 </a>
                 
-                @if($product->sale_price)
+                @if($product->discount_price)
                 <ul class="product-flags js-product-flags">
-                    <li class="product-flag discount">Oferta</li>
+                    @php
+                        $percentage = round((($product->price - $product->discount_price) / $product->price) * 100);
+                    @endphp
+                    <li class="product-flag discount">-{{ $percentage }}%</li>
                 </ul>
                 @endif
                 
                 <div class="product-functional-buttons product-functional-buttons-bottom">
                     <div class="product-functional-buttons-links">
-                        <a href="#" onclick="event.preventDefault(); document.getElementById('add-to-cart-{{ $product->id }}').submit();" class="btn-iqitcompare-add js-iqitcompare-add" data-toggle="tooltip" title="Añadir al carrito">
-                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <a href="#" class="btn-iqitwishlist-add js-iqitwishlist-add" data-id-product="{{ $product->id }}" data-toggle="tooltip" title="Añadir a mi lista de deseos">
+                            <i class="fa fa-heart-o not-added" aria-hidden="true"></i>
                         </a>
-                        <form id="add-to-cart-{{ $product->id }}" action="{{ route('cart.add') }}" method="POST" style="display: none;">
-                            @csrf
-                            <input type="hidden" name="product_id" value="{{ $product->id }}">
-                        </form>
+                        <a href="#" class="btn-iqitcompare-add js-iqitcompare-add" data-id-product="{{ $product->id }}" data-toggle="tooltip" title="Comparar">
+                            <i class="fa fa-random" aria-hidden="true"></i>
+                        </a>
+                        <a class="js-quick-view-iqit" href="#" data-id-product="{{ $product->id }}" data-toggle="tooltip" title="Vista rápida">
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -1134,8 +1139,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 <div class="product-price-and-shipping">
                     <a href="{{ route('tienda.product', $product->slug) }}"> 
-                        @if($product->sale_price)
-                        <span class="product-price">${{ number_format($product->sale_price, 2) }}</span>
+                        @if($product->discount_price)
+                        <span class="product-price">${{ number_format($product->discount_price, 2) }}</span>
                         <span class="regular-price text-muted">${{ number_format($product->price, 2) }}</span>
                         @else
                         <span class="product-price">${{ number_format($product->price, 2) }}</span>
@@ -1729,10 +1734,7 @@ jQuery(document).ready(function($){
               media="print" onload="this.media='all'" />
 
         
-
-
-
-
+@include('tienda.partials.modals')
 </body>
 
 </html>

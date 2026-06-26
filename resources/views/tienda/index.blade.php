@@ -133,42 +133,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
-  <link rel="icon" type="image/vnd.microsoft.icon" href="https://www.tiendamirage.mx/img/favicon.ico?1542144254">
-  <link rel="shortcut icon" type="image/x-icon" href="https://www.tiendamirage.mx/img/favicon.ico?1542144254">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="/tienda_assets/img/favicon.ico?1542144254">
+  <link rel="shortcut icon" type="image/x-icon" href="/tienda_assets/img/favicon.ico?1542144254">
     
 
 
 
 
-    <link rel="stylesheet" href="https://www.tiendamirage.mx/themes/warehouse/assets/css/theme.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://www.tiendamirage.mx/modules/revsliderprestashop/public/assets/css/rs6.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://www.tiendamirage.mx/modules/iqitcountdown/views/css/front.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://www.tiendamirage.mx/modules/contentbox/content//Mirageinter.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://www.tiendamirage.mx/modules/facebookpsconnect/views/css/hook.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://www.tiendamirage.mx/modules/facebookpsconnect/views/css/bootstrap-social.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://www.tiendamirage.mx/modules/facebookpsconnect/views/css/font-awesome.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://www.tiendamirage.mx/modules/facebookpsconnect/views/css/jquery.fancybox-1.3.4.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://www.tiendamirage.mx/modules/facebookpsconnect/views/css/connectors.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://www.tiendamirage.mx/modules/winningorders/views/css/winningorders.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://www.tiendamirage.mx/modules/winningorders//views/css/plugins/countdown.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://www.tiendamirage.mx/modules/mercadopago/views/css/front.min.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://www.tiendamirage.mx/modules/mercadopago/views/css/pixFront.min.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://www.tiendamirage.mx/modules/mercadopago/views/css/pse.min.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://www.tiendamirage.mx/js/jquery/plugins/fancybox/jquery.fancybox.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://www.tiendamirage.mx/modules/iqitcompare/views/css/front.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://www.tiendamirage.mx/modules/iqitelementor/views/css/frontend.min.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://www.tiendamirage.mx/modules/iqitmegamenu/views/css/front.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://www.tiendamirage.mx/modules/iqitreviews/views/css/front.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://www.tiendamirage.mx/modules/iqitsizecharts/views/css/front.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://www.tiendamirage.mx/modules/iqitthemeeditor/views/css/custom_s_1.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://www.tiendamirage.mx/modules/iqitwishlist/views/css/front.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://www.tiendamirage.mx/modules/iqitextendedproduct/views/css/front.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://www.tiendamirage.mx/themes/warehouse/modules/ph_simpleblog/views/css/ph_simpleblog-17.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://www.tiendamirage.mx/modules/ph_simpleblog/css/custom.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://www.tiendamirage.mx/modules/iqitsociallogin/views/css/front.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://www.tiendamirage.mx/modules/iqitmegamenu/views/css/iqitmegamenu_s_1.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://www.tiendamirage.mx/themes/warehouse/assets/css/font-awesome/css/font-awesome.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://www.tiendamirage.mx/themes/warehouse/assets/css/custom.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/tienda_assets/themes/warehouse/assets/css/theme.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/tienda_assets/modules/revsliderprestashop/public/assets/css/rs6.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/tienda_assets/modules/iqitcountdown/views/css/front.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/tienda_assets/modules/contentbox/content//Mirageinter.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/tienda_assets/modules/facebookpsconnect/views/css/hook.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/tienda_assets/modules/facebookpsconnect/views/css/bootstrap-social.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/tienda_assets/modules/facebookpsconnect/views/css/font-awesome.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/tienda_assets/modules/facebookpsconnect/views/css/jquery.fancybox-1.3.4.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/tienda_assets/modules/facebookpsconnect/views/css/connectors.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/tienda_assets/modules/winningorders/views/css/winningorders.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/tienda_assets/modules/winningorders//views/css/plugins/countdown.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/tienda_assets/modules/mercadopago/views/css/front.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/tienda_assets/modules/mercadopago/views/css/pixFront.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/tienda_assets/modules/mercadopago/views/css/pse.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/tienda_assets/js/jquery/plugins/fancybox/jquery.fancybox.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/tienda_assets/modules/iqitcompare/views/css/front.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/tienda_assets/modules/iqitelementor/views/css/frontend.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/tienda_assets/modules/iqitmegamenu/views/css/front.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/tienda_assets/modules/iqitreviews/views/css/front.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/tienda_assets/modules/iqitsizecharts/views/css/front.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/tienda_assets/modules/iqitthemeeditor/views/css/custom_s_1.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/tienda_assets/modules/iqitwishlist/views/css/front.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/tienda_assets/modules/iqitextendedproduct/views/css/front.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/tienda_assets/themes/warehouse/modules/ph_simpleblog/views/css/ph_simpleblog-17.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/tienda_assets/modules/ph_simpleblog/css/custom.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/tienda_assets/modules/iqitsociallogin/views/css/front.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/tienda_assets/modules/iqitmegamenu/views/css/iqitmegamenu_s_1.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/tienda_assets/themes/warehouse/assets/css/font-awesome/css/font-awesome.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/tienda_assets/themes/warehouse/assets/css/custom.css" type="text/css" media="all">
 
 
 
@@ -555,7 +555,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     @endif
 @endforeach
 <li class="cbp-hrmenu-tab">
-    <a href="{{ url('/tienda_assets/contactenos') }}" class="nav-link">
+    <a href="{{ url('/tienda/contactenos') }}" class="nav-link">
         <span class="cbp-tab-title">CONTACTO</span>
     </a>
 </li>
@@ -660,7 +660,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
   <a href="{{ route('tienda.index') }}">
     <img class="logo img-fluid"
-         src="https://www.tiendamirage.mx/img/mirage-logo-1534899548.jpg"
+         src="/tienda_assets/img/mirage-logo-1534899548.jpg"
                   alt="{{ $businessSetting->name ?? 'Mirage' }}"
          width="307"
          height="43"
@@ -887,8 +887,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     <div class="product-functional-buttons product-functional-buttons-bottom">
                         <div class="product-functional-buttons-links">
-                            <a href="#" class="btn-iqitwishlist-add js-iqitwishlist-add" data-toggle="tooltip" title="Añadir a mi lista de deseos">
-                                <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
+                            <a href="#" class="btn-iqitwishlist-add js-iqitwishlist-add" data-id-product="{{ $product->id }}" data-toggle="tooltip" title="Añadir a mi lista de deseos">
+                                <i class="fa fa-heart-o not-added" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="btn-iqitcompare-add js-iqitcompare-add" data-id-product="{{ $product->id }}" data-toggle="tooltip" title="Comparar">
+                                <i class="fa fa-random" aria-hidden="true"></i>
+                            </a>
+                            <a class="js-quick-view-iqit" href="#" data-id-product="{{ $product->id }}" data-toggle="tooltip" title="Vista rápida">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
@@ -1016,7 +1022,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="elementor-widget-wrap">
 		        <div class="elementor-widget elementor-element elementor-element-hjongcn elementor-widget-banner" data-element_type="banner">
                 <div class="elementor-widget-container">
-            <div class="elementor-iqit-banner"><figure class="elementor-iqit-banner-img"><span class="elementor-iqit-banner-overlay"></span><img  loading="lazy"    src="https://www.tiendamirage.mx/img/cms/banner_satisfaccion.jpg" alt=""></figure><div class="elementor-iqit-banner-content elementor-iqit-banner-content-on elementor-banner-align-middle-left"><h4 class="elementor-iqit-banner-title">SATISFACCIÓN GARANTIZADA</h4><div class="elementor-iqit-banner-description">Cumplimos con las mas exigentes normas de producción, garantizamos tu descanso.</div></div></div>        </div>
+            <div class="elementor-iqit-banner"><figure class="elementor-iqit-banner-img"><span class="elementor-iqit-banner-overlay"></span><img  loading="lazy"    src="/tienda_assets/img/cms/banner_satisfaccion.jpg" alt=""></figure><div class="elementor-iqit-banner-content elementor-iqit-banner-content-on elementor-banner-align-middle-left"><h4 class="elementor-iqit-banner-title">SATISFACCIÓN GARANTIZADA</h4><div class="elementor-iqit-banner-description">Cumplimos con las mas exigentes normas de producción, garantizamos tu descanso.</div></div></div>        </div>
                 </div>
         				</div>
 			</div>
@@ -1028,7 +1034,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="elementor-widget-wrap">
 		        <div class="elementor-widget elementor-element elementor-element-80njb05 elementor-widget-banner" data-element_type="banner">
                 <div class="elementor-widget-container">
-            <div class="elementor-iqit-banner"><figure class="elementor-iqit-banner-img"><span class="elementor-iqit-banner-overlay"></span><img  loading="lazy"    src="https://www.tiendamirage.mx/img/cms/banner_pagoseguros.jpg" alt=""></figure><div class="elementor-iqit-banner-content elementor-iqit-banner-content-on elementor-banner-align-middle-left"><h4 class="elementor-iqit-banner-title">Pagos Seguros</h4><div class="elementor-iqit-banner-description">Todos tus pagos son seguros y tenemos diferentes metodos de pago para ti.</div></div></div>        </div>
+            <div class="elementor-iqit-banner"><figure class="elementor-iqit-banner-img"><span class="elementor-iqit-banner-overlay"></span><img  loading="lazy"    src="/tienda_assets/img/cms/banner_pagoseguros.jpg" alt=""></figure><div class="elementor-iqit-banner-content elementor-iqit-banner-content-on elementor-banner-align-middle-left"><h4 class="elementor-iqit-banner-title">Pagos Seguros</h4><div class="elementor-iqit-banner-description">Todos tus pagos son seguros y tenemos diferentes metodos de pago para ti.</div></div></div>        </div>
                 </div>
         				</div>
 			</div>
@@ -1040,7 +1046,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="elementor-widget-wrap">
 		        <div class="elementor-widget elementor-element elementor-element-nt8w6dl elementor-widget-banner" data-element_type="banner">
                 <div class="elementor-widget-container">
-            <div class="elementor-iqit-banner"><figure class="elementor-iqit-banner-img"><span class="elementor-iqit-banner-overlay"></span><img  loading="lazy"    src="https://www.tiendamirage.mx/img/cms/banner_envios.jpg" alt=""></figure><div class="elementor-iqit-banner-content elementor-iqit-banner-content-on elementor-banner-align-middle-left"><h4 class="elementor-iqit-banner-title">Envíos a todo el país</h4><div class="elementor-iqit-banner-description">Cumplimos con las mas exigentes normas de producción, garantizamos tu descanso</div></div></div>        </div>
+            <div class="elementor-iqit-banner"><figure class="elementor-iqit-banner-img"><span class="elementor-iqit-banner-overlay"></span><img  loading="lazy"    src="/tienda_assets/img/cms/banner_envios.jpg" alt=""></figure><div class="elementor-iqit-banner-content elementor-iqit-banner-content-on elementor-banner-align-middle-left"><h4 class="elementor-iqit-banner-title">Envíos a todo el país</h4><div class="elementor-iqit-banner-description">Cumplimos con las mas exigentes normas de producción, garantizamos tu descanso</div></div></div>        </div>
                 </div>
         				</div>
 			</div>
@@ -1276,30 +1282,30 @@ if(window.location.pathname == "/content/4-quienes-somos" || window.location.pat
 </main>
 
 
-      <script src="https://www.tiendamirage.mx/themes/core.js" ></script>
-  <script src="https://www.tiendamirage.mx/themes/warehouse/assets/js/theme.js" ></script>
-  <script src="https://www.tiendamirage.mx/modules/ps_emailsubscription/views/js/ps_emailsubscription.js" ></script>
-  <script src="https://www.tiendamirage.mx/modules/iqitcountdown/views/js/front.js" ></script>
-  <script src="https://www.tiendamirage.mx/modules/facebookpsconnect/views/js/module.js" ></script>
-  <script src="https://www.tiendamirage.mx/modules/winningorders//views/js/plugins/countdown.js" ></script>
-  <script src="https://www.tiendamirage.mx/modules/mercadopago/views/js/front.min.js" ></script>
-  <script src="https://www.tiendamirage.mx/js/jquery/plugins/fancybox/jquery.fancybox.js" ></script>
-  <script src="https://www.tiendamirage.mx/themes/warehouse/modules/ps_shoppingcart/ps_shoppingcart.js" ></script>
-  <script src="https://www.tiendamirage.mx/modules/iqitcompare/views/js/front.js" ></script>
-  <script src="https://www.tiendamirage.mx/modules/iqitelementor/views/lib/instagram-lite-master/instagramLite.min.js" ></script>
-  <script src="https://www.tiendamirage.mx/modules/iqitelementor/views/lib/jquery-numerator/jquery-numerator.min.js" ></script>
-  <script src="https://www.tiendamirage.mx/modules/iqitelementor/views/lib/lottie-player/lottie-player.js" ></script>
-  <script src="https://www.tiendamirage.mx/modules/iqitelementor/views/js/frontend.js" ></script>
-  <script src="https://www.tiendamirage.mx/modules/iqitmegamenu/views/js/front.js" ></script>
-  <script src="https://www.tiendamirage.mx/modules/iqitreviews/views/js/front.js" ></script>
-  <script src="https://www.tiendamirage.mx/modules/iqitthemeeditor/views/js/custom_s_1.js" ></script>
-  <script src="https://www.tiendamirage.mx/modules/iqitwishlist/views/js/front.js" ></script>
-  <script src="https://www.tiendamirage.mx/modules/iqitextendedproduct/views/js/front.js" ></script>
-  <script src="https://www.tiendamirage.mx/themes/warehouse/modules/ph_simpleblog/views/js/ph_simpleblog-17.js" ></script>
-  <script src="https://www.tiendamirage.mx/modules/ph_simpleblog/js/masonry.pkgd.min.js" ></script>
-  <script src="https://www.tiendamirage.mx/themes/warehouse/assets/js/custom.js" ></script>
-  <script src="https://www.tiendamirage.mx/modules/revsliderprestashop/public/assets/js/rbtools.min.js" ></script>
-  <script src="https://www.tiendamirage.mx/modules/revsliderprestashop/public/assets/js/rs6.min.js" ></script>
+      <script src="/tienda_assets/themes/core.js" ></script>
+  <script src="/tienda_assets/themes/warehouse/assets/js/theme.js" ></script>
+  <script src="/tienda_assets/modules/ps_emailsubscription/views/js/ps_emailsubscription.js" ></script>
+  <script src="/tienda_assets/modules/iqitcountdown/views/js/front.js" ></script>
+  <script src="/tienda_assets/modules/facebookpsconnect/views/js/module.js" ></script>
+  <script src="/tienda_assets/modules/winningorders//views/js/plugins/countdown.js" ></script>
+  <script src="/tienda_assets/modules/mercadopago/views/js/front.min.js" ></script>
+  <script src="/tienda_assets/js/jquery/plugins/fancybox/jquery.fancybox.js" ></script>
+  <script src="/tienda_assets/themes/warehouse/modules/ps_shoppingcart/ps_shoppingcart.js" ></script>
+  <script src="/tienda_assets/modules/iqitcompare/views/js/front.js" ></script>
+  <script src="/tienda_assets/modules/iqitelementor/views/lib/instagram-lite-master/instagramLite.min.js" ></script>
+  <script src="/tienda_assets/modules/iqitelementor/views/lib/jquery-numerator/jquery-numerator.min.js" ></script>
+  <script src="/tienda_assets/modules/iqitelementor/views/lib/lottie-player/lottie-player.js" ></script>
+  <script src="/tienda_assets/modules/iqitelementor/views/js/frontend.js" ></script>
+  <script src="/tienda_assets/modules/iqitmegamenu/views/js/front.js" ></script>
+  <script src="/tienda_assets/modules/iqitreviews/views/js/front.js" ></script>
+  <script src="/tienda_assets/modules/iqitthemeeditor/views/js/custom_s_1.js" ></script>
+  <script src="/tienda_assets/modules/iqitwishlist/views/js/front.js" ></script>
+  <script src="/tienda_assets/modules/iqitextendedproduct/views/js/front.js" ></script>
+  <script src="/tienda_assets/themes/warehouse/modules/ph_simpleblog/views/js/ph_simpleblog-17.js" ></script>
+  <script src="/tienda_assets/modules/ph_simpleblog/js/masonry.pkgd.min.js" ></script>
+  <script src="/tienda_assets/themes/warehouse/assets/js/custom.js" ></script>
+  <script src="/tienda_assets/modules/revsliderprestashop/public/assets/js/rbtools.min.js" ></script>
+  <script src="/tienda_assets/modules/revsliderprestashop/public/assets/js/rs6.min.js" ></script>
 
 
 
@@ -1557,11 +1563,7 @@ jQuery(document).ready(function($){
               href="https://fonts.googleapis.com/css?family=Montserrat"
               media="print" onload="this.media='all'" />
 
-        
-
-
-
-
+        @include('tienda.partials.modals')
 </body>
 
 </html>

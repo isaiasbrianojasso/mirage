@@ -52,6 +52,13 @@ Route::middleware([
 
 // Dynamic Routes for Tienda (MVC)
 Route::get('/tienda', [TiendaController::class, 'index'])->name('tienda.index');
+Route::post('/tienda/wishlist', [\App\Http\Controllers\WishlistController::class, 'add'])->name('wishlist.add');
+Route::delete('/tienda/wishlist/{product_id}', [\App\Http\Controllers\WishlistController::class, 'remove'])->name('wishlist.remove');
+Route::get('/tienda/wishlist', [\App\Http\Controllers\WishlistController::class, 'index'])->name('wishlist.index');
+Route::get('/tienda/producto/quickview/{id}', [\App\Http\Controllers\QuickViewController::class, 'show'])->name('product.quickview');
+Route::get('/tienda/comparar/data', [\App\Http\Controllers\QuickViewController::class, 'compare'])->name('product.compare');
+Route::post('/tienda/producto/{slug}/review', [TiendaController::class, 'storeReview'])->name('tienda.product.review');
+
 Route::get('/tienda/{slug}', [TiendaController::class, 'category'])->name('tienda.category');
 Route::get('/tienda/producto/{slug}', [TiendaController::class, 'product'])->name('tienda.product');
 
