@@ -27,6 +27,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             CategorySeeder::class,
             MirageProductsSeeder::class,
+            DummyProductsSeeder::class,
             BannerSeeder::class,
             BusinessSettingSeeder::class,
             LoremIpsumSeeder::class,

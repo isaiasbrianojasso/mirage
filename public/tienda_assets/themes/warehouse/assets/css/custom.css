@@ -27,7 +27,7 @@
 /* The Bootstrap theme hides all .tab-pane with display:none.
    We rely entirely on jQuery inline style to show the active pane.
    This rule ensures no external CSS overrides our jQuery .css() calls. */
-#product-tabs-content .tab-pane {
+#product-tabs-content .mrg-panel {
     /* jQuery will set display:none/block via .css() — no CSS here overrides it */
     overflow: visible !important;
 }

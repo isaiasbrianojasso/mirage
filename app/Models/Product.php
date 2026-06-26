@@ -29,6 +29,16 @@ class Product extends Model
         return $this->hasMany(ProductImage::class);
     }
 
+    public function variants()
+    {
+        return $this->hasMany(ProductVariant::class);
+    }
+
+    public function documents()
+    {
+        return $this->hasMany(ProductDocument::class);
+    }
+
     public function reviews()
     {
         return $this->hasMany(Review::class);

@@ -35,6 +35,19 @@ class TiendaController extends Controller
         return view('tienda.index', compact('categories', 'featuredProducts', 'banners', 'businessSetting'));
     }
 
+    public function catalogAll()
+    {
+        $categories = $this->getMenuCategories();
+        $businessSetting = $this->getBusinessSetting();
+        
+        $rootCategories = Category::withCount('products')
+            ->whereNull('parent_id')
+            ->where('is_active', true)
+            ->get();
+            
+        return view('tienda.catalog_all', compact('categories', 'businessSetting', 'rootCategories'));
+    }
+
     public function category($slug)
     {
         $category = Category::where('slug', $slug)->first();
@@ -61,7 +74,9 @@ class TiendaController extends Controller
 
     public function product($slug)
     {
-        $product = Product::with('images', 'category')->where('slug', $slug)->first();
+        $product = Product::with(['images', 'category', 'variants' => function($query) {
+            $query->where('is_active', true);
+        }, 'documents'])->where('slug', $slug)->first();
         if (!$product) {
             if (view()->exists('tienda.' . $slug)) {
                 return view('tienda.' . $slug);

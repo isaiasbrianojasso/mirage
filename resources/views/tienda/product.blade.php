@@ -215,18 +215,33 @@
               
               <div class="price-container" style="display: flex; align-items: baseline; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; border-bottom: 1px solid #f1f5f9; padding-bottom: 15px;">
                 @if($product->discount_price)
-                  <span style="font-size: 26px; font-weight: 700; color: #ef4444;">${{ number_format($product->discount_price, 2) }}</span>
-                  <span style="font-size: 18px; text-decoration: line-through; color: #94a3b8; font-weight: 500;">${{ number_format($product->price, 2) }}</span>
+                  <span id="display-discount-price" style="font-size: 26px; font-weight: 700; color: #ef4444;">${{ number_format($product->discount_price, 2) }}</span>
+                  <span id="display-regular-price" style="font-size: 18px; text-decoration: line-through; color: #94a3b8; font-weight: 500;">${{ number_format($product->price, 2) }}</span>
                   @php
                     $discountPct = round((($product->price - $product->discount_price) / $product->price) * 100);
                   @endphp
-                  <span class="discount-badge" style="background: #eff6ff; color: #1d4ed8; font-size: 13px; font-weight: 600; padding: 3px 8px; border-radius: 4px; border: 1px solid #bfdbfe; font-family: sans-serif;">-{{ $discountPct }}%</span>
+                  <span id="display-discount-badge" class="discount-badge" style="background: #eff6ff; color: #1d4ed8; font-size: 13px; font-weight: 600; padding: 3px 8px; border-radius: 4px; border: 1px solid #bfdbfe; font-family: sans-serif;">-{{ $discountPct }}%</span>
                 @else
-                  <span style="font-size: 26px; font-weight: 700; color: #0f172a;">${{ number_format($product->price, 2) }}</span>
+                  <span id="display-regular-price" style="font-size: 26px; font-weight: 700; color: #0f172a;">${{ number_format($product->price, 2) }}</span>
+                  <span id="display-discount-price" style="font-size: 26px; font-weight: 700; color: #ef4444; display:none;"></span>
+                  <span id="display-discount-badge" class="discount-badge" style="display:none; background: #eff6ff; color: #1d4ed8; font-size: 13px; font-weight: 600; padding: 3px 8px; border-radius: 4px; border: 1px solid #bfdbfe; font-family: sans-serif;"></span>
                 @endif
                 <div style="width: 100%; font-size: 12px; color: #94a3b8; margin-top: 4px; font-weight: 500;">IVA incluido</div>
               </div>
               
+              <!-- Variantes del Producto -->
+              @if($product->variants && $product->variants->count() > 0)
+              <div class="product-variants" style="margin-bottom: 25px;">
+                <label for="variant-select" style="display: block; font-weight: 600; color: #334155; margin-bottom: 8px;">Selecciona la capacidad / modelo:</label>
+                <select id="variant-select" onchange="updateVariantDetails()" style="width: 100%; max-width: 300px; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; background: #fff; font-size: 15px; outline: none;">
+                  <option value="">Selecciona una opción...</option>
+                  @foreach($product->variants as $variant)
+                    <option value="{{ $variant->id }}">{{ $variant->name }}</option>
+                  @endforeach
+                </select>
+              </div>
+              @endif
+
               <div class="short-description" style="margin-bottom: 25px;">
                 @if($product->short_description)
                   <p style="font-size: 14px; color: #475569; line-height: 1.7; margin-bottom: 12px;">{{ $product->short_description }}</p>
@@ -253,9 +268,10 @@
               </div>
               
               <!-- Cart add form -->
-              <form action="{{ route('cart.add') }}" method="POST" style="display: flex; gap: 15px; margin-bottom: 25px; border-bottom: 1px solid #f1f5f9; padding-bottom: 25px;">
+              <form action="{{ route('cart.add') }}" method="POST" id="add-to-cart-form" style="display: flex; gap: 15px; margin-bottom: 25px; border-bottom: 1px solid #f1f5f9; padding-bottom: 25px;">
                 @csrf
                 <input type="hidden" name="product_id" value="{{ $product->id }}">
+                <input type="hidden" name="variant_id" id="selected_variant_id" value="">
                 
                 <div class="quantity-selector" style="display: flex; align-items: center; border: 1px solid #e2e8f0; border-radius: 6px; overflow: hidden; height: 48px; background: #fff;">
                   <button type="button" onclick="adjustDetailQty(-1)" style="background: #f8fafc; border: none; width: 40px; height: 100%; cursor: pointer; font-size: 16px; font-weight: 600; color: #64748b; transition: background-color 0.2s;">-</button>
@@ -310,14 +326,12 @@
                     <td style="padding: 12px 0; font-weight: 600; color: #64748b;">Marca</td>
                     <td style="padding: 12px 0; text-align: right; color: #0f172a;">Mirage</td>
                   </tr>
-                  @if($product->sku)
                   <tr style="border-bottom: 1px solid #e2e8f0;">
                     <td style="padding: 12px 0; font-weight: 600; color: #64748b;">SKU / Referencia</td>
                     <td style="padding: 12px 0; text-align: right;">
-                      <code style="background: #f1f5f9; color: #334155; padding: 2px 8px; border-radius: 4px; font-size: 13px;">{{ $product->sku }}</code>
+                      <code id="display-sku" style="background: #f1f5f9; color: #334155; padding: 2px 8px; border-radius: 4px; font-size: 13px;">{{ $product->sku ?: 'N/A' }}</code>
                     </td>
                   </tr>
-                  @endif
                   <tr style="border-bottom: 1px solid #e2e8f0;">
                     <td style="padding: 12px 0; font-weight: 600; color: #64748b;">Categoría</td>
                     <td style="padding: 12px 0; text-align: right; color: #0f172a;">
@@ -376,7 +390,7 @@
               <div id="tab-sheet" class="mrg-panel" style="display: none;">
                 @if($product->specifications && count($product->specifications) > 0)
                   <h4 style="font-weight: 600; color: #0f172a; font-size: 15px; margin-bottom: 20px;">Especificaciones técnicas</h4>
-                  <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+                  <table style="width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 30px;">
                     @foreach($product->specifications as $index => $spec)
                       <tr style="border-bottom: 1px solid #e2e8f0; {{ $index % 2 === 0 ? 'background-color: #f8fafc;' : '' }}">
                         <td style="padding: 10px 12px; color: #475569; line-height: 1.5;">
@@ -385,9 +399,26 @@
                       </tr>
                     @endforeach
                   </table>
+                @endif
+                
+                <h4 style="font-weight: 600; color: #0f172a; font-size: 15px; margin-bottom: 20px;">Descargas y Documentos</h4>
+                @if($product->documents && $product->documents->count() > 0)
+                  <div style="display: flex; flex-direction: column; gap: 15px;">
+                    @foreach($product->documents as $doc)
+                      <a href="{{ Storage::url($doc->file_path) }}" target="_blank" style="display: flex; align-items: center; justify-content: space-between; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; background: #fff; text-decoration: none; transition: border-color 0.2s;">
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                          <i class="fa fa-file-pdf-o" style="font-size: 24px; color: #ef4444;"></i>
+                          <div>
+                            <span style="display: block; font-weight: 600; color: #0f172a; font-size: 15px;">{{ $doc->title }}</span>
+                            <span style="color: #64748b; font-size: 13px;">{{ ucfirst(str_replace('_', ' ', $doc->type)) }}</span>
+                          </div>
+                        </div>
+                        <i class="fa fa-download" style="color: #94a3b8; font-size: 18px;"></i>
+                      </a>
+                    @endforeach
+                  </div>
                 @else
                   <p style="color: #94a3b8; font-size: 14px;">Para descargar la ficha técnica oficial y manuales de instalación de este equipo Mirage, por favor comuníquese con nosotros o visite tiendamirage.mx</p>
-                  <a href="#" style="color: #ef4444; text-decoration: underline; font-weight: 600;">Descargar Ficha Técnica PDF</a>
                 @endif
               </div>
               
@@ -549,6 +580,62 @@
 @include('tienda.partials.modals')
 
 <script>
+const productVariants = @json($product->variants);
+const baseProduct = {
+    price: {{ $product->price ?: 0 }},
+    discount_price: {{ $product->discount_price ?: 'null' }},
+    sku: "{{ $product->sku }}"
+};
+
+function formatCurrency(val) {
+    return '$' + parseFloat(val).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+}
+
+function updateVariantDetails() {
+    const variantId = $('#variant-select').val();
+    $('#selected_variant_id').val(variantId);
+    
+    let price = baseProduct.price;
+    let discountPrice = baseProduct.discount_price;
+    let sku = baseProduct.sku;
+    
+    if (variantId) {
+        const variant = productVariants.find(v => v.id == variantId);
+        if (variant) {
+            price = variant.price;
+            discountPrice = variant.discount_price;
+            sku = variant.sku || baseProduct.sku;
+        }
+    }
+    
+    $('#display-sku').text(sku || 'N/A');
+    
+    const rpElem = $('#display-regular-price');
+    const dpElem = $('#display-discount-price');
+    const badgeElem = $('#display-discount-badge');
+    
+    if (discountPrice && discountPrice > 0) {
+        dpElem.text(formatCurrency(discountPrice)).show();
+        rpElem.text(formatCurrency(price)).css({
+            'font-size': '18px',
+            'text-decoration': 'line-through',
+            'color': '#94a3b8',
+            'font-weight': '500'
+        });
+        const discountPct = Math.round(((price - discountPrice) / price) * 100);
+        badgeElem.text('-' + discountPct + '%').show();
+    } else {
+        dpElem.hide();
+        badgeElem.hide();
+        rpElem.text(formatCurrency(price)).css({
+            'font-size': '26px',
+            'text-decoration': 'none',
+            'color': '#0f172a',
+            'font-weight': '700'
+        });
+    }
+}
+
 function changeDetailImage(imgSrc, element) {
     $('#main-product-detail-img').attr('src', imgSrc);
     $('.thumb-btn').removeClass('active').css('border-color', '#e2e8f0');
@@ -598,6 +685,17 @@ function setSelectRating(val) {
         }
     });
 }
+
+// Add validation to form submission to require variant if they exist
+$('#add-to-cart-form').on('submit', function(e) {
+    if (productVariants && productVariants.length > 0) {
+        if (!$('#variant-select').val()) {
+            e.preventDefault();
+            alert('Por favor, selecciona una capacidad/modelo antes de añadir al carrito.');
+            $('#variant-select').focus();
+        }
+    }
+});
 
 // On page load: force first tab visible (override any Bootstrap .tab-pane CSS)
 $(document).ready(function() {

@@ -1,5 +1,6 @@
 <?php
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TiendaController;
 
 Route::get('/distribuidores', function () { return view('pages.distribuidores'); });
 Route::get('/distribuidores/index.html', function () { return view('pages.distribuidores'); });
@@ -139,9 +140,9 @@ Route::get('/catalogo/todo/page/2.html', function () { return view('pages.catalo
 Route::get('/catalogo/todo/page/5', function () { return view('pages.catalogo.todo.page.5'); });
 Route::get('/catalogo/todo/page/5/index.html', function () { return view('pages.catalogo.todo.page.5'); });
 Route::get('/catalogo/todo/page/5.html', function () { return view('pages.catalogo.todo.page.5'); });
-Route::get('/catalogo/todo', function () { return view('pages.catalogo.todo'); });
-Route::get('/catalogo/todo/index.html', function () { return view('pages.catalogo.todo'); });
-Route::get('/catalogo/todo.html', function () { return view('pages.catalogo.todo'); });
+Route::get('/catalogo/todo', [TiendaController::class, 'catalogAll'])->name('catalogo.todo');
+Route::get('/catalogo/todo/index.html', [TiendaController::class, 'catalogAll']);
+Route::get('/catalogo/todo.html', [TiendaController::class, 'catalogAll']);
 Route::get('/catalogo/todo/linea-blanca/frigobares', function () { return view('pages.catalogo.todo.linea-blanca.frigobares'); });
 Route::get('/catalogo/todo/linea-blanca/frigobares/index.html', function () { return view('pages.catalogo.todo.linea-blanca.frigobares'); });
 Route::get('/catalogo/todo/linea-blanca/frigobares.html', function () { return view('pages.catalogo.todo.linea-blanca.frigobares'); });
