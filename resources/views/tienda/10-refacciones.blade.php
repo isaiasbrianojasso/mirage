@@ -49,7 +49,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <meta name="description" content="">
   <meta name="keywords" content="">
     
-      <link rel="canonical" href="/tienda_assets/10-refacciones">
+      <link rel="canonical" href="/tienda/10-refacciones">
     
 
   
@@ -62,7 +62,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     "@@id": "#store-organization",
     "@@type": "Organization",
     "name" : "Mirage",
-    "url" : "/tienda_assets/",
+    "url" : "/tienda/",
   
       "logo": {
         "@@type": "ImageObject",
@@ -77,11 +77,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     "@@type": "WebPage",
     "isPartOf": {
       "@@type": "WebSite",
-      "url":  "/tienda_assets/",
+      "url":  "/tienda/",
       "name": "Mirage"
     },
     "name": "Refacciones",
-    "url":  "/tienda_assets/10-refacciones"
+    "url":  "/tienda/10-refacciones"
   }
 </script>
 
@@ -95,12 +95,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             "@@type": "ListItem",
             "position": 1,
             "name": "Inicio",
-            "item": "/tienda_assets/"
+            "item": "/tienda/"
           },              {
             "@@type": "ListItem",
             "position": 2,
             "name": "Refacciones",
-            "item": "/tienda_assets/10-refacciones"
+            "item": "/tienda/10-refacciones"
           }          ]
     }
   </script>
@@ -118,252 +118,252 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         "@@type": "ListItem",
         "position": 1,
         "name": "MOTOR CONDENSADOR 1 TON 110V",
-        "url": "/tienda_assets/refacciones/616-motor-condensador-1-ton-ykt-32-6-202l.html"
+        "url": "/tienda/refacciones/616-motor-condensador-1-ton-ykt-32-6-202l.html"
       },          {
         "@@type": "ListItem",
         "position": 2,
         "name": "Control remoto RG36B/BGE",
-        "url": "/tienda_assets/refacciones/957-control-remoto-rg36bbge.html"
+        "url": "/tienda/refacciones/957-control-remoto-rg36bbge.html"
       },          {
         "@@type": "ListItem",
         "position": 3,
         "name": "LAMPARA FILTRO UV-6W (ETAPA 6) H60",
-        "url": "/tienda_assets/refacciones/1392-lampara-filtro-uv-6w.html"
+        "url": "/tienda/refacciones/1392-lampara-filtro-uv-6w.html"
       },          {
         "@@type": "ListItem",
         "position": 4,
         "name": "Valvula de servicio",
-        "url": "/tienda_assets/refacciones/1354-valvula-de-servicioliquido-2-vias.html"
+        "url": "/tienda/refacciones/1354-valvula-de-servicioliquido-2-vias.html"
       },          {
         "@@type": "ListItem",
         "position": 5,
         "name": "MODULO DE TARJETA DE CONDENSADOR 2 TON CALOR, 220V, MAGNUM 19",
-        "url": "/tienda_assets/refacciones/1341-modulo-de-tarjeta-de-condensador-2-ton-calor-220v-magnum-19.html"
+        "url": "/tienda/refacciones/1341-modulo-de-tarjeta-de-condensador-2-ton-calor-220v-magnum-19.html"
       },          {
         "@@type": "ListItem",
         "position": 6,
         "name": "Tarjeta electrónica",
-        "url": "/tienda_assets/refacciones/1340-modulo-de-tarjetas-de-condensador-us1-kfr53w-bp3n1-b01pz.html"
+        "url": "/tienda/refacciones/1340-modulo-de-tarjetas-de-condensador-us1-kfr53w-bp3n1-b01pz.html"
       },          {
         "@@type": "ListItem",
         "position": 7,
         "name": "Tarjeta electrónica",
-        "url": "/tienda_assets/refacciones/1338-modulo-de-tarjetas-de-condensador-us1-kfr35w-bp3n1-b30s0.html"
+        "url": "/tienda/refacciones/1338-modulo-de-tarjetas-de-condensador-us1-kfr35w-bp3n1-b30s0.html"
       },          {
         "@@type": "ListItem",
         "position": 8,
         "name": "MODULO DE TARJETA DE CONDENSADOR 1 TON CALOR 110V MAGNUM 19",
-        "url": "/tienda_assets/refacciones/1336-modulo-de-tarjeta-de-condensador-1-ton-calor-110v-magnum-19.html"
+        "url": "/tienda/refacciones/1336-modulo-de-tarjeta-de-condensador-1-ton-calor-110v-magnum-19.html"
       },          {
         "@@type": "ListItem",
         "position": 9,
         "name": "Tarjeta electrónica",
-        "url": "/tienda_assets/refacciones/1335-tarjeta-de-evaporador-us1-kfr70g-bp3n1y-abeq.html"
+        "url": "/tienda/refacciones/1335-tarjeta-de-evaporador-us1-kfr70g-bp3n1y-abeq.html"
       },          {
         "@@type": "ListItem",
         "position": 10,
         "name": "Tarjeta electrónica",
-        "url": "/tienda_assets/refacciones/1331-tarjeta-de-evaporador-us1-kf51g-bp3n1y-a.html"
+        "url": "/tienda/refacciones/1331-tarjeta-de-evaporador-us1-kf51g-bp3n1y-a.html"
       },          {
         "@@type": "ListItem",
         "position": 11,
         "name": "TANQUE DE 8 LT - RO10TA8LM068",
-        "url": "/tienda_assets/refacciones/1268-tanque-de-8-lt-ro10ta8lm068.html"
+        "url": "/tienda/refacciones/1268-tanque-de-8-lt-ro10ta8lm068.html"
       },          {
         "@@type": "ListItem",
         "position": 12,
         "name": "Tarjeta electrónica",
-        "url": "/tienda_assets/refacciones/1322-kit-tarjetas-de-evaporador-mas-caja-de-control-us1-kfr67g-bp3n.html"
+        "url": "/tienda/refacciones/1322-kit-tarjetas-de-evaporador-mas-caja-de-control-us1-kfr67g-bp3n.html"
       },          {
         "@@type": "ListItem",
         "position": 13,
         "name": "Tarjeta electrónica",
-        "url": "/tienda_assets/refacciones/1319-kit-tarjeta-de-evaporador-mas-caja-de-control-us1-kfr35g-bp3n.html"
+        "url": "/tienda/refacciones/1319-kit-tarjeta-de-evaporador-mas-caja-de-control-us1-kfr35g-bp3n.html"
       },          {
         "@@type": "ListItem",
         "position": 14,
         "name": "TANQUE DE 4 LT - RO10TA4LM067",
-        "url": "/tienda_assets/refacciones/1267-tanque-de-4-lt-ro10ta4lm067.html"
+        "url": "/tienda/refacciones/1267-tanque-de-4-lt-ro10ta4lm067.html"
       },          {
         "@@type": "ListItem",
         "position": 15,
         "name": "Motor evaporador",
-        "url": "/tienda_assets/refacciones/1311-motor-evaporador-1-ton-zkfp-20-8-113.html"
+        "url": "/tienda/refacciones/1311-motor-evaporador-1-ton-zkfp-20-8-113.html"
       },          {
         "@@type": "ListItem",
         "position": 16,
         "name": "Aspa",
-        "url": "/tienda_assets/refacciones/1300-aspa-condensador-12100105000004.html"
+        "url": "/tienda/refacciones/1300-aspa-condensador-12100105000004.html"
       },          {
         "@@type": "ListItem",
         "position": 17,
         "name": "KIT DE FILTRO P/FÁBRICA DE HIELO - KFH5110",
-        "url": "/tienda_assets/refacciones/1249-kit-de-filtro-p-fabrica-de-hielo-kfh5110.html"
+        "url": "/tienda/refacciones/1249-kit-de-filtro-p-fabrica-de-hielo-kfh5110.html"
       },          {
         "@@type": "ListItem",
         "position": 18,
         "name": "CODO 90° - RO100CRM003",
-        "url": "/tienda_assets/refacciones/1218-codo-90-ro100crm003.html"
+        "url": "/tienda/refacciones/1218-codo-90-ro100crm003.html"
       },          {
         "@@type": "ListItem",
         "position": 19,
         "name": "FILTRO DE CARBON - RO20GACM033",
-        "url": "/tienda_assets/refacciones/1211-filtro-de-carbon-ro20gacm033.html"
+        "url": "/tienda/refacciones/1211-filtro-de-carbon-ro20gacm033.html"
       },          {
         "@@type": "ListItem",
         "position": 20,
         "name": "FILTRO DE CARBON - RO20CTOM032",
-        "url": "/tienda_assets/refacciones/1210-filtro-de-carbon-ro20ctom032.html"
+        "url": "/tienda/refacciones/1210-filtro-de-carbon-ro20ctom032.html"
       },          {
         "@@type": "ListItem",
         "position": 21,
         "name": "FILTRO PARA SEDIMENTO - FSQ1110",
-        "url": "/tienda_assets/refacciones/1208-filtro-para-sedimento-fsq1110.html"
+        "url": "/tienda/refacciones/1208-filtro-para-sedimento-fsq1110.html"
       },          {
         "@@type": "ListItem",
         "position": 22,
         "name": "FILTRO POST MEBRANA - FAQ5110",
-        "url": "/tienda_assets/refacciones/1207-filtro-post-mebrana-faq5110.html"
+        "url": "/tienda/refacciones/1207-filtro-post-mebrana-faq5110.html"
       },          {
         "@@type": "ListItem",
         "position": 23,
         "name": "TARJETA DISPLAY DISX 30 - 117300624",
-        "url": "/tienda_assets/refacciones/1180-tarjeta-display-disx-30-117300624.html"
+        "url": "/tienda/refacciones/1180-tarjeta-display-disx-30-117300624.html"
       },          {
         "@@type": "ListItem",
         "position": 24,
         "name": "TANQUE DE AGUA CALIENTE - 13320023805",
-        "url": "/tienda_assets/refacciones/1172-tanque-de-agua-caliente-13320023805.html"
+        "url": "/tienda/refacciones/1172-tanque-de-agua-caliente-13320023805.html"
       },          {
         "@@type": "ListItem",
         "position": 25,
         "name": "TAPÓN DE DESAGÜE - DA10BB04",
-        "url": "/tienda_assets/refacciones/1160-tapon-de-desague-da10bb04.html"
+        "url": "/tienda/refacciones/1160-tapon-de-desague-da10bb04.html"
       },          {
         "@@type": "ListItem",
         "position": 26,
         "name": "SET DE SWITCHES - DA10BB02",
-        "url": "/tienda_assets/refacciones/1159-set-de-switches-da10bb02.html"
+        "url": "/tienda/refacciones/1159-set-de-switches-da10bb02.html"
       },          {
         "@@type": "ListItem",
         "position": 27,
         "name": "CONDENSADOR PARA DISPENSADOR - MDD10CB-12",
-        "url": "/tienda_assets/refacciones/1142-condensador-para-dispensador-mdd10cb-12.html"
+        "url": "/tienda/refacciones/1142-condensador-para-dispensador-mdd10cb-12.html"
       },          {
         "@@type": "ListItem",
         "position": 28,
         "name": "TANQUE DE AGUA FRIA - MDD10CB-04",
-        "url": "/tienda_assets/refacciones/1137-tanque-de-agua-fria-mdd10cb-04.html"
+        "url": "/tienda/refacciones/1137-tanque-de-agua-fria-mdd10cb-04.html"
       },          {
         "@@type": "ListItem",
         "position": 29,
         "name": "TAPA SUPERIOR DE TANQUE - MDD10CB-03",
-        "url": "/tienda_assets/refacciones/1136-tapa-superior-de-tanque-mdd10cb-03.html"
+        "url": "/tienda/refacciones/1136-tapa-superior-de-tanque-mdd10cb-03.html"
       },          {
         "@@type": "ListItem",
         "position": 30,
         "name": "TAPA SUPERIOR - MDD10CB-02",
-        "url": "/tienda_assets/refacciones/1135-tapa-superior-mdd10cb-02.html"
+        "url": "/tienda/refacciones/1135-tapa-superior-mdd10cb-02.html"
       },          {
         "@@type": "ListItem",
         "position": 31,
         "name": "MANGUERA DE GAS - MANGAS38-80",
-        "url": "/tienda_assets/refacciones/1125-manguera-de-gas-mangas38-80.html"
+        "url": "/tienda/refacciones/1125-manguera-de-gas-mangas38-80.html"
       },          {
         "@@type": "ListItem",
         "position": 32,
         "name": "MANGUERA DE GAS - MANGAS38-60",
-        "url": "/tienda_assets/refacciones/1124-manguera-de-gas-mangas38-60.html"
+        "url": "/tienda/refacciones/1124-manguera-de-gas-mangas38-60.html"
       },          {
         "@@type": "ListItem",
         "position": 33,
         "name": "MANGUERA DE AGUA - MANAGUA12-60",
-        "url": "/tienda_assets/refacciones/1122-manguera-de-agua-managua12-60.html"
+        "url": "/tienda/refacciones/1122-manguera-de-agua-managua12-60.html"
       },          {
         "@@type": "ListItem",
         "position": 34,
         "name": "SISTEMA DE IGNICION DE PULSO - BB06SI",
-        "url": "/tienda_assets/refacciones/1108-sistema-de-ignicion-de-pulso-bb06si.html"
+        "url": "/tienda/refacciones/1108-sistema-de-ignicion-de-pulso-bb06si.html"
       },          {
         "@@type": "ListItem",
         "position": 35,
         "name": "SISTEMA DE IGNICION DE PULSO FLUX 6 BLANCO, MOD: MBF06ED/MBF06EF",
-        "url": "/tienda_assets/refacciones/1106-sistema-de-ignicion-de-pulso-02040100185.html"
+        "url": "/tienda/refacciones/1106-sistema-de-ignicion-de-pulso-02040100185.html"
       },          {
         "@@type": "ListItem",
         "position": 36,
         "name": "VALVULA DE LINEA DE GAS NATURAL, FLUX 6 LTS",
-        "url": "/tienda_assets/refacciones/1103-valvula-de-linea-de-gas-02090300549.html"
+        "url": "/tienda/refacciones/1103-valvula-de-linea-de-gas-02090300549.html"
       },          {
         "@@type": "ListItem",
         "position": 37,
         "name": "VALVULA DE LINEA DE GAS LP, FLUX 6 LTS",
-        "url": "/tienda_assets/refacciones/1102-valvula-de-linea-de-gas-02090300541.html"
+        "url": "/tienda/refacciones/1102-valvula-de-linea-de-gas-02090300541.html"
       },          {
         "@@type": "ListItem",
         "position": 38,
         "name": "SISTEMA DE IGNICION DE PULSO - BP06ZR09",
-        "url": "/tienda_assets/refacciones/1093-sistema-de-ignicion-de-pulso-bp06zr09.html"
+        "url": "/tienda/refacciones/1093-sistema-de-ignicion-de-pulso-bp06zr09.html"
       },          {
         "@@type": "ListItem",
         "position": 39,
         "name": "ELECTRODO DE ENCENDIDO - BPCHB06ZR06",
-        "url": "/tienda_assets/refacciones/1073-electrodo-de-encendido-bpchb06zr06.html"
+        "url": "/tienda/refacciones/1073-electrodo-de-encendido-bpchb06zr06.html"
       },          {
         "@@type": "ListItem",
         "position": 40,
         "name": "ELECTRODO DE ENCENDIDO PARA FLUX 10 Y 16 LTS",
-        "url": "/tienda_assets/refacciones/1052-electrodo-de-encendido-02040400004.html"
+        "url": "/tienda/refacciones/1052-electrodo-de-encendido-02040400004.html"
       },          {
         "@@type": "ListItem",
         "position": 41,
         "name": "KIT DE INSTALACIÓN MIRAGE  1/4 X 1/2 (Cobre)",
-        "url": "/tienda_assets/refacciones/1021-kit-de-instalacion-mirage-1-4-x-1-2-cobre.html"
+        "url": "/tienda/refacciones/1021-kit-de-instalacion-mirage-1-4-x-1-2-cobre.html"
       },          {
         "@@type": "ListItem",
         "position": 42,
         "name": "Aspa",
-        "url": "/tienda_assets/refacciones/923-aspa-condensador-12100105000084.html"
+        "url": "/tienda/refacciones/923-aspa-condensador-12100105000084.html"
       },          {
         "@@type": "ListItem",
         "position": 43,
         "name": "Transformador",
-        "url": "/tienda_assets/refacciones/988-transformador-x2.html"
+        "url": "/tienda/refacciones/988-transformador-x2.html"
       },          {
         "@@type": "ListItem",
         "position": 44,
         "name": "Refrigerante",
-        "url": "/tienda_assets/refacciones/1014-boya-de-gas-refrigerante-22-136kg.html"
+        "url": "/tienda/refacciones/1014-boya-de-gas-refrigerante-22-136kg.html"
       },          {
         "@@type": "ListItem",
         "position": 45,
         "name": "Aspa",
-        "url": "/tienda_assets/refacciones/931-aspa-condensador-12100105000051.html"
+        "url": "/tienda/refacciones/931-aspa-condensador-12100105000051.html"
       },          {
         "@@type": "ListItem",
         "position": 46,
         "name": "ASPA CONDENSADOR DIAMETRO 46 CM X ANCHO 14 CM (1.2)",
-        "url": "/tienda_assets/refacciones/928-aspa-condensador-diametro-46-cm-x-ancho-14-cm-12.html"
+        "url": "/tienda/refacciones/928-aspa-condensador-diametro-46-cm-x-ancho-14-cm-12.html"
       },          {
         "@@type": "ListItem",
         "position": 47,
         "name": "Aspa",
-        "url": "/tienda_assets/refacciones/922-aspa-condensador-12100105000181.html"
+        "url": "/tienda/refacciones/922-aspa-condensador-12100105000181.html"
       },          {
         "@@type": "ListItem",
         "position": 48,
         "name": "TURBINA IZQUIERDA EVAPORADOR LARGO 52.3 CM X DIAMETRO 10.8 CM(INT)",
-        "url": "/tienda_assets/refacciones/879-turbina-izquierda-evaporador-largo-523-cm-x-diametro-108-cmint.html"
+        "url": "/tienda/refacciones/879-turbina-izquierda-evaporador-largo-523-cm-x-diametro-108-cmint.html"
       },          {
         "@@type": "ListItem",
         "position": 49,
         "name": "Turbina ",
-        "url": "/tienda_assets/refacciones/886-turbina-12100102000084.html"
+        "url": "/tienda/refacciones/886-turbina-12100102000084.html"
       },          {
         "@@type": "ListItem",
         "position": 50,
         "name": "Turbina",
-        "url": "/tienda_assets/refacciones/884-turbina-12100102000131.html"
+        "url": "/tienda/refacciones/884-turbina-12100102000131.html"
       }        ]
   }
 </script>
@@ -373,12 +373,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                 
                             
-        <link rel="next" href="/tienda_assets/10-refacciones?page=2">  
+        <link rel="next" href="/tienda/10-refacciones?page=2">  
 
 
 
     <meta property="og:title" content="Refacciones"/>
-    <meta property="og:url" content="/tienda_assets/10-refacciones"/>
+    <meta property="og:url" content="/tienda/10-refacciones"/>
     <meta property="og:site_name" content="Mirage"/>
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
@@ -466,7 +466,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         var iqitmegamenu = {"sticky":"false","containerSelector":"#wrapper > .container"};
         var iqitreviews = [];
         var iqitwishlist = {"nbProducts":0};
-        var prestashop = {"cart":{"products":[],"totals":{"total":{"type":"total","label":"Total","amount":0,"value":"$0.00"},"total_including_tax":{"type":"total","label":"Total IVA inclu\u00eddo","amount":0,"value":"$0.00"},"total_excluding_tax":{"type":"total","label":"Total sin IVA","amount":0,"value":"$0.00"}},"subtotals":{"products":{"type":"products","label":"Subtotal","amount":0,"value":"$0.00"},"discounts":null,"shipping":{"type":"shipping","label":"Env\u00edo","amount":0,"value":""},"tax":null},"products_count":0,"summary_string":"0 articulos","vouchers":{"allowed":1,"added":[]},"discounts":[],"minimalPurchase":0,"minimalPurchaseRequired":""},"currency":{"id":1,"name":"Peso mexicano","iso_code":"MXN","iso_code_num":"484","sign":"$"},"customer":{"lastname":null,"firstname":null,"email":null,"birthday":null,"newsletter":null,"newsletter_date_add":null,"optin":null,"website":null,"company":null,"siret":null,"ape":null,"is_logged":false,"gender":{"type":null,"name":null},"addresses":[]},"language":{"name":"Espa\u00f1ol MX (Spanish)","iso_code":"mx","locale":"es-MX","language_code":"es-MX","is_rtl":"0","date_format_lite":"Y-m-d","date_format_full":"Y-m-d H:i:s","id":2},"page":{"title":"","canonical":"\/tienda\/10-refacciones","meta":{"title":"Refacciones","description":"","keywords":"","robots":"index"},"page_name":"category","body_classes":{"lang-mx":true,"lang-rtl":false,"country-MX":true,"currency-MXN":true,"layout-left-column":true,"page-category":true,"tax-display-enabled":true,"category-id-10":true,"category-Refacciones":true,"category-id-parent-2":true,"category-depth-level-2":true},"admin_notifications":[]},"shop":{"name":"Mirage","logo":"\/tienda\/img\/mirage-logo-1534899548.jpg","stores_icon":"\/tienda\/img\/logo_stores.png","favicon":"\/tienda\/img\/favicon.ico"},"urls":{"base_url":"\/tienda\/","current_url":"\/tienda\/10-refacciones","shop_domain_url":"https:\/\/www.tiendamirage.mx","img_ps_url":"\/tienda\/img\/","img_cat_url":"\/tienda\/img\/c\/","img_lang_url":"\/tienda\/img\/l\/","img_prod_url":"\/tienda\/img\/p\/","img_manu_url":"\/tienda\/img\/m\/","img_sup_url":"\/tienda\/img\/su\/","img_ship_url":"\/tienda\/img\/s\/","img_store_url":"\/tienda\/img\/st\/","img_col_url":"\/tienda\/img\/co\/","img_url":"\/tienda\/themes\/warehouse\/assets\/img\/","css_url":"\/tienda\/themes\/warehouse\/assets\/css\/","js_url":"\/tienda\/themes\/warehouse\/assets\/js\/","pic_url":"\/tienda\/upload\/","pages":{"address":"\/tienda\/direccion","addresses":"\/tienda\/direcciones","authentication":"\/tienda\/iniciar-sesion","cart":"\/tienda\/carrito","category":"\/tienda\/index.php?controller=category","cms":"\/tienda\/index.php?controller=cms","contact":"\/tienda\/contactenos","discount":"\/tienda\/descuento","guest_tracking":"\/tienda\/seguimiento-pedido-invitado","history":"\/tienda\/historial-compra","identity":"\/tienda\/datos-personales","index":"\/tienda\/","my_account":"\/tienda\/mi-cuenta","order_confirmation":"\/tienda\/confirmacion-pedido","order_detail":"\/tienda\/index.php?controller=order-detail","order_follow":"\/tienda\/seguimiento-pedido","order":"\/tienda\/pedido","order_return":"\/tienda\/index.php?controller=order-return","order_slip":"\/tienda\/nota-credito","pagenotfound":"\/tienda\/pagina-no-encontrada","password":"\/tienda\/recuperar-contrasena","pdf_invoice":"\/tienda\/index.php?controller=pdf-invoice","pdf_order_return":"\/tienda\/index.php?controller=pdf-order-return","pdf_order_slip":"\/tienda\/index.php?controller=pdf-order-slip","prices_drop":"\/tienda\/productos-rebajados","product":"\/tienda\/index.php?controller=product","search":"\/tienda\/busqueda","sitemap":"\/tienda\/Mapa del sitio","stores":"\/tienda\/tiendas","supplier":"\/tienda\/proveedor","register":"\/tienda\/iniciar-sesion?create_account=1","order_login":"\/tienda\/pedido?login=1"},"alternative_langs":[],"theme_assets":"\/themes\/warehouse\/assets\/","actions":{"logout":"\/tienda\/?mylogout="},"no_picture_image":{"bySize":{"small_default":{"url":"\/tienda\/img\/p\/mx-default-small_default.jpg","width":98,"height":127},"cart_default":{"url":"\/tienda\/img\/p\/mx-default-cart_default.jpg","width":125,"height":162},"home_default":{"url":"\/tienda\/img\/p\/mx-default-home_default.jpg","width":236,"height":305},"large_default":{"url":"\/tienda\/img\/p\/mx-default-large_default.jpg","width":381,"height":492},"medium_default":{"url":"\/tienda\/img\/p\/mx-default-medium_default.jpg","width":452,"height":584},"thickbox_default":{"url":"\/tienda\/img\/p\/mx-default-thickbox_default.jpg","width":1100,"height":1422}},"small":{"url":"\/tienda\/img\/p\/mx-default-small_default.jpg","width":98,"height":127},"medium":{"url":"\/tienda\/img\/p\/mx-default-large_default.jpg","width":381,"height":492},"large":{"url":"\/tienda\/img\/p\/mx-default-thickbox_default.jpg","width":1100,"height":1422},"legend":""}},"configuration":{"display_taxes_label":true,"display_prices_tax_incl":true,"is_catalog":false,"show_prices":true,"opt_in":{"partner":true},"quantity_discount":{"type":"price","label":"Precio Unitario"},"voucher_enabled":1,"return_enabled":0},"field_required":[],"breadcrumb":{"links":[{"title":"Inicio","url":"\/tienda\/"},{"title":"Refacciones","url":"\/tienda\/10-refacciones"}],"count":2},"link":{"protocol_link":"https:\/\/","protocol_content":"https:\/\/"},"time":1782411708,"static_token":"736faed44ac184681768e35d05df6cbd","token":"1da7720698848b23a01dc5e00a1f383c","debug":false};
+        var prestashop = {"cart":{"products":[],"totals":{"total":{"type":"total","label":"Total","amount":0,"value":"$0.00"},"total_including_tax":{"type":"total","label":"Total IVA inclu\u00eddo","amount":0,"value":"$0.00"},"total_excluding_tax":{"type":"total","label":"Total sin IVA","amount":0,"value":"$0.00"}},"subtotals":{"products":{"type":"products","label":"Subtotal","amount":0,"value":"$0.00"},"discounts":null,"shipping":{"type":"shipping","label":"Env\u00edo","amount":0,"value":""},"tax":null},"products_count":0,"summary_string":"0 articulos","vouchers":{"allowed":1,"added":[]},"discounts":[],"minimalPurchase":0,"minimalPurchaseRequired":""},"currency":{"id":1,"name":"Peso mexicano","iso_code":"MXN","iso_code_num":"484","sign":"$"},"customer":{"lastname":null,"firstname":null,"email":null,"birthday":null,"newsletter":null,"newsletter_date_add":null,"optin":null,"website":null,"company":null,"siret":null,"ape":null,"is_logged":false,"gender":{"type":null,"name":null},"addresses":[]},"language":{"name":"Espa\u00f1ol MX (Spanish)","iso_code":"mx","locale":"es-MX","language_code":"es-MX","is_rtl":"0","date_format_lite":"Y-m-d","date_format_full":"Y-m-d H:i:s","id":2},"page":{"title":"","canonical":"\/tienda\/10-refacciones","meta":{"title":"Refacciones","description":"","keywords":"","robots":"index"},"page_name":"category","body_classes":{"lang-mx":true,"lang-rtl":false,"country-MX":true,"currency-MXN":true,"layout-left-column":true,"page-category":true,"tax-display-enabled":true,"category-id-10":true,"category-Refacciones":true,"category-id-parent-2":true,"category-depth-level-2":true},"admin_notifications":[]},"shop":{"name":"Mirage","logo":"\/tienda_assets\/img\/mirage-logo-1534899548.jpg","stores_icon":"\/tienda_assets\/img\/logo_stores.png","favicon":"\/tienda_assets\/img\/favicon.ico"},"urls":{"base_url":"\/tienda\/","current_url":"\/tienda\/10-refacciones","shop_domain_url":"https:\/\/www.tiendamirage.mx","img_ps_url":"\/tienda_assets\/img\/","img_cat_url":"\/tienda_assets\/img\/c\/","img_lang_url":"\/tienda_assets\/img\/l\/","img_prod_url":"\/tienda_assets\/img\/p\/","img_manu_url":"\/tienda_assets\/img\/m\/","img_sup_url":"\/tienda_assets\/img\/su\/","img_ship_url":"\/tienda_assets\/img\/s\/","img_store_url":"\/tienda_assets\/img\/st\/","img_col_url":"\/tienda_assets\/img\/co\/","img_url":"\/tienda_assets\/themes\/warehouse\/assets\/img\/","css_url":"\/tienda_assets\/themes\/warehouse\/assets\/css\/","js_url":"\/tienda_assets\/themes\/warehouse\/assets\/js\/","pic_url":"\/tienda\/upload\/","pages":{"address":"\/tienda\/direccion","addresses":"\/tienda\/direcciones","authentication":"\/tienda\/iniciar-sesion","cart":"\/tienda\/carrito","category":"\/tienda\/index.php?controller=category","cms":"\/tienda\/index.php?controller=cms","contact":"\/tienda\/contactenos","discount":"\/tienda\/descuento","guest_tracking":"\/tienda\/seguimiento-pedido-invitado","history":"\/tienda\/historial-compra","identity":"\/tienda\/datos-personales","index":"\/tienda\/","my_account":"\/tienda\/mi-cuenta","order_confirmation":"\/tienda\/confirmacion-pedido","order_detail":"\/tienda\/index.php?controller=order-detail","order_follow":"\/tienda\/seguimiento-pedido","order":"\/tienda\/pedido","order_return":"\/tienda\/index.php?controller=order-return","order_slip":"\/tienda\/nota-credito","pagenotfound":"\/tienda\/pagina-no-encontrada","password":"\/tienda\/recuperar-contrasena","pdf_invoice":"\/tienda\/index.php?controller=pdf-invoice","pdf_order_return":"\/tienda\/index.php?controller=pdf-order-return","pdf_order_slip":"\/tienda\/index.php?controller=pdf-order-slip","prices_drop":"\/tienda\/productos-rebajados","product":"\/tienda\/index.php?controller=product","search":"\/tienda\/busqueda","sitemap":"\/tienda\/Mapa del sitio","stores":"\/tienda\/tiendas","supplier":"\/tienda\/proveedor","register":"\/tienda\/iniciar-sesion?create_account=1","order_login":"\/tienda\/pedido?login=1"},"alternative_langs":[],"theme_assets":"\/themes\/warehouse\/assets\/","actions":{"logout":"\/tienda\/?mylogout="},"no_picture_image":{"bySize":{"small_default":{"url":"\/tienda_assets\/img\/p\/mx-default-small_default.jpg","width":98,"height":127},"cart_default":{"url":"\/tienda_assets\/img\/p\/mx-default-cart_default.jpg","width":125,"height":162},"home_default":{"url":"\/tienda_assets\/img\/p\/mx-default-home_default.jpg","width":236,"height":305},"large_default":{"url":"\/tienda_assets\/img\/p\/mx-default-large_default.jpg","width":381,"height":492},"medium_default":{"url":"\/tienda_assets\/img\/p\/mx-default-medium_default.jpg","width":452,"height":584},"thickbox_default":{"url":"\/tienda_assets\/img\/p\/mx-default-thickbox_default.jpg","width":1100,"height":1422}},"small":{"url":"\/tienda_assets\/img\/p\/mx-default-small_default.jpg","width":98,"height":127},"medium":{"url":"\/tienda_assets\/img\/p\/mx-default-large_default.jpg","width":381,"height":492},"large":{"url":"\/tienda_assets\/img\/p\/mx-default-thickbox_default.jpg","width":1100,"height":1422},"legend":""}},"configuration":{"display_taxes_label":true,"display_prices_tax_incl":true,"is_catalog":false,"show_prices":true,"opt_in":{"partner":true},"quantity_discount":{"type":"price","label":"Precio Unitario"},"voucher_enabled":1,"return_enabled":0},"field_required":[],"breadcrumb":{"links":[{"title":"Inicio","url":"\/tienda\/"},{"title":"Refacciones","url":"\/tienda\/10-refacciones"}],"count":2},"link":{"protocol_link":"https:\/\/","protocol_content":"https:\/\/"},"time":1782411708,"static_token":"736faed44ac184681768e35d05df6cbd","token":"1da7720698848b23a01dc5e00a1f383c","debug":false};
         var psemailsubscription_subscription = "\/tienda\/module\/ps_emailsubscription\/subscription";
       </script>
 
@@ -509,11 +509,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     "@@type" : "WebPage",
     "isPartOf": [{
         "@@type":"WebSite",
-        "url":  "/tienda_assets/",
+        "url":  "/tienda/",
         "name": "Mirage"
     }],
     "name": "Refacciones",
-    "url": "/tienda_assets/10-refacciones"
+    "url": "/tienda/10-refacciones"
 }
 </script>
 
@@ -620,7 +620,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
              </div>
             <div class="col col-auto col-md right-nav text-right">
                 <div class="d-inline-block">
-    <a href="//www.tiendamirage.mx/module/iqitwishlist/view">
+    <a href="{{ route('wishlist.index') }}">
         <i class="fa fa-heart-o fa-fw" aria-hidden="true"></i> Lista de deseos (<span
                 id="iqitwishlist-nb"></span>)
     </a>
@@ -644,7 +644,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="col col-auto col-header-left">
                     <div id="desktop_logo">
                         
-  <a href="/tienda_assets/">
+  <a href="/tienda/">
     <img class="logo img-fluid"
          src="/tienda_assets/img/mirage-logo-1534899548.jpg"
                   alt="Mirage"
@@ -657,25 +657,57 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                 </div>
                 <div class="col col-header-center">
-                                        <!-- Block search module TOP -->
-
+                                        
 <!-- Block search module TOP -->
-<div id="search_widget" class="search-widget" data-search-controller-url="/tienda_assets/module/iqitsearch/searchiqit">
-    <form method="get" action="/tienda_assets/module/iqitsearch/searchiqit">
+<div id="search_widget" class="search-widget autocomplete-wrapper" data-search-controller-url="/buscar/autocomplete">
+    <form method="get" action="/buscar">
         <div class="input-group">
-            <input type="text" name="s" value="" data-all-text="Mostrar todos los resultados"
-                   data-blog-text="Blog post"
-                   data-product-text="Product"
-                   data-brands-text="Marca"
-                   autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
-                   placeholder="Buscar" class="form-control form-search-control" />
+            <input type="text" name="q" id="search-input" value="" placeholder="Buscar productos..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="form-control form-search-control" />
             <button type="submit" class="search-btn">
                 <i class="fa fa-search"></i>
             </button>
         </div>
     </form>
+    
+    <!-- Dropdown de Resultados -->
+    <div id="search-results" class="autocomplete-dropdown hidden">
+        <div id="search-results-list" class="autocomplete-list">
+            <!-- Resultados inyectados por JS -->
+        </div>
+        <div id="search-loading" class="autocomplete-loading hidden">
+            Buscando...
+        </div>
+    </div>
 </div>
+<style>
+.autocomplete-wrapper { position: relative; }
+.autocomplete-dropdown { 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    width: 100%; 
+    background: #fff; 
+    border: 1px solid #eee; 
+    border-radius: 4px; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+    z-index: 9999; 
+    margin-top: 5px;
+    overflow: hidden;
+}
+.autocomplete-dropdown.hidden { display: none !important; }
+.autocomplete-list { max-height: 400px; overflow-y: auto; }
+.autocomplete-item { display: flex; align-items: center; padding: 10px; border-bottom: 1px solid #f5f5f5; text-decoration: none; transition: background 0.2s; }
+.autocomplete-item:hover { background: #f9f9f9; text-decoration: none; }
+.autocomplete-img-container { width: 50px; height: 50px; flex-shrink: 0; background: #f5f5f5; border-radius: 4px; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.autocomplete-img-container img { width: 100%; height: 100%; object-fit: cover; }
+.autocomplete-details { margin-left: 15px; flex-grow: 1; }
+.autocomplete-title { font-size: 14px; font-weight: 500; color: #333; margin-bottom: 3px; display: block; }
+.autocomplete-price { font-size: 14px; font-weight: bold; color: #e62228; display: block; }
+.autocomplete-loading { padding: 15px; text-align: center; color: #777; font-size: 13px; }
+.autocomplete-empty { padding: 15px; text-align: center; color: #777; font-size: 13px; }
+</style>
 <!-- /Block search module TOP -->
+
 
 <!-- /Block search module TOP -->
 
@@ -687,7 +719,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     
                                             <div id="header-user-btn" class="col col-auto header-btn-w header-user-btn-w">
-            <a href="/tienda_assets/mi-cuenta"
+            <a href="/tienda/mi-cuenta"
            title="Acceda a su cuenta de cliente"
            rel="nofollow" class="header-btn header-user-btn">
             <i class="fa fa-user fa-fw icon" aria-hidden="true"></i>
@@ -713,14 +745,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
          class="header-btn-w header-cart-btn-w ps-shoppingcart dropdown">
          <div id="blockcart" class="blockcart cart-preview"
          data-refresh-url="//www.tiendamirage.mx/module/ps_shoppingcart/ajax">
-        <a id="cart-toogle" class="cart-toogle header-btn header-cart-btn" data-toggle="dropdown" data-display="static">
+        <a id="cart-toogle" href="{{ route('cart.index') }}" class="cart-toogle header-btn header-cart-btn" data-toggle="dropdown" data-display="static">
             <i class="fa fa-shopping-bag fa-fw icon" aria-hidden="true"><span class="cart-products-count-btn  d-none">0</span></i>
             <span class="info-wrapper">
             <span class="title">Carrito:</span>
-            <span class="cart-toggle-details">
-            <span class="text-faded cart-separator"> / </span>
-                            Vacío
-                        </span>
+            <span class="cart-toggle-details"><span class="text-faded cart-separator"> / </span>{{ $cartCount > 0 ? $cartCount . ' articulos' : 'Vacío' }}</span>
             </span>
         </a>
         <div id="_desktop_blockcart-content" class="dropdown-menu-custom dropdown-menu">
@@ -763,7 +792,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<ul>
 											<li id="cbp-hrmenu-tab-48"
 							class="cbp-hrmenu-tab cbp-hrmenu-tab-48 ">
-							<a href="/tienda_assets/10-refacciones" class="nav-link" 
+							<a href="/tienda/10-refacciones" class="nav-link" 
 										>
 										
 
@@ -773,7 +802,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 																</li>
 												<li id="cbp-hrmenu-tab-49"
 							class="cbp-hrmenu-tab cbp-hrmenu-tab-49 ">
-							<a href="/tienda_assets/11-aire-acondicionado" class="nav-link" 
+							<a href="/tienda/11-aire-acondicionado" class="nav-link" 
 										>
 										
 
@@ -783,7 +812,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 																</li>
 												<li id="cbp-hrmenu-tab-51"
 							class="cbp-hrmenu-tab cbp-hrmenu-tab-51 ">
-							<a href="/tienda_assets/13-linea-blanca" class="nav-link" 
+							<a href="/tienda/13-linea-blanca" class="nav-link" 
 										>
 										
 
@@ -793,7 +822,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 																</li>
 												<li id="cbp-hrmenu-tab-52"
 							class="cbp-hrmenu-tab cbp-hrmenu-tab-52 ">
-							<a href="/tienda_assets/17-herramientas" class="nav-link" 
+							<a href="/tienda/17-herramientas" class="nav-link" 
 										>
 										
 
@@ -803,7 +832,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 																</li>
 												<li id="cbp-hrmenu-tab-54"
 							class="cbp-hrmenu-tab cbp-hrmenu-tab-54 ">
-							<a href="/tienda_assets/14-souvenirs" class="nav-link" 
+							<a href="/tienda/14-souvenirs" class="nav-link" 
 										>
 										
 
@@ -813,7 +842,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 																</li>
 												<li id="cbp-hrmenu-tab-55"
 							class="cbp-hrmenu-tab cbp-hrmenu-tab-55 ">
-							<a href="/tienda_assets/24-outlet" class="nav-link" 
+							<a href="/tienda/24-outlet" class="nav-link" 
 										>
 										
 
@@ -866,8 +895,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 			
-	<li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/"  class="flex-fill mobile-menu__link ">Inicio</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/10-refacciones"  class="flex-fill mobile-menu__link ">Refacciones</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/11-aire-acondicionado"  class="flex-fill mobile-menu__link ">Aire Acondicionado</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/13-linea-blanca"  class="flex-fill mobile-menu__link js-mobile-menu__link-accordion--has-submenu  ">Línea Blanca</a><span class="mobile-menu__arrow js-mobile-menu__link-accordion--has-submenu"><i class="fa fa-angle-down mobile-menu__expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up mobile-menu__close-icon" aria-hidden="true"></i></span><div class="mobile-menu__tab-row-break"></div>
-	<ul class="mobile-menu__submenu  mobile-menu__submenu--accordion js-mobile-menu__submenu"><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/18-boiler"  class="flex-fill mobile-menu__link ">Boiler</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/19-campanas"  class="flex-fill mobile-menu__link ">Campanas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/21-dispensadores"  class="flex-fill mobile-menu__link ">Dispensadores</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/22-parillas"  class="flex-fill mobile-menu__link ">Parillas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/25-microondas"  class="flex-fill mobile-menu__link ">Microondas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/26-lavadoras"  class="flex-fill mobile-menu__link ">Lavadoras</a></li></ul>	</li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/14-souvenirs"  class="flex-fill mobile-menu__link ">Souvenirs</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/17-herramientas"  class="flex-fill mobile-menu__link ">Herramientas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/24-outlet"  class="flex-fill mobile-menu__link ">Outlet</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/contactenos"  class="flex-fill mobile-menu__link ">Contacto</a></li>	
+	<li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/"  class="flex-fill mobile-menu__link ">Inicio</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/10-refacciones"  class="flex-fill mobile-menu__link ">Refacciones</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/11-aire-acondicionado"  class="flex-fill mobile-menu__link ">Aire Acondicionado</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/13-linea-blanca"  class="flex-fill mobile-menu__link js-mobile-menu__link-accordion--has-submenu  ">Línea Blanca</a><span class="mobile-menu__arrow js-mobile-menu__link-accordion--has-submenu"><i class="fa fa-angle-down mobile-menu__expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up mobile-menu__close-icon" aria-hidden="true"></i></span><div class="mobile-menu__tab-row-break"></div>
+	<ul class="mobile-menu__submenu  mobile-menu__submenu--accordion js-mobile-menu__submenu"><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/18-boiler"  class="flex-fill mobile-menu__link ">Boiler</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/19-campanas"  class="flex-fill mobile-menu__link ">Campanas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/21-dispensadores"  class="flex-fill mobile-menu__link ">Dispensadores</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/22-parillas"  class="flex-fill mobile-menu__link ">Parillas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/25-microondas"  class="flex-fill mobile-menu__link ">Microondas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/26-lavadoras"  class="flex-fill mobile-menu__link ">Lavadoras</a></li></ul>	</li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/14-souvenirs"  class="flex-fill mobile-menu__link ">Souvenirs</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/17-herramientas"  class="flex-fill mobile-menu__link ">Herramientas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/24-outlet"  class="flex-fill mobile-menu__link ">Outlet</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/contactenos"  class="flex-fill mobile-menu__link ">Contacto</a></li>	
 												<li class="mobile-menu__below-content"> </li>
 				</ul>
 			</div>
@@ -903,7 +932,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 			<div class="mobile-menu__user">
-			<a href="/tienda_assets/mi-cuenta" class="text-reset"><i class="fa fa-user" aria-hidden="true"></i>
+			<a href="/tienda/mi-cuenta" class="text-reset"><i class="fa fa-user" aria-hidden="true"></i>
 				
 									Iniciar sesión
 								
@@ -925,7 +954,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="mobile-main-bar">
         <div class="col-mobile-logo text-center">
             
-  <a href="/tienda_assets/">
+  <a href="/tienda/">
     <img class="logo img-fluid"
          src="/tienda_assets/img/mirage-logo-1534899548.jpg"
                   alt="Mirage"
@@ -953,23 +982,57 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div id="search-widget-mobile" class="dropdown-content dropdown-menu dropdown-mobile search-widget">
                         
                                                     
+
 <!-- Block search module TOP -->
-<form method="get" action="/tienda_assets/module/iqitsearch/searchiqit">
-    <div class="input-group">
-        <input type="text" name="s" value=""
-               placeholder="Buscar"
-               data-all-text="Show all results"
-               data-blog-text="Blog post"
-               data-product-text="Product"
-               data-brands-text="Marca"
-               autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
-               class="form-control form-search-control">
-        <button type="submit" class="search-btn">
-            <i class="fa fa-search"></i>
-        </button>
+<div id="search_widget" class="search-widget autocomplete-wrapper" data-search-controller-url="/buscar/autocomplete">
+    <form method="get" action="/buscar">
+        <div class="input-group">
+            <input type="text" name="q" id="search-input" value="" placeholder="Buscar productos..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="form-control form-search-control" />
+            <button type="submit" class="search-btn">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+    </form>
+    
+    <!-- Dropdown de Resultados -->
+    <div id="search-results" class="autocomplete-dropdown hidden">
+        <div id="search-results-list" class="autocomplete-list">
+            <!-- Resultados inyectados por JS -->
+        </div>
+        <div id="search-loading" class="autocomplete-loading hidden">
+            Buscando...
+        </div>
     </div>
-</form>
+</div>
+<style>
+.autocomplete-wrapper { position: relative; }
+.autocomplete-dropdown { 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    width: 100%; 
+    background: #fff; 
+    border: 1px solid #eee; 
+    border-radius: 4px; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+    z-index: 9999; 
+    margin-top: 5px;
+    overflow: hidden;
+}
+.autocomplete-dropdown.hidden { display: none !important; }
+.autocomplete-list { max-height: 400px; overflow-y: auto; }
+.autocomplete-item { display: flex; align-items: center; padding: 10px; border-bottom: 1px solid #f5f5f5; text-decoration: none; transition: background 0.2s; }
+.autocomplete-item:hover { background: #f9f9f9; text-decoration: none; }
+.autocomplete-img-container { width: 50px; height: 50px; flex-shrink: 0; background: #f5f5f5; border-radius: 4px; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.autocomplete-img-container img { width: 100%; height: 100%; object-fit: cover; }
+.autocomplete-details { margin-left: 15px; flex-grow: 1; }
+.autocomplete-title { font-size: 14px; font-weight: 500; color: #333; margin-bottom: 3px; display: block; }
+.autocomplete-price { font-size: 14px; font-weight: bold; color: #e62228; display: block; }
+.autocomplete-loading { padding: 15px; text-align: center; color: #777; font-size: 13px; }
+.autocomplete-empty { padding: 15px; text-align: center; color: #777; font-size: 13px; }
+</style>
 <!-- /Block search module TOP -->
+
 
                                                 
                     </div>
@@ -977,7 +1040,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 </div>
                 <div class="col col-mobile-btn col-mobile-btn-account text-center">
-                    <a href="/tienda_assets/mi-cuenta" class="m-nav-btn"><i class="fa fa-user" aria-hidden="true"></i>
+                    <a href="/tienda/mi-cuenta" class="m-nav-btn"><i class="fa fa-user" aria-hidden="true"></i>
                         <span>     
                                                             Iniciar sesión
                                                         </span></a>
@@ -987,7 +1050,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                                 <div class="col col-mobile-btn col-mobile-btn-cart ps-shoppingcart text-center dropdown">
                    <div id="mobile-cart-wrapper">
-                    <a id="mobile-cart-toogle" class="m-nav-btn" data-display="static" data-toggle="dropdown"><i class="fa fa-shopping-bag mobile-bag-icon" aria-hidden="true"><span id="mobile-cart-products-count" class="cart-products-count cart-products-count-btn">
+                    <a id="mobile-cart-toogle" href="{{ route('cart.index') }}" class="m-nav-btn" data-display="static" data-toggle="dropdown"><i class="fa fa-shopping-bag mobile-bag-icon" aria-hidden="true"><span id="mobile-cart-products-count" class="cart-products-count cart-products-count-btn">
                                 
                                                                     0
                                                                 
@@ -1022,7 +1085,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                                  
                                                                             <li>
-                                            <a href="/tienda_assets/"><span>Inicio</span></a>
+                                            <a href="/tienda/"><span>Inicio</span></a>
                                         </li>
                                                                     
 
@@ -1103,8 +1166,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
                 <div class="col view-switcher">
-            <a href="/tienda_assets/10-refacciones?order=product.position.asc&productListView=grid" class="current js-search-link hidden-sm-down" data-button-action="change-list-view" data-view="grid"  rel="nofollow"><i class="fa fa-th" aria-hidden="true"></i></a>
-            <a href="/tienda_assets/10-refacciones?order=product.position.asc&productListView=list" class=" js-search-link hidden-sm-down" data-button-action="change-list-view" data-view="list"  rel="nofollow"><i class="fa fa-th-list" aria-hidden="true"></i></a>
+            <a href="/tienda/10-refacciones?order=product.position.asc&productListView=grid" class="current js-search-link hidden-sm-down" data-button-action="change-list-view" data-view="grid"  rel="nofollow"><i class="fa fa-th" aria-hidden="true"></i></a>
+            <a href="/tienda/10-refacciones?order=product.position.asc&productListView=list" class=" js-search-link hidden-sm-down" data-button-action="change-list-view" data-view="list"  rel="nofollow"><i class="fa fa-th-list" aria-hidden="true"></i></a>
         </div>
             
                     <div class="col col-auto col-left-sort">
@@ -1118,35 +1181,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="dropdown-menu">
                                                             <a
                     rel="nofollow"
-                    href="/tienda_assets/10-refacciones?order=product.position.asc"
+                    href="/tienda/10-refacciones?order=product.position.asc"
                     class="select-list dropdown-item current js-search-link"
             >
                 Relevancia
             </a>
                                 <a
                     rel="nofollow"
-                    href="/tienda_assets/10-refacciones?order=product.name.asc"
+                    href="/tienda/10-refacciones?order=product.name.asc"
                     class="select-list dropdown-item js-search-link"
             >
                 Nombre, A a la Z
             </a>
                                 <a
                     rel="nofollow"
-                    href="/tienda_assets/10-refacciones?order=product.name.desc"
+                    href="/tienda/10-refacciones?order=product.name.desc"
                     class="select-list dropdown-item js-search-link"
             >
                 Nombre, Z a la A
             </a>
                                 <a
                     rel="nofollow"
-                    href="/tienda_assets/10-refacciones?order=product.price.asc"
+                    href="/tienda/10-refacciones?order=product.price.asc"
                     class="select-list dropdown-item js-search-link"
             >
                 Menor al mayor precio
             </a>
                                 <a
                     rel="nofollow"
-                    href="/tienda_assets/10-refacciones?order=product.price.desc"
+                    href="/tienda/10-refacciones?order=product.price.desc"
                     class="select-list dropdown-item js-search-link"
             >
                 Mayor al menor precio
@@ -1204,7 +1267,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                 <li class="  current ">
                                                     <a
                                     rel="nofollow"
-                                    href="/tienda_assets/10-refacciones"
+                                    href="/tienda/10-refacciones"
                                                                                                             class="disabled js-search-link"
                                     data-after-click="backToTop"
                             >
@@ -1214,7 +1277,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                                 <li class=" ">
                                                     <a
                                     rel="nofollow"
-                                    href="/tienda_assets/10-refacciones?page=2"
+                                    href="/tienda/10-refacciones?page=2"
                                                                                                             class="js-search-link"
                                     data-after-click="backToTop"
                             >
@@ -1224,7 +1287,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                                 <li class=" ">
                                                     <a
                                     rel="nofollow"
-                                    href="/tienda_assets/10-refacciones?page=3"
+                                    href="/tienda/10-refacciones?page=3"
                                                                                                             class="js-search-link"
                                     data-after-click="backToTop"
                             >
@@ -1237,7 +1300,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                                 <li class=" ">
                                                     <a
                                     rel="nofollow"
-                                    href="/tienda_assets/10-refacciones?page=13"
+                                    href="/tienda/10-refacciones?page=13"
                                                                                                             class="js-search-link"
                                     data-after-click="backToTop"
                             >
@@ -1247,7 +1310,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                                 <li class=" ">
                                                     <a
                                     rel="next"
-                                    href="/tienda_assets/10-refacciones?page=2"
+                                    href="/tienda/10-refacciones?page=2"
                                      id="infinity-url-next"                                                                         class="next js-search-link"
                                     data-after-click="backToTop"
                             >
@@ -1285,20 +1348,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/616-motor-condensador-1-ton-ykt-32-6-202l.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/616-motor-condensador-1-ton-ykt-32-6-202l.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/6364-home_default/motor-condensador-1-ton-ykt-32-6-202l.jpg"
+                                                    data-src="/6364-home_default/motor-condensador-1-ton-ykt-32-6-202l.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="MOTOR CONDENSADOR 1 TON 110V"
-                        data-full-size-image-url="/tienda_assets/6364-thickbox_default/motor-condensador-1-ton-ykt-32-6-202l.jpg"
+                        data-full-size-image-url="/6364-thickbox_default/motor-condensador-1-ton-ykt-32-6-202l.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/6364-home_default/motor-condensador-1-ton-ykt-32-6-202l.jpg"
+                                        data-src="/6364-home_default/motor-condensador-1-ton-ykt-32-6-202l.jpg"
                                         width="236"
                                         height="305"
                                         alt="MOTOR CONDENSADOR 1 TON 110V 2"
@@ -1320,7 +1383,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="616"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -1351,7 +1414,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/616-motor-condensador-1-ton-ykt-32-6-202l.html">MOTOR CONDENSADOR 1 TON 110V</a>
+            <a href="/tienda/refacciones/616-motor-condensador-1-ton-ykt-32-6-202l.html">MOTOR CONDENSADOR 1 TON 110V</a>
         </h2>
     
 
@@ -1359,7 +1422,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/616-motor-condensador-1-ton-ykt-32-6-202l.html">11002012009440</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/616-motor-condensador-1-ton-ykt-32-6-202l.html">11002012009440</a></div>    
 
     
         
@@ -1371,7 +1434,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/616-motor-condensador-1-ton-ykt-32-6-202l.html"> <span  class="product-price" content="588.15" aria-label="Precio">
+                <a href="/tienda/refacciones/616-motor-condensador-1-ton-ykt-32-6-202l.html"> <span  class="product-price" content="588.15" aria-label="Precio">
                                                                             $588.15
                                             </span></a>
                                 
@@ -1387,7 +1450,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/616-motor-condensador-1-ton-ykt-32-6-202l.html">Motor condensador</a>
+            <a href="/tienda/refacciones/616-motor-condensador-1-ton-ykt-32-6-202l.html">Motor condensador</a>
         </div>
     
 
@@ -1396,7 +1459,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-616-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="616">
 
@@ -1450,20 +1513,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/957-control-remoto-rg36bbge.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/957-control-remoto-rg36bbge.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/6342-home_default/control-remoto-rg36bbge.jpg"
+                                                    data-src="/6342-home_default/control-remoto-rg36bbge.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Control remoto RG36B/BGE"
-                        data-full-size-image-url="/tienda_assets/6342-thickbox_default/control-remoto-rg36bbge.jpg"
+                        data-full-size-image-url="/6342-thickbox_default/control-remoto-rg36bbge.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/6342-home_default/control-remoto-rg36bbge.jpg"
+                                        data-src="/6342-home_default/control-remoto-rg36bbge.jpg"
                                         width="236"
                                         height="305"
                                         alt="Control remoto RG36B/BGE 2"
@@ -1485,7 +1548,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="957"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -1516,7 +1579,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/957-control-remoto-rg36bbge.html">Control remoto RG36B/BGE</a>
+            <a href="/tienda/refacciones/957-control-remoto-rg36bbge.html">Control remoto RG36B/BGE</a>
         </h2>
     
 
@@ -1524,7 +1587,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/957-control-remoto-rg36bbge.html">17317000A04731</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/957-control-remoto-rg36bbge.html">17317000A04731</a></div>    
 
     
         
@@ -1536,7 +1599,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/957-control-remoto-rg36bbge.html"> <span  class="product-price" content="649.1" aria-label="Precio">
+                <a href="/tienda/refacciones/957-control-remoto-rg36bbge.html"> <span  class="product-price" content="649.1" aria-label="Precio">
                                                                             $649.10
                                             </span></a>
                                 
@@ -1552,7 +1615,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/957-control-remoto-rg36bbge.html">Control remoto RG36B/BGE</a>
+            <a href="/tienda/refacciones/957-control-remoto-rg36bbge.html">Control remoto RG36B/BGE</a>
         </div>
     
 
@@ -1561,7 +1624,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-957-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="957">
 
@@ -1615,20 +1678,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1392-lampara-filtro-uv-6w.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1392-lampara-filtro-uv-6w.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/3027-home_default/lampara-filtro-uv-6w.jpg"
+                                                    data-src="/3027-home_default/lampara-filtro-uv-6w.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="LAMPARA FILTRO UV-6W (ETAPA 6) H60"
-                        data-full-size-image-url="/tienda_assets/3027-thickbox_default/lampara-filtro-uv-6w.jpg"
+                        data-full-size-image-url="/3027-thickbox_default/lampara-filtro-uv-6w.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/3028-home_default/lampara-filtro-uv-6w.jpg"
+                                        data-src="/3028-home_default/lampara-filtro-uv-6w.jpg"
                                         width="236"
                                         height="305"
                                         alt="LAMPARA FILTRO UV-6W (ETAPA 6) H60 2"
@@ -1650,7 +1713,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1392"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -1681,7 +1744,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1392-lampara-filtro-uv-6w.html">LAMPARA FILTRO UV-6W (ETAPA 6) H60</a>
+            <a href="/tienda/refacciones/1392-lampara-filtro-uv-6w.html">LAMPARA FILTRO UV-6W (ETAPA 6) H60</a>
         </h2>
     
 
@@ -1689,7 +1752,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1392-lampara-filtro-uv-6w.html">LUR6050</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1392-lampara-filtro-uv-6w.html">LUR6050</a></div>    
 
     
         
@@ -1701,7 +1764,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1392-lampara-filtro-uv-6w.html"> <span  class="product-price" content="875.5" aria-label="Precio">
+                <a href="/tienda/refacciones/1392-lampara-filtro-uv-6w.html"> <span  class="product-price" content="875.5" aria-label="Precio">
                                                                             $875.50
                                             </span></a>
                                 
@@ -1717,7 +1780,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1392-lampara-filtro-uv-6w.html">LAMPARA FILTRO UV 6W (ETAPA 6)</a>
+            <a href="/tienda/refacciones/1392-lampara-filtro-uv-6w.html">LAMPARA FILTRO UV 6W (ETAPA 6)</a>
         </div>
     
 
@@ -1726,7 +1789,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1392-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1392">
 
@@ -1780,20 +1843,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1354-valvula-de-servicioliquido-2-vias.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1354-valvula-de-servicioliquido-2-vias.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/8798-home_default/valvula-de-servicioliquido-2-vias.jpg"
+                                                    data-src="/8798-home_default/valvula-de-servicioliquido-2-vias.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Valvula de servicio"
-                        data-full-size-image-url="/tienda_assets/8798-thickbox_default/valvula-de-servicioliquido-2-vias.jpg"
+                        data-full-size-image-url="/8798-thickbox_default/valvula-de-servicioliquido-2-vias.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/8798-home_default/valvula-de-servicioliquido-2-vias.jpg"
+                                        data-src="/8798-home_default/valvula-de-servicioliquido-2-vias.jpg"
                                         width="236"
                                         height="305"
                                         alt="Valvula de servicio 2"
@@ -1815,7 +1878,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1354"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -1846,7 +1909,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1354-valvula-de-servicioliquido-2-vias.html">Valvula de servicio</a>
+            <a href="/tienda/refacciones/1354-valvula-de-servicioliquido-2-vias.html">Valvula de servicio</a>
         </h2>
     
 
@@ -1854,7 +1917,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1354-valvula-de-servicioliquido-2-vias.html">15500204000021</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1354-valvula-de-servicioliquido-2-vias.html">15500204000021</a></div>    
 
     
         
@@ -1866,7 +1929,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1354-valvula-de-servicioliquido-2-vias.html"> <span  class="product-price" content="167.27" aria-label="Precio">
+                <a href="/tienda/refacciones/1354-valvula-de-servicioliquido-2-vias.html"> <span  class="product-price" content="167.27" aria-label="Precio">
                                                                             $167.27
                                             </span></a>
                                 
@@ -1882,7 +1945,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1354-valvula-de-servicioliquido-2-vias.html">Valvula</a>
+            <a href="/tienda/refacciones/1354-valvula-de-servicioliquido-2-vias.html">Valvula</a>
         </div>
     
 
@@ -1891,7 +1954,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1354-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1354">
 
@@ -1945,20 +2008,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1341-modulo-de-tarjeta-de-condensador-2-ton-calor-220v-magnum-19.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1341-modulo-de-tarjeta-de-condensador-2-ton-calor-220v-magnum-19.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/7963-home_default/modulo-de-tarjeta-de-condensador-2-ton-calor-220v-magnum-19.jpg"
+                                                    data-src="/7963-home_default/modulo-de-tarjeta-de-condensador-2-ton-calor-220v-magnum-19.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="MODULO DE TARJETA DE CONDENSADOR 2 TON CALOR, 220V,..."
-                        data-full-size-image-url="/tienda_assets/7963-thickbox_default/modulo-de-tarjeta-de-condensador-2-ton-calor-220v-magnum-19.jpg"
+                        data-full-size-image-url="/7963-thickbox_default/modulo-de-tarjeta-de-condensador-2-ton-calor-220v-magnum-19.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/7963-home_default/modulo-de-tarjeta-de-condensador-2-ton-calor-220v-magnum-19.jpg"
+                                        data-src="/7963-home_default/modulo-de-tarjeta-de-condensador-2-ton-calor-220v-magnum-19.jpg"
                                         width="236"
                                         height="305"
                                         alt="MODULO DE TARJETA DE CONDENSADOR 2 TON CALOR, 220V,... 2"
@@ -1980,7 +2043,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1341"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2017,7 +2080,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1341-modulo-de-tarjeta-de-condensador-2-ton-calor-220v-magnum-19.html">MODULO DE TARJETA DE CONDENSADOR 2 TON CALOR, 220V, MAGNUM 19</a>
+            <a href="/tienda/refacciones/1341-modulo-de-tarjeta-de-condensador-2-ton-calor-220v-magnum-19.html">MODULO DE TARJETA DE CONDENSADOR 2 TON CALOR, 220V, MAGNUM 19</a>
         </h2>
     
 
@@ -2025,7 +2088,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1341-modulo-de-tarjeta-de-condensador-2-ton-calor-220v-magnum-19.html">17222000A55513</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1341-modulo-de-tarjeta-de-condensador-2-ton-calor-220v-magnum-19.html">17222000A55513</a></div>    
 
     
         
@@ -2037,7 +2100,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1341-modulo-de-tarjeta-de-condensador-2-ton-calor-220v-magnum-19.html"> <span  class="product-price" content="3101.38" aria-label="Precio">
+                <a href="/tienda/refacciones/1341-modulo-de-tarjeta-de-condensador-2-ton-calor-220v-magnum-19.html"> <span  class="product-price" content="3101.38" aria-label="Precio">
                                                                             $3,101.38
                                             </span></a>
                                 
@@ -2053,7 +2116,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1341-modulo-de-tarjeta-de-condensador-2-ton-calor-220v-magnum-19.html">Tarjeta de control</a>
+            <a href="/tienda/refacciones/1341-modulo-de-tarjeta-de-condensador-2-ton-calor-220v-magnum-19.html">Tarjeta de control</a>
         </div>
     
 
@@ -2062,7 +2125,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1341-0" >
 
                 
-            <a href="/tienda_assets/refacciones/1341-modulo-de-tarjeta-de-condensador-2-ton-calor-220v-magnum-19.html"
+            <a href="/tienda/refacciones/1341-modulo-de-tarjeta-de-condensador-2-ton-calor-220v-magnum-19.html"
            class="btn btn-product-list"
         > View
         </a>
@@ -2095,20 +2158,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1340-modulo-de-tarjetas-de-condensador-us1-kfr53w-bp3n1-b01pz.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1340-modulo-de-tarjetas-de-condensador-us1-kfr53w-bp3n1-b01pz.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/7958-home_default/modulo-de-tarjetas-de-condensador-us1-kfr53w-bp3n1-b01pz.jpg"
+                                                    data-src="/7958-home_default/modulo-de-tarjetas-de-condensador-us1-kfr53w-bp3n1-b01pz.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Tarjeta electrónica"
-                        data-full-size-image-url="/tienda_assets/7958-thickbox_default/modulo-de-tarjetas-de-condensador-us1-kfr53w-bp3n1-b01pz.jpg"
+                        data-full-size-image-url="/7958-thickbox_default/modulo-de-tarjetas-de-condensador-us1-kfr53w-bp3n1-b01pz.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/7958-home_default/modulo-de-tarjetas-de-condensador-us1-kfr53w-bp3n1-b01pz.jpg"
+                                        data-src="/7958-home_default/modulo-de-tarjetas-de-condensador-us1-kfr53w-bp3n1-b01pz.jpg"
                                         width="236"
                                         height="305"
                                         alt="Tarjeta electrónica 2"
@@ -2130,7 +2193,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1340"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2167,7 +2230,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1340-modulo-de-tarjetas-de-condensador-us1-kfr53w-bp3n1-b01pz.html">Tarjeta electrónica</a>
+            <a href="/tienda/refacciones/1340-modulo-de-tarjetas-de-condensador-us1-kfr53w-bp3n1-b01pz.html">Tarjeta electrónica</a>
         </h2>
     
 
@@ -2175,7 +2238,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1340-modulo-de-tarjetas-de-condensador-us1-kfr53w-bp3n1-b01pz.html">17122000A35375</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1340-modulo-de-tarjetas-de-condensador-us1-kfr53w-bp3n1-b01pz.html">17122000A35375</a></div>    
 
     
         
@@ -2187,7 +2250,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1340-modulo-de-tarjetas-de-condensador-us1-kfr53w-bp3n1-b01pz.html"> <span  class="product-price" content="3142.44" aria-label="Precio">
+                <a href="/tienda/refacciones/1340-modulo-de-tarjetas-de-condensador-us1-kfr53w-bp3n1-b01pz.html"> <span  class="product-price" content="3142.44" aria-label="Precio">
                                                                             $3,142.44
                                             </span></a>
                                 
@@ -2203,7 +2266,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1340-modulo-de-tarjetas-de-condensador-us1-kfr53w-bp3n1-b01pz.html">Tarjeta de control</a>
+            <a href="/tienda/refacciones/1340-modulo-de-tarjetas-de-condensador-us1-kfr53w-bp3n1-b01pz.html">Tarjeta de control</a>
         </div>
     
 
@@ -2212,7 +2275,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1340-0" >
 
                 
-            <a href="/tienda_assets/refacciones/1340-modulo-de-tarjetas-de-condensador-us1-kfr53w-bp3n1-b01pz.html"
+            <a href="/tienda/refacciones/1340-modulo-de-tarjetas-de-condensador-us1-kfr53w-bp3n1-b01pz.html"
            class="btn btn-product-list"
         > View
         </a>
@@ -2245,20 +2308,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1338-modulo-de-tarjetas-de-condensador-us1-kfr35w-bp3n1-b30s0.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1338-modulo-de-tarjetas-de-condensador-us1-kfr35w-bp3n1-b30s0.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/7952-home_default/modulo-de-tarjetas-de-condensador-us1-kfr35w-bp3n1-b30s0.jpg"
+                                                    data-src="/7952-home_default/modulo-de-tarjetas-de-condensador-us1-kfr35w-bp3n1-b30s0.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Tarjeta electrónica"
-                        data-full-size-image-url="/tienda_assets/7952-thickbox_default/modulo-de-tarjetas-de-condensador-us1-kfr35w-bp3n1-b30s0.jpg"
+                        data-full-size-image-url="/7952-thickbox_default/modulo-de-tarjetas-de-condensador-us1-kfr35w-bp3n1-b30s0.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/7952-home_default/modulo-de-tarjetas-de-condensador-us1-kfr35w-bp3n1-b30s0.jpg"
+                                        data-src="/7952-home_default/modulo-de-tarjetas-de-condensador-us1-kfr35w-bp3n1-b30s0.jpg"
                                         width="236"
                                         height="305"
                                         alt="Tarjeta electrónica 2"
@@ -2280,7 +2343,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1338"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2311,7 +2374,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1338-modulo-de-tarjetas-de-condensador-us1-kfr35w-bp3n1-b30s0.html">Tarjeta electrónica</a>
+            <a href="/tienda/refacciones/1338-modulo-de-tarjetas-de-condensador-us1-kfr35w-bp3n1-b30s0.html">Tarjeta electrónica</a>
         </h2>
     
 
@@ -2319,7 +2382,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1338-modulo-de-tarjetas-de-condensador-us1-kfr35w-bp3n1-b30s0.html">17122000A35374</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1338-modulo-de-tarjetas-de-condensador-us1-kfr35w-bp3n1-b30s0.html">17122000A35374</a></div>    
 
     
         
@@ -2331,7 +2394,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1338-modulo-de-tarjetas-de-condensador-us1-kfr35w-bp3n1-b30s0.html"> <span  class="product-price" content="2281.09" aria-label="Precio">
+                <a href="/tienda/refacciones/1338-modulo-de-tarjetas-de-condensador-us1-kfr35w-bp3n1-b30s0.html"> <span  class="product-price" content="2281.09" aria-label="Precio">
                                                                             $2,281.09
                                             </span></a>
                                 
@@ -2347,7 +2410,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1338-modulo-de-tarjetas-de-condensador-us1-kfr35w-bp3n1-b30s0.html">Tarjeta de control</a>
+            <a href="/tienda/refacciones/1338-modulo-de-tarjetas-de-condensador-us1-kfr35w-bp3n1-b30s0.html">Tarjeta de control</a>
         </div>
     
 
@@ -2356,7 +2419,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1338-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1338">
 
@@ -2410,20 +2473,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1336-modulo-de-tarjeta-de-condensador-1-ton-calor-110v-magnum-19.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1336-modulo-de-tarjeta-de-condensador-1-ton-calor-110v-magnum-19.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/7942-home_default/modulo-de-tarjeta-de-condensador-1-ton-calor-110v-magnum-19.jpg"
+                                                    data-src="/7942-home_default/modulo-de-tarjeta-de-condensador-1-ton-calor-110v-magnum-19.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="MODULO DE TARJETA DE CONDENSADOR 1 TON CALOR 110V MAGNUM 19"
-                        data-full-size-image-url="/tienda_assets/7942-thickbox_default/modulo-de-tarjeta-de-condensador-1-ton-calor-110v-magnum-19.jpg"
+                        data-full-size-image-url="/7942-thickbox_default/modulo-de-tarjeta-de-condensador-1-ton-calor-110v-magnum-19.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/7942-home_default/modulo-de-tarjeta-de-condensador-1-ton-calor-110v-magnum-19.jpg"
+                                        data-src="/7942-home_default/modulo-de-tarjeta-de-condensador-1-ton-calor-110v-magnum-19.jpg"
                                         width="236"
                                         height="305"
                                         alt="MODULO DE TARJETA DE CONDENSADOR 1 TON CALOR 110V MAGNUM 19 2"
@@ -2445,7 +2508,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1336"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2476,7 +2539,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1336-modulo-de-tarjeta-de-condensador-1-ton-calor-110v-magnum-19.html">MODULO DE TARJETA DE CONDENSADOR 1 TON CALOR 110V MAGNUM 19</a>
+            <a href="/tienda/refacciones/1336-modulo-de-tarjeta-de-condensador-1-ton-calor-110v-magnum-19.html">MODULO DE TARJETA DE CONDENSADOR 1 TON CALOR 110V MAGNUM 19</a>
         </h2>
     
 
@@ -2484,7 +2547,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1336-modulo-de-tarjeta-de-condensador-1-ton-calor-110v-magnum-19.html">17222000A55509</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1336-modulo-de-tarjeta-de-condensador-1-ton-calor-110v-magnum-19.html">17222000A55509</a></div>    
 
     
         
@@ -2496,7 +2559,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1336-modulo-de-tarjeta-de-condensador-1-ton-calor-110v-magnum-19.html"> <span  class="product-price" content="3067.61" aria-label="Precio">
+                <a href="/tienda/refacciones/1336-modulo-de-tarjeta-de-condensador-1-ton-calor-110v-magnum-19.html"> <span  class="product-price" content="3067.61" aria-label="Precio">
                                                                             $3,067.61
                                             </span></a>
                                 
@@ -2512,7 +2575,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1336-modulo-de-tarjeta-de-condensador-1-ton-calor-110v-magnum-19.html">TARJETA DE CONTROL17122000A35376, 17222000A55509.</a>
+            <a href="/tienda/refacciones/1336-modulo-de-tarjeta-de-condensador-1-ton-calor-110v-magnum-19.html">TARJETA DE CONTROL17122000A35376, 17222000A55509.</a>
         </div>
     
 
@@ -2521,7 +2584,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1336-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1336">
 
@@ -2575,20 +2638,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1335-tarjeta-de-evaporador-us1-kfr70g-bp3n1y-abeq.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1335-tarjeta-de-evaporador-us1-kfr70g-bp3n1y-abeq.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/7938-home_default/tarjeta-de-evaporador-us1-kfr70g-bp3n1y-abeq.jpg"
+                                                    data-src="/7938-home_default/tarjeta-de-evaporador-us1-kfr70g-bp3n1y-abeq.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Tarjeta electrónica"
-                        data-full-size-image-url="/tienda_assets/7938-thickbox_default/tarjeta-de-evaporador-us1-kfr70g-bp3n1y-abeq.jpg"
+                        data-full-size-image-url="/7938-thickbox_default/tarjeta-de-evaporador-us1-kfr70g-bp3n1y-abeq.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/7938-home_default/tarjeta-de-evaporador-us1-kfr70g-bp3n1y-abeq.jpg"
+                                        data-src="/7938-home_default/tarjeta-de-evaporador-us1-kfr70g-bp3n1y-abeq.jpg"
                                         width="236"
                                         height="305"
                                         alt="Tarjeta electrónica 2"
@@ -2610,7 +2673,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1335"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2641,7 +2704,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1335-tarjeta-de-evaporador-us1-kfr70g-bp3n1y-abeq.html">Tarjeta electrónica</a>
+            <a href="/tienda/refacciones/1335-tarjeta-de-evaporador-us1-kfr70g-bp3n1y-abeq.html">Tarjeta electrónica</a>
         </h2>
     
 
@@ -2649,7 +2712,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1335-tarjeta-de-evaporador-us1-kfr70g-bp3n1y-abeq.html">17122000A35717</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1335-tarjeta-de-evaporador-us1-kfr70g-bp3n1y-abeq.html">17122000A35717</a></div>    
 
     
         
@@ -2661,7 +2724,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1335-tarjeta-de-evaporador-us1-kfr70g-bp3n1y-abeq.html"> <span  class="product-price" content="865.01" aria-label="Precio">
+                <a href="/tienda/refacciones/1335-tarjeta-de-evaporador-us1-kfr70g-bp3n1y-abeq.html"> <span  class="product-price" content="865.01" aria-label="Precio">
                                                                             $865.01
                                             </span></a>
                                 
@@ -2677,7 +2740,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1335-tarjeta-de-evaporador-us1-kfr70g-bp3n1y-abeq.html">Tarjeta de control</a>
+            <a href="/tienda/refacciones/1335-tarjeta-de-evaporador-us1-kfr70g-bp3n1y-abeq.html">Tarjeta de control</a>
         </div>
     
 
@@ -2686,7 +2749,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1335-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1335">
 
@@ -2740,20 +2803,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1331-tarjeta-de-evaporador-us1-kf51g-bp3n1y-a.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1331-tarjeta-de-evaporador-us1-kf51g-bp3n1y-a.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/7919-home_default/tarjeta-de-evaporador-us1-kf51g-bp3n1y-a.jpg"
+                                                    data-src="/7919-home_default/tarjeta-de-evaporador-us1-kf51g-bp3n1y-a.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Tarjeta electrónica"
-                        data-full-size-image-url="/tienda_assets/7919-thickbox_default/tarjeta-de-evaporador-us1-kf51g-bp3n1y-a.jpg"
+                        data-full-size-image-url="/7919-thickbox_default/tarjeta-de-evaporador-us1-kf51g-bp3n1y-a.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/7919-home_default/tarjeta-de-evaporador-us1-kf51g-bp3n1y-a.jpg"
+                                        data-src="/7919-home_default/tarjeta-de-evaporador-us1-kf51g-bp3n1y-a.jpg"
                                         width="236"
                                         height="305"
                                         alt="Tarjeta electrónica 2"
@@ -2775,7 +2838,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1331"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2812,7 +2875,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1331-tarjeta-de-evaporador-us1-kf51g-bp3n1y-a.html">Tarjeta electrónica</a>
+            <a href="/tienda/refacciones/1331-tarjeta-de-evaporador-us1-kf51g-bp3n1y-a.html">Tarjeta electrónica</a>
         </h2>
     
 
@@ -2820,7 +2883,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1331-tarjeta-de-evaporador-us1-kf51g-bp3n1y-a.html">17122000A34112</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1331-tarjeta-de-evaporador-us1-kf51g-bp3n1y-a.html">17122000A34112</a></div>    
 
     
         
@@ -2832,7 +2895,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1331-tarjeta-de-evaporador-us1-kf51g-bp3n1y-a.html"> <span  class="product-price" content="793.47" aria-label="Precio">
+                <a href="/tienda/refacciones/1331-tarjeta-de-evaporador-us1-kf51g-bp3n1y-a.html"> <span  class="product-price" content="793.47" aria-label="Precio">
                                                                             $793.47
                                             </span></a>
                                 
@@ -2848,7 +2911,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1331-tarjeta-de-evaporador-us1-kf51g-bp3n1y-a.html">Tarjeta de control</a>
+            <a href="/tienda/refacciones/1331-tarjeta-de-evaporador-us1-kf51g-bp3n1y-a.html">Tarjeta de control</a>
         </div>
     
 
@@ -2857,7 +2920,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1331-0" >
 
                 
-            <a href="/tienda_assets/refacciones/1331-tarjeta-de-evaporador-us1-kf51g-bp3n1y-a.html"
+            <a href="/tienda/refacciones/1331-tarjeta-de-evaporador-us1-kf51g-bp3n1y-a.html"
            class="btn btn-product-list"
         > View
         </a>
@@ -2890,20 +2953,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1268-tanque-de-8-lt-ro10ta8lm068.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1268-tanque-de-8-lt-ro10ta8lm068.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/2419-home_default/tanque-de-8-lt-ro10ta8lm068.jpg"
+                                                    data-src="/2419-home_default/tanque-de-8-lt-ro10ta8lm068.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="TANQUE DE 8 LT - RO10TA8LM068"
-                        data-full-size-image-url="/tienda_assets/2419-thickbox_default/tanque-de-8-lt-ro10ta8lm068.jpg"
+                        data-full-size-image-url="/2419-thickbox_default/tanque-de-8-lt-ro10ta8lm068.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/2418-home_default/tanque-de-8-lt-ro10ta8lm068.jpg"
+                                        data-src="/2418-home_default/tanque-de-8-lt-ro10ta8lm068.jpg"
                                         width="236"
                                         height="305"
                                         alt="TANQUE DE 8 LT - RO10TA8LM068 2"
@@ -2925,7 +2988,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1268"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2956,7 +3019,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1268-tanque-de-8-lt-ro10ta8lm068.html">TANQUE DE 8 LT - RO10TA8LM068</a>
+            <a href="/tienda/refacciones/1268-tanque-de-8-lt-ro10ta8lm068.html">TANQUE DE 8 LT - RO10TA8LM068</a>
         </h2>
     
 
@@ -2964,7 +3027,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1268-tanque-de-8-lt-ro10ta8lm068.html">RO10TA8LM068</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1268-tanque-de-8-lt-ro10ta8lm068.html">RO10TA8LM068</a></div>    
 
     
         
@@ -2976,7 +3039,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1268-tanque-de-8-lt-ro10ta8lm068.html"> <span  class="product-price" content="284.77" aria-label="Precio">
+                <a href="/tienda/refacciones/1268-tanque-de-8-lt-ro10ta8lm068.html"> <span  class="product-price" content="284.77" aria-label="Precio">
                                                                             $284.77
                                             </span></a>
                                 
@@ -2992,7 +3055,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1268-tanque-de-8-lt-ro10ta8lm068.html">TANQUE DE 8 LT - RO10TA8LM068</a>
+            <a href="/tienda/refacciones/1268-tanque-de-8-lt-ro10ta8lm068.html">TANQUE DE 8 LT - RO10TA8LM068</a>
         </div>
     
 
@@ -3001,7 +3064,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1268-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1268">
 
@@ -3055,20 +3118,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1322-kit-tarjetas-de-evaporador-mas-caja-de-control-us1-kfr67g-bp3n.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1322-kit-tarjetas-de-evaporador-mas-caja-de-control-us1-kfr67g-bp3n.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/7882-home_default/kit-tarjetas-de-evaporador-mas-caja-de-control-us1-kfr67g-bp3n.jpg"
+                                                    data-src="/7882-home_default/kit-tarjetas-de-evaporador-mas-caja-de-control-us1-kfr67g-bp3n.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Tarjeta electrónica"
-                        data-full-size-image-url="/tienda_assets/7882-thickbox_default/kit-tarjetas-de-evaporador-mas-caja-de-control-us1-kfr67g-bp3n.jpg"
+                        data-full-size-image-url="/7882-thickbox_default/kit-tarjetas-de-evaporador-mas-caja-de-control-us1-kfr67g-bp3n.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/7882-home_default/kit-tarjetas-de-evaporador-mas-caja-de-control-us1-kfr67g-bp3n.jpg"
+                                        data-src="/7882-home_default/kit-tarjetas-de-evaporador-mas-caja-de-control-us1-kfr67g-bp3n.jpg"
                                         width="236"
                                         height="305"
                                         alt="Tarjeta electrónica 2"
@@ -3090,7 +3153,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1322"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -3121,7 +3184,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1322-kit-tarjetas-de-evaporador-mas-caja-de-control-us1-kfr67g-bp3n.html">Tarjeta electrónica</a>
+            <a href="/tienda/refacciones/1322-kit-tarjetas-de-evaporador-mas-caja-de-control-us1-kfr67g-bp3n.html">Tarjeta electrónica</a>
         </h2>
     
 
@@ -3129,7 +3192,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1322-kit-tarjetas-de-evaporador-mas-caja-de-control-us1-kfr67g-bp3n.html">17222000A20671</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1322-kit-tarjetas-de-evaporador-mas-caja-de-control-us1-kfr67g-bp3n.html">17222000A20671</a></div>    
 
     
         
@@ -3141,7 +3204,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1322-kit-tarjetas-de-evaporador-mas-caja-de-control-us1-kfr67g-bp3n.html"> <span  class="product-price" content="1044.14" aria-label="Precio">
+                <a href="/tienda/refacciones/1322-kit-tarjetas-de-evaporador-mas-caja-de-control-us1-kfr67g-bp3n.html"> <span  class="product-price" content="1044.14" aria-label="Precio">
                                                                             $1,044.14
                                             </span></a>
                                 
@@ -3157,7 +3220,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1322-kit-tarjetas-de-evaporador-mas-caja-de-control-us1-kfr67g-bp3n.html">Tarjeta de control</a>
+            <a href="/tienda/refacciones/1322-kit-tarjetas-de-evaporador-mas-caja-de-control-us1-kfr67g-bp3n.html">Tarjeta de control</a>
         </div>
     
 
@@ -3166,7 +3229,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1322-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1322">
 
@@ -3220,20 +3283,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1319-kit-tarjeta-de-evaporador-mas-caja-de-control-us1-kfr35g-bp3n.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1319-kit-tarjeta-de-evaporador-mas-caja-de-control-us1-kfr35g-bp3n.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/7859-home_default/kit-tarjeta-de-evaporador-mas-caja-de-control-us1-kfr35g-bp3n.jpg"
+                                                    data-src="/7859-home_default/kit-tarjeta-de-evaporador-mas-caja-de-control-us1-kfr35g-bp3n.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Tarjeta electrónica"
-                        data-full-size-image-url="/tienda_assets/7859-thickbox_default/kit-tarjeta-de-evaporador-mas-caja-de-control-us1-kfr35g-bp3n.jpg"
+                        data-full-size-image-url="/7859-thickbox_default/kit-tarjeta-de-evaporador-mas-caja-de-control-us1-kfr35g-bp3n.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/7859-home_default/kit-tarjeta-de-evaporador-mas-caja-de-control-us1-kfr35g-bp3n.jpg"
+                                        data-src="/7859-home_default/kit-tarjeta-de-evaporador-mas-caja-de-control-us1-kfr35g-bp3n.jpg"
                                         width="236"
                                         height="305"
                                         alt="Tarjeta electrónica 2"
@@ -3255,7 +3318,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1319"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -3286,7 +3349,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1319-kit-tarjeta-de-evaporador-mas-caja-de-control-us1-kfr35g-bp3n.html">Tarjeta electrónica</a>
+            <a href="/tienda/refacciones/1319-kit-tarjeta-de-evaporador-mas-caja-de-control-us1-kfr35g-bp3n.html">Tarjeta electrónica</a>
         </h2>
     
 
@@ -3294,7 +3357,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1319-kit-tarjeta-de-evaporador-mas-caja-de-control-us1-kfr35g-bp3n.html">17222000A20769</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1319-kit-tarjeta-de-evaporador-mas-caja-de-control-us1-kfr35g-bp3n.html">17222000A20769</a></div>    
 
     
         
@@ -3306,7 +3369,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1319-kit-tarjeta-de-evaporador-mas-caja-de-control-us1-kfr35g-bp3n.html"> <span  class="product-price" content="1044.14" aria-label="Precio">
+                <a href="/tienda/refacciones/1319-kit-tarjeta-de-evaporador-mas-caja-de-control-us1-kfr35g-bp3n.html"> <span  class="product-price" content="1044.14" aria-label="Precio">
                                                                             $1,044.14
                                             </span></a>
                                 
@@ -3322,7 +3385,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1319-kit-tarjeta-de-evaporador-mas-caja-de-control-us1-kfr35g-bp3n.html">Tarjeta de control</a>
+            <a href="/tienda/refacciones/1319-kit-tarjeta-de-evaporador-mas-caja-de-control-us1-kfr35g-bp3n.html">Tarjeta de control</a>
         </div>
     
 
@@ -3331,7 +3394,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1319-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1319">
 
@@ -3385,20 +3448,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1267-tanque-de-4-lt-ro10ta4lm067.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1267-tanque-de-4-lt-ro10ta4lm067.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/2416-home_default/tanque-de-4-lt-ro10ta4lm067.jpg"
+                                                    data-src="/2416-home_default/tanque-de-4-lt-ro10ta4lm067.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="TANQUE DE 4 LT - RO10TA4LM067"
-                        data-full-size-image-url="/tienda_assets/2416-thickbox_default/tanque-de-4-lt-ro10ta4lm067.jpg"
+                        data-full-size-image-url="/2416-thickbox_default/tanque-de-4-lt-ro10ta4lm067.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/2417-home_default/tanque-de-4-lt-ro10ta4lm067.jpg"
+                                        data-src="/2417-home_default/tanque-de-4-lt-ro10ta4lm067.jpg"
                                         width="236"
                                         height="305"
                                         alt="TANQUE DE 4 LT - RO10TA4LM067 2"
@@ -3420,7 +3483,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1267"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -3457,7 +3520,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1267-tanque-de-4-lt-ro10ta4lm067.html">TANQUE DE 4 LT - RO10TA4LM067</a>
+            <a href="/tienda/refacciones/1267-tanque-de-4-lt-ro10ta4lm067.html">TANQUE DE 4 LT - RO10TA4LM067</a>
         </h2>
     
 
@@ -3465,7 +3528,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1267-tanque-de-4-lt-ro10ta4lm067.html">RO10TA4LM067</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1267-tanque-de-4-lt-ro10ta4lm067.html">RO10TA4LM067</a></div>    
 
     
         
@@ -3477,7 +3540,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1267-tanque-de-4-lt-ro10ta4lm067.html"> <span  class="product-price" content="240.96" aria-label="Precio">
+                <a href="/tienda/refacciones/1267-tanque-de-4-lt-ro10ta4lm067.html"> <span  class="product-price" content="240.96" aria-label="Precio">
                                                                             $240.96
                                             </span></a>
                                 
@@ -3493,7 +3556,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1267-tanque-de-4-lt-ro10ta4lm067.html">TANQUE DE 4 LT - RO10TA4LM067</a>
+            <a href="/tienda/refacciones/1267-tanque-de-4-lt-ro10ta4lm067.html">TANQUE DE 4 LT - RO10TA4LM067</a>
         </div>
     
 
@@ -3502,7 +3565,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1267-0" >
 
                 
-            <a href="/tienda_assets/refacciones/1267-tanque-de-4-lt-ro10ta4lm067.html"
+            <a href="/tienda/refacciones/1267-tanque-de-4-lt-ro10ta4lm067.html"
            class="btn btn-product-list"
         > View
         </a>
@@ -3535,20 +3598,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1311-motor-evaporador-1-ton-zkfp-20-8-113.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1311-motor-evaporador-1-ton-zkfp-20-8-113.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/7127-home_default/motor-evaporador-1-ton-zkfp-20-8-113.jpg"
+                                                    data-src="/7127-home_default/motor-evaporador-1-ton-zkfp-20-8-113.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Motor evaporador"
-                        data-full-size-image-url="/tienda_assets/7127-thickbox_default/motor-evaporador-1-ton-zkfp-20-8-113.jpg"
+                        data-full-size-image-url="/7127-thickbox_default/motor-evaporador-1-ton-zkfp-20-8-113.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/7127-home_default/motor-evaporador-1-ton-zkfp-20-8-113.jpg"
+                                        data-src="/7127-home_default/motor-evaporador-1-ton-zkfp-20-8-113.jpg"
                                         width="236"
                                         height="305"
                                         alt="Motor evaporador 2"
@@ -3570,7 +3633,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1311"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -3607,7 +3670,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1311-motor-evaporador-1-ton-zkfp-20-8-113.html">Motor evaporador</a>
+            <a href="/tienda/refacciones/1311-motor-evaporador-1-ton-zkfp-20-8-113.html">Motor evaporador</a>
         </h2>
     
 
@@ -3615,7 +3678,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1311-motor-evaporador-1-ton-zkfp-20-8-113.html">11002015006201</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1311-motor-evaporador-1-ton-zkfp-20-8-113.html">11002015006201</a></div>    
 
     
         
@@ -3627,7 +3690,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1311-motor-evaporador-1-ton-zkfp-20-8-113.html"> <span  class="product-price" content="1137.51" aria-label="Precio">
+                <a href="/tienda/refacciones/1311-motor-evaporador-1-ton-zkfp-20-8-113.html"> <span  class="product-price" content="1137.51" aria-label="Precio">
                                                                             $1,137.51
                                             </span></a>
                                 
@@ -3643,7 +3706,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1311-motor-evaporador-1-ton-zkfp-20-8-113.html">Motor evaporador</a>
+            <a href="/tienda/refacciones/1311-motor-evaporador-1-ton-zkfp-20-8-113.html">Motor evaporador</a>
         </div>
     
 
@@ -3652,7 +3715,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1311-0" >
 
                 
-            <a href="/tienda_assets/refacciones/1311-motor-evaporador-1-ton-zkfp-20-8-113.html"
+            <a href="/tienda/refacciones/1311-motor-evaporador-1-ton-zkfp-20-8-113.html"
            class="btn btn-product-list"
         > View
         </a>
@@ -3685,20 +3748,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1300-aspa-condensador-12100105000004.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1300-aspa-condensador-12100105000004.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/6453-home_default/aspa-condensador-12100105000004.jpg"
+                                                    data-src="/6453-home_default/aspa-condensador-12100105000004.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Aspa"
-                        data-full-size-image-url="/tienda_assets/6453-thickbox_default/aspa-condensador-12100105000004.jpg"
+                        data-full-size-image-url="/6453-thickbox_default/aspa-condensador-12100105000004.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/6453-home_default/aspa-condensador-12100105000004.jpg"
+                                        data-src="/6453-home_default/aspa-condensador-12100105000004.jpg"
                                         width="236"
                                         height="305"
                                         alt="Aspa 2"
@@ -3720,7 +3783,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1300"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -3751,15 +3814,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1300-aspa-condensador-12100105000004.html">Aspa</a>
+            <a href="/tienda/refacciones/1300-aspa-condensador-12100105000004.html">Aspa</a>
         </h2>
     
 
     
-                    <div class="product-brand text-muted"> <a href="/tienda_assets/refacciones/1300-aspa-condensador-12100105000004.html">MIRAGE</a></div>    
+                    <div class="product-brand text-muted"> <a href="/tienda/refacciones/1300-aspa-condensador-12100105000004.html">MIRAGE</a></div>    
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1300-aspa-condensador-12100105000004.html">12100105000004</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1300-aspa-condensador-12100105000004.html">12100105000004</a></div>    
 
     
         
@@ -3771,7 +3834,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1300-aspa-condensador-12100105000004.html"> <span  class="product-price" content="357.37" aria-label="Precio">
+                <a href="/tienda/refacciones/1300-aspa-condensador-12100105000004.html"> <span  class="product-price" content="357.37" aria-label="Precio">
                                                                             $357.37
                                             </span></a>
                                 
@@ -3787,7 +3850,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1300-aspa-condensador-12100105000004.html">Aspa condensador</a>
+            <a href="/tienda/refacciones/1300-aspa-condensador-12100105000004.html">Aspa condensador</a>
         </div>
     
 
@@ -3796,7 +3859,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1300-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1300">
 
@@ -3850,20 +3913,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1249-kit-de-filtro-p-fabrica-de-hielo-kfh5110.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1249-kit-de-filtro-p-fabrica-de-hielo-kfh5110.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/2378-home_default/kit-de-filtro-p-fabrica-de-hielo-kfh5110.jpg"
+                                                    data-src="/2378-home_default/kit-de-filtro-p-fabrica-de-hielo-kfh5110.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="KIT DE FILTRO P/FÁBRICA DE HIELO - KFH5110"
-                        data-full-size-image-url="/tienda_assets/2378-thickbox_default/kit-de-filtro-p-fabrica-de-hielo-kfh5110.jpg"
+                        data-full-size-image-url="/2378-thickbox_default/kit-de-filtro-p-fabrica-de-hielo-kfh5110.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/2379-home_default/kit-de-filtro-p-fabrica-de-hielo-kfh5110.jpg"
+                                        data-src="/2379-home_default/kit-de-filtro-p-fabrica-de-hielo-kfh5110.jpg"
                                         width="236"
                                         height="305"
                                         alt="KIT DE FILTRO P/FÁBRICA DE HIELO - KFH5110 2"
@@ -3885,7 +3948,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1249"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -3916,7 +3979,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1249-kit-de-filtro-p-fabrica-de-hielo-kfh5110.html">KIT DE FILTRO P/FÁBRICA DE HIELO - KFH5110</a>
+            <a href="/tienda/refacciones/1249-kit-de-filtro-p-fabrica-de-hielo-kfh5110.html">KIT DE FILTRO P/FÁBRICA DE HIELO - KFH5110</a>
         </h2>
     
 
@@ -3924,7 +3987,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1249-kit-de-filtro-p-fabrica-de-hielo-kfh5110.html">KFH5110</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1249-kit-de-filtro-p-fabrica-de-hielo-kfh5110.html">KFH5110</a></div>    
 
     
         
@@ -3936,7 +3999,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1249-kit-de-filtro-p-fabrica-de-hielo-kfh5110.html"> <span  class="product-price" content="318.07" aria-label="Precio">
+                <a href="/tienda/refacciones/1249-kit-de-filtro-p-fabrica-de-hielo-kfh5110.html"> <span  class="product-price" content="318.07" aria-label="Precio">
                                                                             $318.07
                                             </span></a>
                                 
@@ -3952,7 +4015,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1249-kit-de-filtro-p-fabrica-de-hielo-kfh5110.html">KIT DE FILTRO P/FÁBRICA DE HIELO - KFH5110</a>
+            <a href="/tienda/refacciones/1249-kit-de-filtro-p-fabrica-de-hielo-kfh5110.html">KIT DE FILTRO P/FÁBRICA DE HIELO - KFH5110</a>
         </div>
     
 
@@ -3961,7 +4024,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1249-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1249">
 
@@ -4015,20 +4078,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1218-codo-90-ro100crm003.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1218-codo-90-ro100crm003.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/2313-home_default/codo-90-ro100crm003.jpg"
+                                                    data-src="/2313-home_default/codo-90-ro100crm003.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="CODO 90° - RO100CRM003"
-                        data-full-size-image-url="/tienda_assets/2313-thickbox_default/codo-90-ro100crm003.jpg"
+                        data-full-size-image-url="/2313-thickbox_default/codo-90-ro100crm003.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/2314-home_default/codo-90-ro100crm003.jpg"
+                                        data-src="/2314-home_default/codo-90-ro100crm003.jpg"
                                         width="236"
                                         height="305"
                                         alt="CODO 90° - RO100CRM003 2"
@@ -4050,7 +4113,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1218"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -4081,7 +4144,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1218-codo-90-ro100crm003.html">CODO 90° - RO100CRM003</a>
+            <a href="/tienda/refacciones/1218-codo-90-ro100crm003.html">CODO 90° - RO100CRM003</a>
         </h2>
     
 
@@ -4089,7 +4152,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1218-codo-90-ro100crm003.html">RO100CRM003</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1218-codo-90-ro100crm003.html">RO100CRM003</a></div>    
 
     
         
@@ -4101,7 +4164,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1218-codo-90-ro100crm003.html"> <span  class="product-price" content="28.93" aria-label="Precio">
+                <a href="/tienda/refacciones/1218-codo-90-ro100crm003.html"> <span  class="product-price" content="28.93" aria-label="Precio">
                                                                             $28.93
                                             </span></a>
                                 
@@ -4117,7 +4180,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1218-codo-90-ro100crm003.html">CODO 90° - RO100CRM003</a>
+            <a href="/tienda/refacciones/1218-codo-90-ro100crm003.html">CODO 90° - RO100CRM003</a>
         </div>
     
 
@@ -4126,7 +4189,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1218-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1218">
 
@@ -4180,13 +4243,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1211-filtro-de-carbon-ro20gacm033.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1211-filtro-de-carbon-ro20gacm033.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/2301-home_default/filtro-de-carbon-ro20gacm033.jpg"
+                                                    data-src="/2301-home_default/filtro-de-carbon-ro20gacm033.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="FILTRO DE CARBON - RO20GACM033"
-                        data-full-size-image-url="/tienda_assets/2301-thickbox_default/filtro-de-carbon-ro20gacm033.jpg"
+                        data-full-size-image-url="/2301-thickbox_default/filtro-de-carbon-ro20gacm033.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
@@ -4207,7 +4270,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1211"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -4238,7 +4301,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1211-filtro-de-carbon-ro20gacm033.html">FILTRO DE CARBON - RO20GACM033</a>
+            <a href="/tienda/refacciones/1211-filtro-de-carbon-ro20gacm033.html">FILTRO DE CARBON - RO20GACM033</a>
         </h2>
     
 
@@ -4246,7 +4309,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1211-filtro-de-carbon-ro20gacm033.html">RO20GACM033</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1211-filtro-de-carbon-ro20gacm033.html">RO20GACM033</a></div>    
 
     
         
@@ -4258,7 +4321,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1211-filtro-de-carbon-ro20gacm033.html"> <span  class="product-price" content="97.83" aria-label="Precio">
+                <a href="/tienda/refacciones/1211-filtro-de-carbon-ro20gacm033.html"> <span  class="product-price" content="97.83" aria-label="Precio">
                                                                             $97.83
                                             </span></a>
                                 
@@ -4274,7 +4337,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1211-filtro-de-carbon-ro20gacm033.html">FILTRO DE CARBON - RO20GACM033</a>
+            <a href="/tienda/refacciones/1211-filtro-de-carbon-ro20gacm033.html">FILTRO DE CARBON - RO20GACM033</a>
         </div>
     
 
@@ -4283,7 +4346,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1211-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1211">
 
@@ -4337,13 +4400,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1210-filtro-de-carbon-ro20ctom032.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1210-filtro-de-carbon-ro20ctom032.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/2300-home_default/filtro-de-carbon-ro20ctom032.jpg"
+                                                    data-src="/2300-home_default/filtro-de-carbon-ro20ctom032.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="FILTRO DE CARBON - RO20CTOM032"
-                        data-full-size-image-url="/tienda_assets/2300-thickbox_default/filtro-de-carbon-ro20ctom032.jpg"
+                        data-full-size-image-url="/2300-thickbox_default/filtro-de-carbon-ro20ctom032.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
@@ -4364,7 +4427,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1210"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -4395,7 +4458,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1210-filtro-de-carbon-ro20ctom032.html">FILTRO DE CARBON - RO20CTOM032</a>
+            <a href="/tienda/refacciones/1210-filtro-de-carbon-ro20ctom032.html">FILTRO DE CARBON - RO20CTOM032</a>
         </h2>
     
 
@@ -4403,7 +4466,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1210-filtro-de-carbon-ro20ctom032.html">RO20CTOM032</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1210-filtro-de-carbon-ro20ctom032.html">RO20CTOM032</a></div>    
 
     
         
@@ -4415,7 +4478,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1210-filtro-de-carbon-ro20ctom032.html"> <span  class="product-price" content="50.39" aria-label="Precio">
+                <a href="/tienda/refacciones/1210-filtro-de-carbon-ro20ctom032.html"> <span  class="product-price" content="50.39" aria-label="Precio">
                                                                             $50.39
                                             </span></a>
                                 
@@ -4431,7 +4494,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1210-filtro-de-carbon-ro20ctom032.html">FILTRO DE CARBON - RO20CTOM032</a>
+            <a href="/tienda/refacciones/1210-filtro-de-carbon-ro20ctom032.html">FILTRO DE CARBON - RO20CTOM032</a>
         </div>
     
 
@@ -4440,7 +4503,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1210-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1210">
 
@@ -4494,20 +4557,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1208-filtro-para-sedimento-fsq1110.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1208-filtro-para-sedimento-fsq1110.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/2295-home_default/filtro-para-sedimento-fsq1110.jpg"
+                                                    data-src="/2295-home_default/filtro-para-sedimento-fsq1110.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="FILTRO PARA SEDIMENTO - FSQ1110"
-                        data-full-size-image-url="/tienda_assets/2295-thickbox_default/filtro-para-sedimento-fsq1110.jpg"
+                        data-full-size-image-url="/2295-thickbox_default/filtro-para-sedimento-fsq1110.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/2296-home_default/filtro-para-sedimento-fsq1110.jpg"
+                                        data-src="/2296-home_default/filtro-para-sedimento-fsq1110.jpg"
                                         width="236"
                                         height="305"
                                         alt="FILTRO PARA SEDIMENTO - FSQ1110 2"
@@ -4529,7 +4592,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1208"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -4560,7 +4623,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1208-filtro-para-sedimento-fsq1110.html">FILTRO PARA SEDIMENTO - FSQ1110</a>
+            <a href="/tienda/refacciones/1208-filtro-para-sedimento-fsq1110.html">FILTRO PARA SEDIMENTO - FSQ1110</a>
         </h2>
     
 
@@ -4568,7 +4631,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1208-filtro-para-sedimento-fsq1110.html">FSQ1110</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1208-filtro-para-sedimento-fsq1110.html">FSQ1110</a></div>    
 
     
         
@@ -4580,7 +4643,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1208-filtro-para-sedimento-fsq1110.html"> <span  class="product-price" content="104.92" aria-label="Precio">
+                <a href="/tienda/refacciones/1208-filtro-para-sedimento-fsq1110.html"> <span  class="product-price" content="104.92" aria-label="Precio">
                                                                             $104.92
                                             </span></a>
                                 
@@ -4596,7 +4659,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1208-filtro-para-sedimento-fsq1110.html">FILTRO PARA SEDIMENTO - FSQ1110</a>
+            <a href="/tienda/refacciones/1208-filtro-para-sedimento-fsq1110.html">FILTRO PARA SEDIMENTO - FSQ1110</a>
         </div>
     
 
@@ -4605,7 +4668,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1208-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1208">
 
@@ -4659,20 +4722,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1207-filtro-post-mebrana-faq5110.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1207-filtro-post-mebrana-faq5110.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/2293-home_default/filtro-post-mebrana-faq5110.jpg"
+                                                    data-src="/2293-home_default/filtro-post-mebrana-faq5110.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="FILTRO POST MEBRANA - FAQ5110"
-                        data-full-size-image-url="/tienda_assets/2293-thickbox_default/filtro-post-mebrana-faq5110.jpg"
+                        data-full-size-image-url="/2293-thickbox_default/filtro-post-mebrana-faq5110.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/2294-home_default/filtro-post-mebrana-faq5110.jpg"
+                                        data-src="/2294-home_default/filtro-post-mebrana-faq5110.jpg"
                                         width="236"
                                         height="305"
                                         alt="FILTRO POST MEBRANA - FAQ5110 2"
@@ -4694,7 +4757,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1207"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -4725,7 +4788,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1207-filtro-post-mebrana-faq5110.html">FILTRO POST MEBRANA - FAQ5110</a>
+            <a href="/tienda/refacciones/1207-filtro-post-mebrana-faq5110.html">FILTRO POST MEBRANA - FAQ5110</a>
         </h2>
     
 
@@ -4733,7 +4796,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1207-filtro-post-mebrana-faq5110.html">FAQ5110</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1207-filtro-post-mebrana-faq5110.html">FAQ5110</a></div>    
 
     
         
@@ -4745,7 +4808,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1207-filtro-post-mebrana-faq5110.html"> <span  class="product-price" content="96.38" aria-label="Precio">
+                <a href="/tienda/refacciones/1207-filtro-post-mebrana-faq5110.html"> <span  class="product-price" content="96.38" aria-label="Precio">
                                                                             $96.38
                                             </span></a>
                                 
@@ -4761,7 +4824,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1207-filtro-post-mebrana-faq5110.html">FILTRO POST MEBRANA - FAQ5110</a>
+            <a href="/tienda/refacciones/1207-filtro-post-mebrana-faq5110.html">FILTRO POST MEBRANA - FAQ5110</a>
         </div>
     
 
@@ -4770,7 +4833,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1207-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1207">
 
@@ -4824,13 +4887,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1180-tarjeta-display-disx-30-117300624.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1180-tarjeta-display-disx-30-117300624.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/2227-home_default/tarjeta-display-disx-30-117300624.jpg"
+                                                    data-src="/2227-home_default/tarjeta-display-disx-30-117300624.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="TARJETA DISPLAY DISX 30 - 117300624"
-                        data-full-size-image-url="/tienda_assets/2227-thickbox_default/tarjeta-display-disx-30-117300624.jpg"
+                        data-full-size-image-url="/2227-thickbox_default/tarjeta-display-disx-30-117300624.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
@@ -4851,7 +4914,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1180"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -4882,7 +4945,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1180-tarjeta-display-disx-30-117300624.html">TARJETA DISPLAY DISX 30 - 117300624</a>
+            <a href="/tienda/refacciones/1180-tarjeta-display-disx-30-117300624.html">TARJETA DISPLAY DISX 30 - 117300624</a>
         </h2>
     
 
@@ -4890,7 +4953,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1180-tarjeta-display-disx-30-117300624.html">117300624</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1180-tarjeta-display-disx-30-117300624.html">117300624</a></div>    
 
     
         
@@ -4902,7 +4965,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1180-tarjeta-display-disx-30-117300624.html"> <span  class="product-price" content="339.74" aria-label="Precio">
+                <a href="/tienda/refacciones/1180-tarjeta-display-disx-30-117300624.html"> <span  class="product-price" content="339.74" aria-label="Precio">
                                                                             $339.74
                                             </span></a>
                                 
@@ -4918,7 +4981,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1180-tarjeta-display-disx-30-117300624.html">TARJETA LED - 117300624</a>
+            <a href="/tienda/refacciones/1180-tarjeta-display-disx-30-117300624.html">TARJETA LED - 117300624</a>
         </div>
     
 
@@ -4927,7 +4990,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1180-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1180">
 
@@ -4981,20 +5044,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1172-tanque-de-agua-caliente-13320023805.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1172-tanque-de-agua-caliente-13320023805.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/2208-home_default/tanque-de-agua-caliente-13320023805.jpg"
+                                                    data-src="/2208-home_default/tanque-de-agua-caliente-13320023805.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="TANQUE DE AGUA CALIENTE - 13320023805"
-                        data-full-size-image-url="/tienda_assets/2208-thickbox_default/tanque-de-agua-caliente-13320023805.jpg"
+                        data-full-size-image-url="/2208-thickbox_default/tanque-de-agua-caliente-13320023805.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/2209-home_default/tanque-de-agua-caliente-13320023805.jpg"
+                                        data-src="/2209-home_default/tanque-de-agua-caliente-13320023805.jpg"
                                         width="236"
                                         height="305"
                                         alt="TANQUE DE AGUA CALIENTE - 13320023805 2"
@@ -5016,7 +5079,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1172"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -5047,7 +5110,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1172-tanque-de-agua-caliente-13320023805.html">TANQUE DE AGUA CALIENTE - 13320023805</a>
+            <a href="/tienda/refacciones/1172-tanque-de-agua-caliente-13320023805.html">TANQUE DE AGUA CALIENTE - 13320023805</a>
         </h2>
     
 
@@ -5055,7 +5118,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1172-tanque-de-agua-caliente-13320023805.html">13320023805</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1172-tanque-de-agua-caliente-13320023805.html">13320023805</a></div>    
 
     
         
@@ -5067,7 +5130,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1172-tanque-de-agua-caliente-13320023805.html"> <span  class="product-price" content="556.21" aria-label="Precio">
+                <a href="/tienda/refacciones/1172-tanque-de-agua-caliente-13320023805.html"> <span  class="product-price" content="556.21" aria-label="Precio">
                                                                             $556.21
                                             </span></a>
                                 
@@ -5083,7 +5146,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1172-tanque-de-agua-caliente-13320023805.html">TANQUE DE AGUA CALIENTE - 13320023805</a>
+            <a href="/tienda/refacciones/1172-tanque-de-agua-caliente-13320023805.html">TANQUE DE AGUA CALIENTE - 13320023805</a>
         </div>
     
 
@@ -5092,7 +5155,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1172-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1172">
 
@@ -5146,13 +5209,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1160-tapon-de-desague-da10bb04.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1160-tapon-de-desague-da10bb04.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/2183-home_default/tapon-de-desague-da10bb04.jpg"
+                                                    data-src="/2183-home_default/tapon-de-desague-da10bb04.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="TAPÓN DE DESAGÜE - DA10BB04"
-                        data-full-size-image-url="/tienda_assets/2183-thickbox_default/tapon-de-desague-da10bb04.jpg"
+                        data-full-size-image-url="/2183-thickbox_default/tapon-de-desague-da10bb04.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
@@ -5173,7 +5236,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1160"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -5204,7 +5267,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1160-tapon-de-desague-da10bb04.html">TAPÓN DE DESAGÜE - DA10BB04</a>
+            <a href="/tienda/refacciones/1160-tapon-de-desague-da10bb04.html">TAPÓN DE DESAGÜE - DA10BB04</a>
         </h2>
     
 
@@ -5212,7 +5275,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1160-tapon-de-desague-da10bb04.html">DA10BB04</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1160-tapon-de-desague-da10bb04.html">DA10BB04</a></div>    
 
     
         
@@ -5224,7 +5287,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1160-tapon-de-desague-da10bb04.html"> <span  class="product-price" content="6.58" aria-label="Precio">
+                <a href="/tienda/refacciones/1160-tapon-de-desague-da10bb04.html"> <span  class="product-price" content="6.58" aria-label="Precio">
                                                                             $6.58
                                             </span></a>
                                 
@@ -5240,7 +5303,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1160-tapon-de-desague-da10bb04.html">TAPÓN DE DESAGÜE - DA10BB04</a>
+            <a href="/tienda/refacciones/1160-tapon-de-desague-da10bb04.html">TAPÓN DE DESAGÜE - DA10BB04</a>
         </div>
     
 
@@ -5249,7 +5312,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1160-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1160">
 
@@ -5303,20 +5366,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1159-set-de-switches-da10bb02.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1159-set-de-switches-da10bb02.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/2181-home_default/set-de-switches-da10bb02.jpg"
+                                                    data-src="/2181-home_default/set-de-switches-da10bb02.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="SET DE SWITCHES - DA10BB02"
-                        data-full-size-image-url="/tienda_assets/2181-thickbox_default/set-de-switches-da10bb02.jpg"
+                        data-full-size-image-url="/2181-thickbox_default/set-de-switches-da10bb02.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/2182-home_default/set-de-switches-da10bb02.jpg"
+                                        data-src="/2182-home_default/set-de-switches-da10bb02.jpg"
                                         width="236"
                                         height="305"
                                         alt="SET DE SWITCHES - DA10BB02 2"
@@ -5338,7 +5401,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1159"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -5369,7 +5432,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1159-set-de-switches-da10bb02.html">SET DE SWITCHES - DA10BB02</a>
+            <a href="/tienda/refacciones/1159-set-de-switches-da10bb02.html">SET DE SWITCHES - DA10BB02</a>
         </h2>
     
 
@@ -5377,7 +5440,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1159-set-de-switches-da10bb02.html">DA10BB02</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1159-set-de-switches-da10bb02.html">DA10BB02</a></div>    
 
     
         
@@ -5389,7 +5452,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1159-set-de-switches-da10bb02.html"> <span  class="product-price" content="81.06" aria-label="Precio">
+                <a href="/tienda/refacciones/1159-set-de-switches-da10bb02.html"> <span  class="product-price" content="81.06" aria-label="Precio">
                                                                             $81.06
                                             </span></a>
                                 
@@ -5405,7 +5468,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1159-set-de-switches-da10bb02.html">SET DE SWITCHES - DA10BB02</a>
+            <a href="/tienda/refacciones/1159-set-de-switches-da10bb02.html">SET DE SWITCHES - DA10BB02</a>
         </div>
     
 
@@ -5414,7 +5477,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1159-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1159">
 
@@ -5468,20 +5531,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1142-condensador-para-dispensador-mdd10cb-12.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1142-condensador-para-dispensador-mdd10cb-12.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/2146-home_default/condensador-para-dispensador-mdd10cb-12.jpg"
+                                                    data-src="/2146-home_default/condensador-para-dispensador-mdd10cb-12.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="CONDENSADOR PARA DISPENSADOR - MDD10CB-12"
-                        data-full-size-image-url="/tienda_assets/2146-thickbox_default/condensador-para-dispensador-mdd10cb-12.jpg"
+                        data-full-size-image-url="/2146-thickbox_default/condensador-para-dispensador-mdd10cb-12.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/2147-home_default/condensador-para-dispensador-mdd10cb-12.jpg"
+                                        data-src="/2147-home_default/condensador-para-dispensador-mdd10cb-12.jpg"
                                         width="236"
                                         height="305"
                                         alt="CONDENSADOR PARA DISPENSADOR - MDD10CB-12 2"
@@ -5503,7 +5566,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1142"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -5534,7 +5597,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1142-condensador-para-dispensador-mdd10cb-12.html">CONDENSADOR PARA DISPENSADOR - MDD10CB-12</a>
+            <a href="/tienda/refacciones/1142-condensador-para-dispensador-mdd10cb-12.html">CONDENSADOR PARA DISPENSADOR - MDD10CB-12</a>
         </h2>
     
 
@@ -5542,7 +5605,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1142-condensador-para-dispensador-mdd10cb-12.html">MDD10CB-12</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1142-condensador-para-dispensador-mdd10cb-12.html">MDD10CB-12</a></div>    
 
     
         
@@ -5554,7 +5617,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1142-condensador-para-dispensador-mdd10cb-12.html"> <span  class="product-price" content="144.57" aria-label="Precio">
+                <a href="/tienda/refacciones/1142-condensador-para-dispensador-mdd10cb-12.html"> <span  class="product-price" content="144.57" aria-label="Precio">
                                                                             $144.57
                                             </span></a>
                                 
@@ -5570,7 +5633,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1142-condensador-para-dispensador-mdd10cb-12.html">CONDENSADOR PARA DISPENSADOR - MDD10CB-12</a>
+            <a href="/tienda/refacciones/1142-condensador-para-dispensador-mdd10cb-12.html">CONDENSADOR PARA DISPENSADOR - MDD10CB-12</a>
         </div>
     
 
@@ -5579,7 +5642,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1142-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1142">
 
@@ -5633,20 +5696,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1137-tanque-de-agua-fria-mdd10cb-04.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1137-tanque-de-agua-fria-mdd10cb-04.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/2136-home_default/tanque-de-agua-fria-mdd10cb-04.jpg"
+                                                    data-src="/2136-home_default/tanque-de-agua-fria-mdd10cb-04.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="TANQUE DE AGUA FRIA - MDD10CB-04"
-                        data-full-size-image-url="/tienda_assets/2136-thickbox_default/tanque-de-agua-fria-mdd10cb-04.jpg"
+                        data-full-size-image-url="/2136-thickbox_default/tanque-de-agua-fria-mdd10cb-04.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/2137-home_default/tanque-de-agua-fria-mdd10cb-04.jpg"
+                                        data-src="/2137-home_default/tanque-de-agua-fria-mdd10cb-04.jpg"
                                         width="236"
                                         height="305"
                                         alt="TANQUE DE AGUA FRIA - MDD10CB-04 2"
@@ -5668,7 +5731,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1137"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -5699,7 +5762,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1137-tanque-de-agua-fria-mdd10cb-04.html">TANQUE DE AGUA FRIA - MDD10CB-04</a>
+            <a href="/tienda/refacciones/1137-tanque-de-agua-fria-mdd10cb-04.html">TANQUE DE AGUA FRIA - MDD10CB-04</a>
         </h2>
     
 
@@ -5707,7 +5770,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1137-tanque-de-agua-fria-mdd10cb-04.html">MDD10CB-04</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1137-tanque-de-agua-fria-mdd10cb-04.html">MDD10CB-04</a></div>    
 
     
         
@@ -5719,7 +5782,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1137-tanque-de-agua-fria-mdd10cb-04.html"> <span  class="product-price" content="228.91" aria-label="Precio">
+                <a href="/tienda/refacciones/1137-tanque-de-agua-fria-mdd10cb-04.html"> <span  class="product-price" content="228.91" aria-label="Precio">
                                                                             $228.91
                                             </span></a>
                                 
@@ -5735,7 +5798,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1137-tanque-de-agua-fria-mdd10cb-04.html">TANQUE DE AGUA FRIA - MDD10CB-04</a>
+            <a href="/tienda/refacciones/1137-tanque-de-agua-fria-mdd10cb-04.html">TANQUE DE AGUA FRIA - MDD10CB-04</a>
         </div>
     
 
@@ -5744,7 +5807,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1137-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1137">
 
@@ -5798,20 +5861,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1136-tapa-superior-de-tanque-mdd10cb-03.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1136-tapa-superior-de-tanque-mdd10cb-03.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/2133-home_default/tapa-superior-de-tanque-mdd10cb-03.jpg"
+                                                    data-src="/2133-home_default/tapa-superior-de-tanque-mdd10cb-03.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="TAPA SUPERIOR DE TANQUE - MDD10CB-03"
-                        data-full-size-image-url="/tienda_assets/2133-thickbox_default/tapa-superior-de-tanque-mdd10cb-03.jpg"
+                        data-full-size-image-url="/2133-thickbox_default/tapa-superior-de-tanque-mdd10cb-03.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/2134-home_default/tapa-superior-de-tanque-mdd10cb-03.jpg"
+                                        data-src="/2134-home_default/tapa-superior-de-tanque-mdd10cb-03.jpg"
                                         width="236"
                                         height="305"
                                         alt="TAPA SUPERIOR DE TANQUE - MDD10CB-03 2"
@@ -5833,7 +5896,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1136"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -5864,7 +5927,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1136-tapa-superior-de-tanque-mdd10cb-03.html">TAPA SUPERIOR DE TANQUE - MDD10CB-03</a>
+            <a href="/tienda/refacciones/1136-tapa-superior-de-tanque-mdd10cb-03.html">TAPA SUPERIOR DE TANQUE - MDD10CB-03</a>
         </h2>
     
 
@@ -5872,7 +5935,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1136-tapa-superior-de-tanque-mdd10cb-03.html">MDD10CB-03</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1136-tapa-superior-de-tanque-mdd10cb-03.html">MDD10CB-03</a></div>    
 
     
         
@@ -5884,7 +5947,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1136-tapa-superior-de-tanque-mdd10cb-03.html"> <span  class="product-price" content="24.1" aria-label="Precio">
+                <a href="/tienda/refacciones/1136-tapa-superior-de-tanque-mdd10cb-03.html"> <span  class="product-price" content="24.1" aria-label="Precio">
                                                                             $24.10
                                             </span></a>
                                 
@@ -5900,7 +5963,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1136-tapa-superior-de-tanque-mdd10cb-03.html">TAPA SUPERIOR DE TANQUE - MDD10CB-03</a>
+            <a href="/tienda/refacciones/1136-tapa-superior-de-tanque-mdd10cb-03.html">TAPA SUPERIOR DE TANQUE - MDD10CB-03</a>
         </div>
     
 
@@ -5909,7 +5972,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1136-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1136">
 
@@ -5963,20 +6026,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1135-tapa-superior-mdd10cb-02.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1135-tapa-superior-mdd10cb-02.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/2131-home_default/tapa-superior-mdd10cb-02.jpg"
+                                                    data-src="/2131-home_default/tapa-superior-mdd10cb-02.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="TAPA SUPERIOR - MDD10CB-02"
-                        data-full-size-image-url="/tienda_assets/2131-thickbox_default/tapa-superior-mdd10cb-02.jpg"
+                        data-full-size-image-url="/2131-thickbox_default/tapa-superior-mdd10cb-02.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/2132-home_default/tapa-superior-mdd10cb-02.jpg"
+                                        data-src="/2132-home_default/tapa-superior-mdd10cb-02.jpg"
                                         width="236"
                                         height="305"
                                         alt="TAPA SUPERIOR - MDD10CB-02 2"
@@ -5998,7 +6061,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1135"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -6029,7 +6092,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1135-tapa-superior-mdd10cb-02.html">TAPA SUPERIOR - MDD10CB-02</a>
+            <a href="/tienda/refacciones/1135-tapa-superior-mdd10cb-02.html">TAPA SUPERIOR - MDD10CB-02</a>
         </h2>
     
 
@@ -6037,7 +6100,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1135-tapa-superior-mdd10cb-02.html">MDD10CB-02</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1135-tapa-superior-mdd10cb-02.html">MDD10CB-02</a></div>    
 
     
         
@@ -6049,7 +6112,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1135-tapa-superior-mdd10cb-02.html"> <span  class="product-price" content="94.2" aria-label="Precio">
+                <a href="/tienda/refacciones/1135-tapa-superior-mdd10cb-02.html"> <span  class="product-price" content="94.2" aria-label="Precio">
                                                                             $94.20
                                             </span></a>
                                 
@@ -6065,7 +6128,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1135-tapa-superior-mdd10cb-02.html">TAPA SUPERIOR - MDD10CB-02</a>
+            <a href="/tienda/refacciones/1135-tapa-superior-mdd10cb-02.html">TAPA SUPERIOR - MDD10CB-02</a>
         </div>
     
 
@@ -6074,7 +6137,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1135-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1135">
 
@@ -6128,20 +6191,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1125-manguera-de-gas-mangas38-80.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1125-manguera-de-gas-mangas38-80.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/2109-home_default/manguera-de-gas-mangas38-80.jpg"
+                                                    data-src="/2109-home_default/manguera-de-gas-mangas38-80.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="MANGUERA DE GAS - MANGAS38-80"
-                        data-full-size-image-url="/tienda_assets/2109-thickbox_default/manguera-de-gas-mangas38-80.jpg"
+                        data-full-size-image-url="/2109-thickbox_default/manguera-de-gas-mangas38-80.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/2110-home_default/manguera-de-gas-mangas38-80.jpg"
+                                        data-src="/2110-home_default/manguera-de-gas-mangas38-80.jpg"
                                         width="236"
                                         height="305"
                                         alt="MANGUERA DE GAS - MANGAS38-80 2"
@@ -6163,7 +6226,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1125"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -6194,7 +6257,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1125-manguera-de-gas-mangas38-80.html">MANGUERA DE GAS - MANGAS38-80</a>
+            <a href="/tienda/refacciones/1125-manguera-de-gas-mangas38-80.html">MANGUERA DE GAS - MANGAS38-80</a>
         </h2>
     
 
@@ -6202,7 +6265,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1125-manguera-de-gas-mangas38-80.html">MANGAS38-80</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1125-manguera-de-gas-mangas38-80.html">MANGAS38-80</a></div>    
 
     
         
@@ -6214,7 +6277,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1125-manguera-de-gas-mangas38-80.html"> <span  class="product-price" content="94.2" aria-label="Precio">
+                <a href="/tienda/refacciones/1125-manguera-de-gas-mangas38-80.html"> <span  class="product-price" content="94.2" aria-label="Precio">
                                                                             $94.20
                                             </span></a>
                                 
@@ -6230,7 +6293,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1125-manguera-de-gas-mangas38-80.html">MANGUERA DE GAS - MANGAS38-80</a>
+            <a href="/tienda/refacciones/1125-manguera-de-gas-mangas38-80.html">MANGUERA DE GAS - MANGAS38-80</a>
         </div>
     
 
@@ -6239,7 +6302,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1125-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1125">
 
@@ -6293,20 +6356,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1124-manguera-de-gas-mangas38-60.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1124-manguera-de-gas-mangas38-60.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/2107-home_default/manguera-de-gas-mangas38-60.jpg"
+                                                    data-src="/2107-home_default/manguera-de-gas-mangas38-60.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="MANGUERA DE GAS - MANGAS38-60"
-                        data-full-size-image-url="/tienda_assets/2107-thickbox_default/manguera-de-gas-mangas38-60.jpg"
+                        data-full-size-image-url="/2107-thickbox_default/manguera-de-gas-mangas38-60.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/2108-home_default/manguera-de-gas-mangas38-60.jpg"
+                                        data-src="/2108-home_default/manguera-de-gas-mangas38-60.jpg"
                                         width="236"
                                         height="305"
                                         alt="MANGUERA DE GAS - MANGAS38-60 2"
@@ -6328,7 +6391,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1124"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -6359,7 +6422,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1124-manguera-de-gas-mangas38-60.html">MANGUERA DE GAS - MANGAS38-60</a>
+            <a href="/tienda/refacciones/1124-manguera-de-gas-mangas38-60.html">MANGUERA DE GAS - MANGAS38-60</a>
         </h2>
     
 
@@ -6367,7 +6430,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1124-manguera-de-gas-mangas38-60.html">MANGAS38-60</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1124-manguera-de-gas-mangas38-60.html">MANGAS38-60</a></div>    
 
     
         
@@ -6379,7 +6442,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1124-manguera-de-gas-mangas38-60.html"> <span  class="product-price" content="85.43" aria-label="Precio">
+                <a href="/tienda/refacciones/1124-manguera-de-gas-mangas38-60.html"> <span  class="product-price" content="85.43" aria-label="Precio">
                                                                             $85.43
                                             </span></a>
                                 
@@ -6395,7 +6458,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1124-manguera-de-gas-mangas38-60.html">MANGUERA DE GAS - MANGAS38-60</a>
+            <a href="/tienda/refacciones/1124-manguera-de-gas-mangas38-60.html">MANGUERA DE GAS - MANGAS38-60</a>
         </div>
     
 
@@ -6404,7 +6467,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1124-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1124">
 
@@ -6458,20 +6521,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1122-manguera-de-agua-managua12-60.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1122-manguera-de-agua-managua12-60.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/2103-home_default/manguera-de-agua-managua12-60.jpg"
+                                                    data-src="/2103-home_default/manguera-de-agua-managua12-60.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="MANGUERA DE AGUA - MANAGUA12-60"
-                        data-full-size-image-url="/tienda_assets/2103-thickbox_default/manguera-de-agua-managua12-60.jpg"
+                        data-full-size-image-url="/2103-thickbox_default/manguera-de-agua-managua12-60.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/2104-home_default/manguera-de-agua-managua12-60.jpg"
+                                        data-src="/2104-home_default/manguera-de-agua-managua12-60.jpg"
                                         width="236"
                                         height="305"
                                         alt="MANGUERA DE AGUA - MANAGUA12-60 2"
@@ -6493,7 +6556,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1122"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -6530,7 +6593,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1122-manguera-de-agua-managua12-60.html">MANGUERA DE AGUA - MANAGUA12-60</a>
+            <a href="/tienda/refacciones/1122-manguera-de-agua-managua12-60.html">MANGUERA DE AGUA - MANAGUA12-60</a>
         </h2>
     
 
@@ -6538,7 +6601,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1122-manguera-de-agua-managua12-60.html">MANAGUA12-60</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1122-manguera-de-agua-managua12-60.html">MANAGUA12-60</a></div>    
 
     
         
@@ -6550,7 +6613,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1122-manguera-de-agua-managua12-60.html"> <span  class="product-price" content="76.68" aria-label="Precio">
+                <a href="/tienda/refacciones/1122-manguera-de-agua-managua12-60.html"> <span  class="product-price" content="76.68" aria-label="Precio">
                                                                             $76.68
                                             </span></a>
                                 
@@ -6566,7 +6629,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1122-manguera-de-agua-managua12-60.html">MANGUERA DE AGUA - MANAGUA12-60</a>
+            <a href="/tienda/refacciones/1122-manguera-de-agua-managua12-60.html">MANGUERA DE AGUA - MANAGUA12-60</a>
         </div>
     
 
@@ -6575,7 +6638,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1122-0" >
 
                 
-            <a href="/tienda_assets/refacciones/1122-manguera-de-agua-managua12-60.html"
+            <a href="/tienda/refacciones/1122-manguera-de-agua-managua12-60.html"
            class="btn btn-product-list"
         > View
         </a>
@@ -6608,20 +6671,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1108-sistema-de-ignicion-de-pulso-bb06si.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1108-sistema-de-ignicion-de-pulso-bb06si.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/2071-home_default/sistema-de-ignicion-de-pulso-bb06si.jpg"
+                                                    data-src="/2071-home_default/sistema-de-ignicion-de-pulso-bb06si.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="SISTEMA DE IGNICION DE PULSO - BB06SI"
-                        data-full-size-image-url="/tienda_assets/2071-thickbox_default/sistema-de-ignicion-de-pulso-bb06si.jpg"
+                        data-full-size-image-url="/2071-thickbox_default/sistema-de-ignicion-de-pulso-bb06si.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/2072-home_default/sistema-de-ignicion-de-pulso-bb06si.jpg"
+                                        data-src="/2072-home_default/sistema-de-ignicion-de-pulso-bb06si.jpg"
                                         width="236"
                                         height="305"
                                         alt="SISTEMA DE IGNICION DE PULSO - BB06SI 2"
@@ -6643,7 +6706,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1108"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -6674,7 +6737,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1108-sistema-de-ignicion-de-pulso-bb06si.html">SISTEMA DE IGNICION DE PULSO - BB06SI</a>
+            <a href="/tienda/refacciones/1108-sistema-de-ignicion-de-pulso-bb06si.html">SISTEMA DE IGNICION DE PULSO - BB06SI</a>
         </h2>
     
 
@@ -6682,7 +6745,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1108-sistema-de-ignicion-de-pulso-bb06si.html">BB06SI</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1108-sistema-de-ignicion-de-pulso-bb06si.html">BB06SI</a></div>    
 
     
         
@@ -6694,7 +6757,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1108-sistema-de-ignicion-de-pulso-bb06si.html"> <span  class="product-price" content="211.99" aria-label="Precio">
+                <a href="/tienda/refacciones/1108-sistema-de-ignicion-de-pulso-bb06si.html"> <span  class="product-price" content="211.99" aria-label="Precio">
                                                                             $211.99
                                             </span></a>
                                 
@@ -6710,7 +6773,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1108-sistema-de-ignicion-de-pulso-bb06si.html">SISTEMA DE IGNICION DE PULSO - BB06SI</a>
+            <a href="/tienda/refacciones/1108-sistema-de-ignicion-de-pulso-bb06si.html">SISTEMA DE IGNICION DE PULSO - BB06SI</a>
         </div>
     
 
@@ -6719,7 +6782,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1108-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1108">
 
@@ -6773,13 +6836,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1106-sistema-de-ignicion-de-pulso-02040100185.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1106-sistema-de-ignicion-de-pulso-02040100185.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/2068-home_default/sistema-de-ignicion-de-pulso-02040100185.jpg"
+                                                    data-src="/2068-home_default/sistema-de-ignicion-de-pulso-02040100185.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="SISTEMA DE IGNICION DE PULSO FLUX 6 BLANCO, MOD:..."
-                        data-full-size-image-url="/tienda_assets/2068-thickbox_default/sistema-de-ignicion-de-pulso-02040100185.jpg"
+                        data-full-size-image-url="/2068-thickbox_default/sistema-de-ignicion-de-pulso-02040100185.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
@@ -6800,7 +6863,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1106"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -6831,7 +6894,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1106-sistema-de-ignicion-de-pulso-02040100185.html">SISTEMA DE IGNICION DE PULSO FLUX 6 BLANCO, MOD: MBF06ED/MBF06EF</a>
+            <a href="/tienda/refacciones/1106-sistema-de-ignicion-de-pulso-02040100185.html">SISTEMA DE IGNICION DE PULSO FLUX 6 BLANCO, MOD: MBF06ED/MBF06EF</a>
         </h2>
     
 
@@ -6839,7 +6902,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1106-sistema-de-ignicion-de-pulso-02040100185.html">02040100185</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1106-sistema-de-ignicion-de-pulso-02040100185.html">02040100185</a></div>    
 
     
         
@@ -6851,7 +6914,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1106-sistema-de-ignicion-de-pulso-02040100185.html"> <span  class="product-price" content="211.99" aria-label="Precio">
+                <a href="/tienda/refacciones/1106-sistema-de-ignicion-de-pulso-02040100185.html"> <span  class="product-price" content="211.99" aria-label="Precio">
                                                                             $211.99
                                             </span></a>
                                 
@@ -6867,7 +6930,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1106-sistema-de-ignicion-de-pulso-02040100185.html">SISTEMA DE IGNICION DE PULSO - 02040100185</a>
+            <a href="/tienda/refacciones/1106-sistema-de-ignicion-de-pulso-02040100185.html">SISTEMA DE IGNICION DE PULSO - 02040100185</a>
         </div>
     
 
@@ -6876,7 +6939,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1106-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1106">
 
@@ -6930,13 +6993,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1103-valvula-de-linea-de-gas-02090300549.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1103-valvula-de-linea-de-gas-02090300549.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/2063-home_default/valvula-de-linea-de-gas-02090300549.jpg"
+                                                    data-src="/2063-home_default/valvula-de-linea-de-gas-02090300549.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="VALVULA DE LINEA DE GAS NATURAL, FLUX 6 LTS"
-                        data-full-size-image-url="/tienda_assets/2063-thickbox_default/valvula-de-linea-de-gas-02090300549.jpg"
+                        data-full-size-image-url="/2063-thickbox_default/valvula-de-linea-de-gas-02090300549.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
@@ -6957,7 +7020,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1103"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -6988,7 +7051,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1103-valvula-de-linea-de-gas-02090300549.html">VALVULA DE LINEA DE GAS NATURAL, FLUX 6 LTS</a>
+            <a href="/tienda/refacciones/1103-valvula-de-linea-de-gas-02090300549.html">VALVULA DE LINEA DE GAS NATURAL, FLUX 6 LTS</a>
         </h2>
     
 
@@ -6996,7 +7059,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1103-valvula-de-linea-de-gas-02090300549.html">02090300549</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1103-valvula-de-linea-de-gas-02090300549.html">02090300549</a></div>    
 
     
         
@@ -7008,7 +7071,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1103-valvula-de-linea-de-gas-02090300549.html"> <span  class="product-price" content="763.36" aria-label="Precio">
+                <a href="/tienda/refacciones/1103-valvula-de-linea-de-gas-02090300549.html"> <span  class="product-price" content="763.36" aria-label="Precio">
                                                                             $763.36
                                             </span></a>
                                 
@@ -7024,7 +7087,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1103-valvula-de-linea-de-gas-02090300549.html">VALVULA DE LINEA DE GAS - 02090300549</a>
+            <a href="/tienda/refacciones/1103-valvula-de-linea-de-gas-02090300549.html">VALVULA DE LINEA DE GAS - 02090300549</a>
         </div>
     
 
@@ -7033,7 +7096,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1103-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1103">
 
@@ -7087,13 +7150,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1102-valvula-de-linea-de-gas-02090300541.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1102-valvula-de-linea-de-gas-02090300541.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/2062-home_default/valvula-de-linea-de-gas-02090300541.jpg"
+                                                    data-src="/2062-home_default/valvula-de-linea-de-gas-02090300541.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="VALVULA DE LINEA DE GAS LP, FLUX 6 LTS"
-                        data-full-size-image-url="/tienda_assets/2062-thickbox_default/valvula-de-linea-de-gas-02090300541.jpg"
+                        data-full-size-image-url="/2062-thickbox_default/valvula-de-linea-de-gas-02090300541.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
@@ -7114,7 +7177,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1102"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -7145,7 +7208,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1102-valvula-de-linea-de-gas-02090300541.html">VALVULA DE LINEA DE GAS LP, FLUX 6 LTS</a>
+            <a href="/tienda/refacciones/1102-valvula-de-linea-de-gas-02090300541.html">VALVULA DE LINEA DE GAS LP, FLUX 6 LTS</a>
         </h2>
     
 
@@ -7153,7 +7216,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1102-valvula-de-linea-de-gas-02090300541.html">02090300541</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1102-valvula-de-linea-de-gas-02090300541.html">02090300541</a></div>    
 
     
         
@@ -7165,7 +7228,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1102-valvula-de-linea-de-gas-02090300541.html"> <span  class="product-price" content="622.85" aria-label="Precio">
+                <a href="/tienda/refacciones/1102-valvula-de-linea-de-gas-02090300541.html"> <span  class="product-price" content="622.85" aria-label="Precio">
                                                                             $622.85
                                             </span></a>
                                 
@@ -7181,7 +7244,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1102-valvula-de-linea-de-gas-02090300541.html">VALVULA DE LINEA DE GAS - 02090300541</a>
+            <a href="/tienda/refacciones/1102-valvula-de-linea-de-gas-02090300541.html">VALVULA DE LINEA DE GAS - 02090300541</a>
         </div>
     
 
@@ -7190,7 +7253,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1102-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1102">
 
@@ -7244,20 +7307,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1093-sistema-de-ignicion-de-pulso-bp06zr09.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1093-sistema-de-ignicion-de-pulso-bp06zr09.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/2039-home_default/sistema-de-ignicion-de-pulso-bp06zr09.jpg"
+                                                    data-src="/2039-home_default/sistema-de-ignicion-de-pulso-bp06zr09.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="SISTEMA DE IGNICION DE PULSO - BP06ZR09"
-                        data-full-size-image-url="/tienda_assets/2039-thickbox_default/sistema-de-ignicion-de-pulso-bp06zr09.jpg"
+                        data-full-size-image-url="/2039-thickbox_default/sistema-de-ignicion-de-pulso-bp06zr09.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/2040-home_default/sistema-de-ignicion-de-pulso-bp06zr09.jpg"
+                                        data-src="/2040-home_default/sistema-de-ignicion-de-pulso-bp06zr09.jpg"
                                         width="236"
                                         height="305"
                                         alt="SISTEMA DE IGNICION DE PULSO - BP06ZR09 2"
@@ -7279,7 +7342,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1093"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -7310,7 +7373,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1093-sistema-de-ignicion-de-pulso-bp06zr09.html">SISTEMA DE IGNICION DE PULSO - BP06ZR09</a>
+            <a href="/tienda/refacciones/1093-sistema-de-ignicion-de-pulso-bp06zr09.html">SISTEMA DE IGNICION DE PULSO - BP06ZR09</a>
         </h2>
     
 
@@ -7318,7 +7381,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1093-sistema-de-ignicion-de-pulso-bp06zr09.html">BP06ZR09</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1093-sistema-de-ignicion-de-pulso-bp06zr09.html">BP06ZR09</a></div>    
 
     
         
@@ -7330,7 +7393,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1093-sistema-de-ignicion-de-pulso-bp06zr09.html"> <span  class="product-price" content="212.04" aria-label="Precio">
+                <a href="/tienda/refacciones/1093-sistema-de-ignicion-de-pulso-bp06zr09.html"> <span  class="product-price" content="212.04" aria-label="Precio">
                                                                             $212.04
                                             </span></a>
                                 
@@ -7346,7 +7409,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1093-sistema-de-ignicion-de-pulso-bp06zr09.html">SISTEMA DE IGNICION DE PULSO - BP06ZR09</a>
+            <a href="/tienda/refacciones/1093-sistema-de-ignicion-de-pulso-bp06zr09.html">SISTEMA DE IGNICION DE PULSO - BP06ZR09</a>
         </div>
     
 
@@ -7355,7 +7418,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1093-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1093">
 
@@ -7409,20 +7472,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1073-electrodo-de-encendido-bpchb06zr06.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1073-electrodo-de-encendido-bpchb06zr06.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/1988-home_default/electrodo-de-encendido-bpchb06zr06.jpg"
+                                                    data-src="/1988-home_default/electrodo-de-encendido-bpchb06zr06.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="ELECTRODO DE ENCENDIDO - BPCHB06ZR06"
-                        data-full-size-image-url="/tienda_assets/1988-thickbox_default/electrodo-de-encendido-bpchb06zr06.jpg"
+                        data-full-size-image-url="/1988-thickbox_default/electrodo-de-encendido-bpchb06zr06.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/1989-home_default/electrodo-de-encendido-bpchb06zr06.jpg"
+                                        data-src="/1989-home_default/electrodo-de-encendido-bpchb06zr06.jpg"
                                         width="236"
                                         height="305"
                                         alt="ELECTRODO DE ENCENDIDO - BPCHB06ZR06 2"
@@ -7444,7 +7507,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1073"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -7475,7 +7538,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1073-electrodo-de-encendido-bpchb06zr06.html">ELECTRODO DE ENCENDIDO - BPCHB06ZR06</a>
+            <a href="/tienda/refacciones/1073-electrodo-de-encendido-bpchb06zr06.html">ELECTRODO DE ENCENDIDO - BPCHB06ZR06</a>
         </h2>
     
 
@@ -7483,7 +7546,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1073-electrodo-de-encendido-bpchb06zr06.html">BPCHB06ZR06</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1073-electrodo-de-encendido-bpchb06zr06.html">BPCHB06ZR06</a></div>    
 
     
         
@@ -7495,7 +7558,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1073-electrodo-de-encendido-bpchb06zr06.html"> <span  class="product-price" content="21.9" aria-label="Precio">
+                <a href="/tienda/refacciones/1073-electrodo-de-encendido-bpchb06zr06.html"> <span  class="product-price" content="21.9" aria-label="Precio">
                                                                             $21.90
                                             </span></a>
                                 
@@ -7511,7 +7574,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1073-electrodo-de-encendido-bpchb06zr06.html">ELECTRODO DE ENCENDIDO - BPCHB06ZR06</a>
+            <a href="/tienda/refacciones/1073-electrodo-de-encendido-bpchb06zr06.html">ELECTRODO DE ENCENDIDO - BPCHB06ZR06</a>
         </div>
     
 
@@ -7520,7 +7583,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1073-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1073">
 
@@ -7574,20 +7637,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1052-electrodo-de-encendido-02040400004.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1052-electrodo-de-encendido-02040400004.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/1941-home_default/electrodo-de-encendido-02040400004.jpg"
+                                                    data-src="/1941-home_default/electrodo-de-encendido-02040400004.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="ELECTRODO DE ENCENDIDO PARA FLUX 10 Y 16 LTS"
-                        data-full-size-image-url="/tienda_assets/1941-thickbox_default/electrodo-de-encendido-02040400004.jpg"
+                        data-full-size-image-url="/1941-thickbox_default/electrodo-de-encendido-02040400004.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/1942-home_default/electrodo-de-encendido-02040400004.jpg"
+                                        data-src="/1942-home_default/electrodo-de-encendido-02040400004.jpg"
                                         width="236"
                                         height="305"
                                         alt="ELECTRODO DE ENCENDIDO PARA FLUX 10 Y 16 LTS 2"
@@ -7609,7 +7672,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1052"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -7640,7 +7703,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1052-electrodo-de-encendido-02040400004.html">ELECTRODO DE ENCENDIDO PARA FLUX 10 Y 16 LTS</a>
+            <a href="/tienda/refacciones/1052-electrodo-de-encendido-02040400004.html">ELECTRODO DE ENCENDIDO PARA FLUX 10 Y 16 LTS</a>
         </h2>
     
 
@@ -7648,7 +7711,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1052-electrodo-de-encendido-02040400004.html">02040400004</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1052-electrodo-de-encendido-02040400004.html">02040400004</a></div>    
 
     
         
@@ -7660,7 +7723,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1052-electrodo-de-encendido-02040400004.html"> <span  class="product-price" content="82.82" aria-label="Precio">
+                <a href="/tienda/refacciones/1052-electrodo-de-encendido-02040400004.html"> <span  class="product-price" content="82.82" aria-label="Precio">
                                                                             $82.82
                                             </span></a>
                                 
@@ -7676,7 +7739,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1052-electrodo-de-encendido-02040400004.html">ELECTRODO DE ENCENDIDO - BPCHB16NR1402040400004</a>
+            <a href="/tienda/refacciones/1052-electrodo-de-encendido-02040400004.html">ELECTRODO DE ENCENDIDO - BPCHB16NR1402040400004</a>
         </div>
     
 
@@ -7685,7 +7748,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1052-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1052">
 
@@ -7739,20 +7802,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1021-kit-de-instalacion-mirage-1-4-x-1-2-cobre.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1021-kit-de-instalacion-mirage-1-4-x-1-2-cobre.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/2781-home_default/kit-de-instalacion-mirage-1-4-x-1-2-cobre.jpg"
+                                                    data-src="/2781-home_default/kit-de-instalacion-mirage-1-4-x-1-2-cobre.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="KIT DE INSTALACIÓN MIRAGE  1/4 X 1/2 (Cobre)"
-                        data-full-size-image-url="/tienda_assets/2781-thickbox_default/kit-de-instalacion-mirage-1-4-x-1-2-cobre.jpg"
+                        data-full-size-image-url="/2781-thickbox_default/kit-de-instalacion-mirage-1-4-x-1-2-cobre.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/2782-home_default/kit-de-instalacion-mirage-1-4-x-1-2-cobre.jpg"
+                                        data-src="/2782-home_default/kit-de-instalacion-mirage-1-4-x-1-2-cobre.jpg"
                                         width="236"
                                         height="305"
                                         alt="KIT DE INSTALACIÓN MIRAGE  1/4 X 1/2 (Cobre) 2"
@@ -7774,7 +7837,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1021"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -7805,7 +7868,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1021-kit-de-instalacion-mirage-1-4-x-1-2-cobre.html">KIT DE INSTALACIÓN MIRAGE  1/4 X 1/2 (Cobre)</a>
+            <a href="/tienda/refacciones/1021-kit-de-instalacion-mirage-1-4-x-1-2-cobre.html">KIT DE INSTALACIÓN MIRAGE  1/4 X 1/2 (Cobre)</a>
         </h2>
     
 
@@ -7813,7 +7876,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1021-kit-de-instalacion-mirage-1-4-x-1-2-cobre.html">MKC32N</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1021-kit-de-instalacion-mirage-1-4-x-1-2-cobre.html">MKC32N</a></div>    
 
     
         
@@ -7825,7 +7888,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1021-kit-de-instalacion-mirage-1-4-x-1-2-cobre.html"> <span  class="product-price" content="1015.58" aria-label="Precio">
+                <a href="/tienda/refacciones/1021-kit-de-instalacion-mirage-1-4-x-1-2-cobre.html"> <span  class="product-price" content="1015.58" aria-label="Precio">
                                                                             $1,015.58
                                             </span></a>
                                 
@@ -7841,7 +7904,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1021-kit-de-instalacion-mirage-1-4-x-1-2-cobre.html">KIT DE INSTALACIÓN MIRAGE 1/4 X 1/2 (Cobre)</a>
+            <a href="/tienda/refacciones/1021-kit-de-instalacion-mirage-1-4-x-1-2-cobre.html">KIT DE INSTALACIÓN MIRAGE 1/4 X 1/2 (Cobre)</a>
         </div>
     
 
@@ -7850,7 +7913,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1021-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1021">
 
@@ -7904,20 +7967,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/923-aspa-condensador-12100105000084.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/923-aspa-condensador-12100105000084.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/6471-home_default/aspa-condensador-12100105000084.jpg"
+                                                    data-src="/6471-home_default/aspa-condensador-12100105000084.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Aspa"
-                        data-full-size-image-url="/tienda_assets/6471-thickbox_default/aspa-condensador-12100105000084.jpg"
+                        data-full-size-image-url="/6471-thickbox_default/aspa-condensador-12100105000084.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/6471-home_default/aspa-condensador-12100105000084.jpg"
+                                        data-src="/6471-home_default/aspa-condensador-12100105000084.jpg"
                                         width="236"
                                         height="305"
                                         alt="Aspa 2"
@@ -7939,7 +8002,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="923"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -7970,7 +8033,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/923-aspa-condensador-12100105000084.html">Aspa</a>
+            <a href="/tienda/refacciones/923-aspa-condensador-12100105000084.html">Aspa</a>
         </h2>
     
 
@@ -7978,7 +8041,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/923-aspa-condensador-12100105000084.html">12100105000084</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/923-aspa-condensador-12100105000084.html">12100105000084</a></div>    
 
     
         
@@ -7990,7 +8053,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/923-aspa-condensador-12100105000084.html"> <span  class="product-price" content="727.1" aria-label="Precio">
+                <a href="/tienda/refacciones/923-aspa-condensador-12100105000084.html"> <span  class="product-price" content="727.1" aria-label="Precio">
                                                                             $727.10
                                             </span></a>
                                 
@@ -8006,7 +8069,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/923-aspa-condensador-12100105000084.html">Aspa condensador</a>
+            <a href="/tienda/refacciones/923-aspa-condensador-12100105000084.html">Aspa condensador</a>
         </div>
     
 
@@ -8015,7 +8078,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-923-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="923">
 
@@ -8069,20 +8132,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/988-transformador-x2.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/988-transformador-x2.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/8561-home_default/transformador-x2.jpg"
+                                                    data-src="/8561-home_default/transformador-x2.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Transformador"
-                        data-full-size-image-url="/tienda_assets/8561-thickbox_default/transformador-x2.jpg"
+                        data-full-size-image-url="/8561-thickbox_default/transformador-x2.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/8561-home_default/transformador-x2.jpg"
+                                        data-src="/8561-home_default/transformador-x2.jpg"
                                         width="236"
                                         height="305"
                                         alt="Transformador 2"
@@ -8104,7 +8167,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="988"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -8135,7 +8198,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/988-transformador-x2.html">Transformador</a>
+            <a href="/tienda/refacciones/988-transformador-x2.html">Transformador</a>
         </h2>
     
 
@@ -8143,7 +8206,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/988-transformador-x2.html">11203103000014</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/988-transformador-x2.html">11203103000014</a></div>    
 
     
         
@@ -8155,7 +8218,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/988-transformador-x2.html"> <span  class="product-price" content="123.22" aria-label="Precio">
+                <a href="/tienda/refacciones/988-transformador-x2.html"> <span  class="product-price" content="123.22" aria-label="Precio">
                                                                             $123.22
                                             </span></a>
                                 
@@ -8171,7 +8234,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/988-transformador-x2.html">Transformador</a>
+            <a href="/tienda/refacciones/988-transformador-x2.html">Transformador</a>
         </div>
     
 
@@ -8180,7 +8243,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-988-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="988">
 
@@ -8234,20 +8297,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1014-boya-de-gas-refrigerante-22-136kg.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1014-boya-de-gas-refrigerante-22-136kg.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/7430-home_default/boya-de-gas-refrigerante-22-136kg.jpg"
+                                                    data-src="/7430-home_default/boya-de-gas-refrigerante-22-136kg.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Refrigerante"
-                        data-full-size-image-url="/tienda_assets/7430-thickbox_default/boya-de-gas-refrigerante-22-136kg.jpg"
+                        data-full-size-image-url="/7430-thickbox_default/boya-de-gas-refrigerante-22-136kg.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/7430-home_default/boya-de-gas-refrigerante-22-136kg.jpg"
+                                        data-src="/7430-home_default/boya-de-gas-refrigerante-22-136kg.jpg"
                                         width="236"
                                         height="305"
                                         alt="Refrigerante 2"
@@ -8269,7 +8332,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1014"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -8300,7 +8363,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1014-boya-de-gas-refrigerante-22-136kg.html">Refrigerante</a>
+            <a href="/tienda/refacciones/1014-boya-de-gas-refrigerante-22-136kg.html">Refrigerante</a>
         </h2>
     
 
@@ -8308,7 +8371,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1014-boya-de-gas-refrigerante-22-136kg.html">BOYA DE GAS 13.6KG</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1014-boya-de-gas-refrigerante-22-136kg.html">BOYA DE GAS 13.6KG</a></div>    
 
     
         
@@ -8320,7 +8383,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1014-boya-de-gas-refrigerante-22-136kg.html"> <span  class="product-price" content="4121.48" aria-label="Precio">
+                <a href="/tienda/refacciones/1014-boya-de-gas-refrigerante-22-136kg.html"> <span  class="product-price" content="4121.48" aria-label="Precio">
                                                                             $4,121.48
                                             </span></a>
                                 
@@ -8336,7 +8399,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1014-boya-de-gas-refrigerante-22-136kg.html">Boya de gas refrigerante r22</a>
+            <a href="/tienda/refacciones/1014-boya-de-gas-refrigerante-22-136kg.html">Boya de gas refrigerante r22</a>
         </div>
     
 
@@ -8345,7 +8408,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1014-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1014">
 
@@ -8399,20 +8462,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/931-aspa-condensador-12100105000051.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/931-aspa-condensador-12100105000051.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/6469-home_default/aspa-condensador-12100105000051.jpg"
+                                                    data-src="/6469-home_default/aspa-condensador-12100105000051.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Aspa"
-                        data-full-size-image-url="/tienda_assets/6469-thickbox_default/aspa-condensador-12100105000051.jpg"
+                        data-full-size-image-url="/6469-thickbox_default/aspa-condensador-12100105000051.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/6469-home_default/aspa-condensador-12100105000051.jpg"
+                                        data-src="/6469-home_default/aspa-condensador-12100105000051.jpg"
                                         width="236"
                                         height="305"
                                         alt="Aspa 2"
@@ -8434,7 +8497,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="931"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -8465,7 +8528,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/931-aspa-condensador-12100105000051.html">Aspa</a>
+            <a href="/tienda/refacciones/931-aspa-condensador-12100105000051.html">Aspa</a>
         </h2>
     
 
@@ -8473,7 +8536,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/931-aspa-condensador-12100105000051.html">12100105000051</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/931-aspa-condensador-12100105000051.html">12100105000051</a></div>    
 
     
         
@@ -8485,7 +8548,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/931-aspa-condensador-12100105000051.html"> <span  class="product-price" content="356.93" aria-label="Precio">
+                <a href="/tienda/refacciones/931-aspa-condensador-12100105000051.html"> <span  class="product-price" content="356.93" aria-label="Precio">
                                                                             $356.93
                                             </span></a>
                                 
@@ -8501,7 +8564,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/931-aspa-condensador-12100105000051.html">Aspa condensador</a>
+            <a href="/tienda/refacciones/931-aspa-condensador-12100105000051.html">Aspa condensador</a>
         </div>
     
 
@@ -8510,7 +8573,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-931-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="931">
 
@@ -8564,20 +8627,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/928-aspa-condensador-diametro-46-cm-x-ancho-14-cm-12.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/928-aspa-condensador-diametro-46-cm-x-ancho-14-cm-12.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/6461-home_default/aspa-condensador-diametro-46-cm-x-ancho-14-cm-12.jpg"
+                                                    data-src="/6461-home_default/aspa-condensador-diametro-46-cm-x-ancho-14-cm-12.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="ASPA CONDENSADOR DIAMETRO 46 CM X ANCHO 14 CM (1.2)"
-                        data-full-size-image-url="/tienda_assets/6461-thickbox_default/aspa-condensador-diametro-46-cm-x-ancho-14-cm-12.jpg"
+                        data-full-size-image-url="/6461-thickbox_default/aspa-condensador-diametro-46-cm-x-ancho-14-cm-12.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/6461-home_default/aspa-condensador-diametro-46-cm-x-ancho-14-cm-12.jpg"
+                                        data-src="/6461-home_default/aspa-condensador-diametro-46-cm-x-ancho-14-cm-12.jpg"
                                         width="236"
                                         height="305"
                                         alt="ASPA CONDENSADOR DIAMETRO 46 CM X ANCHO 14 CM (1.2) 2"
@@ -8599,7 +8662,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="928"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -8630,7 +8693,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/928-aspa-condensador-diametro-46-cm-x-ancho-14-cm-12.html">ASPA CONDENSADOR DIAMETRO 46 CM X ANCHO 14 CM (1.2)</a>
+            <a href="/tienda/refacciones/928-aspa-condensador-diametro-46-cm-x-ancho-14-cm-12.html">ASPA CONDENSADOR DIAMETRO 46 CM X ANCHO 14 CM (1.2)</a>
         </h2>
     
 
@@ -8638,7 +8701,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/928-aspa-condensador-diametro-46-cm-x-ancho-14-cm-12.html">10335261</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/928-aspa-condensador-diametro-46-cm-x-ancho-14-cm-12.html">10335261</a></div>    
 
     
         
@@ -8650,7 +8713,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/928-aspa-condensador-diametro-46-cm-x-ancho-14-cm-12.html"> <span  class="product-price" content="374.68" aria-label="Precio">
+                <a href="/tienda/refacciones/928-aspa-condensador-diametro-46-cm-x-ancho-14-cm-12.html"> <span  class="product-price" content="374.68" aria-label="Precio">
                                                                             $374.68
                                             </span></a>
                                 
@@ -8666,7 +8729,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/928-aspa-condensador-diametro-46-cm-x-ancho-14-cm-12.html">Aspa condensador</a>
+            <a href="/tienda/refacciones/928-aspa-condensador-diametro-46-cm-x-ancho-14-cm-12.html">Aspa condensador</a>
         </div>
     
 
@@ -8675,7 +8738,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-928-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="928">
 
@@ -8729,20 +8792,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/922-aspa-condensador-12100105000181.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/922-aspa-condensador-12100105000181.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/6455-home_default/aspa-condensador-12100105000181.jpg"
+                                                    data-src="/6455-home_default/aspa-condensador-12100105000181.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Aspa"
-                        data-full-size-image-url="/tienda_assets/6455-thickbox_default/aspa-condensador-12100105000181.jpg"
+                        data-full-size-image-url="/6455-thickbox_default/aspa-condensador-12100105000181.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/6455-home_default/aspa-condensador-12100105000181.jpg"
+                                        data-src="/6455-home_default/aspa-condensador-12100105000181.jpg"
                                         width="236"
                                         height="305"
                                         alt="Aspa 2"
@@ -8764,7 +8827,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="922"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -8795,7 +8858,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/922-aspa-condensador-12100105000181.html">Aspa</a>
+            <a href="/tienda/refacciones/922-aspa-condensador-12100105000181.html">Aspa</a>
         </h2>
     
 
@@ -8803,7 +8866,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/922-aspa-condensador-12100105000181.html">12100105000181</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/922-aspa-condensador-12100105000181.html">12100105000181</a></div>    
 
     
         
@@ -8815,7 +8878,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/922-aspa-condensador-12100105000181.html"> <span  class="product-price" content="594.91" aria-label="Precio">
+                <a href="/tienda/refacciones/922-aspa-condensador-12100105000181.html"> <span  class="product-price" content="594.91" aria-label="Precio">
                                                                             $594.91
                                             </span></a>
                                 
@@ -8831,7 +8894,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/922-aspa-condensador-12100105000181.html">Aspa condensador</a>
+            <a href="/tienda/refacciones/922-aspa-condensador-12100105000181.html">Aspa condensador</a>
         </div>
     
 
@@ -8840,7 +8903,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-922-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="922">
 
@@ -8894,20 +8957,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/879-turbina-izquierda-evaporador-largo-523-cm-x-diametro-108-cmint.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/879-turbina-izquierda-evaporador-largo-523-cm-x-diametro-108-cmint.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/8645-home_default/turbina-izquierda-evaporador-largo-523-cm-x-diametro-108-cmint.jpg"
+                                                    data-src="/8645-home_default/turbina-izquierda-evaporador-largo-523-cm-x-diametro-108-cmint.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="TURBINA IZQUIERDA EVAPORADOR LARGO 52.3 CM X DIAMETRO..."
-                        data-full-size-image-url="/tienda_assets/8645-thickbox_default/turbina-izquierda-evaporador-largo-523-cm-x-diametro-108-cmint.jpg"
+                        data-full-size-image-url="/8645-thickbox_default/turbina-izquierda-evaporador-largo-523-cm-x-diametro-108-cmint.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/8645-home_default/turbina-izquierda-evaporador-largo-523-cm-x-diametro-108-cmint.jpg"
+                                        data-src="/8645-home_default/turbina-izquierda-evaporador-largo-523-cm-x-diametro-108-cmint.jpg"
                                         width="236"
                                         height="305"
                                         alt="TURBINA IZQUIERDA EVAPORADOR LARGO 52.3 CM X DIAMETRO... 2"
@@ -8929,7 +8992,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="879"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -8966,7 +9029,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/879-turbina-izquierda-evaporador-largo-523-cm-x-diametro-108-cmint.html">TURBINA IZQUIERDA EVAPORADOR LARGO 52.3 CM X DIAMETRO 10.8 CM(INT)</a>
+            <a href="/tienda/refacciones/879-turbina-izquierda-evaporador-largo-523-cm-x-diametro-108-cmint.html">TURBINA IZQUIERDA EVAPORADOR LARGO 52.3 CM X DIAMETRO 10.8 CM(INT)</a>
         </h2>
     
 
@@ -8974,7 +9037,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/879-turbina-izquierda-evaporador-largo-523-cm-x-diametro-108-cmint.html">10352040</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/879-turbina-izquierda-evaporador-largo-523-cm-x-diametro-108-cmint.html">10352040</a></div>    
 
     
         
@@ -8986,7 +9049,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/879-turbina-izquierda-evaporador-largo-523-cm-x-diametro-108-cmint.html"> <span  class="product-price" content="243.6" aria-label="Precio">
+                <a href="/tienda/refacciones/879-turbina-izquierda-evaporador-largo-523-cm-x-diametro-108-cmint.html"> <span  class="product-price" content="243.6" aria-label="Precio">
                                                                             $243.60
                                             </span></a>
                                 
@@ -9002,7 +9065,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/879-turbina-izquierda-evaporador-largo-523-cm-x-diametro-108-cmint.html">Turbina evaporador</a>
+            <a href="/tienda/refacciones/879-turbina-izquierda-evaporador-largo-523-cm-x-diametro-108-cmint.html">Turbina evaporador</a>
         </div>
     
 
@@ -9011,7 +9074,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-879-0" >
 
                 
-            <a href="/tienda_assets/refacciones/879-turbina-izquierda-evaporador-largo-523-cm-x-diametro-108-cmint.html"
+            <a href="/tienda/refacciones/879-turbina-izquierda-evaporador-largo-523-cm-x-diametro-108-cmint.html"
            class="btn btn-product-list"
         > View
         </a>
@@ -9044,20 +9107,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/886-turbina-12100102000084.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/886-turbina-12100102000084.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/8665-home_default/turbina-12100102000084.jpg"
+                                                    data-src="/8665-home_default/turbina-12100102000084.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Turbina "
-                        data-full-size-image-url="/tienda_assets/8665-thickbox_default/turbina-12100102000084.jpg"
+                        data-full-size-image-url="/8665-thickbox_default/turbina-12100102000084.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/8665-home_default/turbina-12100102000084.jpg"
+                                        data-src="/8665-home_default/turbina-12100102000084.jpg"
                                         width="236"
                                         height="305"
                                         alt="Turbina  2"
@@ -9079,7 +9142,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="886"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -9110,7 +9173,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/886-turbina-12100102000084.html">Turbina </a>
+            <a href="/tienda/refacciones/886-turbina-12100102000084.html">Turbina </a>
         </h2>
     
 
@@ -9118,7 +9181,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/886-turbina-12100102000084.html">12100102000084</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/886-turbina-12100102000084.html">12100102000084</a></div>    
 
     
         
@@ -9130,7 +9193,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/886-turbina-12100102000084.html"> <span  class="product-price" content="818.17" aria-label="Precio">
+                <a href="/tienda/refacciones/886-turbina-12100102000084.html"> <span  class="product-price" content="818.17" aria-label="Precio">
                                                                             $818.17
                                             </span></a>
                                 
@@ -9146,7 +9209,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/886-turbina-12100102000084.html">Turbina evaporador</a>
+            <a href="/tienda/refacciones/886-turbina-12100102000084.html">Turbina evaporador</a>
         </div>
     
 
@@ -9155,7 +9218,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-886-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="886">
 
@@ -9209,20 +9272,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/884-turbina-12100102000131.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/884-turbina-12100102000131.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/8652-home_default/turbina-12100102000131.jpg"
+                                                    data-src="/8652-home_default/turbina-12100102000131.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Turbina"
-                        data-full-size-image-url="/tienda_assets/8652-thickbox_default/turbina-12100102000131.jpg"
+                        data-full-size-image-url="/8652-thickbox_default/turbina-12100102000131.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/8652-home_default/turbina-12100102000131.jpg"
+                                        data-src="/8652-home_default/turbina-12100102000131.jpg"
                                         width="236"
                                         height="305"
                                         alt="Turbina 2"
@@ -9244,7 +9307,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="884"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -9281,7 +9344,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/884-turbina-12100102000131.html">Turbina</a>
+            <a href="/tienda/refacciones/884-turbina-12100102000131.html">Turbina</a>
         </h2>
     
 
@@ -9289,7 +9352,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/884-turbina-12100102000131.html">12100102000131</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/884-turbina-12100102000131.html">12100102000131</a></div>    
 
     
         
@@ -9301,7 +9364,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/884-turbina-12100102000131.html"> <span  class="product-price" content="572.44" aria-label="Precio">
+                <a href="/tienda/refacciones/884-turbina-12100102000131.html"> <span  class="product-price" content="572.44" aria-label="Precio">
                                                                             $572.44
                                             </span></a>
                                 
@@ -9317,7 +9380,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/884-turbina-12100102000131.html">Turbina evaporador</a>
+            <a href="/tienda/refacciones/884-turbina-12100102000131.html">Turbina evaporador</a>
         </div>
     
 
@@ -9326,7 +9389,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-884-0" >
 
                 
-            <a href="/tienda_assets/refacciones/884-turbina-12100102000131.html"
+            <a href="/tienda/refacciones/884-turbina-12100102000131.html"
            class="btn btn-product-list"
         > View
         </a>
@@ -9364,7 +9427,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                 <li class="  current ">
                                                     <a
                                     rel="nofollow"
-                                    href="/tienda_assets/10-refacciones"
+                                    href="/tienda/10-refacciones"
                                                                                                             class="disabled js-search-link"
                                     data-after-click="backToTop"
                             >
@@ -9374,7 +9437,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                                 <li class=" ">
                                                     <a
                                     rel="nofollow"
-                                    href="/tienda_assets/10-refacciones?page=2"
+                                    href="/tienda/10-refacciones?page=2"
                                                                                                             class="js-search-link"
                                     data-after-click="backToTop"
                             >
@@ -9384,7 +9447,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                                 <li class=" ">
                                                     <a
                                     rel="nofollow"
-                                    href="/tienda_assets/10-refacciones?page=3"
+                                    href="/tienda/10-refacciones?page=3"
                                                                                                             class="js-search-link"
                                     data-after-click="backToTop"
                             >
@@ -9397,7 +9460,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                                 <li class=" ">
                                                     <a
                                     rel="nofollow"
-                                    href="/tienda_assets/10-refacciones?page=13"
+                                    href="/tienda/10-refacciones?page=13"
                                                                                                             class="js-search-link"
                                     data-after-click="backToTop"
                             >
@@ -9407,7 +9470,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                                 <li class=" ">
                                                     <a
                                     rel="next"
-                                    href="/tienda_assets/10-refacciones?page=2"
+                                    href="/tienda/10-refacciones?page=2"
                                      id="infinity-url-next"                                                                         class="next js-search-link"
                                     data-after-click="backToTop"
                             >
@@ -9450,11 +9513,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                         
 
   <div class="block block-toggle block-categories block-links js-block-toggle">
-    <h5 class="block-title"><span><a href="/tienda_assets/2-inicio">Inicio</a></span> </h5>
+    <h5 class="block-title"><span><a href="/tienda/2-inicio">Inicio</a></span> </h5>
     <div class="category-top-menu block-content">
       
-  <ul class="category-sub-menu"><li data-depth="0"><a href="/tienda_assets/10-refacciones">Refacciones</a></li><li data-depth="0"><a href="/tienda_assets/11-aire-acondicionado">Aire Acondicionado</a></li><li data-depth="0"><a href="/tienda_assets/13-linea-blanca">Línea Blanca</a><span class="collapse-icons" data-toggle="collapse" data-target="#exCollapsingNavbar13"><i class="fa fa-angle-down add" aria-hidden="true"></i><i class="fa fa-angle-up remove" aria-hidden="true"></i></span><div class="collapse" id="exCollapsingNavbar13">
-  <ul class="category-sub-menu"><li data-depth="1"><a class="category-sub-link" href="/tienda_assets/18-boiler">Boiler</a></li><li data-depth="1"><a class="category-sub-link" href="/tienda_assets/19-campanas">Campanas</a></li><li data-depth="1"><a class="category-sub-link" href="/tienda_assets/21-dispensadores">Dispensadores</a></li><li data-depth="1"><a class="category-sub-link" href="/tienda_assets/22-parillas">Parillas</a></li><li data-depth="1"><a class="category-sub-link" href="/tienda_assets/25-microondas">Microondas</a></li><li data-depth="1"><a class="category-sub-link" href="/tienda_assets/26-lavadoras">Lavadoras</a></li></ul></div></li><li data-depth="0"><a href="/tienda_assets/17-herramientas">Herramientas</a></li><li data-depth="0"><a href="/tienda_assets/14-souvenirs">Souvenirs</a></li><li data-depth="0"><a href="/tienda_assets/24-outlet">Outlet</a></li></ul>
+  <ul class="category-sub-menu"><li data-depth="0"><a href="/tienda/10-refacciones">Refacciones</a></li><li data-depth="0"><a href="/tienda/11-aire-acondicionado">Aire Acondicionado</a></li><li data-depth="0"><a href="/tienda/13-linea-blanca">Línea Blanca</a><span class="collapse-icons" data-toggle="collapse" data-target="#exCollapsingNavbar13"><i class="fa fa-angle-down add" aria-hidden="true"></i><i class="fa fa-angle-up remove" aria-hidden="true"></i></span><div class="collapse" id="exCollapsingNavbar13">
+  <ul class="category-sub-menu"><li data-depth="1"><a class="category-sub-link" href="/tienda/18-boiler">Boiler</a></li><li data-depth="1"><a class="category-sub-link" href="/tienda/19-campanas">Campanas</a></li><li data-depth="1"><a class="category-sub-link" href="/tienda/21-dispensadores">Dispensadores</a></li><li data-depth="1"><a class="category-sub-link" href="/tienda/22-parillas">Parillas</a></li><li data-depth="1"><a class="category-sub-link" href="/tienda/25-microondas">Microondas</a></li><li data-depth="1"><a class="category-sub-link" href="/tienda/26-lavadoras">Lavadoras</a></li></ul></div></li><li data-depth="0"><a href="/tienda/17-herramientas">Herramientas</a></li><li data-depth="0"><a href="/tienda/14-souvenirs">Souvenirs</a></li><li data-depth="0"><a href="/tienda/24-outlet">Outlet</a></li></ul>
     </div>
   </div>
 	<div id="fbpsc" class="block-categories">
@@ -9473,7 +9536,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<input class="is_required validate account_input form-control" type="password" data-validate="isPasswd" id="passwd" name="passwd" value="" />
 							</div>
 
-							<a class="a_link_17 pull-right" href="/tienda_assets/recuperar-contrasena" title="Recover your forgotten password" rel="nofollow">Forgot your password?</a>
+							<a class="a_link_17 pull-right" href="/tienda/recuperar-contrasena" title="Recover your forgotten password" rel="nofollow">Forgot your password?</a>
 
 							<p class="submit pull-right">
 															<button type="submit" id="SubmitLogin" name="SubmitLogin" class="btn btn-primary text-center">Login</button>
@@ -9551,21 +9614,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <ul>
                                                                         <li>
                                 <a
-                                        href="/tienda_assets/content/4-quienes-somos"
+                                        href="/tienda/content/4-quienes-somos"
                                         title=""                                                                        >
                                     Quiénes Somos
                                 </a>
                             </li>
                                                                                                 <li>
                                 <a
-                                        href="/tienda_assets/content/2-aviso-de-privacidad"
+                                        href="/tienda/content/2-aviso-de-privacidad"
                                         title="Aviso de Privacidad"                                                                        >
                                     Aviso de Privacidad
                                 </a>
                             </li>
                                                                                                 <li>
                                 <a
-                                        href="/tienda_assets/content/3-terminos-y-condiciones"
+                                        href="/tienda/content/3-terminos-y-condiciones"
                                         title="Términos y condiciones"                                                                        >
                                     Términos y condiciones
                                 </a>
@@ -9579,28 +9642,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <ul>
                                                                         <li>
                                 <a
-                                        href="/tienda_assets/mi-cuenta"
+                                        href="/tienda/mi-cuenta"
                                         title=""                                                                        >
                                     Mi cuenta
                                 </a>
                             </li>
                                                                                                 <li>
                                 <a
-                                        href="/tienda_assets/historial-compra"
+                                        href="/tienda/historial-compra"
                                         title=""                                                                        >
                                     Historial de pedidos
                                 </a>
                             </li>
                                                                                                 <li>
                                 <a
-                                        href="/tienda_assets/datos-personales"
+                                        href="/tienda/datos-personales"
                                         title=""                                                                        >
                                     Identidad
                                 </a>
                             </li>
                                                                                                 <li>
                                 <a
-                                        href="/tienda_assets/direcciones"
+                                        href="/tienda/direcciones"
                                         title=""                                                                        >
                                     Direcciones
                                 </a>
@@ -9727,7 +9790,7 @@ if(window.location.pathname == "/content/4-quienes-somos" || window.location.pat
   
       
 
-    <form  id="login-form-modal" action="/tienda_assets/iniciar-sesion"   method="post">
+    <form  id="login-form-modal" action="/tienda/iniciar-sesion"   method="post">
 
     <section>
       
@@ -9826,7 +9889,7 @@ if(window.location.pathname == "/content/4-quienes-somos" || window.location.pat
           
               
       <div class="forgot-password">
-        <a href="/tienda_assets/recuperar-contrasena" rel="nofollow">
+        <a href="/tienda/recuperar-contrasena" rel="nofollow">
           ¿Olvidaste tu contraseña?
         </a>
       </div>
@@ -9869,7 +9932,7 @@ if(window.location.pathname == "/content/4-quienes-somos" || window.location.pat
 
                 
                 <div class="no-account">
-                    <a href="/tienda_assets/iniciar-sesion?create_account=1" data-link-action="display-register-form">
+                    <a href="/tienda/iniciar-sesion?create_account=1" data-link-action="display-register-form">
                         ¿Aún no tienes cuenta? Regístrate 
                     </a>
                 </div>
@@ -9893,8 +9956,7 @@ if(window.location.pathname == "/content/4-quienes-somos" || window.location.pat
 </div>
 
 
-<div id="iqitcompare-floating-wrapper">
-</div>
+@include('tienda.partials.compare_floating')
 
 
 
@@ -9960,6 +10022,75 @@ jQuery(document).ready(function($){
 
 
 
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const searchInput = document.getElementById("search-input");
+    const searchResults = document.getElementById("search-results");
+    const searchResultsList = document.getElementById("search-results-list");
+    const searchLoading = document.getElementById("search-loading");
+    let timeoutId;
+
+    if (!searchInput) return;
+
+    searchInput.addEventListener("input", function(e) {
+        const query = e.target.value.trim();
+        
+        clearTimeout(timeoutId);
+
+        if (query.length < 2) {
+            searchResults.classList.add("hidden");
+            return;
+        }
+
+        searchResults.classList.remove("hidden");
+        searchResultsList.innerHTML = "";
+        searchLoading.classList.remove("hidden");
+
+        timeoutId = setTimeout(() => {
+            fetch(`/buscar/autocomplete?q=${encodeURIComponent(query)}`)
+                .then(response => response.json())
+                .then(data => {
+                    searchLoading.classList.add("hidden");
+                    searchResultsList.innerHTML = "";
+                    
+                    if (data.length === 0) {
+                        searchResultsList.innerHTML = '<div class="autocomplete-empty">No se encontraron productos.</div>';
+                        return;
+                    }
+
+                    data.forEach(product => {
+                        const html = `
+                            <a href="${product.url}" class="autocomplete-item">
+                                <div class="autocomplete-img-container">
+                                    ${product.image ? `<img src="${product.image}">` : `<span style="color:#ccc; font-size:10px;">Sin img</span>`}
+                                </div>
+                                <div class="autocomplete-details">
+                                    <span class="autocomplete-title">${product.name}</span>
+                                    <span class="autocomplete-price">${product.price}</span>
+                                </div>
+                            </a>
+                        `;
+                        searchResultsList.insertAdjacentHTML("beforeend", html);
+                    });
+                })
+                .catch(error => {
+                    searchLoading.classList.add("hidden");
+                    console.error("Error fetching search results:", error);
+                });
+        }, 300);
+    });
+
+    document.addEventListener("click", function(e) {
+        const container = document.getElementById("search_widget");
+        if (container && !container.contains(e.target)) {
+            searchResults.classList.add("hidden");
+        }
+    });
+});
+</script>
+    @include('tienda.partials.modals')
 </body>
+
 
 </html>

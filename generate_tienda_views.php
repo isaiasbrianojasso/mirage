@@ -33,15 +33,35 @@ foreach ($it as $file) {
         $html_content = str_replace('/index.html', '', $html_content);
         $html_content = str_replace('index.html', '', $html_content);
         
-        // Rewrite absolute domain references to our local /tienda prefix
+        // First, let's fix asset paths to point to /tienda_assets/
+        $html_content = str_replace('https://www.tiendamirage.mx/themes/', '/tienda_assets/themes/', $html_content);
+        $html_content = str_replace('https://www.tiendamirage.mx/modules/', '/tienda_assets/modules/', $html_content);
+        $html_content = str_replace('https://www.tiendamirage.mx/js/', '/tienda_assets/js/', $html_content);
+        $html_content = str_replace('https://www.tiendamirage.mx/css/', '/tienda_assets/css/', $html_content);
+        $html_content = str_replace('https://www.tiendamirage.mx/img/', '/tienda_assets/img/', $html_content);
+        $html_content = str_replace('https://www.tiendamirage.mx/upload/', '/tienda_assets/upload/', $html_content);
+        
+        $html_content = str_replace('https:\/\/www.tiendamirage.mx\/themes\/', '\/tienda_assets\/themes\/', $html_content);
+        $html_content = str_replace('https:\/\/www.tiendamirage.mx\/modules\/', '\/tienda_assets\/modules\/', $html_content);
+        $html_content = str_replace('https:\/\/www.tiendamirage.mx\/js\/', '\/tienda_assets\/js\/', $html_content);
+        $html_content = str_replace('https:\/\/www.tiendamirage.mx\/css\/', '\/tienda_assets\/css\/', $html_content);
+        $html_content = str_replace('https:\/\/www.tiendamirage.mx\/img\/', '\/tienda_assets\/img\/', $html_content);
+        
+        // Fix Prestashop product image folders (e.g. 10214-home_default) which are located in the root of public/
+        $html_content = preg_replace('/https:\/\/www\.tiendamirage\.mx\/(\d+-[a-zA-Z_]+)\//', '/$1/', $html_content);
+        $html_content = preg_replace('/https:\\\\\/\\\\\/www\.tiendamirage\.mx\\\\\/(\d+-[a-zA-Z_]+)\\\\\//', '\/$1\/', $html_content);
+        
+        // Rewrite remaining absolute domain references (HTML links) to our local /tienda prefix
         $html_content = str_replace('https://www.tiendamirage.mx/', '/tienda/', $html_content);
         $html_content = str_replace('https:\/\/www.tiendamirage.mx\/', '\/tienda\/', $html_content);
         
         // Escape JSON-LD @ tags so Blade doesn't treat them as directives (like @context)
         $html_content = str_replace('\"@@', '\"@', $html_content); // Revert previous mistake
         $html_content = str_replace('\"@', '\"@', $html_content); // Revert previous mistake
-        
         $html_content = str_replace('"@', '"@@', $html_content);
+        
+        // Ensure modals are included before closing body
+        $html_content = str_replace('</body>', "    @include('tienda.partials.modals')\n</body>", $html_content);
 
         
         $blade_name = $route_path === '' ? 'index' : str_replace('/', '.', $route_path);

@@ -49,7 +49,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <meta name="description" content="">
   <meta name="keywords" content="">
     
-      <link rel="canonical" href="/tienda_assets/2-inicio">
+      <link rel="canonical" href="/tienda/2-inicio">
     
 
   
@@ -62,7 +62,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     "@@id": "#store-organization",
     "@@type": "Organization",
     "name" : "Mirage",
-    "url" : "/tienda_assets/",
+    "url" : "/tienda/",
   
       "logo": {
         "@@type": "ImageObject",
@@ -77,11 +77,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     "@@type": "WebPage",
     "isPartOf": {
       "@@type": "WebSite",
-      "url":  "/tienda_assets/",
+      "url":  "/tienda/",
       "name": "Mirage"
     },
     "name": "Inicio",
-    "url":  "/tienda_assets/2-inicio"
+    "url":  "/tienda/2-inicio"
   }
 </script>
 
@@ -100,137 +100,137 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         "@@type": "ListItem",
         "position": 1,
         "name": "COMPRESOR",
-        "url": "/tienda_assets/inicio/1309-compresor.html"
+        "url": "/tienda/inicio/1309-compresor.html"
       },          {
         "@@type": "ListItem",
         "position": 2,
         "name": "Valvula de servicio",
-        "url": "/tienda_assets/inicio/1711-v.html"
+        "url": "/tienda/inicio/1711-v.html"
       },          {
         "@@type": "ListItem",
         "position": 3,
         "name": "",
-        "url": "/tienda_assets/inicio/1712-v.html"
+        "url": "/tienda/inicio/1712-v.html"
       },          {
         "@@type": "ListItem",
         "position": 4,
         "name": "Valvula de servicio",
-        "url": "/tienda_assets/inicio/1715-v.html"
+        "url": "/tienda/inicio/1715-v.html"
       },          {
         "@@type": "ListItem",
         "position": 5,
         "name": "Compresor",
-        "url": "/tienda_assets/inicio/1749-c.html"
+        "url": "/tienda/inicio/1749-c.html"
       },          {
         "@@type": "ListItem",
         "position": 6,
         "name": "Motor condensador ",
-        "url": "/tienda_assets/inicio/1776-m.html"
+        "url": "/tienda/inicio/1776-m.html"
       },          {
         "@@type": "ListItem",
         "position": 7,
         "name": "Sensor triple de condensador, descarga 50k?, Pozo 10k?, Ambiente 10k?",
-        "url": "/tienda_assets/inicio/1812-s.html"
+        "url": "/tienda/inicio/1812-s.html"
       },          {
         "@@type": "ListItem",
         "position": 8,
         "name": "Sensor de ambiente evaporador 10k?",
-        "url": "/tienda_assets/inicio/1813-s.html"
+        "url": "/tienda/inicio/1813-s.html"
       },          {
         "@@type": "ListItem",
         "position": 9,
         "name": "Reactor",
-        "url": "/tienda_assets/inicio/1815-r.html"
+        "url": "/tienda/inicio/1815-r.html"
       },          {
         "@@type": "ListItem",
         "position": 10,
         "name": "Transformador",
-        "url": "/tienda_assets/inicio/1816-t.html"
+        "url": "/tienda/inicio/1816-t.html"
       },          {
         "@@type": "ListItem",
         "position": 11,
         "name": "Turbina ",
-        "url": "/tienda_assets/inicio/1824-t.html"
+        "url": "/tienda/inicio/1824-t.html"
       },          {
         "@@type": "ListItem",
         "position": 12,
         "name": "Turbina ",
-        "url": "/tienda_assets/inicio/1826-t.html"
+        "url": "/tienda/inicio/1826-t.html"
       },          {
         "@@type": "ListItem",
         "position": 13,
         "name": "Turbina ",
-        "url": "/tienda_assets/inicio/1827-t.html"
+        "url": "/tienda/inicio/1827-t.html"
       },          {
         "@@type": "ListItem",
         "position": 14,
         "name": "Valvula de servicio",
-        "url": "/tienda_assets/inicio/1840-v.html"
+        "url": "/tienda/inicio/1840-v.html"
       },          {
         "@@type": "ListItem",
         "position": 15,
         "name": "Valvula de servicio",
-        "url": "/tienda_assets/inicio/1844-v.html"
+        "url": "/tienda/inicio/1844-v.html"
       },          {
         "@@type": "ListItem",
         "position": 16,
         "name": "Valvula de servicio",
-        "url": "/tienda_assets/inicio/1845-v.html"
+        "url": "/tienda/inicio/1845-v.html"
       },          {
         "@@type": "ListItem",
         "position": 17,
         "name": "Valvula de servicio",
-        "url": "/tienda_assets/inicio/1847-v.html"
+        "url": "/tienda/inicio/1847-v.html"
       },          {
         "@@type": "ListItem",
         "position": 18,
         "name": "Válvula reversible",
-        "url": "/tienda_assets/inicio/1849-v.html"
+        "url": "/tienda/inicio/1849-v.html"
       },          {
         "@@type": "ListItem",
         "position": 19,
         "name": "Compresor",
-        "url": "/tienda_assets/inicio/1851-c.html"
+        "url": "/tienda/inicio/1851-c.html"
       },          {
         "@@type": "ListItem",
         "position": 20,
         "name": "FILTRO PURIFICADOR DE AIRE XCLEAR 500",
-        "url": "/tienda_assets/inicio/1860-filtro-purificador-de-aire-xclear-500.html"
+        "url": "/tienda/inicio/1860-filtro-purificador-de-aire-xclear-500.html"
       },          {
         "@@type": "ListItem",
         "position": 21,
         "name": "VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V",
-        "url": "/tienda_assets/inicio/2004-valvula-reversible-con-arana-2-ton-220v.html"
+        "url": "/tienda/inicio/2004-valvula-reversible-con-arana-2-ton-220v.html"
       },          {
         "@@type": "ListItem",
         "position": 22,
         "name": "SENSOR DE AMBIENTE 15K OHMS MOD: MQ0381M",
-        "url": "/tienda_assets/inicio/2016-sensor-de-ambiente-15k-ohms-mod-mq0381m.html"
+        "url": "/tienda/inicio/2016-sensor-de-ambiente-15k-ohms-mod-mq0381m.html"
       },          {
         "@@type": "ListItem",
         "position": 23,
         "name": "MOTOR EVAPORADOR 2 TON MOD: YDK38 4C",
-        "url": "/tienda_assets/inicio/2026-motor-evaporador-2-ton-mod-ydk38-4c.html"
+        "url": "/tienda/inicio/2026-motor-evaporador-2-ton-mod-ydk38-4c.html"
       },          {
         "@@type": "ListItem",
         "position": 24,
         "name": "CAPACITOR DE COMPRESOR 110V MOD: CBB65(A) 450VAC 70 MICRO FARADIO MAS-MENOS 5 POR CIENTO NEX 2023",
-        "url": "/tienda_assets/inicio/2051-capacitor-de-compresor-110v-mod-cbb65a-450vac-70-micro-faradio-mas-menos-5-por-ciento-nex-2023.html"
+        "url": "/tienda/inicio/2051-capacitor-de-compresor-110v-mod-cbb65a-450vac-70-micro-faradio-mas-menos-5-por-ciento-nex-2023.html"
       },          {
         "@@type": "ListItem",
         "position": 25,
         "name": "MOTOR DE CONDENSADOR 2 TON 220V MOD: YDK68-6E8",
-        "url": "/tienda_assets/inicio/2066-motor-de-condensador-2-ton-220v-mod-ydk68-6e8.html"
+        "url": "/tienda/inicio/2066-motor-de-condensador-2-ton-220v-mod-ydk68-6e8.html"
       },          {
         "@@type": "ListItem",
         "position": 26,
         "name": "MODULO DE TARJETA INVERSORA 4 Y 5 TON CI MAGNUM SERIES",
-        "url": "/tienda_assets/inicio/2188-modulo-de-tarjeta-inversora-4-y-5-ton-ci-magnum-series-.html"
+        "url": "/tienda/inicio/2188-modulo-de-tarjeta-inversora-4-y-5-ton-ci-magnum-series-.html"
       },          {
         "@@type": "ListItem",
         "position": 27,
         "name": "TARJETA DE EVAPORADOR 1 TON CALOR 220V MAGNUM 17",
-        "url": "/tienda_assets/inicio/2195-tarjeta-de-evaporador-1-ton-calor-220v-magnum-17.html"
+        "url": "/tienda/inicio/2195-tarjeta-de-evaporador-1-ton-calor-220v-magnum-17.html"
       }        ]
   }
 </script>
@@ -243,7 +243,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
     <meta property="og:title" content="Inicio"/>
-    <meta property="og:url" content="/tienda_assets/2-inicio"/>
+    <meta property="og:url" content="/tienda/2-inicio"/>
     <meta property="og:site_name" content="Mirage"/>
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
@@ -331,7 +331,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         var iqitmegamenu = {"sticky":"false","containerSelector":"#wrapper > .container"};
         var iqitreviews = [];
         var iqitwishlist = {"nbProducts":0};
-        var prestashop = {"cart":{"products":[],"totals":{"total":{"type":"total","label":"Total","amount":0,"value":"$0.00"},"total_including_tax":{"type":"total","label":"Total IVA inclu\u00eddo","amount":0,"value":"$0.00"},"total_excluding_tax":{"type":"total","label":"Total sin IVA","amount":0,"value":"$0.00"}},"subtotals":{"products":{"type":"products","label":"Subtotal","amount":0,"value":"$0.00"},"discounts":null,"shipping":{"type":"shipping","label":"Env\u00edo","amount":0,"value":""},"tax":null},"products_count":0,"summary_string":"0 articulos","vouchers":{"allowed":1,"added":[]},"discounts":[],"minimalPurchase":0,"minimalPurchaseRequired":""},"currency":{"id":1,"name":"Peso mexicano","iso_code":"MXN","iso_code_num":"484","sign":"$"},"customer":{"lastname":null,"firstname":null,"email":null,"birthday":null,"newsletter":null,"newsletter_date_add":null,"optin":null,"website":null,"company":null,"siret":null,"ape":null,"is_logged":false,"gender":{"type":null,"name":null},"addresses":[]},"language":{"name":"Espa\u00f1ol MX (Spanish)","iso_code":"mx","locale":"es-MX","language_code":"es-MX","is_rtl":"0","date_format_lite":"Y-m-d","date_format_full":"Y-m-d H:i:s","id":2},"page":{"title":"","canonical":"\/tienda\/2-inicio","meta":{"title":"Inicio","description":"","keywords":"","robots":"index"},"page_name":"category","body_classes":{"lang-mx":true,"lang-rtl":false,"country-MX":true,"currency-MXN":true,"layout-left-column":true,"page-category":true,"tax-display-enabled":true,"category-id-2":true,"category-Inicio":true,"category-id-parent-1":true,"category-depth-level-1":true},"admin_notifications":[]},"shop":{"name":"Mirage","logo":"\/tienda\/img\/mirage-logo-1534899548.jpg","stores_icon":"\/tienda\/img\/logo_stores.png","favicon":"\/tienda\/img\/favicon.ico"},"urls":{"base_url":"\/tienda\/","current_url":"\/tienda\/2-inicio","shop_domain_url":"https:\/\/www.tiendamirage.mx","img_ps_url":"\/tienda\/img\/","img_cat_url":"\/tienda\/img\/c\/","img_lang_url":"\/tienda\/img\/l\/","img_prod_url":"\/tienda\/img\/p\/","img_manu_url":"\/tienda\/img\/m\/","img_sup_url":"\/tienda\/img\/su\/","img_ship_url":"\/tienda\/img\/s\/","img_store_url":"\/tienda\/img\/st\/","img_col_url":"\/tienda\/img\/co\/","img_url":"\/tienda\/themes\/warehouse\/assets\/img\/","css_url":"\/tienda\/themes\/warehouse\/assets\/css\/","js_url":"\/tienda\/themes\/warehouse\/assets\/js\/","pic_url":"\/tienda\/upload\/","pages":{"address":"\/tienda\/direccion","addresses":"\/tienda\/direcciones","authentication":"\/tienda\/iniciar-sesion","cart":"\/tienda\/carrito","category":"\/tienda\/index.php?controller=category","cms":"\/tienda\/index.php?controller=cms","contact":"\/tienda\/contactenos","discount":"\/tienda\/descuento","guest_tracking":"\/tienda\/seguimiento-pedido-invitado","history":"\/tienda\/historial-compra","identity":"\/tienda\/datos-personales","index":"\/tienda\/","my_account":"\/tienda\/mi-cuenta","order_confirmation":"\/tienda\/confirmacion-pedido","order_detail":"\/tienda\/index.php?controller=order-detail","order_follow":"\/tienda\/seguimiento-pedido","order":"\/tienda\/pedido","order_return":"\/tienda\/index.php?controller=order-return","order_slip":"\/tienda\/nota-credito","pagenotfound":"\/tienda\/pagina-no-encontrada","password":"\/tienda\/recuperar-contrasena","pdf_invoice":"\/tienda\/index.php?controller=pdf-invoice","pdf_order_return":"\/tienda\/index.php?controller=pdf-order-return","pdf_order_slip":"\/tienda\/index.php?controller=pdf-order-slip","prices_drop":"\/tienda\/productos-rebajados","product":"\/tienda\/index.php?controller=product","search":"\/tienda\/busqueda","sitemap":"\/tienda\/Mapa del sitio","stores":"\/tienda\/tiendas","supplier":"\/tienda\/proveedor","register":"\/tienda\/iniciar-sesion?create_account=1","order_login":"\/tienda\/pedido?login=1"},"alternative_langs":[],"theme_assets":"\/themes\/warehouse\/assets\/","actions":{"logout":"\/tienda\/?mylogout="},"no_picture_image":{"bySize":{"small_default":{"url":"\/tienda\/img\/p\/mx-default-small_default.jpg","width":98,"height":127},"cart_default":{"url":"\/tienda\/img\/p\/mx-default-cart_default.jpg","width":125,"height":162},"home_default":{"url":"\/tienda\/img\/p\/mx-default-home_default.jpg","width":236,"height":305},"large_default":{"url":"\/tienda\/img\/p\/mx-default-large_default.jpg","width":381,"height":492},"medium_default":{"url":"\/tienda\/img\/p\/mx-default-medium_default.jpg","width":452,"height":584},"thickbox_default":{"url":"\/tienda\/img\/p\/mx-default-thickbox_default.jpg","width":1100,"height":1422}},"small":{"url":"\/tienda\/img\/p\/mx-default-small_default.jpg","width":98,"height":127},"medium":{"url":"\/tienda\/img\/p\/mx-default-large_default.jpg","width":381,"height":492},"large":{"url":"\/tienda\/img\/p\/mx-default-thickbox_default.jpg","width":1100,"height":1422},"legend":""}},"configuration":{"display_taxes_label":true,"display_prices_tax_incl":true,"is_catalog":false,"show_prices":true,"opt_in":{"partner":true},"quantity_discount":{"type":"price","label":"Precio Unitario"},"voucher_enabled":1,"return_enabled":0},"field_required":[],"breadcrumb":{"links":[{"title":"Inicio","url":"\/tienda\/"}],"count":1},"link":{"protocol_link":"https:\/\/","protocol_content":"https:\/\/"},"time":1782411802,"static_token":"736faed44ac184681768e35d05df6cbd","token":"1da7720698848b23a01dc5e00a1f383c","debug":false};
+        var prestashop = {"cart":{"products":[],"totals":{"total":{"type":"total","label":"Total","amount":0,"value":"$0.00"},"total_including_tax":{"type":"total","label":"Total IVA inclu\u00eddo","amount":0,"value":"$0.00"},"total_excluding_tax":{"type":"total","label":"Total sin IVA","amount":0,"value":"$0.00"}},"subtotals":{"products":{"type":"products","label":"Subtotal","amount":0,"value":"$0.00"},"discounts":null,"shipping":{"type":"shipping","label":"Env\u00edo","amount":0,"value":""},"tax":null},"products_count":0,"summary_string":"0 articulos","vouchers":{"allowed":1,"added":[]},"discounts":[],"minimalPurchase":0,"minimalPurchaseRequired":""},"currency":{"id":1,"name":"Peso mexicano","iso_code":"MXN","iso_code_num":"484","sign":"$"},"customer":{"lastname":null,"firstname":null,"email":null,"birthday":null,"newsletter":null,"newsletter_date_add":null,"optin":null,"website":null,"company":null,"siret":null,"ape":null,"is_logged":false,"gender":{"type":null,"name":null},"addresses":[]},"language":{"name":"Espa\u00f1ol MX (Spanish)","iso_code":"mx","locale":"es-MX","language_code":"es-MX","is_rtl":"0","date_format_lite":"Y-m-d","date_format_full":"Y-m-d H:i:s","id":2},"page":{"title":"","canonical":"\/tienda\/2-inicio","meta":{"title":"Inicio","description":"","keywords":"","robots":"index"},"page_name":"category","body_classes":{"lang-mx":true,"lang-rtl":false,"country-MX":true,"currency-MXN":true,"layout-left-column":true,"page-category":true,"tax-display-enabled":true,"category-id-2":true,"category-Inicio":true,"category-id-parent-1":true,"category-depth-level-1":true},"admin_notifications":[]},"shop":{"name":"Mirage","logo":"\/tienda_assets\/img\/mirage-logo-1534899548.jpg","stores_icon":"\/tienda_assets\/img\/logo_stores.png","favicon":"\/tienda_assets\/img\/favicon.ico"},"urls":{"base_url":"\/tienda\/","current_url":"\/tienda\/2-inicio","shop_domain_url":"https:\/\/www.tiendamirage.mx","img_ps_url":"\/tienda_assets\/img\/","img_cat_url":"\/tienda_assets\/img\/c\/","img_lang_url":"\/tienda_assets\/img\/l\/","img_prod_url":"\/tienda_assets\/img\/p\/","img_manu_url":"\/tienda_assets\/img\/m\/","img_sup_url":"\/tienda_assets\/img\/su\/","img_ship_url":"\/tienda_assets\/img\/s\/","img_store_url":"\/tienda_assets\/img\/st\/","img_col_url":"\/tienda_assets\/img\/co\/","img_url":"\/tienda_assets\/themes\/warehouse\/assets\/img\/","css_url":"\/tienda_assets\/themes\/warehouse\/assets\/css\/","js_url":"\/tienda_assets\/themes\/warehouse\/assets\/js\/","pic_url":"\/tienda\/upload\/","pages":{"address":"\/tienda\/direccion","addresses":"\/tienda\/direcciones","authentication":"\/tienda\/iniciar-sesion","cart":"\/tienda\/carrito","category":"\/tienda\/index.php?controller=category","cms":"\/tienda\/index.php?controller=cms","contact":"\/tienda\/contactenos","discount":"\/tienda\/descuento","guest_tracking":"\/tienda\/seguimiento-pedido-invitado","history":"\/tienda\/historial-compra","identity":"\/tienda\/datos-personales","index":"\/tienda\/","my_account":"\/tienda\/mi-cuenta","order_confirmation":"\/tienda\/confirmacion-pedido","order_detail":"\/tienda\/index.php?controller=order-detail","order_follow":"\/tienda\/seguimiento-pedido","order":"\/tienda\/pedido","order_return":"\/tienda\/index.php?controller=order-return","order_slip":"\/tienda\/nota-credito","pagenotfound":"\/tienda\/pagina-no-encontrada","password":"\/tienda\/recuperar-contrasena","pdf_invoice":"\/tienda\/index.php?controller=pdf-invoice","pdf_order_return":"\/tienda\/index.php?controller=pdf-order-return","pdf_order_slip":"\/tienda\/index.php?controller=pdf-order-slip","prices_drop":"\/tienda\/productos-rebajados","product":"\/tienda\/index.php?controller=product","search":"\/tienda\/busqueda","sitemap":"\/tienda\/Mapa del sitio","stores":"\/tienda\/tiendas","supplier":"\/tienda\/proveedor","register":"\/tienda\/iniciar-sesion?create_account=1","order_login":"\/tienda\/pedido?login=1"},"alternative_langs":[],"theme_assets":"\/themes\/warehouse\/assets\/","actions":{"logout":"\/tienda\/?mylogout="},"no_picture_image":{"bySize":{"small_default":{"url":"\/tienda_assets\/img\/p\/mx-default-small_default.jpg","width":98,"height":127},"cart_default":{"url":"\/tienda_assets\/img\/p\/mx-default-cart_default.jpg","width":125,"height":162},"home_default":{"url":"\/tienda_assets\/img\/p\/mx-default-home_default.jpg","width":236,"height":305},"large_default":{"url":"\/tienda_assets\/img\/p\/mx-default-large_default.jpg","width":381,"height":492},"medium_default":{"url":"\/tienda_assets\/img\/p\/mx-default-medium_default.jpg","width":452,"height":584},"thickbox_default":{"url":"\/tienda_assets\/img\/p\/mx-default-thickbox_default.jpg","width":1100,"height":1422}},"small":{"url":"\/tienda_assets\/img\/p\/mx-default-small_default.jpg","width":98,"height":127},"medium":{"url":"\/tienda_assets\/img\/p\/mx-default-large_default.jpg","width":381,"height":492},"large":{"url":"\/tienda_assets\/img\/p\/mx-default-thickbox_default.jpg","width":1100,"height":1422},"legend":""}},"configuration":{"display_taxes_label":true,"display_prices_tax_incl":true,"is_catalog":false,"show_prices":true,"opt_in":{"partner":true},"quantity_discount":{"type":"price","label":"Precio Unitario"},"voucher_enabled":1,"return_enabled":0},"field_required":[],"breadcrumb":{"links":[{"title":"Inicio","url":"\/tienda\/"}],"count":1},"link":{"protocol_link":"https:\/\/","protocol_content":"https:\/\/"},"time":1782411802,"static_token":"736faed44ac184681768e35d05df6cbd","token":"1da7720698848b23a01dc5e00a1f383c","debug":false};
         var psemailsubscription_subscription = "\/tienda\/module\/ps_emailsubscription\/subscription";
       </script>
 
@@ -374,11 +374,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     "@@type" : "WebPage",
     "isPartOf": [{
         "@@type":"WebSite",
-        "url":  "/tienda_assets/",
+        "url":  "/tienda/",
         "name": "Mirage"
     }],
     "name": "Inicio",
-    "url": "/tienda_assets/2-inicio"
+    "url": "/tienda/2-inicio"
 }
 </script>
 
@@ -479,7 +479,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
              </div>
             <div class="col col-auto col-md right-nav text-right">
                 <div class="d-inline-block">
-    <a href="//www.tiendamirage.mx/module/iqitwishlist/view">
+    <a href="{{ route('wishlist.index') }}">
         <i class="fa fa-heart-o fa-fw" aria-hidden="true"></i> Lista de deseos (<span
                 id="iqitwishlist-nb"></span>)
     </a>
@@ -503,7 +503,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="col col-auto col-header-left">
                     <div id="desktop_logo">
                         
-  <a href="/tienda_assets/">
+  <a href="/tienda/">
     <img class="logo img-fluid"
          src="/tienda_assets/img/mirage-logo-1534899548.jpg"
                   alt="Mirage"
@@ -516,25 +516,57 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                 </div>
                 <div class="col col-header-center">
-                                        <!-- Block search module TOP -->
-
+                                        
 <!-- Block search module TOP -->
-<div id="search_widget" class="search-widget" data-search-controller-url="/tienda_assets/module/iqitsearch/searchiqit">
-    <form method="get" action="/tienda_assets/module/iqitsearch/searchiqit">
+<div id="search_widget" class="search-widget autocomplete-wrapper" data-search-controller-url="/buscar/autocomplete">
+    <form method="get" action="/buscar">
         <div class="input-group">
-            <input type="text" name="s" value="" data-all-text="Mostrar todos los resultados"
-                   data-blog-text="Blog post"
-                   data-product-text="Product"
-                   data-brands-text="Marca"
-                   autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
-                   placeholder="Buscar" class="form-control form-search-control" />
+            <input type="text" name="q" id="search-input" value="" placeholder="Buscar productos..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="form-control form-search-control" />
             <button type="submit" class="search-btn">
                 <i class="fa fa-search"></i>
             </button>
         </div>
     </form>
+    
+    <!-- Dropdown de Resultados -->
+    <div id="search-results" class="autocomplete-dropdown hidden">
+        <div id="search-results-list" class="autocomplete-list">
+            <!-- Resultados inyectados por JS -->
+        </div>
+        <div id="search-loading" class="autocomplete-loading hidden">
+            Buscando...
+        </div>
+    </div>
 </div>
+<style>
+.autocomplete-wrapper { position: relative; }
+.autocomplete-dropdown { 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    width: 100%; 
+    background: #fff; 
+    border: 1px solid #eee; 
+    border-radius: 4px; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+    z-index: 9999; 
+    margin-top: 5px;
+    overflow: hidden;
+}
+.autocomplete-dropdown.hidden { display: none !important; }
+.autocomplete-list { max-height: 400px; overflow-y: auto; }
+.autocomplete-item { display: flex; align-items: center; padding: 10px; border-bottom: 1px solid #f5f5f5; text-decoration: none; transition: background 0.2s; }
+.autocomplete-item:hover { background: #f9f9f9; text-decoration: none; }
+.autocomplete-img-container { width: 50px; height: 50px; flex-shrink: 0; background: #f5f5f5; border-radius: 4px; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.autocomplete-img-container img { width: 100%; height: 100%; object-fit: cover; }
+.autocomplete-details { margin-left: 15px; flex-grow: 1; }
+.autocomplete-title { font-size: 14px; font-weight: 500; color: #333; margin-bottom: 3px; display: block; }
+.autocomplete-price { font-size: 14px; font-weight: bold; color: #e62228; display: block; }
+.autocomplete-loading { padding: 15px; text-align: center; color: #777; font-size: 13px; }
+.autocomplete-empty { padding: 15px; text-align: center; color: #777; font-size: 13px; }
+</style>
 <!-- /Block search module TOP -->
+
 
 <!-- /Block search module TOP -->
 
@@ -546,7 +578,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     
                                             <div id="header-user-btn" class="col col-auto header-btn-w header-user-btn-w">
-            <a href="/tienda_assets/mi-cuenta"
+            <a href="/tienda/mi-cuenta"
            title="Acceda a su cuenta de cliente"
            rel="nofollow" class="header-btn header-user-btn">
             <i class="fa fa-user fa-fw icon" aria-hidden="true"></i>
@@ -572,14 +604,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
          class="header-btn-w header-cart-btn-w ps-shoppingcart dropdown">
          <div id="blockcart" class="blockcart cart-preview"
          data-refresh-url="//www.tiendamirage.mx/module/ps_shoppingcart/ajax">
-        <a id="cart-toogle" class="cart-toogle header-btn header-cart-btn" data-toggle="dropdown" data-display="static">
+        <a id="cart-toogle" href="{{ route('cart.index') }}" class="cart-toogle header-btn header-cart-btn" data-toggle="dropdown" data-display="static">
             <i class="fa fa-shopping-bag fa-fw icon" aria-hidden="true"><span class="cart-products-count-btn  d-none">0</span></i>
             <span class="info-wrapper">
             <span class="title">Carrito:</span>
-            <span class="cart-toggle-details">
-            <span class="text-faded cart-separator"> / </span>
-                            Vacío
-                        </span>
+            <span class="cart-toggle-details"><span class="text-faded cart-separator"> / </span>{{ $cartCount > 0 ? $cartCount . ' articulos' : 'Vacío' }}</span>
             </span>
         </a>
         <div id="_desktop_blockcart-content" class="dropdown-menu-custom dropdown-menu">
@@ -622,7 +651,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<ul>
 											<li id="cbp-hrmenu-tab-48"
 							class="cbp-hrmenu-tab cbp-hrmenu-tab-48 ">
-							<a href="/tienda_assets/10-refacciones" class="nav-link" 
+							<a href="/tienda/10-refacciones" class="nav-link" 
 										>
 										
 
@@ -632,7 +661,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 																</li>
 												<li id="cbp-hrmenu-tab-49"
 							class="cbp-hrmenu-tab cbp-hrmenu-tab-49 ">
-							<a href="/tienda_assets/11-aire-acondicionado" class="nav-link" 
+							<a href="/tienda/11-aire-acondicionado" class="nav-link" 
 										>
 										
 
@@ -642,7 +671,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 																</li>
 												<li id="cbp-hrmenu-tab-51"
 							class="cbp-hrmenu-tab cbp-hrmenu-tab-51 ">
-							<a href="/tienda_assets/13-linea-blanca" class="nav-link" 
+							<a href="/tienda/13-linea-blanca" class="nav-link" 
 										>
 										
 
@@ -652,7 +681,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 																</li>
 												<li id="cbp-hrmenu-tab-52"
 							class="cbp-hrmenu-tab cbp-hrmenu-tab-52 ">
-							<a href="/tienda_assets/17-herramientas" class="nav-link" 
+							<a href="/tienda/17-herramientas" class="nav-link" 
 										>
 										
 
@@ -662,7 +691,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 																</li>
 												<li id="cbp-hrmenu-tab-54"
 							class="cbp-hrmenu-tab cbp-hrmenu-tab-54 ">
-							<a href="/tienda_assets/14-souvenirs" class="nav-link" 
+							<a href="/tienda/14-souvenirs" class="nav-link" 
 										>
 										
 
@@ -672,7 +701,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 																</li>
 												<li id="cbp-hrmenu-tab-55"
 							class="cbp-hrmenu-tab cbp-hrmenu-tab-55 ">
-							<a href="/tienda_assets/24-outlet" class="nav-link" 
+							<a href="/tienda/24-outlet" class="nav-link" 
 										>
 										
 
@@ -725,8 +754,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 			
-	<li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/"  class="flex-fill mobile-menu__link ">Inicio</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/10-refacciones"  class="flex-fill mobile-menu__link ">Refacciones</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/11-aire-acondicionado"  class="flex-fill mobile-menu__link ">Aire Acondicionado</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/13-linea-blanca"  class="flex-fill mobile-menu__link js-mobile-menu__link-accordion--has-submenu  ">Línea Blanca</a><span class="mobile-menu__arrow js-mobile-menu__link-accordion--has-submenu"><i class="fa fa-angle-down mobile-menu__expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up mobile-menu__close-icon" aria-hidden="true"></i></span><div class="mobile-menu__tab-row-break"></div>
-	<ul class="mobile-menu__submenu  mobile-menu__submenu--accordion js-mobile-menu__submenu"><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/18-boiler"  class="flex-fill mobile-menu__link ">Boiler</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/19-campanas"  class="flex-fill mobile-menu__link ">Campanas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/21-dispensadores"  class="flex-fill mobile-menu__link ">Dispensadores</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/22-parillas"  class="flex-fill mobile-menu__link ">Parillas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/25-microondas"  class="flex-fill mobile-menu__link ">Microondas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/26-lavadoras"  class="flex-fill mobile-menu__link ">Lavadoras</a></li></ul>	</li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/14-souvenirs"  class="flex-fill mobile-menu__link ">Souvenirs</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/17-herramientas"  class="flex-fill mobile-menu__link ">Herramientas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/24-outlet"  class="flex-fill mobile-menu__link ">Outlet</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/contactenos"  class="flex-fill mobile-menu__link ">Contacto</a></li>	
+	<li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/"  class="flex-fill mobile-menu__link ">Inicio</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/10-refacciones"  class="flex-fill mobile-menu__link ">Refacciones</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/11-aire-acondicionado"  class="flex-fill mobile-menu__link ">Aire Acondicionado</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/13-linea-blanca"  class="flex-fill mobile-menu__link js-mobile-menu__link-accordion--has-submenu  ">Línea Blanca</a><span class="mobile-menu__arrow js-mobile-menu__link-accordion--has-submenu"><i class="fa fa-angle-down mobile-menu__expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up mobile-menu__close-icon" aria-hidden="true"></i></span><div class="mobile-menu__tab-row-break"></div>
+	<ul class="mobile-menu__submenu  mobile-menu__submenu--accordion js-mobile-menu__submenu"><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/18-boiler"  class="flex-fill mobile-menu__link ">Boiler</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/19-campanas"  class="flex-fill mobile-menu__link ">Campanas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/21-dispensadores"  class="flex-fill mobile-menu__link ">Dispensadores</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/22-parillas"  class="flex-fill mobile-menu__link ">Parillas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/25-microondas"  class="flex-fill mobile-menu__link ">Microondas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/26-lavadoras"  class="flex-fill mobile-menu__link ">Lavadoras</a></li></ul>	</li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/14-souvenirs"  class="flex-fill mobile-menu__link ">Souvenirs</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/17-herramientas"  class="flex-fill mobile-menu__link ">Herramientas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/24-outlet"  class="flex-fill mobile-menu__link ">Outlet</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/contactenos"  class="flex-fill mobile-menu__link ">Contacto</a></li>	
 												<li class="mobile-menu__below-content"> </li>
 				</ul>
 			</div>
@@ -762,7 +791,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 			<div class="mobile-menu__user">
-			<a href="/tienda_assets/mi-cuenta" class="text-reset"><i class="fa fa-user" aria-hidden="true"></i>
+			<a href="/tienda/mi-cuenta" class="text-reset"><i class="fa fa-user" aria-hidden="true"></i>
 				
 									Iniciar sesión
 								
@@ -784,7 +813,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="mobile-main-bar">
         <div class="col-mobile-logo text-center">
             
-  <a href="/tienda_assets/">
+  <a href="/tienda/">
     <img class="logo img-fluid"
          src="/tienda_assets/img/mirage-logo-1534899548.jpg"
                   alt="Mirage"
@@ -812,23 +841,57 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div id="search-widget-mobile" class="dropdown-content dropdown-menu dropdown-mobile search-widget">
                         
                                                     
+
 <!-- Block search module TOP -->
-<form method="get" action="/tienda_assets/module/iqitsearch/searchiqit">
-    <div class="input-group">
-        <input type="text" name="s" value=""
-               placeholder="Buscar"
-               data-all-text="Show all results"
-               data-blog-text="Blog post"
-               data-product-text="Product"
-               data-brands-text="Marca"
-               autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
-               class="form-control form-search-control">
-        <button type="submit" class="search-btn">
-            <i class="fa fa-search"></i>
-        </button>
+<div id="search_widget" class="search-widget autocomplete-wrapper" data-search-controller-url="/buscar/autocomplete">
+    <form method="get" action="/buscar">
+        <div class="input-group">
+            <input type="text" name="q" id="search-input" value="" placeholder="Buscar productos..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="form-control form-search-control" />
+            <button type="submit" class="search-btn">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+    </form>
+    
+    <!-- Dropdown de Resultados -->
+    <div id="search-results" class="autocomplete-dropdown hidden">
+        <div id="search-results-list" class="autocomplete-list">
+            <!-- Resultados inyectados por JS -->
+        </div>
+        <div id="search-loading" class="autocomplete-loading hidden">
+            Buscando...
+        </div>
     </div>
-</form>
+</div>
+<style>
+.autocomplete-wrapper { position: relative; }
+.autocomplete-dropdown { 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    width: 100%; 
+    background: #fff; 
+    border: 1px solid #eee; 
+    border-radius: 4px; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+    z-index: 9999; 
+    margin-top: 5px;
+    overflow: hidden;
+}
+.autocomplete-dropdown.hidden { display: none !important; }
+.autocomplete-list { max-height: 400px; overflow-y: auto; }
+.autocomplete-item { display: flex; align-items: center; padding: 10px; border-bottom: 1px solid #f5f5f5; text-decoration: none; transition: background 0.2s; }
+.autocomplete-item:hover { background: #f9f9f9; text-decoration: none; }
+.autocomplete-img-container { width: 50px; height: 50px; flex-shrink: 0; background: #f5f5f5; border-radius: 4px; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.autocomplete-img-container img { width: 100%; height: 100%; object-fit: cover; }
+.autocomplete-details { margin-left: 15px; flex-grow: 1; }
+.autocomplete-title { font-size: 14px; font-weight: 500; color: #333; margin-bottom: 3px; display: block; }
+.autocomplete-price { font-size: 14px; font-weight: bold; color: #e62228; display: block; }
+.autocomplete-loading { padding: 15px; text-align: center; color: #777; font-size: 13px; }
+.autocomplete-empty { padding: 15px; text-align: center; color: #777; font-size: 13px; }
+</style>
 <!-- /Block search module TOP -->
+
 
                                                 
                     </div>
@@ -836,7 +899,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 </div>
                 <div class="col col-mobile-btn col-mobile-btn-account text-center">
-                    <a href="/tienda_assets/mi-cuenta" class="m-nav-btn"><i class="fa fa-user" aria-hidden="true"></i>
+                    <a href="/tienda/mi-cuenta" class="m-nav-btn"><i class="fa fa-user" aria-hidden="true"></i>
                         <span>     
                                                             Iniciar sesión
                                                         </span></a>
@@ -846,7 +909,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                                 <div class="col col-mobile-btn col-mobile-btn-cart ps-shoppingcart text-center dropdown">
                    <div id="mobile-cart-wrapper">
-                    <a id="mobile-cart-toogle" class="m-nav-btn" data-display="static" data-toggle="dropdown"><i class="fa fa-shopping-bag mobile-bag-icon" aria-hidden="true"><span id="mobile-cart-products-count" class="cart-products-count cart-products-count-btn">
+                    <a id="mobile-cart-toogle" href="{{ route('cart.index') }}" class="m-nav-btn" data-display="static" data-toggle="dropdown"><i class="fa fa-shopping-bag mobile-bag-icon" aria-hidden="true"><span id="mobile-cart-products-count" class="cart-products-count cart-products-count-btn">
                                 
                                                                     0
                                                                 
@@ -929,8 +992,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
                 <div class="col view-switcher">
-            <a href="/tienda_assets/2-inicio?order=product.position.asc&productListView=grid" class="current js-search-link hidden-sm-down" data-button-action="change-list-view" data-view="grid"  rel="nofollow"><i class="fa fa-th" aria-hidden="true"></i></a>
-            <a href="/tienda_assets/2-inicio?order=product.position.asc&productListView=list" class=" js-search-link hidden-sm-down" data-button-action="change-list-view" data-view="list"  rel="nofollow"><i class="fa fa-th-list" aria-hidden="true"></i></a>
+            <a href="/tienda/2-inicio?order=product.position.asc&productListView=grid" class="current js-search-link hidden-sm-down" data-button-action="change-list-view" data-view="grid"  rel="nofollow"><i class="fa fa-th" aria-hidden="true"></i></a>
+            <a href="/tienda/2-inicio?order=product.position.asc&productListView=list" class=" js-search-link hidden-sm-down" data-button-action="change-list-view" data-view="list"  rel="nofollow"><i class="fa fa-th-list" aria-hidden="true"></i></a>
         </div>
             
                     <div class="col col-auto col-left-sort">
@@ -944,35 +1007,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="dropdown-menu">
                                                             <a
                     rel="nofollow"
-                    href="/tienda_assets/2-inicio?order=product.position.asc"
+                    href="/tienda/2-inicio?order=product.position.asc"
                     class="select-list dropdown-item current js-search-link"
             >
                 Relevancia
             </a>
                                 <a
                     rel="nofollow"
-                    href="/tienda_assets/2-inicio?order=product.name.asc"
+                    href="/tienda/2-inicio?order=product.name.asc"
                     class="select-list dropdown-item js-search-link"
             >
                 Nombre, A a la Z
             </a>
                                 <a
                     rel="nofollow"
-                    href="/tienda_assets/2-inicio?order=product.name.desc"
+                    href="/tienda/2-inicio?order=product.name.desc"
                     class="select-list dropdown-item js-search-link"
             >
                 Nombre, Z a la A
             </a>
                                 <a
                     rel="nofollow"
-                    href="/tienda_assets/2-inicio?order=product.price.asc"
+                    href="/tienda/2-inicio?order=product.price.asc"
                     class="select-list dropdown-item js-search-link"
             >
                 Menor al mayor precio
             </a>
                                 <a
                     rel="nofollow"
-                    href="/tienda_assets/2-inicio?order=product.price.desc"
+                    href="/tienda/2-inicio?order=product.price.desc"
                     class="select-list dropdown-item js-search-link"
             >
                 Mayor al menor precio
@@ -1056,20 +1119,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/inicio/1309-compresor.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/inicio/1309-compresor.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/6856-home_default/compresor.jpg"
+                                                    data-src="/6856-home_default/compresor.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="COMPRESOR"
-                        data-full-size-image-url="/tienda_assets/6856-thickbox_default/compresor.jpg"
+                        data-full-size-image-url="/6856-thickbox_default/compresor.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/6856-home_default/compresor.jpg"
+                                        data-src="/6856-home_default/compresor.jpg"
                                         width="236"
                                         height="305"
                                         alt="COMPRESOR 2"
@@ -1091,7 +1154,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1309"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -1122,7 +1185,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/inicio/1309-compresor.html">COMPRESOR</a>
+            <a href="/tienda/inicio/1309-compresor.html">COMPRESOR</a>
         </h2>
     
 
@@ -1130,7 +1193,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/inicio/1309-compresor.html">810935212</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/inicio/1309-compresor.html">810935212</a></div>    
 
     
         
@@ -1142,7 +1205,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/inicio/1309-compresor.html"> <span  class="product-price" content="3987.2" aria-label="Precio">
+                <a href="/tienda/inicio/1309-compresor.html"> <span  class="product-price" content="3987.2" aria-label="Precio">
                                                                             $3,987.20
                                             </span></a>
                                 
@@ -1158,7 +1221,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/inicio/1309-compresor.html">COMPRESOR INVERTER11103020A00557, 810935212
+            <a href="/tienda/inicio/1309-compresor.html">COMPRESOR INVERTER11103020A00557, 810935212
 </a>
         </div>
     
@@ -1168,7 +1231,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1309-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1309">
 
@@ -1222,20 +1285,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/inicio/1711-v.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/inicio/1711-v.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/8933-home_default/v.jpg"
+                                                    data-src="/8933-home_default/v.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Valvula de servicio"
-                        data-full-size-image-url="/tienda_assets/8933-thickbox_default/v.jpg"
+                        data-full-size-image-url="/8933-thickbox_default/v.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/8933-home_default/v.jpg"
+                                        data-src="/8933-home_default/v.jpg"
                                         width="236"
                                         height="305"
                                         alt="Valvula de servicio 2"
@@ -1257,7 +1320,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1711"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -1288,7 +1351,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/inicio/1711-v.html">Valvula de servicio</a>
+            <a href="/tienda/inicio/1711-v.html">Valvula de servicio</a>
         </h2>
     
 
@@ -1296,7 +1359,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/inicio/1711-v.html">15422000017396</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/inicio/1711-v.html">15422000017396</a></div>    
 
     
         
@@ -1308,7 +1371,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/inicio/1711-v.html"> <span  class="product-price" content="193.57" aria-label="Precio">
+                <a href="/tienda/inicio/1711-v.html"> <span  class="product-price" content="193.57" aria-label="Precio">
                                                                             $193.57
                                             </span></a>
                                 
@@ -1324,7 +1387,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/inicio/1711-v.html">Valvula</a>
+            <a href="/tienda/inicio/1711-v.html">Valvula</a>
         </div>
     
 
@@ -1333,7 +1396,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1711-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1711">
 
@@ -1387,7 +1450,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/inicio/1712-v.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/inicio/1712-v.html" class="thumbnail product-thumbnail">
 
                                 <img class="img-fluid product-thumbnail-first" src="/tienda_assets/img/p/mx-default-home_default.jpg"
                         alt=""
@@ -1409,7 +1472,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1712"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -1440,7 +1503,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/inicio/1712-v.html"></a>
+            <a href="/tienda/inicio/1712-v.html"></a>
         </h2>
     
 
@@ -1448,7 +1511,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/inicio/1712-v.html">15422000017397</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/inicio/1712-v.html">15422000017397</a></div>    
 
     
         
@@ -1460,7 +1523,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/inicio/1712-v.html"> <span  class="product-price" content="1033.56" aria-label="Precio">
+                <a href="/tienda/inicio/1712-v.html"> <span  class="product-price" content="1033.56" aria-label="Precio">
                                                                             $1,033.56
                                             </span></a>
                                 
@@ -1476,7 +1539,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/inicio/1712-v.html"></a>
+            <a href="/tienda/inicio/1712-v.html"></a>
         </div>
     
 
@@ -1485,7 +1548,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1712-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1712">
 
@@ -1539,20 +1602,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/inicio/1715-v.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/inicio/1715-v.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/8937-home_default/v.jpg"
+                                                    data-src="/8937-home_default/v.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Valvula de servicio"
-                        data-full-size-image-url="/tienda_assets/8937-thickbox_default/v.jpg"
+                        data-full-size-image-url="/8937-thickbox_default/v.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/8937-home_default/v.jpg"
+                                        data-src="/8937-home_default/v.jpg"
                                         width="236"
                                         height="305"
                                         alt="Valvula de servicio 2"
@@ -1574,7 +1637,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1715"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -1605,7 +1668,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/inicio/1715-v.html">Valvula de servicio</a>
+            <a href="/tienda/inicio/1715-v.html">Valvula de servicio</a>
         </h2>
     
 
@@ -1613,7 +1676,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/inicio/1715-v.html">15422000017977</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/inicio/1715-v.html">15422000017977</a></div>    
 
     
         
@@ -1625,7 +1688,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/inicio/1715-v.html"> <span  class="product-price" content="224.16" aria-label="Precio">
+                <a href="/tienda/inicio/1715-v.html"> <span  class="product-price" content="224.16" aria-label="Precio">
                                                                             $224.16
                                             </span></a>
                                 
@@ -1641,7 +1704,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/inicio/1715-v.html">Valvula</a>
+            <a href="/tienda/inicio/1715-v.html">Valvula</a>
         </div>
     
 
@@ -1650,7 +1713,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1715-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1715">
 
@@ -1704,20 +1767,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/inicio/1749-c.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/inicio/1749-c.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/6788-home_default/c.jpg"
+                                                    data-src="/6788-home_default/c.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Compresor"
-                        data-full-size-image-url="/tienda_assets/6788-thickbox_default/c.jpg"
+                        data-full-size-image-url="/6788-thickbox_default/c.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/6788-home_default/c.jpg"
+                                        data-src="/6788-home_default/c.jpg"
                                         width="236"
                                         height="305"
                                         alt="Compresor 2"
@@ -1739,7 +1802,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1749"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -1770,7 +1833,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/inicio/1749-c.html">Compresor</a>
+            <a href="/tienda/inicio/1749-c.html">Compresor</a>
         </h2>
     
 
@@ -1778,7 +1841,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/inicio/1749-c.html">00103398M</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/inicio/1749-c.html">00103398M</a></div>    
 
     
         
@@ -1790,7 +1853,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/inicio/1749-c.html"> <span  class="product-price" content="3346.18" aria-label="Precio">
+                <a href="/tienda/inicio/1749-c.html"> <span  class="product-price" content="3346.18" aria-label="Precio">
                                                                             $3,346.18
                                             </span></a>
                                 
@@ -1806,7 +1869,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/inicio/1749-c.html">Compresor velocidad fija</a>
+            <a href="/tienda/inicio/1749-c.html">Compresor velocidad fija</a>
         </div>
     
 
@@ -1815,7 +1878,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1749-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1749">
 
@@ -1869,20 +1932,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/inicio/1776-m.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/inicio/1776-m.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/7387-home_default/m.jpg"
+                                                    data-src="/7387-home_default/m.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Motor condensador "
-                        data-full-size-image-url="/tienda_assets/7387-thickbox_default/m.jpg"
+                        data-full-size-image-url="/7387-thickbox_default/m.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/7387-home_default/m.jpg"
+                                        data-src="/7387-home_default/m.jpg"
                                         width="236"
                                         height="305"
                                         alt="Motor condensador  2"
@@ -1904,7 +1967,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1776"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -1941,7 +2004,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/inicio/1776-m.html">Motor condensador </a>
+            <a href="/tienda/inicio/1776-m.html">Motor condensador </a>
         </h2>
     
 
@@ -1949,7 +2012,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/inicio/1776-m.html">11230004000133</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/inicio/1776-m.html">11230004000133</a></div>    
 
     
         
@@ -1961,7 +2024,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/inicio/1776-m.html"> <span  class="product-price" content="448.06" aria-label="Precio">
+                <a href="/tienda/inicio/1776-m.html"> <span  class="product-price" content="448.06" aria-label="Precio">
                                                                             $448.06
                                             </span></a>
                                 
@@ -1977,7 +2040,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/inicio/1776-m.html">Motor condensador</a>
+            <a href="/tienda/inicio/1776-m.html">Motor condensador</a>
         </div>
     
 
@@ -1986,7 +2049,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1776-0" >
 
                 
-            <a href="/tienda_assets/inicio/1776-m.html"
+            <a href="/tienda/inicio/1776-m.html"
            class="btn btn-product-list"
         > View
         </a>
@@ -2019,20 +2082,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/inicio/1812-s.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/inicio/1812-s.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/7488-home_default/s.jpg"
+                                                    data-src="/7488-home_default/s.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Sensor triple de condensador, descarga 50k?, Pozo 10k?,..."
-                        data-full-size-image-url="/tienda_assets/7488-thickbox_default/s.jpg"
+                        data-full-size-image-url="/7488-thickbox_default/s.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/7488-home_default/s.jpg"
+                                        data-src="/7488-home_default/s.jpg"
                                         width="236"
                                         height="305"
                                         alt="Sensor triple de condensador, descarga 50k?, Pozo 10k?,... 2"
@@ -2054,7 +2117,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1812"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2085,7 +2148,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/inicio/1812-s.html">Sensor triple de condensador, descarga 50k?, Pozo 10k?, Ambiente 10k?</a>
+            <a href="/tienda/inicio/1812-s.html">Sensor triple de condensador, descarga 50k?, Pozo 10k?, Ambiente 10k?</a>
         </h2>
     
 
@@ -2093,7 +2156,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/inicio/1812-s.html">11201011000067</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/inicio/1812-s.html">11201011000067</a></div>    
 
     
         
@@ -2105,7 +2168,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/inicio/1812-s.html"> <span  class="product-price" content="249.76" aria-label="Precio">
+                <a href="/tienda/inicio/1812-s.html"> <span  class="product-price" content="249.76" aria-label="Precio">
                                                                             $249.76
                                             </span></a>
                                 
@@ -2121,7 +2184,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/inicio/1812-s.html">Sensor triple de condensador, descarga 50k?, Pozo 10k?, Ambiente 10k?</a>
+            <a href="/tienda/inicio/1812-s.html">Sensor triple de condensador, descarga 50k?, Pozo 10k?, Ambiente 10k?</a>
         </div>
     
 
@@ -2130,7 +2193,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1812-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1812">
 
@@ -2184,20 +2247,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/inicio/1813-s.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/inicio/1813-s.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/7490-home_default/s.jpg"
+                                                    data-src="/7490-home_default/s.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Sensor de ambiente evaporador 10k?"
-                        data-full-size-image-url="/tienda_assets/7490-thickbox_default/s.jpg"
+                        data-full-size-image-url="/7490-thickbox_default/s.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/7490-home_default/s.jpg"
+                                        data-src="/7490-home_default/s.jpg"
                                         width="236"
                                         height="305"
                                         alt="Sensor de ambiente evaporador 10k? 2"
@@ -2219,7 +2282,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1813"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2250,7 +2313,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/inicio/1813-s.html">Sensor de ambiente evaporador 10k?</a>
+            <a href="/tienda/inicio/1813-s.html">Sensor de ambiente evaporador 10k?</a>
         </h2>
     
 
@@ -2258,7 +2321,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/inicio/1813-s.html">11201007003425</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/inicio/1813-s.html">11201007003425</a></div>    
 
     
         
@@ -2270,7 +2333,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/inicio/1813-s.html"> <span  class="product-price" content="125.45" aria-label="Precio">
+                <a href="/tienda/inicio/1813-s.html"> <span  class="product-price" content="125.45" aria-label="Precio">
                                                                             $125.45
                                             </span></a>
                                 
@@ -2286,7 +2349,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/inicio/1813-s.html">Sensor de ambiente evaporador 10k?</a>
+            <a href="/tienda/inicio/1813-s.html">Sensor de ambiente evaporador 10k?</a>
         </div>
     
 
@@ -2295,7 +2358,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1813-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1813">
 
@@ -2349,20 +2412,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/inicio/1815-r.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/inicio/1815-r.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/8610-home_default/r.jpg"
+                                                    data-src="/8610-home_default/r.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Reactor"
-                        data-full-size-image-url="/tienda_assets/8610-thickbox_default/r.jpg"
+                        data-full-size-image-url="/8610-thickbox_default/r.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/8610-home_default/r.jpg"
+                                        data-src="/8610-home_default/r.jpg"
                                         width="236"
                                         height="305"
                                         alt="Reactor 2"
@@ -2384,7 +2447,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1815"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2415,7 +2478,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/inicio/1815-r.html">Reactor</a>
+            <a href="/tienda/inicio/1815-r.html">Reactor</a>
         </h2>
     
 
@@ -2423,7 +2486,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/inicio/1815-r.html">11330034000008</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/inicio/1815-r.html">11330034000008</a></div>    
 
     
         
@@ -2435,7 +2498,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/inicio/1815-r.html"> <span  class="product-price" content="158.02" aria-label="Precio">
+                <a href="/tienda/inicio/1815-r.html"> <span  class="product-price" content="158.02" aria-label="Precio">
                                                                             $158.02
                                             </span></a>
                                 
@@ -2451,7 +2514,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/inicio/1815-r.html">Reactor</a>
+            <a href="/tienda/inicio/1815-r.html">Reactor</a>
         </div>
     
 
@@ -2460,7 +2523,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1815-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1815">
 
@@ -2514,20 +2577,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/inicio/1816-t.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/inicio/1816-t.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/8615-home_default/t.jpg"
+                                                    data-src="/8615-home_default/t.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Transformador"
-                        data-full-size-image-url="/tienda_assets/8615-thickbox_default/t.jpg"
+                        data-full-size-image-url="/8615-thickbox_default/t.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/8615-home_default/t.jpg"
+                                        data-src="/8615-home_default/t.jpg"
                                         width="236"
                                         height="305"
                                         alt="Transformador 2"
@@ -2549,7 +2612,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1816"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2580,7 +2643,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/inicio/1816-t.html">Transformador</a>
+            <a href="/tienda/inicio/1816-t.html">Transformador</a>
         </h2>
     
 
@@ -2588,7 +2651,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/inicio/1816-t.html">11330024000007</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/inicio/1816-t.html">11330024000007</a></div>    
 
     
         
@@ -2600,7 +2663,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/inicio/1816-t.html"> <span  class="product-price" content="265.64" aria-label="Precio">
+                <a href="/tienda/inicio/1816-t.html"> <span  class="product-price" content="265.64" aria-label="Precio">
                                                                             $265.64
                                             </span></a>
                                 
@@ -2616,7 +2679,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/inicio/1816-t.html">Transformador</a>
+            <a href="/tienda/inicio/1816-t.html">Transformador</a>
         </div>
     
 
@@ -2625,7 +2688,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1816-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1816">
 
@@ -2679,20 +2742,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/inicio/1824-t.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/inicio/1824-t.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/8708-home_default/t.jpg"
+                                                    data-src="/8708-home_default/t.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Turbina "
-                        data-full-size-image-url="/tienda_assets/8708-thickbox_default/t.jpg"
+                        data-full-size-image-url="/8708-thickbox_default/t.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/8708-home_default/t.jpg"
+                                        data-src="/8708-home_default/t.jpg"
                                         width="236"
                                         height="305"
                                         alt="Turbina  2"
@@ -2714,7 +2777,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1824"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2745,7 +2808,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/inicio/1824-t.html">Turbina </a>
+            <a href="/tienda/inicio/1824-t.html">Turbina </a>
         </h2>
     
 
@@ -2753,7 +2816,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/inicio/1824-t.html">12100103000052</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/inicio/1824-t.html">12100103000052</a></div>    
 
     
         
@@ -2765,7 +2828,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/inicio/1824-t.html"> <span  class="product-price" content="1047.04" aria-label="Precio">
+                <a href="/tienda/inicio/1824-t.html"> <span  class="product-price" content="1047.04" aria-label="Precio">
                                                                             $1,047.04
                                             </span></a>
                                 
@@ -2781,7 +2844,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/inicio/1824-t.html">Turbina de ventana</a>
+            <a href="/tienda/inicio/1824-t.html">Turbina de ventana</a>
         </div>
     
 
@@ -2790,7 +2853,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1824-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1824">
 
@@ -2844,20 +2907,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/inicio/1826-t.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/inicio/1826-t.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/8730-home_default/t.jpg"
+                                                    data-src="/8730-home_default/t.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Turbina "
-                        data-full-size-image-url="/tienda_assets/8730-thickbox_default/t.jpg"
+                        data-full-size-image-url="/8730-thickbox_default/t.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/8730-home_default/t.jpg"
+                                        data-src="/8730-home_default/t.jpg"
                                         width="236"
                                         height="305"
                                         alt="Turbina  2"
@@ -2879,7 +2942,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1826"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2910,7 +2973,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/inicio/1826-t.html">Turbina </a>
+            <a href="/tienda/inicio/1826-t.html">Turbina </a>
         </h2>
     
 
@@ -2918,7 +2981,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/inicio/1826-t.html">12100103000027</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/inicio/1826-t.html">12100103000027</a></div>    
 
     
         
@@ -2930,7 +2993,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/inicio/1826-t.html"> <span  class="product-price" content="339.74" aria-label="Precio">
+                <a href="/tienda/inicio/1826-t.html"> <span  class="product-price" content="339.74" aria-label="Precio">
                                                                             $339.74
                                             </span></a>
                                 
@@ -2946,7 +3009,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/inicio/1826-t.html">Turbina de condensador</a>
+            <a href="/tienda/inicio/1826-t.html">Turbina de condensador</a>
         </div>
     
 
@@ -2955,7 +3018,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1826-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1826">
 
@@ -3009,20 +3072,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/inicio/1827-t.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/inicio/1827-t.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/8732-home_default/t.jpg"
+                                                    data-src="/8732-home_default/t.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Turbina "
-                        data-full-size-image-url="/tienda_assets/8732-thickbox_default/t.jpg"
+                        data-full-size-image-url="/8732-thickbox_default/t.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/8732-home_default/t.jpg"
+                                        data-src="/8732-home_default/t.jpg"
                                         width="236"
                                         height="305"
                                         alt="Turbina  2"
@@ -3044,7 +3107,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1827"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -3075,7 +3138,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/inicio/1827-t.html">Turbina </a>
+            <a href="/tienda/inicio/1827-t.html">Turbina </a>
         </h2>
     
 
@@ -3083,7 +3146,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/inicio/1827-t.html">12100103000099</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/inicio/1827-t.html">12100103000099</a></div>    
 
     
         
@@ -3095,7 +3158,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/inicio/1827-t.html"> <span  class="product-price" content="339.74" aria-label="Precio">
+                <a href="/tienda/inicio/1827-t.html"> <span  class="product-price" content="339.74" aria-label="Precio">
                                                                             $339.74
                                             </span></a>
                                 
@@ -3111,7 +3174,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/inicio/1827-t.html">Turbina de evaporador</a>
+            <a href="/tienda/inicio/1827-t.html">Turbina de evaporador</a>
         </div>
     
 
@@ -3120,7 +3183,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1827-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1827">
 
@@ -3174,20 +3237,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/inicio/1840-v.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/inicio/1840-v.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/8858-home_default/v.jpg"
+                                                    data-src="/8858-home_default/v.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Valvula de servicio"
-                        data-full-size-image-url="/tienda_assets/8858-thickbox_default/v.jpg"
+                        data-full-size-image-url="/8858-thickbox_default/v.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/8858-home_default/v.jpg"
+                                        data-src="/8858-home_default/v.jpg"
                                         width="236"
                                         height="305"
                                         alt="Valvula de servicio 2"
@@ -3209,7 +3272,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1840"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -3240,7 +3303,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/inicio/1840-v.html">Valvula de servicio</a>
+            <a href="/tienda/inicio/1840-v.html">Valvula de servicio</a>
         </h2>
     
 
@@ -3248,7 +3311,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/inicio/1840-v.html">811043920</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/inicio/1840-v.html">811043920</a></div>    
 
     
         
@@ -3260,7 +3323,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/inicio/1840-v.html"> <span  class="product-price" content="257.76" aria-label="Precio">
+                <a href="/tienda/inicio/1840-v.html"> <span  class="product-price" content="257.76" aria-label="Precio">
                                                                             $257.76
                                             </span></a>
                                 
@@ -3276,7 +3339,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/inicio/1840-v.html">Valvula</a>
+            <a href="/tienda/inicio/1840-v.html">Valvula</a>
         </div>
     
 
@@ -3285,7 +3348,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1840-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1840">
 
@@ -3339,20 +3402,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/inicio/1844-v.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/inicio/1844-v.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/8866-home_default/v.jpg"
+                                                    data-src="/8866-home_default/v.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Valvula de servicio"
-                        data-full-size-image-url="/tienda_assets/8866-thickbox_default/v.jpg"
+                        data-full-size-image-url="/8866-thickbox_default/v.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/8866-home_default/v.jpg"
+                                        data-src="/8866-home_default/v.jpg"
                                         width="236"
                                         height="305"
                                         alt="Valvula de servicio 2"
@@ -3374,7 +3437,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1844"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -3405,7 +3468,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/inicio/1844-v.html">Valvula de servicio</a>
+            <a href="/tienda/inicio/1844-v.html">Valvula de servicio</a>
         </h2>
     
 
@@ -3413,7 +3476,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/inicio/1844-v.html">810841188</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/inicio/1844-v.html">810841188</a></div>    
 
     
         
@@ -3425,7 +3488,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/inicio/1844-v.html"> <span  class="product-price" content="227.1" aria-label="Precio">
+                <a href="/tienda/inicio/1844-v.html"> <span  class="product-price" content="227.1" aria-label="Precio">
                                                                             $227.10
                                             </span></a>
                                 
@@ -3441,7 +3504,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/inicio/1844-v.html">Valvula</a>
+            <a href="/tienda/inicio/1844-v.html">Valvula</a>
         </div>
     
 
@@ -3450,7 +3513,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1844-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1844">
 
@@ -3504,20 +3567,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/inicio/1845-v.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/inicio/1845-v.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/8868-home_default/v.jpg"
+                                                    data-src="/8868-home_default/v.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Valvula de servicio"
-                        data-full-size-image-url="/tienda_assets/8868-thickbox_default/v.jpg"
+                        data-full-size-image-url="/8868-thickbox_default/v.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/8868-home_default/v.jpg"
+                                        data-src="/8868-home_default/v.jpg"
                                         width="236"
                                         height="305"
                                         alt="Valvula de servicio 2"
@@ -3539,7 +3602,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1845"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -3570,7 +3633,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/inicio/1845-v.html">Valvula de servicio</a>
+            <a href="/tienda/inicio/1845-v.html">Valvula de servicio</a>
         </h2>
     
 
@@ -3578,7 +3641,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/inicio/1845-v.html">810748082</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/inicio/1845-v.html">810748082</a></div>    
 
     
         
@@ -3590,7 +3653,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/inicio/1845-v.html"> <span  class="product-price" content="227.97" aria-label="Precio">
+                <a href="/tienda/inicio/1845-v.html"> <span  class="product-price" content="227.97" aria-label="Precio">
                                                                             $227.97
                                             </span></a>
                                 
@@ -3606,7 +3669,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/inicio/1845-v.html">Valvula</a>
+            <a href="/tienda/inicio/1845-v.html">Valvula</a>
         </div>
     
 
@@ -3615,7 +3678,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1845-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1845">
 
@@ -3669,20 +3732,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/inicio/1847-v.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/inicio/1847-v.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/8872-home_default/v.jpg"
+                                                    data-src="/8872-home_default/v.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Valvula de servicio"
-                        data-full-size-image-url="/tienda_assets/8872-thickbox_default/v.jpg"
+                        data-full-size-image-url="/8872-thickbox_default/v.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/8872-home_default/v.jpg"
+                                        data-src="/8872-home_default/v.jpg"
                                         width="236"
                                         height="305"
                                         alt="Valvula de servicio 2"
@@ -3704,7 +3767,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1847"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -3735,7 +3798,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/inicio/1847-v.html">Valvula de servicio</a>
+            <a href="/tienda/inicio/1847-v.html">Valvula de servicio</a>
         </h2>
     
 
@@ -3743,7 +3806,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/inicio/1847-v.html">810786314</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/inicio/1847-v.html">810786314</a></div>    
 
     
         
@@ -3755,7 +3818,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/inicio/1847-v.html"> <span  class="product-price" content="360.1" aria-label="Precio">
+                <a href="/tienda/inicio/1847-v.html"> <span  class="product-price" content="360.1" aria-label="Precio">
                                                                             $360.10
                                             </span></a>
                                 
@@ -3771,7 +3834,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/inicio/1847-v.html">Valvula</a>
+            <a href="/tienda/inicio/1847-v.html">Valvula</a>
         </div>
     
 
@@ -3780,7 +3843,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1847-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1847">
 
@@ -3834,20 +3897,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/inicio/1849-v.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/inicio/1849-v.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/8947-home_default/v.jpg"
+                                                    data-src="/8947-home_default/v.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Válvula reversible"
-                        data-full-size-image-url="/tienda_assets/8947-thickbox_default/v.jpg"
+                        data-full-size-image-url="/8947-thickbox_default/v.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/8947-home_default/v.jpg"
+                                        data-src="/8947-home_default/v.jpg"
                                         width="236"
                                         height="305"
                                         alt="Válvula reversible 2"
@@ -3869,7 +3932,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1849"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -3900,7 +3963,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/inicio/1849-v.html">Válvula reversible</a>
+            <a href="/tienda/inicio/1849-v.html">Válvula reversible</a>
         </h2>
     
 
@@ -3908,7 +3971,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/inicio/1849-v.html">15500216000004</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/inicio/1849-v.html">15500216000004</a></div>    
 
     
         
@@ -3920,7 +3983,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/inicio/1849-v.html"> <span  class="product-price" content="796.05" aria-label="Precio">
+                <a href="/tienda/inicio/1849-v.html"> <span  class="product-price" content="796.05" aria-label="Precio">
                                                                             $796.05
                                             </span></a>
                                 
@@ -3936,7 +3999,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/inicio/1849-v.html">Valvula</a>
+            <a href="/tienda/inicio/1849-v.html">Valvula</a>
         </div>
     
 
@@ -3945,7 +4008,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1849-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1849">
 
@@ -3999,20 +4062,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/inicio/1851-c.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/inicio/1851-c.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/8952-home_default/c.jpg"
+                                                    data-src="/8952-home_default/c.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Compresor"
-                        data-full-size-image-url="/tienda_assets/8952-thickbox_default/c.jpg"
+                        data-full-size-image-url="/8952-thickbox_default/c.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                         <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/8952-home_default/c.jpg"
+                                        data-src="/8952-home_default/c.jpg"
                                         width="236"
                                         height="305"
                                         alt="Compresor 2"
@@ -4034,7 +4097,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1851"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -4065,7 +4128,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/inicio/1851-c.html">Compresor</a>
+            <a href="/tienda/inicio/1851-c.html">Compresor</a>
         </h2>
     
 
@@ -4073,7 +4136,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/inicio/1851-c.html">11103010017296</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/inicio/1851-c.html">11103010017296</a></div>    
 
     
         
@@ -4085,7 +4148,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/inicio/1851-c.html"> <span  class="product-price" content="4872.2" aria-label="Precio">
+                <a href="/tienda/inicio/1851-c.html"> <span  class="product-price" content="4872.2" aria-label="Precio">
                                                                             $4,872.20
                                             </span></a>
                                 
@@ -4101,7 +4164,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/inicio/1851-c.html">Compresor velocidad fija</a>
+            <a href="/tienda/inicio/1851-c.html">Compresor velocidad fija</a>
         </div>
     
 
@@ -4110,7 +4173,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1851-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1851">
 
@@ -4164,20 +4227,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/inicio/1860-filtro-purificador-de-aire-xclear-500.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/inicio/1860-filtro-purificador-de-aire-xclear-500.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/9453-home_default/filtro-purificador-de-aire-xclear-500.jpg"
+                                                    data-src="/9453-home_default/filtro-purificador-de-aire-xclear-500.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="FILTRO PURIFICADOR DE AIRE XCLEAR 500"
-                        data-full-size-image-url="/tienda_assets/9453-thickbox_default/filtro-purificador-de-aire-xclear-500.jpg"
+                        data-full-size-image-url="/9453-thickbox_default/filtro-purificador-de-aire-xclear-500.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/9454-home_default/filtro-purificador-de-aire-xclear-500.jpg"
+                                        data-src="/9454-home_default/filtro-purificador-de-aire-xclear-500.jpg"
                                         width="236"
                                         height="305"
                                         alt="FILTRO PURIFICADOR DE AIRE XCLEAR 500 2"
@@ -4199,7 +4262,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1860"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -4230,7 +4293,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/inicio/1860-filtro-purificador-de-aire-xclear-500.html">FILTRO PURIFICADOR DE AIRE XCLEAR 500</a>
+            <a href="/tienda/inicio/1860-filtro-purificador-de-aire-xclear-500.html">FILTRO PURIFICADOR DE AIRE XCLEAR 500</a>
         </h2>
     
 
@@ -4238,7 +4301,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/inicio/1860-filtro-purificador-de-aire-xclear-500.html">12157100003729</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/inicio/1860-filtro-purificador-de-aire-xclear-500.html">12157100003729</a></div>    
 
     
         
@@ -4250,7 +4313,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/inicio/1860-filtro-purificador-de-aire-xclear-500.html"> <span  class="product-price" content="1000" aria-label="Precio">
+                <a href="/tienda/inicio/1860-filtro-purificador-de-aire-xclear-500.html"> <span  class="product-price" content="1000" aria-label="Precio">
                                                                             $1,000.00
                                             </span></a>
                                 
@@ -4266,7 +4329,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/inicio/1860-filtro-purificador-de-aire-xclear-500.html">Filtro para X Clear 500</a>
+            <a href="/tienda/inicio/1860-filtro-purificador-de-aire-xclear-500.html">Filtro para X Clear 500</a>
         </div>
     
 
@@ -4275,7 +4338,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-add-cart js-product-add-cart-1860-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1860">
 
@@ -4329,20 +4392,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/inicio/2004-valvula-reversible-con-arana-2-ton-220v.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/inicio/2004-valvula-reversible-con-arana-2-ton-220v.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/9485-home_default/valvula-reversible-con-arana-2-ton-220v.jpg"
+                                                    data-src="/9485-home_default/valvula-reversible-con-arana-2-ton-220v.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V"
-                        data-full-size-image-url="/tienda_assets/9485-thickbox_default/valvula-reversible-con-arana-2-ton-220v.jpg"
+                        data-full-size-image-url="/9485-thickbox_default/valvula-reversible-con-arana-2-ton-220v.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/9486-home_default/valvula-reversible-con-arana-2-ton-220v.jpg"
+                                        data-src="/9486-home_default/valvula-reversible-con-arana-2-ton-220v.jpg"
                                         width="236"
                                         height="305"
                                         alt="VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V 2"
@@ -4364,7 +4427,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="2004"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -4401,7 +4464,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/inicio/2004-valvula-reversible-con-arana-2-ton-220v.html">VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V</a>
+            <a href="/tienda/inicio/2004-valvula-reversible-con-arana-2-ton-220v.html">VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V</a>
         </h2>
     
 
@@ -4409,7 +4472,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/inicio/2004-valvula-reversible-con-arana-2-ton-220v.html">03123139</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/inicio/2004-valvula-reversible-con-arana-2-ton-220v.html">03123139</a></div>    
 
     
         
@@ -4421,7 +4484,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/inicio/2004-valvula-reversible-con-arana-2-ton-220v.html"> <span  class="product-price" content="438.83" aria-label="Precio">
+                <a href="/tienda/inicio/2004-valvula-reversible-con-arana-2-ton-220v.html"> <span  class="product-price" content="438.83" aria-label="Precio">
                                                                             $438.83
                                             </span></a>
                                 
@@ -4437,7 +4500,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/inicio/2004-valvula-reversible-con-arana-2-ton-220v.html">
+            <a href="/tienda/inicio/2004-valvula-reversible-con-arana-2-ton-220v.html">
 
 
 VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
@@ -4452,7 +4515,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
         <div class="product-add-cart js-product-add-cart-2004-0" >
 
                 
-            <a href="/tienda_assets/inicio/2004-valvula-reversible-con-arana-2-ton-220v.html"
+            <a href="/tienda/inicio/2004-valvula-reversible-con-arana-2-ton-220v.html"
            class="btn btn-product-list"
         > View
         </a>
@@ -4485,13 +4548,13 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/inicio/2016-sensor-de-ambiente-15k-ohms-mod-mq0381m.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/inicio/2016-sensor-de-ambiente-15k-ohms-mod-mq0381m.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/9512-home_default/sensor-de-ambiente-15k-ohms-mod-mq0381m.jpg"
+                                                    data-src="/9512-home_default/sensor-de-ambiente-15k-ohms-mod-mq0381m.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="SENSOR DE AMBIENTE 15K OHMS MOD: MQ0381M"
-                        data-full-size-image-url="/tienda_assets/9512-thickbox_default/sensor-de-ambiente-15k-ohms-mod-mq0381m.jpg"
+                        data-full-size-image-url="/9512-thickbox_default/sensor-de-ambiente-15k-ohms-mod-mq0381m.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
@@ -4512,7 +4575,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="2016"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -4549,7 +4612,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/inicio/2016-sensor-de-ambiente-15k-ohms-mod-mq0381m.html">SENSOR DE AMBIENTE 15K OHMS MOD: MQ0381M</a>
+            <a href="/tienda/inicio/2016-sensor-de-ambiente-15k-ohms-mod-mq0381m.html">SENSOR DE AMBIENTE 15K OHMS MOD: MQ0381M</a>
         </h2>
     
 
@@ -4557,7 +4620,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/inicio/2016-sensor-de-ambiente-15k-ohms-mod-mq0381m.html">39000208</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/inicio/2016-sensor-de-ambiente-15k-ohms-mod-mq0381m.html">39000208</a></div>    
 
     
         
@@ -4569,7 +4632,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/inicio/2016-sensor-de-ambiente-15k-ohms-mod-mq0381m.html"> <span  class="product-price" content="29" aria-label="Precio">
+                <a href="/tienda/inicio/2016-sensor-de-ambiente-15k-ohms-mod-mq0381m.html"> <span  class="product-price" content="29" aria-label="Precio">
                                                                             $29.00
                                             </span></a>
                                 
@@ -4585,7 +4648,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/inicio/2016-sensor-de-ambiente-15k-ohms-mod-mq0381m.html">SENSOR DE AMBIENTE 15K OHMS MOD: MQ0381M</a>
+            <a href="/tienda/inicio/2016-sensor-de-ambiente-15k-ohms-mod-mq0381m.html">SENSOR DE AMBIENTE 15K OHMS MOD: MQ0381M</a>
         </div>
     
 
@@ -4594,7 +4657,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
         <div class="product-add-cart js-product-add-cart-2016-0" >
 
                 
-            <a href="/tienda_assets/inicio/2016-sensor-de-ambiente-15k-ohms-mod-mq0381m.html"
+            <a href="/tienda/inicio/2016-sensor-de-ambiente-15k-ohms-mod-mq0381m.html"
            class="btn btn-product-list"
         > View
         </a>
@@ -4627,20 +4690,20 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/inicio/2026-motor-evaporador-2-ton-mod-ydk38-4c.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/inicio/2026-motor-evaporador-2-ton-mod-ydk38-4c.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/9528-home_default/motor-evaporador-2-ton-mod-ydk38-4c.jpg"
+                                                    data-src="/9528-home_default/motor-evaporador-2-ton-mod-ydk38-4c.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="MOTOR EVAPORADOR 2 TON MOD: YDK38 4C"
-                        data-full-size-image-url="/tienda_assets/9528-thickbox_default/motor-evaporador-2-ton-mod-ydk38-4c.jpg"
+                        data-full-size-image-url="/9528-thickbox_default/motor-evaporador-2-ton-mod-ydk38-4c.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/9529-home_default/motor-evaporador-2-ton-mod-ydk38-4c.jpg"
+                                        data-src="/9529-home_default/motor-evaporador-2-ton-mod-ydk38-4c.jpg"
                                         width="236"
                                         height="305"
                                         alt="MOTOR EVAPORADOR 2 TON MOD: YDK38 4C 2"
@@ -4662,7 +4725,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="2026"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -4693,7 +4756,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/inicio/2026-motor-evaporador-2-ton-mod-ydk38-4c.html">MOTOR EVAPORADOR 2 TON MOD: YDK38 4C</a>
+            <a href="/tienda/inicio/2026-motor-evaporador-2-ton-mod-ydk38-4c.html">MOTOR EVAPORADOR 2 TON MOD: YDK38 4C</a>
         </h2>
     
 
@@ -4701,7 +4764,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/inicio/2026-motor-evaporador-2-ton-mod-ydk38-4c.html">320203001</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/inicio/2026-motor-evaporador-2-ton-mod-ydk38-4c.html">320203001</a></div>    
 
     
         
@@ -4713,7 +4776,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/inicio/2026-motor-evaporador-2-ton-mod-ydk38-4c.html"> <span  class="product-price" content="701.17" aria-label="Precio">
+                <a href="/tienda/inicio/2026-motor-evaporador-2-ton-mod-ydk38-4c.html"> <span  class="product-price" content="701.17" aria-label="Precio">
                                                                             $701.17
                                             </span></a>
                                 
@@ -4729,7 +4792,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/inicio/2026-motor-evaporador-2-ton-mod-ydk38-4c.html">MOTOR EVAPORADOR 2 TON, MOD: YDK38 4C
+            <a href="/tienda/inicio/2026-motor-evaporador-2-ton-mod-ydk38-4c.html">MOTOR EVAPORADOR 2 TON, MOD: YDK38 4C
 </a>
         </div>
     
@@ -4739,7 +4802,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
         <div class="product-add-cart js-product-add-cart-2026-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="2026">
 
@@ -4793,20 +4856,20 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/inicio/2051-capacitor-de-compresor-110v-mod-cbb65a-450vac-70-micro-faradio-mas-menos-5-por-ciento-nex-2023.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/inicio/2051-capacitor-de-compresor-110v-mod-cbb65a-450vac-70-micro-faradio-mas-menos-5-por-ciento-nex-2023.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/9594-home_default/capacitor-de-compresor-110v-mod-cbb65a-450vac-70-micro-faradio-mas-menos-5-por-ciento-nex-2023.jpg"
+                                                    data-src="/9594-home_default/capacitor-de-compresor-110v-mod-cbb65a-450vac-70-micro-faradio-mas-menos-5-por-ciento-nex-2023.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="CAPACITOR DE COMPRESOR 110V MOD: CBB65(A) 450VAC 70 MICRO..."
-                        data-full-size-image-url="/tienda_assets/9594-thickbox_default/capacitor-de-compresor-110v-mod-cbb65a-450vac-70-micro-faradio-mas-menos-5-por-ciento-nex-2023.jpg"
+                        data-full-size-image-url="/9594-thickbox_default/capacitor-de-compresor-110v-mod-cbb65a-450vac-70-micro-faradio-mas-menos-5-por-ciento-nex-2023.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/9595-home_default/capacitor-de-compresor-110v-mod-cbb65a-450vac-70-micro-faradio-mas-menos-5-por-ciento-nex-2023.jpg"
+                                        data-src="/9595-home_default/capacitor-de-compresor-110v-mod-cbb65a-450vac-70-micro-faradio-mas-menos-5-por-ciento-nex-2023.jpg"
                                         width="236"
                                         height="305"
                                         alt="CAPACITOR DE COMPRESOR 110V MOD: CBB65(A) 450VAC 70 MICRO... 2"
@@ -4828,7 +4891,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="2051"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -4859,7 +4922,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/inicio/2051-capacitor-de-compresor-110v-mod-cbb65a-450vac-70-micro-faradio-mas-menos-5-por-ciento-nex-2023.html">CAPACITOR DE COMPRESOR 110V MOD: CBB65(A) 450VAC 70 MICRO FARADIO MAS-MENOS 5 POR...</a>
+            <a href="/tienda/inicio/2051-capacitor-de-compresor-110v-mod-cbb65a-450vac-70-micro-faradio-mas-menos-5-por-ciento-nex-2023.html">CAPACITOR DE COMPRESOR 110V MOD: CBB65(A) 450VAC 70 MICRO FARADIO MAS-MENOS 5 POR...</a>
         </h2>
     
 
@@ -4867,7 +4930,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/inicio/2051-capacitor-de-compresor-110v-mod-cbb65a-450vac-70-micro-faradio-mas-menos-5-por-ciento-nex-2023.html">810986261</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/inicio/2051-capacitor-de-compresor-110v-mod-cbb65a-450vac-70-micro-faradio-mas-menos-5-por-ciento-nex-2023.html">810986261</a></div>    
 
     
         
@@ -4879,7 +4942,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/inicio/2051-capacitor-de-compresor-110v-mod-cbb65a-450vac-70-micro-faradio-mas-menos-5-por-ciento-nex-2023.html"> <span  class="product-price" content="146.16" aria-label="Precio">
+                <a href="/tienda/inicio/2051-capacitor-de-compresor-110v-mod-cbb65a-450vac-70-micro-faradio-mas-menos-5-por-ciento-nex-2023.html"> <span  class="product-price" content="146.16" aria-label="Precio">
                                                                             $146.16
                                             </span></a>
                                 
@@ -4895,7 +4958,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/inicio/2051-capacitor-de-compresor-110v-mod-cbb65a-450vac-70-micro-faradio-mas-menos-5-por-ciento-nex-2023.html">CAPACITOR DE COMPRESOR ,110V ,MOD: CBB65(A) 450VAC 70 MICRO FARADIO MAS-MENOS 5 POR CIENTO,NEX 2023
+            <a href="/tienda/inicio/2051-capacitor-de-compresor-110v-mod-cbb65a-450vac-70-micro-faradio-mas-menos-5-por-ciento-nex-2023.html">CAPACITOR DE COMPRESOR ,110V ,MOD: CBB65(A) 450VAC 70 MICRO FARADIO MAS-MENOS 5 POR CIENTO,NEX 2023
 </a>
         </div>
     
@@ -4905,7 +4968,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
         <div class="product-add-cart js-product-add-cart-2051-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="2051">
 
@@ -4959,20 +5022,20 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/inicio/2066-motor-de-condensador-2-ton-220v-mod-ydk68-6e8.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/inicio/2066-motor-de-condensador-2-ton-220v-mod-ydk68-6e8.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/9632-home_default/motor-de-condensador-2-ton-220v-mod-ydk68-6e8.jpg"
+                                                    data-src="/9632-home_default/motor-de-condensador-2-ton-220v-mod-ydk68-6e8.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="MOTOR DE CONDENSADOR 2 TON 220V MOD: YDK68-6E8"
-                        data-full-size-image-url="/tienda_assets/9632-thickbox_default/motor-de-condensador-2-ton-220v-mod-ydk68-6e8.jpg"
+                        data-full-size-image-url="/9632-thickbox_default/motor-de-condensador-2-ton-220v-mod-ydk68-6e8.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/9633-home_default/motor-de-condensador-2-ton-220v-mod-ydk68-6e8.jpg"
+                                        data-src="/9633-home_default/motor-de-condensador-2-ton-220v-mod-ydk68-6e8.jpg"
                                         width="236"
                                         height="305"
                                         alt="MOTOR DE CONDENSADOR 2 TON 220V MOD: YDK68-6E8 2"
@@ -4994,7 +5057,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="2066"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -5025,7 +5088,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/inicio/2066-motor-de-condensador-2-ton-220v-mod-ydk68-6e8.html">MOTOR DE CONDENSADOR 2 TON 220V MOD: YDK68-6E8</a>
+            <a href="/tienda/inicio/2066-motor-de-condensador-2-ton-220v-mod-ydk68-6e8.html">MOTOR DE CONDENSADOR 2 TON 220V MOD: YDK68-6E8</a>
         </h2>
     
 
@@ -5033,7 +5096,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/inicio/2066-motor-de-condensador-2-ton-220v-mod-ydk68-6e8.html">811185181</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/inicio/2066-motor-de-condensador-2-ton-220v-mod-ydk68-6e8.html">811185181</a></div>    
 
     
         
@@ -5045,7 +5108,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/inicio/2066-motor-de-condensador-2-ton-220v-mod-ydk68-6e8.html"> <span  class="product-price" content="920.27" aria-label="Precio">
+                <a href="/tienda/inicio/2066-motor-de-condensador-2-ton-220v-mod-ydk68-6e8.html"> <span  class="product-price" content="920.27" aria-label="Precio">
                                                                             $920.27
                                             </span></a>
                                 
@@ -5061,7 +5124,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/inicio/2066-motor-de-condensador-2-ton-220v-mod-ydk68-6e8.html">MOTOR DE CONDENSADOR 2 TON 220V, MOD: YDK68-6E8
+            <a href="/tienda/inicio/2066-motor-de-condensador-2-ton-220v-mod-ydk68-6e8.html">MOTOR DE CONDENSADOR 2 TON 220V, MOD: YDK68-6E8
 </a>
         </div>
     
@@ -5071,7 +5134,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
         <div class="product-add-cart js-product-add-cart-2066-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="2066">
 
@@ -5125,20 +5188,20 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/inicio/2188-modulo-de-tarjeta-inversora-4-y-5-ton-ci-magnum-series-.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/inicio/2188-modulo-de-tarjeta-inversora-4-y-5-ton-ci-magnum-series-.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/9950-home_default/modulo-de-tarjeta-inversora-4-y-5-ton-ci-magnum-series-.jpg"
+                                                    data-src="/9950-home_default/modulo-de-tarjeta-inversora-4-y-5-ton-ci-magnum-series-.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="MODULO DE TARJETA INVERSORA 4 Y 5 TON CI MAGNUM SERIES"
-                        data-full-size-image-url="/tienda_assets/9950-thickbox_default/modulo-de-tarjeta-inversora-4-y-5-ton-ci-magnum-series-.jpg"
+                        data-full-size-image-url="/9950-thickbox_default/modulo-de-tarjeta-inversora-4-y-5-ton-ci-magnum-series-.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/9951-home_default/modulo-de-tarjeta-inversora-4-y-5-ton-ci-magnum-series-.jpg"
+                                        data-src="/9951-home_default/modulo-de-tarjeta-inversora-4-y-5-ton-ci-magnum-series-.jpg"
                                         width="236"
                                         height="305"
                                         alt="MODULO DE TARJETA INVERSORA 4 Y 5 TON CI MAGNUM SERIES 2"
@@ -5160,7 +5223,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="2188"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -5191,7 +5254,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/inicio/2188-modulo-de-tarjeta-inversora-4-y-5-ton-ci-magnum-series-.html">MODULO DE TARJETA INVERSORA 4 Y 5 TON CI MAGNUM SERIES</a>
+            <a href="/tienda/inicio/2188-modulo-de-tarjeta-inversora-4-y-5-ton-ci-magnum-series-.html">MODULO DE TARJETA INVERSORA 4 Y 5 TON CI MAGNUM SERIES</a>
         </h2>
     
 
@@ -5199,7 +5262,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/inicio/2188-modulo-de-tarjeta-inversora-4-y-5-ton-ci-magnum-series-.html">17122000055348</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/inicio/2188-modulo-de-tarjeta-inversora-4-y-5-ton-ci-magnum-series-.html">17122000055348</a></div>    
 
     
         
@@ -5211,7 +5274,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/inicio/2188-modulo-de-tarjeta-inversora-4-y-5-ton-ci-magnum-series-.html"> <span  class="product-price" content="6125" aria-label="Precio">
+                <a href="/tienda/inicio/2188-modulo-de-tarjeta-inversora-4-y-5-ton-ci-magnum-series-.html"> <span  class="product-price" content="6125" aria-label="Precio">
                                                                             $6,125.00
                                             </span></a>
                                 
@@ -5227,7 +5290,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/inicio/2188-modulo-de-tarjeta-inversora-4-y-5-ton-ci-magnum-series-.html">MODULO DE TARJETA INVERSORA 4 Y 5 TON CALOR 220V, CI MAGNUM SERIES MOD: CLC481M/CLC481N/CLC601N
+            <a href="/tienda/inicio/2188-modulo-de-tarjeta-inversora-4-y-5-ton-ci-magnum-series-.html">MODULO DE TARJETA INVERSORA 4 Y 5 TON CALOR 220V, CI MAGNUM SERIES MOD: CLC481M/CLC481N/CLC601N
 
 </a>
         </div>
@@ -5238,7 +5301,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
         <div class="product-add-cart js-product-add-cart-2188-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="2188">
 
@@ -5292,20 +5355,20 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/inicio/2195-tarjeta-de-evaporador-1-ton-calor-220v-magnum-17.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/inicio/2195-tarjeta-de-evaporador-1-ton-calor-220v-magnum-17.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/9977-home_default/tarjeta-de-evaporador-1-ton-calor-220v-magnum-17.jpg"
+                                                    data-src="/9977-home_default/tarjeta-de-evaporador-1-ton-calor-220v-magnum-17.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="TARJETA DE EVAPORADOR 1 TON CALOR 220V MAGNUM 17"
-                        data-full-size-image-url="/tienda_assets/9977-thickbox_default/tarjeta-de-evaporador-1-ton-calor-220v-magnum-17.jpg"
+                        data-full-size-image-url="/9977-thickbox_default/tarjeta-de-evaporador-1-ton-calor-220v-magnum-17.jpg"
                         width="236"
                         height="305"
                         class="img-fluid js-lazy-product-image lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/9978-home_default/tarjeta-de-evaporador-1-ton-calor-220v-magnum-17.jpg"
+                                        data-src="/9978-home_default/tarjeta-de-evaporador-1-ton-calor-220v-magnum-17.jpg"
                                         width="236"
                                         height="305"
                                         alt="TARJETA DE EVAPORADOR 1 TON CALOR 220V MAGNUM 17 2"
@@ -5327,7 +5390,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="2195"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -5358,7 +5421,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/inicio/2195-tarjeta-de-evaporador-1-ton-calor-220v-magnum-17.html">TARJETA DE EVAPORADOR 1 TON CALOR 220V MAGNUM 17</a>
+            <a href="/tienda/inicio/2195-tarjeta-de-evaporador-1-ton-calor-220v-magnum-17.html">TARJETA DE EVAPORADOR 1 TON CALOR 220V MAGNUM 17</a>
         </h2>
     
 
@@ -5366,7 +5429,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/inicio/2195-tarjeta-de-evaporador-1-ton-calor-220v-magnum-17.html">17122000A15098</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/inicio/2195-tarjeta-de-evaporador-1-ton-calor-220v-magnum-17.html">17122000A15098</a></div>    
 
     
         
@@ -5378,7 +5441,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/inicio/2195-tarjeta-de-evaporador-1-ton-calor-220v-magnum-17.html"> <span  class="product-price" content="1078" aria-label="Precio">
+                <a href="/tienda/inicio/2195-tarjeta-de-evaporador-1-ton-calor-220v-magnum-17.html"> <span  class="product-price" content="1078" aria-label="Precio">
                                                                             $1,078.00
                                             </span></a>
                                 
@@ -5394,7 +5457,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/inicio/2195-tarjeta-de-evaporador-1-ton-calor-220v-magnum-17.html">TARJETA DE EVAPORADOR 1 TON CALOR 220V MAGNUM 17</a>
+            <a href="/tienda/inicio/2195-tarjeta-de-evaporador-1-ton-calor-220v-magnum-17.html">TARJETA DE EVAPORADOR 1 TON CALOR 220V MAGNUM 17</a>
         </div>
     
 
@@ -5403,7 +5466,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
         <div class="product-add-cart js-product-add-cart-2195-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="2195">
 
@@ -5493,11 +5556,11 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
                                                         
 
   <div class="block block-toggle block-categories block-links js-block-toggle">
-    <h5 class="block-title"><span><a href="/tienda_assets/2-inicio">Inicio</a></span> </h5>
+    <h5 class="block-title"><span><a href="/tienda/2-inicio">Inicio</a></span> </h5>
     <div class="category-top-menu block-content">
       
-  <ul class="category-sub-menu"><li data-depth="0"><a href="/tienda_assets/10-refacciones">Refacciones</a></li><li data-depth="0"><a href="/tienda_assets/11-aire-acondicionado">Aire Acondicionado</a></li><li data-depth="0"><a href="/tienda_assets/13-linea-blanca">Línea Blanca</a><span class="collapse-icons" data-toggle="collapse" data-target="#exCollapsingNavbar13"><i class="fa fa-angle-down add" aria-hidden="true"></i><i class="fa fa-angle-up remove" aria-hidden="true"></i></span><div class="collapse" id="exCollapsingNavbar13">
-  <ul class="category-sub-menu"><li data-depth="1"><a class="category-sub-link" href="/tienda_assets/18-boiler">Boiler</a></li><li data-depth="1"><a class="category-sub-link" href="/tienda_assets/19-campanas">Campanas</a></li><li data-depth="1"><a class="category-sub-link" href="/tienda_assets/21-dispensadores">Dispensadores</a></li><li data-depth="1"><a class="category-sub-link" href="/tienda_assets/22-parillas">Parillas</a></li><li data-depth="1"><a class="category-sub-link" href="/tienda_assets/25-microondas">Microondas</a></li><li data-depth="1"><a class="category-sub-link" href="/tienda_assets/26-lavadoras">Lavadoras</a></li></ul></div></li><li data-depth="0"><a href="/tienda_assets/17-herramientas">Herramientas</a></li><li data-depth="0"><a href="/tienda_assets/14-souvenirs">Souvenirs</a></li><li data-depth="0"><a href="/tienda_assets/24-outlet">Outlet</a></li></ul>
+  <ul class="category-sub-menu"><li data-depth="0"><a href="/tienda/10-refacciones">Refacciones</a></li><li data-depth="0"><a href="/tienda/11-aire-acondicionado">Aire Acondicionado</a></li><li data-depth="0"><a href="/tienda/13-linea-blanca">Línea Blanca</a><span class="collapse-icons" data-toggle="collapse" data-target="#exCollapsingNavbar13"><i class="fa fa-angle-down add" aria-hidden="true"></i><i class="fa fa-angle-up remove" aria-hidden="true"></i></span><div class="collapse" id="exCollapsingNavbar13">
+  <ul class="category-sub-menu"><li data-depth="1"><a class="category-sub-link" href="/tienda/18-boiler">Boiler</a></li><li data-depth="1"><a class="category-sub-link" href="/tienda/19-campanas">Campanas</a></li><li data-depth="1"><a class="category-sub-link" href="/tienda/21-dispensadores">Dispensadores</a></li><li data-depth="1"><a class="category-sub-link" href="/tienda/22-parillas">Parillas</a></li><li data-depth="1"><a class="category-sub-link" href="/tienda/25-microondas">Microondas</a></li><li data-depth="1"><a class="category-sub-link" href="/tienda/26-lavadoras">Lavadoras</a></li></ul></div></li><li data-depth="0"><a href="/tienda/17-herramientas">Herramientas</a></li><li data-depth="0"><a href="/tienda/14-souvenirs">Souvenirs</a></li><li data-depth="0"><a href="/tienda/24-outlet">Outlet</a></li></ul>
     </div>
   </div>
 	<div id="fbpsc" class="block-categories">
@@ -5516,7 +5579,7 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
 								<input class="is_required validate account_input form-control" type="password" data-validate="isPasswd" id="passwd" name="passwd" value="" />
 							</div>
 
-							<a class="a_link_17 pull-right" href="/tienda_assets/recuperar-contrasena" title="Recover your forgotten password" rel="nofollow">Forgot your password?</a>
+							<a class="a_link_17 pull-right" href="/tienda/recuperar-contrasena" title="Recover your forgotten password" rel="nofollow">Forgot your password?</a>
 
 							<p class="submit pull-right">
 															<button type="submit" id="SubmitLogin" name="SubmitLogin" class="btn btn-primary text-center">Login</button>
@@ -5594,21 +5657,21 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
                 <ul>
                                                                         <li>
                                 <a
-                                        href="/tienda_assets/content/4-quienes-somos"
+                                        href="/tienda/content/4-quienes-somos"
                                         title=""                                                                        >
                                     Quiénes Somos
                                 </a>
                             </li>
                                                                                                 <li>
                                 <a
-                                        href="/tienda_assets/content/2-aviso-de-privacidad"
+                                        href="/tienda/content/2-aviso-de-privacidad"
                                         title="Aviso de Privacidad"                                                                        >
                                     Aviso de Privacidad
                                 </a>
                             </li>
                                                                                                 <li>
                                 <a
-                                        href="/tienda_assets/content/3-terminos-y-condiciones"
+                                        href="/tienda/content/3-terminos-y-condiciones"
                                         title="Términos y condiciones"                                                                        >
                                     Términos y condiciones
                                 </a>
@@ -5622,28 +5685,28 @@ VALVULA REVERSIBLE CON ARAÑA 2 TON, 220V
                 <ul>
                                                                         <li>
                                 <a
-                                        href="/tienda_assets/mi-cuenta"
+                                        href="/tienda/mi-cuenta"
                                         title=""                                                                        >
                                     Mi cuenta
                                 </a>
                             </li>
                                                                                                 <li>
                                 <a
-                                        href="/tienda_assets/historial-compra"
+                                        href="/tienda/historial-compra"
                                         title=""                                                                        >
                                     Historial de pedidos
                                 </a>
                             </li>
                                                                                                 <li>
                                 <a
-                                        href="/tienda_assets/datos-personales"
+                                        href="/tienda/datos-personales"
                                         title=""                                                                        >
                                     Identidad
                                 </a>
                             </li>
                                                                                                 <li>
                                 <a
-                                        href="/tienda_assets/direcciones"
+                                        href="/tienda/direcciones"
                                         title=""                                                                        >
                                     Direcciones
                                 </a>
@@ -5770,7 +5833,7 @@ if(window.location.pathname == "/content/4-quienes-somos" || window.location.pat
   
       
 
-    <form  id="login-form-modal" action="/tienda_assets/iniciar-sesion"   method="post">
+    <form  id="login-form-modal" action="/tienda/iniciar-sesion"   method="post">
 
     <section>
       
@@ -5869,7 +5932,7 @@ if(window.location.pathname == "/content/4-quienes-somos" || window.location.pat
           
               
       <div class="forgot-password">
-        <a href="/tienda_assets/recuperar-contrasena" rel="nofollow">
+        <a href="/tienda/recuperar-contrasena" rel="nofollow">
           ¿Olvidaste tu contraseña?
         </a>
       </div>
@@ -5912,7 +5975,7 @@ if(window.location.pathname == "/content/4-quienes-somos" || window.location.pat
 
                 
                 <div class="no-account">
-                    <a href="/tienda_assets/iniciar-sesion?create_account=1" data-link-action="display-register-form">
+                    <a href="/tienda/iniciar-sesion?create_account=1" data-link-action="display-register-form">
                         ¿Aún no tienes cuenta? Regístrate 
                     </a>
                 </div>
@@ -5936,8 +5999,7 @@ if(window.location.pathname == "/content/4-quienes-somos" || window.location.pat
 </div>
 
 
-<div id="iqitcompare-floating-wrapper">
-</div>
+@include('tienda.partials.compare_floating')
 
 
 
@@ -6003,6 +6065,75 @@ jQuery(document).ready(function($){
 
 
 
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const searchInput = document.getElementById("search-input");
+    const searchResults = document.getElementById("search-results");
+    const searchResultsList = document.getElementById("search-results-list");
+    const searchLoading = document.getElementById("search-loading");
+    let timeoutId;
+
+    if (!searchInput) return;
+
+    searchInput.addEventListener("input", function(e) {
+        const query = e.target.value.trim();
+        
+        clearTimeout(timeoutId);
+
+        if (query.length < 2) {
+            searchResults.classList.add("hidden");
+            return;
+        }
+
+        searchResults.classList.remove("hidden");
+        searchResultsList.innerHTML = "";
+        searchLoading.classList.remove("hidden");
+
+        timeoutId = setTimeout(() => {
+            fetch(`/buscar/autocomplete?q=${encodeURIComponent(query)}`)
+                .then(response => response.json())
+                .then(data => {
+                    searchLoading.classList.add("hidden");
+                    searchResultsList.innerHTML = "";
+                    
+                    if (data.length === 0) {
+                        searchResultsList.innerHTML = '<div class="autocomplete-empty">No se encontraron productos.</div>';
+                        return;
+                    }
+
+                    data.forEach(product => {
+                        const html = `
+                            <a href="${product.url}" class="autocomplete-item">
+                                <div class="autocomplete-img-container">
+                                    ${product.image ? `<img src="${product.image}">` : `<span style="color:#ccc; font-size:10px;">Sin img</span>`}
+                                </div>
+                                <div class="autocomplete-details">
+                                    <span class="autocomplete-title">${product.name}</span>
+                                    <span class="autocomplete-price">${product.price}</span>
+                                </div>
+                            </a>
+                        `;
+                        searchResultsList.insertAdjacentHTML("beforeend", html);
+                    });
+                })
+                .catch(error => {
+                    searchLoading.classList.add("hidden");
+                    console.error("Error fetching search results:", error);
+                });
+        }, 300);
+    });
+
+    document.addEventListener("click", function(e) {
+        const container = document.getElementById("search_widget");
+        if (container && !container.contains(e.target)) {
+            searchResults.classList.add("hidden");
+        }
+    });
+});
+</script>
+    @include('tienda.partials.modals')
 </body>
+
 
 </html>

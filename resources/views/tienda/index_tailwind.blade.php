@@ -1,4 +1,4 @@
-@extends('layouts.store')
+@extends('layouts.legacy')
 
 @section('title', 'Tienda Mirage | Todo el Catálogo')
 

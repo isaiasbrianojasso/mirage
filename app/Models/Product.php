@@ -11,9 +11,12 @@ class Product extends Model
 
     protected $guarded = [];
 
+
+
     protected $casts = [
         'id' => 'string',
         'specifications' => 'array',
+        'video_url' => 'string',
         'is_active' => 'boolean',
         'price' => 'decimal:2',
         'discount_price' => 'decimal:2',

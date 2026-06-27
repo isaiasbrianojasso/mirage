@@ -590,59 +590,111 @@
 // --- CLIENT STATE ---
 let comparisonList = JSON.parse(localStorage.getItem('mirage_compare_list')) || [];
 
-// REGISTER CAPTURE PHASE LISTENER TO DEFEAT LEGACY PLUGINS AND PREVENT 405 ERRORS
+// Check if user is logged in (from PrestaShop's global variable set in the layout)
+var isUserLoggedIn = false;
+try { isUserLoggedIn = prestashop && prestashop.customer && prestashop.customer.is_logged; } catch(e) {}
+@if(auth()->check())
+isUserLoggedIn = true;
+@endif
+
+// REGISTER CAPTURE PHASE LISTENER — runs BEFORE any legacy PrestaShop handler
 document.addEventListener('click', function(e) {
-    // 1. WISHLIST
-    const wishlistBtn = e.target.closest('.js-iqitwishlist-add');
+
+    // 1. WISHLIST — open auth modal immediately if not logged in
+    var wishlistBtn = e.target.closest('.js-iqitwishlist-add');
     if (wishlistBtn) {
         e.preventDefault();
         e.stopPropagation();
         e.stopImmediatePropagation();
-        const productId = wishlistBtn.getAttribute('data-id-product');
-        if (productId) {
-            handleWishlistClick(productId, wishlistBtn);
+        
+        if (!isUserLoggedIn) {
+            // Not logged in → show login modal immediately (no AJAX needed)
+            openSpecificModal('mirage-auth-modal');
+        } else {
+            // Logged in → do the AJAX add
+            var productId = wishlistBtn.getAttribute('data-id-product');
+            if (productId) handleWishlistClick(productId, wishlistBtn);
         }
         return;
     }
 
     // 2. COMPARE
-    const compareBtn = e.target.closest('.js-iqitcompare-add');
+    var compareBtn = e.target.closest('.js-iqitcompare-add');
     if (compareBtn) {
         e.preventDefault();
         e.stopPropagation();
         e.stopImmediatePropagation();
-        const productId = compareBtn.getAttribute('data-id-product');
-        if (productId) {
-            addToCompare(productId);
+        var productId = compareBtn.getAttribute('data-id-product');
+        if (!productId) {
+            var card = compareBtn.closest('.product-miniature, .product-functional-buttons-links, article');
+            if (card) {
+                var wb = card.querySelector('[data-id-product]');
+                if (wb) productId = wb.getAttribute('data-id-product');
+            }
         }
+        if (productId) addToCompare(productId);
         return;
     }
 
     // 3. QUICK VIEW
-    const qvBtn = e.target.closest('.js-quick-view-iqit');
+    var qvBtn = e.target.closest('.js-quick-view-iqit');
     if (qvBtn) {
         e.preventDefault();
         e.stopPropagation();
         e.stopImmediatePropagation();
-        const productId = qvBtn.getAttribute('data-id-product');
-        if (productId) {
-            openQuickView(productId);
+        var productId = qvBtn.getAttribute('data-id-product');
+        // Fallback: get ID from any sibling element with data-id-product
+        if (!productId) {
+            var card = qvBtn.closest('.product-miniature, .product-functional-buttons-links, article');
+            if (card) {
+                var wb = card.querySelector('[data-id-product]');
+                if (wb) productId = wb.getAttribute('data-id-product');
+            }
         }
+        if (productId) openQuickView(productId);
         return;
     }
-}, true); // true = Capturing phase! Executes BEFORE legacy theme bubbling listeners on <body>
 
-// --- HELPER FUNCTIONS ---
+}, true); // true = Capturing phase
+
+// --- HELPER FUNCTIONS (pure DOM, no jQuery dependency) ---
 
 function openSpecificModal(modalId) {
-    $('#mirage-modal-container').addClass('active').show();
-    $('.mirage-modal-content').removeClass('active').hide();
-    $('#' + modalId).addClass('active').show();
+    var container = document.getElementById('mirage-modal-container');
+    if (!container) return;
+    
+    // Hide all modal sub-contents first
+    var allModals = container.querySelectorAll('.mirage-modal-content');
+    for (var i = 0; i < allModals.length; i++) {
+        allModals[i].classList.remove('active');
+        allModals[i].style.display = 'none';
+    }
+    
+    // Show the target modal content
+    var target = document.getElementById(modalId);
+    if (target) {
+        target.classList.add('active');
+        target.style.display = '';
+    }
+    
+    // Show the overlay/wrapper
+    container.style.visibility = 'visible';
+    container.style.opacity = '1';
+    container.style.display = 'flex';
+    container.classList.add('active');
 }
 
 function closeMirageModal() {
-    $('#mirage-modal-container').removeClass('active').hide();
-    $('.mirage-modal-content').removeClass('active').hide();
+    var container = document.getElementById('mirage-modal-container');
+    if (!container) return;
+    container.classList.remove('active');
+    container.style.visibility = 'hidden';
+    container.style.opacity = '0';
+    var allModals = container.querySelectorAll('.mirage-modal-content');
+    for (var i = 0; i < allModals.length; i++) {
+        allModals[i].classList.remove('active');
+        allModals[i].style.display = 'none';
+    }
 }
 
 function toggleModalPassword() {
@@ -673,10 +725,14 @@ function handleWishlistClick(productId, btn) {
             if (btn) {
                 $(btn).find('.not-added').hide();
                 $(btn).find('.added').show();
+                // Si es el botón de la página de producto, cambiar su fondo a rojo
+                if ($(btn).css('background-color') !== 'transparent' && $(btn).css('background-color') !== 'rgba(0, 0, 0, 0)') {
+                    $(btn).css('background-color', '#ef4444');
+                }
             }
         },
         error: function(xhr) {
-            if (xhr.status === 401) {
+            if (xhr.status === 401 || xhr.status === 419) {
                 openSpecificModal('mirage-auth-modal');
             } else {
                 console.error('Error adding to wishlist', xhr);
@@ -686,15 +742,39 @@ function handleWishlistClick(productId, btn) {
 }
 
 function showWishlistNotification() {
-    const notif = $('#iqitwishlist-notification');
-    if (notif.length) {
-        notif.addClass('ns-show');
-        setTimeout(() => {
-            notif.removeClass('ns-show');
-        }, 3000);
-    } else {
-        alert('¡Producto añadido a tu lista de deseos!');
+    let notif = document.getElementById('iqitwishlist-notification');
+    
+    // If notif doesn't exist in the layout, create it dynamically
+    if (!notif) {
+        notif = document.createElement('div');
+        notif.id = 'iqitwishlist-notification';
+        notif.className = 'ns-box ns-effect-slidetop ns-type-notice';
+        notif.innerHTML = '<div class="ns-box-inner"><span class="ns-title"><i class="fa fa-check" aria-hidden="true"></i> <strong>Producto añadido a tu lista de deseos</strong></span></div>';
+        document.body.appendChild(notif);
+        
+        // Add minimal styling if the stylesheet isn't loaded
+        notif.style.position = 'fixed';
+        notif.style.top = '20px';
+        notif.style.right = '20px';
+        notif.style.background = '#333';
+        notif.style.color = '#fff';
+        notif.style.padding = '15px 20px';
+        notif.style.borderRadius = '5px';
+        notif.style.zIndex = '9999';
+        notif.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+        notif.style.transition = 'opacity 0.3s ease-in-out';
+        notif.style.opacity = '0';
+        notif.style.pointerEvents = 'none';
     }
+    
+    // Show the notification
+    notif.style.opacity = '1';
+    notif.classList.add('ns-show');
+    
+    setTimeout(() => {
+        notif.style.opacity = '0';
+        notif.classList.remove('ns-show');
+    }, 3000);
 }
 
 // --- COMPARISON SCRIPTS ---
@@ -880,12 +960,14 @@ function openQuickView(productId) {
                         <div class="mirage-qv-gallery">
                             ${thumbsHtml}
                         </div>
+                        ${data.video_id ? `
                         <div class="mirage-qv-video-section">
                             <h4 class="mirage-qv-section-title">Product Video</h4>
                             <div class="mirage-qv-video-wrapper">
                                 <iframe src="https://www.youtube.com/embed/${data.video_id}" allowfullscreen></iframe>
                             </div>
                         </div>
+                        ` : ''}
                     </div>
                     
                     <!-- Right Column -->

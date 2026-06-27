@@ -16,6 +16,15 @@ Route::get('/', function () {
     return view('home');
 });
 
+// Legacy login redirects
+Route::any('/iniciar-sesion', function () {
+    return redirect()->route('login', request()->query());
+});
+Route::any('/tienda/iniciar-sesion', function () {
+    return redirect()->route('login', request()->query());
+});
+
+
 // Catalog routes
 Route::get('/catalogo/todo/', [App\Http\Controllers\CatalogController::class, 'index'])->name('catalog.index');
 Route::get('/catalogo/todo/{category}', [App\Http\Controllers\CatalogController::class, 'category'])->name('catalog.category');
@@ -30,9 +39,9 @@ Route::middleware([
     // Ruta dinámica según rol
     Route::get('/dashboard', function () {
         if (auth()->user()->role === 'admin') {
-            return redirect()->route('orders.index');
+            return app()->make(\App\Http\Controllers\Admin\DashboardController::class)->index();
         }
-        return redirect()->route('customer.orders');
+        return app()->make(\App\Http\Controllers\CustomerController::class)->dashboard();
     })->name('dashboard');
 
     // Admin Routes
@@ -52,15 +61,27 @@ Route::middleware([
 
 // Dynamic Routes for Tienda (MVC)
 Route::get('/tienda', [TiendaController::class, 'index'])->name('tienda.index');
-Route::post('/tienda/wishlist', [\App\Http\Controllers\WishlistController::class, 'add'])->name('wishlist.add');
-Route::delete('/tienda/wishlist/{product_id}', [\App\Http\Controllers\WishlistController::class, 'remove'])->name('wishlist.remove');
-Route::get('/tienda/wishlist', [\App\Http\Controllers\WishlistController::class, 'index'])->name('wishlist.index');
+    Route::post('/tienda/wishlist', [\App\Http\Controllers\WishlistController::class, 'add'])->name('wishlist.add');
+    Route::delete('/tienda/wishlist/{product_id}', [\App\Http\Controllers\WishlistController::class, 'remove'])->name('wishlist.remove');
+    Route::get('/tienda/wishlist', [\App\Http\Controllers\WishlistController::class, 'index'])->name('wishlist.index');
+
+    // Rutas para Comparar Productos
+    Route::post('/tienda/compare', [\App\Http\Controllers\CompareController::class, 'add'])->name('compare.add');
+    Route::delete('/tienda/compare/{product_id}', [\App\Http\Controllers\CompareController::class, 'remove'])->name('compare.remove');
+    Route::get('/tienda/compare', [\App\Http\Controllers\CompareController::class, 'index'])->name('compare.index');
 Route::get('/tienda/producto/quickview/{id}', [\App\Http\Controllers\QuickViewController::class, 'show'])->name('product.quickview');
 Route::get('/tienda/comparar/data', [\App\Http\Controllers\QuickViewController::class, 'compare'])->name('product.compare');
 Route::post('/tienda/producto/{slug}/review', [TiendaController::class, 'storeReview'])->name('tienda.product.review');
 
 Route::get('/tienda/{slug}', [TiendaController::class, 'category'])->name('tienda.category');
 Route::get('/tienda/producto/{slug}', [TiendaController::class, 'product'])->name('tienda.product');
+Route::get('/tienda/content/{slug}', function () {
+    return view('tienda.content');
+})->name('tienda.content');
+
+// Search Routes
+Route::get('/buscar/autocomplete', [\App\Http\Controllers\SearchController::class, 'autocomplete'])->name('search.autocomplete');
+Route::get('/buscar', [\App\Http\Controllers\SearchController::class, 'index'])->name('search.index');
 
 // Shopping Cart Routes
 Route::prefix('carrito')->name('cart.')->group(function () {
@@ -85,3 +106,5 @@ Route::get('/distribuidores', [DistributorController::class, 'index'])->name('di
 // Static legacy routes fallback
 require __DIR__.'/web_mirage.php';
 // require __DIR__.'/web_tienda.php'; // COMMENTED OUT FOR TESTING
+Route::get('/test-cart', function() { dd(session()->get('cart')); });
+Route::post('/module/iqitcompare/actions', [\App\Http\Controllers\CompareController::class, 'actions'])->name('compare.actions');

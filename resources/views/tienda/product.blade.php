@@ -56,13 +56,13 @@
 
 <main id="main-page-content">
   <header id="header" class="desktop-header-style-w-2">
-    <nav class="header-nav">
+    <nav class="header-nav" style="padding: 8px 0;">
       <div class="container">
         <div class="row justify-content-between">
           <div class="col col-auto col-md left-nav"></div>
           <div class="col col-auto col-md right-nav text-right">
             <div class="d-inline-block">
-              <a href="#">
+              <a href="{{ route('wishlist.index') }}" style="color: #cbd5e0; font-size: 13px; text-decoration: none;">
                 <i class="fa fa-heart-o fa-fw" aria-hidden="true"></i> Lista de deseos (<span id="iqitwishlist-nb">0</span>)
               </a>
             </div>
@@ -104,11 +104,11 @@
                 </div>
                 <div id="ps-shoppingcart-wrapper" class="col col-auto">
                   <div id="ps-shoppingcart" class="header-btn-w header-cart-btn-w ps-shoppingcart dropdown">
-                    <a id="cart-toogle" class="cart-toogle header-btn header-cart-btn">
+                    <a id="cart-toogle" href="{{ route('cart.index') }}" class="cart-toogle header-btn header-cart-btn">
                       <i class="fa fa-shopping-bag fa-fw icon" aria-hidden="true"></i>
                       <span class="info-wrapper">
                         <span class="title">Carrito:</span>
-                        <span class="cart-toggle-details">Vacío</span>
+                        <span class="cart-toggle-details" style="display: block; font-size: 13px; font-weight: normal; margin-top: -2px;">{{ $cartCount > 0 ? $cartCount . ' articulos' : 'Vacío' }}</span>
                       </span>
                     </a>
                   </div>
@@ -154,7 +154,7 @@
                   @endif
                 @endforeach
                 <li class="cbp-hrmenu-tab">
-                  <a href="{{ url('/tienda/contactenos') }}" class="nav-link">
+                  <a href="{{ route('tienda.category', 'contactenos') }}" class="nav-link">
                     <span class="cbp-tab-title">CONTACTO</span>
                   </a>
                 </li>
@@ -167,7 +167,7 @@
   </header>
 
   <!-- Main Container -->
-  <div id="wrapper" style="background-color: #f8fafc; padding-top: 30px; padding-bottom: 50px;">
+  <div id="wrapper" style="background-color: #f8fafc; padding-top: 60px; padding-bottom: 50px;">
     <div class="container">
       
       <!-- Breadcrumb -->
@@ -286,12 +286,67 @@
               
               <div class="secondary-actions" style="display: flex; gap: 15px;">
                 <button type="button" class="js-iqitwishlist-add" data-id-product="{{ $product->id }}" style="flex: 1; background: #94a3b8; color: #ffffff; border: none; border-radius: 6px; padding: 12px 10px; font-size: 14px; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; transition: background-color 0.2s; outline: none;">
-                  <i class="fa fa-heart-o"></i> Añadir a deseos
+                  <i class="fa fa-heart-o not-added"></i>
+                  <i class="fa fa-heart added" style="display:none; color:#ffffff;"></i>
+                  <span class="btn-text not-added">Añadir a deseos</span>
+                  <span class="btn-text added" style="display:none;">En tu Wishlist</span>
                 </button>
-                <button type="button" class="js-iqitcompare-add" data-id-product="{{ $product->id }}" style="flex: 1; background: #94a3b8; color: #ffffff; border: none; border-radius: 6px; padding: 12px 10px; font-size: 14px; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; transition: background-color 0.2s; outline: none;">
-                  <i class="fa fa-random"></i> Comparar
+                <button type="button" onclick="addToCompare('{{ $product->id }}', this)" class="js-iqitcompare-add" data-id-product="{{ $product->id }}" style="flex: 1; background: #94a3b8; color: #ffffff; border: none; border-radius: 6px; padding: 12px 10px; font-size: 14px; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; transition: background-color 0.2s; outline: none;">
+                  <i class="fa fa-random"></i> <span class="btn-text">Comparar</span>
                 </button>
               </div>
+
+              <script>
+                function toggleWishlist(productId, btn) {
+                    const icon = btn.querySelector('i');
+                    const text = btn.querySelector('.btn-text');
+                    
+                    fetch('{{ route("wishlist.add") }}', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                        },
+                        body: JSON.stringify({ product_id: productId })
+                    })
+                    .then(res => res.json())
+                    .then(data => {
+                        if (data.status === 'success') {
+                            btn.style.backgroundColor = '#ef4444'; // Red when active
+                            icon.classList.remove('fa-heart-o');
+                            icon.classList.add('fa-heart');
+                            text.innerText = 'En tu Wishlist';
+                        } else if(data.status === 'unauthorized') {
+                            window.location.href = '{{ route("login") }}';
+                        }
+                    })
+                    .catch(err => console.error(err));
+                }
+
+                function addToCompare(productId, btn) {
+                    fetch('{{ route("compare.add") }}', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                        },
+                        body: JSON.stringify({ product_id: productId })
+                    })
+                    .then(res => {
+                        if (!res.ok && res.status !== 422) throw new Error('Error network');
+                        return res.json();
+                    })
+                    .then(data => {
+                        if (data.status === 'success' || data.status === 'info') {
+                            btn.style.backgroundColor = '#3b82f6'; // Blue when added
+                            btn.querySelector('.btn-text').innerText = 'Agregado (' + data.count + ')';
+                        } else if(data.status === 'error') {
+                            alert(data.message); // Too many products
+                        }
+                    })
+                    .catch(err => console.error(err));
+                }
+              </script>
             </div>
           </div>
           
@@ -715,5 +770,76 @@ $(document).ready(function() {
 
 </script>
 
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const searchInput = document.getElementById("search-input");
+    const searchResults = document.getElementById("search-results");
+    const searchResultsList = document.getElementById("search-results-list");
+    const searchLoading = document.getElementById("search-loading");
+    let timeoutId;
+
+    if (!searchInput) return;
+
+    searchInput.addEventListener("input", function(e) {
+        const query = e.target.value.trim();
+        
+        clearTimeout(timeoutId);
+
+        if (query.length < 2) {
+            searchResults.classList.add("hidden");
+            return;
+        }
+
+        searchResults.classList.remove("hidden");
+        searchResultsList.innerHTML = "";
+        searchLoading.classList.remove("hidden");
+
+        timeoutId = setTimeout(() => {
+            fetch(`/buscar/autocomplete?q=${encodeURIComponent(query)}`)
+                .then(response => response.json())
+                .then(data => {
+                    searchLoading.classList.add("hidden");
+                    searchResultsList.innerHTML = "";
+                    
+                    if (data.length === 0) {
+                        searchResultsList.innerHTML = '<div class="p-4 text-sm text-gray-500 text-center">No se encontraron productos.</div>';
+                        return;
+                    }
+
+                    data.forEach(product => {
+                        const html = `
+                            <a href="${product.url}" class="flex items-center p-3 hover:bg-gray-50 transition-colors group">
+                                <div class="flex-shrink-0 w-12 h-12 bg-gray-100 rounded-md overflow-hidden">
+                                    ${product.image ? `<img src="${product.image}" class="w-full h-full object-cover">` : `<div class="w-full h-full flex items-center justify-center text-gray-400">...</div>`}
+                                </div>
+                                <div class="ml-4 flex-1">
+                                    <div class="text-sm font-medium text-gray-900 group-hover:text-indigo-600 transition-colors">${product.name}</div>
+                                    <div class="text-sm font-bold text-red-500 mt-0.5">${product.price}</div>
+                                </div>
+                                <div class="text-xs text-gray-400 font-medium tracking-wide">
+                                    Producto
+                                </div>
+                            </a>
+                        `;
+                        searchResultsList.insertAdjacentHTML("beforeend", html);
+                    });
+                })
+                .catch(error => {
+                    searchLoading.classList.add("hidden");
+                    console.error("Error fetching search results:", error);
+                });
+        }, 300);
+    });
+
+    document.addEventListener("click", function(e) {
+        const container = document.getElementById("autocomplete-container");
+        if (container && !container.contains(e.target)) {
+            searchResults.classList.add("hidden");
+        }
+    });
+});
+</script>
 </body>
+
 </html>

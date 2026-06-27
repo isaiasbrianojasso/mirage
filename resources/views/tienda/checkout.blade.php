@@ -1,4 +1,4 @@
-@extends('layouts.store')
+@extends('layouts.legacy')
 
 @section('title', 'Finalizar Compra | Tienda Mirage')
 
@@ -74,18 +74,40 @@
 
                     <div class="mt-10 border-t border-gray-200 pt-10">
                         <h2 class="text-lg font-medium text-gray-900">Método de Pago</h2>
-                        <div class="mt-4">
-                            <div class="bg-blue-50 border border-blue-200 rounded-md p-4 flex items-start">
-                                <div class="flex-shrink-0">
-                                    <svg class="h-6 w-6 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                </div>
-                                <div class="ml-3 flex-1 md:flex md:justify-between">
-                                    <p class="text-sm text-blue-700">
-                                        Actualmente los pedidos se registran para <strong>pago contra entrega o transferencia bancaria</strong>. Un agente se comunicará contigo para acordar el pago tras confirmar tu pedido.
-                                    </p>
-                                </div>
+                        <div class="mt-4 space-y-4">
+                            <div class="flex items-center">
+                                <input id="payment_card" name="payment_method" type="radio" value="card" required class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                                <label for="payment_card" class="ml-3 block text-sm font-medium text-gray-700">
+                                    Tarjeta de Crédito / Débito
+                                </label>
+                            </div>
+                            <div class="flex items-center">
+                                <input id="payment_transfer" name="payment_method" type="radio" value="transfer" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                                <label for="payment_transfer" class="ml-3 block text-sm font-medium text-gray-700">
+                                    Transferencia Bancaria
+                                </label>
+                            </div>
+                            <div class="flex items-center">
+                                <input id="payment_cash" name="payment_method" type="radio" value="cash" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                                <label for="payment_cash" class="ml-3 block text-sm font-medium text-gray-700">
+                                    Pago en Efectivo (Contra Entrega)
+                                </label>
+                            </div>
+                        </div>
+
+                        <h2 class="text-lg font-medium text-gray-900 mt-10">Método de Envío</h2>
+                        <div class="mt-4 space-y-4">
+                            <div class="flex items-center">
+                                <input id="shipping_local" name="shipping_method" type="radio" value="local_pickup" checked class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                                <label for="shipping_local" class="ml-3 block text-sm font-medium text-gray-700">
+                                    Recoger en Sucursal (Gratis)
+                                </label>
+                            </div>
+                            <div class="flex items-center">
+                                <input id="shipping_delivery" name="shipping_method" type="radio" value="home_delivery" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                                <label for="shipping_delivery" class="ml-3 block text-sm font-medium text-gray-700">
+                                    Envío a Domicilio (Por Acordar)
+                                </label>
                             </div>
                         </div>
 

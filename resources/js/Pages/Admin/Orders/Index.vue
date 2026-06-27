@@ -23,6 +23,20 @@ const statusLabels = {
     cancelled: 'Cancelado',
 };
 
+const paymentStatusColors = {
+    pending: 'bg-yellow-100 text-yellow-800',
+    paid: 'bg-green-100 text-green-800',
+    failed: 'bg-red-100 text-red-800',
+    refunded: 'bg-gray-100 text-gray-800',
+};
+
+const paymentStatusLabels = {
+    pending: 'Pendiente',
+    paid: 'Pagado',
+    failed: 'Fallido',
+    refunded: 'Reembolsado',
+};
+
 const formatDate = (dateString) => {
     return new Date(dateString).toLocaleDateString('es-MX', {
         year: 'numeric', month: 'long', day: 'numeric',
@@ -73,6 +87,9 @@ const formatDate = (dateString) => {
                                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                             Estado
                                         </th>
+                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                            Pago
+                                        </th>
                                         <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
                                             Acciones
                                         </th>
@@ -97,6 +114,12 @@ const formatDate = (dateString) => {
                                             <span :class="['px-2 inline-flex text-xs leading-5 font-semibold rounded-full', statusColors[order.status]]">
                                                 {{ statusLabels[order.status] }}
                                             </span>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <span v-if="order.payment_status" :class="['px-2 inline-flex text-xs leading-5 font-semibold rounded-full', paymentStatusColors[order.payment_status]]">
+                                                {{ paymentStatusLabels[order.payment_status] }}
+                                            </span>
+                                            <span v-else class="text-sm text-gray-500">N/A</span>
                                         </td>
                                         <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                                             <Link :href="route('orders.show', order.id)" class="text-indigo-600 hover:text-indigo-900">

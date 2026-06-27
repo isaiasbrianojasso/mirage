@@ -49,7 +49,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <meta name="description" content="Dispensador de Agua Disx 10 Blanco">
   <meta name="keywords" content="">
     
-      <link rel="canonical" href="/tienda_assets/dispensadores/1296-dispensador-de-agua-disx-10-blanco.html">
+      <link rel="canonical" href="/tienda/dispensadores/1296-dispensador-de-agua-disx-10-blanco.html">
     
 
   
@@ -62,7 +62,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     "@@id": "#store-organization",
     "@@type": "Organization",
     "name" : "Mirage",
-    "url" : "/tienda_assets/",
+    "url" : "/tienda/",
   
       "logo": {
         "@@type": "ImageObject",
@@ -77,11 +77,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     "@@type": "WebPage",
     "isPartOf": {
       "@@type": "WebSite",
-      "url":  "/tienda_assets/",
+      "url":  "/tienda/",
       "name": "Mirage"
     },
     "name": "Dispensador de Agua Disx 10 Blanco",
-    "url":  "/tienda_assets/dispensadores/1296-dispensador-de-agua-disx-10-blanco.html"
+    "url":  "/tienda/dispensadores/1296-dispensador-de-agua-disx-10-blanco.html"
   }
 </script>
 
@@ -95,22 +95,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             "@@type": "ListItem",
             "position": 1,
             "name": "Inicio",
-            "item": "/tienda_assets/"
+            "item": "/tienda/"
           },              {
             "@@type": "ListItem",
             "position": 2,
             "name": "Línea Blanca",
-            "item": "/tienda_assets/13-linea-blanca"
+            "item": "/tienda/13-linea-blanca"
           },              {
             "@@type": "ListItem",
             "position": 3,
             "name": "Dispensadores",
-            "item": "/tienda_assets/21-dispensadores"
+            "item": "/tienda/21-dispensadores"
           },              {
             "@@type": "ListItem",
             "position": 4,
             "name": "Dispensador de Agua Disx 10 Blanco",
-            "item": "/tienda_assets/dispensadores/1296-dispensador-de-agua-disx-10-blanco.html"
+            "item": "/tienda/dispensadores/1296-dispensador-de-agua-disx-10-blanco.html"
           }          ]
     }
   </script>
@@ -127,7 +127,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     "name": "Dispensador de Agua Disx 10 Blanco",
     "description": "Dispensador de Agua Disx 10 Blanco",
     "category": "Dispensadores",
-    "image" :"/tienda_assets/3739-home_default/dispensador-de-agua-disx-10-blanco.jpg",    "sku": "MDD10CB",
+    "image" :"/3739-home_default/dispensador-de-agua-disx-10-blanco.jpg",    "sku": "MDD10CB",
     "mpn": "MDD10CB"
         ,
     "brand": {
@@ -147,9 +147,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       "priceCurrency": "MXN",
       "name": "Dispensador de Agua Disx 10 Blanco",
       "price": "2662",
-      "url": "/tienda_assets/dispensadores/1296-dispensador-de-agua-disx-10-blanco.html",
+      "url": "/tienda/dispensadores/1296-dispensador-de-agua-disx-10-blanco.html",
       "priceValidUntil": "2026-07-10",
-              "image": ["/tienda_assets/3739-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg","/tienda_assets/3738-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg","/tienda_assets/10034-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg","/tienda_assets/3818-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg","/tienda_assets/3819-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg"],
+              "image": ["/3739-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg","/3738-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg","/10034-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg","/3818-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg","/3819-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg"],
             "sku": "MDD10CB",
       "mpn": "MDD10CB",
                     "availability": "https://schema.org/InStock",
@@ -169,11 +169,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
     <meta property="og:type" content="product">
-    <meta property="og:url" content="/tienda_assets/dispensadores/1296-dispensador-de-agua-disx-10-blanco.html">
+    <meta property="og:url" content="/tienda/dispensadores/1296-dispensador-de-agua-disx-10-blanco.html">
     <meta property="og:title" content="Dispensador de Agua Disx 10 Blanco">
     <meta property="og:site_name" content="Mirage">
     <meta property="og:description" content="Dispensador de Agua Disx 10 Blanco">
-            <meta property="og:image" content="/tienda_assets/3739-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg">
+            <meta property="og:image" content="/3739-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg">
         <meta property="og:image:width" content="1100">
         <meta property="og:image:height" content="1422">
     
@@ -255,7 +255,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         var iqitmegamenu = {"sticky":"false","containerSelector":"#wrapper > .container"};
         var iqitreviews = [];
         var iqitwishlist = {"nbProducts":0};
-        var prestashop = {"cart":{"products":[],"totals":{"total":{"type":"total","label":"Total","amount":0,"value":"$0.00"},"total_including_tax":{"type":"total","label":"Total IVA inclu\u00eddo","amount":0,"value":"$0.00"},"total_excluding_tax":{"type":"total","label":"Total sin IVA","amount":0,"value":"$0.00"}},"subtotals":{"products":{"type":"products","label":"Subtotal","amount":0,"value":"$0.00"},"discounts":null,"shipping":{"type":"shipping","label":"Env\u00edo","amount":0,"value":""},"tax":null},"products_count":0,"summary_string":"0 articulos","vouchers":{"allowed":1,"added":[]},"discounts":[],"minimalPurchase":0,"minimalPurchaseRequired":""},"currency":{"id":1,"name":"Peso mexicano","iso_code":"MXN","iso_code_num":"484","sign":"$"},"customer":{"lastname":null,"firstname":null,"email":null,"birthday":null,"newsletter":null,"newsletter_date_add":null,"optin":null,"website":null,"company":null,"siret":null,"ape":null,"is_logged":false,"gender":{"type":null,"name":null},"addresses":[]},"language":{"name":"Espa\u00f1ol MX (Spanish)","iso_code":"mx","locale":"es-MX","language_code":"es-MX","is_rtl":"0","date_format_lite":"Y-m-d","date_format_full":"Y-m-d H:i:s","id":2},"page":{"title":"","canonical":"\/tienda\/dispensadores\/1296-dispensador-de-agua-disx-10-blanco.html","meta":{"title":"Dispensador de Agua Disx 10 Blanco","description":"Dispensador de Agua Disx 10 Blanco","keywords":"","robots":"index"},"page_name":"product","body_classes":{"lang-mx":true,"lang-rtl":false,"country-MX":true,"currency-MXN":true,"layout-full-width":true,"page-product":true,"tax-display-enabled":true,"product-id-1296":true,"product-Dispensador de Agua Disx 10 Blanco":true,"product-id-category-21":true,"product-id-manufacturer-0":true,"product-id-supplier-0":true,"product-available-for-order":true},"admin_notifications":[]},"shop":{"name":"Mirage","logo":"\/tienda\/img\/mirage-logo-1534899548.jpg","stores_icon":"\/tienda\/img\/logo_stores.png","favicon":"\/tienda\/img\/favicon.ico"},"urls":{"base_url":"\/tienda\/","current_url":"\/tienda\/dispensadores\/1296-dispensador-de-agua-disx-10-blanco.html","shop_domain_url":"https:\/\/www.tiendamirage.mx","img_ps_url":"\/tienda\/img\/","img_cat_url":"\/tienda\/img\/c\/","img_lang_url":"\/tienda\/img\/l\/","img_prod_url":"\/tienda\/img\/p\/","img_manu_url":"\/tienda\/img\/m\/","img_sup_url":"\/tienda\/img\/su\/","img_ship_url":"\/tienda\/img\/s\/","img_store_url":"\/tienda\/img\/st\/","img_col_url":"\/tienda\/img\/co\/","img_url":"\/tienda\/themes\/warehouse\/assets\/img\/","css_url":"\/tienda\/themes\/warehouse\/assets\/css\/","js_url":"\/tienda\/themes\/warehouse\/assets\/js\/","pic_url":"\/tienda\/upload\/","pages":{"address":"\/tienda\/direccion","addresses":"\/tienda\/direcciones","authentication":"\/tienda\/iniciar-sesion","cart":"\/tienda\/carrito","category":"\/tienda\/index.php?controller=category","cms":"\/tienda\/index.php?controller=cms","contact":"\/tienda\/contactenos","discount":"\/tienda\/descuento","guest_tracking":"\/tienda\/seguimiento-pedido-invitado","history":"\/tienda\/historial-compra","identity":"\/tienda\/datos-personales","index":"\/tienda\/","my_account":"\/tienda\/mi-cuenta","order_confirmation":"\/tienda\/confirmacion-pedido","order_detail":"\/tienda\/index.php?controller=order-detail","order_follow":"\/tienda\/seguimiento-pedido","order":"\/tienda\/pedido","order_return":"\/tienda\/index.php?controller=order-return","order_slip":"\/tienda\/nota-credito","pagenotfound":"\/tienda\/pagina-no-encontrada","password":"\/tienda\/recuperar-contrasena","pdf_invoice":"\/tienda\/index.php?controller=pdf-invoice","pdf_order_return":"\/tienda\/index.php?controller=pdf-order-return","pdf_order_slip":"\/tienda\/index.php?controller=pdf-order-slip","prices_drop":"\/tienda\/productos-rebajados","product":"\/tienda\/index.php?controller=product","search":"\/tienda\/busqueda","sitemap":"\/tienda\/Mapa del sitio","stores":"\/tienda\/tiendas","supplier":"\/tienda\/proveedor","register":"\/tienda\/iniciar-sesion?create_account=1","order_login":"\/tienda\/pedido?login=1"},"alternative_langs":[],"theme_assets":"\/themes\/warehouse\/assets\/","actions":{"logout":"\/tienda\/?mylogout="},"no_picture_image":{"bySize":{"small_default":{"url":"\/tienda\/img\/p\/mx-default-small_default.jpg","width":98,"height":127},"cart_default":{"url":"\/tienda\/img\/p\/mx-default-cart_default.jpg","width":125,"height":162},"home_default":{"url":"\/tienda\/img\/p\/mx-default-home_default.jpg","width":236,"height":305},"large_default":{"url":"\/tienda\/img\/p\/mx-default-large_default.jpg","width":381,"height":492},"medium_default":{"url":"\/tienda\/img\/p\/mx-default-medium_default.jpg","width":452,"height":584},"thickbox_default":{"url":"\/tienda\/img\/p\/mx-default-thickbox_default.jpg","width":1100,"height":1422}},"small":{"url":"\/tienda\/img\/p\/mx-default-small_default.jpg","width":98,"height":127},"medium":{"url":"\/tienda\/img\/p\/mx-default-large_default.jpg","width":381,"height":492},"large":{"url":"\/tienda\/img\/p\/mx-default-thickbox_default.jpg","width":1100,"height":1422},"legend":""}},"configuration":{"display_taxes_label":true,"display_prices_tax_incl":true,"is_catalog":false,"show_prices":true,"opt_in":{"partner":true},"quantity_discount":{"type":"price","label":"Precio Unitario"},"voucher_enabled":1,"return_enabled":0},"field_required":[],"breadcrumb":{"links":[{"title":"Inicio","url":"\/tienda\/"},{"title":"L\u00ednea Blanca","url":"\/tienda\/13-linea-blanca"},{"title":"Dispensadores","url":"\/tienda\/21-dispensadores"},{"title":"Dispensador de Agua Disx 10 Blanco","url":"\/tienda\/dispensadores\/1296-dispensador-de-agua-disx-10-blanco.html"}],"count":4},"link":{"protocol_link":"https:\/\/","protocol_content":"https:\/\/"},"time":1782411823,"static_token":"736faed44ac184681768e35d05df6cbd","token":"1da7720698848b23a01dc5e00a1f383c","debug":false};
+        var prestashop = {"cart":{"products":[],"totals":{"total":{"type":"total","label":"Total","amount":0,"value":"$0.00"},"total_including_tax":{"type":"total","label":"Total IVA inclu\u00eddo","amount":0,"value":"$0.00"},"total_excluding_tax":{"type":"total","label":"Total sin IVA","amount":0,"value":"$0.00"}},"subtotals":{"products":{"type":"products","label":"Subtotal","amount":0,"value":"$0.00"},"discounts":null,"shipping":{"type":"shipping","label":"Env\u00edo","amount":0,"value":""},"tax":null},"products_count":0,"summary_string":"0 articulos","vouchers":{"allowed":1,"added":[]},"discounts":[],"minimalPurchase":0,"minimalPurchaseRequired":""},"currency":{"id":1,"name":"Peso mexicano","iso_code":"MXN","iso_code_num":"484","sign":"$"},"customer":{"lastname":null,"firstname":null,"email":null,"birthday":null,"newsletter":null,"newsletter_date_add":null,"optin":null,"website":null,"company":null,"siret":null,"ape":null,"is_logged":false,"gender":{"type":null,"name":null},"addresses":[]},"language":{"name":"Espa\u00f1ol MX (Spanish)","iso_code":"mx","locale":"es-MX","language_code":"es-MX","is_rtl":"0","date_format_lite":"Y-m-d","date_format_full":"Y-m-d H:i:s","id":2},"page":{"title":"","canonical":"\/tienda\/dispensadores\/1296-dispensador-de-agua-disx-10-blanco.html","meta":{"title":"Dispensador de Agua Disx 10 Blanco","description":"Dispensador de Agua Disx 10 Blanco","keywords":"","robots":"index"},"page_name":"product","body_classes":{"lang-mx":true,"lang-rtl":false,"country-MX":true,"currency-MXN":true,"layout-full-width":true,"page-product":true,"tax-display-enabled":true,"product-id-1296":true,"product-Dispensador de Agua Disx 10 Blanco":true,"product-id-category-21":true,"product-id-manufacturer-0":true,"product-id-supplier-0":true,"product-available-for-order":true},"admin_notifications":[]},"shop":{"name":"Mirage","logo":"\/tienda_assets\/img\/mirage-logo-1534899548.jpg","stores_icon":"\/tienda_assets\/img\/logo_stores.png","favicon":"\/tienda_assets\/img\/favicon.ico"},"urls":{"base_url":"\/tienda\/","current_url":"\/tienda\/dispensadores\/1296-dispensador-de-agua-disx-10-blanco.html","shop_domain_url":"https:\/\/www.tiendamirage.mx","img_ps_url":"\/tienda_assets\/img\/","img_cat_url":"\/tienda_assets\/img\/c\/","img_lang_url":"\/tienda_assets\/img\/l\/","img_prod_url":"\/tienda_assets\/img\/p\/","img_manu_url":"\/tienda_assets\/img\/m\/","img_sup_url":"\/tienda_assets\/img\/su\/","img_ship_url":"\/tienda_assets\/img\/s\/","img_store_url":"\/tienda_assets\/img\/st\/","img_col_url":"\/tienda_assets\/img\/co\/","img_url":"\/tienda_assets\/themes\/warehouse\/assets\/img\/","css_url":"\/tienda_assets\/themes\/warehouse\/assets\/css\/","js_url":"\/tienda_assets\/themes\/warehouse\/assets\/js\/","pic_url":"\/tienda\/upload\/","pages":{"address":"\/tienda\/direccion","addresses":"\/tienda\/direcciones","authentication":"\/tienda\/iniciar-sesion","cart":"\/tienda\/carrito","category":"\/tienda\/index.php?controller=category","cms":"\/tienda\/index.php?controller=cms","contact":"\/tienda\/contactenos","discount":"\/tienda\/descuento","guest_tracking":"\/tienda\/seguimiento-pedido-invitado","history":"\/tienda\/historial-compra","identity":"\/tienda\/datos-personales","index":"\/tienda\/","my_account":"\/tienda\/mi-cuenta","order_confirmation":"\/tienda\/confirmacion-pedido","order_detail":"\/tienda\/index.php?controller=order-detail","order_follow":"\/tienda\/seguimiento-pedido","order":"\/tienda\/pedido","order_return":"\/tienda\/index.php?controller=order-return","order_slip":"\/tienda\/nota-credito","pagenotfound":"\/tienda\/pagina-no-encontrada","password":"\/tienda\/recuperar-contrasena","pdf_invoice":"\/tienda\/index.php?controller=pdf-invoice","pdf_order_return":"\/tienda\/index.php?controller=pdf-order-return","pdf_order_slip":"\/tienda\/index.php?controller=pdf-order-slip","prices_drop":"\/tienda\/productos-rebajados","product":"\/tienda\/index.php?controller=product","search":"\/tienda\/busqueda","sitemap":"\/tienda\/Mapa del sitio","stores":"\/tienda\/tiendas","supplier":"\/tienda\/proveedor","register":"\/tienda\/iniciar-sesion?create_account=1","order_login":"\/tienda\/pedido?login=1"},"alternative_langs":[],"theme_assets":"\/themes\/warehouse\/assets\/","actions":{"logout":"\/tienda\/?mylogout="},"no_picture_image":{"bySize":{"small_default":{"url":"\/tienda_assets\/img\/p\/mx-default-small_default.jpg","width":98,"height":127},"cart_default":{"url":"\/tienda_assets\/img\/p\/mx-default-cart_default.jpg","width":125,"height":162},"home_default":{"url":"\/tienda_assets\/img\/p\/mx-default-home_default.jpg","width":236,"height":305},"large_default":{"url":"\/tienda_assets\/img\/p\/mx-default-large_default.jpg","width":381,"height":492},"medium_default":{"url":"\/tienda_assets\/img\/p\/mx-default-medium_default.jpg","width":452,"height":584},"thickbox_default":{"url":"\/tienda_assets\/img\/p\/mx-default-thickbox_default.jpg","width":1100,"height":1422}},"small":{"url":"\/tienda_assets\/img\/p\/mx-default-small_default.jpg","width":98,"height":127},"medium":{"url":"\/tienda_assets\/img\/p\/mx-default-large_default.jpg","width":381,"height":492},"large":{"url":"\/tienda_assets\/img\/p\/mx-default-thickbox_default.jpg","width":1100,"height":1422},"legend":""}},"configuration":{"display_taxes_label":true,"display_prices_tax_incl":true,"is_catalog":false,"show_prices":true,"opt_in":{"partner":true},"quantity_discount":{"type":"price","label":"Precio Unitario"},"voucher_enabled":1,"return_enabled":0},"field_required":[],"breadcrumb":{"links":[{"title":"Inicio","url":"\/tienda\/"},{"title":"L\u00ednea Blanca","url":"\/tienda\/13-linea-blanca"},{"title":"Dispensadores","url":"\/tienda\/21-dispensadores"},{"title":"Dispensador de Agua Disx 10 Blanco","url":"\/tienda\/dispensadores\/1296-dispensador-de-agua-disx-10-blanco.html"}],"count":4},"link":{"protocol_link":"https:\/\/","protocol_content":"https:\/\/"},"time":1782411823,"static_token":"736faed44ac184681768e35d05df6cbd","token":"1da7720698848b23a01dc5e00a1f383c","debug":false};
         var ps_checkoutApplePayUrl = "\/tienda\/module\/ps_checkout\/applepay?token=736faed44ac184681768e35d05df6cbd";
         var ps_checkoutAutoRenderDisabled = false;
         var ps_checkoutCancelUrl = "\/tienda\/module\/ps_checkout\/cancel?token=736faed44ac184681768e35d05df6cbd";
@@ -339,11 +339,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     "@@type" : "WebPage",
     "isPartOf": [{
         "@@type":"WebSite",
-        "url":  "/tienda_assets/",
+        "url":  "/tienda/",
         "name": "Mirage"
     }],
     "name": "Dispensador de Agua Disx 10 Blanco",
-    "url": "/tienda_assets/dispensadores/1296-dispensador-de-agua-disx-10-blanco.html"
+    "url": "/tienda/dispensadores/1296-dispensador-de-agua-disx-10-blanco.html"
 }
 </script>
 
@@ -381,7 +381,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<script type="application/ld+json" id="adpmicrodatos-product-ps17v5.5.1">
 {
     "name": "Dispensador de Agua Disx 10 Blanco",
-    "image": ["\/tienda\/3739-large_default\/dispensador-de-agua-disx-10-blanco.jpg"],
+    "image": ["\/3739-large_default\/dispensador-de-agua-disx-10-blanco.jpg"],
     "url": "\/tienda\/dispensadores\/1296-dispensador-de-agua-disx-10-blanco.html",
     "productID": 1296,
             "gtin13": "",
@@ -490,7 +490,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
              </div>
             <div class="col col-auto col-md right-nav text-right">
                 <div class="d-inline-block">
-    <a href="//www.tiendamirage.mx/module/iqitwishlist/view">
+    <a href="{{ route('wishlist.index') }}">
         <i class="fa fa-heart-o fa-fw" aria-hidden="true"></i> Lista de deseos (<span
                 id="iqitwishlist-nb"></span>)
     </a>
@@ -514,7 +514,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="col col-auto col-header-left">
                     <div id="desktop_logo">
                         
-  <a href="/tienda_assets/">
+  <a href="/tienda/">
     <img class="logo img-fluid"
          src="/tienda_assets/img/mirage-logo-1534899548.jpg"
                   alt="Mirage"
@@ -527,25 +527,57 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                 </div>
                 <div class="col col-header-center">
-                                        <!-- Block search module TOP -->
-
+                                        
 <!-- Block search module TOP -->
-<div id="search_widget" class="search-widget" data-search-controller-url="/tienda_assets/module/iqitsearch/searchiqit">
-    <form method="get" action="/tienda_assets/module/iqitsearch/searchiqit">
+<div id="search_widget" class="search-widget autocomplete-wrapper" data-search-controller-url="/buscar/autocomplete">
+    <form method="get" action="/buscar">
         <div class="input-group">
-            <input type="text" name="s" value="" data-all-text="Mostrar todos los resultados"
-                   data-blog-text="Blog post"
-                   data-product-text="Product"
-                   data-brands-text="Marca"
-                   autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
-                   placeholder="Buscar" class="form-control form-search-control" />
+            <input type="text" name="q" id="search-input" value="" placeholder="Buscar productos..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="form-control form-search-control" />
             <button type="submit" class="search-btn">
                 <i class="fa fa-search"></i>
             </button>
         </div>
     </form>
+    
+    <!-- Dropdown de Resultados -->
+    <div id="search-results" class="autocomplete-dropdown hidden">
+        <div id="search-results-list" class="autocomplete-list">
+            <!-- Resultados inyectados por JS -->
+        </div>
+        <div id="search-loading" class="autocomplete-loading hidden">
+            Buscando...
+        </div>
+    </div>
 </div>
+<style>
+.autocomplete-wrapper { position: relative; }
+.autocomplete-dropdown { 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    width: 100%; 
+    background: #fff; 
+    border: 1px solid #eee; 
+    border-radius: 4px; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+    z-index: 9999; 
+    margin-top: 5px;
+    overflow: hidden;
+}
+.autocomplete-dropdown.hidden { display: none !important; }
+.autocomplete-list { max-height: 400px; overflow-y: auto; }
+.autocomplete-item { display: flex; align-items: center; padding: 10px; border-bottom: 1px solid #f5f5f5; text-decoration: none; transition: background 0.2s; }
+.autocomplete-item:hover { background: #f9f9f9; text-decoration: none; }
+.autocomplete-img-container { width: 50px; height: 50px; flex-shrink: 0; background: #f5f5f5; border-radius: 4px; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.autocomplete-img-container img { width: 100%; height: 100%; object-fit: cover; }
+.autocomplete-details { margin-left: 15px; flex-grow: 1; }
+.autocomplete-title { font-size: 14px; font-weight: 500; color: #333; margin-bottom: 3px; display: block; }
+.autocomplete-price { font-size: 14px; font-weight: bold; color: #e62228; display: block; }
+.autocomplete-loading { padding: 15px; text-align: center; color: #777; font-size: 13px; }
+.autocomplete-empty { padding: 15px; text-align: center; color: #777; font-size: 13px; }
+</style>
 <!-- /Block search module TOP -->
+
 
 <!-- /Block search module TOP -->
 
@@ -557,7 +589,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     
                                             <div id="header-user-btn" class="col col-auto header-btn-w header-user-btn-w">
-            <a href="/tienda_assets/mi-cuenta"
+            <a href="/tienda/mi-cuenta"
            title="Acceda a su cuenta de cliente"
            rel="nofollow" class="header-btn header-user-btn">
             <i class="fa fa-user fa-fw icon" aria-hidden="true"></i>
@@ -583,14 +615,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
          class="header-btn-w header-cart-btn-w ps-shoppingcart dropdown">
          <div id="blockcart" class="blockcart cart-preview"
          data-refresh-url="//www.tiendamirage.mx/module/ps_shoppingcart/ajax">
-        <a id="cart-toogle" class="cart-toogle header-btn header-cart-btn" data-toggle="dropdown" data-display="static">
+        <a id="cart-toogle" href="{{ route('cart.index') }}" class="cart-toogle header-btn header-cart-btn" data-toggle="dropdown" data-display="static">
             <i class="fa fa-shopping-bag fa-fw icon" aria-hidden="true"><span class="cart-products-count-btn  d-none">0</span></i>
             <span class="info-wrapper">
             <span class="title">Carrito:</span>
-            <span class="cart-toggle-details">
-            <span class="text-faded cart-separator"> / </span>
-                            Vacío
-                        </span>
+            <span class="cart-toggle-details"><span class="text-faded cart-separator"> / </span>{{ $cartCount > 0 ? $cartCount . ' articulos' : 'Vacío' }}</span>
             </span>
         </a>
         <div id="_desktop_blockcart-content" class="dropdown-menu-custom dropdown-menu">
@@ -633,7 +662,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<ul>
 											<li id="cbp-hrmenu-tab-48"
 							class="cbp-hrmenu-tab cbp-hrmenu-tab-48 ">
-							<a href="/tienda_assets/10-refacciones" class="nav-link" 
+							<a href="/tienda/10-refacciones" class="nav-link" 
 										>
 										
 
@@ -643,7 +672,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 																</li>
 												<li id="cbp-hrmenu-tab-49"
 							class="cbp-hrmenu-tab cbp-hrmenu-tab-49 ">
-							<a href="/tienda_assets/11-aire-acondicionado" class="nav-link" 
+							<a href="/tienda/11-aire-acondicionado" class="nav-link" 
 										>
 										
 
@@ -653,7 +682,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 																</li>
 												<li id="cbp-hrmenu-tab-51"
 							class="cbp-hrmenu-tab cbp-hrmenu-tab-51 ">
-							<a href="/tienda_assets/13-linea-blanca" class="nav-link" 
+							<a href="/tienda/13-linea-blanca" class="nav-link" 
 										>
 										
 
@@ -663,7 +692,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 																</li>
 												<li id="cbp-hrmenu-tab-52"
 							class="cbp-hrmenu-tab cbp-hrmenu-tab-52 ">
-							<a href="/tienda_assets/17-herramientas" class="nav-link" 
+							<a href="/tienda/17-herramientas" class="nav-link" 
 										>
 										
 
@@ -673,7 +702,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 																</li>
 												<li id="cbp-hrmenu-tab-54"
 							class="cbp-hrmenu-tab cbp-hrmenu-tab-54 ">
-							<a href="/tienda_assets/14-souvenirs" class="nav-link" 
+							<a href="/tienda/14-souvenirs" class="nav-link" 
 										>
 										
 
@@ -683,7 +712,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 																</li>
 												<li id="cbp-hrmenu-tab-55"
 							class="cbp-hrmenu-tab cbp-hrmenu-tab-55 ">
-							<a href="/tienda_assets/24-outlet" class="nav-link" 
+							<a href="/tienda/24-outlet" class="nav-link" 
 										>
 										
 
@@ -736,8 +765,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 			
-	<li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/"  class="flex-fill mobile-menu__link ">Inicio</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/10-refacciones"  class="flex-fill mobile-menu__link ">Refacciones</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/11-aire-acondicionado"  class="flex-fill mobile-menu__link ">Aire Acondicionado</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/13-linea-blanca"  class="flex-fill mobile-menu__link js-mobile-menu__link-accordion--has-submenu  ">Línea Blanca</a><span class="mobile-menu__arrow js-mobile-menu__link-accordion--has-submenu"><i class="fa fa-angle-down mobile-menu__expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up mobile-menu__close-icon" aria-hidden="true"></i></span><div class="mobile-menu__tab-row-break"></div>
-	<ul class="mobile-menu__submenu  mobile-menu__submenu--accordion js-mobile-menu__submenu"><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/18-boiler"  class="flex-fill mobile-menu__link ">Boiler</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/19-campanas"  class="flex-fill mobile-menu__link ">Campanas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/21-dispensadores"  class="flex-fill mobile-menu__link ">Dispensadores</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/22-parillas"  class="flex-fill mobile-menu__link ">Parillas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/25-microondas"  class="flex-fill mobile-menu__link ">Microondas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/26-lavadoras"  class="flex-fill mobile-menu__link ">Lavadoras</a></li></ul>	</li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/14-souvenirs"  class="flex-fill mobile-menu__link ">Souvenirs</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/17-herramientas"  class="flex-fill mobile-menu__link ">Herramientas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/24-outlet"  class="flex-fill mobile-menu__link ">Outlet</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/contactenos"  class="flex-fill mobile-menu__link ">Contacto</a></li>	
+	<li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/"  class="flex-fill mobile-menu__link ">Inicio</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/10-refacciones"  class="flex-fill mobile-menu__link ">Refacciones</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/11-aire-acondicionado"  class="flex-fill mobile-menu__link ">Aire Acondicionado</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/13-linea-blanca"  class="flex-fill mobile-menu__link js-mobile-menu__link-accordion--has-submenu  ">Línea Blanca</a><span class="mobile-menu__arrow js-mobile-menu__link-accordion--has-submenu"><i class="fa fa-angle-down mobile-menu__expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up mobile-menu__close-icon" aria-hidden="true"></i></span><div class="mobile-menu__tab-row-break"></div>
+	<ul class="mobile-menu__submenu  mobile-menu__submenu--accordion js-mobile-menu__submenu"><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/18-boiler"  class="flex-fill mobile-menu__link ">Boiler</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/19-campanas"  class="flex-fill mobile-menu__link ">Campanas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/21-dispensadores"  class="flex-fill mobile-menu__link ">Dispensadores</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/22-parillas"  class="flex-fill mobile-menu__link ">Parillas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/25-microondas"  class="flex-fill mobile-menu__link ">Microondas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/26-lavadoras"  class="flex-fill mobile-menu__link ">Lavadoras</a></li></ul>	</li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/14-souvenirs"  class="flex-fill mobile-menu__link ">Souvenirs</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/17-herramientas"  class="flex-fill mobile-menu__link ">Herramientas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/24-outlet"  class="flex-fill mobile-menu__link ">Outlet</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/contactenos"  class="flex-fill mobile-menu__link ">Contacto</a></li>	
 												<li class="mobile-menu__below-content"> </li>
 				</ul>
 			</div>
@@ -773,7 +802,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 			<div class="mobile-menu__user">
-			<a href="/tienda_assets/mi-cuenta" class="text-reset"><i class="fa fa-user" aria-hidden="true"></i>
+			<a href="/tienda/mi-cuenta" class="text-reset"><i class="fa fa-user" aria-hidden="true"></i>
 				
 									Iniciar sesión
 								
@@ -795,7 +824,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="mobile-main-bar">
         <div class="col-mobile-logo text-center">
             
-  <a href="/tienda_assets/">
+  <a href="/tienda/">
     <img class="logo img-fluid"
          src="/tienda_assets/img/mirage-logo-1534899548.jpg"
                   alt="Mirage"
@@ -823,23 +852,57 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div id="search-widget-mobile" class="dropdown-content dropdown-menu dropdown-mobile search-widget">
                         
                                                     
+
 <!-- Block search module TOP -->
-<form method="get" action="/tienda_assets/module/iqitsearch/searchiqit">
-    <div class="input-group">
-        <input type="text" name="s" value=""
-               placeholder="Buscar"
-               data-all-text="Show all results"
-               data-blog-text="Blog post"
-               data-product-text="Product"
-               data-brands-text="Marca"
-               autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
-               class="form-control form-search-control">
-        <button type="submit" class="search-btn">
-            <i class="fa fa-search"></i>
-        </button>
+<div id="search_widget" class="search-widget autocomplete-wrapper" data-search-controller-url="/buscar/autocomplete">
+    <form method="get" action="/buscar">
+        <div class="input-group">
+            <input type="text" name="q" id="search-input" value="" placeholder="Buscar productos..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="form-control form-search-control" />
+            <button type="submit" class="search-btn">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+    </form>
+    
+    <!-- Dropdown de Resultados -->
+    <div id="search-results" class="autocomplete-dropdown hidden">
+        <div id="search-results-list" class="autocomplete-list">
+            <!-- Resultados inyectados por JS -->
+        </div>
+        <div id="search-loading" class="autocomplete-loading hidden">
+            Buscando...
+        </div>
     </div>
-</form>
+</div>
+<style>
+.autocomplete-wrapper { position: relative; }
+.autocomplete-dropdown { 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    width: 100%; 
+    background: #fff; 
+    border: 1px solid #eee; 
+    border-radius: 4px; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+    z-index: 9999; 
+    margin-top: 5px;
+    overflow: hidden;
+}
+.autocomplete-dropdown.hidden { display: none !important; }
+.autocomplete-list { max-height: 400px; overflow-y: auto; }
+.autocomplete-item { display: flex; align-items: center; padding: 10px; border-bottom: 1px solid #f5f5f5; text-decoration: none; transition: background 0.2s; }
+.autocomplete-item:hover { background: #f9f9f9; text-decoration: none; }
+.autocomplete-img-container { width: 50px; height: 50px; flex-shrink: 0; background: #f5f5f5; border-radius: 4px; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.autocomplete-img-container img { width: 100%; height: 100%; object-fit: cover; }
+.autocomplete-details { margin-left: 15px; flex-grow: 1; }
+.autocomplete-title { font-size: 14px; font-weight: 500; color: #333; margin-bottom: 3px; display: block; }
+.autocomplete-price { font-size: 14px; font-weight: bold; color: #e62228; display: block; }
+.autocomplete-loading { padding: 15px; text-align: center; color: #777; font-size: 13px; }
+.autocomplete-empty { padding: 15px; text-align: center; color: #777; font-size: 13px; }
+</style>
 <!-- /Block search module TOP -->
+
 
                                                 
                     </div>
@@ -847,7 +910,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 </div>
                 <div class="col col-mobile-btn col-mobile-btn-account text-center">
-                    <a href="/tienda_assets/mi-cuenta" class="m-nav-btn"><i class="fa fa-user" aria-hidden="true"></i>
+                    <a href="/tienda/mi-cuenta" class="m-nav-btn"><i class="fa fa-user" aria-hidden="true"></i>
                         <span>     
                                                             Iniciar sesión
                                                         </span></a>
@@ -857,7 +920,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                                 <div class="col col-mobile-btn col-mobile-btn-cart ps-shoppingcart text-center dropdown">
                    <div id="mobile-cart-wrapper">
-                    <a id="mobile-cart-toogle" class="m-nav-btn" data-display="static" data-toggle="dropdown"><i class="fa fa-shopping-bag mobile-bag-icon" aria-hidden="true"><span id="mobile-cart-products-count" class="cart-products-count cart-products-count-btn">
+                    <a id="mobile-cart-toogle" href="{{ route('cart.index') }}" class="m-nav-btn" data-display="static" data-toggle="dropdown"><i class="fa fa-shopping-bag mobile-bag-icon" aria-hidden="true"><span id="mobile-cart-products-count" class="cart-products-count cart-products-count-btn">
                                 
                                                                     0
                                                                 
@@ -892,7 +955,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                                  
                                                                             <li>
-                                            <a href="/tienda_assets/"><span>Inicio</span></a>
+                                            <a href="/tienda/"><span>Inicio</span></a>
                                         </li>
                                                                     
 
@@ -901,7 +964,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                                  
                                                                             <li>
-                                            <a href="/tienda_assets/13-linea-blanca"><span>Línea Blanca</span></a>
+                                            <a href="/tienda/13-linea-blanca"><span>Línea Blanca</span></a>
                                         </li>
                                                                     
 
@@ -910,7 +973,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                                  
                                                                             <li>
-                                            <a href="/tienda_assets/21-dispensadores"><span>Dispensadores</span></a>
+                                            <a href="/tienda/21-dispensadores"><span>Dispensadores</span></a>
                                         </li>
                                                                     
 
@@ -927,9 +990,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </ol>
                 </div>
                 <div class="col col-auto"> <div id="iqitproductsnav">
-            <a href="/tienda_assets/dispensadores/1442-dispensador-de-agua-disx-10-plata.html" title="Previous product">
+            <a href="/tienda/dispensadores/1442-dispensador-de-agua-disx-10-plata.html" title="Previous product">
            <i class="fa fa-angle-left" aria-hidden="true"></i>        </a>
-                <a href="/tienda_assets/dispensadores/1442-dispensador-de-agua-disx-10-plata.html" title="Next product">
+                <a href="/tienda/dispensadores/1442-dispensador-de-agua-disx-10-plata.html" title="Next product">
              <i class="fa fa-angle-right" aria-hidden="true"></i>        </a>
     </div>
 
@@ -961,7 +1024,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section id="main">
         <div id="product-preloader"><i class="fa fa-circle-o-notch fa-spin"></i></div>
         <div id="main-product-wrapper" class="product-container js-product-container">
-        <meta content="/tienda_assets/dispensadores/1296-dispensador-de-agua-disx-10-blanco.html">
+        <meta content="/tienda/dispensadores/1296-dispensador-de-agua-disx-10-blanco.html">
 
 
         <div class="row product-info-row">
@@ -981,10 +1044,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                            <div class="swiper-slide"> <div class="thumb-container js-thumb-container">
                     <img
                             class="thumb js-thumb  selected js-thumb-selected  img-fluid swiper-lazy"
-                            data-image-medium-src="/tienda_assets/3739-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
-                            data-image-large-src="/tienda_assets/3739-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg"
+                            data-image-medium-src="/3739-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
+                            data-image-large-src="/3739-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg"
                             src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 452 584'%3E%3C/svg%3E"
-                            data-src="/tienda_assets/3739-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
+                            data-src="/3739-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
                                                             alt="Dispensador de Agua Disx 10 Blanco"
                                                         title=""
                             width="452"
@@ -994,10 +1057,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                            <div class="swiper-slide"> <div class="thumb-container js-thumb-container">
                     <img
                             class="thumb js-thumb   img-fluid swiper-lazy"
-                            data-image-medium-src="/tienda_assets/3738-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
-                            data-image-large-src="/tienda_assets/3738-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg"
+                            data-image-medium-src="/3738-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
+                            data-image-large-src="/3738-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg"
                             src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 452 584'%3E%3C/svg%3E"
-                            data-src="/tienda_assets/3738-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
+                            data-src="/3738-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
                                                             alt="Dispensador de Agua Disx 10 Blanco"
                                                         title=""
                             width="452"
@@ -1007,10 +1070,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                            <div class="swiper-slide"> <div class="thumb-container js-thumb-container">
                     <img
                             class="thumb js-thumb   img-fluid swiper-lazy"
-                            data-image-medium-src="/tienda_assets/10034-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
-                            data-image-large-src="/tienda_assets/10034-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg"
+                            data-image-medium-src="/10034-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
+                            data-image-large-src="/10034-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg"
                             src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 452 584'%3E%3C/svg%3E"
-                            data-src="/tienda_assets/10034-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
+                            data-src="/10034-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
                                                             alt="Dispensador de Agua Disx 10 Blanco"
                                                         title=""
                             width="452"
@@ -1020,10 +1083,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                            <div class="swiper-slide"> <div class="thumb-container js-thumb-container">
                     <img
                             class="thumb js-thumb   img-fluid swiper-lazy"
-                            data-image-medium-src="/tienda_assets/3818-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
-                            data-image-large-src="/tienda_assets/3818-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg"
+                            data-image-medium-src="/3818-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
+                            data-image-large-src="/3818-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg"
                             src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 452 584'%3E%3C/svg%3E"
-                            data-src="/tienda_assets/3818-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
+                            data-src="/3818-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
                                                             alt="Dispensador de Agua Disx 10 Blanco"
                                                         title=""
                             width="452"
@@ -1033,10 +1096,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                            <div class="swiper-slide"> <div class="thumb-container js-thumb-container">
                     <img
                             class="thumb js-thumb   img-fluid swiper-lazy"
-                            data-image-medium-src="/tienda_assets/3819-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
-                            data-image-large-src="/tienda_assets/3819-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg"
+                            data-image-medium-src="/3819-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
+                            data-image-large-src="/3819-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg"
                             src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 452 584'%3E%3C/svg%3E"
-                            data-src="/tienda_assets/3819-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
+                            data-src="/3819-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
                                                             alt="Dispensador de Agua Disx 10 Blanco"
                                                         title=""
                             width="452"
@@ -1064,13 +1127,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
                                                             <div class="product-lmage-large swiper-slide  js-thumb-selected">
                             <div class="easyzoom easyzoom-product">
-                                <a href="/tienda_assets/3739-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg" class="js-easyzoom-trigger" rel="nofollow"></a>
+                                <a href="/3739-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg" class="js-easyzoom-trigger" rel="nofollow"></a>
                             </div>
                             <a class="expander" data-toggle="modal" data-target="#product-modal"><span><i class="fa fa-expand" aria-hidden="true"></i></span></a>                            <img
-                                    data-src="/tienda_assets/3739-large_default/dispensador-de-agua-disx-10-blanco.jpg"
-                                    data-image-large-src="/tienda_assets/3739-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg"
+                                    data-src="/3739-large_default/dispensador-de-agua-disx-10-blanco.jpg"
+                                    data-image-large-src="/3739-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg"
                                     alt="Dispensador de Agua Disx 10 Blanco"
-                                    content="/tienda_assets/3739-large_default/dispensador-de-agua-disx-10-blanco.jpg"
+                                    content="/3739-large_default/dispensador-de-agua-disx-10-blanco.jpg"
                                     width="381"
                                     height="492"
                                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 381 492'%3E%3C/svg%3E"
@@ -1079,13 +1142,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                                             <div class="product-lmage-large swiper-slide ">
                             <div class="easyzoom easyzoom-product">
-                                <a href="/tienda_assets/3738-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg" class="js-easyzoom-trigger" rel="nofollow"></a>
+                                <a href="/3738-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg" class="js-easyzoom-trigger" rel="nofollow"></a>
                             </div>
                             <a class="expander" data-toggle="modal" data-target="#product-modal"><span><i class="fa fa-expand" aria-hidden="true"></i></span></a>                            <img
-                                    data-src="/tienda_assets/3738-large_default/dispensador-de-agua-disx-10-blanco.jpg"
-                                    data-image-large-src="/tienda_assets/3738-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg"
+                                    data-src="/3738-large_default/dispensador-de-agua-disx-10-blanco.jpg"
+                                    data-image-large-src="/3738-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg"
                                     alt="Dispensador de Agua Disx 10 Blanco"
-                                    content="/tienda_assets/3738-large_default/dispensador-de-agua-disx-10-blanco.jpg"
+                                    content="/3738-large_default/dispensador-de-agua-disx-10-blanco.jpg"
                                     width="381"
                                     height="492"
                                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 381 492'%3E%3C/svg%3E"
@@ -1094,13 +1157,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                                             <div class="product-lmage-large swiper-slide ">
                             <div class="easyzoom easyzoom-product">
-                                <a href="/tienda_assets/10034-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg" class="js-easyzoom-trigger" rel="nofollow"></a>
+                                <a href="/10034-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg" class="js-easyzoom-trigger" rel="nofollow"></a>
                             </div>
                             <a class="expander" data-toggle="modal" data-target="#product-modal"><span><i class="fa fa-expand" aria-hidden="true"></i></span></a>                            <img
-                                    data-src="/tienda_assets/10034-large_default/dispensador-de-agua-disx-10-blanco.jpg"
-                                    data-image-large-src="/tienda_assets/10034-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg"
+                                    data-src="/10034-large_default/dispensador-de-agua-disx-10-blanco.jpg"
+                                    data-image-large-src="/10034-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg"
                                     alt="Dispensador de Agua Disx 10 Blanco"
-                                    content="/tienda_assets/10034-large_default/dispensador-de-agua-disx-10-blanco.jpg"
+                                    content="/10034-large_default/dispensador-de-agua-disx-10-blanco.jpg"
                                     width="381"
                                     height="492"
                                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 381 492'%3E%3C/svg%3E"
@@ -1109,13 +1172,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                                             <div class="product-lmage-large swiper-slide ">
                             <div class="easyzoom easyzoom-product">
-                                <a href="/tienda_assets/3818-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg" class="js-easyzoom-trigger" rel="nofollow"></a>
+                                <a href="/3818-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg" class="js-easyzoom-trigger" rel="nofollow"></a>
                             </div>
                             <a class="expander" data-toggle="modal" data-target="#product-modal"><span><i class="fa fa-expand" aria-hidden="true"></i></span></a>                            <img
-                                    data-src="/tienda_assets/3818-large_default/dispensador-de-agua-disx-10-blanco.jpg"
-                                    data-image-large-src="/tienda_assets/3818-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg"
+                                    data-src="/3818-large_default/dispensador-de-agua-disx-10-blanco.jpg"
+                                    data-image-large-src="/3818-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg"
                                     alt="Dispensador de Agua Disx 10 Blanco"
-                                    content="/tienda_assets/3818-large_default/dispensador-de-agua-disx-10-blanco.jpg"
+                                    content="/3818-large_default/dispensador-de-agua-disx-10-blanco.jpg"
                                     width="381"
                                     height="492"
                                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 381 492'%3E%3C/svg%3E"
@@ -1124,13 +1187,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                                             <div class="product-lmage-large swiper-slide ">
                             <div class="easyzoom easyzoom-product">
-                                <a href="/tienda_assets/3819-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg" class="js-easyzoom-trigger" rel="nofollow"></a>
+                                <a href="/3819-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg" class="js-easyzoom-trigger" rel="nofollow"></a>
                             </div>
                             <a class="expander" data-toggle="modal" data-target="#product-modal"><span><i class="fa fa-expand" aria-hidden="true"></i></span></a>                            <img
-                                    data-src="/tienda_assets/3819-large_default/dispensador-de-agua-disx-10-blanco.jpg"
-                                    data-image-large-src="/tienda_assets/3819-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg"
+                                    data-src="/3819-large_default/dispensador-de-agua-disx-10-blanco.jpg"
+                                    data-image-large-src="/3819-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg"
                                     alt="Dispensador de Agua Disx 10 Blanco"
-                                    content="/tienda_assets/3819-large_default/dispensador-de-agua-disx-10-blanco.jpg"
+                                    content="/3819-large_default/dispensador-de-agua-disx-10-blanco.jpg"
                                     width="381"
                                     height="492"
                                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 381 492'%3E%3C/svg%3E"
@@ -1278,7 +1341,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                     <div class="product-actions js-product-actions">
                         
-                            <form action="/tienda_assets/carrito" method="post" id="add-to-cart-or-refresh">
+                            <form action="/tienda/carrito" method="post" id="add-to-cart-or-refresh">
                                 <input type="hidden" name="token" value="736faed44ac184681768e35d05df6cbd">
                                 <input type="hidden" name="id_product" value="1296"
                                        id="product_page_product_id">
@@ -1347,7 +1410,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <button type="button" data-toggle="tooltip" data-placement="top" title="Añadir para comparar"
            class="btn btn-secondary btn-lg btn-iconic btn-iqitcompare-add js-iqitcompare-add" data-animation="false" id="iqit-compare-product-btn"
            data-id-product="1296"
-           data-url="//www.tiendamirage.mx/module/iqitcompare/actions">
+           data-url="/module/iqitcompare/actions">
             <i class="fa fa-random not-added" aria-hidden="true"></i><i class="fa fa-check added"
                                                                         aria-hidden="true"></i>
         </button>
@@ -1538,7 +1601,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             >
 
                 
-                    <div id="product-details" data-product="{&quot;id_shop_default&quot;:&quot;1&quot;,&quot;id_manufacturer&quot;:&quot;0&quot;,&quot;id_supplier&quot;:&quot;0&quot;,&quot;reference&quot;:&quot;MDD10CB&quot;,&quot;is_virtual&quot;:&quot;0&quot;,&quot;delivery_in_stock&quot;:&quot;&quot;,&quot;delivery_out_stock&quot;:&quot;&quot;,&quot;id_category_default&quot;:&quot;21&quot;,&quot;on_sale&quot;:&quot;0&quot;,&quot;online_only&quot;:&quot;0&quot;,&quot;ecotax&quot;:0,&quot;minimal_quantity&quot;:&quot;1&quot;,&quot;low_stock_threshold&quot;:&quot;10&quot;,&quot;low_stock_alert&quot;:&quot;0&quot;,&quot;price&quot;:&quot;$2,662.00&quot;,&quot;unity&quot;:&quot;&quot;,&quot;unit_price_ratio&quot;:&quot;0.000000&quot;,&quot;additional_shipping_cost&quot;:&quot;0.000000&quot;,&quot;customizable&quot;:&quot;0&quot;,&quot;text_fields&quot;:&quot;0&quot;,&quot;uploadable_files&quot;:&quot;0&quot;,&quot;redirect_type&quot;:&quot;404&quot;,&quot;id_type_redirected&quot;:&quot;0&quot;,&quot;available_for_order&quot;:&quot;1&quot;,&quot;available_date&quot;:&quot;0000-00-00&quot;,&quot;show_condition&quot;:&quot;0&quot;,&quot;condition&quot;:&quot;new&quot;,&quot;show_price&quot;:&quot;1&quot;,&quot;indexed&quot;:&quot;1&quot;,&quot;visibility&quot;:&quot;both&quot;,&quot;cache_default_attribute&quot;:&quot;0&quot;,&quot;advanced_stock_management&quot;:&quot;0&quot;,&quot;date_add&quot;:&quot;2018-11-01 17:06:37&quot;,&quot;date_upd&quot;:&quot;2026-05-26 11:28:02&quot;,&quot;pack_stock_type&quot;:&quot;3&quot;,&quot;meta_description&quot;:&quot;Dispensador de Agua Disx 10 Blanco&quot;,&quot;meta_keywords&quot;:&quot;&quot;,&quot;meta_title&quot;:&quot;Dispensador de Agua Disx 10 Blanco&quot;,&quot;link_rewrite&quot;:&quot;dispensador-de-agua-disx-10-blanco&quot;,&quot;name&quot;:&quot;Dispensador de Agua Disx 10 Blanco&quot;,&quot;description&quot;:&quot;&lt;p&gt;&lt;span style=\&quot;font-family:&#039;-apple-system&#039;, BlinkMacSystemFont, &#039;Segoe UI&#039;, Roboto, &#039;Oxygen-Sans&#039;, Ubuntu, Cantarell, &#039;Helvetica Neue&#039;, sans-serif;font-size:16px;background-color:#ffffff;\&quot;&gt;Descubre la comodidad y conveniencia con nuestro dispensador de agua fr\u00eda y caliente, el aliado perfecto para tu hogar u oficina. Dise\u00f1ado para ofrecerte agua fresca y caliente al instante, este equipo combina funcionalidad y modernidad en un solo dispositivo. Su sistema de enfriamiento y calentamiento eficiente garantiza temperaturas ideales en segundos, permiti\u00e9ndote disfrutar de una bebida refrescante o una taza de caf\u00e9 caliente en cualquier momento.&lt;br \/&gt;&lt;br \/&gt;Adem\u00e1s, su dise\u00f1o compacto y elegante se integra perfectamente en cualquier espacio, brind\u00e1ndote una soluci\u00f3n pr\u00e1ctica, segura y de alta calidad para satisfacer todas tus necesidades.\u00a0&lt;\/span&gt;&lt;\/p&gt;\n&lt;p&gt;&lt;span style=\&quot;background-color:#ffffff;font-family:&#039;-apple-system&#039;, BlinkMacSystemFont, &#039;Segoe UI&#039;, Roboto, &#039;Oxygen-Sans&#039;, Ubuntu, Cantarell, &#039;Helvetica Neue&#039;, sans-serif;font-size:16px;\&quot;&gt;&lt;strong&gt;Bajo consumo energ\u00e9tico.&lt;\/strong&gt;Primero, te ayuda a reducir tus costos de electricidad, ya que consume menos energ\u00eda en comparaci\u00f3n con otros modelos. Esto significa que puedes disfrutar de agua fr\u00eda y caliente sin preocuparte por el consumo elevado de electricidad.\u00a0&lt;\/span&gt;&lt;strong&gt;&lt;span style=\&quot;font-family:&#039;-apple-system&#039;, BlinkMacSystemFont, &#039;Segoe UI&#039;, Roboto, &#039;Oxygen-Sans&#039;, Ubuntu, Cantarell, &#039;Helvetica Neue&#039;, sans-serif;font-size:16px;background-color:#ffffff;\&quot;&gt;&lt;\/span&gt;&lt;\/strong&gt;&lt;\/p&gt;\n&lt;p&gt;&lt;span style=\&quot;font-family:&#039;-apple-system&#039;, BlinkMacSystemFont, &#039;Segoe UI&#039;, Roboto, &#039;Oxygen-Sans&#039;, Ubuntu, Cantarell, &#039;Helvetica Neue&#039;, sans-serif;font-size:16px;background-color:#ffffff;\&quot;&gt;&lt;strong&gt;Alto nivel de higiene.&lt;\/strong&gt;\u00a0El acero inoxidable es un material resistente y duradero, lo que significa que el tanque es menos propenso a la corrosi\u00f3n, manchas o deterioro con el tiempo. Esto garantiza que el agua se mantenga limpia y segura para su consumo durante m\u00e1s tiempo.\u00a0&lt;\/span&gt;&lt;\/p&gt;\n&lt;p style=\&quot;margin-top:0px;margin-bottom:10px;color:#484848;background-color:#ffffff;font-family:&#039;-apple-system&#039;, BlinkMacSystemFont, &#039;Segoe UI&#039;, Roboto, &#039;Oxygen-Sans&#039;, Ubuntu, Cantarell, &#039;Helvetica Neue&#039;, sans-serif;font-size:16px;text-align:justify;\&quot;&gt;Voltaje 127V&lt;br \/&gt;Temperatura m\u00ednima 4 \u00b0C&lt;br \/&gt;Temperatura m\u00e1xima 95 \u00b0C&lt;br \/&gt;Capacidad de refrigeraci\u00f3n: 2 l\/h&lt;br \/&gt;Capacidad de calentamiento: 5 l\/h&lt;br \/&gt;Capacidad m\u00e1xima de agua: 20 Litros&lt;\/p&gt;\n&lt;p style=\&quot;margin-top:0px;margin-bottom:0px;color:#484848;background-color:#ffffff;font-family:&#039;-apple-system&#039;, BlinkMacSystemFont, &#039;Segoe UI&#039;, Roboto, &#039;Oxygen-Sans&#039;, Ubuntu, Cantarell, &#039;Helvetica Neue&#039;, sans-serif;font-size:16px;\&quot;&gt;\u00a1Haz de tu d\u00eda a d\u00eda una experiencia m\u00e1s c\u00f3moda y moderna con Mirage!&lt;\/p&gt;&quot;,&quot;description_short&quot;:&quot;&lt;p&gt;&lt;strong&gt;&lt;span style=\&quot;font-family:&#039;-apple-system&#039;, BlinkMacSystemFont, &#039;Segoe UI&#039;, Roboto, &#039;Oxygen-Sans&#039;, Ubuntu, Cantarell, &#039;Helvetica Neue&#039;, sans-serif;font-size:16px;background-color:#ffffff;\&quot;&gt;\u00a1Descubre la comodidad y conveniencia con nuestro dispensador de agua fr\u00eda y caliente, el aliado perfecto para tu hogar u oficina!&lt;\/span&gt;&lt;\/strong&gt;&lt;\/p&gt;\n&lt;p class=\&quot;MsoNormal\&quot; style=\&quot;font-size:14px;font-family:Arial;\&quot;&gt;Este equipo cuenta con un a\u00f1o de garant\u00eda *.&lt;\/p&gt;\n&lt;p class=\&quot;MsoNormal\&quot;&gt;&lt;span style=\&quot;color:#4a4a4a;font-size:12px;font-family:Arial;\&quot;&gt;* Cualquier incidencia deber\u00e1 ser tratado con el &lt;\/span&gt;&lt;span style=\&quot;color:#4a4a4a;font-size:12px;font-family:Arial;\&quot;&gt;&lt;span style=\&quot;color:#4a4a4a;font-size:12px;font-family:Arial;\&quot;&gt;Centro de Servicios Autorizado Mirage &lt;\/span&gt;mas cercano a su domicilio, siempre y cuando cumpla con lo dispuesto en los t\u00e9rminos y condiciones. &lt;\/span&gt;&lt;\/p&gt;&quot;,&quot;available_now&quot;:&quot;&quot;,&quot;available_later&quot;:&quot;&quot;,&quot;id&quot;:1296,&quot;id_product&quot;:1296,&quot;out_of_stock&quot;:2,&quot;new&quot;:0,&quot;id_product_attribute&quot;:&quot;0&quot;,&quot;quantity_wanted&quot;:1,&quot;extraContent&quot;:[{&quot;title&quot;:&quot;&lt;span class=\&quot;iqitreviews-title float-left\&quot;&gt;Opiniones&lt;\/span&gt; &lt;span class=\&quot;iqitreviews-nb\&quot;&gt;(0)&lt;\/span&gt;&quot;,&quot;content&quot;:&quot;\n&lt;div id=\&quot;iqit-reviews\&quot; class=\&quot;mt-3\&quot;&gt;\n\n    &lt;div id=\&quot;iqit-reviews-top\&quot;&gt;\n        &lt;div class=\&quot;row justify-content-between align-items-center\&quot;&gt;\n\n            &lt;div class=\&quot;col mb-3\&quot;&gt;\n                            &lt;div id=\&quot;iqitreviews-snippet\&quot;&gt;No reviews&lt;\/div&gt;\n                    &lt;\/div&gt;\n\n        \n    &lt;\/div&gt; &lt;!-- \/ .row --&gt;\n&lt;\/div&gt;&lt;!-- \/ #iqit-reviews-top --&gt;\n\n\n&lt;div class=\&quot;col-xs-12 alert alert-success hidden-xs-up\&quot;\n     id=\&quot;iqitreviews-productreview-form-success-alert\&quot;&gt;\n&lt;\/div&gt;\n\n\n\n\n\n&lt;\/div&gt;\n\n&quot;,&quot;attr&quot;:{&quot;id&quot;:&quot;iqit-reviews-tab&quot;,&quot;class&quot;:&quot;&quot;,&quot;data-iqitextra&quot;:&quot;iqit-reviews-tab&quot;},&quot;moduleName&quot;:&quot;iqitreviews&quot;}],&quot;allow_oosp&quot;:0,&quot;category&quot;:&quot;dispensadores&quot;,&quot;category_name&quot;:&quot;Dispensadores&quot;,&quot;link&quot;:&quot;\/tienda\/dispensadores\/1296-dispensador-de-agua-disx-10-blanco.html&quot;,&quot;attribute_price&quot;:0,&quot;price_tax_exc&quot;:2294.8293100000001,&quot;price_without_reduction&quot;:3802.8600000000001,&quot;reduction&quot;:1140.8579999999999,&quot;specific_prices&quot;:{&quot;id_specific_price&quot;:&quot;15529&quot;,&quot;id_specific_price_rule&quot;:&quot;0&quot;,&quot;id_cart&quot;:&quot;0&quot;,&quot;id_product&quot;:&quot;1296&quot;,&quot;id_shop&quot;:&quot;1&quot;,&quot;id_shop_group&quot;:&quot;0&quot;,&quot;id_currency&quot;:&quot;0&quot;,&quot;id_country&quot;:&quot;0&quot;,&quot;id_group&quot;:&quot;0&quot;,&quot;id_customer&quot;:&quot;0&quot;,&quot;id_product_attribute&quot;:&quot;0&quot;,&quot;price&quot;:&quot;-1.000000&quot;,&quot;from_quantity&quot;:&quot;1&quot;,&quot;reduction&quot;:&quot;0.300000&quot;,&quot;reduction_tax&quot;:&quot;1&quot;,&quot;reduction_type&quot;:&quot;percentage&quot;,&quot;from&quot;:&quot;0000-00-00 00:00:00&quot;,&quot;to&quot;:&quot;0000-00-00 00:00:00&quot;,&quot;score&quot;:&quot;48&quot;},&quot;quantity&quot;:3,&quot;quantity_all_versions&quot;:3,&quot;id_image&quot;:&quot;mx-default&quot;,&quot;features&quot;:[{&quot;name&quot;:&quot;Voltaje&quot;,&quot;value&quot;:&quot;110V&quot;,&quot;id_feature&quot;:&quot;7&quot;,&quot;position&quot;:&quot;1&quot;},{&quot;name&quot;:&quot;Refrigerante&quot;,&quot;value&quot;:&quot;R134a&quot;,&quot;id_feature&quot;:&quot;8&quot;,&quot;position&quot;:&quot;2&quot;},{&quot;name&quot;:&quot;Modelo&quot;,&quot;value&quot;:&quot;DISX 10&quot;,&quot;id_feature&quot;:&quot;10&quot;,&quot;position&quot;:&quot;4&quot;},{&quot;name&quot;:&quot;Modo&quot;,&quot;value&quot;:&quot;Fr\u00edo \/ Calor&quot;,&quot;id_feature&quot;:&quot;16&quot;,&quot;position&quot;:&quot;9&quot;}],&quot;attachments&quot;:[{&quot;id_product&quot;:&quot;1296&quot;,&quot;id_attachment&quot;:&quot;8&quot;,&quot;file&quot;:&quot;112d0f68ba1b7a71b7dfb4f5d0cbab7dac3d68bd&quot;,&quot;file_name&quot;:&quot;Fact-Sheet-DISPENSADORES.pdf&quot;,&quot;file_size&quot;:&quot;4131055&quot;,&quot;mime&quot;:&quot;application\/pdf&quot;,&quot;id_lang&quot;:&quot;2&quot;,&quot;name&quot;:&quot;Ficha T\u00e9cnica DISX&quot;,&quot;description&quot;:&quot;&quot;,&quot;file_size_formatted&quot;:&quot;3.94MB&quot;}],&quot;virtual&quot;:0,&quot;pack&quot;:0,&quot;packItems&quot;:[],&quot;nopackprice&quot;:0,&quot;customization_required&quot;:false,&quot;rate&quot;:16,&quot;tax_name&quot;:&quot;IVA MX 16%&quot;,&quot;ecotax_rate&quot;:0,&quot;unit_price&quot;:&quot;&quot;,&quot;customizations&quot;:{&quot;fields&quot;:[]},&quot;id_customization&quot;:0,&quot;is_customizable&quot;:false,&quot;show_quantities&quot;:true,&quot;quantity_label&quot;:&quot;Art\u00edculos&quot;,&quot;quantity_discounts&quot;:[],&quot;customer_group_discount&quot;:0,&quot;images&quot;:[{&quot;bySize&quot;:{&quot;small_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3739-small_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;cart_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3739-cart_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:125,&quot;height&quot;:162},&quot;home_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3739-home_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:236,&quot;height&quot;:305},&quot;large_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3739-large_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;medium_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3739-medium_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:452,&quot;height&quot;:584},&quot;thickbox_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3739-thickbox_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422}},&quot;small&quot;:{&quot;url&quot;:&quot;\/tienda\/3739-small_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;medium&quot;:{&quot;url&quot;:&quot;\/tienda\/3739-large_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;large&quot;:{&quot;url&quot;:&quot;\/tienda\/3739-thickbox_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422},&quot;legend&quot;:&quot;&quot;,&quot;id_image&quot;:&quot;3739&quot;,&quot;cover&quot;:&quot;1&quot;,&quot;position&quot;:&quot;1&quot;,&quot;associatedVariants&quot;:[]},{&quot;bySize&quot;:{&quot;small_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3738-small_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;cart_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3738-cart_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:125,&quot;height&quot;:162},&quot;home_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3738-home_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:236,&quot;height&quot;:305},&quot;large_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3738-large_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;medium_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3738-medium_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:452,&quot;height&quot;:584},&quot;thickbox_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3738-thickbox_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422}},&quot;small&quot;:{&quot;url&quot;:&quot;\/tienda\/3738-small_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;medium&quot;:{&quot;url&quot;:&quot;\/tienda\/3738-large_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;large&quot;:{&quot;url&quot;:&quot;\/tienda\/3738-thickbox_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422},&quot;legend&quot;:&quot;&quot;,&quot;id_image&quot;:&quot;3738&quot;,&quot;cover&quot;:null,&quot;position&quot;:&quot;2&quot;,&quot;associatedVariants&quot;:[]},{&quot;bySize&quot;:{&quot;small_default&quot;:{&quot;url&quot;:&quot;\/tienda\/10034-small_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;cart_default&quot;:{&quot;url&quot;:&quot;\/tienda\/10034-cart_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:125,&quot;height&quot;:162},&quot;home_default&quot;:{&quot;url&quot;:&quot;\/tienda\/10034-home_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:236,&quot;height&quot;:305},&quot;large_default&quot;:{&quot;url&quot;:&quot;\/tienda\/10034-large_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;medium_default&quot;:{&quot;url&quot;:&quot;\/tienda\/10034-medium_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:452,&quot;height&quot;:584},&quot;thickbox_default&quot;:{&quot;url&quot;:&quot;\/tienda\/10034-thickbox_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422}},&quot;small&quot;:{&quot;url&quot;:&quot;\/tienda\/10034-small_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;medium&quot;:{&quot;url&quot;:&quot;\/tienda\/10034-large_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;large&quot;:{&quot;url&quot;:&quot;\/tienda\/10034-thickbox_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422},&quot;legend&quot;:&quot;&quot;,&quot;id_image&quot;:&quot;10034&quot;,&quot;cover&quot;:null,&quot;position&quot;:&quot;3&quot;,&quot;associatedVariants&quot;:[]},{&quot;bySize&quot;:{&quot;small_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3818-small_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;cart_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3818-cart_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:125,&quot;height&quot;:162},&quot;home_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3818-home_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:236,&quot;height&quot;:305},&quot;large_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3818-large_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;medium_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3818-medium_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:452,&quot;height&quot;:584},&quot;thickbox_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3818-thickbox_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422}},&quot;small&quot;:{&quot;url&quot;:&quot;\/tienda\/3818-small_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;medium&quot;:{&quot;url&quot;:&quot;\/tienda\/3818-large_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;large&quot;:{&quot;url&quot;:&quot;\/tienda\/3818-thickbox_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422},&quot;legend&quot;:&quot;&quot;,&quot;id_image&quot;:&quot;3818&quot;,&quot;cover&quot;:null,&quot;position&quot;:&quot;4&quot;,&quot;associatedVariants&quot;:[]},{&quot;bySize&quot;:{&quot;small_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3819-small_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;cart_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3819-cart_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:125,&quot;height&quot;:162},&quot;home_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3819-home_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:236,&quot;height&quot;:305},&quot;large_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3819-large_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;medium_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3819-medium_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:452,&quot;height&quot;:584},&quot;thickbox_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3819-thickbox_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422}},&quot;small&quot;:{&quot;url&quot;:&quot;\/tienda\/3819-small_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;medium&quot;:{&quot;url&quot;:&quot;\/tienda\/3819-large_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;large&quot;:{&quot;url&quot;:&quot;\/tienda\/3819-thickbox_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422},&quot;legend&quot;:&quot;&quot;,&quot;id_image&quot;:&quot;3819&quot;,&quot;cover&quot;:null,&quot;position&quot;:&quot;5&quot;,&quot;associatedVariants&quot;:[]}],&quot;cover&quot;:{&quot;bySize&quot;:{&quot;small_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3739-small_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;cart_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3739-cart_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:125,&quot;height&quot;:162},&quot;home_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3739-home_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:236,&quot;height&quot;:305},&quot;large_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3739-large_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;medium_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3739-medium_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:452,&quot;height&quot;:584},&quot;thickbox_default&quot;:{&quot;url&quot;:&quot;\/tienda\/3739-thickbox_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422}},&quot;small&quot;:{&quot;url&quot;:&quot;\/tienda\/3739-small_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;medium&quot;:{&quot;url&quot;:&quot;\/tienda\/3739-large_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;large&quot;:{&quot;url&quot;:&quot;\/tienda\/3739-thickbox_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422},&quot;legend&quot;:&quot;&quot;,&quot;id_image&quot;:&quot;3739&quot;,&quot;cover&quot;:&quot;1&quot;,&quot;position&quot;:&quot;1&quot;,&quot;associatedVariants&quot;:[]},&quot;has_discount&quot;:true,&quot;discount_type&quot;:&quot;percentage&quot;,&quot;discount_percentage&quot;:&quot;-30%&quot;,&quot;discount_percentage_absolute&quot;:&quot;30%&quot;,&quot;discount_amount&quot;:&quot;$1,140.86&quot;,&quot;discount_amount_to_display&quot;:&quot;-$1,140.86&quot;,&quot;price_amount&quot;:2662,&quot;unit_price_full&quot;:&quot;&quot;,&quot;show_availability&quot;:true,&quot;availability_date&quot;:null,&quot;availability_message&quot;:&quot;\u00daltimas piezas!&quot;,&quot;availability&quot;:&quot;last_remaining_items&quot;}" class="clearfix js-product-details">
+                    <div id="product-details" data-product="{&quot;id_shop_default&quot;:&quot;1&quot;,&quot;id_manufacturer&quot;:&quot;0&quot;,&quot;id_supplier&quot;:&quot;0&quot;,&quot;reference&quot;:&quot;MDD10CB&quot;,&quot;is_virtual&quot;:&quot;0&quot;,&quot;delivery_in_stock&quot;:&quot;&quot;,&quot;delivery_out_stock&quot;:&quot;&quot;,&quot;id_category_default&quot;:&quot;21&quot;,&quot;on_sale&quot;:&quot;0&quot;,&quot;online_only&quot;:&quot;0&quot;,&quot;ecotax&quot;:0,&quot;minimal_quantity&quot;:&quot;1&quot;,&quot;low_stock_threshold&quot;:&quot;10&quot;,&quot;low_stock_alert&quot;:&quot;0&quot;,&quot;price&quot;:&quot;$2,662.00&quot;,&quot;unity&quot;:&quot;&quot;,&quot;unit_price_ratio&quot;:&quot;0.000000&quot;,&quot;additional_shipping_cost&quot;:&quot;0.000000&quot;,&quot;customizable&quot;:&quot;0&quot;,&quot;text_fields&quot;:&quot;0&quot;,&quot;uploadable_files&quot;:&quot;0&quot;,&quot;redirect_type&quot;:&quot;404&quot;,&quot;id_type_redirected&quot;:&quot;0&quot;,&quot;available_for_order&quot;:&quot;1&quot;,&quot;available_date&quot;:&quot;0000-00-00&quot;,&quot;show_condition&quot;:&quot;0&quot;,&quot;condition&quot;:&quot;new&quot;,&quot;show_price&quot;:&quot;1&quot;,&quot;indexed&quot;:&quot;1&quot;,&quot;visibility&quot;:&quot;both&quot;,&quot;cache_default_attribute&quot;:&quot;0&quot;,&quot;advanced_stock_management&quot;:&quot;0&quot;,&quot;date_add&quot;:&quot;2018-11-01 17:06:37&quot;,&quot;date_upd&quot;:&quot;2026-05-26 11:28:02&quot;,&quot;pack_stock_type&quot;:&quot;3&quot;,&quot;meta_description&quot;:&quot;Dispensador de Agua Disx 10 Blanco&quot;,&quot;meta_keywords&quot;:&quot;&quot;,&quot;meta_title&quot;:&quot;Dispensador de Agua Disx 10 Blanco&quot;,&quot;link_rewrite&quot;:&quot;dispensador-de-agua-disx-10-blanco&quot;,&quot;name&quot;:&quot;Dispensador de Agua Disx 10 Blanco&quot;,&quot;description&quot;:&quot;&lt;p&gt;&lt;span style=\&quot;font-family:&#039;-apple-system&#039;, BlinkMacSystemFont, &#039;Segoe UI&#039;, Roboto, &#039;Oxygen-Sans&#039;, Ubuntu, Cantarell, &#039;Helvetica Neue&#039;, sans-serif;font-size:16px;background-color:#ffffff;\&quot;&gt;Descubre la comodidad y conveniencia con nuestro dispensador de agua fr\u00eda y caliente, el aliado perfecto para tu hogar u oficina. Dise\u00f1ado para ofrecerte agua fresca y caliente al instante, este equipo combina funcionalidad y modernidad en un solo dispositivo. Su sistema de enfriamiento y calentamiento eficiente garantiza temperaturas ideales en segundos, permiti\u00e9ndote disfrutar de una bebida refrescante o una taza de caf\u00e9 caliente en cualquier momento.&lt;br \/&gt;&lt;br \/&gt;Adem\u00e1s, su dise\u00f1o compacto y elegante se integra perfectamente en cualquier espacio, brind\u00e1ndote una soluci\u00f3n pr\u00e1ctica, segura y de alta calidad para satisfacer todas tus necesidades.\u00a0&lt;\/span&gt;&lt;\/p&gt;\n&lt;p&gt;&lt;span style=\&quot;background-color:#ffffff;font-family:&#039;-apple-system&#039;, BlinkMacSystemFont, &#039;Segoe UI&#039;, Roboto, &#039;Oxygen-Sans&#039;, Ubuntu, Cantarell, &#039;Helvetica Neue&#039;, sans-serif;font-size:16px;\&quot;&gt;&lt;strong&gt;Bajo consumo energ\u00e9tico.&lt;\/strong&gt;Primero, te ayuda a reducir tus costos de electricidad, ya que consume menos energ\u00eda en comparaci\u00f3n con otros modelos. Esto significa que puedes disfrutar de agua fr\u00eda y caliente sin preocuparte por el consumo elevado de electricidad.\u00a0&lt;\/span&gt;&lt;strong&gt;&lt;span style=\&quot;font-family:&#039;-apple-system&#039;, BlinkMacSystemFont, &#039;Segoe UI&#039;, Roboto, &#039;Oxygen-Sans&#039;, Ubuntu, Cantarell, &#039;Helvetica Neue&#039;, sans-serif;font-size:16px;background-color:#ffffff;\&quot;&gt;&lt;\/span&gt;&lt;\/strong&gt;&lt;\/p&gt;\n&lt;p&gt;&lt;span style=\&quot;font-family:&#039;-apple-system&#039;, BlinkMacSystemFont, &#039;Segoe UI&#039;, Roboto, &#039;Oxygen-Sans&#039;, Ubuntu, Cantarell, &#039;Helvetica Neue&#039;, sans-serif;font-size:16px;background-color:#ffffff;\&quot;&gt;&lt;strong&gt;Alto nivel de higiene.&lt;\/strong&gt;\u00a0El acero inoxidable es un material resistente y duradero, lo que significa que el tanque es menos propenso a la corrosi\u00f3n, manchas o deterioro con el tiempo. Esto garantiza que el agua se mantenga limpia y segura para su consumo durante m\u00e1s tiempo.\u00a0&lt;\/span&gt;&lt;\/p&gt;\n&lt;p style=\&quot;margin-top:0px;margin-bottom:10px;color:#484848;background-color:#ffffff;font-family:&#039;-apple-system&#039;, BlinkMacSystemFont, &#039;Segoe UI&#039;, Roboto, &#039;Oxygen-Sans&#039;, Ubuntu, Cantarell, &#039;Helvetica Neue&#039;, sans-serif;font-size:16px;text-align:justify;\&quot;&gt;Voltaje 127V&lt;br \/&gt;Temperatura m\u00ednima 4 \u00b0C&lt;br \/&gt;Temperatura m\u00e1xima 95 \u00b0C&lt;br \/&gt;Capacidad de refrigeraci\u00f3n: 2 l\/h&lt;br \/&gt;Capacidad de calentamiento: 5 l\/h&lt;br \/&gt;Capacidad m\u00e1xima de agua: 20 Litros&lt;\/p&gt;\n&lt;p style=\&quot;margin-top:0px;margin-bottom:0px;color:#484848;background-color:#ffffff;font-family:&#039;-apple-system&#039;, BlinkMacSystemFont, &#039;Segoe UI&#039;, Roboto, &#039;Oxygen-Sans&#039;, Ubuntu, Cantarell, &#039;Helvetica Neue&#039;, sans-serif;font-size:16px;\&quot;&gt;\u00a1Haz de tu d\u00eda a d\u00eda una experiencia m\u00e1s c\u00f3moda y moderna con Mirage!&lt;\/p&gt;&quot;,&quot;description_short&quot;:&quot;&lt;p&gt;&lt;strong&gt;&lt;span style=\&quot;font-family:&#039;-apple-system&#039;, BlinkMacSystemFont, &#039;Segoe UI&#039;, Roboto, &#039;Oxygen-Sans&#039;, Ubuntu, Cantarell, &#039;Helvetica Neue&#039;, sans-serif;font-size:16px;background-color:#ffffff;\&quot;&gt;\u00a1Descubre la comodidad y conveniencia con nuestro dispensador de agua fr\u00eda y caliente, el aliado perfecto para tu hogar u oficina!&lt;\/span&gt;&lt;\/strong&gt;&lt;\/p&gt;\n&lt;p class=\&quot;MsoNormal\&quot; style=\&quot;font-size:14px;font-family:Arial;\&quot;&gt;Este equipo cuenta con un a\u00f1o de garant\u00eda *.&lt;\/p&gt;\n&lt;p class=\&quot;MsoNormal\&quot;&gt;&lt;span style=\&quot;color:#4a4a4a;font-size:12px;font-family:Arial;\&quot;&gt;* Cualquier incidencia deber\u00e1 ser tratado con el &lt;\/span&gt;&lt;span style=\&quot;color:#4a4a4a;font-size:12px;font-family:Arial;\&quot;&gt;&lt;span style=\&quot;color:#4a4a4a;font-size:12px;font-family:Arial;\&quot;&gt;Centro de Servicios Autorizado Mirage &lt;\/span&gt;mas cercano a su domicilio, siempre y cuando cumpla con lo dispuesto en los t\u00e9rminos y condiciones. &lt;\/span&gt;&lt;\/p&gt;&quot;,&quot;available_now&quot;:&quot;&quot;,&quot;available_later&quot;:&quot;&quot;,&quot;id&quot;:1296,&quot;id_product&quot;:1296,&quot;out_of_stock&quot;:2,&quot;new&quot;:0,&quot;id_product_attribute&quot;:&quot;0&quot;,&quot;quantity_wanted&quot;:1,&quot;extraContent&quot;:[{&quot;title&quot;:&quot;&lt;span class=\&quot;iqitreviews-title float-left\&quot;&gt;Opiniones&lt;\/span&gt; &lt;span class=\&quot;iqitreviews-nb\&quot;&gt;(0)&lt;\/span&gt;&quot;,&quot;content&quot;:&quot;\n&lt;div id=\&quot;iqit-reviews\&quot; class=\&quot;mt-3\&quot;&gt;\n\n    &lt;div id=\&quot;iqit-reviews-top\&quot;&gt;\n        &lt;div class=\&quot;row justify-content-between align-items-center\&quot;&gt;\n\n            &lt;div class=\&quot;col mb-3\&quot;&gt;\n                            &lt;div id=\&quot;iqitreviews-snippet\&quot;&gt;No reviews&lt;\/div&gt;\n                    &lt;\/div&gt;\n\n        \n    &lt;\/div&gt; &lt;!-- \/ .row --&gt;\n&lt;\/div&gt;&lt;!-- \/ #iqit-reviews-top --&gt;\n\n\n&lt;div class=\&quot;col-xs-12 alert alert-success hidden-xs-up\&quot;\n     id=\&quot;iqitreviews-productreview-form-success-alert\&quot;&gt;\n&lt;\/div&gt;\n\n\n\n\n\n&lt;\/div&gt;\n\n&quot;,&quot;attr&quot;:{&quot;id&quot;:&quot;iqit-reviews-tab&quot;,&quot;class&quot;:&quot;&quot;,&quot;data-iqitextra&quot;:&quot;iqit-reviews-tab&quot;},&quot;moduleName&quot;:&quot;iqitreviews&quot;}],&quot;allow_oosp&quot;:0,&quot;category&quot;:&quot;dispensadores&quot;,&quot;category_name&quot;:&quot;Dispensadores&quot;,&quot;link&quot;:&quot;\/tienda\/dispensadores\/1296-dispensador-de-agua-disx-10-blanco.html&quot;,&quot;attribute_price&quot;:0,&quot;price_tax_exc&quot;:2294.8293100000001,&quot;price_without_reduction&quot;:3802.8600000000001,&quot;reduction&quot;:1140.8579999999999,&quot;specific_prices&quot;:{&quot;id_specific_price&quot;:&quot;15529&quot;,&quot;id_specific_price_rule&quot;:&quot;0&quot;,&quot;id_cart&quot;:&quot;0&quot;,&quot;id_product&quot;:&quot;1296&quot;,&quot;id_shop&quot;:&quot;1&quot;,&quot;id_shop_group&quot;:&quot;0&quot;,&quot;id_currency&quot;:&quot;0&quot;,&quot;id_country&quot;:&quot;0&quot;,&quot;id_group&quot;:&quot;0&quot;,&quot;id_customer&quot;:&quot;0&quot;,&quot;id_product_attribute&quot;:&quot;0&quot;,&quot;price&quot;:&quot;-1.000000&quot;,&quot;from_quantity&quot;:&quot;1&quot;,&quot;reduction&quot;:&quot;0.300000&quot;,&quot;reduction_tax&quot;:&quot;1&quot;,&quot;reduction_type&quot;:&quot;percentage&quot;,&quot;from&quot;:&quot;0000-00-00 00:00:00&quot;,&quot;to&quot;:&quot;0000-00-00 00:00:00&quot;,&quot;score&quot;:&quot;48&quot;},&quot;quantity&quot;:3,&quot;quantity_all_versions&quot;:3,&quot;id_image&quot;:&quot;mx-default&quot;,&quot;features&quot;:[{&quot;name&quot;:&quot;Voltaje&quot;,&quot;value&quot;:&quot;110V&quot;,&quot;id_feature&quot;:&quot;7&quot;,&quot;position&quot;:&quot;1&quot;},{&quot;name&quot;:&quot;Refrigerante&quot;,&quot;value&quot;:&quot;R134a&quot;,&quot;id_feature&quot;:&quot;8&quot;,&quot;position&quot;:&quot;2&quot;},{&quot;name&quot;:&quot;Modelo&quot;,&quot;value&quot;:&quot;DISX 10&quot;,&quot;id_feature&quot;:&quot;10&quot;,&quot;position&quot;:&quot;4&quot;},{&quot;name&quot;:&quot;Modo&quot;,&quot;value&quot;:&quot;Fr\u00edo \/ Calor&quot;,&quot;id_feature&quot;:&quot;16&quot;,&quot;position&quot;:&quot;9&quot;}],&quot;attachments&quot;:[{&quot;id_product&quot;:&quot;1296&quot;,&quot;id_attachment&quot;:&quot;8&quot;,&quot;file&quot;:&quot;112d0f68ba1b7a71b7dfb4f5d0cbab7dac3d68bd&quot;,&quot;file_name&quot;:&quot;Fact-Sheet-DISPENSADORES.pdf&quot;,&quot;file_size&quot;:&quot;4131055&quot;,&quot;mime&quot;:&quot;application\/pdf&quot;,&quot;id_lang&quot;:&quot;2&quot;,&quot;name&quot;:&quot;Ficha T\u00e9cnica DISX&quot;,&quot;description&quot;:&quot;&quot;,&quot;file_size_formatted&quot;:&quot;3.94MB&quot;}],&quot;virtual&quot;:0,&quot;pack&quot;:0,&quot;packItems&quot;:[],&quot;nopackprice&quot;:0,&quot;customization_required&quot;:false,&quot;rate&quot;:16,&quot;tax_name&quot;:&quot;IVA MX 16%&quot;,&quot;ecotax_rate&quot;:0,&quot;unit_price&quot;:&quot;&quot;,&quot;customizations&quot;:{&quot;fields&quot;:[]},&quot;id_customization&quot;:0,&quot;is_customizable&quot;:false,&quot;show_quantities&quot;:true,&quot;quantity_label&quot;:&quot;Art\u00edculos&quot;,&quot;quantity_discounts&quot;:[],&quot;customer_group_discount&quot;:0,&quot;images&quot;:[{&quot;bySize&quot;:{&quot;small_default&quot;:{&quot;url&quot;:&quot;\/3739-small_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;cart_default&quot;:{&quot;url&quot;:&quot;\/3739-cart_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:125,&quot;height&quot;:162},&quot;home_default&quot;:{&quot;url&quot;:&quot;\/3739-home_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:236,&quot;height&quot;:305},&quot;large_default&quot;:{&quot;url&quot;:&quot;\/3739-large_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;medium_default&quot;:{&quot;url&quot;:&quot;\/3739-medium_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:452,&quot;height&quot;:584},&quot;thickbox_default&quot;:{&quot;url&quot;:&quot;\/3739-thickbox_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422}},&quot;small&quot;:{&quot;url&quot;:&quot;\/3739-small_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;medium&quot;:{&quot;url&quot;:&quot;\/3739-large_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;large&quot;:{&quot;url&quot;:&quot;\/3739-thickbox_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422},&quot;legend&quot;:&quot;&quot;,&quot;id_image&quot;:&quot;3739&quot;,&quot;cover&quot;:&quot;1&quot;,&quot;position&quot;:&quot;1&quot;,&quot;associatedVariants&quot;:[]},{&quot;bySize&quot;:{&quot;small_default&quot;:{&quot;url&quot;:&quot;\/3738-small_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;cart_default&quot;:{&quot;url&quot;:&quot;\/3738-cart_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:125,&quot;height&quot;:162},&quot;home_default&quot;:{&quot;url&quot;:&quot;\/3738-home_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:236,&quot;height&quot;:305},&quot;large_default&quot;:{&quot;url&quot;:&quot;\/3738-large_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;medium_default&quot;:{&quot;url&quot;:&quot;\/3738-medium_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:452,&quot;height&quot;:584},&quot;thickbox_default&quot;:{&quot;url&quot;:&quot;\/3738-thickbox_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422}},&quot;small&quot;:{&quot;url&quot;:&quot;\/3738-small_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;medium&quot;:{&quot;url&quot;:&quot;\/3738-large_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;large&quot;:{&quot;url&quot;:&quot;\/3738-thickbox_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422},&quot;legend&quot;:&quot;&quot;,&quot;id_image&quot;:&quot;3738&quot;,&quot;cover&quot;:null,&quot;position&quot;:&quot;2&quot;,&quot;associatedVariants&quot;:[]},{&quot;bySize&quot;:{&quot;small_default&quot;:{&quot;url&quot;:&quot;\/10034-small_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;cart_default&quot;:{&quot;url&quot;:&quot;\/10034-cart_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:125,&quot;height&quot;:162},&quot;home_default&quot;:{&quot;url&quot;:&quot;\/10034-home_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:236,&quot;height&quot;:305},&quot;large_default&quot;:{&quot;url&quot;:&quot;\/10034-large_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;medium_default&quot;:{&quot;url&quot;:&quot;\/10034-medium_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:452,&quot;height&quot;:584},&quot;thickbox_default&quot;:{&quot;url&quot;:&quot;\/10034-thickbox_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422}},&quot;small&quot;:{&quot;url&quot;:&quot;\/10034-small_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;medium&quot;:{&quot;url&quot;:&quot;\/10034-large_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;large&quot;:{&quot;url&quot;:&quot;\/10034-thickbox_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422},&quot;legend&quot;:&quot;&quot;,&quot;id_image&quot;:&quot;10034&quot;,&quot;cover&quot;:null,&quot;position&quot;:&quot;3&quot;,&quot;associatedVariants&quot;:[]},{&quot;bySize&quot;:{&quot;small_default&quot;:{&quot;url&quot;:&quot;\/3818-small_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;cart_default&quot;:{&quot;url&quot;:&quot;\/3818-cart_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:125,&quot;height&quot;:162},&quot;home_default&quot;:{&quot;url&quot;:&quot;\/3818-home_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:236,&quot;height&quot;:305},&quot;large_default&quot;:{&quot;url&quot;:&quot;\/3818-large_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;medium_default&quot;:{&quot;url&quot;:&quot;\/3818-medium_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:452,&quot;height&quot;:584},&quot;thickbox_default&quot;:{&quot;url&quot;:&quot;\/3818-thickbox_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422}},&quot;small&quot;:{&quot;url&quot;:&quot;\/3818-small_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;medium&quot;:{&quot;url&quot;:&quot;\/3818-large_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;large&quot;:{&quot;url&quot;:&quot;\/3818-thickbox_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422},&quot;legend&quot;:&quot;&quot;,&quot;id_image&quot;:&quot;3818&quot;,&quot;cover&quot;:null,&quot;position&quot;:&quot;4&quot;,&quot;associatedVariants&quot;:[]},{&quot;bySize&quot;:{&quot;small_default&quot;:{&quot;url&quot;:&quot;\/3819-small_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;cart_default&quot;:{&quot;url&quot;:&quot;\/3819-cart_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:125,&quot;height&quot;:162},&quot;home_default&quot;:{&quot;url&quot;:&quot;\/3819-home_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:236,&quot;height&quot;:305},&quot;large_default&quot;:{&quot;url&quot;:&quot;\/3819-large_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;medium_default&quot;:{&quot;url&quot;:&quot;\/3819-medium_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:452,&quot;height&quot;:584},&quot;thickbox_default&quot;:{&quot;url&quot;:&quot;\/3819-thickbox_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422}},&quot;small&quot;:{&quot;url&quot;:&quot;\/3819-small_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;medium&quot;:{&quot;url&quot;:&quot;\/3819-large_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;large&quot;:{&quot;url&quot;:&quot;\/3819-thickbox_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422},&quot;legend&quot;:&quot;&quot;,&quot;id_image&quot;:&quot;3819&quot;,&quot;cover&quot;:null,&quot;position&quot;:&quot;5&quot;,&quot;associatedVariants&quot;:[]}],&quot;cover&quot;:{&quot;bySize&quot;:{&quot;small_default&quot;:{&quot;url&quot;:&quot;\/3739-small_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;cart_default&quot;:{&quot;url&quot;:&quot;\/3739-cart_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:125,&quot;height&quot;:162},&quot;home_default&quot;:{&quot;url&quot;:&quot;\/3739-home_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:236,&quot;height&quot;:305},&quot;large_default&quot;:{&quot;url&quot;:&quot;\/3739-large_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;medium_default&quot;:{&quot;url&quot;:&quot;\/3739-medium_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:452,&quot;height&quot;:584},&quot;thickbox_default&quot;:{&quot;url&quot;:&quot;\/3739-thickbox_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422}},&quot;small&quot;:{&quot;url&quot;:&quot;\/3739-small_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;medium&quot;:{&quot;url&quot;:&quot;\/3739-large_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;large&quot;:{&quot;url&quot;:&quot;\/3739-thickbox_default\/dispensador-de-agua-disx-10-blanco.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422},&quot;legend&quot;:&quot;&quot;,&quot;id_image&quot;:&quot;3739&quot;,&quot;cover&quot;:&quot;1&quot;,&quot;position&quot;:&quot;1&quot;,&quot;associatedVariants&quot;:[]},&quot;has_discount&quot;:true,&quot;discount_type&quot;:&quot;percentage&quot;,&quot;discount_percentage&quot;:&quot;-30%&quot;,&quot;discount_percentage_absolute&quot;:&quot;30%&quot;,&quot;discount_amount&quot;:&quot;$1,140.86&quot;,&quot;discount_amount_to_display&quot;:&quot;-$1,140.86&quot;,&quot;price_amount&quot;:2662,&quot;unit_price_full&quot;:&quot;&quot;,&quot;show_availability&quot;:true,&quot;availability_date&quot;:null,&quot;availability_message&quot;:&quot;\u00daltimas piezas!&quot;,&quot;availability&quot;:&quot;last_remaining_items&quot;}" class="clearfix js-product-details">
 
             <section class="product-features">
             <dl class="data-sheet">
@@ -1688,20 +1751,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/dispensadores/1442-dispensador-de-agua-disx-10-plata.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/dispensadores/1442-dispensador-de-agua-disx-10-plata.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/3180-home_default/dispensador-de-agua-disx-10-plata.jpg"
+                                                    data-src="/3180-home_default/dispensador-de-agua-disx-10-plata.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Dispensador de Agua Disx 10 Plata"
-                        data-full-size-image-url="/tienda_assets/3180-thickbox_default/dispensador-de-agua-disx-10-plata.jpg"
+                        data-full-size-image-url="/3180-thickbox_default/dispensador-de-agua-disx-10-plata.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/3181-home_default/dispensador-de-agua-disx-10-plata.jpg"
+                                        data-src="/3181-home_default/dispensador-de-agua-disx-10-plata.jpg"
                                         width="236"
                                         height="305"
                                         alt="Dispensador de Agua Disx 10 Plata 2"
@@ -1724,7 +1787,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1442"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -1761,7 +1824,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/dispensadores/1442-dispensador-de-agua-disx-10-plata.html">Dispensador de Agua Disx 10 Plata</a>
+            <a href="/tienda/dispensadores/1442-dispensador-de-agua-disx-10-plata.html">Dispensador de Agua Disx 10 Plata</a>
         </h2>
     
 
@@ -1769,7 +1832,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/dispensadores/1442-dispensador-de-agua-disx-10-plata.html">MDD10CS</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/dispensadores/1442-dispensador-de-agua-disx-10-plata.html">MDD10CS</a></div>    
 
     
         
@@ -1781,7 +1844,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/dispensadores/1442-dispensador-de-agua-disx-10-plata.html"> <span  class="product-price" content="2968" aria-label="Precio">
+                <a href="/tienda/dispensadores/1442-dispensador-de-agua-disx-10-plata.html"> <span  class="product-price" content="2968" aria-label="Precio">
                                                                             $2,968.00
                                             </span></a>
                                     
@@ -1800,7 +1863,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/dispensadores/1442-dispensador-de-agua-disx-10-plata.html">
+            <a href="/tienda/dispensadores/1442-dispensador-de-agua-disx-10-plata.html">
 
 ¡Descubre la comodidad y conveniencia con nuestro dispensador de agua fría y caliente, el aliado perfecto para tu hogar u oficina!
 Este equipo cuenta con un año de garantía *.
@@ -1814,7 +1877,7 @@ Este equipo cuenta con un año de garantía *.
 <div class="product-add-cart js-product-add-cart-1442-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1442">
 
@@ -1866,20 +1929,20 @@ Este equipo cuenta con un año de garantía *.
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/linea-blanca/1900-parrilla-sparx-mps60gb.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/linea-blanca/1900-parrilla-sparx-mps60gb.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/9113-home_default/parrilla-sparx-mps60gb.jpg"
+                                                    data-src="/9113-home_default/parrilla-sparx-mps60gb.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Parrilla SPARX MPS60GB"
-                        data-full-size-image-url="/tienda_assets/9113-thickbox_default/parrilla-sparx-mps60gb.jpg"
+                        data-full-size-image-url="/9113-thickbox_default/parrilla-sparx-mps60gb.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/9112-home_default/parrilla-sparx-mps60gb.jpg"
+                                        data-src="/9112-home_default/parrilla-sparx-mps60gb.jpg"
                                         width="236"
                                         height="305"
                                         alt="Parrilla SPARX MPS60GB 2"
@@ -1901,7 +1964,7 @@ Este equipo cuenta con un año de garantía *.
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1900"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -1943,20 +2006,20 @@ Este equipo cuenta con un año de garantía *.
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/linea-blanca/1288-boiler-gas-lp-1-servicio.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/linea-blanca/1288-boiler-gas-lp-1-servicio.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/3802-home_default/boiler-gas-lp-1-servicio.jpg"
+                                                    data-src="/3802-home_default/boiler-gas-lp-1-servicio.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Boiler Gas LP 1 Servicio"
-                        data-full-size-image-url="/tienda_assets/3802-thickbox_default/boiler-gas-lp-1-servicio.jpg"
+                        data-full-size-image-url="/3802-thickbox_default/boiler-gas-lp-1-servicio.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/3669-home_default/boiler-gas-lp-1-servicio.jpg"
+                                        data-src="/3669-home_default/boiler-gas-lp-1-servicio.jpg"
                                         width="236"
                                         height="305"
                                         alt="Boiler Gas LP 1 Servicio 2"
@@ -1979,7 +2042,7 @@ Este equipo cuenta con un año de garantía *.
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1288"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2021,20 +2084,20 @@ Este equipo cuenta con un año de garantía *.
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/linea-blanca/1866-x-wave-mwd031e.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/linea-blanca/1866-x-wave-mwd031e.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/8981-home_default/x-wave-mwd031e.jpg"
+                                                    data-src="/8981-home_default/x-wave-mwd031e.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="X Wave MWD031E"
-                        data-full-size-image-url="/tienda_assets/8981-thickbox_default/x-wave-mwd031e.jpg"
+                        data-full-size-image-url="/8981-thickbox_default/x-wave-mwd031e.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/8980-home_default/x-wave-mwd031e.jpg"
+                                        data-src="/8980-home_default/x-wave-mwd031e.jpg"
                                         width="236"
                                         height="305"
                                         alt="X Wave MWD031E 2"
@@ -2057,7 +2120,7 @@ Este equipo cuenta con un año de garantía *.
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1866"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2099,20 +2162,20 @@ Este equipo cuenta con un año de garantía *.
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/linea-blanca/1287-boiler-gas-natural-1-servicio.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/linea-blanca/1287-boiler-gas-natural-1-servicio.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/3809-home_default/boiler-gas-natural-1-servicio.jpg"
+                                                    data-src="/3809-home_default/boiler-gas-natural-1-servicio.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Boiler Gas Natural 1 Servicio"
-                        data-full-size-image-url="/tienda_assets/3809-thickbox_default/boiler-gas-natural-1-servicio.jpg"
+                        data-full-size-image-url="/3809-thickbox_default/boiler-gas-natural-1-servicio.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/3677-home_default/boiler-gas-natural-1-servicio.jpg"
+                                        data-src="/3677-home_default/boiler-gas-natural-1-servicio.jpg"
                                         width="236"
                                         height="305"
                                         alt="Boiler Gas Natural 1 Servicio 2"
@@ -2135,7 +2198,7 @@ Este equipo cuenta con un año de garantía *.
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1287"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2177,20 +2240,20 @@ Este equipo cuenta con un año de garantía *.
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/linea-blanca/2197-boiler-flux-electric-mbe051g-1-servicio.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/linea-blanca/2197-boiler-flux-electric-mbe051g-1-servicio.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/9982-home_default/boiler-flux-electric-mbe051g-1-servicio.jpg"
+                                                    data-src="/9982-home_default/boiler-flux-electric-mbe051g-1-servicio.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Boiler Flux Electric MBE051G 1 Servicio"
-                        data-full-size-image-url="/tienda_assets/9982-thickbox_default/boiler-flux-electric-mbe051g-1-servicio.jpg"
+                        data-full-size-image-url="/9982-thickbox_default/boiler-flux-electric-mbe051g-1-servicio.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/9983-home_default/boiler-flux-electric-mbe051g-1-servicio.jpg"
+                                        data-src="/9983-home_default/boiler-flux-electric-mbe051g-1-servicio.jpg"
                                         width="236"
                                         height="305"
                                         alt="Boiler Flux Electric MBE051G 1 Servicio 2"
@@ -2213,7 +2276,7 @@ Este equipo cuenta con un año de garantía *.
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="2197"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2255,20 +2318,20 @@ Este equipo cuenta con un año de garantía *.
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/linea-blanca/1374-boiler-gas-natural-15-servicios.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/linea-blanca/1374-boiler-gas-natural-15-servicios.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/3805-home_default/boiler-gas-natural-15-servicios.jpg"
+                                                    data-src="/3805-home_default/boiler-gas-natural-15-servicios.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Boiler Gas Natural 1.5 Servicios"
-                        data-full-size-image-url="/tienda_assets/3805-thickbox_default/boiler-gas-natural-15-servicios.jpg"
+                        data-full-size-image-url="/3805-thickbox_default/boiler-gas-natural-15-servicios.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/2998-home_default/boiler-gas-natural-15-servicios.jpg"
+                                        data-src="/2998-home_default/boiler-gas-natural-15-servicios.jpg"
                                         width="236"
                                         height="305"
                                         alt="Boiler Gas Natural 1.5 Servicios 2"
@@ -2291,7 +2354,7 @@ Este equipo cuenta con un año de garantía *.
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1374"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2333,20 +2396,20 @@ Este equipo cuenta con un año de garantía *.
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/linea-blanca/1286-boiler-gas-lp-1-servicio.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/linea-blanca/1286-boiler-gas-lp-1-servicio.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/3808-home_default/boiler-gas-lp-1-servicio.jpg"
+                                                    data-src="/3808-home_default/boiler-gas-lp-1-servicio.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Boiler Gas LP 1 Servicio"
-                        data-full-size-image-url="/tienda_assets/3808-thickbox_default/boiler-gas-lp-1-servicio.jpg"
+                        data-full-size-image-url="/3808-thickbox_default/boiler-gas-lp-1-servicio.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/3674-home_default/boiler-gas-lp-1-servicio.jpg"
+                                        data-src="/3674-home_default/boiler-gas-lp-1-servicio.jpg"
                                         width="236"
                                         height="305"
                                         alt="Boiler Gas LP 1 Servicio 2"
@@ -2369,7 +2432,7 @@ Este equipo cuenta con un año de garantía *.
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1286"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2417,20 +2480,20 @@ Este equipo cuenta con un año de garantía *.
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/linea-blanca/2233-turbo-flux-smart-gas-natural-wifi-inverter-15-servicios.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/linea-blanca/2233-turbo-flux-smart-gas-natural-wifi-inverter-15-servicios.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/10115-home_default/turbo-flux-smart-gas-natural-wifi-inverter-15-servicios.jpg"
+                                                    data-src="/10115-home_default/turbo-flux-smart-gas-natural-wifi-inverter-15-servicios.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Turbo Flux Smart Gas Natural WiFi, Inverter 1.5 Servicios"
-                        data-full-size-image-url="/tienda_assets/10115-thickbox_default/turbo-flux-smart-gas-natural-wifi-inverter-15-servicios.jpg"
+                        data-full-size-image-url="/10115-thickbox_default/turbo-flux-smart-gas-natural-wifi-inverter-15-servicios.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/10122-home_default/turbo-flux-smart-gas-natural-wifi-inverter-15-servicios.jpg"
+                                        data-src="/10122-home_default/turbo-flux-smart-gas-natural-wifi-inverter-15-servicios.jpg"
                                         width="236"
                                         height="305"
                                         alt="Turbo Flux Smart Gas Natural WiFi, Inverter 1.5 Servicios 2"
@@ -2453,7 +2516,7 @@ Este equipo cuenta con un año de garantía *.
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="2233"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2495,20 +2558,20 @@ Este equipo cuenta con un año de garantía *.
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/linea-blanca/1873-lavadora-semiautomatica-16-kg-lms016m.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/linea-blanca/1873-lavadora-semiautomatica-16-kg-lms016m.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/9006-home_default/lavadora-semiautomatica-16-kg-lms016m.jpg"
+                                                    data-src="/9006-home_default/lavadora-semiautomatica-16-kg-lms016m.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Lavadora Semiautomática 16 Kg LMS016M"
-                        data-full-size-image-url="/tienda_assets/9006-thickbox_default/lavadora-semiautomatica-16-kg-lms016m.jpg"
+                        data-full-size-image-url="/9006-thickbox_default/lavadora-semiautomatica-16-kg-lms016m.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/9004-home_default/lavadora-semiautomatica-16-kg-lms016m.jpg"
+                                        data-src="/9004-home_default/lavadora-semiautomatica-16-kg-lms016m.jpg"
                                         width="236"
                                         height="305"
                                         alt="Lavadora Semiautomática 16 Kg LMS016M 2"
@@ -2531,7 +2594,7 @@ Este equipo cuenta con un año de garantía *.
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1873"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2573,20 +2636,20 @@ Este equipo cuenta con un año de garantía *.
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/linea-blanca/2228-disx30-mdd30hd.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/linea-blanca/2228-disx30-mdd30hd.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/10096-home_default/disx30-mdd30hd.jpg"
+                                                    data-src="/10096-home_default/disx30-mdd30hd.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Dispensador de Agua DISX30 MDD30HD"
-                        data-full-size-image-url="/tienda_assets/10096-thickbox_default/disx30-mdd30hd.jpg"
+                        data-full-size-image-url="/10096-thickbox_default/disx30-mdd30hd.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/10097-home_default/disx30-mdd30hd.jpg"
+                                        data-src="/10097-home_default/disx30-mdd30hd.jpg"
                                         width="236"
                                         height="305"
                                         alt="Dispensador de Agua DISX30 MDD30HD 2"
@@ -2609,7 +2672,7 @@ Este equipo cuenta con un año de garantía *.
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="2228"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2657,20 +2720,20 @@ Este equipo cuenta con un año de garantía *.
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/linea-blanca/2186-lavadora-semiautomatica-13-kg-lms013m.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/linea-blanca/2186-lavadora-semiautomatica-13-kg-lms013m.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/9949-home_default/lavadora-semiautomatica-13-kg-lms013m.jpg"
+                                                    data-src="/9949-home_default/lavadora-semiautomatica-13-kg-lms013m.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Lavadora Semiautomática 13 Kg LMS013M"
-                        data-full-size-image-url="/tienda_assets/9949-thickbox_default/lavadora-semiautomatica-13-kg-lms013m.jpg"
+                        data-full-size-image-url="/9949-thickbox_default/lavadora-semiautomatica-13-kg-lms013m.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/9947-home_default/lavadora-semiautomatica-13-kg-lms013m.jpg"
+                                        data-src="/9947-home_default/lavadora-semiautomatica-13-kg-lms013m.jpg"
                                         width="236"
                                         height="305"
                                         alt="Lavadora Semiautomática 13 Kg LMS013M 2"
@@ -2693,7 +2756,7 @@ Este equipo cuenta con un año de garantía *.
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="2186"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2749,20 +2812,20 @@ Este equipo cuenta con un año de garantía *.
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/linea-blanca/1867-x-wave-mwd020e.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/linea-blanca/1867-x-wave-mwd020e.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/8983-home_default/x-wave-mwd020e.jpg"
+                                                    data-src="/8983-home_default/x-wave-mwd020e.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="X Wave MWD020E"
-                        data-full-size-image-url="/tienda_assets/8983-thickbox_default/x-wave-mwd020e.jpg"
+                        data-full-size-image-url="/8983-thickbox_default/x-wave-mwd020e.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/8984-home_default/x-wave-mwd020e.jpg"
+                                        data-src="/8984-home_default/x-wave-mwd020e.jpg"
                                         width="236"
                                         height="305"
                                         alt="X Wave MWD020E 2"
@@ -2785,7 +2848,7 @@ Este equipo cuenta con un año de garantía *.
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1867"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2816,7 +2879,7 @@ Este equipo cuenta con un año de garantía *.
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/linea-blanca/1867-x-wave-mwd020e.html">X Wave MWD020E</a>
+            <a href="/tienda/linea-blanca/1867-x-wave-mwd020e.html">X Wave MWD020E</a>
         </h2>
     
 
@@ -2824,7 +2887,7 @@ Este equipo cuenta con un año de garantía *.
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/linea-blanca/1867-x-wave-mwd020e.html">MWD020E</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/linea-blanca/1867-x-wave-mwd020e.html">MWD020E</a></div>    
 
     
         
@@ -2836,7 +2899,7 @@ Este equipo cuenta con un año de garantía *.
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/linea-blanca/1867-x-wave-mwd020e.html"> <span  class="product-price" content="1735" aria-label="Precio">
+                <a href="/tienda/linea-blanca/1867-x-wave-mwd020e.html"> <span  class="product-price" content="1735" aria-label="Precio">
                                                                             $1,735.00
                                             </span></a>
                                     
@@ -2855,7 +2918,7 @@ Este equipo cuenta con un año de garantía *.
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/linea-blanca/1867-x-wave-mwd020e.html">Compartimos los mejores momentos en tu cocina, ¡Nuevo XWave!
+            <a href="/tienda/linea-blanca/1867-x-wave-mwd020e.html">Compartimos los mejores momentos en tu cocina, ¡Nuevo XWave!
 ¡La mejor tecnología en tu hogar!
 
 Capacidad de 20L 
@@ -2877,7 +2940,7 @@ Este equipo cuenta con un año de garantía *.
 <div class="product-add-cart js-product-add-cart-1867-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1867">
 
@@ -2929,20 +2992,20 @@ Este equipo cuenta con un año de garantía *.
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1136-tapa-superior-de-tanque-mdd10cb-03.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1136-tapa-superior-de-tanque-mdd10cb-03.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/2133-home_default/tapa-superior-de-tanque-mdd10cb-03.jpg"
+                                                    data-src="/2133-home_default/tapa-superior-de-tanque-mdd10cb-03.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="TAPA SUPERIOR DE TANQUE - MDD10CB-03"
-                        data-full-size-image-url="/tienda_assets/2133-thickbox_default/tapa-superior-de-tanque-mdd10cb-03.jpg"
+                        data-full-size-image-url="/2133-thickbox_default/tapa-superior-de-tanque-mdd10cb-03.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/2134-home_default/tapa-superior-de-tanque-mdd10cb-03.jpg"
+                                        data-src="/2134-home_default/tapa-superior-de-tanque-mdd10cb-03.jpg"
                                         width="236"
                                         height="305"
                                         alt="TAPA SUPERIOR DE TANQUE - MDD10CB-03 2"
@@ -2964,7 +3027,7 @@ Este equipo cuenta con un año de garantía *.
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1136"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -3006,20 +3069,20 @@ Este equipo cuenta con un año de garantía *.
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/aire-acondicionado/2183-inverter-v32-1-ton-frio-calor-220.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/aire-acondicionado/2183-inverter-v32-1-ton-frio-calor-220.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/9885-home_default/inverter-v32-1-ton-frio-calor-220.jpg"
+                                                    data-src="/9885-home_default/inverter-v32-1-ton-frio-calor-220.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Inverter V32 1 Ton Frío - Calor 220"
-                        data-full-size-image-url="/tienda_assets/9885-thickbox_default/inverter-v32-1-ton-frio-calor-220.jpg"
+                        data-full-size-image-url="/9885-thickbox_default/inverter-v32-1-ton-frio-calor-220.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/9898-home_default/inverter-v32-1-ton-frio-calor-220.jpg"
+                                        data-src="/9898-home_default/inverter-v32-1-ton-frio-calor-220.jpg"
                                         width="236"
                                         height="305"
                                         alt="Inverter V32 1 Ton Frío - Calor 220 2"
@@ -3042,7 +3105,7 @@ Este equipo cuenta con un año de garantía *.
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="2183"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -3084,20 +3147,20 @@ Este equipo cuenta con un año de garantía *.
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/aire-acondicionado/1954-nex-15-ton-frio-calor-220v.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/aire-acondicionado/1954-nex-15-ton-frio-calor-220v.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/9285-home_default/nex-15-ton-frio-calor-220v.jpg"
+                                                    data-src="/9285-home_default/nex-15-ton-frio-calor-220v.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="NEX 1.5 Ton  Frío - Calor 220v"
-                        data-full-size-image-url="/tienda_assets/9285-thickbox_default/nex-15-ton-frio-calor-220v.jpg"
+                        data-full-size-image-url="/9285-thickbox_default/nex-15-ton-frio-calor-220v.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/9284-home_default/nex-15-ton-frio-calor-220v.jpg"
+                                        data-src="/9284-home_default/nex-15-ton-frio-calor-220v.jpg"
                                         width="236"
                                         height="305"
                                         alt="NEX 1.5 Ton  Frío - Calor 220v 2"
@@ -3120,7 +3183,7 @@ Este equipo cuenta con un año de garantía *.
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1954"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -3162,13 +3225,13 @@ Este equipo cuenta con un año de garantía *.
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1160-tapon-de-desague-da10bb04.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1160-tapon-de-desague-da10bb04.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/2183-home_default/tapon-de-desague-da10bb04.jpg"
+                                                    data-src="/2183-home_default/tapon-de-desague-da10bb04.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="TAPÓN DE DESAGÜE - DA10BB04"
-                        data-full-size-image-url="/tienda_assets/2183-thickbox_default/tapon-de-desague-da10bb04.jpg"
+                        data-full-size-image-url="/2183-thickbox_default/tapon-de-desague-da10bb04.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
@@ -3189,7 +3252,7 @@ Este equipo cuenta con un año de garantía *.
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1160"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -3231,20 +3294,20 @@ Este equipo cuenta con un año de garantía *.
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/linea-blanca/1866-x-wave-mwd031e.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/linea-blanca/1866-x-wave-mwd031e.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/8981-home_default/x-wave-mwd031e.jpg"
+                                                    data-src="/8981-home_default/x-wave-mwd031e.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="X Wave MWD031E"
-                        data-full-size-image-url="/tienda_assets/8981-thickbox_default/x-wave-mwd031e.jpg"
+                        data-full-size-image-url="/8981-thickbox_default/x-wave-mwd031e.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/8980-home_default/x-wave-mwd031e.jpg"
+                                        data-src="/8980-home_default/x-wave-mwd031e.jpg"
                                         width="236"
                                         height="305"
                                         alt="X Wave MWD031E 2"
@@ -3267,7 +3330,7 @@ Este equipo cuenta con un año de garantía *.
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1866"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -3309,20 +3372,20 @@ Este equipo cuenta con un año de garantía *.
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1152-rejilla-de-desague-mdd10cb-26.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1152-rejilla-de-desague-mdd10cb-26.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/2166-home_default/rejilla-de-desague-mdd10cb-26.jpg"
+                                                    data-src="/2166-home_default/rejilla-de-desague-mdd10cb-26.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="REJILLA DE DESAGÜE - MDD10CB-26"
-                        data-full-size-image-url="/tienda_assets/2166-thickbox_default/rejilla-de-desague-mdd10cb-26.jpg"
+                        data-full-size-image-url="/2166-thickbox_default/rejilla-de-desague-mdd10cb-26.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/2167-home_default/rejilla-de-desague-mdd10cb-26.jpg"
+                                        data-src="/2167-home_default/rejilla-de-desague-mdd10cb-26.jpg"
                                         width="236"
                                         height="305"
                                         alt="REJILLA DE DESAGÜE - MDD10CB-26 2"
@@ -3344,7 +3407,7 @@ Este equipo cuenta con un año de garantía *.
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1152"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -3386,20 +3449,20 @@ Este equipo cuenta con un año de garantía *.
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/herramientas/1988-interfase-wifi-mwm170b.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/herramientas/1988-interfase-wifi-mwm170b.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/9436-home_default/interfase-wifi-mwm170b.jpg"
+                                                    data-src="/9436-home_default/interfase-wifi-mwm170b.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="INTERFASE WiFi MWM170B"
-                        data-full-size-image-url="/tienda_assets/9436-thickbox_default/interfase-wifi-mwm170b.jpg"
+                        data-full-size-image-url="/9436-thickbox_default/interfase-wifi-mwm170b.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/9438-home_default/interfase-wifi-mwm170b.jpg"
+                                        data-src="/9438-home_default/interfase-wifi-mwm170b.jpg"
                                         width="236"
                                         height="305"
                                         alt="INTERFASE WiFi MWM170B 2"
@@ -3422,7 +3485,7 @@ Este equipo cuenta con un año de garantía *.
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1988"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -3476,9 +3539,9 @@ Este equipo cuenta con un año de garantía *.
             <div class="modal-body">
                                 <div class="easyzoom easyzoom-modal">
                    
-                    <a href="/tienda_assets/3739-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg" class="js-modal-product-cover-easyzoom" rel="nofollow">
+                    <a href="/3739-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg" class="js-modal-product-cover-easyzoom" rel="nofollow">
                         <img class="js-modal-product-cover product-cover-modal img-fluid"
-                             width="381"  height="492" src="/tienda_assets/3739-large_default/dispensador-de-agua-disx-10-blanco.jpg"
+                             width="381"  height="492" src="/3739-large_default/dispensador-de-agua-disx-10-blanco.jpg"
                                                              alt="Dispensador de Agua Disx 10 Blanco"
                                                         >
                     </a>
@@ -3491,9 +3554,9 @@ Este equipo cuenta con un año de garantía *.
                                 <div class="swiper-wrapper">
                                                                     <div class="swiper-slide">
                                         <div class="thumb-container">
-                                            <img data-image-large-src="/tienda_assets/3739-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg" class="thumb js-modal-thumb img-fluid swiper-lazy"
+                                            <img data-image-large-src="/3739-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg" class="thumb js-modal-thumb img-fluid swiper-lazy"
                                                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 452 584'%3E%3C/svg%3E"
-                                                 data-src="/tienda_assets/3739-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
+                                                 data-src="/3739-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
                                                                                                      alt="Dispensador de Agua Disx 10 Blanco"
                                                                                                    width="452"
                                                  height="584"
@@ -3503,9 +3566,9 @@ Este equipo cuenta con un año de garantía *.
                                     </div>
                                                                     <div class="swiper-slide">
                                         <div class="thumb-container">
-                                            <img data-image-large-src="/tienda_assets/3738-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg" class="thumb js-modal-thumb img-fluid swiper-lazy"
+                                            <img data-image-large-src="/3738-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg" class="thumb js-modal-thumb img-fluid swiper-lazy"
                                                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 452 584'%3E%3C/svg%3E"
-                                                 data-src="/tienda_assets/3738-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
+                                                 data-src="/3738-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
                                                                                                      alt="Dispensador de Agua Disx 10 Blanco"
                                                                                                    width="452"
                                                  height="584"
@@ -3515,9 +3578,9 @@ Este equipo cuenta con un año de garantía *.
                                     </div>
                                                                     <div class="swiper-slide">
                                         <div class="thumb-container">
-                                            <img data-image-large-src="/tienda_assets/10034-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg" class="thumb js-modal-thumb img-fluid swiper-lazy"
+                                            <img data-image-large-src="/10034-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg" class="thumb js-modal-thumb img-fluid swiper-lazy"
                                                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 452 584'%3E%3C/svg%3E"
-                                                 data-src="/tienda_assets/10034-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
+                                                 data-src="/10034-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
                                                                                                      alt="Dispensador de Agua Disx 10 Blanco"
                                                                                                    width="452"
                                                  height="584"
@@ -3527,9 +3590,9 @@ Este equipo cuenta con un año de garantía *.
                                     </div>
                                                                     <div class="swiper-slide">
                                         <div class="thumb-container">
-                                            <img data-image-large-src="/tienda_assets/3818-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg" class="thumb js-modal-thumb img-fluid swiper-lazy"
+                                            <img data-image-large-src="/3818-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg" class="thumb js-modal-thumb img-fluid swiper-lazy"
                                                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 452 584'%3E%3C/svg%3E"
-                                                 data-src="/tienda_assets/3818-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
+                                                 data-src="/3818-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
                                                                                                      alt="Dispensador de Agua Disx 10 Blanco"
                                                                                                    width="452"
                                                  height="584"
@@ -3539,9 +3602,9 @@ Este equipo cuenta con un año de garantía *.
                                     </div>
                                                                     <div class="swiper-slide">
                                         <div class="thumb-container">
-                                            <img data-image-large-src="/tienda_assets/3819-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg" class="thumb js-modal-thumb img-fluid swiper-lazy"
+                                            <img data-image-large-src="/3819-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg" class="thumb js-modal-thumb img-fluid swiper-lazy"
                                                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 452 584'%3E%3C/svg%3E"
-                                                 data-src="/tienda_assets/3819-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
+                                                 data-src="/3819-medium_default/dispensador-de-agua-disx-10-blanco.jpg"
                                                                                                      alt="Dispensador de Agua Disx 10 Blanco"
                                                                                                    width="452"
                                                  height="584"
@@ -3635,21 +3698,21 @@ Este equipo cuenta con un año de garantía *.
                 <ul>
                                                                         <li>
                                 <a
-                                        href="/tienda_assets/content/4-quienes-somos"
+                                        href="/tienda/content/4-quienes-somos"
                                         title=""                                                                        >
                                     Quiénes Somos
                                 </a>
                             </li>
                                                                                                 <li>
                                 <a
-                                        href="/tienda_assets/content/2-aviso-de-privacidad"
+                                        href="/tienda/content/2-aviso-de-privacidad"
                                         title="Aviso de Privacidad"                                                                        >
                                     Aviso de Privacidad
                                 </a>
                             </li>
                                                                                                 <li>
                                 <a
-                                        href="/tienda_assets/content/3-terminos-y-condiciones"
+                                        href="/tienda/content/3-terminos-y-condiciones"
                                         title="Términos y condiciones"                                                                        >
                                     Términos y condiciones
                                 </a>
@@ -3663,28 +3726,28 @@ Este equipo cuenta con un año de garantía *.
                 <ul>
                                                                         <li>
                                 <a
-                                        href="/tienda_assets/mi-cuenta"
+                                        href="/tienda/mi-cuenta"
                                         title=""                                                                        >
                                     Mi cuenta
                                 </a>
                             </li>
                                                                                                 <li>
                                 <a
-                                        href="/tienda_assets/historial-compra"
+                                        href="/tienda/historial-compra"
                                         title=""                                                                        >
                                     Historial de pedidos
                                 </a>
                             </li>
                                                                                                 <li>
                                 <a
-                                        href="/tienda_assets/datos-personales"
+                                        href="/tienda/datos-personales"
                                         title=""                                                                        >
                                     Identidad
                                 </a>
                             </li>
                                                                                                 <li>
                                 <a
-                                        href="/tienda_assets/direcciones"
+                                        href="/tienda/direcciones"
                                         title=""                                                                        >
                                     Direcciones
                                 </a>
@@ -3812,7 +3875,7 @@ if(window.location.pathname == "/content/4-quienes-somos" || window.location.pat
   
       
 
-    <form  id="login-form-modal" action="/tienda_assets/iniciar-sesion"   method="post">
+    <form  id="login-form-modal" action="/tienda/iniciar-sesion"   method="post">
 
     <section>
       
@@ -3911,7 +3974,7 @@ if(window.location.pathname == "/content/4-quienes-somos" || window.location.pat
           
               
       <div class="forgot-password">
-        <a href="/tienda_assets/recuperar-contrasena" rel="nofollow">
+        <a href="/tienda/recuperar-contrasena" rel="nofollow">
           ¿Olvidaste tu contraseña?
         </a>
       </div>
@@ -3954,7 +4017,7 @@ if(window.location.pathname == "/content/4-quienes-somos" || window.location.pat
 
                 
                 <div class="no-account">
-                    <a href="/tienda_assets/iniciar-sesion?create_account=1" data-link-action="display-register-form">
+                    <a href="/tienda/iniciar-sesion?create_account=1" data-link-action="display-register-form">
                         ¿Aún no tienes cuenta? Regístrate 
                     </a>
                 </div>
@@ -3978,8 +4041,7 @@ if(window.location.pathname == "/content/4-quienes-somos" || window.location.pat
 </div>
 
 
-<div id="iqitcompare-floating-wrapper">
-</div>
+@include('tienda.partials.compare_floating')
 
 
 
@@ -4045,6 +4107,75 @@ jQuery(document).ready(function($){
 
 
 
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const searchInput = document.getElementById("search-input");
+    const searchResults = document.getElementById("search-results");
+    const searchResultsList = document.getElementById("search-results-list");
+    const searchLoading = document.getElementById("search-loading");
+    let timeoutId;
+
+    if (!searchInput) return;
+
+    searchInput.addEventListener("input", function(e) {
+        const query = e.target.value.trim();
+        
+        clearTimeout(timeoutId);
+
+        if (query.length < 2) {
+            searchResults.classList.add("hidden");
+            return;
+        }
+
+        searchResults.classList.remove("hidden");
+        searchResultsList.innerHTML = "";
+        searchLoading.classList.remove("hidden");
+
+        timeoutId = setTimeout(() => {
+            fetch(`/buscar/autocomplete?q=${encodeURIComponent(query)}`)
+                .then(response => response.json())
+                .then(data => {
+                    searchLoading.classList.add("hidden");
+                    searchResultsList.innerHTML = "";
+                    
+                    if (data.length === 0) {
+                        searchResultsList.innerHTML = '<div class="autocomplete-empty">No se encontraron productos.</div>';
+                        return;
+                    }
+
+                    data.forEach(product => {
+                        const html = `
+                            <a href="${product.url}" class="autocomplete-item">
+                                <div class="autocomplete-img-container">
+                                    ${product.image ? `<img src="${product.image}">` : `<span style="color:#ccc; font-size:10px;">Sin img</span>`}
+                                </div>
+                                <div class="autocomplete-details">
+                                    <span class="autocomplete-title">${product.name}</span>
+                                    <span class="autocomplete-price">${product.price}</span>
+                                </div>
+                            </a>
+                        `;
+                        searchResultsList.insertAdjacentHTML("beforeend", html);
+                    });
+                })
+                .catch(error => {
+                    searchLoading.classList.add("hidden");
+                    console.error("Error fetching search results:", error);
+                });
+        }, 300);
+    });
+
+    document.addEventListener("click", function(e) {
+        const container = document.getElementById("search_widget");
+        if (container && !container.contains(e.target)) {
+            searchResults.classList.add("hidden");
+        }
+    });
+});
+</script>
+    @include('tienda.partials.modals')
 </body>
+
 
 </html>

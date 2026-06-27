@@ -49,7 +49,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <meta name="description" content="LifLife 12 + 1 Tonelada 220 Frío  Calor SETCLC121T">
   <meta name="keywords" content="">
     
-      <link rel="canonical" href="/tienda_assets/aire-acondicionado/1944-life-12-1-ton-frio-calor-220v.html">
+      <link rel="canonical" href="/tienda/aire-acondicionado/1944-life-12-1-ton-frio-calor-220v.html">
     
 
   
@@ -62,7 +62,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     "@@id": "#store-organization",
     "@@type": "Organization",
     "name" : "Mirage",
-    "url" : "/tienda_assets/",
+    "url" : "/tienda/",
   
       "logo": {
         "@@type": "ImageObject",
@@ -77,11 +77,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     "@@type": "WebPage",
     "isPartOf": {
       "@@type": "WebSite",
-      "url":  "/tienda_assets/",
+      "url":  "/tienda/",
       "name": "Mirage"
     },
     "name": "Minisplit Life 12 + 1 Tonelada 220 Frío  Calor  SETCLC121T",
-    "url":  "/tienda_assets/aire-acondicionado/1944-life-12-1-ton-frio-calor-220v.html"
+    "url":  "/tienda/aire-acondicionado/1944-life-12-1-ton-frio-calor-220v.html"
   }
 </script>
 
@@ -95,17 +95,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             "@@type": "ListItem",
             "position": 1,
             "name": "Inicio",
-            "item": "/tienda_assets/"
+            "item": "/tienda/"
           },              {
             "@@type": "ListItem",
             "position": 2,
             "name": "Aire Acondicionado",
-            "item": "/tienda_assets/11-aire-acondicionado"
+            "item": "/tienda/11-aire-acondicionado"
           },              {
             "@@type": "ListItem",
             "position": 3,
             "name": "Life 12 + 1 Ton Frío - Calor  220v",
-            "item": "/tienda_assets/aire-acondicionado/1944-life-12-1-ton-frio-calor-220v.html"
+            "item": "/tienda/aire-acondicionado/1944-life-12-1-ton-frio-calor-220v.html"
           }          ]
     }
   </script>
@@ -122,7 +122,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     "name": "Life 12 + 1 Ton Frío - Calor  220v",
     "description": "LifLife 12 + 1 Tonelada 220 Frío  Calor SETCLC121T",
     "category": "Aire Acondicionado",
-    "image" :"/tienda_assets/9252-home_default/life-12-1-ton-frio-calor-220v.jpg",    "sku": "SETCLC121T",
+    "image" :"/9252-home_default/life-12-1-ton-frio-calor-220v.jpg",    "sku": "SETCLC121T",
     "mpn": "SETCLC121T"
         ,
     "brand": {
@@ -142,9 +142,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       "priceCurrency": "MXN",
       "name": "Life 12 + 1 Ton Frío - Calor  220v",
       "price": "6257",
-      "url": "/tienda_assets/aire-acondicionado/1944-life-12-1-ton-frio-calor-220v.html",
+      "url": "/tienda/aire-acondicionado/1944-life-12-1-ton-frio-calor-220v.html",
       "priceValidUntil": "2026-07-10",
-              "image": ["/tienda_assets/9252-thickbox_default/life-12-1-ton-frio-calor-220v.jpg","/tienda_assets/9253-thickbox_default/life-12-1-ton-frio-calor-220v.jpg"],
+              "image": ["/9252-thickbox_default/life-12-1-ton-frio-calor-220v.jpg","/9253-thickbox_default/life-12-1-ton-frio-calor-220v.jpg"],
             "sku": "SETCLC121T",
       "mpn": "SETCLC121T",
                     "availability": "https://schema.org/InStock",
@@ -164,11 +164,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
     <meta property="og:type" content="product">
-    <meta property="og:url" content="/tienda_assets/aire-acondicionado/1944-life-12-1-ton-frio-calor-220v.html">
+    <meta property="og:url" content="/tienda/aire-acondicionado/1944-life-12-1-ton-frio-calor-220v.html">
     <meta property="og:title" content="Minisplit Life 12 + 1 Tonelada 220 Frío  Calor  SETCLC121T">
     <meta property="og:site_name" content="Mirage">
     <meta property="og:description" content="LifLife 12 + 1 Tonelada 220 Frío  Calor SETCLC121T">
-            <meta property="og:image" content="/tienda_assets/9252-thickbox_default/life-12-1-ton-frio-calor-220v.jpg">
+            <meta property="og:image" content="/9252-thickbox_default/life-12-1-ton-frio-calor-220v.jpg">
         <meta property="og:image:width" content="1100">
         <meta property="og:image:height" content="1422">
     
@@ -250,7 +250,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         var iqitmegamenu = {"sticky":"false","containerSelector":"#wrapper > .container"};
         var iqitreviews = [];
         var iqitwishlist = {"nbProducts":0};
-        var prestashop = {"cart":{"products":[],"totals":{"total":{"type":"total","label":"Total","amount":0,"value":"$0.00"},"total_including_tax":{"type":"total","label":"Total IVA inclu\u00eddo","amount":0,"value":"$0.00"},"total_excluding_tax":{"type":"total","label":"Total sin IVA","amount":0,"value":"$0.00"}},"subtotals":{"products":{"type":"products","label":"Subtotal","amount":0,"value":"$0.00"},"discounts":null,"shipping":{"type":"shipping","label":"Env\u00edo","amount":0,"value":""},"tax":null},"products_count":0,"summary_string":"0 articulos","vouchers":{"allowed":1,"added":[]},"discounts":[],"minimalPurchase":0,"minimalPurchaseRequired":""},"currency":{"id":1,"name":"Peso mexicano","iso_code":"MXN","iso_code_num":"484","sign":"$"},"customer":{"lastname":null,"firstname":null,"email":null,"birthday":null,"newsletter":null,"newsletter_date_add":null,"optin":null,"website":null,"company":null,"siret":null,"ape":null,"is_logged":false,"gender":{"type":null,"name":null},"addresses":[]},"language":{"name":"Espa\u00f1ol MX (Spanish)","iso_code":"mx","locale":"es-MX","language_code":"es-MX","is_rtl":"0","date_format_lite":"Y-m-d","date_format_full":"Y-m-d H:i:s","id":2},"page":{"title":"","canonical":"\/tienda\/aire-acondicionado\/1944-life-12-1-ton-frio-calor-220v.html","meta":{"title":"Minisplit Life 12 + 1 Tonelada 220 Fr\u00edo  Calor  SETCLC121T","description":"LifLife 12 + 1 Tonelada 220 Fr\u00edo  Calor SETCLC121T","keywords":"","robots":"index"},"page_name":"product","body_classes":{"lang-mx":true,"lang-rtl":false,"country-MX":true,"currency-MXN":true,"layout-full-width":true,"page-product":true,"tax-display-enabled":true,"product-id-1944":true,"product-Life 12 + 1 Ton Fr\u00edo - Calor  220v":true,"product-id-category-11":true,"product-id-manufacturer-0":true,"product-id-supplier-0":true,"product-available-for-order":true},"admin_notifications":[]},"shop":{"name":"Mirage","logo":"\/tienda\/img\/mirage-logo-1534899548.jpg","stores_icon":"\/tienda\/img\/logo_stores.png","favicon":"\/tienda\/img\/favicon.ico"},"urls":{"base_url":"\/tienda\/","current_url":"\/tienda\/aire-acondicionado\/1944-life-12-1-ton-frio-calor-220v.html","shop_domain_url":"https:\/\/www.tiendamirage.mx","img_ps_url":"\/tienda\/img\/","img_cat_url":"\/tienda\/img\/c\/","img_lang_url":"\/tienda\/img\/l\/","img_prod_url":"\/tienda\/img\/p\/","img_manu_url":"\/tienda\/img\/m\/","img_sup_url":"\/tienda\/img\/su\/","img_ship_url":"\/tienda\/img\/s\/","img_store_url":"\/tienda\/img\/st\/","img_col_url":"\/tienda\/img\/co\/","img_url":"\/tienda\/themes\/warehouse\/assets\/img\/","css_url":"\/tienda\/themes\/warehouse\/assets\/css\/","js_url":"\/tienda\/themes\/warehouse\/assets\/js\/","pic_url":"\/tienda\/upload\/","pages":{"address":"\/tienda\/direccion","addresses":"\/tienda\/direcciones","authentication":"\/tienda\/iniciar-sesion","cart":"\/tienda\/carrito","category":"\/tienda\/index.php?controller=category","cms":"\/tienda\/index.php?controller=cms","contact":"\/tienda\/contactenos","discount":"\/tienda\/descuento","guest_tracking":"\/tienda\/seguimiento-pedido-invitado","history":"\/tienda\/historial-compra","identity":"\/tienda\/datos-personales","index":"\/tienda\/","my_account":"\/tienda\/mi-cuenta","order_confirmation":"\/tienda\/confirmacion-pedido","order_detail":"\/tienda\/index.php?controller=order-detail","order_follow":"\/tienda\/seguimiento-pedido","order":"\/tienda\/pedido","order_return":"\/tienda\/index.php?controller=order-return","order_slip":"\/tienda\/nota-credito","pagenotfound":"\/tienda\/pagina-no-encontrada","password":"\/tienda\/recuperar-contrasena","pdf_invoice":"\/tienda\/index.php?controller=pdf-invoice","pdf_order_return":"\/tienda\/index.php?controller=pdf-order-return","pdf_order_slip":"\/tienda\/index.php?controller=pdf-order-slip","prices_drop":"\/tienda\/productos-rebajados","product":"\/tienda\/index.php?controller=product","search":"\/tienda\/busqueda","sitemap":"\/tienda\/Mapa del sitio","stores":"\/tienda\/tiendas","supplier":"\/tienda\/proveedor","register":"\/tienda\/iniciar-sesion?create_account=1","order_login":"\/tienda\/pedido?login=1"},"alternative_langs":[],"theme_assets":"\/themes\/warehouse\/assets\/","actions":{"logout":"\/tienda\/?mylogout="},"no_picture_image":{"bySize":{"small_default":{"url":"\/tienda\/img\/p\/mx-default-small_default.jpg","width":98,"height":127},"cart_default":{"url":"\/tienda\/img\/p\/mx-default-cart_default.jpg","width":125,"height":162},"home_default":{"url":"\/tienda\/img\/p\/mx-default-home_default.jpg","width":236,"height":305},"large_default":{"url":"\/tienda\/img\/p\/mx-default-large_default.jpg","width":381,"height":492},"medium_default":{"url":"\/tienda\/img\/p\/mx-default-medium_default.jpg","width":452,"height":584},"thickbox_default":{"url":"\/tienda\/img\/p\/mx-default-thickbox_default.jpg","width":1100,"height":1422}},"small":{"url":"\/tienda\/img\/p\/mx-default-small_default.jpg","width":98,"height":127},"medium":{"url":"\/tienda\/img\/p\/mx-default-large_default.jpg","width":381,"height":492},"large":{"url":"\/tienda\/img\/p\/mx-default-thickbox_default.jpg","width":1100,"height":1422},"legend":""}},"configuration":{"display_taxes_label":true,"display_prices_tax_incl":true,"is_catalog":false,"show_prices":true,"opt_in":{"partner":true},"quantity_discount":{"type":"price","label":"Precio Unitario"},"voucher_enabled":1,"return_enabled":0},"field_required":[],"breadcrumb":{"links":[{"title":"Inicio","url":"\/tienda\/"},{"title":"Aire Acondicionado","url":"\/tienda\/11-aire-acondicionado"},{"title":"Life 12 + 1 Ton Fr\u00edo - Calor  220v","url":"\/tienda\/aire-acondicionado\/1944-life-12-1-ton-frio-calor-220v.html"}],"count":3},"link":{"protocol_link":"https:\/\/","protocol_content":"https:\/\/"},"time":1782411811,"static_token":"736faed44ac184681768e35d05df6cbd","token":"1da7720698848b23a01dc5e00a1f383c","debug":false};
+        var prestashop = {"cart":{"products":[],"totals":{"total":{"type":"total","label":"Total","amount":0,"value":"$0.00"},"total_including_tax":{"type":"total","label":"Total IVA inclu\u00eddo","amount":0,"value":"$0.00"},"total_excluding_tax":{"type":"total","label":"Total sin IVA","amount":0,"value":"$0.00"}},"subtotals":{"products":{"type":"products","label":"Subtotal","amount":0,"value":"$0.00"},"discounts":null,"shipping":{"type":"shipping","label":"Env\u00edo","amount":0,"value":""},"tax":null},"products_count":0,"summary_string":"0 articulos","vouchers":{"allowed":1,"added":[]},"discounts":[],"minimalPurchase":0,"minimalPurchaseRequired":""},"currency":{"id":1,"name":"Peso mexicano","iso_code":"MXN","iso_code_num":"484","sign":"$"},"customer":{"lastname":null,"firstname":null,"email":null,"birthday":null,"newsletter":null,"newsletter_date_add":null,"optin":null,"website":null,"company":null,"siret":null,"ape":null,"is_logged":false,"gender":{"type":null,"name":null},"addresses":[]},"language":{"name":"Espa\u00f1ol MX (Spanish)","iso_code":"mx","locale":"es-MX","language_code":"es-MX","is_rtl":"0","date_format_lite":"Y-m-d","date_format_full":"Y-m-d H:i:s","id":2},"page":{"title":"","canonical":"\/tienda\/aire-acondicionado\/1944-life-12-1-ton-frio-calor-220v.html","meta":{"title":"Minisplit Life 12 + 1 Tonelada 220 Fr\u00edo  Calor  SETCLC121T","description":"LifLife 12 + 1 Tonelada 220 Fr\u00edo  Calor SETCLC121T","keywords":"","robots":"index"},"page_name":"product","body_classes":{"lang-mx":true,"lang-rtl":false,"country-MX":true,"currency-MXN":true,"layout-full-width":true,"page-product":true,"tax-display-enabled":true,"product-id-1944":true,"product-Life 12 + 1 Ton Fr\u00edo - Calor  220v":true,"product-id-category-11":true,"product-id-manufacturer-0":true,"product-id-supplier-0":true,"product-available-for-order":true},"admin_notifications":[]},"shop":{"name":"Mirage","logo":"\/tienda_assets\/img\/mirage-logo-1534899548.jpg","stores_icon":"\/tienda_assets\/img\/logo_stores.png","favicon":"\/tienda_assets\/img\/favicon.ico"},"urls":{"base_url":"\/tienda\/","current_url":"\/tienda\/aire-acondicionado\/1944-life-12-1-ton-frio-calor-220v.html","shop_domain_url":"https:\/\/www.tiendamirage.mx","img_ps_url":"\/tienda_assets\/img\/","img_cat_url":"\/tienda_assets\/img\/c\/","img_lang_url":"\/tienda_assets\/img\/l\/","img_prod_url":"\/tienda_assets\/img\/p\/","img_manu_url":"\/tienda_assets\/img\/m\/","img_sup_url":"\/tienda_assets\/img\/su\/","img_ship_url":"\/tienda_assets\/img\/s\/","img_store_url":"\/tienda_assets\/img\/st\/","img_col_url":"\/tienda_assets\/img\/co\/","img_url":"\/tienda_assets\/themes\/warehouse\/assets\/img\/","css_url":"\/tienda_assets\/themes\/warehouse\/assets\/css\/","js_url":"\/tienda_assets\/themes\/warehouse\/assets\/js\/","pic_url":"\/tienda\/upload\/","pages":{"address":"\/tienda\/direccion","addresses":"\/tienda\/direcciones","authentication":"\/tienda\/iniciar-sesion","cart":"\/tienda\/carrito","category":"\/tienda\/index.php?controller=category","cms":"\/tienda\/index.php?controller=cms","contact":"\/tienda\/contactenos","discount":"\/tienda\/descuento","guest_tracking":"\/tienda\/seguimiento-pedido-invitado","history":"\/tienda\/historial-compra","identity":"\/tienda\/datos-personales","index":"\/tienda\/","my_account":"\/tienda\/mi-cuenta","order_confirmation":"\/tienda\/confirmacion-pedido","order_detail":"\/tienda\/index.php?controller=order-detail","order_follow":"\/tienda\/seguimiento-pedido","order":"\/tienda\/pedido","order_return":"\/tienda\/index.php?controller=order-return","order_slip":"\/tienda\/nota-credito","pagenotfound":"\/tienda\/pagina-no-encontrada","password":"\/tienda\/recuperar-contrasena","pdf_invoice":"\/tienda\/index.php?controller=pdf-invoice","pdf_order_return":"\/tienda\/index.php?controller=pdf-order-return","pdf_order_slip":"\/tienda\/index.php?controller=pdf-order-slip","prices_drop":"\/tienda\/productos-rebajados","product":"\/tienda\/index.php?controller=product","search":"\/tienda\/busqueda","sitemap":"\/tienda\/Mapa del sitio","stores":"\/tienda\/tiendas","supplier":"\/tienda\/proveedor","register":"\/tienda\/iniciar-sesion?create_account=1","order_login":"\/tienda\/pedido?login=1"},"alternative_langs":[],"theme_assets":"\/themes\/warehouse\/assets\/","actions":{"logout":"\/tienda\/?mylogout="},"no_picture_image":{"bySize":{"small_default":{"url":"\/tienda_assets\/img\/p\/mx-default-small_default.jpg","width":98,"height":127},"cart_default":{"url":"\/tienda_assets\/img\/p\/mx-default-cart_default.jpg","width":125,"height":162},"home_default":{"url":"\/tienda_assets\/img\/p\/mx-default-home_default.jpg","width":236,"height":305},"large_default":{"url":"\/tienda_assets\/img\/p\/mx-default-large_default.jpg","width":381,"height":492},"medium_default":{"url":"\/tienda_assets\/img\/p\/mx-default-medium_default.jpg","width":452,"height":584},"thickbox_default":{"url":"\/tienda_assets\/img\/p\/mx-default-thickbox_default.jpg","width":1100,"height":1422}},"small":{"url":"\/tienda_assets\/img\/p\/mx-default-small_default.jpg","width":98,"height":127},"medium":{"url":"\/tienda_assets\/img\/p\/mx-default-large_default.jpg","width":381,"height":492},"large":{"url":"\/tienda_assets\/img\/p\/mx-default-thickbox_default.jpg","width":1100,"height":1422},"legend":""}},"configuration":{"display_taxes_label":true,"display_prices_tax_incl":true,"is_catalog":false,"show_prices":true,"opt_in":{"partner":true},"quantity_discount":{"type":"price","label":"Precio Unitario"},"voucher_enabled":1,"return_enabled":0},"field_required":[],"breadcrumb":{"links":[{"title":"Inicio","url":"\/tienda\/"},{"title":"Aire Acondicionado","url":"\/tienda\/11-aire-acondicionado"},{"title":"Life 12 + 1 Ton Fr\u00edo - Calor  220v","url":"\/tienda\/aire-acondicionado\/1944-life-12-1-ton-frio-calor-220v.html"}],"count":3},"link":{"protocol_link":"https:\/\/","protocol_content":"https:\/\/"},"time":1782411811,"static_token":"736faed44ac184681768e35d05df6cbd","token":"1da7720698848b23a01dc5e00a1f383c","debug":false};
         var ps_checkoutApplePayUrl = "\/tienda\/module\/ps_checkout\/applepay?token=736faed44ac184681768e35d05df6cbd";
         var ps_checkoutAutoRenderDisabled = false;
         var ps_checkoutCancelUrl = "\/tienda\/module\/ps_checkout\/cancel?token=736faed44ac184681768e35d05df6cbd";
@@ -334,11 +334,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     "@@type" : "WebPage",
     "isPartOf": [{
         "@@type":"WebSite",
-        "url":  "/tienda_assets/",
+        "url":  "/tienda/",
         "name": "Mirage"
     }],
     "name": "Minisplit Life 12 + 1 Tonelada 220 Fr\u00edo  Calor  SETCLC121T",
-    "url": "/tienda_assets/aire-acondicionado/1944-life-12-1-ton-frio-calor-220v.html"
+    "url": "/tienda/aire-acondicionado/1944-life-12-1-ton-frio-calor-220v.html"
 }
 </script>
 
@@ -370,7 +370,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<script type="application/ld+json" id="adpmicrodatos-product-ps17v5.5.1">
 {
     "name": "Life 12 + 1 Ton Fr\u00edo - Calor  220v",
-    "image": ["\/tienda\/9252-large_default\/life-12-1-ton-frio-calor-220v.jpg"],
+    "image": ["\/9252-large_default\/life-12-1-ton-frio-calor-220v.jpg"],
     "url": "\/tienda\/aire-acondicionado\/1944-life-12-1-ton-frio-calor-220v.html",
     "productID": 1944,
             "gtin13": "",
@@ -479,7 +479,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
              </div>
             <div class="col col-auto col-md right-nav text-right">
                 <div class="d-inline-block">
-    <a href="//www.tiendamirage.mx/module/iqitwishlist/view">
+    <a href="{{ route('wishlist.index') }}">
         <i class="fa fa-heart-o fa-fw" aria-hidden="true"></i> Lista de deseos (<span
                 id="iqitwishlist-nb"></span>)
     </a>
@@ -503,7 +503,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="col col-auto col-header-left">
                     <div id="desktop_logo">
                         
-  <a href="/tienda_assets/">
+  <a href="/tienda/">
     <img class="logo img-fluid"
          src="/tienda_assets/img/mirage-logo-1534899548.jpg"
                   alt="Mirage"
@@ -516,25 +516,57 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                 </div>
                 <div class="col col-header-center">
-                                        <!-- Block search module TOP -->
-
+                                        
 <!-- Block search module TOP -->
-<div id="search_widget" class="search-widget" data-search-controller-url="/tienda_assets/module/iqitsearch/searchiqit">
-    <form method="get" action="/tienda_assets/module/iqitsearch/searchiqit">
+<div id="search_widget" class="search-widget autocomplete-wrapper" data-search-controller-url="/buscar/autocomplete">
+    <form method="get" action="/buscar">
         <div class="input-group">
-            <input type="text" name="s" value="" data-all-text="Mostrar todos los resultados"
-                   data-blog-text="Blog post"
-                   data-product-text="Product"
-                   data-brands-text="Marca"
-                   autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
-                   placeholder="Buscar" class="form-control form-search-control" />
+            <input type="text" name="q" id="search-input" value="" placeholder="Buscar productos..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="form-control form-search-control" />
             <button type="submit" class="search-btn">
                 <i class="fa fa-search"></i>
             </button>
         </div>
     </form>
+    
+    <!-- Dropdown de Resultados -->
+    <div id="search-results" class="autocomplete-dropdown hidden">
+        <div id="search-results-list" class="autocomplete-list">
+            <!-- Resultados inyectados por JS -->
+        </div>
+        <div id="search-loading" class="autocomplete-loading hidden">
+            Buscando...
+        </div>
+    </div>
 </div>
+<style>
+.autocomplete-wrapper { position: relative; }
+.autocomplete-dropdown { 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    width: 100%; 
+    background: #fff; 
+    border: 1px solid #eee; 
+    border-radius: 4px; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+    z-index: 9999; 
+    margin-top: 5px;
+    overflow: hidden;
+}
+.autocomplete-dropdown.hidden { display: none !important; }
+.autocomplete-list { max-height: 400px; overflow-y: auto; }
+.autocomplete-item { display: flex; align-items: center; padding: 10px; border-bottom: 1px solid #f5f5f5; text-decoration: none; transition: background 0.2s; }
+.autocomplete-item:hover { background: #f9f9f9; text-decoration: none; }
+.autocomplete-img-container { width: 50px; height: 50px; flex-shrink: 0; background: #f5f5f5; border-radius: 4px; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.autocomplete-img-container img { width: 100%; height: 100%; object-fit: cover; }
+.autocomplete-details { margin-left: 15px; flex-grow: 1; }
+.autocomplete-title { font-size: 14px; font-weight: 500; color: #333; margin-bottom: 3px; display: block; }
+.autocomplete-price { font-size: 14px; font-weight: bold; color: #e62228; display: block; }
+.autocomplete-loading { padding: 15px; text-align: center; color: #777; font-size: 13px; }
+.autocomplete-empty { padding: 15px; text-align: center; color: #777; font-size: 13px; }
+</style>
 <!-- /Block search module TOP -->
+
 
 <!-- /Block search module TOP -->
 
@@ -546,7 +578,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     
                                             <div id="header-user-btn" class="col col-auto header-btn-w header-user-btn-w">
-            <a href="/tienda_assets/mi-cuenta"
+            <a href="/tienda/mi-cuenta"
            title="Acceda a su cuenta de cliente"
            rel="nofollow" class="header-btn header-user-btn">
             <i class="fa fa-user fa-fw icon" aria-hidden="true"></i>
@@ -572,14 +604,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
          class="header-btn-w header-cart-btn-w ps-shoppingcart dropdown">
          <div id="blockcart" class="blockcart cart-preview"
          data-refresh-url="//www.tiendamirage.mx/module/ps_shoppingcart/ajax">
-        <a id="cart-toogle" class="cart-toogle header-btn header-cart-btn" data-toggle="dropdown" data-display="static">
+        <a id="cart-toogle" href="{{ route('cart.index') }}" class="cart-toogle header-btn header-cart-btn" data-toggle="dropdown" data-display="static">
             <i class="fa fa-shopping-bag fa-fw icon" aria-hidden="true"><span class="cart-products-count-btn  d-none">0</span></i>
             <span class="info-wrapper">
             <span class="title">Carrito:</span>
-            <span class="cart-toggle-details">
-            <span class="text-faded cart-separator"> / </span>
-                            Vacío
-                        </span>
+            <span class="cart-toggle-details"><span class="text-faded cart-separator"> / </span>{{ $cartCount > 0 ? $cartCount . ' articulos' : 'Vacío' }}</span>
             </span>
         </a>
         <div id="_desktop_blockcart-content" class="dropdown-menu-custom dropdown-menu">
@@ -622,7 +651,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<ul>
 											<li id="cbp-hrmenu-tab-48"
 							class="cbp-hrmenu-tab cbp-hrmenu-tab-48 ">
-							<a href="/tienda_assets/10-refacciones" class="nav-link" 
+							<a href="/tienda/10-refacciones" class="nav-link" 
 										>
 										
 
@@ -632,7 +661,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 																</li>
 												<li id="cbp-hrmenu-tab-49"
 							class="cbp-hrmenu-tab cbp-hrmenu-tab-49 ">
-							<a href="/tienda_assets/11-aire-acondicionado" class="nav-link" 
+							<a href="/tienda/11-aire-acondicionado" class="nav-link" 
 										>
 										
 
@@ -642,7 +671,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 																</li>
 												<li id="cbp-hrmenu-tab-51"
 							class="cbp-hrmenu-tab cbp-hrmenu-tab-51 ">
-							<a href="/tienda_assets/13-linea-blanca" class="nav-link" 
+							<a href="/tienda/13-linea-blanca" class="nav-link" 
 										>
 										
 
@@ -652,7 +681,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 																</li>
 												<li id="cbp-hrmenu-tab-52"
 							class="cbp-hrmenu-tab cbp-hrmenu-tab-52 ">
-							<a href="/tienda_assets/17-herramientas" class="nav-link" 
+							<a href="/tienda/17-herramientas" class="nav-link" 
 										>
 										
 
@@ -662,7 +691,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 																</li>
 												<li id="cbp-hrmenu-tab-54"
 							class="cbp-hrmenu-tab cbp-hrmenu-tab-54 ">
-							<a href="/tienda_assets/14-souvenirs" class="nav-link" 
+							<a href="/tienda/14-souvenirs" class="nav-link" 
 										>
 										
 
@@ -672,7 +701,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 																</li>
 												<li id="cbp-hrmenu-tab-55"
 							class="cbp-hrmenu-tab cbp-hrmenu-tab-55 ">
-							<a href="/tienda_assets/24-outlet" class="nav-link" 
+							<a href="/tienda/24-outlet" class="nav-link" 
 										>
 										
 
@@ -725,8 +754,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 			
-	<li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/"  class="flex-fill mobile-menu__link ">Inicio</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/10-refacciones"  class="flex-fill mobile-menu__link ">Refacciones</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/11-aire-acondicionado"  class="flex-fill mobile-menu__link ">Aire Acondicionado</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/13-linea-blanca"  class="flex-fill mobile-menu__link js-mobile-menu__link-accordion--has-submenu  ">Línea Blanca</a><span class="mobile-menu__arrow js-mobile-menu__link-accordion--has-submenu"><i class="fa fa-angle-down mobile-menu__expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up mobile-menu__close-icon" aria-hidden="true"></i></span><div class="mobile-menu__tab-row-break"></div>
-	<ul class="mobile-menu__submenu  mobile-menu__submenu--accordion js-mobile-menu__submenu"><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/18-boiler"  class="flex-fill mobile-menu__link ">Boiler</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/19-campanas"  class="flex-fill mobile-menu__link ">Campanas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/21-dispensadores"  class="flex-fill mobile-menu__link ">Dispensadores</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/22-parillas"  class="flex-fill mobile-menu__link ">Parillas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/25-microondas"  class="flex-fill mobile-menu__link ">Microondas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/26-lavadoras"  class="flex-fill mobile-menu__link ">Lavadoras</a></li></ul>	</li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/14-souvenirs"  class="flex-fill mobile-menu__link ">Souvenirs</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/17-herramientas"  class="flex-fill mobile-menu__link ">Herramientas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda_assets/24-outlet"  class="flex-fill mobile-menu__link ">Outlet</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/contactenos"  class="flex-fill mobile-menu__link ">Contacto</a></li>	
+	<li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/"  class="flex-fill mobile-menu__link ">Inicio</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/10-refacciones"  class="flex-fill mobile-menu__link ">Refacciones</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/11-aire-acondicionado"  class="flex-fill mobile-menu__link ">Aire Acondicionado</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/13-linea-blanca"  class="flex-fill mobile-menu__link js-mobile-menu__link-accordion--has-submenu  ">Línea Blanca</a><span class="mobile-menu__arrow js-mobile-menu__link-accordion--has-submenu"><i class="fa fa-angle-down mobile-menu__expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up mobile-menu__close-icon" aria-hidden="true"></i></span><div class="mobile-menu__tab-row-break"></div>
+	<ul class="mobile-menu__submenu  mobile-menu__submenu--accordion js-mobile-menu__submenu"><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/18-boiler"  class="flex-fill mobile-menu__link ">Boiler</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/19-campanas"  class="flex-fill mobile-menu__link ">Campanas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/21-dispensadores"  class="flex-fill mobile-menu__link ">Dispensadores</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/22-parillas"  class="flex-fill mobile-menu__link ">Parillas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/25-microondas"  class="flex-fill mobile-menu__link ">Microondas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/26-lavadoras"  class="flex-fill mobile-menu__link ">Lavadoras</a></li></ul>	</li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/14-souvenirs"  class="flex-fill mobile-menu__link ">Souvenirs</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/17-herramientas"  class="flex-fill mobile-menu__link ">Herramientas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/tienda/24-outlet"  class="flex-fill mobile-menu__link ">Outlet</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="/contactenos"  class="flex-fill mobile-menu__link ">Contacto</a></li>	
 												<li class="mobile-menu__below-content"> </li>
 				</ul>
 			</div>
@@ -762,7 +791,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 			<div class="mobile-menu__user">
-			<a href="/tienda_assets/mi-cuenta" class="text-reset"><i class="fa fa-user" aria-hidden="true"></i>
+			<a href="/tienda/mi-cuenta" class="text-reset"><i class="fa fa-user" aria-hidden="true"></i>
 				
 									Iniciar sesión
 								
@@ -784,7 +813,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="mobile-main-bar">
         <div class="col-mobile-logo text-center">
             
-  <a href="/tienda_assets/">
+  <a href="/tienda/">
     <img class="logo img-fluid"
          src="/tienda_assets/img/mirage-logo-1534899548.jpg"
                   alt="Mirage"
@@ -812,23 +841,57 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div id="search-widget-mobile" class="dropdown-content dropdown-menu dropdown-mobile search-widget">
                         
                                                     
+
 <!-- Block search module TOP -->
-<form method="get" action="/tienda_assets/module/iqitsearch/searchiqit">
-    <div class="input-group">
-        <input type="text" name="s" value=""
-               placeholder="Buscar"
-               data-all-text="Show all results"
-               data-blog-text="Blog post"
-               data-product-text="Product"
-               data-brands-text="Marca"
-               autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
-               class="form-control form-search-control">
-        <button type="submit" class="search-btn">
-            <i class="fa fa-search"></i>
-        </button>
+<div id="search_widget" class="search-widget autocomplete-wrapper" data-search-controller-url="/buscar/autocomplete">
+    <form method="get" action="/buscar">
+        <div class="input-group">
+            <input type="text" name="q" id="search-input" value="" placeholder="Buscar productos..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="form-control form-search-control" />
+            <button type="submit" class="search-btn">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+    </form>
+    
+    <!-- Dropdown de Resultados -->
+    <div id="search-results" class="autocomplete-dropdown hidden">
+        <div id="search-results-list" class="autocomplete-list">
+            <!-- Resultados inyectados por JS -->
+        </div>
+        <div id="search-loading" class="autocomplete-loading hidden">
+            Buscando...
+        </div>
     </div>
-</form>
+</div>
+<style>
+.autocomplete-wrapper { position: relative; }
+.autocomplete-dropdown { 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    width: 100%; 
+    background: #fff; 
+    border: 1px solid #eee; 
+    border-radius: 4px; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+    z-index: 9999; 
+    margin-top: 5px;
+    overflow: hidden;
+}
+.autocomplete-dropdown.hidden { display: none !important; }
+.autocomplete-list { max-height: 400px; overflow-y: auto; }
+.autocomplete-item { display: flex; align-items: center; padding: 10px; border-bottom: 1px solid #f5f5f5; text-decoration: none; transition: background 0.2s; }
+.autocomplete-item:hover { background: #f9f9f9; text-decoration: none; }
+.autocomplete-img-container { width: 50px; height: 50px; flex-shrink: 0; background: #f5f5f5; border-radius: 4px; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.autocomplete-img-container img { width: 100%; height: 100%; object-fit: cover; }
+.autocomplete-details { margin-left: 15px; flex-grow: 1; }
+.autocomplete-title { font-size: 14px; font-weight: 500; color: #333; margin-bottom: 3px; display: block; }
+.autocomplete-price { font-size: 14px; font-weight: bold; color: #e62228; display: block; }
+.autocomplete-loading { padding: 15px; text-align: center; color: #777; font-size: 13px; }
+.autocomplete-empty { padding: 15px; text-align: center; color: #777; font-size: 13px; }
+</style>
 <!-- /Block search module TOP -->
+
 
                                                 
                     </div>
@@ -836,7 +899,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 </div>
                 <div class="col col-mobile-btn col-mobile-btn-account text-center">
-                    <a href="/tienda_assets/mi-cuenta" class="m-nav-btn"><i class="fa fa-user" aria-hidden="true"></i>
+                    <a href="/tienda/mi-cuenta" class="m-nav-btn"><i class="fa fa-user" aria-hidden="true"></i>
                         <span>     
                                                             Iniciar sesión
                                                         </span></a>
@@ -846,7 +909,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                                 <div class="col col-mobile-btn col-mobile-btn-cart ps-shoppingcart text-center dropdown">
                    <div id="mobile-cart-wrapper">
-                    <a id="mobile-cart-toogle" class="m-nav-btn" data-display="static" data-toggle="dropdown"><i class="fa fa-shopping-bag mobile-bag-icon" aria-hidden="true"><span id="mobile-cart-products-count" class="cart-products-count cart-products-count-btn">
+                    <a id="mobile-cart-toogle" href="{{ route('cart.index') }}" class="m-nav-btn" data-display="static" data-toggle="dropdown"><i class="fa fa-shopping-bag mobile-bag-icon" aria-hidden="true"><span id="mobile-cart-products-count" class="cart-products-count cart-products-count-btn">
                                 
                                                                     0
                                                                 
@@ -881,7 +944,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                                  
                                                                             <li>
-                                            <a href="/tienda_assets/"><span>Inicio</span></a>
+                                            <a href="/tienda/"><span>Inicio</span></a>
                                         </li>
                                                                     
 
@@ -890,7 +953,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                                  
                                                                             <li>
-                                            <a href="/tienda_assets/11-aire-acondicionado"><span>Aire Acondicionado</span></a>
+                                            <a href="/tienda/11-aire-acondicionado"><span>Aire Acondicionado</span></a>
                                         </li>
                                                                     
 
@@ -907,9 +970,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </ol>
                 </div>
                 <div class="col col-auto"> <div id="iqitproductsnav">
-            <a href="/tienda_assets/aire-acondicionado/1943-life-12-1-ton-solo-frio-110.html" title="Previous product">
+            <a href="/tienda/aire-acondicionado/1943-life-12-1-ton-solo-frio-110.html" title="Previous product">
            <i class="fa fa-angle-left" aria-hidden="true"></i>        </a>
-                <a href="/tienda_assets/aire-acondicionado/2218-life-12-2-ton-frio-220v.html" title="Next product">
+                <a href="/tienda/aire-acondicionado/2218-life-12-2-ton-frio-220v.html" title="Next product">
              <i class="fa fa-angle-right" aria-hidden="true"></i>        </a>
     </div>
 
@@ -941,7 +1004,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section id="main">
         <div id="product-preloader"><i class="fa fa-circle-o-notch fa-spin"></i></div>
         <div id="main-product-wrapper" class="product-container js-product-container">
-        <meta content="/tienda_assets/aire-acondicionado/1944-life-12-1-ton-frio-calor-220v.html">
+        <meta content="/tienda/aire-acondicionado/1944-life-12-1-ton-frio-calor-220v.html">
 
 
         <div class="row product-info-row">
@@ -961,10 +1024,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                            <div class="swiper-slide"> <div class="thumb-container js-thumb-container">
                     <img
                             class="thumb js-thumb  selected js-thumb-selected  img-fluid swiper-lazy"
-                            data-image-medium-src="/tienda_assets/9252-medium_default/life-12-1-ton-frio-calor-220v.jpg"
-                            data-image-large-src="/tienda_assets/9252-thickbox_default/life-12-1-ton-frio-calor-220v.jpg"
+                            data-image-medium-src="/9252-medium_default/life-12-1-ton-frio-calor-220v.jpg"
+                            data-image-large-src="/9252-thickbox_default/life-12-1-ton-frio-calor-220v.jpg"
                             src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 452 584'%3E%3C/svg%3E"
-                            data-src="/tienda_assets/9252-medium_default/life-12-1-ton-frio-calor-220v.jpg"
+                            data-src="/9252-medium_default/life-12-1-ton-frio-calor-220v.jpg"
                                                             alt="Life 12 + 1 Ton Frío - Calor  220v"
                                                         title=""
                             width="452"
@@ -974,10 +1037,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                            <div class="swiper-slide"> <div class="thumb-container js-thumb-container">
                     <img
                             class="thumb js-thumb   img-fluid swiper-lazy"
-                            data-image-medium-src="/tienda_assets/9253-medium_default/life-12-1-ton-frio-calor-220v.jpg"
-                            data-image-large-src="/tienda_assets/9253-thickbox_default/life-12-1-ton-frio-calor-220v.jpg"
+                            data-image-medium-src="/9253-medium_default/life-12-1-ton-frio-calor-220v.jpg"
+                            data-image-large-src="/9253-thickbox_default/life-12-1-ton-frio-calor-220v.jpg"
                             src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 452 584'%3E%3C/svg%3E"
-                            data-src="/tienda_assets/9253-medium_default/life-12-1-ton-frio-calor-220v.jpg"
+                            data-src="/9253-medium_default/life-12-1-ton-frio-calor-220v.jpg"
                                                             alt="Life 12 + 1 Ton Frío - Calor  220v"
                                                         title=""
                             width="452"
@@ -1005,13 +1068,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
                                                             <div class="product-lmage-large swiper-slide  js-thumb-selected">
                             <div class="easyzoom easyzoom-product">
-                                <a href="/tienda_assets/9252-thickbox_default/life-12-1-ton-frio-calor-220v.jpg" class="js-easyzoom-trigger" rel="nofollow"></a>
+                                <a href="/9252-thickbox_default/life-12-1-ton-frio-calor-220v.jpg" class="js-easyzoom-trigger" rel="nofollow"></a>
                             </div>
                             <a class="expander" data-toggle="modal" data-target="#product-modal"><span><i class="fa fa-expand" aria-hidden="true"></i></span></a>                            <img
-                                    data-src="/tienda_assets/9252-large_default/life-12-1-ton-frio-calor-220v.jpg"
-                                    data-image-large-src="/tienda_assets/9252-thickbox_default/life-12-1-ton-frio-calor-220v.jpg"
+                                    data-src="/9252-large_default/life-12-1-ton-frio-calor-220v.jpg"
+                                    data-image-large-src="/9252-thickbox_default/life-12-1-ton-frio-calor-220v.jpg"
                                     alt="Life 12 + 1 Ton Frío - Calor  220v"
-                                    content="/tienda_assets/9252-large_default/life-12-1-ton-frio-calor-220v.jpg"
+                                    content="/9252-large_default/life-12-1-ton-frio-calor-220v.jpg"
                                     width="381"
                                     height="492"
                                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 381 492'%3E%3C/svg%3E"
@@ -1020,13 +1083,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                                             <div class="product-lmage-large swiper-slide ">
                             <div class="easyzoom easyzoom-product">
-                                <a href="/tienda_assets/9253-thickbox_default/life-12-1-ton-frio-calor-220v.jpg" class="js-easyzoom-trigger" rel="nofollow"></a>
+                                <a href="/9253-thickbox_default/life-12-1-ton-frio-calor-220v.jpg" class="js-easyzoom-trigger" rel="nofollow"></a>
                             </div>
                             <a class="expander" data-toggle="modal" data-target="#product-modal"><span><i class="fa fa-expand" aria-hidden="true"></i></span></a>                            <img
-                                    data-src="/tienda_assets/9253-large_default/life-12-1-ton-frio-calor-220v.jpg"
-                                    data-image-large-src="/tienda_assets/9253-thickbox_default/life-12-1-ton-frio-calor-220v.jpg"
+                                    data-src="/9253-large_default/life-12-1-ton-frio-calor-220v.jpg"
+                                    data-image-large-src="/9253-thickbox_default/life-12-1-ton-frio-calor-220v.jpg"
                                     alt="Life 12 + 1 Ton Frío - Calor  220v"
-                                    content="/tienda_assets/9253-large_default/life-12-1-ton-frio-calor-220v.jpg"
+                                    content="/9253-large_default/life-12-1-ton-frio-calor-220v.jpg"
                                     width="381"
                                     height="492"
                                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 381 492'%3E%3C/svg%3E"
@@ -1170,7 +1233,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                     <div class="product-actions js-product-actions">
                         
-                            <form action="/tienda_assets/carrito" method="post" id="add-to-cart-or-refresh">
+                            <form action="/tienda/carrito" method="post" id="add-to-cart-or-refresh">
                                 <input type="hidden" name="token" value="736faed44ac184681768e35d05df6cbd">
                                 <input type="hidden" name="id_product" value="1944"
                                        id="product_page_product_id">
@@ -1239,7 +1302,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <button type="button" data-toggle="tooltip" data-placement="top" title="Añadir para comparar"
            class="btn btn-secondary btn-lg btn-iconic btn-iqitcompare-add js-iqitcompare-add" data-animation="false" id="iqit-compare-product-btn"
            data-id-product="1944"
-           data-url="//www.tiendamirage.mx/module/iqitcompare/actions">
+           data-url="/module/iqitcompare/actions">
             <i class="fa fa-random not-added" aria-hidden="true"></i><i class="fa fa-check added"
                                                                         aria-hidden="true"></i>
         </button>
@@ -1414,7 +1477,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             >
 
                 
-                    <div id="product-details" data-product="{&quot;id_shop_default&quot;:&quot;1&quot;,&quot;id_manufacturer&quot;:&quot;0&quot;,&quot;id_supplier&quot;:&quot;0&quot;,&quot;reference&quot;:&quot;SETCLC121T&quot;,&quot;is_virtual&quot;:&quot;0&quot;,&quot;delivery_in_stock&quot;:&quot;&quot;,&quot;delivery_out_stock&quot;:&quot;&quot;,&quot;id_category_default&quot;:&quot;11&quot;,&quot;on_sale&quot;:&quot;0&quot;,&quot;online_only&quot;:&quot;0&quot;,&quot;ecotax&quot;:0,&quot;minimal_quantity&quot;:&quot;1&quot;,&quot;low_stock_threshold&quot;:&quot;5&quot;,&quot;low_stock_alert&quot;:&quot;0&quot;,&quot;price&quot;:&quot;$6,257.00&quot;,&quot;unity&quot;:&quot;&quot;,&quot;unit_price_ratio&quot;:&quot;0.000000&quot;,&quot;additional_shipping_cost&quot;:&quot;0.000000&quot;,&quot;customizable&quot;:&quot;0&quot;,&quot;text_fields&quot;:&quot;0&quot;,&quot;uploadable_files&quot;:&quot;0&quot;,&quot;redirect_type&quot;:&quot;301-category&quot;,&quot;id_type_redirected&quot;:&quot;0&quot;,&quot;available_for_order&quot;:&quot;1&quot;,&quot;available_date&quot;:&quot;0000-00-00&quot;,&quot;show_condition&quot;:&quot;0&quot;,&quot;condition&quot;:&quot;new&quot;,&quot;show_price&quot;:&quot;1&quot;,&quot;indexed&quot;:&quot;1&quot;,&quot;visibility&quot;:&quot;both&quot;,&quot;cache_default_attribute&quot;:&quot;0&quot;,&quot;advanced_stock_management&quot;:&quot;0&quot;,&quot;date_add&quot;:&quot;2022-07-07 18:52:01&quot;,&quot;date_upd&quot;:&quot;2026-02-12 13:09:58&quot;,&quot;pack_stock_type&quot;:&quot;3&quot;,&quot;meta_description&quot;:&quot;LifLife 12 + 1 Tonelada 220 Fr\u00edo  Calor SETCLC121T&quot;,&quot;meta_keywords&quot;:&quot;&quot;,&quot;meta_title&quot;:&quot;Minisplit Life 12 + 1 Tonelada 220 Fr\u00edo  Calor  SETCLC121T&quot;,&quot;link_rewrite&quot;:&quot;life-12-1-ton-frio-calor-220v&quot;,&quot;name&quot;:&quot;Life 12 + 1 Ton Fr\u00edo - Calor  220v&quot;,&quot;description&quot;:&quot;&lt;p&gt;Life 12 + 1 Tonelada, Fr\u00edo\u00a0- Carlor\u00a0220v&lt;br \/&gt;&lt;br \/&gt;Library App&lt;br \/&gt;Cuenta con una librer\u00eda de codigos para facilitar el diagn\u00f3stico, mediante una aplicaci\u00f3n m\u00f3vil, podemos descifrar la causa de alerta emitida con el Digital - Assisted-Diagnosys.\u00a0&lt;br \/&gt;&lt;br \/&gt;&lt;\/p&gt;\n&lt;p&gt;Leak Detect&lt;br \/&gt;Protege el compresor ante una eventual p\u00e9rdida de refrigerante, su rutina de protecci\u00f3n Safety Shut Down apaga la unidad si se detecta que refrigerante se encuentra en nivel cr\u00edtico, evitando el da\u00f1o severo al mecanismo de compresi\u00f3n.\u00a0&lt;\/p&gt;\n&lt;p&gt;LT Sensor&lt;br \/&gt;Interrumpe el funcionamiento si detecta con su Low Temperature Sensor que la temperatura del evaporador (unidad interior) es m\u00e1s baja de lo normal, evitando el congelamiento, derramamiento de agua o da\u00f1o interno en el elemento de compresi\u00f3n.\u00a0&lt;\/p&gt;\n&lt;p&gt;Ozone Fin&lt;br \/&gt;Aplicamos capa protectora adicional Coating Protector tanto al intercambiador exterior como el interior aumentando su durabilidad de los materiales ante ambientes corrosivos.\u00a0&lt;\/p&gt;\n&lt;p&gt;New RC\u00a0&lt;br \/&gt;La nueva generaci\u00f3n Life 12+ estrena control remoto, sus caracter\u00edsticas principales: iluminaci\u00f3n posterior, mayor tama\u00f1o de despliegue (display), nuevas y mejores funciones. Una experiencia a nivel superior&lt;br \/&gt;&lt;br \/&gt;X Blade&lt;br \/&gt;El dise\u00f1o aerodin\u00e1mico aplicado al aspa del condensador elimina turbulencia, mejora el intercambio del flujo de aire y reduce la fricci\u00f3n al girar en altas revoluciones. Aligerando el esfuerzo realizado por el motor.\u00a0&lt;\/p&gt;\n&lt;p&gt;Healty Clean&lt;br \/&gt;Se activar\u00e1 una corriente de aire justo despu\u00e9s de utilizar modo enfriamiento para retirar la humedad en el intercambiador del evaporador (unidad interior), esto ayuda a eliminar los malos aromas y disminuye la formaci\u00f3n de hongos.\u00a0&lt;\/p&gt;\n&lt;p&gt;Cooling Boost&lt;br \/&gt;Ideal para esos d\u00edas de calor extremo, presiona una sola tecla y activar\u00e1s turbo enfriamiento, retira la carga t\u00e9rmica acumulada en forma r\u00e1pida y obt\u00e9n confort en un menor tiempo.\u00a0&lt;\/p&gt;\n&lt;p&gt;My Sensor&lt;br \/&gt;Esta funci\u00f3n extiende el alcance del sensor de temperatura hasta el control remoto, registrando la temperatura circulante en tiempo real y limita el enfriamiento si as\u00ed se requiere.\u00a0&lt;\/p&gt;\n&lt;p&gt;&lt;\/p&gt;&quot;,&quot;description_short&quot;:&quot;&lt;p&gt;\u00a1Life 12+! tiene para ti&lt;br \/&gt;&lt;br \/&gt;&lt;\/p&gt;\n&lt;p&gt;- Library App\u00a0&lt;br \/&gt;- Leak Detect&lt;br \/&gt;- LT Sensor&lt;br \/&gt;- Ozone Fin&lt;br \/&gt;- New RC&lt;br \/&gt;- X - Blade&lt;br \/&gt;- Healty Clean&lt;br \/&gt;- Cooling Boost&lt;br \/&gt;- My Sensor&lt;\/p&gt;\n&lt;p class=\&quot;MsoNormal\&quot; style=\&quot;margin-top:0px;margin-bottom:10px;color:#484848;font-size:14px;font-family:Arial;\&quot;&gt;&lt;strong&gt;* No incluye instalaci\u00f3n.&lt;\/strong&gt;&lt;\/p&gt;\n&lt;p class=\&quot;MsoNormal\&quot; style=\&quot;margin-top:0px;margin-bottom:10px;color:#484848;font-size:14px;font-family:Arial;\&quot;&gt;Este equipo cuenta con un a\u00f1o de garant\u00eda y 6 a\u00f1os en el compresor, solo si se instala a trav\u00e9s de un Centro de Servicios Autorizado Mirage (CESAM), cualquier incidencia deber\u00e1 ser tratado con el CESAM que instal\u00f3 su equipo, siempre y cuando cumpla con lo dispuesto en nuestros t\u00e9rminos y condiciones.\u00a0&lt;\/p&gt;&quot;,&quot;available_now&quot;:&quot;&quot;,&quot;available_later&quot;:&quot;&quot;,&quot;id&quot;:1944,&quot;id_product&quot;:1944,&quot;out_of_stock&quot;:2,&quot;new&quot;:0,&quot;id_product_attribute&quot;:&quot;0&quot;,&quot;quantity_wanted&quot;:1,&quot;extraContent&quot;:[{&quot;title&quot;:&quot;&lt;span class=\&quot;iqitreviews-title float-left\&quot;&gt;Opiniones&lt;\/span&gt; &lt;span class=\&quot;iqitreviews-nb\&quot;&gt;(0)&lt;\/span&gt;&quot;,&quot;content&quot;:&quot;\n&lt;div id=\&quot;iqit-reviews\&quot; class=\&quot;mt-3\&quot;&gt;\n\n    &lt;div id=\&quot;iqit-reviews-top\&quot;&gt;\n        &lt;div class=\&quot;row justify-content-between align-items-center\&quot;&gt;\n\n            &lt;div class=\&quot;col mb-3\&quot;&gt;\n                            &lt;div id=\&quot;iqitreviews-snippet\&quot;&gt;No reviews&lt;\/div&gt;\n                    &lt;\/div&gt;\n\n        \n    &lt;\/div&gt; &lt;!-- \/ .row --&gt;\n&lt;\/div&gt;&lt;!-- \/ #iqit-reviews-top --&gt;\n\n\n&lt;div class=\&quot;col-xs-12 alert alert-success hidden-xs-up\&quot;\n     id=\&quot;iqitreviews-productreview-form-success-alert\&quot;&gt;\n&lt;\/div&gt;\n\n\n\n\n\n&lt;\/div&gt;\n\n&quot;,&quot;attr&quot;:{&quot;id&quot;:&quot;iqit-reviews-tab&quot;,&quot;class&quot;:&quot;&quot;,&quot;data-iqitextra&quot;:&quot;iqit-reviews-tab&quot;},&quot;moduleName&quot;:&quot;iqitreviews&quot;}],&quot;allow_oosp&quot;:0,&quot;category&quot;:&quot;aire-acondicionado&quot;,&quot;category_name&quot;:&quot;Aire Acondicionado&quot;,&quot;link&quot;:&quot;\/tienda\/aire-acondicionado\/1944-life-12-1-ton-frio-calor-220v.html&quot;,&quot;attribute_price&quot;:0,&quot;price_tax_exc&quot;:5393.9637929999999,&quot;price_without_reduction&quot;:10428.33,&quot;reduction&quot;:4171.3320000000003,&quot;specific_prices&quot;:{&quot;id_specific_price&quot;:&quot;15572&quot;,&quot;id_specific_price_rule&quot;:&quot;0&quot;,&quot;id_cart&quot;:&quot;0&quot;,&quot;id_product&quot;:&quot;1944&quot;,&quot;id_shop&quot;:&quot;1&quot;,&quot;id_shop_group&quot;:&quot;0&quot;,&quot;id_currency&quot;:&quot;0&quot;,&quot;id_country&quot;:&quot;0&quot;,&quot;id_group&quot;:&quot;0&quot;,&quot;id_customer&quot;:&quot;0&quot;,&quot;id_product_attribute&quot;:&quot;0&quot;,&quot;price&quot;:&quot;-1.000000&quot;,&quot;from_quantity&quot;:&quot;1&quot;,&quot;reduction&quot;:&quot;0.400000&quot;,&quot;reduction_tax&quot;:&quot;1&quot;,&quot;reduction_type&quot;:&quot;percentage&quot;,&quot;from&quot;:&quot;0000-00-00 00:00:00&quot;,&quot;to&quot;:&quot;0000-00-00 00:00:00&quot;,&quot;score&quot;:&quot;48&quot;},&quot;quantity&quot;:12527,&quot;quantity_all_versions&quot;:12527,&quot;id_image&quot;:&quot;mx-default&quot;,&quot;features&quot;:[{&quot;name&quot;:&quot;Toneladas&quot;,&quot;value&quot;:&quot;1 TON&quot;,&quot;id_feature&quot;:&quot;6&quot;,&quot;position&quot;:&quot;0&quot;},{&quot;name&quot;:&quot;Voltaje&quot;,&quot;value&quot;:&quot;220V&quot;,&quot;id_feature&quot;:&quot;7&quot;,&quot;position&quot;:&quot;1&quot;},{&quot;name&quot;:&quot;Refrigerante&quot;,&quot;value&quot;:&quot;R410A&quot;,&quot;id_feature&quot;:&quot;8&quot;,&quot;position&quot;:&quot;2&quot;},{&quot;name&quot;:&quot;Tipo Compresor&quot;,&quot;value&quot;:&quot;Convencional&quot;,&quot;id_feature&quot;:&quot;13&quot;,&quot;position&quot;:&quot;6&quot;},{&quot;name&quot;:&quot;Modo&quot;,&quot;value&quot;:&quot;Fr\u00edo \/ Calor&quot;,&quot;id_feature&quot;:&quot;16&quot;,&quot;position&quot;:&quot;9&quot;}],&quot;attachments&quot;:[{&quot;id_product&quot;:&quot;1944&quot;,&quot;id_attachment&quot;:&quot;19&quot;,&quot;file&quot;:&quot;fd5e7b24c2600f2e77df5e2182935ccbe6d7905a&quot;,&quot;file_name&quot;:&quot;minisplit_life12plus.pdf&quot;,&quot;file_size&quot;:&quot;805934&quot;,&quot;mime&quot;:&quot;application\/pdf&quot;,&quot;id_lang&quot;:&quot;2&quot;,&quot;name&quot;:&quot;Ficha t\u00e9cnica LIFE 12 +&quot;,&quot;description&quot;:&quot;&quot;,&quot;file_size_formatted&quot;:&quot;787.04KB&quot;}],&quot;virtual&quot;:0,&quot;pack&quot;:0,&quot;packItems&quot;:[],&quot;nopackprice&quot;:0,&quot;customization_required&quot;:false,&quot;rate&quot;:16,&quot;tax_name&quot;:&quot;IVA MX 16%&quot;,&quot;ecotax_rate&quot;:0,&quot;unit_price&quot;:&quot;&quot;,&quot;customizations&quot;:{&quot;fields&quot;:[]},&quot;id_customization&quot;:0,&quot;is_customizable&quot;:false,&quot;show_quantities&quot;:true,&quot;quantity_label&quot;:&quot;Art\u00edculos&quot;,&quot;quantity_discounts&quot;:[],&quot;customer_group_discount&quot;:0,&quot;images&quot;:[{&quot;bySize&quot;:{&quot;small_default&quot;:{&quot;url&quot;:&quot;\/tienda\/9252-small_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;cart_default&quot;:{&quot;url&quot;:&quot;\/tienda\/9252-cart_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:125,&quot;height&quot;:162},&quot;home_default&quot;:{&quot;url&quot;:&quot;\/tienda\/9252-home_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:236,&quot;height&quot;:305},&quot;large_default&quot;:{&quot;url&quot;:&quot;\/tienda\/9252-large_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;medium_default&quot;:{&quot;url&quot;:&quot;\/tienda\/9252-medium_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:452,&quot;height&quot;:584},&quot;thickbox_default&quot;:{&quot;url&quot;:&quot;\/tienda\/9252-thickbox_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422}},&quot;small&quot;:{&quot;url&quot;:&quot;\/tienda\/9252-small_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;medium&quot;:{&quot;url&quot;:&quot;\/tienda\/9252-large_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;large&quot;:{&quot;url&quot;:&quot;\/tienda\/9252-thickbox_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422},&quot;legend&quot;:&quot;&quot;,&quot;id_image&quot;:&quot;9252&quot;,&quot;cover&quot;:&quot;1&quot;,&quot;position&quot;:&quot;1&quot;,&quot;associatedVariants&quot;:[]},{&quot;bySize&quot;:{&quot;small_default&quot;:{&quot;url&quot;:&quot;\/tienda\/9253-small_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;cart_default&quot;:{&quot;url&quot;:&quot;\/tienda\/9253-cart_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:125,&quot;height&quot;:162},&quot;home_default&quot;:{&quot;url&quot;:&quot;\/tienda\/9253-home_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:236,&quot;height&quot;:305},&quot;large_default&quot;:{&quot;url&quot;:&quot;\/tienda\/9253-large_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;medium_default&quot;:{&quot;url&quot;:&quot;\/tienda\/9253-medium_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:452,&quot;height&quot;:584},&quot;thickbox_default&quot;:{&quot;url&quot;:&quot;\/tienda\/9253-thickbox_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422}},&quot;small&quot;:{&quot;url&quot;:&quot;\/tienda\/9253-small_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;medium&quot;:{&quot;url&quot;:&quot;\/tienda\/9253-large_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;large&quot;:{&quot;url&quot;:&quot;\/tienda\/9253-thickbox_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422},&quot;legend&quot;:&quot;&quot;,&quot;id_image&quot;:&quot;9253&quot;,&quot;cover&quot;:null,&quot;position&quot;:&quot;2&quot;,&quot;associatedVariants&quot;:[]}],&quot;cover&quot;:{&quot;bySize&quot;:{&quot;small_default&quot;:{&quot;url&quot;:&quot;\/tienda\/9252-small_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;cart_default&quot;:{&quot;url&quot;:&quot;\/tienda\/9252-cart_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:125,&quot;height&quot;:162},&quot;home_default&quot;:{&quot;url&quot;:&quot;\/tienda\/9252-home_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:236,&quot;height&quot;:305},&quot;large_default&quot;:{&quot;url&quot;:&quot;\/tienda\/9252-large_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;medium_default&quot;:{&quot;url&quot;:&quot;\/tienda\/9252-medium_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:452,&quot;height&quot;:584},&quot;thickbox_default&quot;:{&quot;url&quot;:&quot;\/tienda\/9252-thickbox_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422}},&quot;small&quot;:{&quot;url&quot;:&quot;\/tienda\/9252-small_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;medium&quot;:{&quot;url&quot;:&quot;\/tienda\/9252-large_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;large&quot;:{&quot;url&quot;:&quot;\/tienda\/9252-thickbox_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422},&quot;legend&quot;:&quot;&quot;,&quot;id_image&quot;:&quot;9252&quot;,&quot;cover&quot;:&quot;1&quot;,&quot;position&quot;:&quot;1&quot;,&quot;associatedVariants&quot;:[]},&quot;has_discount&quot;:true,&quot;discount_type&quot;:&quot;percentage&quot;,&quot;discount_percentage&quot;:&quot;-40%&quot;,&quot;discount_percentage_absolute&quot;:&quot;40%&quot;,&quot;discount_amount&quot;:&quot;$4,171.33&quot;,&quot;discount_amount_to_display&quot;:&quot;-$4,171.33&quot;,&quot;price_amount&quot;:6257,&quot;unit_price_full&quot;:&quot;&quot;,&quot;show_availability&quot;:true,&quot;availability_date&quot;:null,&quot;availability_message&quot;:&quot;&quot;,&quot;availability&quot;:&quot;available&quot;}" class="clearfix js-product-details">
+                    <div id="product-details" data-product="{&quot;id_shop_default&quot;:&quot;1&quot;,&quot;id_manufacturer&quot;:&quot;0&quot;,&quot;id_supplier&quot;:&quot;0&quot;,&quot;reference&quot;:&quot;SETCLC121T&quot;,&quot;is_virtual&quot;:&quot;0&quot;,&quot;delivery_in_stock&quot;:&quot;&quot;,&quot;delivery_out_stock&quot;:&quot;&quot;,&quot;id_category_default&quot;:&quot;11&quot;,&quot;on_sale&quot;:&quot;0&quot;,&quot;online_only&quot;:&quot;0&quot;,&quot;ecotax&quot;:0,&quot;minimal_quantity&quot;:&quot;1&quot;,&quot;low_stock_threshold&quot;:&quot;5&quot;,&quot;low_stock_alert&quot;:&quot;0&quot;,&quot;price&quot;:&quot;$6,257.00&quot;,&quot;unity&quot;:&quot;&quot;,&quot;unit_price_ratio&quot;:&quot;0.000000&quot;,&quot;additional_shipping_cost&quot;:&quot;0.000000&quot;,&quot;customizable&quot;:&quot;0&quot;,&quot;text_fields&quot;:&quot;0&quot;,&quot;uploadable_files&quot;:&quot;0&quot;,&quot;redirect_type&quot;:&quot;301-category&quot;,&quot;id_type_redirected&quot;:&quot;0&quot;,&quot;available_for_order&quot;:&quot;1&quot;,&quot;available_date&quot;:&quot;0000-00-00&quot;,&quot;show_condition&quot;:&quot;0&quot;,&quot;condition&quot;:&quot;new&quot;,&quot;show_price&quot;:&quot;1&quot;,&quot;indexed&quot;:&quot;1&quot;,&quot;visibility&quot;:&quot;both&quot;,&quot;cache_default_attribute&quot;:&quot;0&quot;,&quot;advanced_stock_management&quot;:&quot;0&quot;,&quot;date_add&quot;:&quot;2022-07-07 18:52:01&quot;,&quot;date_upd&quot;:&quot;2026-02-12 13:09:58&quot;,&quot;pack_stock_type&quot;:&quot;3&quot;,&quot;meta_description&quot;:&quot;LifLife 12 + 1 Tonelada 220 Fr\u00edo  Calor SETCLC121T&quot;,&quot;meta_keywords&quot;:&quot;&quot;,&quot;meta_title&quot;:&quot;Minisplit Life 12 + 1 Tonelada 220 Fr\u00edo  Calor  SETCLC121T&quot;,&quot;link_rewrite&quot;:&quot;life-12-1-ton-frio-calor-220v&quot;,&quot;name&quot;:&quot;Life 12 + 1 Ton Fr\u00edo - Calor  220v&quot;,&quot;description&quot;:&quot;&lt;p&gt;Life 12 + 1 Tonelada, Fr\u00edo\u00a0- Carlor\u00a0220v&lt;br \/&gt;&lt;br \/&gt;Library App&lt;br \/&gt;Cuenta con una librer\u00eda de codigos para facilitar el diagn\u00f3stico, mediante una aplicaci\u00f3n m\u00f3vil, podemos descifrar la causa de alerta emitida con el Digital - Assisted-Diagnosys.\u00a0&lt;br \/&gt;&lt;br \/&gt;&lt;\/p&gt;\n&lt;p&gt;Leak Detect&lt;br \/&gt;Protege el compresor ante una eventual p\u00e9rdida de refrigerante, su rutina de protecci\u00f3n Safety Shut Down apaga la unidad si se detecta que refrigerante se encuentra en nivel cr\u00edtico, evitando el da\u00f1o severo al mecanismo de compresi\u00f3n.\u00a0&lt;\/p&gt;\n&lt;p&gt;LT Sensor&lt;br \/&gt;Interrumpe el funcionamiento si detecta con su Low Temperature Sensor que la temperatura del evaporador (unidad interior) es m\u00e1s baja de lo normal, evitando el congelamiento, derramamiento de agua o da\u00f1o interno en el elemento de compresi\u00f3n.\u00a0&lt;\/p&gt;\n&lt;p&gt;Ozone Fin&lt;br \/&gt;Aplicamos capa protectora adicional Coating Protector tanto al intercambiador exterior como el interior aumentando su durabilidad de los materiales ante ambientes corrosivos.\u00a0&lt;\/p&gt;\n&lt;p&gt;New RC\u00a0&lt;br \/&gt;La nueva generaci\u00f3n Life 12+ estrena control remoto, sus caracter\u00edsticas principales: iluminaci\u00f3n posterior, mayor tama\u00f1o de despliegue (display), nuevas y mejores funciones. Una experiencia a nivel superior&lt;br \/&gt;&lt;br \/&gt;X Blade&lt;br \/&gt;El dise\u00f1o aerodin\u00e1mico aplicado al aspa del condensador elimina turbulencia, mejora el intercambio del flujo de aire y reduce la fricci\u00f3n al girar en altas revoluciones. Aligerando el esfuerzo realizado por el motor.\u00a0&lt;\/p&gt;\n&lt;p&gt;Healty Clean&lt;br \/&gt;Se activar\u00e1 una corriente de aire justo despu\u00e9s de utilizar modo enfriamiento para retirar la humedad en el intercambiador del evaporador (unidad interior), esto ayuda a eliminar los malos aromas y disminuye la formaci\u00f3n de hongos.\u00a0&lt;\/p&gt;\n&lt;p&gt;Cooling Boost&lt;br \/&gt;Ideal para esos d\u00edas de calor extremo, presiona una sola tecla y activar\u00e1s turbo enfriamiento, retira la carga t\u00e9rmica acumulada en forma r\u00e1pida y obt\u00e9n confort en un menor tiempo.\u00a0&lt;\/p&gt;\n&lt;p&gt;My Sensor&lt;br \/&gt;Esta funci\u00f3n extiende el alcance del sensor de temperatura hasta el control remoto, registrando la temperatura circulante en tiempo real y limita el enfriamiento si as\u00ed se requiere.\u00a0&lt;\/p&gt;\n&lt;p&gt;&lt;\/p&gt;&quot;,&quot;description_short&quot;:&quot;&lt;p&gt;\u00a1Life 12+! tiene para ti&lt;br \/&gt;&lt;br \/&gt;&lt;\/p&gt;\n&lt;p&gt;- Library App\u00a0&lt;br \/&gt;- Leak Detect&lt;br \/&gt;- LT Sensor&lt;br \/&gt;- Ozone Fin&lt;br \/&gt;- New RC&lt;br \/&gt;- X - Blade&lt;br \/&gt;- Healty Clean&lt;br \/&gt;- Cooling Boost&lt;br \/&gt;- My Sensor&lt;\/p&gt;\n&lt;p class=\&quot;MsoNormal\&quot; style=\&quot;margin-top:0px;margin-bottom:10px;color:#484848;font-size:14px;font-family:Arial;\&quot;&gt;&lt;strong&gt;* No incluye instalaci\u00f3n.&lt;\/strong&gt;&lt;\/p&gt;\n&lt;p class=\&quot;MsoNormal\&quot; style=\&quot;margin-top:0px;margin-bottom:10px;color:#484848;font-size:14px;font-family:Arial;\&quot;&gt;Este equipo cuenta con un a\u00f1o de garant\u00eda y 6 a\u00f1os en el compresor, solo si se instala a trav\u00e9s de un Centro de Servicios Autorizado Mirage (CESAM), cualquier incidencia deber\u00e1 ser tratado con el CESAM que instal\u00f3 su equipo, siempre y cuando cumpla con lo dispuesto en nuestros t\u00e9rminos y condiciones.\u00a0&lt;\/p&gt;&quot;,&quot;available_now&quot;:&quot;&quot;,&quot;available_later&quot;:&quot;&quot;,&quot;id&quot;:1944,&quot;id_product&quot;:1944,&quot;out_of_stock&quot;:2,&quot;new&quot;:0,&quot;id_product_attribute&quot;:&quot;0&quot;,&quot;quantity_wanted&quot;:1,&quot;extraContent&quot;:[{&quot;title&quot;:&quot;&lt;span class=\&quot;iqitreviews-title float-left\&quot;&gt;Opiniones&lt;\/span&gt; &lt;span class=\&quot;iqitreviews-nb\&quot;&gt;(0)&lt;\/span&gt;&quot;,&quot;content&quot;:&quot;\n&lt;div id=\&quot;iqit-reviews\&quot; class=\&quot;mt-3\&quot;&gt;\n\n    &lt;div id=\&quot;iqit-reviews-top\&quot;&gt;\n        &lt;div class=\&quot;row justify-content-between align-items-center\&quot;&gt;\n\n            &lt;div class=\&quot;col mb-3\&quot;&gt;\n                            &lt;div id=\&quot;iqitreviews-snippet\&quot;&gt;No reviews&lt;\/div&gt;\n                    &lt;\/div&gt;\n\n        \n    &lt;\/div&gt; &lt;!-- \/ .row --&gt;\n&lt;\/div&gt;&lt;!-- \/ #iqit-reviews-top --&gt;\n\n\n&lt;div class=\&quot;col-xs-12 alert alert-success hidden-xs-up\&quot;\n     id=\&quot;iqitreviews-productreview-form-success-alert\&quot;&gt;\n&lt;\/div&gt;\n\n\n\n\n\n&lt;\/div&gt;\n\n&quot;,&quot;attr&quot;:{&quot;id&quot;:&quot;iqit-reviews-tab&quot;,&quot;class&quot;:&quot;&quot;,&quot;data-iqitextra&quot;:&quot;iqit-reviews-tab&quot;},&quot;moduleName&quot;:&quot;iqitreviews&quot;}],&quot;allow_oosp&quot;:0,&quot;category&quot;:&quot;aire-acondicionado&quot;,&quot;category_name&quot;:&quot;Aire Acondicionado&quot;,&quot;link&quot;:&quot;\/tienda\/aire-acondicionado\/1944-life-12-1-ton-frio-calor-220v.html&quot;,&quot;attribute_price&quot;:0,&quot;price_tax_exc&quot;:5393.9637929999999,&quot;price_without_reduction&quot;:10428.33,&quot;reduction&quot;:4171.3320000000003,&quot;specific_prices&quot;:{&quot;id_specific_price&quot;:&quot;15572&quot;,&quot;id_specific_price_rule&quot;:&quot;0&quot;,&quot;id_cart&quot;:&quot;0&quot;,&quot;id_product&quot;:&quot;1944&quot;,&quot;id_shop&quot;:&quot;1&quot;,&quot;id_shop_group&quot;:&quot;0&quot;,&quot;id_currency&quot;:&quot;0&quot;,&quot;id_country&quot;:&quot;0&quot;,&quot;id_group&quot;:&quot;0&quot;,&quot;id_customer&quot;:&quot;0&quot;,&quot;id_product_attribute&quot;:&quot;0&quot;,&quot;price&quot;:&quot;-1.000000&quot;,&quot;from_quantity&quot;:&quot;1&quot;,&quot;reduction&quot;:&quot;0.400000&quot;,&quot;reduction_tax&quot;:&quot;1&quot;,&quot;reduction_type&quot;:&quot;percentage&quot;,&quot;from&quot;:&quot;0000-00-00 00:00:00&quot;,&quot;to&quot;:&quot;0000-00-00 00:00:00&quot;,&quot;score&quot;:&quot;48&quot;},&quot;quantity&quot;:12527,&quot;quantity_all_versions&quot;:12527,&quot;id_image&quot;:&quot;mx-default&quot;,&quot;features&quot;:[{&quot;name&quot;:&quot;Toneladas&quot;,&quot;value&quot;:&quot;1 TON&quot;,&quot;id_feature&quot;:&quot;6&quot;,&quot;position&quot;:&quot;0&quot;},{&quot;name&quot;:&quot;Voltaje&quot;,&quot;value&quot;:&quot;220V&quot;,&quot;id_feature&quot;:&quot;7&quot;,&quot;position&quot;:&quot;1&quot;},{&quot;name&quot;:&quot;Refrigerante&quot;,&quot;value&quot;:&quot;R410A&quot;,&quot;id_feature&quot;:&quot;8&quot;,&quot;position&quot;:&quot;2&quot;},{&quot;name&quot;:&quot;Tipo Compresor&quot;,&quot;value&quot;:&quot;Convencional&quot;,&quot;id_feature&quot;:&quot;13&quot;,&quot;position&quot;:&quot;6&quot;},{&quot;name&quot;:&quot;Modo&quot;,&quot;value&quot;:&quot;Fr\u00edo \/ Calor&quot;,&quot;id_feature&quot;:&quot;16&quot;,&quot;position&quot;:&quot;9&quot;}],&quot;attachments&quot;:[{&quot;id_product&quot;:&quot;1944&quot;,&quot;id_attachment&quot;:&quot;19&quot;,&quot;file&quot;:&quot;fd5e7b24c2600f2e77df5e2182935ccbe6d7905a&quot;,&quot;file_name&quot;:&quot;minisplit_life12plus.pdf&quot;,&quot;file_size&quot;:&quot;805934&quot;,&quot;mime&quot;:&quot;application\/pdf&quot;,&quot;id_lang&quot;:&quot;2&quot;,&quot;name&quot;:&quot;Ficha t\u00e9cnica LIFE 12 +&quot;,&quot;description&quot;:&quot;&quot;,&quot;file_size_formatted&quot;:&quot;787.04KB&quot;}],&quot;virtual&quot;:0,&quot;pack&quot;:0,&quot;packItems&quot;:[],&quot;nopackprice&quot;:0,&quot;customization_required&quot;:false,&quot;rate&quot;:16,&quot;tax_name&quot;:&quot;IVA MX 16%&quot;,&quot;ecotax_rate&quot;:0,&quot;unit_price&quot;:&quot;&quot;,&quot;customizations&quot;:{&quot;fields&quot;:[]},&quot;id_customization&quot;:0,&quot;is_customizable&quot;:false,&quot;show_quantities&quot;:true,&quot;quantity_label&quot;:&quot;Art\u00edculos&quot;,&quot;quantity_discounts&quot;:[],&quot;customer_group_discount&quot;:0,&quot;images&quot;:[{&quot;bySize&quot;:{&quot;small_default&quot;:{&quot;url&quot;:&quot;\/9252-small_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;cart_default&quot;:{&quot;url&quot;:&quot;\/9252-cart_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:125,&quot;height&quot;:162},&quot;home_default&quot;:{&quot;url&quot;:&quot;\/9252-home_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:236,&quot;height&quot;:305},&quot;large_default&quot;:{&quot;url&quot;:&quot;\/9252-large_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;medium_default&quot;:{&quot;url&quot;:&quot;\/9252-medium_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:452,&quot;height&quot;:584},&quot;thickbox_default&quot;:{&quot;url&quot;:&quot;\/9252-thickbox_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422}},&quot;small&quot;:{&quot;url&quot;:&quot;\/9252-small_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;medium&quot;:{&quot;url&quot;:&quot;\/9252-large_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;large&quot;:{&quot;url&quot;:&quot;\/9252-thickbox_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422},&quot;legend&quot;:&quot;&quot;,&quot;id_image&quot;:&quot;9252&quot;,&quot;cover&quot;:&quot;1&quot;,&quot;position&quot;:&quot;1&quot;,&quot;associatedVariants&quot;:[]},{&quot;bySize&quot;:{&quot;small_default&quot;:{&quot;url&quot;:&quot;\/9253-small_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;cart_default&quot;:{&quot;url&quot;:&quot;\/9253-cart_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:125,&quot;height&quot;:162},&quot;home_default&quot;:{&quot;url&quot;:&quot;\/9253-home_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:236,&quot;height&quot;:305},&quot;large_default&quot;:{&quot;url&quot;:&quot;\/9253-large_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;medium_default&quot;:{&quot;url&quot;:&quot;\/9253-medium_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:452,&quot;height&quot;:584},&quot;thickbox_default&quot;:{&quot;url&quot;:&quot;\/9253-thickbox_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422}},&quot;small&quot;:{&quot;url&quot;:&quot;\/9253-small_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;medium&quot;:{&quot;url&quot;:&quot;\/9253-large_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;large&quot;:{&quot;url&quot;:&quot;\/9253-thickbox_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422},&quot;legend&quot;:&quot;&quot;,&quot;id_image&quot;:&quot;9253&quot;,&quot;cover&quot;:null,&quot;position&quot;:&quot;2&quot;,&quot;associatedVariants&quot;:[]}],&quot;cover&quot;:{&quot;bySize&quot;:{&quot;small_default&quot;:{&quot;url&quot;:&quot;\/9252-small_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;cart_default&quot;:{&quot;url&quot;:&quot;\/9252-cart_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:125,&quot;height&quot;:162},&quot;home_default&quot;:{&quot;url&quot;:&quot;\/9252-home_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:236,&quot;height&quot;:305},&quot;large_default&quot;:{&quot;url&quot;:&quot;\/9252-large_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;medium_default&quot;:{&quot;url&quot;:&quot;\/9252-medium_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:452,&quot;height&quot;:584},&quot;thickbox_default&quot;:{&quot;url&quot;:&quot;\/9252-thickbox_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422}},&quot;small&quot;:{&quot;url&quot;:&quot;\/9252-small_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:98,&quot;height&quot;:127},&quot;medium&quot;:{&quot;url&quot;:&quot;\/9252-large_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:381,&quot;height&quot;:492},&quot;large&quot;:{&quot;url&quot;:&quot;\/9252-thickbox_default\/life-12-1-ton-frio-calor-220v.jpg&quot;,&quot;width&quot;:1100,&quot;height&quot;:1422},&quot;legend&quot;:&quot;&quot;,&quot;id_image&quot;:&quot;9252&quot;,&quot;cover&quot;:&quot;1&quot;,&quot;position&quot;:&quot;1&quot;,&quot;associatedVariants&quot;:[]},&quot;has_discount&quot;:true,&quot;discount_type&quot;:&quot;percentage&quot;,&quot;discount_percentage&quot;:&quot;-40%&quot;,&quot;discount_percentage_absolute&quot;:&quot;40%&quot;,&quot;discount_amount&quot;:&quot;$4,171.33&quot;,&quot;discount_amount_to_display&quot;:&quot;-$4,171.33&quot;,&quot;price_amount&quot;:6257,&quot;unit_price_full&quot;:&quot;&quot;,&quot;show_availability&quot;:true,&quot;availability_date&quot;:null,&quot;availability_message&quot;:&quot;&quot;,&quot;availability&quot;:&quot;available&quot;}" class="clearfix js-product-details">
 
             <section class="product-features">
             <dl class="data-sheet">
@@ -1566,20 +1629,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/aire-acondicionado/2216-life-12-1-ton-frio-220v.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/aire-acondicionado/2216-life-12-1-ton-frio-220v.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/10040-home_default/life-12-1-ton-frio-220v.jpg"
+                                                    data-src="/10040-home_default/life-12-1-ton-frio-220v.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Life 12 + 1 Ton Frío 220v"
-                        data-full-size-image-url="/tienda_assets/10040-thickbox_default/life-12-1-ton-frio-220v.jpg"
+                        data-full-size-image-url="/10040-thickbox_default/life-12-1-ton-frio-220v.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/10041-home_default/life-12-1-ton-frio-220v.jpg"
+                                        data-src="/10041-home_default/life-12-1-ton-frio-220v.jpg"
                                         width="236"
                                         height="305"
                                         alt="Life 12 + 1 Ton Frío 220v 2"
@@ -1602,7 +1665,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="2216"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -1639,7 +1702,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/aire-acondicionado/2216-life-12-1-ton-frio-220v.html">Life 12 + 1 Ton Frío 220v</a>
+            <a href="/tienda/aire-acondicionado/2216-life-12-1-ton-frio-220v.html">Life 12 + 1 Ton Frío 220v</a>
         </h2>
     
 
@@ -1647,7 +1710,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/aire-acondicionado/2216-life-12-1-ton-frio-220v.html">SETCLF121T</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/aire-acondicionado/2216-life-12-1-ton-frio-220v.html">SETCLF121T</a></div>    
 
     
         
@@ -1659,7 +1722,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/aire-acondicionado/2216-life-12-1-ton-frio-220v.html"> <span  class="product-price" content="5808" aria-label="Precio">
+                <a href="/tienda/aire-acondicionado/2216-life-12-1-ton-frio-220v.html"> <span  class="product-price" content="5808" aria-label="Precio">
                                                                             $5,808.00
                                             </span></a>
                                     
@@ -1678,7 +1741,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/aire-acondicionado/2216-life-12-1-ton-frio-220v.html">¡Life 12+! tiene para ti
+            <a href="/tienda/aire-acondicionado/2216-life-12-1-ton-frio-220v.html">¡Life 12+! tiene para ti
 - Library App - Leak Detect- LT Sensor- Ozone Fin- New RC- X - Blade- Healty Clean- Cooling Boost- My Sensor
 * No incluye instalación.
 Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si se instala a través de un Centro de Servicios Autorizado Mirage (CESAM), cualquier incidencia deberá ser tratado con el...</a>
@@ -1691,7 +1754,7 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
 <div class="product-add-cart js-product-add-cart-2216-0" >
 
                 
-            <a href="/tienda_assets/aire-acondicionado/2216-life-12-1-ton-frio-220v.html"
+            <a href="/tienda/aire-acondicionado/2216-life-12-1-ton-frio-220v.html"
            class="btn btn-product-list"
         > View
         </a>
@@ -1722,20 +1785,20 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/aire-acondicionado/2183-inverter-v32-1-ton-frio-calor-220.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/aire-acondicionado/2183-inverter-v32-1-ton-frio-calor-220.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/9885-home_default/inverter-v32-1-ton-frio-calor-220.jpg"
+                                                    data-src="/9885-home_default/inverter-v32-1-ton-frio-calor-220.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Inverter V32 1 Ton Frío - Calor 220"
-                        data-full-size-image-url="/tienda_assets/9885-thickbox_default/inverter-v32-1-ton-frio-calor-220.jpg"
+                        data-full-size-image-url="/9885-thickbox_default/inverter-v32-1-ton-frio-calor-220.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/9898-home_default/inverter-v32-1-ton-frio-calor-220.jpg"
+                                        data-src="/9898-home_default/inverter-v32-1-ton-frio-calor-220.jpg"
                                         width="236"
                                         height="305"
                                         alt="Inverter V32 1 Ton Frío - Calor 220 2"
@@ -1758,7 +1821,7 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="2183"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -1800,20 +1863,20 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/aire-acondicionado/1973-inverter-x32-2-ton-frio-calor-220.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/aire-acondicionado/1973-inverter-x32-2-ton-frio-calor-220.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/9375-home_default/inverter-x32-2-ton-frio-calor-220.jpg"
+                                                    data-src="/9375-home_default/inverter-x32-2-ton-frio-calor-220.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Inverter X32 2 Ton Frío - Calor 220"
-                        data-full-size-image-url="/tienda_assets/9375-thickbox_default/inverter-x32-2-ton-frio-calor-220.jpg"
+                        data-full-size-image-url="/9375-thickbox_default/inverter-x32-2-ton-frio-calor-220.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/9374-home_default/inverter-x32-2-ton-frio-calor-220.jpg"
+                                        data-src="/9374-home_default/inverter-x32-2-ton-frio-calor-220.jpg"
                                         width="236"
                                         height="305"
                                         alt="Inverter X32 2 Ton Frío - Calor 220 2"
@@ -1836,7 +1899,7 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1973"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -1878,20 +1941,20 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/aire-acondicionado/2254-inverter-x-1-ton-frio-calor-220.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/aire-acondicionado/2254-inverter-x-1-ton-frio-calor-220.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/10196-home_default/inverter-x-1-ton-frio-calor-220.jpg"
+                                                    data-src="/10196-home_default/inverter-x-1-ton-frio-calor-220.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Inverter X 1 Ton Frio - Calor 220"
-                        data-full-size-image-url="/tienda_assets/10196-thickbox_default/inverter-x-1-ton-frio-calor-220.jpg"
+                        data-full-size-image-url="/10196-thickbox_default/inverter-x-1-ton-frio-calor-220.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/10194-home_default/inverter-x-1-ton-frio-calor-220.jpg"
+                                        data-src="/10194-home_default/inverter-x-1-ton-frio-calor-220.jpg"
                                         width="236"
                                         height="305"
                                         alt="Inverter X 1 Ton Frio - Calor 220 2"
@@ -1915,7 +1978,7 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="2254"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -1957,20 +2020,20 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/aire-acondicionado/2221-magnum-22-2-ton-frio-220v.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/aire-acondicionado/2221-magnum-22-2-ton-frio-220v.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/10055-home_default/magnum-22-2-ton-frio-220v.jpg"
+                                                    data-src="/10055-home_default/magnum-22-2-ton-frio-220v.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Magnum 22 2 Ton Frío 220v"
-                        data-full-size-image-url="/tienda_assets/10055-thickbox_default/magnum-22-2-ton-frio-220v.jpg"
+                        data-full-size-image-url="/10055-thickbox_default/magnum-22-2-ton-frio-220v.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/10053-home_default/magnum-22-2-ton-frio-220v.jpg"
+                                        data-src="/10053-home_default/magnum-22-2-ton-frio-220v.jpg"
                                         width="236"
                                         height="305"
                                         alt="Magnum 22 2 Ton Frío 220v 2"
@@ -1993,7 +2056,7 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="2221"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2041,20 +2104,20 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/aire-acondicionado/2248-inverter-x5-1-tonelada-solo-frio-110v.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/aire-acondicionado/2248-inverter-x5-1-tonelada-solo-frio-110v.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/10167-home_default/inverter-x5-1-tonelada-solo-frio-110v.jpg"
+                                                    data-src="/10167-home_default/inverter-x5-1-tonelada-solo-frio-110v.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="X5 Inverter 1 Tonelada solo Frío  110v"
-                        data-full-size-image-url="/tienda_assets/10167-thickbox_default/inverter-x5-1-tonelada-solo-frio-110v.jpg"
+                        data-full-size-image-url="/10167-thickbox_default/inverter-x5-1-tonelada-solo-frio-110v.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/10168-home_default/inverter-x5-1-tonelada-solo-frio-110v.jpg"
+                                        data-src="/10168-home_default/inverter-x5-1-tonelada-solo-frio-110v.jpg"
                                         width="236"
                                         height="305"
                                         alt="X5 Inverter 1 Tonelada solo Frío  110v 2"
@@ -2078,7 +2141,7 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="2248"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2120,20 +2183,20 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/aire-acondicionado/1955-nex-2-ton-solo-frio-220v.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/aire-acondicionado/1955-nex-2-ton-solo-frio-220v.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/9289-home_default/nex-2-ton-solo-frio-220v.jpg"
+                                                    data-src="/9289-home_default/nex-2-ton-solo-frio-220v.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="NEX 2 Ton solo Frío 220v"
-                        data-full-size-image-url="/tienda_assets/9289-thickbox_default/nex-2-ton-solo-frio-220v.jpg"
+                        data-full-size-image-url="/9289-thickbox_default/nex-2-ton-solo-frio-220v.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/9288-home_default/nex-2-ton-solo-frio-220v.jpg"
+                                        data-src="/9288-home_default/nex-2-ton-solo-frio-220v.jpg"
                                         width="236"
                                         height="305"
                                         alt="NEX 2 Ton solo Frío 220v 2"
@@ -2156,7 +2219,7 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1955"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2198,20 +2261,20 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/aire-acondicionado/1970--inverter-x32-15-ton-solo-frio-220.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/aire-acondicionado/1970--inverter-x32-15-ton-solo-frio-220.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/9360-home_default/-inverter-x32-15-ton-solo-frio-220.jpg"
+                                                    data-src="/9360-home_default/-inverter-x32-15-ton-solo-frio-220.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Inverter X32 1.5 Ton Solo Frío 220"
-                        data-full-size-image-url="/tienda_assets/9360-thickbox_default/-inverter-x32-15-ton-solo-frio-220.jpg"
+                        data-full-size-image-url="/9360-thickbox_default/-inverter-x32-15-ton-solo-frio-220.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/9359-home_default/-inverter-x32-15-ton-solo-frio-220.jpg"
+                                        data-src="/9359-home_default/-inverter-x32-15-ton-solo-frio-220.jpg"
                                         width="236"
                                         height="305"
                                         alt="Inverter X32 1.5 Ton Solo Frío 220 2"
@@ -2234,7 +2297,7 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1970"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2276,20 +2339,20 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/aire-acondicionado/1994-inverter-v32-15-ton-solo-frio-220.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/aire-acondicionado/1994-inverter-v32-15-ton-solo-frio-220.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/9461-home_default/inverter-v32-15-ton-solo-frio-220.jpg"
+                                                    data-src="/9461-home_default/inverter-v32-15-ton-solo-frio-220.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Inverter V32 1.5 Ton solo Frío 220"
-                        data-full-size-image-url="/tienda_assets/9461-thickbox_default/inverter-v32-15-ton-solo-frio-220.jpg"
+                        data-full-size-image-url="/9461-thickbox_default/inverter-v32-15-ton-solo-frio-220.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/9892-home_default/inverter-v32-15-ton-solo-frio-220.jpg"
+                                        data-src="/9892-home_default/inverter-v32-15-ton-solo-frio-220.jpg"
                                         width="236"
                                         height="305"
                                         alt="Inverter V32 1.5 Ton solo Frío 220 2"
@@ -2312,7 +2375,7 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1994"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2354,20 +2417,20 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/aire-acondicionado/1950-nex-1-ton-frio-calor-110v.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/aire-acondicionado/1950-nex-1-ton-frio-calor-110v.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/9269-home_default/nex-1-ton-frio-calor-110v.jpg"
+                                                    data-src="/9269-home_default/nex-1-ton-frio-calor-110v.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="NEX 1 Ton  Frío - Calor 110v"
-                        data-full-size-image-url="/tienda_assets/9269-thickbox_default/nex-1-ton-frio-calor-110v.jpg"
+                        data-full-size-image-url="/9269-thickbox_default/nex-1-ton-frio-calor-110v.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/9268-home_default/nex-1-ton-frio-calor-110v.jpg"
+                                        data-src="/9268-home_default/nex-1-ton-frio-calor-110v.jpg"
                                         width="236"
                                         height="305"
                                         alt="NEX 1 Ton  Frío - Calor 110v 2"
@@ -2390,7 +2453,7 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1950"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2432,20 +2495,20 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/aire-acondicionado/1968-inverter-x32-1-ton-solo-frio-220.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/aire-acondicionado/1968-inverter-x32-1-ton-solo-frio-220.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/9350-home_default/inverter-x32-1-ton-solo-frio-220.jpg"
+                                                    data-src="/9350-home_default/inverter-x32-1-ton-solo-frio-220.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Inverter X32 1 Ton Solo Frío 220"
-                        data-full-size-image-url="/tienda_assets/9350-thickbox_default/inverter-x32-1-ton-solo-frio-220.jpg"
+                        data-full-size-image-url="/9350-thickbox_default/inverter-x32-1-ton-solo-frio-220.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/9349-home_default/inverter-x32-1-ton-solo-frio-220.jpg"
+                                        data-src="/9349-home_default/inverter-x32-1-ton-solo-frio-220.jpg"
                                         width="236"
                                         height="305"
                                         alt="Inverter X32 1 Ton Solo Frío 220 2"
@@ -2468,7 +2531,7 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1968"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2510,20 +2573,20 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/aire-acondicionado/1951-nex-15-ton-solo-frio-220v.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/aire-acondicionado/1951-nex-15-ton-solo-frio-220v.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/9273-home_default/nex-15-ton-solo-frio-220v.jpg"
+                                                    data-src="/9273-home_default/nex-15-ton-solo-frio-220v.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="NEX 1.5 Ton solo Frío 220v"
-                        data-full-size-image-url="/tienda_assets/9273-thickbox_default/nex-15-ton-solo-frio-220v.jpg"
+                        data-full-size-image-url="/9273-thickbox_default/nex-15-ton-solo-frio-220v.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/9272-home_default/nex-15-ton-solo-frio-220v.jpg"
+                                        data-src="/9272-home_default/nex-15-ton-solo-frio-220v.jpg"
                                         width="236"
                                         height="305"
                                         alt="NEX 1.5 Ton solo Frío 220v 2"
@@ -2546,7 +2609,7 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1951"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2602,20 +2665,20 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
                     
     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1077-quemador-de-gas-bpchb06zr02-lp.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1077-quemador-de-gas-bpchb06zr02-lp.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/1998-home_default/quemador-de-gas-bpchb06zr02-lp.jpg"
+                                                    data-src="/1998-home_default/quemador-de-gas-bpchb06zr02-lp.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="QUEMADOR DE GAS - BPCHB06ZR02-LP"
-                        data-full-size-image-url="/tienda_assets/1998-thickbox_default/quemador-de-gas-bpchb06zr02-lp.jpg"
+                        data-full-size-image-url="/1998-thickbox_default/quemador-de-gas-bpchb06zr02-lp.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/1999-home_default/quemador-de-gas-bpchb06zr02-lp.jpg"
+                                        data-src="/1999-home_default/quemador-de-gas-bpchb06zr02-lp.jpg"
                                         width="236"
                                         height="305"
                                         alt="QUEMADOR DE GAS - BPCHB06ZR02-LP 2"
@@ -2637,7 +2700,7 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1077"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2668,7 +2731,7 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
 
     
         <h2 class="h3 product-title">
-            <a href="/tienda_assets/refacciones/1077-quemador-de-gas-bpchb06zr02-lp.html">QUEMADOR DE GAS - BPCHB06ZR02-LP</a>
+            <a href="/tienda/refacciones/1077-quemador-de-gas-bpchb06zr02-lp.html">QUEMADOR DE GAS - BPCHB06ZR02-LP</a>
         </h2>
     
 
@@ -2676,7 +2739,7 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
             
 
     
-                    <div class="product-reference text-muted"> <a href="/tienda_assets/refacciones/1077-quemador-de-gas-bpchb06zr02-lp.html">BPCHB06ZR02-LP</a></div>    
+                    <div class="product-reference text-muted"> <a href="/tienda/refacciones/1077-quemador-de-gas-bpchb06zr02-lp.html">BPCHB06ZR02-LP</a></div>    
 
     
         
@@ -2688,7 +2751,7 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
     
                     <div class="product-price-and-shipping">
                 
-                <a href="/tienda_assets/refacciones/1077-quemador-de-gas-bpchb06zr02-lp.html"> <span  class="product-price" content="330" aria-label="Precio">
+                <a href="/tienda/refacciones/1077-quemador-de-gas-bpchb06zr02-lp.html"> <span  class="product-price" content="330" aria-label="Precio">
                                                                             $330.00
                                             </span></a>
                                 
@@ -2704,7 +2767,7 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
 
     
         <div class="product-description-short text-muted">
-            <a href="/tienda_assets/refacciones/1077-quemador-de-gas-bpchb06zr02-lp.html">QUEMADOR DE GAS - BPCHB06ZR02-LP</a>
+            <a href="/tienda/refacciones/1077-quemador-de-gas-bpchb06zr02-lp.html">QUEMADOR DE GAS - BPCHB06ZR02-LP</a>
         </div>
     
 
@@ -2714,7 +2777,7 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
 <div class="product-add-cart js-product-add-cart-1077-0" >
 
                 
-            <form action="/tienda_assets/carrito" method="post">
+            <form action="/tienda/carrito" method="post">
 
             <input type="hidden" name="id_product" value="1077">
 
@@ -2766,20 +2829,20 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/aire-acondicionado/2218-life-12-2-ton-frio-220v.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/aire-acondicionado/2218-life-12-2-ton-frio-220v.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/10044-home_default/life-12-2-ton-frio-220v.jpg"
+                                                    data-src="/10044-home_default/life-12-2-ton-frio-220v.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Life 12 + 2 Ton Frío 220v"
-                        data-full-size-image-url="/tienda_assets/10044-thickbox_default/life-12-2-ton-frio-220v.jpg"
+                        data-full-size-image-url="/10044-thickbox_default/life-12-2-ton-frio-220v.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/10045-home_default/life-12-2-ton-frio-220v.jpg"
+                                        data-src="/10045-home_default/life-12-2-ton-frio-220v.jpg"
                                         width="236"
                                         height="305"
                                         alt="Life 12 + 2 Ton Frío 220v 2"
@@ -2802,7 +2865,7 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="2218"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2844,20 +2907,20 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/refacciones/1030-valvula-de-linea-de-gas-02090300323-.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/refacciones/1030-valvula-de-linea-de-gas-02090300323-.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/1885-home_default/valvula-de-linea-de-gas-02090300323-.jpg"
+                                                    data-src="/1885-home_default/valvula-de-linea-de-gas-02090300323-.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="VALVULA DE LINEA DE GAS LP, FLUX 10LTS"
-                        data-full-size-image-url="/tienda_assets/1885-thickbox_default/valvula-de-linea-de-gas-02090300323-.jpg"
+                        data-full-size-image-url="/1885-thickbox_default/valvula-de-linea-de-gas-02090300323-.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/1886-home_default/valvula-de-linea-de-gas-02090300323-.jpg"
+                                        data-src="/1886-home_default/valvula-de-linea-de-gas-02090300323-.jpg"
                                         width="236"
                                         height="305"
                                         alt="VALVULA DE LINEA DE GAS LP, FLUX 10LTS 2"
@@ -2879,7 +2942,7 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1030"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2921,20 +2984,20 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/aire-acondicionado/1954-nex-15-ton-frio-calor-220v.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/aire-acondicionado/1954-nex-15-ton-frio-calor-220v.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/9285-home_default/nex-15-ton-frio-calor-220v.jpg"
+                                                    data-src="/9285-home_default/nex-15-ton-frio-calor-220v.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="NEX 1.5 Ton  Frío - Calor 220v"
-                        data-full-size-image-url="/tienda_assets/9285-thickbox_default/nex-15-ton-frio-calor-220v.jpg"
+                        data-full-size-image-url="/9285-thickbox_default/nex-15-ton-frio-calor-220v.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/9284-home_default/nex-15-ton-frio-calor-220v.jpg"
+                                        data-src="/9284-home_default/nex-15-ton-frio-calor-220v.jpg"
                                         width="236"
                                         height="305"
                                         alt="NEX 1.5 Ton  Frío - Calor 220v 2"
@@ -2957,7 +3020,7 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1954"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -2999,20 +3062,20 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/dispensadores/1296-dispensador-de-agua-disx-10-blanco.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/dispensadores/1296-dispensador-de-agua-disx-10-blanco.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/3739-home_default/dispensador-de-agua-disx-10-blanco.jpg"
+                                                    data-src="/3739-home_default/dispensador-de-agua-disx-10-blanco.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Dispensador de Agua Disx 10 Blanco"
-                        data-full-size-image-url="/tienda_assets/3739-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg"
+                        data-full-size-image-url="/3739-thickbox_default/dispensador-de-agua-disx-10-blanco.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/3738-home_default/dispensador-de-agua-disx-10-blanco.jpg"
+                                        data-src="/3738-home_default/dispensador-de-agua-disx-10-blanco.jpg"
                                         width="236"
                                         height="305"
                                         alt="Dispensador de Agua Disx 10 Blanco 2"
@@ -3035,7 +3098,7 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1296"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -3083,20 +3146,20 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/aire-acondicionado/2254-inverter-x-1-ton-frio-calor-220.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/aire-acondicionado/2254-inverter-x-1-ton-frio-calor-220.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/10196-home_default/inverter-x-1-ton-frio-calor-220.jpg"
+                                                    data-src="/10196-home_default/inverter-x-1-ton-frio-calor-220.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="Inverter X 1 Ton Frio - Calor 220"
-                        data-full-size-image-url="/tienda_assets/10196-thickbox_default/inverter-x-1-ton-frio-calor-220.jpg"
+                        data-full-size-image-url="/10196-thickbox_default/inverter-x-1-ton-frio-calor-220.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/10194-home_default/inverter-x-1-ton-frio-calor-220.jpg"
+                                        data-src="/10194-home_default/inverter-x-1-ton-frio-calor-220.jpg"
                                         width="236"
                                         height="305"
                                         alt="Inverter X 1 Ton Frio - Calor 220 2"
@@ -3120,7 +3183,7 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="2254"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -3162,20 +3225,20 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/aire-acondicionado/2250-inverter-x5-2-toneladas-solo-frio-220v.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/aire-acondicionado/2250-inverter-x5-2-toneladas-solo-frio-220v.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/10175-home_default/inverter-x5-2-toneladas-solo-frio-220v.jpg"
+                                                    data-src="/10175-home_default/inverter-x5-2-toneladas-solo-frio-220v.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="X5 Inverter 2 Toneladas solo Frío 220v"
-                        data-full-size-image-url="/tienda_assets/10175-thickbox_default/inverter-x5-2-toneladas-solo-frio-220v.jpg"
+                        data-full-size-image-url="/10175-thickbox_default/inverter-x5-2-toneladas-solo-frio-220v.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/10176-home_default/inverter-x5-2-toneladas-solo-frio-220v.jpg"
+                                        data-src="/10176-home_default/inverter-x5-2-toneladas-solo-frio-220v.jpg"
                                         width="236"
                                         height="305"
                                         alt="X5 Inverter 2 Toneladas solo Frío 220v 2"
@@ -3199,7 +3262,7 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="2250"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -3241,20 +3304,20 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
 
                     
     <div class="thumbnail-container">
-        <a href="/tienda_assets/linea-blanca/1866-x-wave-mwd031e.html" class="thumbnail product-thumbnail">
+        <a href="/tienda/linea-blanca/1866-x-wave-mwd031e.html" class="thumbnail product-thumbnail">
 
                             <img
-                                                    data-src="/tienda_assets/8981-home_default/x-wave-mwd031e.jpg"
+                                                    data-src="/8981-home_default/x-wave-mwd031e.jpg"
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
                                                 alt="X Wave MWD031E"
-                        data-full-size-image-url="/tienda_assets/8981-thickbox_default/x-wave-mwd031e.jpg"
+                        data-full-size-image-url="/8981-thickbox_default/x-wave-mwd031e.jpg"
                         width="236"
                         height="305"
                         class="img-fluid swiper-lazy lazy-product-image product-thumbnail-first  "
                 >
                                                                                                                                                                             <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20236%20305'%3E%3C/svg%3E"
-                                        data-src="/tienda_assets/8980-home_default/x-wave-mwd031e.jpg"
+                                        data-src="/8980-home_default/x-wave-mwd031e.jpg"
                                         width="236"
                                         height="305"
                                         alt="X Wave MWD031E 2"
@@ -3277,7 +3340,7 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
     <i class="fa fa-heart-o not-added" aria-hidden="true"></i> <i class="fa fa-heart added" aria-hidden="true"></i>
 </a>
 <a href="#" class="btn-iqitcompare-add js-iqitcompare-add"  data-id-product="1866"
-   data-url="//www.tiendamirage.mx/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
+   data-url="/module/iqitcompare/actions" data-toggle="tooltip" title="Comparar">
     <i class="fa fa-random" aria-hidden="true"></i>
 </a>
 
@@ -3331,9 +3394,9 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
             <div class="modal-body">
                                 <div class="easyzoom easyzoom-modal">
                    
-                    <a href="/tienda_assets/9252-thickbox_default/life-12-1-ton-frio-calor-220v.jpg" class="js-modal-product-cover-easyzoom" rel="nofollow">
+                    <a href="/9252-thickbox_default/life-12-1-ton-frio-calor-220v.jpg" class="js-modal-product-cover-easyzoom" rel="nofollow">
                         <img class="js-modal-product-cover product-cover-modal img-fluid"
-                             width="381"  height="492" src="/tienda_assets/9252-large_default/life-12-1-ton-frio-calor-220v.jpg"
+                             width="381"  height="492" src="/9252-large_default/life-12-1-ton-frio-calor-220v.jpg"
                                                              alt="Life 12 + 1 Ton Frío - Calor  220v"
                                                         >
                     </a>
@@ -3346,9 +3409,9 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
                                 <div class="swiper-wrapper">
                                                                     <div class="swiper-slide">
                                         <div class="thumb-container">
-                                            <img data-image-large-src="/tienda_assets/9252-thickbox_default/life-12-1-ton-frio-calor-220v.jpg" class="thumb js-modal-thumb img-fluid swiper-lazy"
+                                            <img data-image-large-src="/9252-thickbox_default/life-12-1-ton-frio-calor-220v.jpg" class="thumb js-modal-thumb img-fluid swiper-lazy"
                                                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 452 584'%3E%3C/svg%3E"
-                                                 data-src="/tienda_assets/9252-medium_default/life-12-1-ton-frio-calor-220v.jpg"
+                                                 data-src="/9252-medium_default/life-12-1-ton-frio-calor-220v.jpg"
                                                                                                      alt="Life 12 + 1 Ton Frío - Calor  220v"
                                                                                                    width="452"
                                                  height="584"
@@ -3358,9 +3421,9 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
                                     </div>
                                                                     <div class="swiper-slide">
                                         <div class="thumb-container">
-                                            <img data-image-large-src="/tienda_assets/9253-thickbox_default/life-12-1-ton-frio-calor-220v.jpg" class="thumb js-modal-thumb img-fluid swiper-lazy"
+                                            <img data-image-large-src="/9253-thickbox_default/life-12-1-ton-frio-calor-220v.jpg" class="thumb js-modal-thumb img-fluid swiper-lazy"
                                                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 452 584'%3E%3C/svg%3E"
-                                                 data-src="/tienda_assets/9253-medium_default/life-12-1-ton-frio-calor-220v.jpg"
+                                                 data-src="/9253-medium_default/life-12-1-ton-frio-calor-220v.jpg"
                                                                                                      alt="Life 12 + 1 Ton Frío - Calor  220v"
                                                                                                    width="452"
                                                  height="584"
@@ -3454,21 +3517,21 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
                 <ul>
                                                                         <li>
                                 <a
-                                        href="/tienda_assets/content/4-quienes-somos"
+                                        href="/tienda/content/4-quienes-somos"
                                         title=""                                                                        >
                                     Quiénes Somos
                                 </a>
                             </li>
                                                                                                 <li>
                                 <a
-                                        href="/tienda_assets/content/2-aviso-de-privacidad"
+                                        href="/tienda/content/2-aviso-de-privacidad"
                                         title="Aviso de Privacidad"                                                                        >
                                     Aviso de Privacidad
                                 </a>
                             </li>
                                                                                                 <li>
                                 <a
-                                        href="/tienda_assets/content/3-terminos-y-condiciones"
+                                        href="/tienda/content/3-terminos-y-condiciones"
                                         title="Términos y condiciones"                                                                        >
                                     Términos y condiciones
                                 </a>
@@ -3482,28 +3545,28 @@ Este equipo cuenta con un año de garantía y 6 años en el compresor, solo si s
                 <ul>
                                                                         <li>
                                 <a
-                                        href="/tienda_assets/mi-cuenta"
+                                        href="/tienda/mi-cuenta"
                                         title=""                                                                        >
                                     Mi cuenta
                                 </a>
                             </li>
                                                                                                 <li>
                                 <a
-                                        href="/tienda_assets/historial-compra"
+                                        href="/tienda/historial-compra"
                                         title=""                                                                        >
                                     Historial de pedidos
                                 </a>
                             </li>
                                                                                                 <li>
                                 <a
-                                        href="/tienda_assets/datos-personales"
+                                        href="/tienda/datos-personales"
                                         title=""                                                                        >
                                     Identidad
                                 </a>
                             </li>
                                                                                                 <li>
                                 <a
-                                        href="/tienda_assets/direcciones"
+                                        href="/tienda/direcciones"
                                         title=""                                                                        >
                                     Direcciones
                                 </a>
@@ -3631,7 +3694,7 @@ if(window.location.pathname == "/content/4-quienes-somos" || window.location.pat
   
       
 
-    <form  id="login-form-modal" action="/tienda_assets/iniciar-sesion"   method="post">
+    <form  id="login-form-modal" action="/tienda/iniciar-sesion"   method="post">
 
     <section>
       
@@ -3730,7 +3793,7 @@ if(window.location.pathname == "/content/4-quienes-somos" || window.location.pat
           
               
       <div class="forgot-password">
-        <a href="/tienda_assets/recuperar-contrasena" rel="nofollow">
+        <a href="/tienda/recuperar-contrasena" rel="nofollow">
           ¿Olvidaste tu contraseña?
         </a>
       </div>
@@ -3773,7 +3836,7 @@ if(window.location.pathname == "/content/4-quienes-somos" || window.location.pat
 
                 
                 <div class="no-account">
-                    <a href="/tienda_assets/iniciar-sesion?create_account=1" data-link-action="display-register-form">
+                    <a href="/tienda/iniciar-sesion?create_account=1" data-link-action="display-register-form">
                         ¿Aún no tienes cuenta? Regístrate 
                     </a>
                 </div>
@@ -3797,8 +3860,7 @@ if(window.location.pathname == "/content/4-quienes-somos" || window.location.pat
 </div>
 
 
-<div id="iqitcompare-floating-wrapper">
-</div>
+@include('tienda.partials.compare_floating')
 
 
 
@@ -3864,6 +3926,75 @@ jQuery(document).ready(function($){
 
 
 
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const searchInput = document.getElementById("search-input");
+    const searchResults = document.getElementById("search-results");
+    const searchResultsList = document.getElementById("search-results-list");
+    const searchLoading = document.getElementById("search-loading");
+    let timeoutId;
+
+    if (!searchInput) return;
+
+    searchInput.addEventListener("input", function(e) {
+        const query = e.target.value.trim();
+        
+        clearTimeout(timeoutId);
+
+        if (query.length < 2) {
+            searchResults.classList.add("hidden");
+            return;
+        }
+
+        searchResults.classList.remove("hidden");
+        searchResultsList.innerHTML = "";
+        searchLoading.classList.remove("hidden");
+
+        timeoutId = setTimeout(() => {
+            fetch(`/buscar/autocomplete?q=${encodeURIComponent(query)}`)
+                .then(response => response.json())
+                .then(data => {
+                    searchLoading.classList.add("hidden");
+                    searchResultsList.innerHTML = "";
+                    
+                    if (data.length === 0) {
+                        searchResultsList.innerHTML = '<div class="autocomplete-empty">No se encontraron productos.</div>';
+                        return;
+                    }
+
+                    data.forEach(product => {
+                        const html = `
+                            <a href="${product.url}" class="autocomplete-item">
+                                <div class="autocomplete-img-container">
+                                    ${product.image ? `<img src="${product.image}">` : `<span style="color:#ccc; font-size:10px;">Sin img</span>`}
+                                </div>
+                                <div class="autocomplete-details">
+                                    <span class="autocomplete-title">${product.name}</span>
+                                    <span class="autocomplete-price">${product.price}</span>
+                                </div>
+                            </a>
+                        `;
+                        searchResultsList.insertAdjacentHTML("beforeend", html);
+                    });
+                })
+                .catch(error => {
+                    searchLoading.classList.add("hidden");
+                    console.error("Error fetching search results:", error);
+                });
+        }, 300);
+    });
+
+    document.addEventListener("click", function(e) {
+        const container = document.getElementById("search_widget");
+        if (container && !container.contains(e.target)) {
+            searchResults.classList.add("hidden");
+        }
+    });
+});
+</script>
+    @include('tienda.partials.modals')
 </body>
+
 
 </html>

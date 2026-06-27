@@ -356,7 +356,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
-            <nav class="header-nav">
+            <nav class="header-nav" style="padding: 8px 0;">
         <div class="container">
     
         <div class="row justify-content-between">
@@ -409,25 +409,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                 </div>
                 <div class="col col-header-center">
-                                        <!-- Block search module TOP -->
-
-<!-- Block search module TOP -->
-<div id="search_widget" class="search-widget" data-search-controller-url="">
-    <form method="get" action="{{ route('tienda.index') }}">
-        <div class="input-group">
-            <input type="text" name="s" value="" data-all-text="Mostrar todos los resultados"
-                   data-blog-text="Blog post"
-                   data-product-text="Product"
-                   data-brands-text="Marca"
-                   autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
-                   placeholder="Buscar" class="form-control form-search-control" />
-            <button type="submit" class="search-btn">
-                <i class="fa fa-search"></i>
-            </button>
-        </div>
+                                        
+<!-- Buscador con Autocompletado -->
+<div class="relative w-full max-w-lg ml-6" id="autocomplete-container">
+    <form action="/buscar" method="GET" class="relative">
+        <input type="text" name="q" id="search-input" autocomplete="off" placeholder="Buscar productos..." class="w-full pl-4 pr-10 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-sm bg-gray-50/50">
+        <button type="submit" class="absolute right-0 top-0 mt-2 mr-3 text-gray-500 hover:text-indigo-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+        </button>
     </form>
+    
+    <!-- Dropdown de Resultados -->
+    <div id="search-results" class="absolute w-full mt-2 bg-white border border-gray-100 rounded-xl shadow-xl z-50 hidden overflow-hidden">
+        <div id="search-results-list" class="divide-y divide-gray-100 max-h-96 overflow-y-auto">
+            <!-- Resultados inyectados por JS -->
+        </div>
+        <div id="search-loading" class="p-4 text-center text-gray-500 text-sm hidden">
+            Buscando...
+        </div>
+    </div>
 </div>
 <!-- /Block search module TOP -->
+
 
 <!-- /Block search module TOP -->
 
@@ -686,23 +691,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div id="search-widget-mobile" class="dropdown-content dropdown-menu dropdown-mobile search-widget">
                         
                                                     
-<!-- Block search module TOP -->
-<form method="get" action="{{ route('tienda.index') }}">
-    <div class="input-group">
-        <input type="text" name="s" value=""
-               placeholder="Buscar"
-               data-all-text="Show all results"
-               data-blog-text="Blog post"
-               data-product-text="Product"
-               data-brands-text="Marca"
-               autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
-               class="form-control form-search-control">
-        <button type="submit" class="search-btn">
-            <i class="fa fa-search"></i>
+
+<!-- Buscador con Autocompletado -->
+<div class="relative w-full max-w-lg ml-6" id="autocomplete-container">
+    <form action="/buscar" method="GET" class="relative">
+        <input type="text" name="q" id="search-input" autocomplete="off" placeholder="Buscar productos..." class="w-full pl-4 pr-10 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-sm bg-gray-50/50">
+        <button type="submit" class="absolute right-0 top-0 mt-2 mr-3 text-gray-500 hover:text-indigo-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
         </button>
+    </form>
+    
+    <!-- Dropdown de Resultados -->
+    <div id="search-results" class="absolute w-full mt-2 bg-white border border-gray-100 rounded-xl shadow-xl z-50 hidden overflow-hidden">
+        <div id="search-results-list" class="divide-y divide-gray-100 max-h-96 overflow-y-auto">
+            <!-- Resultados inyectados por JS -->
+        </div>
+        <div id="search-loading" class="p-4 text-center text-gray-500 text-sm hidden">
+            Buscando...
+        </div>
     </div>
-</form>
+</div>
 <!-- /Block search module TOP -->
+
 
                                                 
                     </div>
@@ -1191,8 +1203,7 @@ if(window.location.pathname == "/content/4-quienes-somos" || window.location.pat
 </div>
 
 
-<div id="iqitcompare-floating-wrapper">
-</div>
+@include('tienda.partials.compare_floating')
 
 
 
@@ -1254,6 +1265,77 @@ jQuery(document).ready(function($){
               media="print" onload="this.media='all'" />
 
         @include('tienda.partials.modals')
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const searchInput = document.getElementById("search-input");
+    const searchResults = document.getElementById("search-results");
+    const searchResultsList = document.getElementById("search-results-list");
+    const searchLoading = document.getElementById("search-loading");
+    let timeoutId;
+
+    if (!searchInput) return;
+
+    searchInput.addEventListener("input", function(e) {
+        const query = e.target.value.trim();
+        
+        clearTimeout(timeoutId);
+
+        if (query.length < 2) {
+            searchResults.classList.add("hidden");
+            return;
+        }
+
+        searchResults.classList.remove("hidden");
+        searchResultsList.innerHTML = "";
+        searchLoading.classList.remove("hidden");
+
+        timeoutId = setTimeout(() => {
+            fetch(`/buscar/autocomplete?q=${encodeURIComponent(query)}`)
+                .then(response => response.json())
+                .then(data => {
+                    searchLoading.classList.add("hidden");
+                    searchResultsList.innerHTML = "";
+                    
+                    if (data.length === 0) {
+                        searchResultsList.innerHTML = '<div class="p-4 text-sm text-gray-500 text-center">No se encontraron productos.</div>';
+                        return;
+                    }
+
+                    data.forEach(product => {
+                        const html = `
+                            <a href="${product.url}" class="flex items-center p-3 hover:bg-gray-50 transition-colors group">
+                                <div class="flex-shrink-0 w-12 h-12 bg-gray-100 rounded-md overflow-hidden">
+                                    ${product.image ? `<img src="${product.image}" class="w-full h-full object-cover">` : `<div class="w-full h-full flex items-center justify-center text-gray-400">...</div>`}
+                                </div>
+                                <div class="ml-4 flex-1">
+                                    <div class="text-sm font-medium text-gray-900 group-hover:text-indigo-600 transition-colors">${product.name}</div>
+                                    <div class="text-sm font-bold text-red-500 mt-0.5">${product.price}</div>
+                                </div>
+                                <div class="text-xs text-gray-400 font-medium tracking-wide">
+                                    Producto
+                                </div>
+                            </a>
+                        `;
+                        searchResultsList.insertAdjacentHTML("beforeend", html);
+                    });
+                })
+                .catch(error => {
+                    searchLoading.classList.add("hidden");
+                    console.error("Error fetching search results:", error);
+                });
+        }, 300);
+    });
+
+    document.addEventListener("click", function(e) {
+        const container = document.getElementById("autocomplete-container");
+        if (container && !container.contains(e.target)) {
+            searchResults.classList.add("hidden");
+        }
+    });
+});
+</script>
 </body>
+
 
 </html>

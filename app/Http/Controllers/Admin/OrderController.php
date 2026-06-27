@@ -28,11 +28,15 @@ class OrderController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'status' => 'required|in:pending,processing,shipped,delivered,cancelled'
+            'status' => 'required|in:pending,processing,shipped,delivered,cancelled',
+            'payment_status' => 'nullable|in:pending,paid,failed,refunded'
         ]);
 
         $order = Order::findOrFail($id);
         $order->status = $request->status;
+        if ($request->has('payment_status')) {
+            $order->payment_status = $request->payment_status;
+        }
         $order->save();
 
         return redirect()->back()->with('message', 'Estado del pedido actualizado.');

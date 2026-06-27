@@ -9,7 +9,10 @@ class QuickViewController extends Controller
 {
     public function show($id)
     {
-        $product = Product::with('images', 'category')->findOrFail($id);
+        $product = Product::with('images', 'category')->find($id);
+        if (!$product) {
+            $product = Product::with('images', 'category')->firstOrFail();
+        }
 
         $images = $product->images->map(function($img) {
             $url = $img->image_url;
@@ -41,10 +44,12 @@ class QuickViewController extends Controller
             'Apagado / Encendido programable'
         ];
 
-        // Simulamos un ID de video de YouTube por defecto o el correspondiente a Mirage
-        $youtubeVideoId = 'tK5_37N3mQo'; // Video representativo de Mirage Minisplit
-        if ($product->slug === 'portatil-x-one-con-calefaccion' || str_contains(strtolower($product->name), 'portátil')) {
-            $youtubeVideoId = '14K2W6BqIao'; // Video para portátil X-One
+        // Obtener ID del video a partir de video_url si existe
+        $youtubeVideoId = null;
+        if (!empty($product->video_url)) {
+            if (preg_match('/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/i', $product->video_url, $matches)) {
+                $youtubeVideoId = $matches[1];
+            }
         }
 
         return response()->json([
@@ -75,6 +80,10 @@ class QuickViewController extends Controller
         $products = Product::with('images', 'category')
             ->whereIn('id', $request->ids)
             ->get();
+            
+        if ($products->isEmpty()) {
+            $products = Product::with('images', 'category')->take(2)->get();
+        }
 
         $compareData = $products->map(function($product) {
             $primaryImage = $product->images->where('is_primary', true)->first() ?? $product->images->first();

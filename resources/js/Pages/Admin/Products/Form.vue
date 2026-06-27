@@ -27,6 +27,7 @@ const form = useForm({
     price: props.product?.price || '',
     discount_price: props.product?.discount_price || '',
     sku: props.product?.sku || '',
+    video_url: props.product?.video_url || '',
     stock: props.product?.stock || 0,
     is_active: props.product ? !!props.product.is_active : true,
     images: [],
@@ -220,6 +221,14 @@ const removeExistingDocument = (docId) => {
                                         <TextInput id="sku" v-model="form.sku" type="text" class="mt-1 block w-full" />
                                         <InputError class="mt-2" :message="form.errors.sku" />
                                     </div>
+                                    <div>
+                                        <InputLabel for="video_url" value="URL del Video (YouTube)" />
+                                        <TextInput id="video_url" v-model="form.video_url" type="url" class="mt-1 block w-full" placeholder="https://www.youtube.com/watch?v=..." />
+                                        <InputError class="mt-2" :message="form.errors.video_url" />
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-2 gap-4 mt-4">
                                     <div>
                                         <InputLabel for="stock" value="Stock" />
                                         <TextInput id="stock" v-model="form.stock" type="number" class="mt-1 block w-full" />

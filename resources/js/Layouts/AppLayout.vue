@@ -51,21 +51,24 @@ const logout = () => {
                                 <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
                                     Dashboard
                                 </NavLink>
-                                <NavLink :href="route('categories.index')" :active="route().current('categories.*')">
-                                    Categorías
-                                </NavLink>
-                                <NavLink :href="route('products.index')" :active="route().current('products.*')">
-                                    Productos
-                                </NavLink>
-                                <NavLink :href="route('orders.index')" :active="route().current('orders.*')">
-                                    Pedidos
-                                </NavLink>
-                                <NavLink :href="route('banners.index')" :active="route().current('banners.*')">
-                                    Banners
-                                </NavLink>
-                                <NavLink :href="route('settings.edit')" :active="route().current('settings.*')">
-                                    Configuración
-                                </NavLink>
+                                
+                                <template v-if="$page.props.auth.user.role === 'admin'">
+                                    <NavLink :href="route('categories.index')" :active="route().current('categories.*')">
+                                        Categorías
+                                    </NavLink>
+                                    <NavLink :href="route('products.index')" :active="route().current('products.*')">
+                                        Productos
+                                    </NavLink>
+                                    <NavLink :href="route('orders.index')" :active="route().current('orders.*')">
+                                        Pedidos
+                                    </NavLink>
+                                    <NavLink :href="route('banners.index')" :active="route().current('banners.*')">
+                                        Banners
+                                    </NavLink>
+                                    <NavLink :href="route('settings.edit')" :active="route().current('settings.*')">
+                                        Configuración
+                                    </NavLink>
+                                </template>
                             </div>
                         </div>
 
@@ -209,21 +212,24 @@ const logout = () => {
                         <ResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')">
                             Dashboard
                         </ResponsiveNavLink>
-                        <ResponsiveNavLink :href="route('categories.index')" :active="route().current('categories.*')">
-                            Categorías
-                        </ResponsiveNavLink>
-                        <ResponsiveNavLink :href="route('products.index')" :active="route().current('products.*')">
-                            Productos
-                        </ResponsiveNavLink>
-                        <ResponsiveNavLink :href="route('orders.index')" :active="route().current('orders.*')">
-                            Pedidos
-                        </ResponsiveNavLink>
-                        <ResponsiveNavLink :href="route('banners.index')" :active="route().current('banners.*')">
-                            Banners
-                        </ResponsiveNavLink>
-                        <ResponsiveNavLink :href="route('settings.edit')" :active="route().current('settings.*')">
-                            Configuración
-                        </ResponsiveNavLink>
+                        
+                        <template v-if="$page.props.auth.user.role === 'admin'">
+                            <ResponsiveNavLink :href="route('categories.index')" :active="route().current('categories.*')">
+                                Categorías
+                            </ResponsiveNavLink>
+                            <ResponsiveNavLink :href="route('products.index')" :active="route().current('products.*')">
+                                Productos
+                            </ResponsiveNavLink>
+                            <ResponsiveNavLink :href="route('orders.index')" :active="route().current('orders.*')">
+                                Pedidos
+                            </ResponsiveNavLink>
+                            <ResponsiveNavLink :href="route('banners.index')" :active="route().current('banners.*')">
+                                Banners
+                            </ResponsiveNavLink>
+                            <ResponsiveNavLink :href="route('settings.edit')" :active="route().current('settings.*')">
+                                Configuración
+                            </ResponsiveNavLink>
+                        </template>
                     </div>
 
                     <!-- Responsive Settings Options -->
