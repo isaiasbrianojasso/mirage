@@ -107,10 +107,14 @@ class CompareController extends Controller
             session()->put('compare_list', array_values($compareIds));
         }
 
-        return response()->json([
-            'status' => 'success',
-            'message' => 'Producto eliminado de la lista de comparación.',
-            'count' => count($compareIds)
-        ]);
+        if ($request->wantsJson() || $request->ajax()) {
+            return response()->json([
+                'status' => 'success',
+                'message' => 'Producto eliminado de la lista de comparación.',
+                'count' => count($compareIds)
+            ]);
+        }
+
+        return redirect()->back()->with('success', 'Producto eliminado de la lista.');
     }
 }

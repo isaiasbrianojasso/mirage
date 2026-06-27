@@ -777,144 +777,40 @@ function showWishlistNotification() {
     }, 3000);
 }
 
-// --- COMPARISON SCRIPTS ---
 function addToCompare(productId) {
-    if (comparisonList.includes(productId)) {
-        comparisonList = comparisonList.filter(id => id !== productId);
-        localStorage.setItem('mirage_compare_list', JSON.stringify(comparisonList));
-        alert('Producto eliminado de la lista de comparación.');
-        return;
-    }
-
-    comparisonList.push(productId);
-    if (comparisonList.length > 2) {
-        comparisonList.shift();
-    }
-    localStorage.setItem('mirage_compare_list', JSON.stringify(comparisonList));
-
-    const notif = $('#iqitcompare-notification');
-    if (notif.length) {
-        notif.addClass('ns-show');
-        setTimeout(() => {
-            notif.removeClass('ns-show');
-        }, 3000);
-    }
-
-    if (comparisonList.length === 2) {
-        loadAndShowComparison();
-    }
-}
-
-function loadAndShowComparison() {
-    if (comparisonList.length < 1) return;
-
-    let url = '/tienda/comparar/data?';
-    comparisonList.forEach(id => {
-        url += `ids[]=${id}&`;
-    });
-    url = url.slice(0, -1);
-
     $.ajax({
-        url: url,
-        type: 'GET',
-        dataType: 'json',
+        url: '/module/iqitcompare/actions',
+        type: 'POST',
+        data: {
+            _token: '{{ csrf_token() }}',
+            process: 'add',
+            idProduct: productId
+        },
         success: function(response) {
-            if (response.status === 'success' && response.data.length > 0) {
-                let html = '';
-                response.data.forEach(item => {
-                    let prices = '';
-                    if (item.discount_price) {
-                        prices = `
-                            <span class="offer">$${item.discount_price}</span>
-                            <span class="regular">$${item.price}</span>
-                        `;
-                    } else {
-                        prices = `
-                            <span class="offer" style="color: #0f172a;">$${item.price}</span>
-                        `;
-                    }
-
-                    html += `
-                        <div class="mirage-compare-column" id="compare-col-${item.id}">
-                            <button class="btn-remove-compare-item" onclick="removeCompareItem('${item.id}', event)">
-                                <i class="fa fa-trash"></i>
-                            </button>
-                            <div class="mirage-compare-img">
-                                <img src="${item.image_url}">
-                            </div>
-                            <h4 class="mirage-compare-title">${item.name}</h4>
-                            <div class="mirage-compare-price">
-                                ${prices}
-                            </div>
-                            <form action="${item.add_to_cart_url}" method="POST">
-                                <input type="hidden" name="_token" value="${item.csrf_token}">
-                                <input type="hidden" name="product_id" value="${item.id}">
-                                <input type="hidden" name="quantity" value="1">
-                                <button type="submit" class="btn-compare-add-cart">
-                                    <i class="fa fa-shopping-bag"></i> Añadir al carrito
-                                </button>
-                            </form>
-                            <table class="mirage-compare-specs-table">
-                                <tr>
-                                    <td class="label">Toneladas</td>
-                                    <td class="value">${item.toneladas}</td>
-                                </tr>
-                                <tr>
-                                    <td class="label">Tecnología</td>
-                                    <td class="value">${item.tecnologia}</td>
-                                </tr>
-                                <tr>
-                                    <td class="label">Voltaje</td>
-                                    <td class="value">${item.voltaje}</td>
-                                </tr>
-                                <tr>
-                                    <td class="label">Stock</td>
-                                    <td class="value">${item.stock}</td>
-                                </tr>
-                            </table>
-                        </div>
-                    `;
-                });
-
-                if (response.data.length === 1) {
-                    html += `
-                        <div class="mirage-compare-column" style="display: flex; align-items: center; justify-content: center; border-style: dashed; border-color: #cbd5e1; background: #fafafa;">
-                            <div style="text-align: center; color: #94a3b8;">
-                                <i class="fa fa-plus-circle" style="font-size: 32px; margin-bottom: 10px;"></i>
-                                <p style="font-size: 14px; margin: 0;">Selecciona otro artículo para comparar</p>
-                            </div>
-                        </div>
-                    `;
+            if (response.success) {
+                // Remove old floating wrapper if exists
+                $('#iqitcompare-floating-wrapper').remove();
+                // Append new one
+                $('body').append(response.floatCompare);
+                
+                // Show notification
+                const notif = $('#iqitcompare-notification');
+                if (notif.length) {
+                    notif.addClass('ns-show');
+                    setTimeout(() => {
+                        notif.removeClass('ns-show');
+                    }, 3000);
                 }
-
-                $('#mirage-compare-grid-content').html(html);
-                openSpecificModal('mirage-compare-modal');
+            } else {
+                alert('No se pudo agregar el producto a la comparación.');
             }
         },
-        error: function(err) {
-            console.error('Error fetching comparison data', err);
+        error: function(xhr) {
+            console.error('Error adding to compare', xhr);
         }
     });
 }
 
-function removeCompareItem(productId, event) {
-    if (event) event.preventDefault();
-    comparisonList = comparisonList.filter(id => id !== productId);
-    localStorage.setItem('mirage_compare_list', JSON.stringify(comparisonList));
-    
-    if (comparisonList.length > 0) {
-        loadAndShowComparison();
-    } else {
-        closeMirageModal();
-    }
-}
-
-function clearAllComparison(event) {
-    if (event) event.preventDefault();
-    comparisonList = [];
-    localStorage.setItem('mirage_compare_list', JSON.stringify(comparisonList));
-    closeMirageModal();
-}
 
 // --- QUICK VIEW SCRIPTS ---
 function openQuickView(productId) {
