@@ -9,7 +9,7 @@ class Review extends Model
 {
     use HasUuids;
 
-    protected $guarded = [];
+    protected $guarded = ['id'];
 
     protected $casts = [
         'id' => 'string',

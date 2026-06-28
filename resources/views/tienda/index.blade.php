@@ -74,7 +74,7 @@
     <div class="js-product-miniature-wrapper product-carousel ">
         <article class="product-miniature product-miniature-default product-miniature-grid product-miniature-layout-1 js-product-miniature" data-id-product="{{ $product->id }}">
             <div class="thumbnail-container">
-                <a href="{{ route("tienda.product", $product->slug) }}" class="thumbnail product-thumbnail">
+                <a href="{{ route("tienda.product", $product->id) }}" class="thumbnail product-thumbnail">
                     @if($product->images->count() > 0)
                     <img src="{{ Str::startsWith($product->images->first()->image_url, "http") ? $product->images->first()->image_url : Storage::url($product->images->first()->image_url) }}" alt="{{ $product->name }}" class="img-fluid lazy-product-image product-thumbnail-first">
                     @if($product->images->count() > 1)
@@ -101,11 +101,11 @@
             <div class="product-description">
                 <div class="product-category-name text-muted">{{ $product->category ? $product->category->name : "General" }}</div>    
                 <h3 class="h3 product-title">
-                    <a href="{{ route("tienda.product", $product->slug) }}">{{ $product->name }}</a>
+                    <a href="{{ route("tienda.product", $product->id) }}">{{ $product->name }}</a>
                 </h3>
-                <div class="product-reference text-muted"> <a href="{{ route("tienda.product", $product->slug) }}">{{ $product->sku }}</a></div>    
+                <div class="product-reference text-muted"> <a href="{{ route("tienda.product", $product->id) }}">{{ $product->sku }}</a></div>    
                 <div class="product-price-and-shipping">
-                    <a href="{{ route("tienda.product", $product->slug) }}"> <span class="price">${{ number_format($product->price, 2) }}</span></a>
+                    <a href="{{ route("tienda.product", $product->id) }}"> <span class="price">${{ number_format($product->price, 2) }}</span></a>
                 </div>
                 <div class="product-add-cart">
                     <form action="{{ route('cart.add', $product->id) }}" method="POST">
@@ -170,7 +170,7 @@
     <div class="js-product-miniature-wrapper product-carousel ">
         <article class="product-miniature product-miniature-default product-miniature-grid product-miniature-layout-1 js-product-miniature" data-id-product="{{ $product->id }}">
             <div class="thumbnail-container">
-                <a href="{{ route("tienda.product", $product->slug) }}" class="thumbnail product-thumbnail">
+                <a href="{{ route("tienda.product", $product->id) }}" class="thumbnail product-thumbnail">
                     @if($product->images->count() > 0)
                     <img src="{{ Str::startsWith($product->images->first()->image_url, "http") ? $product->images->first()->image_url : Storage::url($product->images->first()->image_url) }}" alt="{{ $product->name }}" class="img-fluid lazy-product-image product-thumbnail-first">
                     @if($product->images->count() > 1)
@@ -197,11 +197,11 @@
             <div class="product-description">
                 <div class="product-category-name text-muted">{{ $product->category ? $product->category->name : "General" }}</div>    
                 <h3 class="h3 product-title">
-                    <a href="{{ route("tienda.product", $product->slug) }}">{{ $product->name }}</a>
+                    <a href="{{ route("tienda.product", $product->id) }}">{{ $product->name }}</a>
                 </h3>
-                <div class="product-reference text-muted"> <a href="{{ route("tienda.product", $product->slug) }}">{{ $product->sku }}</a></div>    
+                <div class="product-reference text-muted"> <a href="{{ route("tienda.product", $product->id) }}">{{ $product->sku }}</a></div>    
                 <div class="product-price-and-shipping">
-                    <a href="{{ route("tienda.product", $product->slug) }}"> <span class="price">${{ number_format($product->price, 2) }}</span></a>
+                    <a href="{{ route("tienda.product", $product->id) }}"> <span class="price">${{ number_format($product->price, 2) }}</span></a>
                 </div>
                 <div class="product-add-cart">
                     <form action="{{ route('cart.add', $product->id) }}" method="POST">
@@ -266,7 +266,7 @@
     <div class="js-product-miniature-wrapper product-carousel ">
         <article class="product-miniature product-miniature-default product-miniature-grid product-miniature-layout-1 js-product-miniature" data-id-product="{{ $product->id }}">
             <div class="thumbnail-container">
-                <a href="{{ route("tienda.product", $product->slug) }}" class="thumbnail product-thumbnail">
+                <a href="{{ route("tienda.product", $product->id) }}" class="thumbnail product-thumbnail">
                     @if($product->images->count() > 0)
                     <img src="{{ Str::startsWith($product->images->first()->image_url, "http") ? $product->images->first()->image_url : Storage::url($product->images->first()->image_url) }}" alt="{{ $product->name }}" class="img-fluid lazy-product-image product-thumbnail-first">
                     @if($product->images->count() > 1)
@@ -293,11 +293,11 @@
             <div class="product-description">
                 <div class="product-category-name text-muted">{{ $product->category ? $product->category->name : "General" }}</div>    
                 <h3 class="h3 product-title">
-                    <a href="{{ route("tienda.product", $product->slug) }}">{{ $product->name }}</a>
+                    <a href="{{ route("tienda.product", $product->id) }}">{{ $product->name }}</a>
                 </h3>
-                <div class="product-reference text-muted"> <a href="{{ route("tienda.product", $product->slug) }}">{{ $product->sku }}</a></div>    
+                <div class="product-reference text-muted"> <a href="{{ route("tienda.product", $product->id) }}">{{ $product->sku }}</a></div>    
                 <div class="product-price-and-shipping">
-                    <a href="{{ route("tienda.product", $product->slug) }}"> <span class="price">${{ number_format($product->price, 2) }}</span></a>
+                    <a href="{{ route("tienda.product", $product->id) }}"> <span class="price">${{ number_format($product->price, 2) }}</span></a>
                 </div>
                 <div class="product-add-cart">
                     <form action="{{ route('cart.add', $product->id) }}" method="POST">

@@ -82,7 +82,7 @@
                         </div>
                         <div class="mt-4 flex flex-col items-center text-center flex-1">
                             <h3 class="text-sm text-gray-700 font-medium line-clamp-2">
-                                <a href="{{ route('tienda.product', $product->slug) }}">
+                                <a href="{{ route('tienda.product', $product->id) }}">
                                     <span aria-hidden="true" class="absolute inset-0"></span>
                                     {{ $product->name }}
                                 </a>

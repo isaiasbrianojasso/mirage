@@ -467,16 +467,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                 </div>
                         <div class="col col-auto col-header-right">
-                <div class="row no-gutters justify-content-end">
+                <div class="row no-gutters justify-content-end align-items-center">
 
                     
-                                            <div id="header-user-btn" class="col col-auto header-btn-w header-user-btn-w">
-            <a href="{{ route('tienda.category', 'mi-cuenta') }}"
-           title="Acceda a su cuenta de cliente"
-           rel="nofollow" class="header-btn header-user-btn">
-            <i class="fa fa-user fa-fw icon" aria-hidden="true"></i>
-            <span class="title">Iniciar sesión</span>
-        </a>
+                                            <div id="header-user-btn" class="col-auto header-btn-w header-user-btn-w pr-2">
+            @auth
+                <a href="{{ route('dashboard') }}"
+               title="Mi Cuenta"
+               rel="nofollow" class="header-btn header-user-btn">
+                <i class="fa fa-user fa-fw icon" aria-hidden="true"></i>
+                <span class="title">Mi Cuenta</span>
+                </a>
+            @else
+                <a href="{{ route('login') }}"
+               title="Acceda a su cuenta de cliente"
+               rel="nofollow" class="header-btn header-user-btn">
+                <i class="fa fa-user fa-fw icon" aria-hidden="true"></i>
+                <span class="title">Iniciar sesión</span>
+                </a>
+            @endauth
     </div>
 
 
@@ -492,32 +501,80 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
 
                                             
-                                                    <div id="ps-shoppingcart-wrapper" class="col col-auto">
+                                                    <div id="ps-shoppingcart-wrapper" class="col-auto">
     <div id="ps-shoppingcart"
          class="header-btn-w header-cart-btn-w ps-shoppingcart dropdown">
          <div id="blockcart" class="blockcart cart-preview"
          data-refresh-url="//www.tiendamirage.mx/module/ps_shoppingcart/ajax">
-        <a id="cart-toogle" class="cart-toogle header-btn header-cart-btn" data-toggle="dropdown" data-display="static">
-            <i class="fa fa-shopping-bag fa-fw icon" aria-hidden="true"><span class="cart-products-count-btn  d-none">0</span></i>
+        @php
+            $cartCount = 0;
+            $cartTotal = 0;
+            if(session()->has('cart')) {
+                foreach(session('cart') as $item) {
+                    $cartCount += $item['quantity'];
+                    $cartTotal += $item['price'] * $item['quantity'];
+                }
+            }
+        @endphp
+        <a id="cart-toogle" href="#" class="cart-toogle header-btn header-cart-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-shopping-bag fa-fw icon" aria-hidden="true"><span class="cart-products-count-btn {{ $cartCount > 0 ? '' : 'd-none' }}">{{ $cartCount }}</span></i>
             <span class="info-wrapper">
             <span class="title">Carrito:</span>
             <span class="cart-toggle-details">
             <span class="text-faded cart-separator"> / </span>
-                            Vacío
+                            @if($cartCount > 0)
+                                ${{ number_format($cartTotal, 2) }}
+                            @else
+                                Vacío
+                            @endif
                         </span>
             </span>
         </a>
-        <div id="_desktop_blockcart-content" class="dropdown-menu-custom dropdown-menu">
+        <div id="_desktop_blockcart-content" class="dropdown-menu-custom dropdown-menu dropdown-menu-right" aria-labelledby="cart-toogle" style="width: 320px; padding: 15px;">
     <div id="blockcart-content" class="blockcart-content" >
         <div class="cart-title">
-            <span class="modal-title">Carrito</span>
-            <button type="button" id="js-cart-close" class="close">
+            <span class="modal-title font-weight-bold">Carrito</span>
+            <button type="button" id="js-cart-close" class="close" data-dismiss="dropdown">
                 <span>×</span>
             </button>
             <hr>
         </div>
-                    <span class="no-items">No hay más artículos en su carrito</span>
+        @if(session()->has('cart') && count(session('cart')) > 0)
+            <ul class="cart-items list-unstyled" style="max-height: 300px; overflow-y: auto;">
+                @foreach(session('cart') as $id => $details)
+                    <li class="cart-item mb-3 pb-2 border-bottom">
+                        <div class="row align-items-center">
+                            <div class="col-3 pr-0">
+                                <img src="{{ $details['image_url'] ?? 'https://placehold.co/100x100?text=No+Image' }}" alt="{{ $details['name'] }}" class="img-fluid rounded">
+                            </div>
+                            <div class="col-9">
+                                <div style="font-size: 13px; line-height: 1.2; color: #555;">{{ $details['name'] }}</div>
+                                <div class="mt-1 d-flex justify-content-between align-items-center">
+                                    <span class="text-muted" style="font-size: 13px;">Cant: {{ $details['quantity'] }}</span>
+                                    <span class="font-weight-bold" style="color: #333;">${{ number_format($details['price'] * $details['quantity'], 2) }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                @endforeach
+            </ul>
+            <div class="cart-summary mt-3">
+                <div class="d-flex justify-content-between font-weight-bold mb-3">
+                    <span>Total (IVA incluido)</span>
+                    <span>${{ number_format($cartTotal, 2) }}</span>
+                </div>
+                <div class="cart-actions">
+                    <a href="{{ route('checkout.index') }}" class="btn btn-block mb-2 text-white" style="background-color: #e62228; border-color: #e62228;">Registro de Pago</a>
+                    <a href="{{ route('cart.index') }}" class="btn btn-block text-white" style="background-color: #e62228; border-color: #e62228;">Carrito:</a>
+                </div>
             </div>
+        @else
+            <div class="text-center py-3 text-muted">
+                <i class="fa fa-shopping-basket fa-3x mb-3 text-light"></i><br>
+                <span class="no-items">No hay artículos en su carrito</span>
+            </div>
+        @endif
+    </div>
 </div> </div>
 
 
@@ -543,80 +600,153 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<div id="iqitmegamenu-horizontal" class="iqitmegamenu  clearfix" role="navigation">
 
 						
-			<nav id="cbp-hrmenu" class="cbp-hrmenu cbp-horizontal cbp-hrsub-narrow">
-				<ul>
-											<li id="cbp-hrmenu-tab-48"
-							class="cbp-hrmenu-tab cbp-hrmenu-tab-48 ">
-							<a href="{{ route('tienda.category', '10-refacciones') }}" class="nav-link" 
-										>
-										
-
-										<span class="cbp-tab-title">
-											Refacciones</span>
-																			</a>
-																</li>
-												<li id="cbp-hrmenu-tab-49"
-							class="cbp-hrmenu-tab cbp-hrmenu-tab-49 ">
-							<a href="{{ route('tienda.category', '11-aire-acondicionado') }}" class="nav-link" 
-										>
-										
-
-										<span class="cbp-tab-title">
-											Aire Acondicionado</span>
-																			</a>
-																</li>
-												<li id="cbp-hrmenu-tab-51"
-							class="cbp-hrmenu-tab cbp-hrmenu-tab-51 ">
-							<a href="{{ route('tienda.category', '13-linea-blanca') }}" class="nav-link" 
-										>
-										
-
-										<span class="cbp-tab-title">
-											Línea Blanca</span>
-																			</a>
-																</li>
-												<li id="cbp-hrmenu-tab-52"
-							class="cbp-hrmenu-tab cbp-hrmenu-tab-52 ">
-							<a href="{{ route('tienda.category', '17-herramientas') }}" class="nav-link" 
-										>
-										
-
-										<span class="cbp-tab-title">
-											Herramientas</span>
-																			</a>
-																</li>
-												<li id="cbp-hrmenu-tab-54"
-							class="cbp-hrmenu-tab cbp-hrmenu-tab-54 ">
-							<a href="{{ route('tienda.category', '14-souvenirs') }}" class="nav-link" 
-										>
-										
-
-										<span class="cbp-tab-title">
-											Souvenirs</span>
-																			</a>
-																</li>
-												<li id="cbp-hrmenu-tab-55"
-							class="cbp-hrmenu-tab cbp-hrmenu-tab-55 ">
-							<a href="{{ route('tienda.category', '24-outlet') }}" class="nav-link" 
-										>
-										
-
-										<span class="cbp-tab-title">
-											Outlet</span>
-																			</a>
-																</li>
-												<li id="cbp-hrmenu-tab-53"
-							class="cbp-hrmenu-tab cbp-hrmenu-tab-53 ">
-							<a href="{{ route('tienda.category', 'contactenos') }}" class="nav-link" 
-										>
-										
-
-										<span class="cbp-tab-title">
-											Contacto</span>
-																			</a>
-																</li>
+			<nav id="dynamic-tienda-menu" class="dynamic-menu-container">
+				<ul class="d-menu">
+					<li class="d-menu-item">
+						<a href="{{ route('tienda.index') }}" class="d-menu-link text-uppercase">Inicio</a>
+					</li>
+					<li class="d-menu-item">
+						<a href="{{ route('catalogo.todo') }}" class="d-menu-link text-uppercase">Productos</a>
+						@if(isset($categories) && $categories->count() > 0)
+							<ul class="d-submenu">
+								@foreach($categories as $category)
+									<li class="d-submenu-item">
+										<a href="{{ route('tienda.category', $category->uuid) }}" class="d-submenu-link text-uppercase">{{ $category->name }}</a>
+										@if($category->children->count() > 0)
+											<ul class="d-submenu-nested">
+												@foreach($category->children as $child)
+													<li class="d-submenu-item">
+														<a href="{{ route('tienda.category', $child->uuid) }}" class="d-submenu-link text-uppercase">{{ $child->name }}</a>
+														@if($child->children->count() > 0)
+															<ul class="d-submenu-nested-2">
+																@foreach($child->children as $grandchild)
+																	<li class="d-submenu-item">
+																		<a href="{{ route('tienda.category', $grandchild->uuid) }}" class="d-submenu-link text-uppercase">{{ $grandchild->name }}</a>
+																	</li>
+																@endforeach
+															</ul>
+														@endif
+													</li>
+												@endforeach
 											</ul>
-				</nav>
+										@endif
+									</li>
+								@endforeach
+							</ul>
+						@endif
+					</li>
+					<li class="d-menu-item">
+						<a href="{{ route('tienda.contact') }}" class="d-menu-link text-uppercase">Contacto</a>
+					</li>
+				</ul>
+			</nav>
+
+			<style>
+			/* Dynamic Menu CSS */
+			.iqitmegamenu-wrapper, #iqitmegamenu-horizontal, .iqit-megamenu-container {
+				overflow: visible !important;
+				position: relative !important;
+				z-index: 9999999 !important;
+			}
+			.dynamic-menu-container {
+				position: relative !important;
+				z-index: 9999999 !important;
+				width: 100%;
+				overflow: visible !important;
+			}
+			.d-menu {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+				min-height: 50px;
+			}
+			.d-menu-item {
+				position: relative;
+			}
+			.d-menu-link {
+				display: block;
+				padding: 15px 20px;
+				color: #ffffff !important;
+				font-weight: 600 !important;
+				font-size: 14px !important;
+				letter-spacing: 0.5px;
+				text-decoration: none !important;
+				transition: color 0.3s;
+			}
+			.d-menu-link:hover {
+				color: #e62228 !important;
+				text-decoration: none !important;
+			}
+			/* Submenu 1 */
+			.d-submenu {
+				display: none;
+				position: absolute;
+				top: 100%;
+				left: 0;
+				background: #ffffff;
+				box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+				min-width: 240px;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				z-index: 999999 !important;
+			}
+			.d-menu-item:hover > .d-submenu {
+				display: block !important;
+				animation: fadeIn 0.2s ease-in-out;
+			}
+			/* Submenu Items */
+			.d-submenu-item {
+				position: relative;
+				border-bottom: 1px solid #f0f0f0;
+			}
+			.d-submenu-item:last-child {
+				border-bottom: none;
+			}
+			.d-submenu-link {
+				display: block;
+				padding: 14px 22px;
+				color: #333333;
+				font-weight: 600;
+				font-size: 12px;
+				letter-spacing: 0.5px;
+				text-decoration: none;
+				transition: all 0.2s;
+				background: #ffffff;
+			}
+			.d-submenu-link:hover {
+				color: #e62228;
+				background: #fdfdfd;
+				text-decoration: none;
+			}
+			/* Nested Submenu (Grandchildren) */
+			.d-submenu-nested, .d-submenu-nested-2 {
+				display: none;
+				position: absolute;
+				top: 0;
+				left: 100%;
+				background: #ffffff;
+				box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+				min-width: 240px;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			.d-submenu-item:hover > .d-submenu-nested,
+			.d-submenu-item:hover > .d-submenu-nested-2 {
+				display: block;
+				animation: fadeIn 0.2s ease-in-out;
+			}
+			
+			@keyframes fadeIn {
+				from { opacity: 0; transform: translateY(-5px); }
+				to { opacity: 1; transform: translateY(0); }
+			}
+			</style>
 			</div>
 		</div>
 		<div id="sticky-cart-wrapper"></div>
@@ -650,8 +780,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 			
-	<li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="{{ route('tienda.index') }}"  class="flex-fill mobile-menu__link ">Inicio</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="{{ route('tienda.category', '10-refacciones') }}"  class="flex-fill mobile-menu__link ">Refacciones</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="{{ route('tienda.category', '11-aire-acondicionado') }}"  class="flex-fill mobile-menu__link ">Aire Acondicionado</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="{{ route('tienda.category', '13-linea-blanca') }}"  class="flex-fill mobile-menu__link js-mobile-menu__link-accordion--has-submenu  ">Línea Blanca</a><span class="mobile-menu__arrow js-mobile-menu__link-accordion--has-submenu"><i class="fa fa-angle-down mobile-menu__expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up mobile-menu__close-icon" aria-hidden="true"></i></span><div class="mobile-menu__tab-row-break"></div>
-	<ul class="mobile-menu__submenu  mobile-menu__submenu--accordion js-mobile-menu__submenu"><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="{{ route('tienda.category', '18-boiler') }}"  class="flex-fill mobile-menu__link ">Boiler</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="{{ route('tienda.category', '19-campanas') }}"  class="flex-fill mobile-menu__link ">Campanas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="{{ route('tienda.category', '21-dispensadores') }}"  class="flex-fill mobile-menu__link ">Dispensadores</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="{{ route('tienda.category', '22-parillas') }}"  class="flex-fill mobile-menu__link ">Parillas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="{{ route('tienda.category', '25-microondas') }}"  class="flex-fill mobile-menu__link ">Microondas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="{{ route('tienda.category', '26-lavadoras') }}"  class="flex-fill mobile-menu__link ">Lavadoras</a></li></ul>	</li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="{{ route('tienda.category', '14-souvenirs') }}"  class="flex-fill mobile-menu__link ">Souvenirs</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="{{ route('tienda.category', '17-herramientas') }}"  class="flex-fill mobile-menu__link ">Herramientas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="{{ route('tienda.category', '24-outlet') }}"  class="flex-fill mobile-menu__link ">Outlet</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="{{ route('tienda.category', 'contactenos') }}"  class="flex-fill mobile-menu__link ">Contacto</a></li>	
+	<li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="{{ route('tienda.index') }}"  class="flex-fill mobile-menu__link ">Inicio</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="{{ route('tienda.category', optional(\App\Models\Category::where('slug', '10-refacciones')->orWhere('slug', preg_replace('/^\d+-/', '', '10-refacciones'))->first())->uuid ?? '10-refacciones') }}"  class="flex-fill mobile-menu__link ">Refacciones</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="{{ route('tienda.category', optional(\App\Models\Category::where('slug', '11-aire-acondicionado')->orWhere('slug', preg_replace('/^\d+-/', '', '11-aire-acondicionado'))->first())->uuid ?? '11-aire-acondicionado') }}"  class="flex-fill mobile-menu__link ">Aire Acondicionado</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="{{ route('tienda.category', optional(\App\Models\Category::where('slug', '13-linea-blanca')->orWhere('slug', preg_replace('/^\d+-/', '', '13-linea-blanca'))->first())->uuid ?? '13-linea-blanca') }}"  class="flex-fill mobile-menu__link js-mobile-menu__link-accordion--has-submenu  ">Línea Blanca</a><span class="mobile-menu__arrow js-mobile-menu__link-accordion--has-submenu"><i class="fa fa-angle-down mobile-menu__expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up mobile-menu__close-icon" aria-hidden="true"></i></span><div class="mobile-menu__tab-row-break"></div>
+	<ul class="mobile-menu__submenu  mobile-menu__submenu--accordion js-mobile-menu__submenu"><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="{{ route('tienda.category', optional(\App\Models\Category::where('slug', '18-boiler')->orWhere('slug', preg_replace('/^\d+-/', '', '18-boiler'))->first())->uuid ?? '18-boiler') }}"  class="flex-fill mobile-menu__link ">Boiler</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="{{ route('tienda.category', optional(\App\Models\Category::where('slug', '19-campanas')->orWhere('slug', preg_replace('/^\d+-/', '', '19-campanas'))->first())->uuid ?? '19-campanas') }}"  class="flex-fill mobile-menu__link ">Campanas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="{{ route('tienda.category', optional(\App\Models\Category::where('slug', '21-dispensadores')->orWhere('slug', preg_replace('/^\d+-/', '', '21-dispensadores'))->first())->uuid ?? '21-dispensadores') }}"  class="flex-fill mobile-menu__link ">Dispensadores</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="{{ route('tienda.category', optional(\App\Models\Category::where('slug', '22-parillas')->orWhere('slug', preg_replace('/^\d+-/', '', '22-parillas'))->first())->uuid ?? '22-parillas') }}"  class="flex-fill mobile-menu__link ">Parillas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="{{ route('tienda.category', optional(\App\Models\Category::where('slug', '25-microondas')->orWhere('slug', preg_replace('/^\d+-/', '', '25-microondas'))->first())->uuid ?? '25-microondas') }}"  class="flex-fill mobile-menu__link ">Microondas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="{{ route('tienda.category', optional(\App\Models\Category::where('slug', '26-lavadoras')->orWhere('slug', preg_replace('/^\d+-/', '', '26-lavadoras'))->first())->uuid ?? '26-lavadoras') }}"  class="flex-fill mobile-menu__link ">Lavadoras</a></li></ul>	</li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="{{ route('tienda.category', optional(\App\Models\Category::where('slug', '14-souvenirs')->orWhere('slug', preg_replace('/^\d+-/', '', '14-souvenirs'))->first())->uuid ?? '14-souvenirs') }}"  class="flex-fill mobile-menu__link ">Souvenirs</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="{{ route('tienda.category', optional(\App\Models\Category::where('slug', '17-herramientas')->orWhere('slug', preg_replace('/^\d+-/', '', '17-herramientas'))->first())->uuid ?? '17-herramientas') }}"  class="flex-fill mobile-menu__link ">Herramientas</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="{{ route('tienda.category', optional(\App\Models\Category::where('slug', '24-outlet')->orWhere('slug', preg_replace('/^\d+-/', '', '24-outlet'))->first())->uuid ?? '24-outlet') }}"  class="flex-fill mobile-menu__link ">Outlet</a></li><li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a  href="{{ route('tienda.contact') }}"  class="flex-fill mobile-menu__link ">Contacto</a></li>	
 												<li class="mobile-menu__below-content"> </li>
 				</ul>
 			</div>
@@ -687,11 +817,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 			<div class="mobile-menu__user">
-			<a href="{{ route('tienda.category', 'mi-cuenta') }}" class="text-reset"><i class="fa fa-user" aria-hidden="true"></i>
-				
-									Iniciar sesión
-								
-			</a>
+			@auth
+				<a href="{{ route('dashboard') }}" class="text-reset"><i class="fa fa-user" aria-hidden="true"></i>
+					Mi Cuenta
+				</a>
+			@else
+				<a href="{{ route('login') }}" class="text-reset"><i class="fa fa-user" aria-hidden="true"></i>
+					Iniciar sesión
+				</a>
+			@endauth
 			</div>
 
 
@@ -795,23 +929,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 </div>
                 <div class="col col-mobile-btn col-mobile-btn-account text-center">
-                    <a href="{{ route('tienda.category', 'mi-cuenta') }}" class="m-nav-btn"><i class="fa fa-user" aria-hidden="true"></i>
-                        <span>     
-                                                            Iniciar sesión
-                                                        </span></a>
+                    @auth
+                        <a href="{{ route('dashboard') }}" class="m-nav-btn"><i class="fa fa-user" aria-hidden="true"></i>
+                            <span>Mi Cuenta</span></a>
+                    @else
+                        <a href="{{ route('login') }}" class="m-nav-btn"><i class="fa fa-user" aria-hidden="true"></i>
+                            <span>Iniciar sesión</span></a>
+                    @endauth
                 </div>
 
                 
 
-                                <div class="col col-mobile-btn col-mobile-btn-cart ps-shoppingcart text-center dropdown">
+                                <div class="col col-mobile-btn col-mobile-btn-cart ps-shoppingcart text-center">
                    <div id="mobile-cart-wrapper">
-                    <a id="mobile-cart-toogle" class="m-nav-btn" data-display="static" data-toggle="dropdown"><i class="fa fa-shopping-bag mobile-bag-icon" aria-hidden="true"><span id="mobile-cart-products-count" class="cart-products-count cart-products-count-btn">
-                                
-                                                                    0
-                                                                
+                    <a id="mobile-cart-toogle" href="{{ route('cart.index') }}" class="m-nav-btn"><i class="fa fa-shopping-bag mobile-bag-icon" aria-hidden="true"><span id="mobile-cart-products-count" class="cart-products-count cart-products-count-btn {{ $cartCount > 0 ? '' : 'd-none' }}">
+                                {{ $cartCount }}
                             </span></i>
                         <span>Carrito:</span></a>
-                    <div id="_mobile_blockcart-content" class="dropdown-menu-custom dropdown-menu"></div>
                    </div>
                 </div>
                             </div>
@@ -954,35 +1088,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <h5 class="block-title"><span>Mi Cuenta</span></h5>
             <div class="block-content">
                 <ul>
-                                                                        <li>
-                                <a
-                                        href="{{ route('tienda.category', 'mi-cuenta') }}"
-                                        title=""                                                                        >
-                                    Mi cuenta
-                                </a>
-                            </li>
-                                                                                                <li>
-                                <a
-                                        href="{{ route('tienda.category', 'historial-compra') }}"
-                                        title=""                                                                        >
-                                    Historial de pedidos
-                                </a>
-                            </li>
-                                                                                                <li>
-                                <a
-                                        href="{{ route('tienda.category', 'datos-personales') }}"
-                                        title=""                                                                        >
-                                    Identidad
-                                </a>
-                            </li>
-                                                                                                <li>
-                                <a
-                                        href="{{ route('tienda.category', 'direcciones') }}"
-                                        title=""                                                                        >
-                                    Direcciones
-                                </a>
-                            </li>
-                                                            </ul>
+                    @auth
+                        <li>
+                            <a href="{{ route('dashboard') }}" title="Mi Cuenta">
+                                Mi cuenta
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('dashboard') }}" title="Historial de pedidos">
+                                Historial de pedidos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('dashboard') }}" title="Identidad">
+                                Identidad
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('dashboard') }}" title="Direcciones">
+                                Direcciones
+                            </a>
+                        </li>
+                    @else
+                        <li>
+                            <a href="{{ route('login') }}" title="Iniciar Sesión">
+                                Iniciar Sesión
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('login') }}" title="Historial de pedidos">
+                                Historial de pedidos
+                            </a>
+                        </li>
+                    @endauth
+                </ul>
             </div>
         </div>
     
@@ -1203,7 +1342,7 @@ if(window.location.pathname == "/content/4-quienes-somos" || window.location.pat
           
               
       <div class="forgot-password">
-        <a href="{{ route('tienda.category', 'recuperar-contrasena') }}" rel="nofollow">
+        <a href="{{ route('tienda.category', optional(\App\Models\Category::where('slug', 'recuperar-contrasena')->orWhere('slug', preg_replace('/^\d+-/', '', 'recuperar-contrasena'))->first())->uuid ?? 'recuperar-contrasena') }}" rel="nofollow">
           ¿Olvidaste tu contraseña?
         </a>
       </div>
@@ -1472,6 +1611,4 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
     @include('tienda.partials.modals')
 </body>
-
-
 </html>

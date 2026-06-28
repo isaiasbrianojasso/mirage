@@ -80,7 +80,7 @@ class CartController extends Controller
                 'quantity' => $request->quantity,
                 'price' => $price,
                 'image_url' => $imageUrl,
-                'slug' => $product->slug,
+                'id' => $product->id,
             ];
         }
 

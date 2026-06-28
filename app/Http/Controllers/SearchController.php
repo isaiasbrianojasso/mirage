@@ -26,7 +26,7 @@ class SearchController extends Controller
                 'name' => $product->name,
                 'price' => '$' . number_format($product->price, 2),
                 'image' => $product->image ? asset('storage/' . $product->image) : null,
-                'url' => route('tienda.product', $product->slug)
+                'url' => route('tienda.product', $product->id)
             ];
         });
 

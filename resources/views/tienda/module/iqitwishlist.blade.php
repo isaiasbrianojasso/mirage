@@ -379,64 +379,96 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                 </div>
                         <div class="col col-auto col-header-right">
-                <div class="row no-gutters justify-content-end">
-
+                <div class="row no-gutters justify-content-end align-items-center" style="gap: 20px;">
+                    <div id="header-user-btn" class="col-auto header-btn-w header-user-btn-w">
+                        @auth
+                            <a href="{{ route('dashboard') }}" title="Mi Cuenta" class="header-btn header-user-btn">
+                                <i class="fa fa-user fa-fw icon" aria-hidden="true"></i>
+                                <span class="title">Mi Cuenta</span>
+                            </a>
+                        @else
+                            <a href="{{ route('login') }}" title="Iniciar sesión" class="header-btn header-user-btn">
+                                <i class="fa fa-user fa-fw icon" aria-hidden="true"></i>
+                                <span class="title">Iniciar sesión</span>
+                            </a>
+                        @endauth
+                    </div>
                     
-                                            <div id="header-user-btn" class="col col-auto header-btn-w header-user-btn-w">
-            <a href="/tienda/mi-cuenta"
-           title="Acceda a su cuenta de cliente"
-           rel="nofollow" class="header-btn header-user-btn">
-            <i class="fa fa-user fa-fw icon" aria-hidden="true"></i>
-            <span class="title">Iniciar sesión</span>
-        </a>
-    </div>
-
-
-
-
-
-
-
-
-
-                                        
-
-                    
-
-                                            
-                                                    <div id="ps-shoppingcart-wrapper" class="col col-auto">
-    <div id="ps-shoppingcart"
-         class="header-btn-w header-cart-btn-w ps-shoppingcart dropdown">
-         <div id="blockcart" class="blockcart cart-preview"
-         data-refresh-url="//www.tiendamirage.mx/module/ps_shoppingcart/ajax">
-        <a id="cart-toogle" href="{{ route('cart.index') }}" class="cart-toogle header-btn header-cart-btn" data-toggle="dropdown" data-display="static">
-            <i class="fa fa-shopping-bag fa-fw icon" aria-hidden="true"><span class="cart-products-count-btn  d-none">0</span></i>
-            <span class="info-wrapper">
-            <span class="title">Carrito:</span>
-            <span class="cart-toggle-details"><span class="text-faded cart-separator"> / </span>{{ $cartCount > 0 ? $cartCount . ' articulos' : 'Vacío' }}</span>
-            </span>
-        </a>
-        <div id="_desktop_blockcart-content" class="dropdown-menu-custom dropdown-menu">
-    <div id="blockcart-content" class="blockcart-content" >
-        <div class="cart-title">
-            <span class="modal-title">Carrito</span>
-            <button type="button" id="js-cart-close" class="close">
-                <span>×</span>
-            </button>
-            <hr>
-        </div>
-                    <span class="no-items">No hay más artículos en su carrito</span>
-            </div>
-</div> </div>
-
-
-
-
-    </div>
-</div>
-                                                
+                    <div id="ps-shoppingcart-wrapper" class="col-auto">
+                        <div id="ps-shoppingcart" class="header-btn-w header-cart-btn-w ps-shoppingcart dropdown">
+                            @php
+                                $cartCount = 0;
+                                $cartTotal = 0;
+                                if(session()->has('cart')) {
+                                    foreach(session('cart') as $item) {
+                                        $cartCount += $item['quantity'];
+                                        $cartTotal += $item['price'] * $item['quantity'];
+                                    }
+                                }
+                            @endphp
+                            <a id="cart-toogle" href="#" class="cart-toogle header-btn header-cart-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-shopping-bag fa-fw icon" aria-hidden="true"><span class="cart-products-count-btn {{ $cartCount > 0 ? '' : 'd-none' }}">{{ $cartCount }}</span></i>
+                                <span class="info-wrapper">
+                                    <span class="title">Carrito:</span>
+                                    <span class="cart-toggle-details">
+                                        <span class="text-faded cart-separator"> / </span>
+                                        @if($cartCount > 0)
+                                            ${{ number_format($cartTotal, 2) }}
+                                        @else
+                                            Vacío
+                                        @endif
+                                    </span>
+                                </span>
+                            </a>
+                            <div id="_desktop_blockcart-content" class="dropdown-menu-custom dropdown-menu dropdown-menu-right" aria-labelledby="cart-toogle" style="width: 320px; padding: 15px;">
+                                <div id="blockcart-content" class="blockcart-content" >
+                                    <div class="cart-title">
+                                        <span class="modal-title font-weight-bold">Carrito</span>
+                                        <button type="button" id="js-cart-close" class="close" data-dismiss="dropdown">
+                                            <span>×</span>
+                                        </button>
+                                        <hr>
                                     </div>
-                
+                                    @if(session()->has('cart') && count(session('cart')) > 0)
+                                        <ul class="cart-items list-unstyled" style="max-height: 300px; overflow-y: auto;">
+                                            @foreach(session('cart') as $id => $details)
+                                                <li class="cart-item mb-3 pb-2 border-bottom">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-3 pr-0">
+                                                            <img src="{{ $details['image_url'] ?? 'https://placehold.co/100x100?text=No+Image' }}" alt="{{ $details['name'] }}" class="img-fluid rounded">
+                                                        </div>
+                                                        <div class="col-9">
+                                                            <div style="font-size: 13px; line-height: 1.2; color: #555;">{{ $details['name'] }}</div>
+                                                            <div class="mt-1 d-flex justify-content-between align-items-center">
+                                                                <span class="text-muted" style="font-size: 13px;">Cant: {{ $details['quantity'] }}</span>
+                                                                <span class="font-weight-bold" style="color: #333;">${{ number_format($details['price'] * $details['quantity'], 2) }}</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            @endforeach
+                                        </ul>
+                                        <div class="cart-summary mt-3">
+                                            <div class="d-flex justify-content-between font-weight-bold mb-3">
+                                                <span>Total (IVA incluido)</span>
+                                                <span>${{ number_format($cartTotal, 2) }}</span>
+                                            </div>
+                                            <div class="cart-actions">
+                                                <a href="{{ route('checkout.index') }}" class="btn btn-block mb-2 text-white" style="background-color: #e62228; border-color: #e62228;">Registro de Pago</a>
+                                                <a href="{{ route('cart.index') }}" class="btn btn-block text-white" style="background-color: #e62228; border-color: #e62228;">Carrito:</a>
+                                            </div>
+                                        </div>
+                                    @else
+                                        <div class="text-center py-3 text-muted">
+                                            <i class="fa fa-shopping-basket fa-3x mb-3 text-light"></i><br>
+                                            <span class="no-items">No hay artículos en su carrito</span>
+                                        </div>
+                                    @endif
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-12">
                 <div class="row">

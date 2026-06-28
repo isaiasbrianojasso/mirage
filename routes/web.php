@@ -73,11 +73,15 @@ Route::get('/tienda/producto/quickview/{id}', [\App\Http\Controllers\QuickViewCo
 Route::get('/tienda/comparar/data', [\App\Http\Controllers\QuickViewController::class, 'compare'])->name('product.compare');
 Route::post('/tienda/producto/{slug}/review', [TiendaController::class, 'storeReview'])->name('tienda.product.review');
 
-Route::get('/tienda/{slug}', [TiendaController::class, 'category'])->name('tienda.category');
-Route::get('/tienda/producto/{slug}', [TiendaController::class, 'product'])->name('tienda.product');
+Route::get('/tienda/categoria/{uuid}', [TiendaController::class, 'category'])->name('tienda.category');
+Route::get('/tienda/producto/{uuid}', [TiendaController::class, 'product'])->name('tienda.product');
 Route::get('/tienda/content/{slug}', function () {
     return view('tienda.content');
 })->name('tienda.content');
+
+Route::get('/tienda/contacto', function () {
+    return view('tienda.contact');
+})->name('tienda.contact');
 
 // Search Routes
 Route::get('/buscar/autocomplete', [\App\Http\Controllers\SearchController::class, 'autocomplete'])->name('search.autocomplete');
@@ -105,6 +109,89 @@ Route::get('/distribuidores', [DistributorController::class, 'index'])->name('di
 
 // Static legacy routes fallback
 require __DIR__.'/web_mirage.php';
-// require __DIR__.'/web_tienda.php'; // COMMENTED OUT FOR TESTING
+
+// Dynamic legacy fallback routes to prevent 404s on scraped pages and PrestaShop products
+Route::get('/tienda/module/{path}', function ($path) {
+    $cleanPath = preg_replace('/(\.html|\/index\.html)$/', '', $path);
+    $viewName = 'tienda.module.' . str_replace('/', '.', $cleanPath);
+    if (view()->exists($viewName)) {
+        return view($viewName);
+    }
+    return redirect()->route('tienda.index');
+})->where('path', '.*');
+
+Route::get('/tienda/modules/{path}', function ($path) {
+    $cleanPath = preg_replace('/(\.html|\/index\.html)$/', '', $path);
+    $viewName = 'tienda.modules.' . str_replace('/', '.', $cleanPath);
+    if (view()->exists($viewName)) {
+        return view($viewName);
+    }
+    return redirect()->route('tienda.index');
+})->where('path', '.*');
+
+// Redirigir categorías antiguas .html a la categoría dinámica en base de datos
+Route::get('/tienda/{slug}.html', function ($slug) {
+    $cleanSlug = preg_replace('/^\d+-/', '', $slug);
+    
+    $category = \App\Models\Category::where('slug', $slug)
+        ->orWhere('slug', $cleanSlug)
+        ->first();
+        
+    if ($category) {
+        return redirect()->route('tienda.category', ['uuid' => $category->uuid]);
+    }
+
+    $product = \App\Models\Product::where('slug', $slug)
+        ->orWhere('slug', $cleanSlug)
+        ->first();
+        
+    if ($product) {
+        return redirect()->route('tienda.product', ['uuid' => $product->id]);
+    }
+    
+    return redirect()->route('tienda.index');
+});
+
+// Redirigir categorías antiguas con /index.html a la categoría dinámica en base de datos
+Route::get('/tienda/{slug}/index.html', function ($slug) {
+    $cleanSlug = preg_replace('/^\d+-/', '', $slug);
+    
+    $category = \App\Models\Category::where('slug', $slug)
+        ->orWhere('slug', $cleanSlug)
+        ->first();
+        
+    if ($category) {
+        return redirect()->route('tienda.category', ['uuid' => $category->uuid]);
+    }
+    
+    return redirect()->route('tienda.index');
+});
+
+// Legacy PrestaShop product routes (e.g., /tienda/refacciones/616-motor-condensador-1-ton-ykt-32-6-202l.html)
+Route::get('/tienda/{category}/{slug}.html', function ($category, $slug) {
+    $cleanSlug = preg_replace('/^\d+-/', '', $slug);
+    
+    // Check if the product exists in the DB (original or clean slug)
+    $product = \App\Models\Product::where('slug', $slug)
+        ->orWhere('slug', $cleanSlug)
+        ->first();
+        
+    if ($product) {
+        return redirect()->route('tienda.product', ['uuid' => $product->id]);
+    }
+    
+    // If product doesn't exist, redirect to parent category (clean or original) in DB
+    $cleanCategory = preg_replace('/^\d+-/', '', $category);
+    $dbCategory = \App\Models\Category::where('slug', $category)
+        ->orWhere('slug', $cleanCategory)
+        ->first();
+        
+    if ($dbCategory) {
+        return redirect()->route('tienda.category', ['uuid' => $dbCategory->uuid]);
+    }
+    
+    return redirect()->route('tienda.index');
+});
+
 Route::get('/test-cart', function() { dd(session()->get('cart')); });
 Route::post('/module/iqitcompare/actions', [\App\Http\Controllers\CompareController::class, 'actions'])->name('compare.actions');

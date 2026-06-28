@@ -10,12 +10,12 @@
             <h5 class="block-title"><span><a href="{{ route('tienda.index') }}">Inicio</a></span></h5>
             <div class="category-top-menu block-content">
                 <ul class="category-sub-menu">
-                    <li data-depth="0"><a href="{{ route('tienda.category', 'refacciones') }}">Refacciones</a></li>
-                    <li data-depth="0"><a href="{{ route('tienda.category', 'aire-acondicionado') }}">Aire Acondicionado</a></li>
-                    <li data-depth="0"><a href="{{ route('tienda.category', 'linea-blanca') }}">Línea Blanca</a></li>
-                    <li data-depth="0"><a href="{{ route('tienda.category', 'herramientas') }}">Herramientas</a></li>
-                    <li data-depth="0"><a href="{{ route('tienda.category', 'souvenirs') }}">Souvenirs</a></li>
-                    <li data-depth="0"><a href="{{ route('tienda.category', 'outlet') }}">Outlet</a></li>
+                    <li data-depth="0"><a href="{{ route('tienda.category', optional(\App\Models\Category::where('slug', 'refacciones')->orWhere('slug', preg_replace('/^\d+-/', '', 'refacciones'))->first())->uuid ?? 'refacciones') }}">Refacciones</a></li>
+                    <li data-depth="0"><a href="{{ route('tienda.category', optional(\App\Models\Category::where('slug', 'aire-acondicionado')->orWhere('slug', preg_replace('/^\d+-/', '', 'aire-acondicionado'))->first())->uuid ?? 'aire-acondicionado') }}">Aire Acondicionado</a></li>
+                    <li data-depth="0"><a href="{{ route('tienda.category', optional(\App\Models\Category::where('slug', 'linea-blanca')->orWhere('slug', preg_replace('/^\d+-/', '', 'linea-blanca'))->first())->uuid ?? 'linea-blanca') }}">Línea Blanca</a></li>
+                    <li data-depth="0"><a href="{{ route('tienda.category', optional(\App\Models\Category::where('slug', 'herramientas')->orWhere('slug', preg_replace('/^\d+-/', '', 'herramientas'))->first())->uuid ?? 'herramientas') }}">Herramientas</a></li>
+                    <li data-depth="0"><a href="{{ route('tienda.category', optional(\App\Models\Category::where('slug', 'souvenirs')->orWhere('slug', preg_replace('/^\d+-/', '', 'souvenirs'))->first())->uuid ?? 'souvenirs') }}">Souvenirs</a></li>
+                    <li data-depth="0"><a href="{{ route('tienda.category', optional(\App\Models\Category::where('slug', 'outlet')->orWhere('slug', preg_replace('/^\d+-/', '', 'outlet'))->first())->uuid ?? 'outlet') }}">Outlet</a></li>
                 </ul>
             </div>
         </div>
@@ -42,7 +42,7 @@
                             <div class="js-product-miniature-wrapper col-6 col-md-6 col-lg-4 col-xl-4">
                                 <article class="product-miniature product-miniature-default product-miniature-grid product-miniature-layout-1 js-product-miniature" data-id-product="{{ $product->id }}">
                                     <div class="thumbnail-container">
-                                        <a href="{{ route("tienda.product", $product->slug) }}" class="thumbnail product-thumbnail">
+                                        <a href="{{ route("tienda.product", $product->id) }}" class="thumbnail product-thumbnail">
                                             @if($product->images->count() > 0)
                                             <img src="{{ Str::startsWith($product->images->first()->image_url, "http") ? $product->images->first()->image_url : Storage::url($product->images->first()->image_url) }}" alt="{{ $product->name }}" class="img-fluid lazy-product-image product-thumbnail-first">
                                             @if($product->images->count() > 1)
@@ -77,11 +77,11 @@
                                     <div class="product-description">
                                         <div class="product-category-name text-muted">{{ $category->name }}</div>    
                                         <h2 class="h3 product-title">
-                                            <a href="{{ route("tienda.product", $product->slug) }}">{{ $product->name }}</a>
+                                            <a href="{{ route("tienda.product", $product->id) }}">{{ $product->name }}</a>
                                         </h2>
-                                        <div class="product-reference text-muted"> <a href="{{ route("tienda.product", $product->slug) }}">{{ $product->sku }}</a></div>    
+                                        <div class="product-reference text-muted"> <a href="{{ route("tienda.product", $product->id) }}">{{ $product->sku }}</a></div>    
                                         <div class="product-price-and-shipping">
-                                            <a href="{{ route("tienda.product", $product->slug) }}"> <span class="product-price">${{ number_format($product->price, 2) }}</span></a>
+                                            <a href="{{ route("tienda.product", $product->id) }}"> <span class="product-price">${{ number_format($product->price, 2) }}</span></a>
                                         </div>
                                     </div>
                                 </article>

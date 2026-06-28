@@ -9,7 +9,7 @@ class Product extends Model
 {
     use HasUuids;
 
-    protected $guarded = [];
+    protected $guarded = ['id'];
 
 
 

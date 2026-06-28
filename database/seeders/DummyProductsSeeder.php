@@ -36,8 +36,17 @@ class DummyProductsSeeder extends Seeder
                 ]);
 
                 if ($product->images()->count() == 0) {
+                    $realImages = [
+                        'https://www.tiendamirage.mx/10214-home_default/inverter-x-2-ton-frio-calor-220.jpg',
+                        'https://www.tiendamirage.mx/10212-home_default/inverter-x-1-ton-frio-calor-220.jpg',
+                        'https://www.tiendamirage.mx/10202-home_default/inverter-x-1-ton-frio-calor-110.jpg',
+                        'https://www.tiendamirage.mx/10204-home_default/inverter-2-ton-frio-220.jpg',
+                        'https://www.tiendamirage.mx/10192-home_default/inverter-1-ton-frio-220.jpg',
+                        'https://www.tiendamirage.mx/9826-home_default/mirage-magnum-22-2-ton-frio-calor-220v.jpg',
+                        'https://www.tiendamirage.mx/9822-home_default/mirage-magnum-22-1-ton-frio-calor-220v.jpg',
+                    ];
                     $product->images()->create([
-                        'image_url'  => 'https://placehold.co/600x600/f1f5f9/94a3b8?text=Producto+Prueba',
+                        'image_url'  => $realImages[array_rand($realImages)],
                         'is_primary' => true,
                     ]);
                 }

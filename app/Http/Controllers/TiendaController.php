@@ -15,7 +15,7 @@ class TiendaController extends Controller
      */
     private function getMenuCategories()
     {
-        return Category::with('children')
+        return Category::with('children.children')
             ->where('is_active', true)
             ->whereNull('parent_id')
             ->get();
@@ -57,41 +57,37 @@ class TiendaController extends Controller
         return view('tienda.catalog_all', compact('categories', 'businessSetting', 'rootCategories'));
     }
 
-    public function category($slug)
+    public function category($uuid)
     {
-        $category = Category::where('slug', $slug)->first();
+        // Buscar categoría en la base de datos por UUID
+        $category = Category::where('uuid', $uuid)->first();
 
+        // Si no existe, redirigir al index de la tienda
         if (!$category) {
-            // Fallback to static blade if category not in database
-            if (view()->exists('tienda.' . $slug)) {
-                return view('tienda.' . $slug);
-            }
-            abort(404);
+            return redirect()->route('tienda.index');
         }
 
         $products = Product::with('images')->where('category_id', $category->id)->where('is_active', true)->get();
-
-        if (!view()->exists('tienda.category')) {
-            return view('tienda.' . $slug);
-        }
-
         $categories = $this->getMenuCategories();
         $businessSetting = $this->getBusinessSetting();
 
         return view('tienda.category', compact('category', 'products', 'categories', 'businessSetting'));
     }
 
-    public function product($slug)
+    public function product($uuid)
     {
+        // Buscar producto en la base de datos por ID (que es UUID)
         $product = Product::with(['images', 'category', 'variants' => function($query) {
             $query->where('is_active', true);
-        }, 'documents'])->where('slug', $slug)->first();
+        }, 'documents'])
+        ->where('id', $uuid)
+        ->first();
+
+        // Si no existe, redirigir al index de la tienda
         if (!$product) {
-            if (view()->exists('tienda.' . $slug)) {
-                return view('tienda.' . $slug);
-            }
-            abort(404);
+            return redirect()->route('tienda.index');
         }
+
         $categories = $this->getMenuCategories();
         $businessSetting = $this->getBusinessSetting();
 

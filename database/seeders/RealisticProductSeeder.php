@@ -13,7 +13,7 @@ class RealisticProductSeeder extends Seeder
     {
         // 1. Boiler Gas LP 1 Servicio
         $boiler1 = Product::create([
-            'id' => '1340', // Force legacy ID for the testing user is doing
+            'id' => '13400000-0000-0000-0000-000000000000', // Force legacy ID for the testing user is doing
             'category_id' => 8, // Boiler
             'name' => 'Boiler Gas LP 1 Servicio Mirage',
             'slug' => 'boiler-gas-lp-1-servicio',
@@ -25,11 +25,11 @@ class RealisticProductSeeder extends Seeder
             'specifications' => ['Tipo de gas: LP', 'Servicios: 1', 'Encendido: Automático', 'Ahorro de gas: 70%'],
             'is_active' => true,
         ]);
-        ProductImage::create(['product_id' => '1340', 'image_url' => 'https://www.tiendamirage.mx/img/p/mx-default-home_default.jpg']);
+        ProductImage::create(['product_id' => '13400000-0000-0000-0000-000000000000', 'image_url' => 'https://www.tiendamirage.mx/7751-home_default/boiler-gas-lp-1-servicio.jpg']);
 
         // 2. Boiler Gas LP 2 Servicios
         $boiler2 = Product::create([
-            'id' => '1341',
+            'id' => '13410000-0000-0000-0000-000000000000',
             'category_id' => 8,
             'name' => 'Boiler Gas LP 2 Servicios Mirage',
             'slug' => 'boiler-gas-lp-2-servicios',
@@ -41,11 +41,11 @@ class RealisticProductSeeder extends Seeder
             'specifications' => ['Tipo de gas: LP', 'Servicios: 2', 'Encendido: Automático', 'Ahorro de gas: 70%'],
             'is_active' => true,
         ]);
-        ProductImage::create(['product_id' => '1341', 'image_url' => 'https://www.tiendamirage.mx/img/p/mx-default-home_default.jpg']);
+        ProductImage::create(['product_id' => '13410000-0000-0000-0000-000000000000', 'image_url' => 'https://www.tiendamirage.mx/7751-home_default/boiler-gas-lp-1-servicio.jpg']);
 
         // 3. Minisplit Inverter 1 Tonelada
         $minisplit1 = Product::create([
-            'id' => '2001',
+            'id' => '20010000-0000-0000-0000-000000000000',
             'category_id' => 3, // Minisplits Inverter
             'name' => 'Minisplit Magnum 22 Inverter 1 Tonelada',
             'slug' => 'minisplit-magnum-22-1-tonelada',
@@ -57,11 +57,11 @@ class RealisticProductSeeder extends Seeder
             'specifications' => ['Tecnología: Inverter', 'Capacidad: 1 Tonelada', 'Voltaje: 220V', 'Refrigerante: R410A'],
             'is_active' => true,
         ]);
-        ProductImage::create(['product_id' => '2001', 'image_url' => 'https://www.tiendamirage.mx/img/p/mx-default-home_default.jpg']);
+        ProductImage::create(['product_id' => '20010000-0000-0000-0000-000000000000', 'image_url' => 'https://www.tiendamirage.mx/9822-home_default/mirage-magnum-22-1-ton-frio-calor-220v.jpg']);
 
         // 4. Minisplit Inverter 2 Toneladas
         $minisplit2 = Product::create([
-            'id' => '2002',
+            'id' => '20020000-0000-0000-0000-000000000000',
             'category_id' => 3,
             'name' => 'Minisplit Magnum 22 Inverter 2 Toneladas',
             'slug' => 'minisplit-magnum-22-2-toneladas',
@@ -73,6 +73,6 @@ class RealisticProductSeeder extends Seeder
             'specifications' => ['Tecnología: Inverter', 'Capacidad: 2 Toneladas', 'Voltaje: 220V', 'Refrigerante: R410A'],
             'is_active' => true,
         ]);
-        ProductImage::create(['product_id' => '2002', 'image_url' => 'https://www.tiendamirage.mx/img/p/mx-default-home_default.jpg']);
+        ProductImage::create(['product_id' => '20020000-0000-0000-0000-000000000000', 'image_url' => 'https://www.tiendamirage.mx/9826-home_default/mirage-magnum-22-2-ton-frio-calor-220v.jpg']);
     }
 }

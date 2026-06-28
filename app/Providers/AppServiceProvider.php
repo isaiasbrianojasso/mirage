@@ -22,7 +22,7 @@ class AppServiceProvider extends ServiceProvider
         // ... (if there was anything here) ...
         try {
             \Illuminate\Support\Facades\View::share('businessSetting', \App\Models\BusinessSetting::first());
-            \Illuminate\Support\Facades\View::share('categories', \App\Models\Category::with('children')
+            \Illuminate\Support\Facades\View::share('categories', \App\Models\Category::with('children.children')
                 ->where('is_active', true)
                 ->whereNull('parent_id')
                 ->get());

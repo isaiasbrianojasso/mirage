@@ -11,7 +11,7 @@ class MirageProductsSeeder extends Seeder
     public function run(): void
     {
         $catInverter = Category::firstOrCreate(
-            ['slug' => 'minisplits-inverter'],
+            ['uuid' => 'e3c4d5e6-f7a8-9012-3456-78901abcdef2'],
             [
                 'name'        => 'Minisplits Inverter',
                 'description' => 'Equipos de aire acondicionado con tecnología Inverter de alta eficiencia energética.',

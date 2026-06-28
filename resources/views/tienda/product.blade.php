@@ -94,26 +94,97 @@
                 </form>
               </div>
             </div>
-            <div class="col col-header-right">
-              <div class="row no-gutters justify-content-end">
-                <div id="header-user-btn" class="col col-auto header-btn-w header-user-btn-w">
-                  <a href="{{ auth()->check() ? route('dashboard') : route('login') }}" class="header-btn header-user-btn">
-                    <i class="fa fa-user fa-fw icon" aria-hidden="true"></i>
-                    <span class="title">Iniciar sesión</span>
-                  </a>
+            <div class="col col-auto col-header-right">
+                <div class="row no-gutters justify-content-end align-items-center" style="gap: 20px;">
+                    <div id="header-user-btn" class="col-auto header-btn-w header-user-btn-w">
+                        @auth
+                            <a href="{{ route('dashboard') }}" title="Mi Cuenta" class="header-btn header-user-btn">
+                                <i class="fa fa-user fa-fw icon" aria-hidden="true"></i>
+                                <span class="title">Mi Cuenta</span>
+                            </a>
+                        @else
+                            <a href="{{ route('login') }}" title="Iniciar sesión" class="header-btn header-user-btn">
+                                <i class="fa fa-user fa-fw icon" aria-hidden="true"></i>
+                                <span class="title">Iniciar sesión</span>
+                            </a>
+                        @endauth
+                    </div>
+                    
+                    <div id="ps-shoppingcart-wrapper" class="col-auto">
+                        <div id="ps-shoppingcart" class="header-btn-w header-cart-btn-w ps-shoppingcart dropdown">
+                            @php
+                                $cartCount = 0;
+                                $cartTotal = 0;
+                                if(session()->has('cart')) {
+                                    foreach(session('cart') as $item) {
+                                        $cartCount += $item['quantity'];
+                                        $cartTotal += $item['price'] * $item['quantity'];
+                                    }
+                                }
+                            @endphp
+                            <a id="cart-toogle" href="#" class="cart-toogle header-btn header-cart-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-shopping-bag fa-fw icon" aria-hidden="true"><span class="cart-products-count-btn {{ $cartCount > 0 ? '' : 'd-none' }}">{{ $cartCount }}</span></i>
+                                <span class="info-wrapper">
+                                    <span class="title">Carrito:</span>
+                                    <span class="cart-toggle-details">
+                                        <span class="text-faded cart-separator"> / </span>
+                                        @if($cartCount > 0)
+                                            ${{ number_format($cartTotal, 2) }}
+                                        @else
+                                            Vacío
+                                        @endif
+                                    </span>
+                                </span>
+                            </a>
+                            <div id="_desktop_blockcart-content" class="dropdown-menu-custom dropdown-menu dropdown-menu-right" aria-labelledby="cart-toogle" style="width: 320px; padding: 15px;">
+                                <div id="blockcart-content" class="blockcart-content" >
+                                    <div class="cart-title">
+                                        <span class="modal-title font-weight-bold">Carrito</span>
+                                        <button type="button" id="js-cart-close" class="close" data-dismiss="dropdown">
+                                            <span>×</span>
+                                        </button>
+                                        <hr>
+                                    </div>
+                                    @if(session()->has('cart') && count(session('cart')) > 0)
+                                        <ul class="cart-items list-unstyled" style="max-height: 300px; overflow-y: auto;">
+                                            @foreach(session('cart') as $id => $details)
+                                                <li class="cart-item mb-3 pb-2 border-bottom">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-3 pr-0">
+                                                            <img src="{{ $details['image_url'] ?? 'https://placehold.co/100x100?text=No+Image' }}" alt="{{ $details['name'] }}" class="img-fluid rounded">
+                                                        </div>
+                                                        <div class="col-9">
+                                                            <div style="font-size: 13px; line-height: 1.2; color: #555;">{{ $details['name'] }}</div>
+                                                            <div class="mt-1 d-flex justify-content-between align-items-center">
+                                                                <span class="text-muted" style="font-size: 13px;">Cant: {{ $details['quantity'] }}</span>
+                                                                <span class="font-weight-bold" style="color: #333;">${{ number_format($details['price'] * $details['quantity'], 2) }}</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            @endforeach
+                                        </ul>
+                                        <div class="cart-summary mt-3">
+                                            <div class="d-flex justify-content-between font-weight-bold mb-3">
+                                                <span>Total (IVA incluido)</span>
+                                                <span>${{ number_format($cartTotal, 2) }}</span>
+                                            </div>
+                                            <div class="cart-actions">
+                                                <a href="{{ route('checkout.index') }}" class="btn btn-block mb-2 text-white" style="background-color: #e62228; border-color: #e62228;">Registro de Pago</a>
+                                                <a href="{{ route('cart.index') }}" class="btn btn-block text-white" style="background-color: #e62228; border-color: #e62228;">Carrito:</a>
+                                            </div>
+                                        </div>
+                                    @else
+                                        <div class="text-center py-3 text-muted">
+                                            <i class="fa fa-shopping-basket fa-3x mb-3 text-light"></i><br>
+                                            <span class="no-items">No hay artículos en su carrito</span>
+                                        </div>
+                                    @endif
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="ps-shoppingcart-wrapper" class="col col-auto">
-                  <div id="ps-shoppingcart" class="header-btn-w header-cart-btn-w ps-shoppingcart dropdown">
-                    <a id="cart-toogle" href="{{ route('cart.index') }}" class="cart-toogle header-btn header-cart-btn">
-                      <i class="fa fa-shopping-bag fa-fw icon" aria-hidden="true"></i>
-                      <span class="info-wrapper">
-                        <span class="title">Carrito:</span>
-                        <span class="cart-toggle-details" style="display: block; font-size: 13px; font-weight: normal; margin-top: -2px;">{{ $cartCount > 0 ? $cartCount . ' articulos' : 'Vacío' }}</span>
-                      </span>
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -130,7 +201,7 @@
                 @foreach($categories as $cat)
                   @if($cat->children->count() > 0)
                     <li class="cbp-hrmenu-tab cbp-hrmenu-tab-has-sub">
-                      <a href="{{ route('tienda.category', $cat->slug) }}" class="nav-link">
+                      <a href="{{ route('tienda.category', $cat->uuid) }}" class="nav-link">
                         <span class="cbp-tab-title">{{ mb_strtoupper($cat->name) }}</span>
                       </a>
                       <div class="cbp-hrsub cbp-hrsub-narrow">
@@ -138,7 +209,7 @@
                           <ul>
                             @foreach($cat->children as $child)
                               <li>
-                                <a href="{{ route('tienda.category', $child->slug) }}">{{ $child->name }}</a>
+                                <a href="{{ route('tienda.category', $child->uuid) }}">{{ $child->name }}</a>
                               </li>
                             @endforeach
                           </ul>
@@ -147,14 +218,14 @@
                     </li>
                   @else
                     <li class="cbp-hrmenu-tab">
-                      <a href="{{ route('tienda.category', $cat->slug) }}" class="nav-link">
+                      <a href="{{ route('tienda.category', $cat->uuid) }}" class="nav-link">
                         <span class="cbp-tab-title">{{ mb_strtoupper($cat->name) }}</span>
                       </a>
                     </li>
                   @endif
                 @endforeach
                 <li class="cbp-hrmenu-tab">
-                  <a href="{{ route('tienda.category', 'contactenos') }}" class="nav-link">
+                  <a href="{{ route('tienda.category', optional(\App\Models\Category::where('slug', 'contactenos')->orWhere('slug', preg_replace('/^\d+-/', '', 'contactenos'))->first())->uuid ?? 'contactenos') }}" class="nav-link">
                     <span class="cbp-tab-title">CONTACTO</span>
                   </a>
                 </li>
@@ -175,7 +246,7 @@
         <ol style="display: flex; gap: 8px; list-style: none; padding: 0; margin: 0; color: #64748b;">
           <li><a href="{{ route('tienda.index') }}" style="color: #64748b; text-decoration: none;">Inicio</a></li>
           @if($product->category)
-            <li><span style="margin: 0 4px;">/</span> <a href="{{ route('tienda.category', $product->category->slug) }}" style="color: #64748b; text-decoration: none;">{{ $product->category->name }}</a></li>
+            <li><span style="margin: 0 4px;">/</span> <a href="{{ route('tienda.category', $product->category->uuid) }}" style="color: #64748b; text-decoration: none;">{{ $product->category->name }}</a></li>
           @endif
           <li><span style="margin: 0 4px;">/</span> <span style="color: #0f172a; font-weight: 500;">{{ $product->name }}</span></li>
         </ol>
@@ -340,8 +411,12 @@
                         if (data.status === 'success' || data.status === 'info') {
                             btn.style.backgroundColor = '#3b82f6'; // Blue when added
                             btn.querySelector('.btn-text').innerText = 'Agregado (' + data.count + ')';
-                        } else if(data.status === 'error') {
-                            alert(data.message); // Too many products
+                        } else {
+                            if (typeof showMirageAlert === 'function') {
+                                showMirageAlert(data.message, 'warning');
+                            } else {
+                                alert(data.message);
+                            }
                         }
                     })
                     .catch(err => console.error(err));
@@ -391,7 +466,7 @@
                     <td style="padding: 12px 0; font-weight: 600; color: #64748b;">Categoría</td>
                     <td style="padding: 12px 0; text-align: right; color: #0f172a;">
                       @if($product->category)
-                        <a href="{{ route('tienda.category', $product->category->slug) }}" style="color: #ef4444; text-decoration: none;">{{ $product->category->name }}</a>
+                        <a href="{{ route('tienda.category', $product->category->uuid) }}" style="color: #ef4444; text-decoration: none;">{{ $product->category->name }}</a>
                       @else
                         General
                       @endif
@@ -513,7 +588,7 @@
                 <div class="review-form-container" style="background: #f8fafc; border-radius: 8px; padding: 30px; border: 1px solid #e2e8f0;">
                   <h4 style="font-size: 16px; font-weight: 600; color: #0f172a; margin-top: 0; margin-bottom: 20px; border-bottom: 2px solid #ef4444; padding-bottom: 8px; display: inline-block;">Dejar una opinión</h4>
                   
-                  <form action="{{ route('tienda.product.review', $product->slug) }}" method="POST">
+                  <form action="{{ route('tienda.product.review', $product->id) }}" method="POST">
                     @csrf
                     
                     <div style="margin-bottom: 20px;">
@@ -573,11 +648,11 @@
                 @endphp
                 <div class="col-6 col-md-3" style="padding: 0 10px;">
                   <div style="border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px; text-align: center; background: #fff; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 15px -3px rgba(0,0,0,0.05)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.02)';">
-                    <a href="{{ route('tienda.product', $other->slug) }}" style="display: block; height: 130px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px;">
+                    <a href="{{ route('tienda.product', $other->id) }}" style="display: block; height: 130px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px;">
                       <img src="{{ $otherImageUrl }}" style="max-height: 100%; max-width: 100%; object-fit: contain;">
                     </a>
                     <h4 style="font-size: 14px; font-weight: 600; color: #334155; margin: 0 0 10px 0; height: 38px; overflow: hidden; line-height: 1.4; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
-                      <a href="{{ route('tienda.product', $other->slug) }}" style="text-decoration: none; color: inherit;">{{ $other->name }}</a>
+                      <a href="{{ route('tienda.product', $other->id) }}" style="text-decoration: none; color: inherit;">{{ $other->name }}</a>
                     </h4>
                     <div style="font-weight: 700; color: #ef4444; font-size: 16px;">
                       @if($other->discount_price)
@@ -743,12 +818,15 @@ function setSelectRating(val) {
 
 // Add validation to form submission to require variant if they exist
 $('#add-to-cart-form').on('submit', function(e) {
-    if (productVariants && productVariants.length > 0) {
-        if (!$('#variant-select').val()) {
-            e.preventDefault();
+    const variantId = $('#variant-select').val();
+    if (!variantId && '{{ $product->variants && $product->variants->where('is_active', true)->count() > 0 ? 1 : 0 }}' == '1') {
+        e.preventDefault();
+        if (typeof showMirageAlert === 'function') {
+            showMirageAlert('Por favor, selecciona una capacidad/modelo antes de añadir al carrito.', 'warning');
+        } else {
             alert('Por favor, selecciona una capacidad/modelo antes de añadir al carrito.');
-            $('#variant-select').focus();
         }
+        $('#variant-select').focus();
     }
 });
 

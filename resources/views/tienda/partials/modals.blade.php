@@ -710,6 +710,34 @@ function toggleModalPassword() {
         toggleIcon.classList.add('fa-eye-slash');
     }
 }
+    $(document).ready(function() {
+        @if(session('error'))
+            if (typeof showMirageAlert === 'function') {
+                showMirageAlert("{!! addslashes(session('error')) !!}", 'error');
+            } else {
+                alert("{!! addslashes(session('error')) !!}");
+            }
+        @endif
+        @if(session('success'))
+            @if(str_contains(session('success'), 'Producto agregado al carrito exitosamente'))
+                setTimeout(function() {
+                    $('#cart-toogle').dropdown('toggle');
+                }, 500);
+            @else
+                if (typeof showMirageAlert === 'function') {
+                    showMirageAlert("{!! addslashes(session('success')) !!}", 'success');
+                } else {
+                    alert("{!! addslashes(session('success')) !!}");
+                }
+            @endif
+        @endif
+
+        // Close cart dropdown explicitly
+        $('#js-cart-close').on('click', function(e) {
+            e.preventDefault();
+            $('#cart-toogle').dropdown('toggle');
+        });
+    });
 
 // --- WISH LIST SCRIPT ---
 function handleWishlistClick(productId, btn) {
@@ -777,6 +805,46 @@ function showWishlistNotification() {
     }, 3000);
 }
 
+function showMirageAlert(message, type = 'error') {
+    let notif = document.getElementById('mirage-global-alert');
+    if (!notif) {
+        notif = document.createElement('div');
+        notif.id = 'mirage-global-alert';
+        document.body.appendChild(notif);
+        
+        notif.style.position = 'fixed';
+        notif.style.top = '20px';
+        notif.style.left = '50%';
+        notif.style.transform = 'translateX(-50%)';
+        notif.style.color = '#fff';
+        notif.style.padding = '15px 25px';
+        notif.style.borderRadius = '5px';
+        notif.style.zIndex = '999999';
+        notif.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+        notif.style.transition = 'all 0.3s ease-in-out';
+        notif.style.opacity = '0';
+        notif.style.pointerEvents = 'none';
+        notif.style.textAlign = 'center';
+        notif.style.fontWeight = '500';
+    }
+    
+    if (type === 'error') {
+        notif.style.background = '#ef4444'; // Red
+    } else if (type === 'warning') {
+        notif.style.background = '#f59e0b'; // Orange
+    } else {
+        notif.style.background = '#10b981'; // Green
+    }
+
+    notif.innerHTML = '<div class="ns-box-inner"><span class="ns-title"><i class="fa fa-exclamation-circle" aria-hidden="true" style="margin-right: 8px;"></i>' + message + '</span></div>';
+    
+    notif.style.opacity = '1';
+    
+    setTimeout(() => {
+        notif.style.opacity = '0';
+    }, 4000);
+}
+
 function addToCompare(productId) {
     $.ajax({
         url: '/module/iqitcompare/actions',
@@ -802,7 +870,7 @@ function addToCompare(productId) {
                     }, 3000);
                 }
             } else {
-                alert('No se pudo agregar el producto a la comparación.');
+                showMirageAlert('No se pudo agregar el producto a la comparación.');
             }
         },
         error: function(xhr) {
@@ -914,7 +982,7 @@ function openQuickView(productId) {
         },
         error: function(err) {
             console.error('Error loading quickview details', err);
-            alert('No se pudo cargar la vista rápida del producto.');
+            showMirageAlert('No se pudo cargar la vista rápida del producto.');
         }
     });
 }
