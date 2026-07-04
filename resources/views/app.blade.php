@@ -17,5 +17,13 @@
     </head>
     <body class="font-sans antialiased">
         @inertia
+        <script>
+            window.onerror = function(message, source, lineno, colno, error) {
+                alert("JS ERROR: " + message + " at " + source + ":" + lineno + "\n" + (error ? error.stack : ''));
+            };
+            window.addEventListener('unhandledrejection', function(event) {
+                alert("PROMISE ERROR: " + event.reason);
+            });
+        </script>
     </body>
 </html>

@@ -51,7 +51,7 @@
                                         <div>
                                             <div class="flex justify-between">
                                                 <h3 class="text-lg font-medium text-gray-700 hover:text-gray-800">
-                                                    <a href="{{ route('tienda.product', $item['id']) }}">{{ $item['name'] }}</a>
+                                                    <a href="{{ route('tienda.product', ['uuid' => $item['id']]) }}">{{ $item['name'] }}</a>
                                                 </h3>
                                             </div>
                                             <p class="mt-1 text-sm font-medium text-gray-900">${{ number_format($item['price'], 2) }}</p>

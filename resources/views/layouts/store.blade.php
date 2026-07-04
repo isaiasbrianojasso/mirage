@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Tienda Mirage')</title>
+    <title>@yield('title', 'Tienda ' . company_name())</title>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -32,7 +32,7 @@
 
     <!-- Componente de Footer (existente) -->
     <x-footer />
-    
+
     @include('tienda.partials.modals')
 </body>
 </html>

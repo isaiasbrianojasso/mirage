@@ -18,7 +18,7 @@
                         <div class="card-body text-center d-flex flex-column justify-content-center">
                             <h3 class="card-title font-weight-bold mb-3" style="color: #e62228;">{{ $category->name }}</h3>
                             <p class="text-muted mb-4">{{ $category->products_count ?? 0 }} Productos disponibles</p>
-                            <a href="{{ route('tienda.category', $category->uuid) }}" class="btn btn-outline-danger btn-lg mt-auto mx-auto" style="border-radius: 30px; padding: 10px 30px; font-weight: 600;">
+                            <a href="{{ route('tienda.category', ['uuid' => $category->uuid]) }}" class="btn btn-outline-danger btn-lg mt-auto mx-auto" style="border-radius: 30px; padding: 10px 30px; font-weight: 600;">
                                 Ver Productos <i class="fa fa-arrow-right ml-2"></i>
                             </a>
                         </div>

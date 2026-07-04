@@ -30,7 +30,7 @@
                                 @endif
                             </td>
                             <td>
-                                <h5><a href="{{ route('tienda.product', $item->product->id) }}">{{ $item->product->name }}</a></h5>
+                                <h5><a href="{{ route('tienda.product', ['uuid' => $item->product->id]) }}">{{ $item->product->name }}</a></h5>
                             </td>
                             <td>
                                 @if($item->product->discount_price)

@@ -6,6 +6,7 @@ import { onMounted, ref } from 'vue';
 defineProps({
     metrics: Object,
     recent_orders: Array,
+    recent_distributors: Array,
 });
 
 const statusColors = {
@@ -69,19 +70,36 @@ onMounted(() => {
                 </div>
 
                 <!-- KPI Cards -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                     
                     <!-- Ventas del Mes -->
                     <div :class="['bg-white border border-gray-200 rounded-2xl p-5 shadow-[0_2px_8px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.08)] transition-all duration-200', isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4']" style="transition-delay: 50ms;">
                         <div class="flex items-center justify-between mb-3">
                             <span class="text-sm font-medium text-gray-500">Ingresos del Mes</span>
-                            <span class="text-xs font-medium text-gray-900 bg-gray-100 px-2 py-0.5 rounded-full border border-gray-200">+12%</span>
+                            <span class="text-xs font-medium text-gray-900 bg-gray-100 px-2 py-0.5 rounded-full border border-gray-200">Mes Actual</span>
                         </div>
                         <h3 class="text-2xl font-semibold text-gray-900 tracking-tight">${{ Number(metrics.total_sales || 0).toLocaleString('es-MX', {minimumFractionDigits: 2}) }}</h3>
                     </div>
 
-                    <!-- Órdenes Activas -->
+                    <!-- Total de Pedidos -->
+                    <div :class="['bg-white border border-gray-200 rounded-2xl p-5 shadow-[0_2px_8px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.08)] transition-all duration-200', isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4']" style="transition-delay: 75ms;">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-sm font-medium text-gray-500">Total Pedidos</span>
+                            <span class="text-xs font-medium text-gray-900 bg-gray-100 px-2 py-0.5 rounded-full border border-gray-200">Mes Actual</span>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 tracking-tight">{{ metrics.total_orders || 0 }}</h3>
+                    </div>
+
+                    <!-- Ticket Promedio -->
                     <div :class="['bg-white border border-gray-200 rounded-2xl p-5 shadow-[0_2px_8px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.08)] transition-all duration-200', isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4']" style="transition-delay: 100ms;">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-sm font-medium text-gray-500">Ticket Promedio</span>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 tracking-tight">${{ Number(metrics.average_ticket || 0).toLocaleString('es-MX', {minimumFractionDigits: 2}) }}</h3>
+                    </div>
+
+                    <!-- Órdenes Activas -->
+                    <div :class="['bg-white border border-gray-200 rounded-2xl p-5 shadow-[0_2px_8px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.08)] transition-all duration-200', isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4']" style="transition-delay: 125ms;">
                         <div class="flex items-center justify-between mb-3">
                             <span class="text-sm font-medium text-gray-500">Órdenes Activas</span>
                         </div>
@@ -163,6 +181,48 @@ onMounted(() => {
                                 <tr v-if="recent_orders.length === 0">
                                     <td colspan="6" class="px-5 py-10 text-center text-gray-400">
                                         No hay órdenes recientes.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Distribuidores Recientes (MVP) -->
+                <div :class="['bg-white border border-gray-200 rounded-2xl shadow-[0_2px_8px_-4px_rgba(0,0,0,0.05)] overflow-hidden transition-all duration-500 mt-8', isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4']" style="transition-delay: 300ms;">
+                    <div class="px-5 py-4 border-b border-gray-100 flex justify-between items-center bg-white">
+                        <h3 class="text-base font-semibold text-gray-900 tracking-tight">Distribuidores Recientes</h3>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full text-left text-sm whitespace-nowrap">
+                            <thead class="bg-gray-50/50 text-gray-500 font-medium border-b border-gray-100">
+                                <tr>
+                                    <th scope="col" class="px-5 py-3 font-medium">Nombre</th>
+                                    <th scope="col" class="px-5 py-3 font-medium">Ciudad/Estado</th>
+                                    <th scope="col" class="px-5 py-3 font-medium">Teléfono</th>
+                                    <th scope="col" class="px-5 py-3 font-medium">Tipo</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100">
+                                <tr v-for="distributor in recent_distributors" :key="distributor.id" class="hover:bg-gray-50 transition-colors">
+                                    <td class="px-5 py-4 font-medium text-gray-900">
+                                        {{ distributor.name }}
+                                    </td>
+                                    <td class="px-5 py-4 text-gray-600">
+                                        {{ distributor.city || 'N/A' }}, {{ distributor.state || 'N/A' }}
+                                    </td>
+                                    <td class="px-5 py-4 text-gray-600">
+                                        {{ distributor.phone || 'N/A' }}
+                                    </td>
+                                    <td class="px-5 py-4">
+                                        <span class="px-2.5 py-1 inline-flex text-xs font-medium rounded-md bg-gray-100 text-gray-800 border border-gray-200 capitalize">
+                                            {{ distributor.type }}
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr v-if="!recent_distributors || recent_distributors.length === 0">
+                                    <td colspan="4" class="px-5 py-10 text-center text-gray-400">
+                                        No hay distribuidores registrados.
                                     </td>
                                 </tr>
                             </tbody>

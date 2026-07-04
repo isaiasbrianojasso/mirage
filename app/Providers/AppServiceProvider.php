@@ -21,7 +21,11 @@ class AppServiceProvider extends ServiceProvider
     {
         // ... (if there was anything here) ...
         try {
-            \Illuminate\Support\Facades\View::share('businessSetting', \App\Models\BusinessSetting::first());
+            $mockBusinessSetting = (object) [
+                'name' => \App\Models\CompanySetting::get('store_name', 'Mirage'),
+                'logo_path' => \App\Models\CompanySetting::get('store_logo', '/tienda_assets/img/mirage-logo-1534899548.jpg')
+            ];
+            \Illuminate\Support\Facades\View::share('businessSetting', $mockBusinessSetting);
             \Illuminate\Support\Facades\View::share('categories', \App\Models\Category::with('children.children')
                 ->where('is_active', true)
                 ->whereNull('parent_id')

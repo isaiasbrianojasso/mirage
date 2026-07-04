@@ -24,7 +24,7 @@ class QuickViewController extends Controller
 
         // En caso de que no haya imágenes, agregamos una por defecto
         if ($images->isEmpty()) {
-            $images->push(asset('tienda/img/mirage-logo-1534899548.jpg'));
+            $images->push(company_logo());
         }
 
         $discountPercentage = 0;
@@ -32,7 +32,7 @@ class QuickViewController extends Controller
             $discountPercentage = round((($product->price - $product->discount_price) / $product->price) * 100);
         }
 
-        // Especificaciones por defecto de los equipos Mirage para rellenar
+        // Especificaciones por defecto de los equipos para rellenar
         $specifications = $product->specifications ?? [
             'Acabado de lujo',
             'Eficiencia energética superior',
@@ -55,7 +55,7 @@ class QuickViewController extends Controller
         return response()->json([
             'id' => $product->id,
             'name' => $product->name,
-            'description' => $product->description ?? 'Equipo de aire acondicionado Mirage con alto desempeño.',
+            'description' => $product->description ?? 'Equipo de aire acondicionado ' . company_name() . ' con alto desempeño.',
             'sku' => $product->sku ?? 'N/A',
             'price' => number_format($product->price, 2),
             'discount_price' => $product->discount_price ? number_format($product->discount_price, 2) : null,
@@ -80,7 +80,7 @@ class QuickViewController extends Controller
         $products = Product::with('images', 'category')
             ->whereIn('id', $request->ids)
             ->get();
-            
+
         if ($products->isEmpty()) {
             $products = Product::with('images', 'category')->take(2)->get();
         }
@@ -91,7 +91,7 @@ class QuickViewController extends Controller
                 ? (str_starts_with($primaryImage->image_url, 'http')
                     ? $primaryImage->image_url
                     : asset('storage/' . $primaryImage->image_url))
-                : asset('tienda/img/mirage-logo-1534899548.jpg');
+                : company_logo();
 
             $discountPercentage = 0;
             if ($product->discount_price && $product->price > 0) {

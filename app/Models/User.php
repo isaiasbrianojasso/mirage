@@ -28,10 +28,18 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
+        'social_title',
+        'first_name',
+        'last_name',
         'name',
         'email',
         'password',
         'role',
+        'customer_group_id',
+        'birthday',
+        'is_enabled',
+        'newsletter',
+        'opt_in',
     ];
 
     /**
@@ -65,11 +73,25 @@ class User extends Authenticatable
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            'is_enabled' => 'boolean',
+            'newsletter' => 'boolean',
+            'opt_in' => 'boolean',
+            'birthday' => 'date',
         ];
     }
 
     public function wishlists()
     {
         return $this->hasMany(Wishlist::class);
+    }
+
+    public function customerGroup()
+    {
+        return $this->belongsTo(CustomerGroup::class, 'customer_group_id');
+    }
+
+    public function groups()
+    {
+        return $this->belongsToMany(CustomerGroup::class);
     }
 }

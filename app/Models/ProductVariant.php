@@ -23,6 +23,12 @@ class ProductVariant extends Model
     protected $casts = [
         'price' => 'decimal:2',
         'discount_price' => 'decimal:2',
+        'wholesale_price' => 'decimal:2',
+        'weight' => 'decimal:2',
+        'width' => 'decimal:2',
+        'height' => 'decimal:2',
+        'depth' => 'decimal:2',
+        'additional_shipping_cost' => 'decimal:2',
         'attributes' => 'array',
         'is_active' => 'boolean',
     ];

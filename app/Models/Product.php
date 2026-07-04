@@ -20,6 +20,12 @@ class Product extends Model
         'is_active' => 'boolean',
         'price' => 'decimal:2',
         'discount_price' => 'decimal:2',
+        'wholesale_price' => 'decimal:2',
+        'weight' => 'decimal:2',
+        'width' => 'decimal:2',
+        'height' => 'decimal:2',
+        'depth' => 'decimal:2',
+        'additional_shipping_cost' => 'decimal:2',
     ];
 
     public function category()

@@ -23,7 +23,10 @@ class TiendaController extends Controller
 
     private function getBusinessSetting()
     {
-        return BusinessSetting::first();
+        return (object) [
+            'name' => \App\Models\CompanySetting::get('store_name', 'Mirage'),
+            'logo_path' => \App\Models\CompanySetting::get('store_logo', '/tienda_assets/img/mirage-logo-1534899548.jpg')
+        ];
     }
 
     public function index()
@@ -118,7 +121,7 @@ class TiendaController extends Controller
             'customer_email' => $request->customer_email,
             'rating' => $request->rating,
             'comment' => $request->comment,
-            'is_approved' => true, // Aprobación automática en el ambiente local
+            'is_approved' => false, // Requiere moderación
         ]);
 
         session()->flash('success', '¡Gracias! Tu opinión ha sido publicada con éxito.');

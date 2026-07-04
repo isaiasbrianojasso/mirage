@@ -466,7 +466,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     
                 </div>
-                        <div class="col col-auto col-header-right">
+                        <div class="col col-auto col-header-right" style="margin-left: auto !important;">
+                <style>
+                    .col-header-right .row { justify-content: flex-end !important; }
+                    #ps-shoppingcart-wrapper, #header-user-btn {
+                        flex: 0 0 auto !important;
+                        width: auto !important;
+                        min-width: 0 !important;
+                    }
+                    #header-user-btn { margin-right: 15px !important; }
+                    .dropdown-menu-custom {
+                        transform: none !important;
+                        top: 100% !important;
+                        right: 0 !important;
+                        left: auto !important;
+                        margin-top: 5px !important;
+                        position: absolute !important;
+                        z-index: 99999999 !important;
+                    }
+                    .ps-shoppingcart.dropdown #blockcart-content .cart-title {
+                        display: flex !important;
+                    }
+                    #header, #desktop-header { position: relative; z-index: 99999999 !important; }
+                </style>
                 <div class="row no-gutters justify-content-end align-items-center">
 
                     

@@ -545,7 +545,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 @foreach($categories as $category)
     @if($category->children->count() > 0)
         <li class="cbp-hrmenu-tab cbp-hrmenu-tab-has-sub">
-            <a href="{{ route('tienda.category', $category->uuid) }}" class="nav-link">
+            <a href="{{ route('tienda.category', ['uuid' => $category->uuid]) }}" class="nav-link">
                 <span class="cbp-tab-title">{{ mb_strtoupper($category->name) }}</span>
             </a>
             <div class="cbp-hrsub cbp-hrsub-narrow">
@@ -553,7 +553,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <ul>
                         @foreach($category->children as $child)
                             <li>
-                                <a href="{{ route('tienda.category', $child->uuid) }}">{{ $child->name }}</a>
+                                <a href="{{ route('tienda.category', ['uuid' => $child->uuid]) }}">{{ $child->name }}</a>
                             </li>
                         @endforeach
                     </ul>
@@ -562,7 +562,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </li>
     @else
         <li class="cbp-hrmenu-tab">
-            <a href="{{ route('tienda.category', $category->uuid) }}" class="nav-link">
+            <a href="{{ route('tienda.category', ['uuid' => $category->uuid]) }}" class="nav-link">
                 <span class="cbp-tab-title">{{ mb_strtoupper($category->name) }}</span>
             </a>
         </li>
@@ -611,7 +611,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a href="{{ route('tienda.index') }}" class="flex-fill mobile-menu__link">Inicio</a></li>
 @foreach($categories as $category)
 <li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab">
-    <a href="{{ route('tienda.category', $category->uuid) }}" class="flex-fill mobile-menu__link">{{ $category->name }}</a>
+    <a href="{{ route('tienda.category', ['uuid' => $category->uuid]) }}" class="flex-fill mobile-menu__link">{{ $category->name }}</a>
 </li>
 @endforeach
 <li class="mobile-menu__tab  d-flex flex-wrap js-mobile-menu__tab"><a href="#" class="flex-fill mobile-menu__link">Contacto</a></li>	

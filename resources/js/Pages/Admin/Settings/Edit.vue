@@ -86,6 +86,45 @@
                             <InputError :message="form.errors.logo" class="mt-2" />
                         </div>
 
+                        <!-- Email de contacto -->
+                        <div>
+                            <InputLabel for="email" value="Email de Contacto" class="text-sm font-semibold text-gray-700 mb-1.5"/>
+                            <TextInput
+                                id="email"
+                                v-model="form.email"
+                                type="email"
+                                class="mt-1 block w-full rounded-xl border-gray-200 focus:border-indigo-500 focus:ring-indigo-500 text-base"
+                                placeholder="Ej: contacto@mirage.mx"
+                            />
+                            <InputError :message="form.errors.email" class="mt-2" />
+                        </div>
+
+                        <!-- Teléfono de contacto -->
+                        <div>
+                            <InputLabel for="phone" value="Teléfono" class="text-sm font-semibold text-gray-700 mb-1.5"/>
+                            <TextInput
+                                id="phone"
+                                v-model="form.phone"
+                                type="text"
+                                class="mt-1 block w-full rounded-xl border-gray-200 focus:border-indigo-500 focus:ring-indigo-500 text-base"
+                                placeholder="Ej: +52 123 456 7890"
+                            />
+                            <InputError :message="form.errors.phone" class="mt-2" />
+                        </div>
+
+                        <!-- Slogan -->
+                        <div>
+                            <InputLabel for="slogan" value="Slogan (Lema)" class="text-sm font-semibold text-gray-700 mb-1.5"/>
+                            <TextInput
+                                id="slogan"
+                                v-model="form.slogan"
+                                type="text"
+                                class="mt-1 block w-full rounded-xl border-gray-200 focus:border-indigo-500 focus:ring-indigo-500 text-base"
+                                placeholder="Ej: Innovación en tu hogar"
+                            />
+                            <InputError :message="form.errors.slogan" class="mt-2" />
+                        </div>
+
                         <!-- Save button -->
                         <div class="flex items-center justify-end gap-4 pt-2 border-t border-gray-100">
                             <ActionMessage :on="form.recentlySuccessful" class="text-sm text-green-600 font-medium">
@@ -143,6 +182,9 @@ const previewUrl = ref(null);
 const form = useForm({
     name: props.setting?.name || 'Mirage',
     logo: null,
+    email: props.setting?.email || '',
+    phone: props.setting?.phone || '',
+    slogan: props.setting?.slogan || '',
 });
 
 function handleLogoChange(e) {

@@ -35,7 +35,7 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    
+
     // Ruta dinámica según rol
     Route::get('/dashboard', function () {
         if (auth()->user()->role === 'admin') {
@@ -49,11 +49,22 @@ Route::middleware([
         Route::resource('admin/categories', App\Http\Controllers\Admin\CategoryController::class)->except(['show']);
         Route::resource('admin/products', App\Http\Controllers\Admin\ProductController::class)->except(['show']);
         Route::resource('admin/banners', App\Http\Controllers\Admin\BannerController::class)->except(['show']);
-        Route::resource('admin/orders', App\Http\Controllers\Admin\OrderController::class)->only(['index', 'show', 'update']);
-        Route::get('admin/settings', [App\Http\Controllers\Admin\SettingController::class, 'edit'])->name('settings.edit');
-        Route::post('admin/settings', [App\Http\Controllers\Admin\SettingController::class, 'update'])->name('settings.update');
+        Route::resource('admin/orders', App\Http\Controllers\Admin\OrderController::class)->except(['destroy']);
+        Route::post('admin/orders/{order}/payment', [App\Http\Controllers\Admin\OrderController::class, 'addPayment'])->name('orders.payment');
+        Route::post('admin/orders/{order}/message', [App\Http\Controllers\Admin\OrderController::class, 'addMessage'])->name('orders.message');
+        Route::post('admin/orders/{order}/refund', [App\Http\Controllers\Admin\OrderController::class, 'processRefund'])->name('orders.refund');
+        Route::get('admin/orders/{order}/invoice', [App\Http\Controllers\Admin\OrderController::class, 'downloadInvoice'])->name('orders.invoice');
+        Route::get('admin/api/customers/{customer}/addresses', [App\Http\Controllers\Admin\OrderController::class, 'getCustomerAddresses'])->name('api.customers.addresses');
+        Route::get('admin/api/zones/{zone}/carriers', [App\Http\Controllers\Admin\OrderController::class, 'getCarriersForZone'])->name('api.zones.carriers');
+        Route::resource('admin/customers', App\Http\Controllers\Admin\CustomerController::class)->except(['show']);
+        Route::resource('admin/customer-groups', App\Http\Controllers\Admin\CustomerGroupController::class)->except(['show']);
+        Route::resource('admin/zones', App\Http\Controllers\Admin\ZoneController::class)->except(['show']);
+        Route::resource('admin/carriers', App\Http\Controllers\Admin\CarrierController::class)->except(['show']);
+        Route::put('admin/carriers/{carrier}/toggle-active', [App\Http\Controllers\Admin\CarrierController::class, 'toggleActive'])->name('carriers.toggle-active');
+        Route::get('admin/company-settings', [App\Http\Controllers\AdminCompanySettingController::class, 'edit'])->name('company-settings.edit');
+        Route::post('admin/company-settings', [App\Http\Controllers\AdminCompanySettingController::class, 'update'])->name('company-settings.update');
     });
-    
+
     // Customer Routes
     Route::get('/mis-pedidos', [\App\Http\Controllers\CustomerController::class, 'orders'])->name('customer.orders');
     Route::get('/mis-pedidos/{id}', [\App\Http\Controllers\CustomerController::class, 'orderShow'])->name('customer.orders.show');
@@ -71,7 +82,7 @@ Route::get('/tienda', [TiendaController::class, 'index'])->name('tienda.index');
     Route::get('/tienda/compare', [\App\Http\Controllers\CompareController::class, 'index'])->name('compare.index');
 Route::get('/tienda/producto/quickview/{id}', [\App\Http\Controllers\QuickViewController::class, 'show'])->name('product.quickview');
 Route::get('/tienda/comparar/data', [\App\Http\Controllers\QuickViewController::class, 'compare'])->name('product.compare');
-Route::post('/tienda/producto/{slug}/review', [TiendaController::class, 'storeReview'])->name('tienda.product.review');
+Route::post('/tienda/producto/{slug}/review', [TiendaController::class, 'storeReview'])->middleware('throttle:5,1')->name('tienda.product.review');
 
 Route::get('/tienda/categoria/{uuid}', [TiendaController::class, 'category'])->name('tienda.category');
 Route::get('/tienda/producto/{uuid}', [TiendaController::class, 'product'])->name('tienda.product');
@@ -132,11 +143,11 @@ Route::get('/tienda/modules/{path}', function ($path) {
 // Redirigir categorías antiguas .html a la categoría dinámica en base de datos
 Route::get('/tienda/{slug}.html', function ($slug) {
     $cleanSlug = preg_replace('/^\d+-/', '', $slug);
-    
+
     $category = \App\Models\Category::where('slug', $slug)
         ->orWhere('slug', $cleanSlug)
         ->first();
-        
+
     if ($category) {
         return redirect()->route('tienda.category', ['uuid' => $category->uuid]);
     }
@@ -144,54 +155,55 @@ Route::get('/tienda/{slug}.html', function ($slug) {
     $product = \App\Models\Product::where('slug', $slug)
         ->orWhere('slug', $cleanSlug)
         ->first();
-        
+
     if ($product) {
         return redirect()->route('tienda.product', ['uuid' => $product->id]);
     }
-    
+
     return redirect()->route('tienda.index');
 });
 
 // Redirigir categorías antiguas con /index.html a la categoría dinámica en base de datos
 Route::get('/tienda/{slug}/index.html', function ($slug) {
     $cleanSlug = preg_replace('/^\d+-/', '', $slug);
-    
+
     $category = \App\Models\Category::where('slug', $slug)
         ->orWhere('slug', $cleanSlug)
         ->first();
-        
+
     if ($category) {
         return redirect()->route('tienda.category', ['uuid' => $category->uuid]);
     }
-    
+
     return redirect()->route('tienda.index');
 });
 
 // Legacy PrestaShop product routes (e.g., /tienda/refacciones/616-motor-condensador-1-ton-ykt-32-6-202l.html)
+/*
 Route::get('/tienda/{category}/{slug}.html', function ($category, $slug) {
     $cleanSlug = preg_replace('/^\d+-/', '', $slug);
-    
+
     // Check if the product exists in the DB (original or clean slug)
     $product = \App\Models\Product::where('slug', $slug)
         ->orWhere('slug', $cleanSlug)
         ->first();
-        
+
     if ($product) {
         return redirect()->route('tienda.product', ['uuid' => $product->id]);
     }
-    
+
     // If product doesn't exist, redirect to parent category (clean or original) in DB
     $cleanCategory = preg_replace('/^\d+-/', '', $category);
     $dbCategory = \App\Models\Category::where('slug', $category)
         ->orWhere('slug', $cleanCategory)
         ->first();
-        
+
     if ($dbCategory) {
         return redirect()->route('tienda.category', ['uuid' => $dbCategory->uuid]);
     }
-    
+
     return redirect()->route('tienda.index');
 });
-
+*/
 Route::get('/test-cart', function() { dd(session()->get('cart')); });
 Route::post('/module/iqitcompare/actions', [\App\Http\Controllers\CompareController::class, 'actions'])->name('compare.actions');

@@ -20,4 +20,24 @@ class Order extends Model
     {
         return $this->hasMany(OrderItem::class);
     }
+
+    public function histories()
+    {
+        return $this->hasMany(OrderHistory::class);
+    }
+
+    public function deliveryAddress()
+    {
+        return $this->belongsTo(Address::class, 'delivery_address_id');
+    }
+
+    public function invoiceAddress()
+    {
+        return $this->belongsTo(Address::class, 'invoice_address_id');
+    }
+
+    public function carrier()
+    {
+        return $this->belongsTo(Carrier::class);
+    }
 }

@@ -31,6 +31,7 @@ class DatabaseSeeder extends Seeder
             BannerSeeder::class,
             BusinessSettingSeeder::class,
             LoremIpsumSeeder::class,
+            E2ECommerceSeeder::class,
         ]);
     }
 }

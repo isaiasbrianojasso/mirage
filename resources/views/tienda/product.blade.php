@@ -95,6 +95,28 @@
               </div>
             </div>
             <div class="col col-auto col-header-right">
+                <style>
+                    .col-header-right .row { justify-content: flex-end !important; }
+                    #ps-shoppingcart-wrapper, #header-user-btn {
+                        flex: 0 0 auto !important;
+                        width: auto !important;
+                        min-width: 0 !important;
+                    }
+                    #header-user-btn { margin-right: 15px !important; }
+                    .dropdown-menu-custom {
+                        transform: none !important;
+                        top: 100% !important;
+                        right: 0 !important;
+                        left: auto !important;
+                        margin-top: 5px !important;
+                        position: absolute !important;
+                        z-index: 99999999 !important;
+                    }
+                    .ps-shoppingcart.dropdown #blockcart-content .cart-title {
+                        display: flex !important;
+                    }
+                    #header, #desktop-header { position: relative; z-index: 99999999 !important; }
+                </style>
                 <div class="row no-gutters justify-content-end align-items-center" style="gap: 20px;">
                     <div id="header-user-btn" class="col-auto header-btn-w header-user-btn-w">
                         @auth
@@ -201,7 +223,7 @@
                 @foreach($categories as $cat)
                   @if($cat->children->count() > 0)
                     <li class="cbp-hrmenu-tab cbp-hrmenu-tab-has-sub">
-                      <a href="{{ route('tienda.category', $cat->uuid) }}" class="nav-link">
+                      <a href="{{ route('tienda.category', ['uuid' => $cat->uuid]) }}" class="nav-link">
                         <span class="cbp-tab-title">{{ mb_strtoupper($cat->name) }}</span>
                       </a>
                       <div class="cbp-hrsub cbp-hrsub-narrow">
@@ -209,7 +231,7 @@
                           <ul>
                             @foreach($cat->children as $child)
                               <li>
-                                <a href="{{ route('tienda.category', $child->uuid) }}">{{ $child->name }}</a>
+                                <a href="{{ route('tienda.category', ['uuid' => $child->uuid]) }}">{{ $child->name }}</a>
                               </li>
                             @endforeach
                           </ul>
@@ -218,14 +240,14 @@
                     </li>
                   @else
                     <li class="cbp-hrmenu-tab">
-                      <a href="{{ route('tienda.category', $cat->uuid) }}" class="nav-link">
+                      <a href="{{ route('tienda.category', ['uuid' => $cat->uuid]) }}" class="nav-link">
                         <span class="cbp-tab-title">{{ mb_strtoupper($cat->name) }}</span>
                       </a>
                     </li>
                   @endif
                 @endforeach
                 <li class="cbp-hrmenu-tab">
-                  <a href="{{ route('tienda.category', optional(\App\Models\Category::where('slug', 'contactenos')->orWhere('slug', preg_replace('/^\d+-/', '', 'contactenos'))->first())->uuid ?? 'contactenos') }}" class="nav-link">
+                  <a href="{{ route('tienda.category', ['uuid' => optional(\App\Models\Category::where('slug', 'contactenos')->orWhere('slug', preg_replace('/^\d+-/', '', 'contactenos'))->first())->uuid ?? 'contactenos']) }}" class="nav-link">
                     <span class="cbp-tab-title">CONTACTO</span>
                   </a>
                 </li>
@@ -246,7 +268,7 @@
         <ol style="display: flex; gap: 8px; list-style: none; padding: 0; margin: 0; color: #64748b;">
           <li><a href="{{ route('tienda.index') }}" style="color: #64748b; text-decoration: none;">Inicio</a></li>
           @if($product->category)
-            <li><span style="margin: 0 4px;">/</span> <a href="{{ route('tienda.category', $product->category->uuid) }}" style="color: #64748b; text-decoration: none;">{{ $product->category->name }}</a></li>
+            <li><span style="margin: 0 4px;">/</span> <a href="{{ route('tienda.category', ['uuid' => $product->category->uuid]) }}" style="color: #64748b; text-decoration: none;">{{ $product->category->name }}</a></li>
           @endif
           <li><span style="margin: 0 4px;">/</span> <span style="color: #0f172a; font-weight: 500;">{{ $product->name }}</span></li>
         </ol>
@@ -466,7 +488,7 @@
                     <td style="padding: 12px 0; font-weight: 600; color: #64748b;">Categoría</td>
                     <td style="padding: 12px 0; text-align: right; color: #0f172a;">
                       @if($product->category)
-                        <a href="{{ route('tienda.category', $product->category->uuid) }}" style="color: #ef4444; text-decoration: none;">{{ $product->category->name }}</a>
+                        <a href="{{ route('tienda.category', ['uuid' => $product->category->uuid]) }}" style="color: #ef4444; text-decoration: none;">{{ $product->category->name }}</a>
                       @else
                         General
                       @endif
@@ -648,11 +670,11 @@
                 @endphp
                 <div class="col-6 col-md-3" style="padding: 0 10px;">
                   <div style="border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px; text-align: center; background: #fff; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 15px -3px rgba(0,0,0,0.05)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.02)';">
-                    <a href="{{ route('tienda.product', $other->id) }}" style="display: block; height: 130px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px;">
+                    <a href="{{ route('tienda.product', ['uuid' => $other->id]) }}" style="display: block; height: 130px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px;">
                       <img src="{{ $otherImageUrl }}" style="max-height: 100%; max-width: 100%; object-fit: contain;">
                     </a>
                     <h4 style="font-size: 14px; font-weight: 600; color: #334155; margin: 0 0 10px 0; height: 38px; overflow: hidden; line-height: 1.4; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
-                      <a href="{{ route('tienda.product', $other->id) }}" style="text-decoration: none; color: inherit;">{{ $other->name }}</a>
+                      <a href="{{ route('tienda.product', ['uuid' => $other->id]) }}" style="text-decoration: none; color: inherit;">{{ $other->name }}</a>
                     </h4>
                     <div style="font-weight: 700; color: #ef4444; font-size: 16px;">
                       @if($other->discount_price)

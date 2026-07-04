@@ -713,9 +713,9 @@ function toggleModalPassword() {
     $(document).ready(function() {
         @if(session('error'))
             if (typeof showMirageAlert === 'function') {
-                showMirageAlert("{!! addslashes(session('error')) !!}", 'error');
+                showMirageAlert(@json(session('error')), 'error');
             } else {
-                alert("{!! addslashes(session('error')) !!}");
+                alert(@json(session('error')));
             }
         @endif
         @if(session('success'))
@@ -725,9 +725,9 @@ function toggleModalPassword() {
                 }, 500);
             @else
                 if (typeof showMirageAlert === 'function') {
-                    showMirageAlert("{!! addslashes(session('success')) !!}", 'success');
+                    showMirageAlert(@json(session('success')), 'success');
                 } else {
-                    alert("{!! addslashes(session('success')) !!}");
+                    alert(@json(session('success')));
                 }
             @endif
         @endif
