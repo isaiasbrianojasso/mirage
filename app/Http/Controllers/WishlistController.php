@@ -40,9 +40,12 @@ class WishlistController extends Controller
             'product_id' => $request->product_id
         ]);
 
+        $count = Wishlist::where('user_id', Auth::id())->count();
+
         return response()->json([
             'status' => 'success',
-            'message' => 'Producto agregado a la lista de deseos con éxito.'
+            'message' => 'Producto agregado a la lista de deseos con éxito.',
+            'count' => $count
         ]);
     }
 
@@ -59,9 +62,13 @@ class WishlistController extends Controller
             ->where('product_id', $product_id)
             ->delete();
 
-        return response()->json([
-            'status' => 'success',
-            'message' => 'Producto eliminado de la lista de deseos.'
-        ]);
+        if ($request->expectsJson()) {
+            return response()->json([
+                'status' => 'success',
+                'message' => 'Producto eliminado de la lista de deseos.'
+            ]);
+        }
+
+        return redirect()->back()->with('success', 'Producto eliminado de la lista de deseos.');
     }
 }

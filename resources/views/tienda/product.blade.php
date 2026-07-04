@@ -63,7 +63,7 @@
           <div class="col col-auto col-md right-nav text-right">
             <div class="d-inline-block">
               <a href="{{ route('wishlist.index') }}" style="color: #cbd5e0; font-size: 13px; text-decoration: none;">
-                <i class="fa fa-heart-o fa-fw" aria-hidden="true"></i> Lista de deseos (<span id="iqitwishlist-nb">0</span>)
+                <i class="fa fa-heart-o fa-fw" aria-hidden="true"></i> Lista de deseos (<span id="iqitwishlist-nb">{{ Auth::check() ? Auth::user()->wishlists()->count() : 0 }}</span>)
               </a>
             </div>
           </div>

@@ -372,9 +372,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
              </div>
             <div class="col col-auto col-md right-nav text-right">
                 <div class="d-inline-block">
-    <a href="//www.tiendamirage.mx/module/iqitwishlist/view">
+    <a href="{{ route('wishlist.index') }}">
         <i class="fa fa-heart-o fa-fw" aria-hidden="true"></i> Lista de deseos (<span
-                id="iqitwishlist-nb"></span>)
+                id="iqitwishlist-nb">{{ Auth::check() ? Auth::user()->wishlists()->count() : 0 }}</span>)
     </a>
 </div>
 

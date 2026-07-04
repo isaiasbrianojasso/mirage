@@ -4,6 +4,18 @@
 <div class="container my-5">
     <h1 class="mb-4">Mi Lista de Deseos</h1>
 
+    @if(session('success'))
+        <div class="alert alert-success">
+            {{ session('success') }}
+        </div>
+    @endif
+
+    @if(session('error'))
+        <div class="alert alert-danger">
+            {{ session('error') }}
+        </div>
+    @endif
+
     @if(!isset($wishlistItems) || $wishlistItems->count() == 0)
         <div class="alert alert-info">
             No tienes productos en tu lista de deseos.
@@ -42,14 +54,20 @@
                                 @endif
                             </td>
                             <td>
-                                <form action="{{ route('cart.add') }}" method="POST" class="d-inline">
-                                    @csrf
-                                    <input type="hidden" name="product_id" value="{{ $item->product->id }}">
-                                    <input type="hidden" name="quantity" value="1">
-                                    <button type="submit" class="btn btn-primary btn-sm mb-2">
-                                        <i class="fa fa-shopping-cart"></i> Agregar al carrito
-                                    </button>
-                                </form>
+                                @if($item->product->variants && $item->product->variants->where('is_active', true)->count() > 0)
+                                    <a href="{{ route('tienda.product', ['uuid' => $item->product->id]) }}" class="btn btn-primary btn-sm mb-2">
+                                        <i class="fa fa-eye"></i> Ver opciones
+                                    </a>
+                                @else
+                                    <form action="{{ route('cart.add') }}" method="POST" class="d-inline">
+                                        @csrf
+                                        <input type="hidden" name="product_id" value="{{ $item->product->id }}">
+                                        <input type="hidden" name="quantity" value="1">
+                                        <button type="submit" class="btn btn-primary btn-sm mb-2">
+                                            <i class="fa fa-shopping-cart"></i> Agregar al carrito
+                                        </button>
+                                    </form>
+                                @endif
                                 <br>
                                 <form action="{{ route('wishlist.remove', $item->product->id) }}" method="POST" class="d-inline">
                                     @csrf

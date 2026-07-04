@@ -750,6 +750,13 @@ function handleWishlistClick(productId, btn) {
         },
         success: function(response) {
             showWishlistNotification();
+            
+            // Update the wishlist counter
+            if (response.count !== undefined) {
+                let counters = document.querySelectorAll('#iqitwishlist-nb');
+                counters.forEach(c => c.innerText = response.count);
+            }
+            
             if (btn) {
                 $(btn).find('.not-added').hide();
                 $(btn).find('.added').show();

@@ -133,7 +133,10 @@
                                 <li class="flex py-6 px-4 sm:px-6">
                                     <div class="flex-shrink-0">
                                         @if($item['image_url'])
-                                            <img src="{{ Storage::url($item['image_url']) }}" alt="{{ $item['name'] }}" class="w-20 h-20 rounded-md object-center object-cover">
+                                            @php
+                                                $checkoutImgUrl = \Illuminate\Support\Str::startsWith($item['image_url'], 'http') ? $item['image_url'] : Storage::url($item['image_url']);
+                                            @endphp
+                                            <img src="{{ $checkoutImgUrl }}" alt="{{ $item['name'] }}" class="w-20 h-20 rounded-md object-center object-cover">
                                         @else
                                             <div class="w-20 h-20 rounded-md bg-gray-200"></div>
                                         @endif
