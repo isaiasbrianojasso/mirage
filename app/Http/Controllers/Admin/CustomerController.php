@@ -12,12 +12,44 @@ use Illuminate\Validation\Rules;
 
 class CustomerController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        // Traemos todos los usuarios, ordenados por fecha de registro, y su grupo
-        $customers = User::with('customerGroup')->orderBy('created_at', 'desc')->get();
+        $query = User::with('customerGroup');
+
+        if ($request->has('search') && $request->search != '') {
+            $search = $request->search;
+            $query->where(function($q) use ($search) {
+                $q->where('first_name', 'like', "%{$search}%")
+                  ->orWhere('last_name', 'like', "%{$search}%")
+                  ->orWhere('email', 'like', "%{$search}%");
+            });
+        }
+
+        $sortField = $request->get('sort_field', 'created_at');
+        $sortDirection = $request->get('sort_direction', 'desc');
+
+        $allowedSortFields = ['id', 'first_name', 'email', 'group', 'is_enabled', 'role', 'created_at'];
+        if (!in_array($sortField, $allowedSortFields)) {
+            $sortField = 'created_at';
+        }
+        if (!in_array($sortDirection, ['asc', 'desc'])) {
+            $sortDirection = 'desc';
+        }
+
+        if ($sortField === 'group') {
+            $query->orderBy(
+                \App\Models\CustomerGroup::select('name')->whereColumn('customer_groups.id', 'users.customer_group_id'),
+                $sortDirection
+            );
+        } else {
+            $query->orderBy($sortField, $sortDirection);
+        }
+
+        $customers = $query->paginate(15)->withQueryString();
+
         return Inertia::render('Admin/Customers/Index', [
-            'customers' => $customers
+            'customers' => $customers,
+            'filters' => $request->only(['search', 'sort_field', 'sort_direction'])
         ]);
     }
 

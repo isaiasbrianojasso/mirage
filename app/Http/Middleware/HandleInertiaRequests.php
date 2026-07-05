@@ -35,9 +35,33 @@ class HandleInertiaRequests extends Middleware
      */
     public function share(Request $request): array
     {
+        $notifications = [];
+        $unreadCount = 0;
+
+        if ($request->user()) {
+            $query = \App\Models\EmailLog::query();
+            
+            if ($request->user()->role === 'admin') {
+                $query->orderBy('created_at', 'desc');
+            } else {
+                $query->where('recipient', $request->user()->email)->orderBy('created_at', 'desc');
+            }
+
+            $notifications = $query->take(5)->get();
+            
+            if ($request->user()->role === 'admin') {
+                $unreadCount = \App\Models\EmailLog::whereNull('read_at')->count();
+            } else {
+                $unreadCount = \App\Models\EmailLog::where('recipient', $request->user()->email)->whereNull('read_at')->count();
+            }
+        }
+
         return [
             ...parent::share($request),
-            //
+            'notifications' => [
+                'data' => $notifications,
+                'unread_count' => $unreadCount
+            ]
         ];
     }
 }

@@ -37,4 +37,25 @@ class ProductVariant extends Model
     {
         return $this->belongsTo(Product::class);
     }
+
+    public function getPriceAttribute($value)
+    {
+        return $this->applyCustomerGroupDiscount($value);
+    }
+
+    public function getDiscountPriceAttribute($value)
+    {
+        if ($value === null) return null;
+        return $this->applyCustomerGroupDiscount($value);
+    }
+
+    private function applyCustomerGroupDiscount($price)
+    {
+        if (!app()->runningInConsole() && request() && !request()->is('admin/*')) {
+            if (auth()->check() && auth()->user()->customerGroup && auth()->user()->customerGroup->discount_percentage > 0) {
+                return $price * (1 - (auth()->user()->customerGroup->discount_percentage / 100));
+            }
+        }
+        return $price;
+    }
 }

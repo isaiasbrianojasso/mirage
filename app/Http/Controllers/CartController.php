@@ -12,15 +12,42 @@ class CartController extends Controller
     {
         $cart = session()->get('cart', []);
         
-        // Clean up old cart format if present
+        $updated = false;
+        // Clean up old cart format if present and recalculate prices
         foreach ($cart as $key => $item) {
             if (!isset($item['product_id'])) {
                 session()->forget('cart');
                 $cart = [];
+                $updated = false;
                 break;
+            }
+
+            // Recalculate price to reflect dynamic discounts (e.g. Customer Group)
+            if (isset($item['variant_id']) && $item['variant_id']) {
+                $variant = \App\Models\ProductVariant::find($item['variant_id']);
+                if ($variant) {
+                    $newPrice = $variant->discount_price ?? $variant->price;
+                    if ($cart[$key]['price'] != $newPrice) {
+                        $cart[$key]['price'] = $newPrice;
+                        $updated = true;
+                    }
+                }
+            } else {
+                $product = \App\Models\Product::find($item['product_id']);
+                if ($product) {
+                    $newPrice = $product->discount_price ?? $product->price;
+                    if ($cart[$key]['price'] != $newPrice) {
+                        $cart[$key]['price'] = $newPrice;
+                        $updated = true;
+                    }
+                }
             }
         }
         
+        if ($updated) {
+            session()->put('cart', $cart);
+        }
+
         return view('tienda.cart', compact('cart'));
     }
 

@@ -9,11 +9,31 @@ use Inertia\Inertia;
 
 class ZoneController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $zones = Zone::orderBy('name', 'asc')->get();
+        $query = Zone::query();
+
+        if ($request->has('search') && $request->search != '') {
+            $search = $request->search;
+            $query->where('name', 'like', "%{$search}%");
+        }
+
+        $sortField = $request->get('sort_field', 'name');
+        $sortDirection = $request->get('sort_direction', 'asc');
+
+        $allowedSortFields = ['id', 'name', 'active', 'created_at'];
+        if (!in_array($sortField, $allowedSortFields)) {
+            $sortField = 'name';
+        }
+        if (!in_array($sortDirection, ['asc', 'desc'])) {
+            $sortDirection = 'asc';
+        }
+
+        $zones = $query->orderBy($sortField, $sortDirection)->paginate(15)->withQueryString();
+
         return Inertia::render('Admin/Zones/Index', [
-            'zones' => $zones
+            'zones' => $zones,
+            'filters' => $request->only(['search', 'sort_field', 'sort_direction'])
         ]);
     }
 

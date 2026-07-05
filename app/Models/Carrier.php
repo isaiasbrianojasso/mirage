@@ -10,4 +10,9 @@ class Carrier extends Model
     use HasFactory;
     
     protected $guarded = ['id'];
+
+    public function customerGroups()
+    {
+        return $this->belongsToMany(CustomerGroup::class, 'carrier_customer_group');
+    }
 }

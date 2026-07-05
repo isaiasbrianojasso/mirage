@@ -11,11 +11,32 @@ use Illuminate\Support\Facades\Storage;
 
 class CategoryController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $categories = Category::orderBy('name')->get();
+        $query = Category::query();
+
+        if ($request->has('search') && $request->search != '') {
+            $search = $request->search;
+            $query->where('name', 'like', "%{$search}%")
+                  ->orWhere('description', 'like', "%{$search}%");
+        }
+
+        $sortField = $request->get('sort_field', 'name');
+        $sortDirection = $request->get('sort_direction', 'asc');
+
+        $allowedSortFields = ['id', 'name', 'is_active', 'created_at'];
+        if (!in_array($sortField, $allowedSortFields)) {
+            $sortField = 'name';
+        }
+        if (!in_array($sortDirection, ['asc', 'desc'])) {
+            $sortDirection = 'asc';
+        }
+
+        $categories = $query->orderBy($sortField, $sortDirection)->paginate(15)->withQueryString();
+
         return Inertia::render('Admin/Categories/Index', [
-            'categories' => $categories
+            'categories' => $categories,
+            'filters' => $request->only(['search', 'sort_field', 'sort_direction'])
         ]);
     }
 

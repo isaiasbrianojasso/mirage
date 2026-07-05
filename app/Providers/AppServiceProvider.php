@@ -32,6 +32,7 @@ class AppServiceProvider extends ServiceProvider
                 ->get());
         } catch (\Exception $e) {
             // Ignore during initial migrations when table doesn't exist
+            \Illuminate\Support\Facades\View::share('categories', collect([]));
         }
 
         \Illuminate\Support\Facades\View::composer('*', function ($view) {
@@ -45,6 +46,29 @@ class AppServiceProvider extends ServiceProvider
                 }
             }
             $view->with('cartCount', $cartCount)->with('cartTotal', $cartTotal);
+        });
+
+        \Illuminate\Support\Facades\Event::listen(\Illuminate\Mail\Events\MessageSent::class, function (\Illuminate\Mail\Events\MessageSent $event) {
+            try {
+                $message = $event->message;
+                $headers = $message->getHeaders();
+                $subject = $message->getSubject() ?? 'Sin asunto';
+                
+                $recipients = [];
+                foreach ($message->getTo() as $address) {
+                    $recipients[] = $address->getAddress();
+                }
+
+                \App\Models\EmailLog::create([
+                    'recipient' => implode(', ', $recipients),
+                    'subject' => $subject,
+                    'body' => $message->getHtmlBody() ?: $message->getTextBody() ?: 'Contenido no disponible',
+                    'status' => 'sent',
+                    // Note: Order ID linking could be done via a custom header if needed in the future
+                ]);
+            } catch (\Exception $e) {
+                \Illuminate\Support\Facades\Log::error('Error logging email: ' . $e->getMessage());
+            }
         });
     }
 }

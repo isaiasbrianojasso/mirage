@@ -21,11 +21,43 @@ class ProductController extends Controller
         $this->searchIndexer = $searchIndexer;
     }
 
-    public function index()
+    public function index(Request $request)
     {
-        $products = Product::with('category')->orderBy('name')->get();
+        $query = Product::with('category');
+
+        if ($request->has('search') && $request->search != '') {
+            $search = $request->search;
+            $query->where(function($q) use ($search) {
+                $q->where('name', 'like', "%{$search}%")
+                  ->orWhere('sku', 'like', "%{$search}%");
+            });
+        }
+
+        $sortField = $request->get('sort_field', 'created_at');
+        $sortDirection = $request->get('sort_direction', 'desc');
+
+        $allowedSortFields = ['id', 'name', 'category', 'price', 'stock', 'is_active', 'created_at'];
+        if (!in_array($sortField, $allowedSortFields)) {
+            $sortField = 'created_at';
+        }
+        if (!in_array($sortDirection, ['asc', 'desc'])) {
+            $sortDirection = 'desc';
+        }
+
+        if ($sortField === 'category') {
+            $query->orderBy(
+                \App\Models\Category::select('name')->whereColumn('categories.id', 'products.category_id'),
+                $sortDirection
+            );
+        } else {
+            $query->orderBy($sortField, $sortDirection);
+        }
+
+        $products = $query->paginate(15)->withQueryString();
+
         return Inertia::render('Admin/Products/Index', [
-            'products' => $products
+            'products' => $products,
+            'filters' => $request->only(['search', 'sort_field', 'sort_direction'])
         ]);
     }
 

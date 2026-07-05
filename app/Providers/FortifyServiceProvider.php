@@ -43,6 +43,22 @@ class FortifyServiceProvider extends ServiceProvider
             return view('auth.login');
         });
 
+        Fortify::authenticateUsing(function (Request $request) {
+            $user = \App\Models\User::where('email', $request->email)->first();
+
+            if ($user && \Illuminate\Support\Facades\Hash::check($request->password, $user->password)) {
+                if (!$user->is_enabled) {
+                    throw \Illuminate\Validation\ValidationException::withMessages([
+                        Fortify::username() => __('Tu cuenta ha sido deshabilitada. Contacta con soporte para más información.'),
+                    ]);
+                }
+
+                return $user;
+            }
+
+            return null;
+        });
+
         RateLimiter::for('login', function (Request $request) {
             $throttleKey = Str::transliterate(Str::lower($request->input(Fortify::username())).'|'.$request->ip());
 

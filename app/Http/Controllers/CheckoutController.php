@@ -21,7 +21,114 @@ class CheckoutController extends Controller
             return redirect()->route('cart.index')->with('error', 'Tu carrito está vacío.');
         }
 
-        return view('tienda.checkout', compact('cart'));
+        $zones = \App\Models\Zone::where('active', true)->orderBy('name')->get();
+        $paypalCommission = (float) \App\Models\CompanySetting::get('payment_paypal_commission', 0);
+        $mercadopagoCommission = (float) \App\Models\CompanySetting::get('payment_mercadopago_commission', 0);
+
+        return view('tienda.checkout', compact('cart', 'zones', 'paypalCommission', 'mercadopagoCommission'));
+    }
+
+    public function calculateShipping(Request $request)
+    {
+        $request->validate([
+            'zone_id' => 'required|exists:zones,id'
+        ]);
+
+        $cart = session()->get('cart', []);
+        if (empty($cart)) {
+            return response()->json(['carriers' => []]);
+        }
+
+        $totalPrice = 0;
+        $totalWeight = 0;
+        
+        foreach ($cart as $item) {
+            $quantity = $item['quantity'];
+            if (!empty($item['variant_id'])) {
+                $variant = \App\Models\ProductVariant::find($item['variant_id']);
+                if ($variant) {
+                    $totalPrice += ($variant->discount_price > 0 ? $variant->discount_price : $variant->price) * $quantity;
+                    $totalWeight += ($variant->weight ?? 0) * $quantity;
+                }
+            } else {
+                $product = \App\Models\Product::find($item['product_id']);
+                if ($product) {
+                    $totalPrice += ($product->discount_price > 0 ? $product->discount_price : $product->price) * $quantity;
+                    $totalWeight += ($product->weight ?? 0) * $quantity;
+                }
+            }
+        }
+
+        $user = auth()->user();
+        $customerGroupId = $user ? $user->customer_group_id : 1; 
+
+        $carriers = \App\Models\Carrier::where('active', true)
+            ->whereHas('customerGroups', function($q) use ($customerGroupId) {
+                $q->where('customer_groups.id', $customerGroupId);
+            })->get();
+
+        $availableCarriers = [];
+
+        foreach ($carriers as $carrier) {
+            if ($carrier->max_weight > 0 && $totalWeight > $carrier->max_weight) {
+                continue;
+            }
+
+            if ($carrier->is_free) {
+                $availableCarriers[] = [
+                    'id' => $carrier->id,
+                    'name' => $carrier->name,
+                    'transit_time' => $carrier->transit_time,
+                    'cost' => 0,
+                ];
+                continue;
+            }
+
+            $compareValue = $carrier->billing_behavior === 'weight' ? $totalWeight : $totalPrice;
+
+            $range = \App\Models\CarrierRange::where('carrier_id', $carrier->id)
+                ->where('delimiter1', '<=', $compareValue)
+                ->where('delimiter2', '>', $compareValue)
+                ->first();
+
+            $cost = null;
+
+            if ($range) {
+                $zonePrice = DB::table('carrier_zone_price')
+                    ->where('carrier_range_id', $range->id)
+                    ->where('zone_id', $request->zone_id)
+                    ->first();
+                if ($zonePrice) {
+                    $cost = $zonePrice->price;
+                }
+            } else {
+                if ($carrier->out_of_range_behavior === 'highest_range') {
+                    $highestRange = \App\Models\CarrierRange::where('carrier_id', $carrier->id)
+                        ->orderBy('delimiter2', 'desc')
+                        ->first();
+                    if ($highestRange) {
+                        $zonePrice = DB::table('carrier_zone_price')
+                            ->where('carrier_range_id', $highestRange->id)
+                            ->where('zone_id', $request->zone_id)
+                            ->first();
+                        if ($zonePrice) {
+                            $cost = $zonePrice->price;
+                        }
+                    }
+                }
+            }
+
+            if ($cost !== null) {
+                $availableCarriers[] = [
+                    'id' => $carrier->id,
+                    'name' => $carrier->name,
+                    'transit_time' => $carrier->transit_time,
+                    'cost' => (float) $cost,
+                ];
+            }
+        }
+
+        return response()->json(['carriers' => $availableCarriers]);
     }
 
     public function store(Request $request)
@@ -39,14 +146,16 @@ class CheckoutController extends Controller
             'shipping_address' => 'required|string|max:255',
             'shipping_city' => 'required|string|max:100',
             'shipping_zip' => 'required|string|max:20',
+            'zone_id' => 'required|exists:zones,id',
             'payment_method' => 'required|string|in:paypal,cash,mercadopago',
-            'shipping_method' => 'nullable|string',
+            'carrier_id' => 'required|exists:carriers,id',
             'transaction_id' => 'nullable|string',
         ]);
 
         $totalAmount = 0;
         $orderItemsData = [];
-        $shippingCost = 0; // Default shipping cost
+        $shippingCost = 0; 
+        $totalWeight = 0;
 
         // Validar stock en tiempo real y RECALCULAR precios
         foreach ($cart as $key => $item) {
@@ -58,12 +167,12 @@ class CheckoutController extends Controller
                 $variant = ProductVariant::find($variantId);
                 $stock = $variant ? $variant->stock : 0;
                 $active = $variant ? $variant->is_active : false;
-                $realPrice = $variant ? ($variant->discount_price ?? $variant->price) : 0;
+                $realPrice = $variant ? ($variant->discount_price > 0 ? $variant->discount_price : $variant->price) : 0;
             } else {
                 $product = Product::find($productId);
                 $stock = $product ? $product->stock : 0;
                 $active = $product ? $product->is_active : false;
-                $realPrice = $product ? ($product->discount_price ?? $product->price) : 0;
+                $realPrice = $product ? ($product->discount_price > 0 ? $product->discount_price : $product->price) : 0;
             }
 
             if (!$active) {
@@ -76,6 +185,7 @@ class CheckoutController extends Controller
 
             // Recalcular el total con el precio real de la base de datos
             $totalAmount += ($realPrice * $quantity);
+            $totalWeight += ($variantId && $variant ? ($variant->weight ?? 0) : ($product ? ($product->weight ?? 0) : 0)) * $quantity;
 
             // Almacenar temporalmente los datos para el order_items
             $orderItemsData[] = [
@@ -87,7 +197,67 @@ class CheckoutController extends Controller
             ];
         }
 
+        // Calculate Shipping Cost securely
+        $carrier = \App\Models\Carrier::find($request->carrier_id);
+        $zone = \App\Models\Zone::find($request->zone_id);
+        $shippingCost = null;
+        
+        if ($carrier && $zone) {
+            if ($carrier->is_free) {
+                $shippingCost = 0;
+            } else {
+                $compareValue = $carrier->billing_behavior === 'weight' ? $totalWeight : $totalAmount;
+                $range = \App\Models\CarrierRange::where('carrier_id', $carrier->id)
+                    ->where('delimiter1', '<=', $compareValue)
+                    ->where('delimiter2', '>', $compareValue)
+                    ->first();
+                
+                if ($range) {
+                    $zonePrice = DB::table('carrier_zone_price')
+                        ->where('carrier_range_id', $range->id)
+                        ->where('zone_id', $zone->id)
+                        ->first();
+                    if ($zonePrice) {
+                        $shippingCost = $zonePrice->price;
+                    }
+                } else if ($carrier->out_of_range_behavior === 'highest_range') {
+                    $highestRange = \App\Models\CarrierRange::where('carrier_id', $carrier->id)
+                        ->orderBy('delimiter2', 'desc')
+                        ->first();
+                    if ($highestRange) {
+                        $zonePrice = DB::table('carrier_zone_price')
+                            ->where('carrier_range_id', $highestRange->id)
+                            ->where('zone_id', $zone->id)
+                            ->first();
+                        if ($zonePrice) {
+                            $shippingCost = $zonePrice->price;
+                        }
+                    }
+                }
+            }
+        }
+
+        if ($shippingCost === null) {
+            return redirect()->route('checkout.index')->with('error', 'El método de envío seleccionado no es válido para tu zona o para el contenido actual de tu carrito. Por favor, selecciona otro.');
+        }
+
         $totalAmount += $shippingCost;
+
+        // Calculate Payment Fee
+        $paymentFee = 0;
+        if ($request->payment_method === 'paypal') {
+            $paypalCommission = (float) \App\Models\CompanySetting::get('payment_paypal_commission', 0);
+            if ($paypalCommission > 0) {
+                $paymentFee = $totalAmount * ($paypalCommission / 100);
+            }
+        } else if ($request->payment_method === 'mercadopago') {
+            $mercadopagoCommission = (float) \App\Models\CompanySetting::get('payment_mercadopago_commission', 0);
+            if ($mercadopagoCommission > 0) {
+                $paymentFee = $totalAmount * ($mercadopagoCommission / 100);
+            }
+        }
+
+        $totalAmount += $paymentFee;
 
         // Mock Pasarela de Pagos
         $paymentStatus = 'pending';
@@ -108,7 +278,7 @@ class CheckoutController extends Controller
         // Crear la orden y descontar stock dentro de una transacción para evitar datos inconsistentes
         try {
             $reference = strtoupper(\Illuminate\Support\Str::random(9));
-            $order = DB::transaction(function () use ($request, $totalAmount, $paymentStatus, $transactionId, $shippingCost, $orderItemsData, $reference) {
+            $order = DB::transaction(function () use ($request, $totalAmount, $paymentStatus, $transactionId, $shippingCost, $orderItemsData, $reference, $carrier, $zone, $paymentFee) {
                 
                 $order = Order::create([
                     'reference' => $reference,
@@ -118,7 +288,7 @@ class CheckoutController extends Controller
                     'customer_phone' => $request->customer_phone,
                     'shipping_address' => $request->shipping_address,
                     'shipping_city' => $request->shipping_city,
-                    'shipping_state' => $request->shipping_state,
+                    'shipping_state' => $zone ? $zone->name : 'N/A',
                     'shipping_zip' => $request->shipping_zip,
                     'total_amount' => $totalAmount,
                     'status' => $paymentStatus == 'paid' ? 'processing' : 'pending',
@@ -126,8 +296,10 @@ class CheckoutController extends Controller
                     'payment_method' => $request->payment_method,
                     'payment_status' => $paymentStatus,
                     'transaction_id' => $transactionId,
-                    'shipping_method' => $request->shipping_method,
+                    'shipping_method' => $carrier ? $carrier->name : 'Desconocido',
                     'shipping_cost' => $shippingCost,
+                    'payment_fee' => $paymentFee,
+                    'carrier_id' => $carrier ? $carrier->id : null,
                 ]);
 
                 // Crear los items de la orden y descontar stock

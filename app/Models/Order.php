@@ -40,4 +40,14 @@ class Order extends Model
     {
         return $this->belongsTo(Carrier::class);
     }
+
+    public function payments()
+    {
+        return $this->hasMany(OrderPayment::class);
+    }
+
+    public function messages()
+    {
+        return $this->hasMany(OrderMessage::class);
+    }
 }

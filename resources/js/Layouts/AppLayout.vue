@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import { Head, Link, router } from '@inertiajs/vue3';
+import { Head, Link, router, usePage } from '@inertiajs/vue3';
 import ApplicationMark from '@/Components/ApplicationMark.vue';
 import Banner from '@/Components/Banner.vue';
 import Dropdown from '@/Components/Dropdown.vue';
@@ -11,6 +11,16 @@ defineProps({
 });
 
 const showingNavigationDropdown = ref(false);
+
+const markNotificationsRead = () => {
+    // Only send request if there are unread notifications
+    if (usePage().props.notifications?.unread_count > 0) {
+        router.post(route('notifications.mark_read'), {}, {
+            preserveScroll: true,
+            preserveState: true,
+        });
+    }
+};
 
 const logout = () => {
     router.post(route('logout'));
@@ -65,6 +75,12 @@ const logout = () => {
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                         </svg>
                         Mis Pedidos
+                    </Link>
+
+                    <Link :href="route('customer.notifications')" 
+                        :class="[route().current('customer.notifications*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800 hover:text-white', 'group flex items-center px-3 py-2 text-sm font-medium rounded-md transition-colors mt-1']">
+                        <svg class="mr-3 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
+                        Notificaciones
                     </Link>
 
                     <template v-if="$page.props.auth.user.role === 'admin'">
@@ -146,11 +162,16 @@ const logout = () => {
                         </div>
                         <Link :href="route('company-settings.edit')" 
                             :class="[route().current('company-settings.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800 hover:text-white', 'group flex items-center px-3 py-2 text-sm font-medium rounded-md transition-colors']">
-                            <svg class="mr-3 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg class="w-5 h-5 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                             </svg>
                             Parámetros de Tienda
+                        </Link>
+                        <Link :href="route('email-logs.index')" 
+                            :class="[route().current('email-logs.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800 hover:text-white', 'group flex items-center px-3 py-2 text-sm font-medium rounded-md transition-colors mt-1']">
+                            <svg class="w-5 h-5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            Registro de Correos
                         </Link>
                         <Link :href="route('admin.email-templates.index')" 
                             :class="[route().current('admin.email-templates.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800 hover:text-white', 'group flex items-center px-3 py-2 text-sm font-medium rounded-md transition-colors']">
@@ -190,6 +211,44 @@ const logout = () => {
 
                     <!-- Right Side Dropdowns -->
                     <div class="flex items-center ml-4 space-x-4">
+                        
+                        <!-- Notifications Dropdown -->
+                        <Dropdown align="right" width="80" v-if="$page.props.notifications">
+                            <template #trigger>
+                                <button type="button" class="relative p-2 text-gray-400 hover:text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none transition-colors" @click="markNotificationsRead">
+                                    <span class="sr-only">Ver notificaciones</span>
+                                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                                    </svg>
+                                    <span v-if="$page.props.notifications.unread_count > 0" class="absolute top-1.5 right-1.5 block h-2.5 w-2.5 rounded-full bg-red-500 ring-2 ring-white"></span>
+                                </button>
+                            </template>
+
+                            <template #content>
+                                <div class="px-4 py-3 border-b border-gray-100 flex justify-between items-center bg-gray-50/50 rounded-t-md">
+                                    <h3 class="text-sm font-semibold text-gray-900">Notificaciones</h3>
+                                </div>
+                                <div class="max-h-96 overflow-y-auto">
+                                    <template v-if="$page.props.notifications.data.length > 0">
+                                        <div v-for="log in $page.props.notifications.data" :key="log.id" class="px-4 py-3 hover:bg-gray-50 border-b border-gray-100 transition-colors">
+                                            <p class="text-sm font-medium text-gray-900 truncate">{{ log.subject }}</p>
+                                            <p class="text-xs text-gray-500 mt-1 truncate">
+                                                {{ new Date(log.created_at).toLocaleDateString('es-MX', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' }) }}
+                                            </p>
+                                        </div>
+                                    </template>
+                                    <div v-else class="px-4 py-6 text-center text-sm text-gray-500">
+                                        No hay notificaciones recientes.
+                                    </div>
+                                </div>
+                                <div class="border-t border-gray-100">
+                                    <Link :href="route($page.props.auth.user.role === 'admin' ? 'email-logs.index' : 'customer.notifications')" class="block px-4 py-2 text-xs text-indigo-600 font-medium text-center hover:bg-gray-50 transition-colors rounded-b-md">
+                                        Ver todas las notificaciones
+                                    </Link>
+                                </div>
+                            </template>
+                        </Dropdown>
+
                         <!-- Settings Dropdown -->
                         <Dropdown align="right" width="48">
                             <template #trigger>

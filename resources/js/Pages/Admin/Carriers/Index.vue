@@ -1,11 +1,52 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 import AppLayout from '@/Layouts/AppLayout.vue';
 import { Link, useForm, router } from '@inertiajs/vue3';
+import Pagination from '@/Components/Pagination.vue';
 
 const props = defineProps({
-    carriers: Array,
+    carriers: Object,
+    filters: Object,
 });
+
+const search = ref(props.filters?.search || '');
+const sortField = ref(props.filters?.sort_field || 'created_at');
+const sortDirection = ref(props.filters?.sort_direction || 'desc');
+let searchTimeout = null;
+
+const applyFilters = () => {
+    router.get(route('carriers.index'), {
+        search: search.value,
+        sort_field: sortField.value,
+        sort_direction: sortDirection.value
+    }, {
+        preserveState: true,
+        preserveScroll: true,
+        replace: true,
+    });
+};
+
+watch(search, () => {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => {
+        applyFilters();
+    }, 300);
+});
+
+const sortBy = (field) => {
+    if (sortField.value === field) {
+        sortDirection.value = sortDirection.value === 'asc' ? 'desc' : 'asc';
+    } else {
+        sortField.value = field;
+        sortDirection.value = 'asc';
+    }
+    applyFilters();
+};
+
+const getSortIcon = (field) => {
+    if (sortField.value !== field) return '';
+    return sortDirection.value === 'asc' ? '↑' : '↓';
+};
 
 const deleteForm = useForm({});
 
@@ -49,22 +90,37 @@ const deleteCarrier = (id) => {
 
                 <div class="bg-white overflow-hidden shadow-sm rounded-lg border border-gray-200">
                     <div class="p-6 bg-white border-b border-gray-200">
+                        <div class="mb-4">
+                            <input type="text" v-model="search" placeholder="Buscar transportistas..." class="w-full md:w-1/3 border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm">
+                        </div>
                         <div class="overflow-x-auto">
                             <table class="min-w-full divide-y divide-gray-200">
                                 <thead class="bg-gray-50">
                                     <tr>
-                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">ID</th>
+                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer hover:bg-gray-100" @click="sortBy('id')">
+                                            ID <span class="ml-1">{{ getSortIcon('id') }}</span>
+                                        </th>
                                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Logo</th>
-                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Nombre</th>
-                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tiempo de Tránsito</th>
-                                        <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">Velocidad</th>
-                                        <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">Envío Gratis</th>
-                                        <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">Estado</th>
+                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer hover:bg-gray-100" @click="sortBy('name')">
+                                            Nombre <span class="ml-1">{{ getSortIcon('name') }}</span>
+                                        </th>
+                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer hover:bg-gray-100" @click="sortBy('transit_time')">
+                                            Tiempo de Tránsito <span class="ml-1">{{ getSortIcon('transit_time') }}</span>
+                                        </th>
+                                        <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer hover:bg-gray-100" @click="sortBy('speed_grade')">
+                                            Velocidad <span class="ml-1">{{ getSortIcon('speed_grade') }}</span>
+                                        </th>
+                                        <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer hover:bg-gray-100" @click="sortBy('is_free')">
+                                            Envío Gratis <span class="ml-1">{{ getSortIcon('is_free') }}</span>
+                                        </th>
+                                        <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer hover:bg-gray-100" @click="sortBy('active')">
+                                            Estado <span class="ml-1">{{ getSortIcon('active') }}</span>
+                                        </th>
                                         <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Acciones</th>
                                     </tr>
                                 </thead>
                                 <tbody class="bg-white divide-y divide-gray-200">
-                                    <tr v-for="carrier in carriers" :key="carrier.id" class="hover:bg-gray-50">
+                                    <tr v-for="carrier in carriers.data" :key="carrier.id" class="hover:bg-gray-50">
                                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                             {{ carrier.id }}
                                         </td>
@@ -114,13 +170,16 @@ const deleteCarrier = (id) => {
                                             </button>
                                         </td>
                                     </tr>
-                                    <tr v-if="carriers.length === 0">
+                                    <tr v-if="carriers.data.length === 0">
                                         <td colspan="8" class="px-6 py-4 text-center text-gray-500 italic">
                                             No hay transportistas registrados.
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
+                        </div>
+                        <div class="mt-6">
+                            <Pagination :links="carriers.links" />
                         </div>
                     </div>
                 </div>

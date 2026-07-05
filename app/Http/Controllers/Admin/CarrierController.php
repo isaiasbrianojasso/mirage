@@ -13,11 +13,31 @@ use Illuminate\Support\Facades\DB;
 
 class CarrierController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $carriers = Carrier::orderBy('created_at', 'desc')->get();
+        $query = Carrier::query();
+
+        if ($request->has('search') && $request->search != '') {
+            $search = $request->search;
+            $query->where('name', 'like', "%{$search}%");
+        }
+
+        $sortField = $request->get('sort_field', 'created_at');
+        $sortDirection = $request->get('sort_direction', 'desc');
+
+        $allowedSortFields = ['id', 'name', 'transit_time', 'speed_grade', 'is_free', 'active', 'created_at'];
+        if (!in_array($sortField, $allowedSortFields)) {
+            $sortField = 'created_at';
+        }
+        if (!in_array($sortDirection, ['asc', 'desc'])) {
+            $sortDirection = 'desc';
+        }
+
+        $carriers = $query->orderBy($sortField, $sortDirection)->paginate(15)->withQueryString();
+
         return Inertia::render('Admin/Carriers/Index', [
-            'carriers' => $carriers
+            'carriers' => $carriers,
+            'filters' => $request->only(['search', 'sort_field', 'sort_direction'])
         ]);
     }
 
@@ -78,7 +98,9 @@ class CarrierController extends Controller
                 foreach ($groupIds as $gId) {
                     DB::table('carrier_customer_group')->insert([
                         'carrier_id' => $carrier->id,
-                        'customer_group_id' => $gId
+                        'customer_group_id' => $gId,
+                        'created_at' => now(),
+                        'updated_at' => now(),
                     ]);
                 }
             }
@@ -101,7 +123,9 @@ class CarrierController extends Controller
                                 'carrier_id' => $carrier->id,
                                 'zone_id' => $zoneId,
                                 'carrier_range_id' => $range->id,
-                                'price' => $price ?: 0
+                                'price' => $price ?: 0,
+                                'created_at' => now(),
+                                'updated_at' => now(),
                             ]);
                         }
                     }
@@ -181,7 +205,9 @@ class CarrierController extends Controller
                 foreach ($groupIds as $gId) {
                     DB::table('carrier_customer_group')->insert([
                         'carrier_id' => $carrier->id,
-                        'customer_group_id' => $gId
+                        'customer_group_id' => $gId,
+                        'created_at' => now(),
+                        'updated_at' => now(),
                     ]);
                 }
             }
@@ -206,7 +232,9 @@ class CarrierController extends Controller
                                 'carrier_id' => $carrier->id,
                                 'zone_id' => $zoneId,
                                 'carrier_range_id' => $range->id,
-                                'price' => $price ?: 0
+                                'price' => $price ?: 0,
+                                'created_at' => now(),
+                                'updated_at' => now(),
                             ]);
                         }
                     }

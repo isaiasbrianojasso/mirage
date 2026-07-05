@@ -42,4 +42,15 @@ class CustomerController extends Controller
             'order' => $order
         ]);
     }
+
+    public function notifications()
+    {
+        $logs = \App\Models\EmailLog::where('recipient', auth()->user()->email)
+            ->orderBy('created_at', 'desc')
+            ->paginate(15);
+            
+        return Inertia::render('Customer/Notifications', [
+            'logs' => $logs
+        ]);
+    }
 }

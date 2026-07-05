@@ -200,6 +200,7 @@
                             { key: 'paypal_client_id', label: 'PayPal Client ID', placeholder: 'Ej: Ad2V...', showIf: (s) => s.payment_paypal_enabled === '1' },
                             { key: 'paypal_secret', label: 'PayPal Secret', type: 'password', placeholder: 'Ej: EPT5x...', showIf: (s) => s.payment_paypal_enabled === '1' },
                             { key: 'paypal_mode', label: 'Entorno de PayPal', type: 'select', options: [{label: 'Pruebas (Sandbox)', value: 'sandbox'}, {label: 'Producción (Live)', value: 'live'}], showIf: (s) => s.payment_paypal_enabled === '1' },
+                            { key: 'payment_paypal_commission', label: 'Comisión extra a cobrar al cliente (%)', placeholder: 'Ej: 4.5', type: 'number', showIf: (s) => s.payment_paypal_enabled === '1' },
                         ]"
                         :settings="settings.payments || {}"
                         @saved="onSaved"
@@ -215,6 +216,7 @@
                             { key: 'payment_mercadopago_enabled', label: '¿Habilitar MercadoPago?', type: 'select', options: [{label: 'Sí, habilitar', value: '1'}, {label: 'No, deshabilitar', value: '0'}] },
                             { key: 'mercadopago_public_key', label: 'MercadoPago Public Key', placeholder: 'Ej: TEST-...', showIf: (s) => s.payment_mercadopago_enabled === '1' },
                             { key: 'mercadopago_access_token', label: 'MercadoPago Access Token', type: 'password', placeholder: 'Ej: TEST-...', showIf: (s) => s.payment_mercadopago_enabled === '1' },
+                            { key: 'payment_mercadopago_commission', label: 'Comisión extra a cobrar al cliente (%)', placeholder: 'Ej: 3.5', type: 'number', showIf: (s) => s.payment_mercadopago_enabled === '1' },
                         ]"
                         :settings="settings.payments || {}"
                         @saved="onSaved"

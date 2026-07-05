@@ -43,6 +43,8 @@ Route::middleware([
         }
         return app()->make(\App\Http\Controllers\CustomerController::class)->dashboard();
     })->name('dashboard');
+    
+    Route::post('/notificaciones/marcar-leidas', [\App\Http\Controllers\NotificationController::class, 'markAsRead'])->name('notifications.mark_read');
 
     // Admin Routes
     Route::middleware(['is_admin'])->group(function () {
@@ -66,6 +68,9 @@ Route::middleware([
         Route::get('/admin/company-settings', [\App\Http\Controllers\AdminCompanySettingController::class, 'edit'])->name('company-settings.edit');
         Route::post('/admin/company-settings', [\App\Http\Controllers\AdminCompanySettingController::class, 'update'])->name('company-settings.update');
 
+        // Email Logs
+        Route::get('/admin/email-logs', [\App\Http\Controllers\AdminEmailLogController::class, 'index'])->name('email-logs.index');
+
         // Email Templates
         Route::get('/admin/email-templates', [\App\Http\Controllers\AdminEmailTemplateController::class, 'index'])->name('admin.email-templates.index');
         Route::get('/admin/email-templates/{name}/edit', [\App\Http\Controllers\AdminEmailTemplateController::class, 'edit'])->name('admin.email-templates.edit');
@@ -75,6 +80,7 @@ Route::middleware([
     // Customer Routes
     Route::get('/mis-pedidos', [\App\Http\Controllers\CustomerController::class, 'orders'])->name('customer.orders');
     Route::get('/mis-pedidos/{id}', [\App\Http\Controllers\CustomerController::class, 'orderShow'])->name('customer.orders.show');
+    Route::get('/notificaciones', [\App\Http\Controllers\CustomerController::class, 'notifications'])->name('customer.notifications');
 });
 
 // Dynamic Routes for Tienda (MVC)
@@ -117,6 +123,7 @@ Route::prefix('carrito')->name('cart.')->group(function () {
 // Checkout Routes
 Route::prefix('checkout')->name('checkout.')->group(function () {
     Route::get('/', [\App\Http\Controllers\CheckoutController::class, 'index'])->name('index');
+    Route::post('/shipping-rates', [\App\Http\Controllers\CheckoutController::class, 'calculateShipping'])->name('shipping-rates');
     Route::post('/procesar', [\App\Http\Controllers\CheckoutController::class, 'store'])->name('store');
     Route::get('/success/{reference}', [\App\Http\Controllers\CheckoutController::class, 'success'])->name('success');
     

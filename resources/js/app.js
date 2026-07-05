@@ -17,8 +17,8 @@ createInertiaApp({
             .use(ZiggyVue);
 
         app.config.errorHandler = (err, vm, info) => {
-            alert('VUE ERROR: ' + err.message + '\nInfo: ' + info);
-            console.error(err, info);
+            // Log to console instead of showing alert to user
+            console.error('VUE GLOBAL ERROR:', err, info);
         };
 
         return app.mount(el);

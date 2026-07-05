@@ -105,9 +105,14 @@
                             </div>
 
                             <div>
-                                <label for="shipping_state" class="block text-sm font-medium text-gray-700">Estado</label>
+                                <label for="zone_id" class="block text-sm font-medium text-gray-700">Estado / Zona</label>
                                 <div class="mt-1">
-                                    <input type="text" id="shipping_state" name="shipping_state" value="{{ old('shipping_state') }}" required class="block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm p-3 border">
+                                    <select id="zone_id" name="zone_id" required class="block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm p-3 border">
+                                        <option value="">Selecciona tu estado/zona...</option>
+                                        @foreach($zones as $zone)
+                                            <option value="{{ $zone->id }}" {{ old('zone_id') == $zone->id ? 'selected' : '' }}>{{ $zone->name }}</option>
+                                        @endforeach
+                                    </select>
                                 </div>
                             </div>
 
@@ -170,18 +175,9 @@
                         </div>
 
                         <h2 class="text-lg font-medium text-gray-900 mt-10">Método de Envío</h2>
-                        <div class="mt-4 space-y-4">
-                            <div class="flex items-center">
-                                <input id="shipping_local" name="shipping_method" type="radio" value="local_pickup" checked class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
-                                <label for="shipping_local" class="ml-3 block text-sm font-medium text-gray-700">
-                                    Recoger en Sucursal (Gratis)
-                                </label>
-                            </div>
-                            <div class="flex items-center">
-                                <input id="shipping_delivery" name="shipping_method" type="radio" value="home_delivery" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
-                                <label for="shipping_delivery" class="ml-3 block text-sm font-medium text-gray-700">
-                                    Envío a Domicilio (Por Acordar)
-                                </label>
+                        <div class="mt-4 space-y-4" id="shipping_methods_container">
+                            <div class="p-4 bg-yellow-50 border border-yellow-200 rounded-md text-sm text-yellow-800">
+                                Por favor, selecciona tu <strong>Estado / Zona</strong> arriba para ver los métodos de envío disponibles.
                             </div>
                         </div>
 
@@ -239,11 +235,15 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <dt class="text-sm text-gray-600">Envío</dt>
-                                <dd class="text-sm font-medium text-gray-900">Por acordar</dd>
+                                <dd class="text-sm font-medium text-gray-900" id="shipping-cost-display">Calculando...</dd>
+                            </div>
+                            <div class="flex items-center justify-between" id="payment-fee-container" style="display: none;">
+                                <dt class="text-sm text-gray-600">Comisión por pago</dt>
+                                <dd class="text-sm font-medium text-gray-900" id="payment-fee-display">$0.00</dd>
                             </div>
                             <div class="flex items-center justify-between border-t border-gray-200 pt-6">
                                 <dt class="text-base font-medium text-gray-900">Total a Pagar</dt>
-                                <dd class="text-base font-medium text-gray-900">${{ number_format($subtotal, 2) }}</dd>
+                                <dd class="text-base font-medium text-gray-900" id="total-amount-display">${{ number_format($subtotal, 2) }}</dd>
                             </div>
                         </dl>
 
@@ -301,6 +301,20 @@
 
         const frontendErrorBanner = document.getElementById('frontend-error-banner');
         const frontendErrorList = document.getElementById('frontend-error-list');
+        
+        const zoneSelect = document.getElementById('zone_id');
+        const shippingContainer = document.getElementById('shipping_methods_container');
+        const shippingCostDisplay = document.getElementById('shipping-cost-display');
+        const paymentFeeContainer = document.getElementById('payment-fee-container');
+        const paymentFeeDisplay = document.getElementById('payment-fee-display');
+        const totalAmountDisplay = document.getElementById('total-amount-display');
+        
+        const originalSubtotal = {{ $subtotal }};
+        const paypalCommissionRate = {{ $paypalCommission ?? 0 }};
+        const mercadopagoCommissionRate = {{ $mercadopagoCommission ?? 0 }};
+        
+        let currentShippingCost = 0;
+        let currentPaymentFee = 0;
 
         function showErrorBanner(messages) {
             frontendErrorList.innerHTML = '';
@@ -348,6 +362,9 @@
                 if (paypalWrapper) paypalWrapper.style.display = 'none';
             }
 
+            // Recalculate totals because payment method might affect commission
+            updateTotals();
+
             // 2. Controlar estado habilitado/deshabilitado de los botones finales según los términos
             const termsAccepted = termsCheckbox.checked;
             
@@ -368,6 +385,99 @@
         if (paymentPaypal) paymentPaypal.addEventListener('change', updateUI);
         if (paymentMercadopago) paymentMercadopago.addEventListener('change', updateUI);
         if (termsCheckbox) termsCheckbox.addEventListener('change', updateUI);
+
+        function updateTotals() {
+            const checkedCarrier = document.querySelector('input[name="carrier_id"]:checked');
+            if (checkedCarrier) {
+                currentShippingCost = parseFloat(checkedCarrier.dataset.cost);
+                shippingCostDisplay.innerText = currentShippingCost === 0 ? 'Gratis' : '$' + currentShippingCost.toFixed(2);
+            } else {
+                currentShippingCost = 0;
+                shippingCostDisplay.innerText = 'Selecciona envío';
+            }
+
+            let subtotalAndShipping = originalSubtotal + currentShippingCost;
+            currentPaymentFee = 0;
+
+            if (paymentPaypal && paymentPaypal.checked && paypalCommissionRate > 0) {
+                currentPaymentFee = subtotalAndShipping * (paypalCommissionRate / 100);
+            } else if (paymentMercadopago && paymentMercadopago.checked && mercadopagoCommissionRate > 0) {
+                currentPaymentFee = subtotalAndShipping * (mercadopagoCommissionRate / 100);
+            }
+
+            if (currentPaymentFee > 0) {
+                paymentFeeContainer.style.display = 'flex';
+                paymentFeeDisplay.innerText = '$' + currentPaymentFee.toFixed(2);
+            } else {
+                paymentFeeContainer.style.display = 'none';
+            }
+
+            const total = subtotalAndShipping + currentPaymentFee;
+            totalAmountDisplay.innerText = '$' + total.toFixed(2);
+        }
+
+        if (zoneSelect) {
+            zoneSelect.addEventListener('change', function() {
+                const zoneId = this.value;
+                if (!zoneId) {
+                    shippingContainer.innerHTML = '<div class="p-4 bg-yellow-50 border border-yellow-200 rounded-md text-sm text-yellow-800">Por favor, selecciona tu <strong>Estado / Zona</strong> arriba para ver los métodos de envío disponibles.</div>';
+                    updateTotals();
+                    return;
+                }
+
+                shippingContainer.innerHTML = '<div class="text-sm text-gray-500 py-2"><i class="fa fa-spinner fa-spin mr-2"></i>Buscando transportistas...</div>';
+                
+                fetch('{{ route("checkout.shipping-rates") }}', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                    },
+                    body: JSON.stringify({ zone_id: zoneId })
+                })
+                .then(res => res.json())
+                .then(data => {
+                    shippingContainer.innerHTML = '';
+                    if (!data.carriers || data.carriers.length === 0) {
+                        shippingContainer.innerHTML = '<div class="p-4 bg-red-50 border border-red-200 rounded-md text-sm text-red-800">No hay envíos disponibles para esta zona.</div>';
+                    } else {
+                        data.carriers.forEach((carrier, index) => {
+                            const isChecked = index === 0 ? 'checked' : '';
+                            const costText = carrier.cost === 0 ? 'Gratis' : '+$' + carrier.cost.toFixed(2);
+                            
+                            const html = `
+                                <div class="border border-gray-200 rounded-lg p-4 bg-white hover:bg-gray-50 cursor-pointer">
+                                    <label class="flex items-start w-full cursor-pointer">
+                                        <div class="flex items-center h-5">
+                                            <input name="carrier_id" type="radio" value="${carrier.id}" data-cost="${carrier.cost}" ${isChecked} required class="carrier-radio focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                                        </div>
+                                        <div class="ml-3 flex-1">
+                                            <span class="block text-sm font-medium text-gray-900">${carrier.name}</span>
+                                            <span class="block text-sm text-gray-500">${carrier.transit_time ? carrier.transit_time : 'Entrega estándar'}</span>
+                                        </div>
+                                        <div class="text-sm font-bold text-gray-900">
+                                            ${costText}
+                                        </div>
+                                    </label>
+                                </div>
+                            `;
+                            shippingContainer.insertAdjacentHTML('beforeend', html);
+                        });
+                        
+                        // Attach events to new radios
+                        document.querySelectorAll('.carrier-radio').forEach(radio => {
+                            radio.addEventListener('change', updateTotals);
+                        });
+                    }
+                    updateTotals();
+                })
+                .catch(err => {
+                    console.error(err);
+                    shippingContainer.innerHTML = '<div class="p-4 bg-red-50 text-red-800 rounded-md">Error al cargar envíos.</div>';
+                    updateTotals();
+                });
+            });
+        }
 
         // Run once on load
         updateUI();
@@ -406,10 +516,11 @@
                     return actions.resolve();
                 },
                 createOrder: function(data, actions) {
+                    const totalToPay = originalSubtotal + currentShippingCost + currentPaymentFee;
                     return actions.order.create({
                         purchase_units: [{
                             amount: {
-                                value: '{{ number_format($subtotal, 2, ".", "") }}'
+                                value: totalToPay.toFixed(2)
                             }
                         }]
                     });

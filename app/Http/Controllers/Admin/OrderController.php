@@ -20,11 +20,36 @@ use App\Models\CompanySetting;
 
 class OrderController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $orders = Order::orderBy('created_at', 'desc')->get();
+        $query = Order::query();
+
+        if ($request->has('search') && $request->search != '') {
+            $search = $request->search;
+            $query->where(function($q) use ($search) {
+                $q->where('id', 'like', "%{$search}%")
+                  ->orWhere('customer_name', 'like', "%{$search}%")
+                  ->orWhere('customer_email', 'like', "%{$search}%")
+                  ->orWhere('status', 'like', "%{$search}%");
+            });
+        }
+
+        $sortField = $request->get('sort_field', 'created_at');
+        $sortDirection = $request->get('sort_direction', 'desc');
+
+        $allowedSortFields = ['id', 'customer_name', 'created_at', 'total_amount', 'status', 'payment_status'];
+        if (!in_array($sortField, $allowedSortFields)) {
+            $sortField = 'created_at';
+        }
+        if (!in_array($sortDirection, ['asc', 'desc'])) {
+            $sortDirection = 'desc';
+        }
+
+        $orders = $query->orderBy($sortField, $sortDirection)->paginate(15)->withQueryString();
+
         return Inertia::render('Admin/Orders/Index', [
-            'orders' => $orders
+            'orders' => $orders,
+            'filters' => $request->only(['search', 'sort_field', 'sort_direction'])
         ]);
     }
 
@@ -202,12 +227,20 @@ class OrderController extends Controller
 
         $order = Order::findOrFail($id);
 
-        OrderMessage::create([
+        $orderMessage = OrderMessage::create([
             'order_id' => $order->id,
             'user_id' => auth()->id(),
             'message' => $request->message,
             'is_private' => $request->is_private ?? false,
         ]);
+
+        if (!$orderMessage->is_private && $order->customer_email) {
+            try {
+                \Illuminate\Support\Facades\Mail::to($order->customer_email)->send(new \App\Mail\OrderMessageNotification($order, $orderMessage));
+            } catch (\Exception $e) {
+                \Illuminate\Support\Facades\Log::error('Error sending order message email: ' . $e->getMessage());
+            }
+        }
 
         return redirect()->back()->with('success', 'Mensaje añadido exitosamente.');
     }

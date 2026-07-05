@@ -10,11 +10,31 @@ use Inertia\Inertia;
 
 class CustomerGroupController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $groups = CustomerGroup::withCount('users')->get();
+        $query = CustomerGroup::withCount('users');
+
+        if ($request->has('search') && $request->search != '') {
+            $search = $request->search;
+            $query->where('name', 'like', "%{$search}%");
+        }
+
+        $sortField = $request->get('sort_field', 'name');
+        $sortDirection = $request->get('sort_direction', 'asc');
+
+        $allowedSortFields = ['id', 'name', 'discount_percentage', 'show_taxes', 'show_prices', 'users_count', 'created_at'];
+        if (!in_array($sortField, $allowedSortFields)) {
+            $sortField = 'name';
+        }
+        if (!in_array($sortDirection, ['asc', 'desc'])) {
+            $sortDirection = 'asc';
+        }
+
+        $groups = $query->orderBy($sortField, $sortDirection)->paginate(15)->withQueryString();
+
         return Inertia::render('Admin/CustomerGroups/Index', [
-            'groups' => $groups
+            'groups' => $groups,
+            'filters' => $request->only(['search', 'sort_field', 'sort_direction'])
         ]);
     }
 
