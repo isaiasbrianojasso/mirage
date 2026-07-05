@@ -119,6 +119,11 @@ Route::prefix('checkout')->name('checkout.')->group(function () {
     Route::get('/', [\App\Http\Controllers\CheckoutController::class, 'index'])->name('index');
     Route::post('/procesar', [\App\Http\Controllers\CheckoutController::class, 'store'])->name('store');
     Route::get('/success/{reference}', [\App\Http\Controllers\CheckoutController::class, 'success'])->name('success');
+    
+    // Mercado Pago Callbacks
+    Route::get('/mercadopago/success', [\App\Http\Controllers\CheckoutController::class, 'mercadopagoSuccess'])->name('mercadopago.success');
+    Route::get('/mercadopago/failure', [\App\Http\Controllers\CheckoutController::class, 'mercadopagoFailure'])->name('mercadopago.failure');
+    Route::get('/mercadopago/pending', [\App\Http\Controllers\CheckoutController::class, 'mercadopagoPending'])->name('mercadopago.pending');
 });
 
 // Dynamic Routes for Blog and Distributors

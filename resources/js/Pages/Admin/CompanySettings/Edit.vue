@@ -192,10 +192,24 @@
                     v-if="activeTab === 'payments'"
                     title="Configuración de Pagos"
                     icon='<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" /></svg>'
-                    description="Credenciales y configuraciones de pasarelas de pago."
+                    description="Selecciona los métodos de pago disponibles en la tienda y configura sus credenciales."
                     group="payments"
                     :fields="[
-                        { key: 'paypal_client_id', label: 'PayPal Client ID', placeholder: 'Ej: AYSq3v... o \'test\' para pruebas' },
+                        { key: 'payment_paypal_enabled', label: '¿Habilitar PayPal?', type: 'select', options: [{label: 'Sí, habilitar', value: '1'}, {label: 'No, deshabilitar', value: '0'}] },
+                        { key: 'paypal_client_id', label: 'PayPal Client ID', placeholder: 'Ej: AYSq3v...', showIf: (s) => s.payment_paypal_enabled === '1' },
+                        { key: 'paypal_secret', label: 'PayPal Secret', type: 'password', placeholder: 'Ej: EPT5x...', showIf: (s) => s.payment_paypal_enabled === '1' },
+                        { key: 'paypal_mode', label: 'Entorno de PayPal', type: 'select', options: [{label: 'Pruebas (Sandbox)', value: 'sandbox'}, {label: 'Producción (Live)', value: 'live'}], showIf: (s) => s.payment_paypal_enabled === '1' },
+                        
+                        { key: 'payment_mercadopago_enabled', label: '¿Habilitar MercadoPago?', type: 'select', options: [{label: 'Sí, habilitar', value: '1'}, {label: 'No, deshabilitar', value: '0'}] },
+                        { key: 'mercadopago_public_key', label: 'MercadoPago Public Key', placeholder: 'Ej: TEST-...', showIf: (s) => s.payment_mercadopago_enabled === '1' },
+                        { key: 'mercadopago_access_token', label: 'MercadoPago Access Token', type: 'password', placeholder: 'Ej: TEST-...', showIf: (s) => s.payment_mercadopago_enabled === '1' },
+                        
+                        { key: 'payment_transfer_enabled', label: '¿Habilitar Transferencia Bancaria / Depósito?', type: 'select', options: [{label: 'Sí, habilitar', value: '1'}, {label: 'No, deshabilitar', value: '0'}] },
+                        { key: 'transfer_bank_name', label: 'Nombre del Banco', placeholder: 'Ej: BBVA Bancomer', showIf: (s) => s.payment_transfer_enabled === '1' },
+                        { key: 'transfer_account_name', label: 'Titular de la cuenta', placeholder: 'Ej: Mirage México S.A. de C.V.', showIf: (s) => s.payment_transfer_enabled === '1' },
+                        { key: 'transfer_account_number', label: 'Número de Cuenta', placeholder: 'Ej: 0123456789', showIf: (s) => s.payment_transfer_enabled === '1' },
+                        { key: 'transfer_clabe', label: 'CLABE Interbancaria', placeholder: 'Ej: 012345678901234567', showIf: (s) => s.payment_transfer_enabled === '1' },
+                        { key: 'transfer_instructions', label: 'Instrucciones adicionales', type: 'textarea', placeholder: 'Ej: Favor de enviar el comprobante de pago a pagos@mirage.mx', showIf: (s) => s.payment_transfer_enabled === '1' },
                     ]"
                     :settings="settings.payments || {}"
                     @saved="onSaved"
