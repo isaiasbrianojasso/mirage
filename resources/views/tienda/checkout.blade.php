@@ -479,6 +479,19 @@
             });
         }
 
+        // Add form submit validation
+        const form = document.getElementById('checkout-form');
+        form.addEventListener('submit', function(e) {
+            const checkedCarrier = document.querySelector('input[name="carrier_id"]:checked');
+            if (!checkedCarrier) {
+                e.preventDefault();
+                showErrorBanner(["Por favor, selecciona un método de envío antes de continuar. Si no hay envíos disponibles, no puedes completar el pedido con esta dirección."]);
+            } else if (!termsCheckbox.checked) {
+                e.preventDefault();
+                showErrorBanner(["Debes aceptar los Términos de Servicio antes de continuar."]);
+            }
+        });
+
         // Run once on load
         updateUI();
         

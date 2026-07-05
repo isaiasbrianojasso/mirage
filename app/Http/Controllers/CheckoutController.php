@@ -60,7 +60,7 @@ class CheckoutController extends Controller
         }
 
         $user = auth()->user();
-        $customerGroupId = $user ? $user->customer_group_id : 1; 
+        $customerGroupId = ($user && $user->customer_group_id) ? $user->customer_group_id : 1; 
 
         $carriers = \App\Models\Carrier::where('active', true)
             ->whereHas('customerGroups', function($q) use ($customerGroupId) {

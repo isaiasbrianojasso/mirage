@@ -24,6 +24,10 @@ Route::any('/tienda/iniciar-sesion', function () {
     return redirect()->route('login', request()->query());
 });
 
+// Social Login Routes
+Route::get('/login/{provider}', [\App\Http\Controllers\Auth\SocialLoginController::class, 'redirect'])->name('social.login');
+Route::get('/login/{provider}/callback', [\App\Http\Controllers\Auth\SocialLoginController::class, 'callback'])->name('social.callback');
+
 
 // Catalog routes
 Route::get('/catalogo/todo/', [App\Http\Controllers\CatalogController::class, 'index'])->name('catalog.index');

@@ -37,6 +37,7 @@ if (isEditing && props.carrierRanges.length > 0) {
 }
 
 const form = useForm({
+    _method: isEditing ? 'put' : 'post',
     name: props.carrier?.name || '',
     transit_time: props.carrier?.transit_time || '',
     speed_grade: props.carrier?.speed_grade || 0,
@@ -117,10 +118,6 @@ const submit = () => {
         form.post(route('carriers.update', props.carrier.id), {
             preserveScroll: true,
             forceFormData: true,
-            transform: (data) => ({
-                ...data,
-                _method: 'put'
-            }),
         });
     } else {
         form.post(route('carriers.store'), {

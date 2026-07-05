@@ -262,6 +262,56 @@
                     @saved="onSaved"
                 />
 
+                <!-- Auth -->
+                <div v-if="activeTab === 'auth'" class="space-y-6">
+                    <!-- Google -->
+                    <SettingsGroup
+                        title="Google"
+                        icon='<svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg>'
+                        description="Permitir iniciar sesión como administrador con una cuenta de Google."
+                        group="auth"
+                        :fields="[
+                            { key: 'google_login_enabled', label: '¿Habilitar Login con Google?', type: 'select', options: [{label: 'Sí, habilitar', value: '1'}, {label: 'No, deshabilitar', value: '0'}] },
+                            { key: 'google_client_id', label: 'Google Client ID', placeholder: 'Ej: 123456.apps.googleusercontent.com', showIf: (s) => s.google_login_enabled === '1' },
+                            { key: 'google_client_secret', label: 'Google Client Secret', type: 'password', placeholder: 'Ej: GOCSPX-...', showIf: (s) => s.google_login_enabled === '1' },
+                        ]"
+                        :settings="settings.auth || {}"
+                        @saved="onSaved"
+                    />
+
+                    <!-- Facebook -->
+                    <SettingsGroup
+                        title="Facebook"
+                        icon='<svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>'
+                        description="Permitir iniciar sesión como administrador con una cuenta de Facebook."
+                        group="auth"
+                        :fields="[
+                            { key: 'facebook_login_enabled', label: '¿Habilitar Login con Facebook?', type: 'select', options: [{label: 'Sí, habilitar', value: '1'}, {label: 'No, deshabilitar', value: '0'}] },
+                            { key: 'facebook_client_id', label: 'Facebook App ID', placeholder: 'Ej: 1234567890', showIf: (s) => s.facebook_login_enabled === '1' },
+                            { key: 'facebook_client_secret', label: 'Facebook App Secret', type: 'password', placeholder: 'Ej: 123abc...', showIf: (s) => s.facebook_login_enabled === '1' },
+                        ]"
+                        :settings="settings.auth || {}"
+                        @saved="onSaved"
+                    />
+                    <!-- Trust Login -->
+                    <SettingsGroup
+                        title="Trust Login"
+                        icon='<svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>'
+                        description="Permitir iniciar sesión mediante GMO Trust Login (OIDC SSO Empresarial)."
+                        group="auth"
+                        :fields="[
+                            { key: 'trustlogin_enabled', label: '¿Habilitar Trust Login?', type: 'select', options: [{label: 'Sí, habilitar', value: '1'}, {label: 'No, deshabilitar', value: '0'}] },
+                            { key: 'trustlogin_client_id', label: 'Client ID', placeholder: 'Ej: 123456...', showIf: (s) => s.trustlogin_enabled === '1' },
+                            { key: 'trustlogin_client_secret', label: 'Client Secret', type: 'password', placeholder: 'Ej: abcdef...', showIf: (s) => s.trustlogin_enabled === '1' },
+                            { key: 'trustlogin_auth_url', label: 'Authorization Endpoint URL', placeholder: 'https://...', showIf: (s) => s.trustlogin_enabled === '1' },
+                            { key: 'trustlogin_token_url', label: 'Token Endpoint URL', placeholder: 'https://...', showIf: (s) => s.trustlogin_enabled === '1' },
+                            { key: 'trustlogin_userinfo_url', label: 'UserInfo Endpoint URL', placeholder: 'https://...', showIf: (s) => s.trustlogin_enabled === '1' },
+                        ]"
+                        :settings="settings.auth || {}"
+                        @saved="onSaved"
+                    />
+                </div>
+
             </div>
         </div>
     </AppLayout>
@@ -286,6 +336,7 @@ const tabs = [
     { key: 'home_template', label: 'Textos de Inicio', icon: '<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>' },
     { key: 'payments', label: 'Pagos', icon: '<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" /></svg>' },
     { key: 'mail', label: 'Correos', icon: '<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>' },
+    { key: 'auth', label: 'Autenticación Social', icon: '<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.092 2.02-.273 3.003m-3.44 2.041A9.954 9.954 0 0112 18c-3.1 0-5.874-1.41-7.7-3.626M12 18c3.1 0 5.874-1.41 7.7-3.626m-7.7 3.626v3.374"/></svg>' },
 ];
 
 const activeTab = ref('general');

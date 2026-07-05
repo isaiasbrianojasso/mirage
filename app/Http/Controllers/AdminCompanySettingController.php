@@ -12,7 +12,7 @@ class AdminCompanySettingController extends Controller
      */
     public function edit()
     {
-        $groups = ['general', 'branding', 'contact', 'social', 'content', 'home_template', 'store_template', 'tienda', 'payments', 'mail'];
+        $groups = ['general', 'branding', 'contact', 'social', 'content', 'home_template', 'store_template', 'tienda', 'payments', 'mail', 'auth'];
 
         $settings = [];
         foreach ($groups as $group) {
@@ -31,7 +31,7 @@ class AdminCompanySettingController extends Controller
     public function update(Request $request)
     {
         $request->validate([
-            'group' => 'required|string|in:general,branding,contact,social,content,home_template,store_template,tienda,payments,mail',
+            'group' => 'required|string|in:general,branding,contact,social,content,home_template,store_template,tienda,payments,mail,auth',
             'settings' => 'required|array',
             'settings.*' => 'nullable|string|max:2000',
         ]);

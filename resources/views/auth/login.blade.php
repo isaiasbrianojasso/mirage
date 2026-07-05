@@ -38,9 +38,15 @@
                             </div>
                         </div>
 
-                        <!-- ¿Olvidaste tu contraseña? -->
-                        <div class="form-group row mb-4">
-                            <div class="col-12 text-center">
+                        <!-- Recordarme & ¿Olvidaste tu contraseña? -->
+                        <div class="form-group row mb-4 align-items-center">
+                            <div class="col-12 col-md-7 offset-md-3 d-flex justify-content-between">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                                    <label class="form-check-label" for="remember" style="color: #555; font-size: 13px;">
+                                        Recordarme
+                                    </label>
+                                </div>
                                 <a href="{{ route('password.request') }}" style="color: #999; font-size: 13px;">¿Olvidaste tu contraseña?</a>
                             </div>
                         </div>
@@ -55,19 +61,35 @@
                         </div>
 
                         <!-- Redes Sociales -->
+                        @php
+                            $googleEnabled = \App\Models\CompanySetting::get('google_login_enabled', '0') === '1';
+                            $facebookEnabled = \App\Models\CompanySetting::get('facebook_login_enabled', '0') === '1';
+                            $trustloginEnabled = \App\Models\CompanySetting::get('trustlogin_enabled', '0') === '1';
+                        @endphp
+                        @if($googleEnabled || $facebookEnabled || $trustloginEnabled)
                         <div class="form-group row mb-4">
                             <div class="col-12 text-center">
-                                <p style="color: #555; font-size: 13px; margin-bottom: 15px;">Iniciar sesión a través de redes sociales</p>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#" class="btn btn-primary mr-2 d-flex align-items-center justify-content-center" style="background-color: #3b5998; border-color: #3b5998; border-radius: 3px; font-size: 13px; padding: 8px 15px;" onclick="alert('Funcionalidad próximamente disponible')">
+                                <p style="color: #555; font-size: 13px; margin-bottom: 15px;">Iniciar sesión a través de otros proveedores</p>
+                                <div class="d-flex justify-content-center flex-wrap gap-2">
+                                    @if($facebookEnabled)
+                                    <a href="{{ route('social.login', 'facebook') }}" class="btn btn-primary d-flex align-items-center justify-content-center" style="background-color: #3b5998; border-color: #3b5998; border-radius: 3px; font-size: 13px; padding: 8px 15px; margin: 4px;">
                                         <i class="fa fa-facebook-f mr-2"></i> Login with Facebook
                                     </a>
-                                    <a href="#" class="btn btn-light d-flex align-items-center justify-content-center" style="background-color: #fff; border: 1px solid #ddd; color: #555; border-radius: 3px; font-size: 13px; padding: 8px 15px;" onclick="alert('Funcionalidad próximamente disponible')">
+                                    @endif
+                                    @if($googleEnabled)
+                                    <a href="{{ route('social.login', 'google') }}" class="btn btn-light d-flex align-items-center justify-content-center" style="background-color: #fff; border: 1px solid #ddd; color: #555; border-radius: 3px; font-size: 13px; padding: 8px 15px; margin: 4px;">
                                         <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" style="width: 16px; height: 16px; margin-right: 8px;"> Sign in with Google
                                     </a>
+                                    @endif
+                                    @if($trustloginEnabled)
+                                    <a href="{{ route('social.login', 'trustlogin') }}" class="btn btn-dark d-flex align-items-center justify-content-center" style="background-color: #333; border-color: #333; color: white; border-radius: 3px; font-size: 13px; padding: 8px 15px; margin: 4px;">
+                                        <i class="fa fa-shield mr-2"></i> Trust Login SSO
+                                    </a>
+                                    @endif
                                 </div>
                             </div>
                         </div>
+                        @endif
 
                         <hr style="border-top: 1px solid #eee; margin: 30px 0;">
 

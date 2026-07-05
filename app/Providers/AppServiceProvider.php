@@ -11,7 +11,19 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        $this->app->singleton(
+            \Laravel\Fortify\Contracts\LogoutResponse::class,
+            function () {
+                return new class implements \Laravel\Fortify\Contracts\LogoutResponse {
+                    public function toResponse($request)
+                    {
+                        return $request->wantsJson()
+                            ? new \Illuminate\Http\JsonResponse('', 204)
+                            : \Inertia\Inertia::location('/');
+                    }
+                };
+            }
+        );
     }
 
     /**
@@ -20,6 +32,8 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         // ... (if there was anything here) ...
+        $this->bootSocialite();
+
         try {
             $mockBusinessSetting = (object) [
                 'name' => \App\Models\CompanySetting::get('store_name', 'Mirage'),
@@ -70,5 +84,17 @@ class AppServiceProvider extends ServiceProvider
                 \Illuminate\Support\Facades\Log::error('Error logging email: ' . $e->getMessage());
             }
         });
+    }
+
+    private function bootSocialite(): void
+    {
+        $socialite = $this->app->make('Laravel\Socialite\Contracts\Factory');
+        $socialite->extend(
+            'trustlogin',
+            function ($app) use ($socialite) {
+                $config = $app['config']['services.trustlogin'];
+                return $socialite->buildProvider(\App\Socialite\TrustLoginProvider::class, $config);
+            }
+        );
     }
 }
