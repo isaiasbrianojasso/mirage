@@ -10,47 +10,54 @@
         </div>
 
         <!-- Form -->
-        <form @submit.prevent="submit" class="p-8 space-y-5">
-            <template v-for="field in fields" :key="field.key">
-                <div v-if="!field.showIf || field.showIf(form.settings)">
-                    <label :for="field.key" class="block text-sm font-semibold text-gray-700 mb-1.5">
-                        {{ field.label }}
-                    </label>
+        <form @submit.prevent="submit" class="p-8">
+            <div class="space-y-6 sm:space-y-5">
+                <template v-for="(field, index) in fields" :key="field.key">
+                    <div v-if="!field.showIf || field.showIf(form.settings)" 
+                         class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-gray-100"
+                         :class="{ 'sm:border-t sm:pt-5': index > 0 }">
+                        
+                        <label :for="field.key" class="block text-sm font-semibold text-gray-700 sm:mt-px sm:pt-2 mb-1.5 sm:mb-0">
+                            {{ field.label }}
+                        </label>
 
-                    <textarea
-                        v-if="field.type === 'textarea'"
-                        :id="field.key"
-                        v-model="form.settings[field.key]"
-                        rows="3"
-                        :placeholder="field.placeholder || ''"
-                        class="block w-full rounded-xl border-gray-200 focus:border-indigo-500 focus:ring-indigo-500 text-sm resize-y"
-                    ></textarea>
+                        <div class="mt-1 sm:mt-0 sm:col-span-2">
+                            <textarea
+                                v-if="field.type === 'textarea'"
+                                :id="field.key"
+                                v-model="form.settings[field.key]"
+                                rows="3"
+                                :placeholder="field.placeholder || ''"
+                                class="block w-full max-w-2xl rounded-xl border-gray-200 focus:border-indigo-500 focus:ring-indigo-500 text-sm resize-y"
+                            ></textarea>
 
-                    <select
-                        v-else-if="field.type === 'select'"
-                        :id="field.key"
-                        v-model="form.settings[field.key]"
-                        class="block w-full rounded-xl border-gray-200 focus:border-indigo-500 focus:ring-indigo-500 text-sm"
-                    >
-                        <option v-for="opt in field.options" :key="opt.value" :value="opt.value">
-                            {{ opt.label }}
-                        </option>
-                    </select>
+                            <select
+                                v-else-if="field.type === 'select'"
+                                :id="field.key"
+                                v-model="form.settings[field.key]"
+                                class="block w-full max-w-md rounded-xl border-gray-200 focus:border-indigo-500 focus:ring-indigo-500 text-sm"
+                            >
+                                <option v-for="opt in field.options" :key="opt.value" :value="opt.value">
+                                    {{ opt.label }}
+                                </option>
+                            </select>
 
-                    <input
-                        v-else
-                        :id="field.key"
-                        v-model="form.settings[field.key]"
-                        :type="field.type || 'text'"
-                        :placeholder="field.placeholder || ''"
-                        class="block w-full rounded-xl border-gray-200 focus:border-indigo-500 focus:ring-indigo-500 text-sm"
-                    />
+                            <input
+                                v-else
+                                :id="field.key"
+                                v-model="form.settings[field.key]"
+                                :type="field.type || 'text'"
+                                :placeholder="field.placeholder || ''"
+                                class="block w-full max-w-2xl rounded-xl border-gray-200 focus:border-indigo-500 focus:ring-indigo-500 text-sm"
+                            />
 
-                    <p v-if="form.errors[`settings.${field.key}`]" class="text-xs text-red-500 mt-1">
-                        {{ form.errors[`settings.${field.key}`] }}
-                    </p>
-                </div>
-            </template>
+                            <p v-if="form.errors[`settings.${field.key}`]" class="text-xs text-red-500 mt-1.5 font-medium">
+                                {{ form.errors[`settings.${field.key}`] }}
+                            </p>
+                        </div>
+                    </div>
+                </template>
+            </div>
 
             <!-- Save -->
             <div class="flex items-center justify-end gap-4 pt-4 border-t border-gray-100">

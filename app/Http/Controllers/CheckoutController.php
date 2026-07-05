@@ -38,9 +38,8 @@ class CheckoutController extends Controller
             'customer_phone' => 'required|string|max:20',
             'shipping_address' => 'required|string|max:255',
             'shipping_city' => 'required|string|max:100',
-            'shipping_state' => 'required|string|max:100',
             'shipping_zip' => 'required|string|max:20',
-            'payment_method' => 'required|string|in:paypal,cash',
+            'payment_method' => 'required|string|in:paypal,cash,mercadopago',
             'shipping_method' => 'nullable|string',
             'transaction_id' => 'nullable|string',
         ]);
@@ -161,6 +160,65 @@ class CheckoutController extends Controller
             return redirect()->route('checkout.index')->with('error', 'Ocurrió un error al procesar tu pedido. Por favor, inténtalo de nuevo.');
         }
 
+        if ($request->payment_method === 'mercadopago') {
+            // Generar la preferencia en MP usando el Access Token de configuraciones
+            $mpToken = \App\Models\CompanySetting::get('mercadopago_access_token');
+            if (!$mpToken) {
+                return redirect()->back()->with('error', 'Mercado Pago no está configurado correctamente en el sistema.');
+            }
+
+            $items = [];
+            foreach ($orderItemsData as $itemData) {
+                $items[] = [
+                    'title' => $itemData['name'],
+                    'quantity' => (int) $itemData['quantity'],
+                    'currency_id' => 'MXN',
+                    'unit_price' => (float) $itemData['price']
+                ];
+            }
+
+            if ($shippingCost > 0) {
+                $items[] = [
+                    'title' => 'Costo de Envío',
+                    'quantity' => 1,
+                    'currency_id' => 'MXN',
+                    'unit_price' => (float) $shippingCost
+                ];
+            }
+
+            $host = request()->getHost();
+            $isLocal = in_array($host, ['localhost', '127.0.0.1', '::1']);
+
+            $preferenceData = [
+                'items' => $items,
+                'payer' => [
+                    'name' => $request->customer_name,
+                    'email' => $request->customer_email,
+                ],
+                'back_urls' => [
+                    'success' => route('checkout.mercadopago.success'),
+                    'failure' => route('checkout.mercadopago.failure'),
+                    'pending' => route('checkout.mercadopago.pending')
+                ],
+                'external_reference' => $order->reference,
+            ];
+
+            // Mercado Pago rechaza el auto_return si los back_urls son localhost o 127.0.0.1
+            if (!$isLocal) {
+                $preferenceData['auto_return'] = 'approved';
+            }
+
+            $response = \Illuminate\Support\Facades\Http::withToken($mpToken)
+                ->post('https://api.mercadopago.com/checkout/preferences', $preferenceData);
+
+            if ($response->successful()) {
+                $initPoint = $response->json()['init_point'];
+                return redirect()->away($initPoint);
+            } else {
+                return redirect()->back()->with('error', 'Error al procesar con Mercado Pago: ' . $response->body());
+            }
+        }
+
         // Vaciar el carrito
         session()->forget('cart');
 
@@ -183,18 +241,51 @@ class CheckoutController extends Controller
     {
         $sessionReference = session('order_success_reference');
         
-        // Verificación estricta: sólo puedes ver esta pantalla si acabas de completar la compra
-        if (!$sessionReference || $sessionReference !== $reference) {
-            // Intento de recargar o ver un pedido antiguo sin sesión, se limpia y redirige
-            return redirect()->route('tienda.index');
+        $order = Order::where('reference', $reference)->firstOrFail();
+        return view('tienda.checkout-success', compact('order'));
+    }
+
+    public function mercadopagoSuccess(Request $request)
+    {
+        $reference = $request->query('external_reference');
+        $paymentStatus = $request->query('collection_status'); // 'approved'
+
+        $order = Order::where('reference', $reference)->first();
+
+        if (!$order) {
+            return redirect()->route('tienda.index')->with('error', 'Orden no encontrada.');
         }
 
-        // Limpiar la sesión para evitar que el usuario recargue y vea la misma pantalla infinitamente
-        session()->forget('order_success_reference');
+        if ($paymentStatus === 'approved') {
+            $order->payment_status = 'paid';
+            $order->status = 'processing';
+            $order->save();
 
-        // Obtener la orden de la base de datos (con sus items)
-        $order = \App\Models\Order::with('items')->where('reference', $reference)->firstOrFail();
+            // Clear the cart
+            session()->forget('cart');
 
-        return view('tienda.checkout-success', compact('order'));
+            // Send confirmation email
+            if ($order->customer_email) {
+                try {
+                    Mail::to($order->customer_email)->send(new OrderReceipt($order));
+                } catch (\Exception $e) {
+                    \Log::error('Error sending order receipt: ' . $e->getMessage());
+                }
+            }
+
+            return redirect()->route('checkout.success', ['reference' => $order->reference])->with('success', '¡Pago procesado exitosamente por Mercado Pago!');
+        }
+
+        return redirect()->route('checkout.mercadopago.failure');
+    }
+
+    public function mercadopagoFailure(Request $request)
+    {
+        return redirect()->route('checkout.index')->with('error', 'El pago fue rechazado o cancelado. Por favor, intenta nuevamente.');
+    }
+
+    public function mercadopagoPending(Request $request)
+    {
+        return redirect()->route('checkout.index')->with('error', 'El pago está pendiente de aprobación. Nos pondremos en contacto cuando se confirme.');
     }
 }

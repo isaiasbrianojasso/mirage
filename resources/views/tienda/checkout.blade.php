@@ -138,6 +138,7 @@
                             </div>
                             
                             <!-- PayPal -->
+                            @if(\App\Models\CompanySetting::get('payment_paypal_enabled') !== '0')
                             <div class="border border-gray-200 rounded-lg p-4 bg-gray-50">
                                 <div class="flex items-center">
                                     <input id="payment_paypal" name="payment_method" type="radio" value="paypal" required class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
@@ -149,6 +150,23 @@
                                     Serás redirigido a la plataforma segura de PayPal para completar tu pago con tarjeta de crédito o débito.
                                 </div>
                             </div>
+                            @endif
+                            
+                            <!-- Mercado Pago -->
+                            @if(\App\Models\CompanySetting::get('payment_mercadopago_enabled') == '1')
+                            <div class="border border-gray-200 rounded-lg p-4 bg-gray-50">
+                                <div class="flex items-center">
+                                    <input id="payment_mercadopago" name="payment_method" type="radio" value="mercadopago" required class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                                    <label for="payment_mercadopago" class="ml-3 block text-sm font-medium text-gray-900 flex items-center gap-2">
+                                        Pagar con Mercado Pago <img src="https://logospng.org/download/mercado-pago/logo-mercado-pago-icono-256.png" alt="Mercado Pago" class="h-5">
+                                    </label>
+                                </div>
+                                <div id="desc_payment_mercadopago" class="mt-3 text-sm text-gray-500 hidden pl-7">
+                                    Paga de forma segura con Tarjeta de Crédito, Débito, Transferencia SPEI o en Efectivo (OXXO) a través de Mercado Pago.
+                                </div>
+                            </div>
+                            @endif
+
                         </div>
 
                         <h2 class="text-lg font-medium text-gray-900 mt-10">Método de Envío</h2>
@@ -271,6 +289,7 @@
     document.addEventListener('DOMContentLoaded', function() {
         const paymentCash = document.getElementById('payment_cash');
         const paymentPaypal = document.getElementById('payment_paypal');
+        const paymentMercadopago = document.getElementById('payment_mercadopago');
         const submitButton = document.getElementById('submit-button');
         const paypalWrapper = document.getElementById('paypal-wrapper');
         const paypalOverlay = document.getElementById('paypal-overlay');
@@ -278,6 +297,7 @@
         
         const descCash = document.getElementById('desc_payment_cash');
         const descPaypal = document.getElementById('desc_payment_paypal');
+        const descMercadopago = document.getElementById('desc_payment_mercadopago');
 
         const frontendErrorBanner = document.getElementById('frontend-error-banner');
         const frontendErrorList = document.getElementById('frontend-error-list');
@@ -301,37 +321,53 @@
 
         function updateUI() {
             // 1. Mostrar/ocultar descripciones de métodos
-            if (paymentCash.checked) {
-                descCash.classList.remove('hidden');
-                descPaypal.classList.add('hidden');
+            if (paymentCash && paymentCash.checked) {
+                if (descCash) descCash.classList.remove('hidden');
+                if (descPaypal) descPaypal.classList.add('hidden');
+                if (descMercadopago) descMercadopago.classList.add('hidden');
                 
                 submitButton.style.display = 'block';
-                paypalWrapper.style.display = 'none';
-            } else if (paymentPaypal.checked) {
-                descPaypal.classList.remove('hidden');
-                descCash.classList.add('hidden');
+                submitButton.innerText = 'Pedido con obligación de pago';
+                if (paypalWrapper) paypalWrapper.style.display = 'none';
+                
+            } else if (paymentPaypal && paymentPaypal.checked) {
+                if (descPaypal) descPaypal.classList.remove('hidden');
+                if (descCash) descCash.classList.add('hidden');
+                if (descMercadopago) descMercadopago.classList.add('hidden');
                 
                 submitButton.style.display = 'none';
-                paypalWrapper.style.display = 'block';
+                if (paypalWrapper) paypalWrapper.style.display = 'block';
+                
+            } else if (paymentMercadopago && paymentMercadopago.checked) {
+                if (descMercadopago) descMercadopago.classList.remove('hidden');
+                if (descCash) descCash.classList.add('hidden');
+                if (descPaypal) descPaypal.classList.add('hidden');
+                
+                submitButton.style.display = 'block';
+                submitButton.innerText = 'Continuar a Mercado Pago';
+                if (paypalWrapper) paypalWrapper.style.display = 'none';
             }
 
             // 2. Controlar estado habilitado/deshabilitado de los botones finales según los términos
             const termsAccepted = termsCheckbox.checked;
             
-            // Botón nativo (Efectivo)
+            // Botón nativo (Efectivo / MercadoPago)
             submitButton.disabled = !termsAccepted;
             
             // Botón PayPal (Usamos un overlay transparente para bloquear clics si no aceptan términos)
-            if (termsAccepted) {
-                paypalOverlay.style.display = 'none';
-            } else {
-                paypalOverlay.style.display = 'block';
+            if (paypalOverlay) {
+                if (termsAccepted) {
+                    paypalOverlay.style.display = 'none';
+                } else {
+                    paypalOverlay.style.display = 'block';
+                }
             }
         }
 
-        paymentCash.addEventListener('change', updateUI);
-        paymentPaypal.addEventListener('change', updateUI);
-        termsCheckbox.addEventListener('change', updateUI);
+        if (paymentCash) paymentCash.addEventListener('change', updateUI);
+        if (paymentPaypal) paymentPaypal.addEventListener('change', updateUI);
+        if (paymentMercadopago) paymentMercadopago.addEventListener('change', updateUI);
+        if (termsCheckbox) termsCheckbox.addEventListener('change', updateUI);
 
         // Run once on load
         updateUI();
