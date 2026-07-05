@@ -304,6 +304,35 @@
             
             <!-- Right Column: Specs & Actions -->
             <div class="col-12 col-md-6">
+              
+              <!-- Alertas de Error Global / Backend -->
+              @if(session('error'))
+                <div class="mb-4 bg-red-50 border-l-4 border-red-500 p-4 rounded-md">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <i class="fa fa-exclamation-circle text-red-400 mt-1"></i>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm text-red-700 font-semibold m-0">
+                                {{ session('error') }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              @endif
+              
+              <!-- Alerta de Error JS -->
+              <div id="product-js-error" class="mb-4 bg-red-50 border-l-4 border-red-500 p-4 rounded-md" style="display: none;">
+                  <div class="flex">
+                      <div class="flex-shrink-0">
+                          <i class="fa fa-exclamation-circle text-red-400 mt-1"></i>
+                      </div>
+                      <div class="ml-3">
+                          <p id="product-js-error-msg" class="text-sm text-red-700 font-semibold m-0"></p>
+                      </div>
+                  </div>
+              </div>
+
               <h1 style="font-size: 26px; font-weight: 600; color: #0f172a; margin-top: 0; margin-bottom: 15px; line-height: 1.2;">{{ $product->name }}</h1>
               
               <div class="price-container" style="display: flex; align-items: baseline; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; border-bottom: 1px solid #f1f5f9; padding-bottom: 15px;">
@@ -840,15 +869,25 @@ function setSelectRating(val) {
 
 // Add validation to form submission to require variant if they exist
 $('#add-to-cart-form').on('submit', function(e) {
-    const variantId = $('#variant-select').val();
-    if (!variantId && '{{ $product->variants && $product->variants->where('is_active', true)->count() > 0 ? 1 : 0 }}' == '1') {
-        e.preventDefault();
-        if (typeof showMirageAlert === 'function') {
-            showMirageAlert('Por favor, selecciona una capacidad/modelo antes de añadir al carrito.', 'warning');
-        } else {
-            alert('Por favor, selecciona una capacidad/modelo antes de añadir al carrito.');
+    const hasVariants = '{{ $product->variants && $product->variants->where('is_active', true)->count() > 0 ? 1 : 0 }}' == '1';
+    if (hasVariants) {
+        const variantId = $('#variant-select').val();
+        if (!variantId) {
+            e.preventDefault();
+            $('#product-js-error-msg').text('Por favor, selecciona una capacidad o modelo antes de añadir al carrito.');
+            $('#product-js-error').fadeIn();
+            
+            // Hacer scroll hacia el error y resaltar el select
+            $('html, body').animate({
+                scrollTop: $("#product-js-error").offset().top - 100
+            }, 300);
+            
+            $('#variant-select').css('border', '2px solid #ef4444').focus();
+            
+            setTimeout(() => {
+                $('#variant-select').css('border', '1px solid #cbd5e1');
+            }, 3000);
         }
-        $('#variant-select').focus();
     }
 });
 

@@ -187,6 +187,41 @@
                     @saved="onSaved"
                 />
 
+                <!-- Payments -->
+                <SettingsGroup
+                    v-if="activeTab === 'payments'"
+                    title="Configuración de Pagos"
+                    icon='<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" /></svg>'
+                    description="Credenciales y configuraciones de pasarelas de pago."
+                    group="payments"
+                    :fields="[
+                        { key: 'paypal_client_id', label: 'PayPal Client ID', placeholder: 'Ej: AYSq3v... o \'test\' para pruebas' },
+                    ]"
+                    :settings="settings.payments || {}"
+                    @saved="onSaved"
+                />
+
+                <!-- Mail -->
+                <SettingsGroup
+                    v-if="activeTab === 'mail'"
+                    title="Notificaciones y Correos"
+                    icon='<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>'
+                    description="Configuración de envío de correos. Usa 'smtp' para un servidor externo o 'log' para pruebas locales."
+                    group="mail"
+                    :fields="[
+                        { key: 'mail_mailer', label: 'Mail Driver', type: 'select', options: [{label: 'SMTP', value: 'smtp'}, {label: 'Sendmail (Host Nativo)', value: 'sendmail'}, {label: 'Log (Pruebas)', value: 'log'}] },
+                        { key: 'mail_host', label: 'Host SMTP', placeholder: 'Ej: smtp.mailtrap.io', showIf: (s) => s.mail_mailer === 'smtp' },
+                        { key: 'mail_port', label: 'Puerto SMTP', placeholder: 'Ej: 2525, 465, 587', type: 'number', showIf: (s) => s.mail_mailer === 'smtp' },
+                        { key: 'mail_username', label: 'Usuario SMTP', placeholder: 'Usuario', showIf: (s) => s.mail_mailer === 'smtp' },
+                        { key: 'mail_password', label: 'Contraseña SMTP', type: 'password', placeholder: 'Contraseña', showIf: (s) => s.mail_mailer === 'smtp' },
+                        { key: 'mail_encryption', label: 'Encriptación', type: 'select', options: [{label: 'Ninguna', value: ''}, {label: 'TLS', value: 'tls'}, {label: 'SSL', value: 'ssl'}], showIf: (s) => s.mail_mailer === 'smtp' },
+                        { key: 'mail_from_address', label: 'Correo de Remitente (From)', placeholder: 'Ej: no-reply@tiendamirage.mx' },
+                        { key: 'mail_from_name', label: 'Nombre de Remitente (From)', placeholder: 'Ej: Tienda Mirage' },
+                    ]"
+                    :settings="settings.mail || {}"
+                    @saved="onSaved"
+                />
+
             </div>
         </div>
     </AppLayout>
@@ -209,6 +244,8 @@ const tabs = [
     { key: 'content', label: 'Textos del Catálogo', icon: '<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>' },
     { key: 'tienda', label: 'Textos de Tienda', icon: '<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>' },
     { key: 'home_template', label: 'Textos de Inicio', icon: '<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>' },
+    { key: 'payments', label: 'Pagos', icon: '<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" /></svg>' },
+    { key: 'mail', label: 'Correos', icon: '<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>' },
 ];
 
 const activeTab = ref('general');

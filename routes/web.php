@@ -61,8 +61,15 @@ Route::middleware([
         Route::resource('admin/zones', App\Http\Controllers\Admin\ZoneController::class)->except(['show']);
         Route::resource('admin/carriers', App\Http\Controllers\Admin\CarrierController::class)->except(['show']);
         Route::put('admin/carriers/{carrier}/toggle-active', [App\Http\Controllers\Admin\CarrierController::class, 'toggleActive'])->name('carriers.toggle-active');
-        Route::get('admin/company-settings', [App\Http\Controllers\AdminCompanySettingController::class, 'edit'])->name('company-settings.edit');
-        Route::post('admin/company-settings', [App\Http\Controllers\AdminCompanySettingController::class, 'update'])->name('company-settings.update');
+        
+        // Settings
+        Route::get('/admin/company-settings', [\App\Http\Controllers\AdminCompanySettingController::class, 'edit'])->name('company-settings.edit');
+        Route::post('/admin/company-settings', [\App\Http\Controllers\AdminCompanySettingController::class, 'update'])->name('company-settings.update');
+
+        // Email Templates
+        Route::get('/admin/email-templates', [\App\Http\Controllers\AdminEmailTemplateController::class, 'index'])->name('admin.email-templates.index');
+        Route::get('/admin/email-templates/{name}/edit', [\App\Http\Controllers\AdminEmailTemplateController::class, 'edit'])->name('admin.email-templates.edit');
+        Route::put('/admin/email-templates/{name}', [\App\Http\Controllers\AdminEmailTemplateController::class, 'update'])->name('admin.email-templates.update');
     });
 
     // Customer Routes
@@ -111,6 +118,7 @@ Route::prefix('carrito')->name('cart.')->group(function () {
 Route::prefix('checkout')->name('checkout.')->group(function () {
     Route::get('/', [\App\Http\Controllers\CheckoutController::class, 'index'])->name('index');
     Route::post('/procesar', [\App\Http\Controllers\CheckoutController::class, 'store'])->name('store');
+    Route::get('/success/{reference}', [\App\Http\Controllers\CheckoutController::class, 'success'])->name('success');
 });
 
 // Dynamic Routes for Blog and Distributors

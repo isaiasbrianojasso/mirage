@@ -55,6 +55,9 @@
                     <button onclick="switchTab('store_template')" class="tab-btn tab-btn-store_template px-4 py-2 rounded-lg text-sm font-medium transition">
                         🛍️ Tienda
                     </button>
+                    <button onclick="switchTab('payments')" class="tab-btn tab-btn-payments px-4 py-2 rounded-lg text-sm font-medium transition">
+                        💳 Pagos
+                    </button>
                 </div>
             </div>
 
@@ -486,6 +489,27 @@
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-2">Texto "¿Quiénes somos?"</label>
                             <textarea name="settings[store_footer_about_text]" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-slate-800 focus:border-transparent">{{ old('settings.store_footer_about_text', $settings['store_template']['store_footer_about_text']->value ?? company_name().', está consolidado como la marca número 1 en ventas de aires acondicionados tipo minisplit en México. Contamos con una amplia gama de productos con los más altos estándares de calidad y ahorro energético.') }}</textarea>
+                        </div>
+
+                        <button type="submit" class="bg-slate-800 text-white px-6 py-2 rounded-lg font-medium hover:bg-slate-900">
+                            Guardar Cambios
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Payments Tab -->
+                <div id="payments" class="tab-content">
+                    <form action="{{ route('company-settings.update') }}" method="POST" class="space-y-6">
+                        @csrf
+                        <input type="hidden" name="group" value="payments">
+
+                        <h3 class="text-lg font-semibold text-gray-900 border-b pb-2">Configuración de PayPal</h3>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">PayPal Client ID</label>
+                            <input type="text" name="settings[paypal_client_id]" value="{{ old('settings.paypal_client_id', $settings['payments']['paypal_client_id']->value ?? '') }}"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-slate-800 focus:border-transparent" placeholder="Ej. AYSq3v... o 'test' para pruebas">
+                            <p class="text-xs text-gray-500 mt-1">Obtén tu Client ID desde el dashboard de PayPal Developer. Usa la palabra "test" si quieres usar el entorno de simulación predeterminado.</p>
                         </div>
 
                         <button type="submit" class="bg-slate-800 text-white px-6 py-2 rounded-lg font-medium hover:bg-slate-900">

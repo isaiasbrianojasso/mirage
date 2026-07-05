@@ -58,6 +58,15 @@ const logout = () => {
                         Dashboard
                     </Link>
 
+                    <!-- Compras del Usuario (Visible para todos) -->
+                    <Link :href="route('customer.orders')" 
+                        :class="[route().current('customer.orders*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800 hover:text-white', 'group flex items-center px-3 py-2 text-sm font-medium rounded-md transition-colors']">
+                        <svg class="mr-3 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                        </svg>
+                        Mis Pedidos
+                    </Link>
+
                     <template v-if="$page.props.auth.user.role === 'admin'">
                         <!-- CATÁLOGO -->
                         <div class="pt-4 pb-1">
@@ -141,7 +150,14 @@ const logout = () => {
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                             </svg>
-                            Parámetros
+                            Parámetros de Tienda
+                        </Link>
+                        <Link :href="route('admin.email-templates.index')" 
+                            :class="[route().current('admin.email-templates.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800 hover:text-white', 'group flex items-center px-3 py-2 text-sm font-medium rounded-md transition-colors']">
+                            <svg class="mr-3 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            Plantillas de Correo
                         </Link>
                     </template>
                 </nav>

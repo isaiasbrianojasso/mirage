@@ -11,33 +11,46 @@
 
         <!-- Form -->
         <form @submit.prevent="submit" class="p-8 space-y-5">
-            <div v-for="field in fields" :key="field.key">
-                <label :for="field.key" class="block text-sm font-semibold text-gray-700 mb-1.5">
-                    {{ field.label }}
-                </label>
+            <template v-for="field in fields" :key="field.key">
+                <div v-if="!field.showIf || field.showIf(form.settings)">
+                    <label :for="field.key" class="block text-sm font-semibold text-gray-700 mb-1.5">
+                        {{ field.label }}
+                    </label>
 
-                <textarea
-                    v-if="field.type === 'textarea'"
-                    :id="field.key"
-                    v-model="form.settings[field.key]"
-                    rows="3"
-                    :placeholder="field.placeholder || ''"
-                    class="block w-full rounded-xl border-gray-200 focus:border-indigo-500 focus:ring-indigo-500 text-sm resize-y"
-                ></textarea>
+                    <textarea
+                        v-if="field.type === 'textarea'"
+                        :id="field.key"
+                        v-model="form.settings[field.key]"
+                        rows="3"
+                        :placeholder="field.placeholder || ''"
+                        class="block w-full rounded-xl border-gray-200 focus:border-indigo-500 focus:ring-indigo-500 text-sm resize-y"
+                    ></textarea>
 
-                <input
-                    v-else
-                    :id="field.key"
-                    v-model="form.settings[field.key]"
-                    type="text"
-                    :placeholder="field.placeholder || ''"
-                    class="block w-full rounded-xl border-gray-200 focus:border-indigo-500 focus:ring-indigo-500 text-sm"
-                />
+                    <select
+                        v-else-if="field.type === 'select'"
+                        :id="field.key"
+                        v-model="form.settings[field.key]"
+                        class="block w-full rounded-xl border-gray-200 focus:border-indigo-500 focus:ring-indigo-500 text-sm"
+                    >
+                        <option v-for="opt in field.options" :key="opt.value" :value="opt.value">
+                            {{ opt.label }}
+                        </option>
+                    </select>
 
-                <p v-if="form.errors[`settings.${field.key}`]" class="text-xs text-red-500 mt-1">
-                    {{ form.errors[`settings.${field.key}`] }}
-                </p>
-            </div>
+                    <input
+                        v-else
+                        :id="field.key"
+                        v-model="form.settings[field.key]"
+                        :type="field.type || 'text'"
+                        :placeholder="field.placeholder || ''"
+                        class="block w-full rounded-xl border-gray-200 focus:border-indigo-500 focus:ring-indigo-500 text-sm"
+                    />
+
+                    <p v-if="form.errors[`settings.${field.key}`]" class="text-xs text-red-500 mt-1">
+                        {{ form.errors[`settings.${field.key}`] }}
+                    </p>
+                </div>
+            </template>
 
             <!-- Save -->
             <div class="flex items-center justify-end gap-4 pt-4 border-t border-gray-100">
