@@ -54,8 +54,13 @@
                         <!-- Submit Button -->
                         <div class="form-group row mb-5">
                             <div class="col-12 text-center">
-                                <button type="submit" class="btn btn-danger" style="border-radius: 0; padding: 8px 30px; text-transform: none; font-size: 14px; font-weight: normal; background-color: #ef4444; border-color: #ef4444;">
+                                <button type="submit" class="btn btn-danger" style="border-radius: 0; padding: 8px 30px; text-transform: none; font-size: 14px; font-weight: normal; background-color: #ef4444; border-color: #ef4444; width: 100%; max-width: 250px;">
                                     Iniciar sesión
+                                </button>
+                                
+                                <!-- Passkeys Login -->
+                                <button type="button" id="btn-passkey" class="btn btn-light mt-3" style="border-radius: 0; padding: 8px 30px; text-transform: none; font-size: 14px; font-weight: normal; width: 100%; max-width: 250px; border: 1px solid #ddd; color: #555;">
+                                    <i class="fa fa-fingerprint mr-2"></i> Usar Passkey (Huella/Cara)
                                 </button>
                             </div>
                         </div>
@@ -107,6 +112,42 @@
     </div>
 </div>
 
+<script type="module">
+    import { get } from 'https://unpkg.com/@github/webauthn-json@2.1.1/dist/esm/webauthn-json.js';
+
+    document.getElementById('btn-passkey').addEventListener('click', async () => {
+        try {
+            // 1. Get options
+            const response = await fetch('{{ route('passkey.login-options') }}');
+            const options = await response.json();
+
+            // 2. Authenticate locally
+            const credential = await get({
+                publicKey: options.publicKey
+            });
+
+            // 3. Verify on server
+            const verifyResponse = await fetch('{{ route('passkey.login') }}', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': document.querySelector('input[name="_token"]').value
+                },
+                body: JSON.stringify(credential)
+            });
+
+            if (verifyResponse.ok) {
+                window.location.href = '{{ route('dashboard') }}';
+            } else {
+                const errorData = await verifyResponse.json();
+                alert('Fallo al iniciar sesión: ' + (errorData.message || 'Credencial inválida.'));
+            }
+        } catch (error) {
+            console.error(error);
+            alert('Cancelado o error en el proceso biométrico.');
+        }
+    });
+</script>
 <script>
     function toggleLoginPassword() {
         var pwdInput = document.getElementById('password');

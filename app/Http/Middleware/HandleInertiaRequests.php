@@ -61,7 +61,8 @@ class HandleInertiaRequests extends Middleware
             'notifications' => [
                 'data' => $notifications,
                 'unread_count' => $unreadCount
-            ]
+            ],
+            'passkeys' => $request->user() ? $request->user()->passkeys()->get() : [],
         ];
     }
 }

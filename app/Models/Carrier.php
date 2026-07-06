@@ -15,4 +15,14 @@ class Carrier extends Model
     {
         return $this->belongsToMany(CustomerGroup::class, 'carrier_customer_group');
     }
+
+    public function ranges()
+    {
+        return $this->hasMany(CarrierRange::class);
+    }
+
+    public function zonePrices()
+    {
+        return $this->hasMany(CarrierZonePrice::class);
+    }
 }

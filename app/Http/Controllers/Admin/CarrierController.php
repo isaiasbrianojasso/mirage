@@ -56,76 +56,43 @@ class CarrierController extends Controller
         ]);
     }
 
-    public function store(Request $request)
+    public function store(\App\Http\Requests\StoreCarrierRequest $request)
     {
-        $request->validate([
-            'name' => 'required|string|max:255',
-            'transit_time' => 'nullable|string|max:255',
-            'speed_grade' => 'nullable|integer|min:0|max:9',
-            'tracking_url' => 'nullable|url|max:255',
-            'is_free' => 'boolean',
-            'active' => 'boolean',
-            'logo' => 'nullable|image|max:2048',
-            'billing_behavior' => 'required|in:price,weight',
-            'out_of_range_behavior' => 'required|in:highest_range,disable',
-            'max_width' => 'nullable|numeric|min:0',
-            'max_height' => 'nullable|numeric|min:0',
-            'max_depth' => 'nullable|numeric|min:0',
-            'max_weight' => 'nullable|numeric|min:0',
-        ]);
-
         DB::beginTransaction();
 
         try {
-            $data = $request->only([
-                'name', 'transit_time', 'speed_grade', 'tracking_url', 
-                'is_free', 'active', 'billing_behavior', 'out_of_range_behavior',
-                'max_width', 'max_height', 'max_depth', 'max_weight'
-            ]);
+            $data = $request->validated();
             
-            $data['is_free'] = $request->is_free === 'true' || $request->is_free === true;
-            $data['active'] = $request->active === 'true' || $request->active === true;
+            $data['is_free'] = filter_var($request->is_free, FILTER_VALIDATE_BOOLEAN);
+            $data['active'] = filter_var($request->active, FILTER_VALIDATE_BOOLEAN);
             
             if ($request->hasFile('logo')) {
                 $data['logo_path'] = $request->file('logo')->store('carriers', 'public');
             }
 
+            unset($data['customer_groups'], $data['ranges'], $data['logo']);
+
             $carrier = Carrier::create($data);
 
             // Guardar grupos de clientes
             if ($request->has('customer_groups')) {
-                $groupIds = json_decode($request->customer_groups, true) ?? [];
-                foreach ($groupIds as $gId) {
-                    DB::table('carrier_customer_group')->insert([
-                        'carrier_id' => $carrier->id,
-                        'customer_group_id' => $gId,
-                        'created_at' => now(),
-                        'updated_at' => now(),
-                    ]);
-                }
+                $carrier->customerGroups()->sync($request->customer_groups);
             }
 
             // Guardar rangos y precios si no es gratis
             if (!$data['is_free'] && $request->has('ranges')) {
-                $ranges = json_decode($request->ranges, true) ?? [];
-                
-                foreach ($ranges as $rangeData) {
-                    $range = \App\Models\CarrierRange::create([
-                        'carrier_id' => $carrier->id,
+                foreach ($request->ranges as $rangeData) {
+                    $range = $carrier->ranges()->create([
                         'delimiter1' => $rangeData['delimiter1'],
                         'delimiter2' => $rangeData['delimiter2'],
                     ]);
 
-                    // Precios por zona para este rango
                     if (isset($rangeData['prices'])) {
                         foreach ($rangeData['prices'] as $zoneId => $price) {
-                            DB::table('carrier_zone_price')->insert([
+                            $range->zonePrices()->create([
                                 'carrier_id' => $carrier->id,
                                 'zone_id' => $zoneId,
-                                'carrier_range_id' => $range->id,
                                 'price' => $price ?: 0,
-                                'created_at' => now(),
-                                'updated_at' => now(),
                             ]);
                         }
                     }
@@ -159,35 +126,15 @@ class CarrierController extends Controller
         ]);
     }
 
-    public function update(Request $request, Carrier $carrier)
+    public function update(\App\Http\Requests\UpdateCarrierRequest $request, Carrier $carrier)
     {
-        $request->validate([
-            'name' => 'required|string|max:255',
-            'transit_time' => 'nullable|string|max:255',
-            'speed_grade' => 'nullable|integer|min:0|max:9',
-            'tracking_url' => 'nullable|url|max:255',
-            'is_free' => 'boolean',
-            'active' => 'boolean',
-            'logo' => 'nullable|image|max:2048',
-            'billing_behavior' => 'required|in:price,weight',
-            'out_of_range_behavior' => 'required|in:highest_range,disable',
-            'max_width' => 'nullable|numeric|min:0',
-            'max_height' => 'nullable|numeric|min:0',
-            'max_depth' => 'nullable|numeric|min:0',
-            'max_weight' => 'nullable|numeric|min:0',
-        ]);
-
         DB::beginTransaction();
 
         try {
-            $data = $request->only([
-                'name', 'transit_time', 'speed_grade', 'tracking_url', 
-                'billing_behavior', 'out_of_range_behavior',
-                'max_width', 'max_height', 'max_depth', 'max_weight'
-            ]);
+            $data = $request->validated();
             
-            $data['is_free'] = $request->is_free === 'true' || $request->is_free === true;
-            $data['active'] = $request->active === 'true' || $request->active === true;
+            $data['is_free'] = filter_var($request->is_free, FILTER_VALIDATE_BOOLEAN);
+            $data['active'] = filter_var($request->active, FILTER_VALIDATE_BOOLEAN);
 
             if ($request->hasFile('logo')) {
                 if ($carrier->logo_path) {
@@ -196,49 +143,40 @@ class CarrierController extends Controller
                 $data['logo_path'] = $request->file('logo')->store('carriers', 'public');
             }
 
+            unset($data['customer_groups'], $data['ranges'], $data['logo']);
+
             $carrier->update($data);
 
             // Actualizar grupos de clientes
-            DB::table('carrier_customer_group')->where('carrier_id', $carrier->id)->delete();
             if ($request->has('customer_groups')) {
-                $groupIds = json_decode($request->customer_groups, true) ?? [];
-                foreach ($groupIds as $gId) {
-                    DB::table('carrier_customer_group')->insert([
-                        'carrier_id' => $carrier->id,
-                        'customer_group_id' => $gId,
-                        'created_at' => now(),
-                        'updated_at' => now(),
-                    ]);
-                }
+                $carrier->customerGroups()->sync($request->customer_groups);
+            } else {
+                $carrier->customerGroups()->sync([]);
             }
 
             // Actualizar rangos y precios
             if (!$data['is_free'] && $request->has('ranges')) {
-                $ranges = json_decode($request->ranges, true) ?? [];
-                
-                \App\Models\CarrierRange::where('carrier_id', $carrier->id)->delete();
-                DB::table('carrier_zone_price')->where('carrier_id', $carrier->id)->delete();
+                // Borrar rangos y precios anteriores (gracias a ON DELETE CASCADE esto es limpio)
+                $carrier->ranges()->delete();
 
-                foreach ($ranges as $rangeData) {
-                    $range = \App\Models\CarrierRange::create([
-                        'carrier_id' => $carrier->id,
+                foreach ($request->ranges as $rangeData) {
+                    $range = $carrier->ranges()->create([
                         'delimiter1' => $rangeData['delimiter1'],
                         'delimiter2' => $rangeData['delimiter2'],
                     ]);
 
                     if (isset($rangeData['prices'])) {
                         foreach ($rangeData['prices'] as $zoneId => $price) {
-                            DB::table('carrier_zone_price')->insert([
+                            $range->zonePrices()->create([
                                 'carrier_id' => $carrier->id,
                                 'zone_id' => $zoneId,
-                                'carrier_range_id' => $range->id,
                                 'price' => $price ?: 0,
-                                'created_at' => now(),
-                                'updated_at' => now(),
                             ]);
                         }
                     }
                 }
+            } elseif ($data['is_free']) {
+                $carrier->ranges()->delete();
             }
 
             DB::commit();
