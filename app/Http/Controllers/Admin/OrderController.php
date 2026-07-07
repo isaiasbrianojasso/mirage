@@ -56,7 +56,7 @@ class OrderController extends Controller
     public function create()
     {
         $customers = User::all();
-        $products = Product::with('images', 'category')->get();
+        $products = Product::with('images', 'category', 'variants')->get();
         $zones = Zone::where('active', true)->get();
         
         return Inertia::render('Admin/Orders/Create', [
@@ -74,6 +74,7 @@ class OrderController extends Controller
             'status' => 'required|string',
             'items' => 'required|array|min:1',
             'items.*.product_id' => 'required|exists:products,id',
+            'items.*.variant_id' => 'nullable|exists:product_variants,id',
             'items.*.quantity' => 'required|integer|min:1',
             'items.*.price' => 'required|numeric|min:0',
             'shipping_cost' => 'nullable|numeric|min:0',
@@ -93,9 +94,11 @@ class OrderController extends Controller
 
             foreach ($request->items as $item) {
                 $product = Product::find($item['product_id']);
+                $variant = isset($item['variant_id']) ? \App\Models\ProductVariant::find($item['variant_id']) : null;
                 
                 // Aplicar descuento de grupo
-                $unitPrice = $product->price;
+                $basePrice = $variant ? ($variant->discount_price > 0 ? $variant->discount_price : $variant->price) : ($product->discount_price > 0 ? $product->discount_price : $product->price);
+                $unitPrice = $basePrice;
                 if ($customer->customerGroup && $customer->customerGroup->discount_percentage > 0) {
                     $unitPrice = $unitPrice * (1 - ($customer->customerGroup->discount_percentage / 100));
                 }
@@ -107,13 +110,18 @@ class OrderController extends Controller
 
                 $orderItems[] = [
                     'product_id' => $product->id,
-                    'product_name' => $product->name,
+                    'product_variant_id' => $variant ? $variant->id : null,
+                    'product_name' => $variant ? $product->name . ' - ' . $variant->name : $product->name,
                     'price' => $finalPrice,
                     'quantity' => $item['quantity'],
                 ];
                 
                 // Reducir stock
-                $product->decrement('stock', $item['quantity']);
+                if ($variant) {
+                    $variant->decrement('stock', $item['quantity']);
+                } else {
+                    $product->decrement('stock', $item['quantity']);
+                }
             }
 
             $shippingCost = $request->shipping_cost ?? 0;

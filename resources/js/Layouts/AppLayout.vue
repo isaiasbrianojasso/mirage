@@ -5,6 +5,7 @@ import ApplicationMark from '@/Components/ApplicationMark.vue';
 import Banner from '@/Components/Banner.vue';
 import Dropdown from '@/Components/Dropdown.vue';
 import DropdownLink from '@/Components/DropdownLink.vue';
+import { onMounted } from 'vue';
 
 defineProps({
     title: String,
@@ -25,6 +26,23 @@ const markNotificationsRead = () => {
 const logout = () => {
     router.post(route('logout'));
 };
+
+onMounted(() => {
+    const key = usePage().props.google_maps_api_key;
+    if (key && !document.getElementById('google-maps-script')) {
+        const script = document.createElement('script');
+        script.id = 'google-maps-script';
+        script.src = `https://maps.google.com/maps/api/js?key=${key}&libraries=places&language=es&region=mx`;
+        script.async = true;
+        script.defer = true;
+        script.onload = () => {
+            window.dispatchEvent(new Event('google-maps-loaded'));
+        };
+        document.head.appendChild(script);
+    } else if (window.google && window.google.maps && window.google.maps.places) {
+        window.dispatchEvent(new Event('google-maps-loaded'));
+    }
+});
 </script>
 
 <template>
@@ -96,11 +114,19 @@ const logout = () => {
                             Categorías
                         </Link>
                         <Link :href="route('products.index')" 
-                            :class="[route().current('products.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800 hover:text-white', 'group flex items-center px-3 py-2 text-sm font-medium rounded-md transition-colors']">
+                            :class="[route().current('products.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800 hover:text-white', 'group flex items-center px-3 py-2 text-sm font-medium rounded-md transition-colors mt-1']">
                             <svg class="mr-3 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                             </svg>
                             Productos
+                        </Link>
+                        <Link :href="route('locations.index')" 
+                            :class="[route().current('locations.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800 hover:text-white', 'group flex items-center px-3 py-2 text-sm font-medium rounded-md transition-colors mt-1']">
+                            <svg class="mr-3 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            Ubicaciones
                         </Link>
 
                         <!-- VENTAS -->
@@ -133,8 +159,15 @@ const logout = () => {
                         <div class="pt-4 pb-1">
                             <p class="px-3 text-xs font-semibold text-slate-500 uppercase tracking-wider">Mejorar</p>
                         </div>
+                        <Link :href="route('newsletter.create')" 
+                            :class="[route().current('newsletter.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800 hover:text-white', 'group flex items-center px-3 py-2 text-sm font-medium rounded-md transition-colors']">
+                            <svg class="mr-3 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            Boletines
+                        </Link>
                         <Link :href="route('banners.index')" 
-                            :class="[route().current('banners.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800 hover:text-white', 'group flex items-center px-3 py-2 text-sm font-medium rounded-md transition-colors']">
+                            :class="[route().current('banners.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800 hover:text-white', 'group flex items-center px-3 py-2 text-sm font-medium rounded-md transition-colors mt-1']">
                             <svg class="mr-3 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                             </svg>

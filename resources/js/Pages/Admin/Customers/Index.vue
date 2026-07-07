@@ -76,9 +76,14 @@ const formatDate = (dateString) => {
                     <div class="w-1/3">
                         <input type="text" v-model="search" placeholder="Buscar clientes..." class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm w-full">
                     </div>
-                    <Link :href="route('customers.create')" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">
-                        Añadir Nuevo Cliente
-                    </Link>
+                    <div class="flex gap-2">
+                        <a :href="route('customers.export-newsletter')" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded inline-flex items-center">
+                            Exportar CSV Boletines
+                        </a>
+                        <Link :href="route('customers.create')" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">
+                            Añadir Nuevo Cliente
+                        </Link>
+                    </div>
                 </div>
 
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-6">

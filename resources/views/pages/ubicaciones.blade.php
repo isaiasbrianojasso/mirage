@@ -6,44 +6,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) --><div  class="site-container">
     @include('components.x-menu')
 <ul class="genesis-skip-link"><li><a href="#genesis-content" class="screen-reader-shortcut"> Saltar al contenido principal</a></li><li><a href="#genesis-footer-widgets" class="screen-reader-shortcut"> Saltar al pie de página</a></li></ul> <div  class="site-inner"><div  class="content-sidebar-wrap"><main class="content" id="genesis-content"><article class="post-3081 page type-page status-publish entry" aria-label="Ubicaciones" itemscope itemtype="https://schema.org/CreativeWork"><header class="entry-header"><h1 class="entry-title" itemprop="headline">Ubicaciones</h1>
-</header><div class="entry-content" itemprop="text"><style>
-	#wpsl-stores .wpsl-store-thumb {height:45px !important; width:45px !important;}
-	#wpsl-stores, #wpsl-direction-details, #wpsl-gmap {height:550px !important;}
-	#wpsl-gmap .wpsl-info-window {max-width:225px !important;}
-	.wpsl-input label, #wpsl-radius label, #wpsl-category label {width:95px;}
-	#wpsl-search-input ,#wpsl-category .wpsl-dropdown {width:179px;}
+<style>
+    #ubicaciones-wrap { display: flex; flex-direction: column; md:flex-row; gap: 20px; }
+    @media (min-width: 768px) { #ubicaciones-wrap { flex-direction: row; } }
+    #ubicaciones-sidebar { flex: 0 0 300px; max-height: 600px; overflow-y: auto; padding-right: 15px; }
+    #ubicaciones-map { flex: 1; height: 600px; min-height: 400px; background: #eee; border-radius: 8px; }
+    .ubicacion-item { padding: 15px 0; border-bottom: 1px solid #ddd; cursor: pointer; }
+    .ubicacion-item:hover { background: #f9f9f9; }
+    .ubicacion-item h4 { margin: 0 0 5px 0; font-size: 16px; color: #d0021b; }
+    .ubicacion-item p { margin: 2px 0; font-size: 14px; color: #555; }
+    .ubicacion-search-bar { margin-bottom: 20px; display: flex; gap: 10px; }
+    .ubicacion-search-bar input, .ubicacion-search-bar select { padding: 8px; border: 1px solid #ccc; border-radius: 4px; width: 100%; }
 </style>
-<div id="wpsl-wrap">
-	<div class="wpsl-search wpsl-clearfix wpsl-checkboxes-enabled">
-		<div id="wpsl-search-wrap">
-			<form autocomplete="off">
-			<div class="wpsl-input">
-				<div><label for="wpsl-search-input">Lugar</label></div>
-				<input id="wpsl-search-input" type="text" value="" name="wpsl-search-input" placeholder="" aria-required="true" />
-			</div>
-<div id="wpsl-category">
-<label for="wpsl-category-list">Tipo</label>
-<select  name='wpsl-category' id='wpsl-category-list' class='wpsl-dropdown'>
-	<option value='0'>Todos</option>
-	<option class="level-0" value="208">Centro de Servicio</option>
-	<option class="level-0" value="209">Distribuidor</option>
-</select>
-</div>
-				<div class="wpsl-search-btn-wrap"><input id="wpsl-search-btn" type="submit" value="Buscar"></div>
-		</form>
-		</div>
-	</div>
-	<div id="wpsl-gmap" class="wpsl-gmap-canvas"></div>
-	<div id="wpsl-result-list">
-		<div id="wpsl-stores" >
-			<ul></ul>
-		</div>
-		<div id="wpsl-direction-details">
-			<ul></ul>
-		</div>
-	</div>
+
+<div id="ubicaciones-wrap">
+    <div id="ubicaciones-sidebar">
+        <div class="ubicacion-search-bar">
+            <input type="text" id="ubicacion-search" placeholder="Lugar...">
+            <select id="ubicacion-type">
+                <option value="todos">Todos</option>
+                <option value="centro_de_servicio">Centro de Servicio</option>
+                <option value="distribuidor">Distribuidor</option>
+            </select>
+        </div>
+        <div id="ubicaciones-list">
+            <!-- Items will be injected here via JS -->
+        </div>
+    </div>
+    <div id="ubicaciones-map"></div>
 </div>
 
+<script>
+    window.mirageLocations = @json($locations);
+</script>
 </div></article></main></div></div><div  class="footer-widgets" id="genesis-footer-widgets">
 @include('components.x-legacy-footer')
 </div><script type="speculationrules">
@@ -268,14 +263,123 @@ var wc_order_attribution = {"params":{"lifetime":1.00000000000000008180305391403
 //# sourceURL=wc-order-attribution-js-extra
 </script>
 <script type="text/rocketlazyloadscript" id="wc-order-attribution-js" data-rocket-src="https://mirage.mx/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=10.8.1" data-rocket-defer defer></script>
-<script id="wpsl-js-js-extra">
-var wpslLabels = {"preloader":"Buscando...","noResults":"No se encontraron resultados","moreInfo":"M\u00e1s informaci\u00f3n \u003E\u003E","generalError":"Algo sali\u00f3 mal, por favor int\u00e9ntelo nuevamente.","queryLimit":"L\u00cdMITE DE USO ALCANZADO","directions":"Mostrar ruta","noDirectionsFound":"No se encontraron direcciones","startPoint":"Punto de partida","back":"Regresar","streetView":"Vista de calle","zoomHere":"Ampliar aqu\u00ed","copyright":"Powered by Google, 2026 Google"};
-var wpslGeolocationErrors = {"denied":"The application does not have permission to use the Geolocation API.","unavailable":"Location information is unavailable.","timeout":"The geolocation request timed out.","generalError":"An unknown error occurred."};
-var wpslSettings = {"apiVersions":{"autocomplete":"legacy"},"startMarker":"red2x.png","markerClusters":"0","streetView":"0","autoComplete":"0","autoLocate":"1","autoLoad":"1","markerEffect":"info_window","markerStreetView":"0","markerZoomTo":"0","newWindow":"0","resetMap":"1","directionRedirect":"0","phoneUrl":"0","clickableDetails":"0","moreInfoLocation":"store listings","mouseFocus":"1","templateId":"below_map","maxResults":"10","searchRadius":"25","distanceUnit":"km","geoLocationTimeout":"7500","ajaxurl":"https://mirage.mx/wp-admin/admin-ajax.php","language":"es","mapControls":"\u003Cdiv id=\"wpsl-map-controls\" \u003E\u003Cdiv class=\"wpsl-icon-reset\"\u003E\u003Cspan\u003E\ue801\u003C/span\u003E\u003C/div\u003E\u003Cdiv class=\"wpsl-icon-direction\"\u003E\u003Cspan\u003E\ue800\u003C/span\u003E\u003C/div\u003E\u003C/div\u003E","geocodeComponents":{"country":"MX"},"storeMarker":"pink2x.png","mapType":"roadmap","mapTypeControl":"0","zoomLevel":"3","zoomControls":"0","cameraControl":"","fullscreen":"0","startLatlng":"27.4827729,-109.930367","autoZoomLevel":"15","scrollWheel":"1","controlPosition":"left","url":"https://mirage.mx/wp-content/plugins/wp-store-locator/","markerIconProps":{"scaledSize":"24,35","origin":"0,0","anchor":"12,35"},"storeUrl":"0","maxDropdownHeight":"300","enableStyledDropdowns":"1","mapTabAnchor":"wpsl-map-tab","mapTabAnchorReturn":"","gestureHandling":"auto","directionsTravelMode":"DRIVING","runFitBounds":"1","mapStyle":"","collectStatistics":"1"};
-//# sourceURL=wpsl-js-js-extra
+<script>
+    let map, markers = [], infoWindow;
+    
+    function initMap() {
+        const defaultCenter = { lat: 23.6345, lng: -102.5528 }; // Mexico center
+        map = new google.maps.Map(document.getElementById("ubicaciones-map"), {
+            zoom: 5,
+            center: defaultCenter,
+            mapTypeId: "roadmap"
+        });
+        
+        infoWindow = new google.maps.InfoWindow();
+        
+        renderLocations(window.mirageLocations);
+        
+        document.getElementById('ubicacion-search').addEventListener('input', filterLocations);
+        document.getElementById('ubicacion-type').addEventListener('change', filterLocations);
+    }
+    
+    function renderLocations(locations) {
+        const listEl = document.getElementById('ubicaciones-list');
+        listEl.innerHTML = '';
+        
+        // Clear old markers
+        markers.forEach(m => m.setMap(null));
+        markers = [];
+        
+        const bounds = new google.maps.LatLngBounds();
+        let hasValidCoords = false;
+        
+        locations.forEach(loc => {
+            // Render list item
+            const item = document.createElement('div');
+            item.className = 'ubicacion-item';
+            
+            const title = loc.name || '';
+            const type = loc.type === 'centro_de_servicio' ? 'Centro de Servicio' : 'Distribuidor';
+            const address = [loc.address, loc.city, loc.state, loc.zip, loc.country].filter(Boolean).join(', ');
+            
+            item.innerHTML = `
+                <h4>${title}</h4>
+                <p><strong>Tipo:</strong> ${type}</p>
+                <p>${address}</p>
+                ${loc.phone ? `<p><strong>Tel:</strong> ${loc.phone}</p>` : ''}
+            `;
+            
+            listEl.appendChild(item);
+            
+            // Add Map Marker
+            if (loc.latitude && loc.longitude) {
+                const position = { lat: parseFloat(loc.latitude), lng: parseFloat(loc.longitude) };
+                const marker = new google.maps.Marker({
+                    position: position,
+                    map: map,
+                    title: title
+                });
+                
+                markers.push(marker);
+                bounds.extend(position);
+                hasValidCoords = true;
+                
+                // Click on list item to center map
+                item.addEventListener('click', () => {
+                    map.setZoom(15);
+                    map.panTo(position);
+                    showInfoWindow(marker, loc, address);
+                });
+                
+                // Click on marker
+                marker.addListener('click', () => {
+                    showInfoWindow(marker, loc, address);
+                });
+            }
+        });
+        
+        if (hasValidCoords && locations.length > 0) {
+            map.fitBounds(bounds);
+        }
+        
+        if (locations.length === 0) {
+            listEl.innerHTML = '<p style="padding:15px;color:#777;">No se encontraron ubicaciones.</p>';
+        }
+    }
+    
+    function showInfoWindow(marker, loc, address) {
+        const type = loc.type === 'centro_de_servicio' ? 'Centro de Servicio' : 'Distribuidor';
+        const content = `
+            <div style="max-width: 250px;">
+                <h4 style="margin: 0 0 5px 0; color: #d0021b;">${loc.name}</h4>
+                <p style="margin: 2px 0; font-size: 13px;"><strong>${type}</strong></p>
+                <p style="margin: 2px 0; font-size: 13px;">${address}</p>
+                ${loc.phone ? `<p style="margin: 2px 0; font-size: 13px;"><strong>Tel:</strong> ${loc.phone}</p>` : ''}
+                ${loc.email ? `<p style="margin: 2px 0; font-size: 13px;"><strong>Email:</strong> ${loc.email}</p>` : ''}
+            </div>
+        `;
+        infoWindow.setContent(content);
+        infoWindow.open(map, marker);
+    }
+    
+    function filterLocations() {
+        const searchTerm = document.getElementById('ubicacion-search').value.toLowerCase();
+        const typeFilter = document.getElementById('ubicacion-type').value;
+        
+        const filtered = window.mirageLocations.filter(loc => {
+            const matchesSearch = (loc.name && loc.name.toLowerCase().includes(searchTerm)) || 
+                                  (loc.city && loc.city.toLowerCase().includes(searchTerm)) ||
+                                  (loc.address && loc.address.toLowerCase().includes(searchTerm));
+            
+            const matchesType = typeFilter === 'todos' || loc.type === typeFilter;
+            
+            return matchesSearch && matchesType;
+        });
+        
+        renderLocations(filtered);
+    }
 </script>
-<script id="wpsl-js-js" src="../wp-content/plugins/wp-store-locator/js/wpsl-gmap.min.js%3Fver=2.3.2"></script>
-<script id="wpsl-gmap-js" src="https://maps.google.com/maps/api/js?language=es&#038;region=mx&#038;key=AIzaSyBqTIZeFqSA4s0MyDia9OznTeN85KfpfS4&#038;v=quarterly&#038;callback=wpslCallback" data-rocket-defer defer></script>
+<script id="wpsl-gmap-js" src="https://maps.google.com/maps/api/js?language=es&region=mx&key={{ $googleMapsApiKey }}&v=quarterly&callback=initMap" data-rocket-defer defer></script>
 <script id="underscore-js" src="../wp-includes/js/underscore.min.js%3Fver=1.13.8"></script>
 		<style>
 			.unlimited-elements-background-overlay{

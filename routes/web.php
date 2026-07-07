@@ -62,10 +62,14 @@ Route::middleware([
         Route::get('admin/orders/{order}/invoice', [App\Http\Controllers\Admin\OrderController::class, 'downloadInvoice'])->name('orders.invoice');
         Route::get('admin/api/customers/{customer}/addresses', [App\Http\Controllers\Admin\OrderController::class, 'getCustomerAddresses'])->name('api.customers.addresses');
         Route::get('admin/api/zones/{zone}/carriers', [App\Http\Controllers\Admin\OrderController::class, 'getCarriersForZone'])->name('api.zones.carriers');
+        Route::get('admin/customers/export-newsletter', [App\Http\Controllers\Admin\CustomerController::class, 'exportNewsletter'])->name('customers.export-newsletter');
+        Route::get('admin/newsletter', [App\Http\Controllers\Admin\NewsletterController::class, 'create'])->name('newsletter.create');
+        Route::post('admin/newsletter', [App\Http\Controllers\Admin\NewsletterController::class, 'store'])->name('newsletter.store');
         Route::resource('admin/customers', App\Http\Controllers\Admin\CustomerController::class)->except(['show']);
         Route::resource('admin/customer-groups', App\Http\Controllers\Admin\CustomerGroupController::class)->except(['show']);
         Route::resource('admin/zones', App\Http\Controllers\Admin\ZoneController::class)->except(['show']);
         Route::resource('admin/carriers', App\Http\Controllers\Admin\CarrierController::class)->except(['show']);
+        Route::resource('admin/locations', App\Http\Controllers\Admin\LocationController::class)->except(['show']);
         Route::put('admin/carriers/{carrier}/toggle-active', [App\Http\Controllers\Admin\CarrierController::class, 'toggleActive'])->name('carriers.toggle-active');
         
         // Settings

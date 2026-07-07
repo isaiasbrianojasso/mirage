@@ -68,9 +68,21 @@ Route::get('/avisos/aviso-de-privacidad-integral-clientes-finales.html', functio
 Route::get('/ubicaciones/distribuidores', function () { return view('pages.ubicaciones.distribuidores'); });
 Route::get('/ubicaciones/distribuidores/index.html', function () { return view('pages.ubicaciones.distribuidores'); });
 Route::get('/ubicaciones/distribuidores.html', function () { return view('pages.ubicaciones.distribuidores'); });
-Route::get('/ubicaciones', function () { return view('pages.ubicaciones'); });
-Route::get('/ubicaciones/index.html', function () { return view('pages.ubicaciones'); });
-Route::get('/ubicaciones.html', function () { return view('pages.ubicaciones'); });
+Route::get('/ubicaciones', function () { 
+    $locations = \App\Models\Location::where('is_active', true)->get();
+    $googleMapsApiKey = \App\Models\CompanySetting::get('google_maps_api_key', env('GOOGLE_MAPS_API_KEY', 'AIzaSyBqTIZeFqSA4s0MyDia9OznTeN85KfpfS4'));
+    return view('pages.ubicaciones', compact('locations', 'googleMapsApiKey')); 
+});
+Route::get('/ubicaciones/index.html', function () { 
+    $locations = \App\Models\Location::where('is_active', true)->get();
+    $googleMapsApiKey = \App\Models\CompanySetting::get('google_maps_api_key', env('GOOGLE_MAPS_API_KEY', 'AIzaSyBqTIZeFqSA4s0MyDia9OznTeN85KfpfS4'));
+    return view('pages.ubicaciones', compact('locations', 'googleMapsApiKey')); 
+});
+Route::get('/ubicaciones.html', function () { 
+    $locations = \App\Models\Location::where('is_active', true)->get();
+    $googleMapsApiKey = \App\Models\CompanySetting::get('google_maps_api_key', env('GOOGLE_MAPS_API_KEY', 'AIzaSyBqTIZeFqSA4s0MyDia9OznTeN85KfpfS4'));
+    return view('pages.ubicaciones', compact('locations', 'googleMapsApiKey')); 
+});
 Route::get('/ubicaciones/centros-de-servicio', function () { return view('pages.ubicaciones.centros-de-servicio'); });
 Route::get('/ubicaciones/centros-de-servicio/index.html', function () { return view('pages.ubicaciones.centros-de-servicio'); });
 Route::get('/ubicaciones/centros-de-servicio.html', function () { return view('pages.ubicaciones.centros-de-servicio'); });

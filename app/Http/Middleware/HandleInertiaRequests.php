@@ -63,6 +63,7 @@ class HandleInertiaRequests extends Middleware
                 'unread_count' => $unreadCount
             ],
             'passkeys' => $request->user() ? $request->user()->passkeys()->get() : [],
+            'google_maps_api_key' => \App\Models\CompanySetting::get('google_maps_api_key', env('GOOGLE_MAPS_API_KEY', 'AIzaSyBqTIZeFqSA4s0MyDia9OznTeN85KfpfS4')),
         ];
     }
 }

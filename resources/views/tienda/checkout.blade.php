@@ -283,9 +283,57 @@
     if (empty($paypalClientId)) {
         $paypalClientId = 'test';
     }
+    $googleMapsApiKey = \App\Models\CompanySetting::get('google_maps_api_key', env('GOOGLE_MAPS_API_KEY', ''));
 @endphp
 <script src="https://www.paypal.com/sdk/js?client-id={{ trim($paypalClientId) }}&currency=MXN"></script>
+<script src="https://maps.google.com/maps/api/js?key={{ $googleMapsApiKey }}&libraries=places&language=es&region=mx&callback=initAutocomplete" async defer></script>
 <script>
+    function initAutocomplete() {
+        const addressInput = document.getElementById('shipping_address');
+        if (!addressInput) return;
+        
+        const autocomplete = new google.maps.places.Autocomplete(addressInput, {
+            fields: ['address_components', 'formatted_address', 'name'],
+            types: ['address'],
+        });
+        
+        autocomplete.addListener('place_changed', function() {
+            const place = autocomplete.getPlace();
+            if (!place.address_components) return;
+            
+            addressInput.value = place.formatted_address || place.name;
+            
+            const cityInput = document.getElementById('shipping_city');
+            const zipInput = document.getElementById('shipping_zip');
+            const zoneSelect = document.getElementById('zone_id');
+            
+            let city = '';
+            let zip = '';
+            let stateName = '';
+            
+            place.address_components.forEach(component => {
+                const type = component.types[0];
+                if (type === 'locality' || type === 'postal_town') city = component.long_name;
+                if (type === 'postal_code') zip = component.long_name;
+                if (type === 'administrative_area_level_1') stateName = component.long_name;
+            });
+            
+            if (cityInput && city) cityInput.value = city;
+            if (zipInput && zip) zipInput.value = zip;
+            
+            if (zoneSelect && stateName) {
+                const options = Array.from(zoneSelect.options);
+                // Intenta buscar el estado exacto o contenido
+                const normalize = (str) => str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+                const matchedOption = options.find(opt => normalize(opt.text).includes(normalize(stateName)) || normalize(stateName).includes(normalize(opt.text)));
+                if (matchedOption) {
+                    zoneSelect.value = matchedOption.value;
+                    zoneSelect.dispatchEvent(new Event('change'));
+                }
+            }
+        });
+    }
+
     document.addEventListener('DOMContentLoaded', function() {
         const paymentCash = document.getElementById('payment_cash');
         const paymentPaypal = document.getElementById('payment_paypal');

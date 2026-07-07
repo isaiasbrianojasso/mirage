@@ -175,4 +175,50 @@ class CustomerController extends Controller
         $customer->delete();
         return redirect()->route('customers.index')->with('success', 'Cliente eliminado con éxito.');
     }
+
+    public function exportNewsletter()
+    {
+        $customers = User::where('newsletter', true)->orWhere('opt_in', true)->get();
+
+        $filename = "suscriptores_boletin_" . date('Y-m-d_H-i-s') . ".csv";
+        $headers = [
+            "Content-type"        => "text/csv",
+            "Content-Disposition" => "attachment; filename=$filename",
+            "Pragma"              => "no-cache",
+            "Cache-Control"       => "must-revalidate, post-check=0, pre-check=0",
+            "Expires"             => "0"
+        ];
+
+        $columns = ['ID', 'Nombre', 'Apellido', 'Email', 'Aceptó Boletín', 'Aceptó Ofertas (Opt-In)', 'Fecha de Registro'];
+
+        $callback = function() use($customers, $columns) {
+            $file = fopen('php://output', 'w');
+            // Agregamos BOM para correcta lectura en Excel
+            fputs($file, "\xEF\xBB\xBF");
+            fputcsv($file, $columns);
+
+            foreach ($customers as $customer) {
+                $row['ID'] = $customer->id;
+                $row['Nombre'] = $customer->first_name;
+                $row['Apellido'] = $customer->last_name;
+                $row['Email'] = $customer->email;
+                $row['Aceptó Boletín'] = $customer->newsletter ? 'Sí' : 'No';
+                $row['Aceptó Ofertas (Opt-In)'] = $customer->opt_in ? 'Sí' : 'No';
+                $row['Fecha de Registro'] = $customer->created_at->format('Y-m-d H:i:s');
+
+                fputcsv($file, [
+                    $row['ID'], 
+                    $row['Nombre'], 
+                    $row['Apellido'], 
+                    $row['Email'], 
+                    $row['Aceptó Boletín'], 
+                    $row['Aceptó Ofertas (Opt-In)'], 
+                    $row['Fecha de Registro']
+                ]);
+            }
+            fclose($file);
+        };
+
+        return response()->stream($callback, 200, $headers);
+    }
 }

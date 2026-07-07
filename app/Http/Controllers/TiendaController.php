@@ -33,16 +33,16 @@ class TiendaController extends Controller
     {
         $categories   = $this->getMenuCategories();
         $businessSetting = $this->getBusinessSetting();
-        $featuredProducts = Product::with('images', 'category')->where('is_active', true)->take(8)->get();
+        $featuredProducts = Product::with('images', 'category', 'variants')->where('is_active', true)->take(8)->get();
         $banners = \App\Models\Banner::where('is_active', true)->orderBy('order')->get();
 
         $lineaBlancaCat = Category::where('slug', 'linea-blanca')->first();
         $lbIds = $lineaBlancaCat ? $lineaBlancaCat->children()->pluck('id')->push($lineaBlancaCat->id)->toArray() : [];
-        $lineaBlancaProducts = Product::with('images', 'category')->whereIn('category_id', $lbIds)->where('is_active', true)->take(8)->get();
+        $lineaBlancaProducts = Product::with('images', 'category', 'variants')->whereIn('category_id', $lbIds)->where('is_active', true)->take(8)->get();
 
         $refaccionesCat = Category::where('slug', 'refacciones')->first();
         $refIds = $refaccionesCat ? $refaccionesCat->children()->pluck('id')->push($refaccionesCat->id)->toArray() : [];
-        $refaccionesProducts = Product::with('images', 'category')->whereIn('category_id', $refIds)->where('is_active', true)->take(8)->get();
+        $refaccionesProducts = Product::with('images', 'category', 'variants')->whereIn('category_id', $refIds)->where('is_active', true)->take(8)->get();
 
         return view('tienda.index', compact('categories', 'featuredProducts', 'banners', 'businessSetting', 'lineaBlancaProducts', 'refaccionesProducts'));
     }
@@ -70,7 +70,7 @@ class TiendaController extends Controller
             return redirect()->route('tienda.index');
         }
 
-        $products = Product::with('images')->where('category_id', $category->id)->where('is_active', true)->get();
+        $products = Product::with(['images', 'variants'])->where('category_id', $category->id)->where('is_active', true)->get();
         $categories = $this->getMenuCategories();
         $businessSetting = $this->getBusinessSetting();
 

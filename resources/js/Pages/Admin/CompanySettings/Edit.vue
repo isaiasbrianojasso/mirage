@@ -312,6 +312,20 @@
                     />
                 </div>
 
+                <!-- Integrations -->
+                <SettingsGroup
+                    v-if="activeTab === 'integrations'"
+                    title="Integraciones de Terceros"
+                    icon='<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>'
+                    description="Claves de API y configuraciones para servicios externos."
+                    group="integrations"
+                    :fields="[
+                        { key: 'google_maps_api_key', label: 'Google Maps API Key', placeholder: 'Ej: AIzaSy...' },
+                    ]"
+                    :settings="settings.integrations || {}"
+                    @saved="onSaved"
+                />
+
             </div>
         </div>
     </AppLayout>
@@ -337,6 +351,7 @@ const tabs = [
     { key: 'payments', label: 'Pagos', icon: '<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" /></svg>' },
     { key: 'mail', label: 'Correos', icon: '<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>' },
     { key: 'auth', label: 'Autenticación Social', icon: '<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.092 2.02-.273 3.003m-3.44 2.041A9.954 9.954 0 0112 18c-3.1 0-5.874-1.41-7.7-3.626M12 18c3.1 0 5.874-1.41 7.7-3.626m-7.7 3.626v3.374"/></svg>' },
+    { key: 'integrations', label: 'Integraciones', icon: '<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>' },
 ];
 
 const activeTab = ref('general');

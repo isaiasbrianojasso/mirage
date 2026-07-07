@@ -9,23 +9,21 @@ use Illuminate\Mail\Mailables\Attachment;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
-use App\Models\Order;
-use App\Models\OrderMessage;
 
-class OrderMessageNotification extends Mailable implements ShouldQueue
+class NewsletterMail extends Mailable implements ShouldQueue
 {
     use Queueable, SerializesModels;
 
-    public $order;
-    public $orderMessage;
+    public $subjectLine;
+    public $content;
 
     /**
      * Create a new message instance.
      */
-    public function __construct(Order $order, OrderMessage $orderMessage)
+    public function __construct($subjectLine, $content)
     {
-        $this->order = $order;
-        $this->orderMessage = $orderMessage;
+        $this->subjectLine = $subjectLine;
+        $this->content = $content;
     }
 
     /**
@@ -34,7 +32,7 @@ class OrderMessageNotification extends Mailable implements ShouldQueue
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Nueva actualización en tu pedido #' . $this->order->id . ' - Mirage',
+            subject: $this->subjectLine,
         );
     }
 
@@ -44,7 +42,7 @@ class OrderMessageNotification extends Mailable implements ShouldQueue
     public function content(): Content
     {
         return new Content(
-            view: 'emails.order_message',
+            markdown: 'emails.newsletter',
         );
     }
 

@@ -35,7 +35,6 @@ class User extends Authenticatable implements \Laravel\Passkeys\Contracts\Passke
         'name',
         'email',
         'password',
-        'role',
         'customer_group_id',
         'birthday',
         'is_enabled',

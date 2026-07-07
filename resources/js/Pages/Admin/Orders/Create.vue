@@ -4,6 +4,7 @@ import { useForm, router } from '@inertiajs/vue3';
 import AppLayout from '@/Layouts/AppLayout.vue';
 import { Link } from '@inertiajs/vue3';
 import axios from 'axios';
+import AddressAutocomplete from '@/Components/AddressAutocomplete.vue';
 
 const props = defineProps({
     customers: Array,
@@ -34,6 +35,8 @@ const isLoadingCarriers = ref(false);
 
 // Address Modal State
 const showAddressModal = ref(false);
+const showVariantModal = ref(false);
+const productForVariant = ref(null);
 const addressForm = ref({
     alias: 'Casa',
     first_name: '',
@@ -109,22 +112,40 @@ const getCustomerDiscount = () => {
 };
 
 const addProduct = (product) => {
-    const existing = form.items.find(i => i.product_id === product.id);
+    if (product.variants && product.variants.length > 0) {
+        productForVariant.value = product;
+        showVariantModal.value = true;
+    } else {
+        commitProductToCart(product, null);
+    }
+};
+
+const selectVariant = (variant) => {
+    commitProductToCart(productForVariant.value, variant);
+    showVariantModal.value = false;
+    productForVariant.value = null;
+};
+
+const commitProductToCart = (product, variant) => {
+    const variantId = variant ? variant.id : null;
+    const existing = form.items.find(i => i.product_id === product.id && i.variant_id === variantId);
     if (existing) {
         existing.quantity += 1;
     } else {
         const discount = getCustomerDiscount();
-        const priceWithDiscount = product.price * (1 - (discount / 100));
+        const basePrice = variant ? (variant.discount_price > 0 ? variant.discount_price : variant.price) : (product.discount_price > 0 ? product.discount_price : product.price);
+        const priceWithDiscount = basePrice * (1 - (discount / 100));
         
         form.items.push({
             product_id: product.id,
-            name: product.name,
-            original_price: product.price,
+            variant_id: variantId,
+            name: variant ? `${product.name} - ${variant.name}` : product.name,
+            original_price: basePrice,
             price: priceWithDiscount,
             manual_price: priceWithDiscount,
             quantity: 1,
-            stock: product.stock,
-            weight: 1 // default mockup weight
+            stock: variant ? variant.stock : product.stock,
+            weight: variant ? (variant.weight || 0) : (product.weight || 0)
         });
     }
     searchQuery.value = ''; // Reset search
@@ -429,7 +450,15 @@ const submit = () => {
                         <input type="text" v-model="addressForm.first_name" placeholder="Nombre" class="w-full border-gray-300 rounded text-sm">
                         <input type="text" v-model="addressForm.last_name" placeholder="Apellido" class="w-full border-gray-300 rounded text-sm">
                     </div>
-                    <input type="text" v-model="addressForm.address1" placeholder="Dirección 1" class="w-full border-gray-300 rounded text-sm">
+                    <div>
+                        <label class="block text-xs text-gray-500 mb-1">Buscar Dirección (Autocompletar)</label>
+                        <AddressAutocomplete
+                            v-model="addressForm.address1"
+                            :with-map="false"
+                            @addressSelected="(loc) => { addressForm.address1 = loc.address; addressForm.city = loc.city; addressForm.zip_code = loc.zip; }"
+                            class="w-full text-sm"
+                        />
+                    </div>
                     <input type="text" v-model="addressForm.city" placeholder="Ciudad" class="w-full border-gray-300 rounded text-sm">
                     <div class="grid grid-cols-2 gap-2">
                         <input type="text" v-model="addressForm.zip_code" placeholder="C.P." class="w-full border-gray-300 rounded text-sm">
@@ -441,6 +470,31 @@ const submit = () => {
                 <div class="mt-6 flex justify-end gap-3">
                     <button @click="showAddressModal = false" class="px-4 py-2 border rounded text-sm font-medium">Cancelar</button>
                     <button @click="saveAddress" class="px-4 py-2 bg-blue-600 text-white rounded text-sm font-medium">Guardar y Asignar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Variant Selection Modal -->
+        <div v-if="showVariantModal" class="fixed z-50 inset-0 overflow-y-auto bg-gray-500 bg-opacity-75 flex items-center justify-center p-4">
+            <div class="bg-white rounded-lg max-w-md w-full p-6">
+                <h3 class="text-lg font-bold mb-4">Seleccionar Variante</h3>
+                <p class="text-sm text-gray-500 mb-4">El producto <strong>{{ productForVariant?.name }}</strong> tiene múltiples opciones. Selecciona una para agregarla al pedido:</p>
+                <div class="space-y-3 max-h-60 overflow-y-auto">
+                    <button 
+                        v-for="variant in productForVariant?.variants" 
+                        :key="variant.id"
+                        @click="selectVariant(variant)"
+                        class="w-full text-left px-4 py-3 border rounded-md hover:bg-blue-50 hover:border-blue-300 flex justify-between items-center"
+                    >
+                        <div>
+                            <div class="font-medium text-gray-900">{{ variant.name }}</div>
+                            <div class="text-xs text-gray-500">SKU: {{ variant.sku || 'N/A' }} | Stock: {{ variant.stock }}</div>
+                        </div>
+                        <div class="font-bold text-gray-900">${{ variant.discount_price > 0 ? variant.discount_price : variant.price }}</div>
+                    </button>
+                </div>
+                <div class="mt-6 flex justify-end">
+                    <button @click="showVariantModal = false; productForVariant = null" class="px-4 py-2 border rounded text-sm font-medium">Cancelar</button>
                 </div>
             </div>
         </div>
