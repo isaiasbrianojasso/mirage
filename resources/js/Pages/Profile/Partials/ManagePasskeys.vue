@@ -30,13 +30,13 @@ const registerPasskey = async () => {
         
         // 2. Pass options to WebAuthn API
         const credential = await create({
-            publicKey: optionsResponse.data.publicKey
+            publicKey: optionsResponse.data.options
         });
         
         // 3. Send response back to server
         await axios.post(route('passkey.store'), {
             name: form.name,
-            credential: JSON.stringify(credential)
+            credential,
         });
 
         // Close modal and refresh page

@@ -117,13 +117,35 @@
 
     document.getElementById('btn-passkey').addEventListener('click', async () => {
         try {
+            const email = document.getElementById('email')?.value?.trim();
+
+            if (!email) {
+                alert('Escribe tu correo electrónico para usar tu passkey.');
+                document.getElementById('email')?.focus();
+                return;
+            }
+
             // 1. Get options
-            const response = await fetch('{{ route('passkey.login-options') }}');
-            const options = await response.json();
+            const optionsUrl = new URL('{{ route('passkey.login-options.email') }}', window.location.origin);
+            optionsUrl.searchParams.set('email', email);
+
+            const response = await fetch(optionsUrl, {
+                headers: {
+                    'Accept': 'application/json',
+                },
+            });
+
+            if (!response.ok) {
+                const errorData = await response.json();
+                alert(errorData.message || 'No encontramos una passkey activa para este correo.');
+                return;
+            }
+
+            const { options } = await response.json();
 
             // 2. Authenticate locally
             const credential = await get({
-                publicKey: options.publicKey
+                publicKey: options
             });
 
             // 3. Verify on server
@@ -131,13 +153,18 @@
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'Accept': 'application/json',
                     'X-CSRF-TOKEN': document.querySelector('input[name="_token"]').value
                 },
-                body: JSON.stringify(credential)
+                body: JSON.stringify({
+                    credential,
+                    remember: document.getElementById('remember')?.checked || false
+                })
             });
 
             if (verifyResponse.ok) {
-                window.location.href = '{{ route('dashboard') }}';
+                const data = await verifyResponse.json();
+                window.location.href = data.redirect || '{{ route('dashboard') }}';
             } else {
                 const errorData = await verifyResponse.json();
                 alert('Fallo al iniciar sesión: ' + (errorData.message || 'Credencial inválida.'));

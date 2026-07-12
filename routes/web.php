@@ -25,6 +25,10 @@ Route::any('/tienda/iniciar-sesion', function () {
 });
 
 // Social Login Routes
+Route::get('/passkeys/login/options/email', \App\Http\Controllers\Auth\PasskeyLoginOptionsController::class)
+    ->middleware(['guest:web', 'throttle:passkeys'])
+    ->name('passkey.login-options.email');
+
 Route::get('/login/{provider}', [\App\Http\Controllers\Auth\SocialLoginController::class, 'redirect'])->name('social.login');
 Route::get('/login/{provider}/callback', [\App\Http\Controllers\Auth\SocialLoginController::class, 'callback'])->name('social.callback');
 

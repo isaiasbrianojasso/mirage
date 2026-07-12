@@ -7,11 +7,13 @@ use Database\Factories\UserFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Laravel\Fortify\Contracts\PasskeyUser;
+use Laravel\Fortify\PasskeyAuthenticatable;
 use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Sanctum\HasApiTokens;
 
-class User extends Authenticatable implements \Laravel\Passkeys\Contracts\PasskeyUser
+class User extends Authenticatable implements PasskeyUser
 {
     use HasApiTokens;
 
@@ -20,8 +22,8 @@ class User extends Authenticatable implements \Laravel\Passkeys\Contracts\Passke
 
     use HasProfilePhoto;
     use Notifiable;
+    use PasskeyAuthenticatable;
     use TwoFactorAuthenticatable;
-    use \Laravel\Passkeys\PasskeyAuthenticatable;
 
     /**
      * The attributes that are mass assignable.

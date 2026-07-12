@@ -173,7 +173,7 @@ return [
             // 'window' => 0,
         ]),
         Features::passkeys([
-            'confirmPassword' => true,
+            'confirmPassword' => false,
         ]),
     ],
 
