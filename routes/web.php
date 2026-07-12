@@ -83,6 +83,11 @@ Route::middleware([
         Route::get('/admin/email-templates', [\App\Http\Controllers\AdminEmailTemplateController::class, 'index'])->name('admin.email-templates.index');
         Route::get('/admin/email-templates/{name}/edit', [\App\Http\Controllers\AdminEmailTemplateController::class, 'edit'])->name('admin.email-templates.edit');
         Route::put('/admin/email-templates/{name}', [\App\Http\Controllers\AdminEmailTemplateController::class, 'update'])->name('admin.email-templates.update');
+
+        // System Update
+        Route::get('/admin/system-update', [\App\Http\Controllers\Admin\SystemUpdateController::class, 'index'])->name('admin.system-update.index');
+        Route::post('/admin/system-update/check', [\App\Http\Controllers\Admin\SystemUpdateController::class, 'check'])->name('admin.system-update.check');
+        Route::post('/admin/system-update/apply', [\App\Http\Controllers\Admin\SystemUpdateController::class, 'apply'])->name('admin.system-update.apply');
     });
 
     // Customer Routes

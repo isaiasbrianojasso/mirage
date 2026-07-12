@@ -315,13 +315,19 @@ class CheckoutController extends Controller
 
                     // Descontar inventario asegurando que no baje de cero
                     if ($item['variant_id']) {
-                        ProductVariant::where('id', $item['variant_id'])
+                        $affected = ProductVariant::where('id', $item['variant_id'])
                                       ->where('stock', '>=', $item['quantity'])
                                       ->decrement('stock', $item['quantity']);
+                        if ($affected === 0) {
+                            throw new \Exception('No hay suficiente stock para el producto: ' . $item['name']);
+                        }
                     } else {
-                        Product::where('id', $item['product_id'])
+                        $affected = Product::where('id', $item['product_id'])
                                ->where('stock', '>=', $item['quantity'])
                                ->decrement('stock', $item['quantity']);
+                        if ($affected === 0) {
+                            throw new \Exception('No hay suficiente stock para el producto: ' . $item['name']);
+                        }
                     }
                 }
 

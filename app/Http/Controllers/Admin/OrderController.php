@@ -118,9 +118,15 @@ class OrderController extends Controller
                 
                 // Reducir stock
                 if ($variant) {
-                    $variant->decrement('stock', $item['quantity']);
+                    $affected = \App\Models\ProductVariant::where('id', $variant->id)->where('stock', '>=', $item['quantity'])->decrement('stock', $item['quantity']);
+                    if ($affected === 0) {
+                        throw new \Exception('No hay suficiente stock para la variante: ' . $variant->name);
+                    }
                 } else {
-                    $product->decrement('stock', $item['quantity']);
+                    $affected = \App\Models\Product::where('id', $product->id)->where('stock', '>=', $item['quantity'])->decrement('stock', $item['quantity']);
+                    if ($affected === 0) {
+                        throw new \Exception('No hay suficiente stock para el producto: ' . $product->name);
+                    }
                 }
             }
 
@@ -176,32 +182,34 @@ class OrderController extends Controller
             'status' => 'required|string',
         ]);
 
-        $order = Order::findOrFail($id);
-        $originalStatus = $order->status;
-        
-        if ($originalStatus !== $request->status) {
-            $order->status = $request->status;
-            $order->save();
+        DB::transaction(function () use ($id, $request) {
+            $order = Order::where('id', $id)->lockForUpdate()->firstOrFail();
+            $originalStatus = $order->status;
+            
+            if ($originalStatus !== $request->status) {
+                $order->status = $request->status;
+                $order->save();
 
-            // Guardar en el historial
-            OrderHistory::create([
-                'order_id' => $order->id,
-                'user_id' => auth()->id(),
-                'status' => $request->status,
-                'email_sent' => false, // Stub para enviar correos
-            ]);
+                // Guardar en el historial
+                OrderHistory::create([
+                    'order_id' => $order->id,
+                    'user_id' => auth()->id(),
+                    'status' => $request->status,
+                    'email_sent' => false, // Stub para enviar correos
+                ]);
 
-            // Rutina de Re-stock
-            if ($request->status === 'cancelled') {
-                foreach ($order->items as $item) {
-                    if ($item->product_variant_id) {
-                        \App\Models\ProductVariant::where('id', $item->product_variant_id)->increment('stock', $item->quantity);
-                    } else {
-                        \App\Models\Product::where('id', $item->product_id)->increment('stock', $item->quantity);
+                // Rutina de Re-stock
+                if ($request->status === 'cancelled') {
+                    foreach ($order->items as $item) {
+                        if ($item->product_variant_id) {
+                            \App\Models\ProductVariant::where('id', $item->product_variant_id)->increment('stock', $item->quantity);
+                        } else {
+                            \App\Models\Product::where('id', $item->product_id)->increment('stock', $item->quantity);
+                        }
                     }
                 }
             }
-        }
+        });
 
         return redirect()->back()->with('success', 'Estado del pedido actualizado.');
     }

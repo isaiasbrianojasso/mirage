@@ -241,26 +241,43 @@
                     />
                 </div>
 
-                <!-- Mail -->
-                <SettingsGroup
-                    v-if="activeTab === 'mail'"
-                    title="Notificaciones y Correos"
-                    icon='<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>'
-                    description="Configuración de envío de correos. Usa 'smtp' para un servidor externo o 'log' para pruebas locales."
-                    group="mail"
-                    :fields="[
-                        { key: 'mail_mailer', label: 'Mail Driver', type: 'select', options: [{label: 'SMTP', value: 'smtp'}, {label: 'Sendmail (Host Nativo)', value: 'sendmail'}, {label: 'Log (Pruebas)', value: 'log'}] },
-                        { key: 'mail_host', label: 'Host SMTP', placeholder: 'Ej: smtp.mailtrap.io', showIf: (s) => s.mail_mailer === 'smtp' },
-                        { key: 'mail_port', label: 'Puerto SMTP', placeholder: 'Ej: 2525, 465, 587', type: 'number', showIf: (s) => s.mail_mailer === 'smtp' },
-                        { key: 'mail_username', label: 'Usuario SMTP', placeholder: 'Usuario', showIf: (s) => s.mail_mailer === 'smtp' },
-                        { key: 'mail_password', label: 'Contraseña SMTP', type: 'password', placeholder: 'Contraseña', showIf: (s) => s.mail_mailer === 'smtp' },
-                        { key: 'mail_encryption', label: 'Encriptación', type: 'select', options: [{label: 'Ninguna', value: ''}, {label: 'TLS', value: 'tls'}, {label: 'SSL', value: 'ssl'}], showIf: (s) => s.mail_mailer === 'smtp' },
-                        { key: 'mail_from_address', label: 'Correo de Remitente (From)', placeholder: 'Ej: no-reply@tiendamirage.mx' },
-                        { key: 'mail_from_name', label: 'Nombre de Remitente (From)', placeholder: 'Ej: Tienda Mirage' },
-                    ]"
-                    :settings="settings.mail || {}"
-                    @saved="onSaved"
-                />
+                <!-- Notifications (Mail + Firebase) -->
+                <div v-if="activeTab === 'notifications'" class="space-y-6">
+                    <!-- Mail -->
+                    <SettingsGroup
+                        title="Correo Electrónico"
+                        icon='<svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>'
+                        description="Configuración de envío de correos. Usa 'smtp' para un servidor externo o 'log' para pruebas locales."
+                        group="notifications"
+                        :fields="[
+                            { key: 'mail_mailer', label: 'Mail Driver', type: 'select', options: [{label: 'SMTP', value: 'smtp'}, {label: 'Sendmail (Host Nativo)', value: 'sendmail'}, {label: 'Log (Pruebas)', value: 'log'}] },
+                            { key: 'mail_host', label: 'Host SMTP', placeholder: 'Ej: smtp.mailtrap.io', showIf: (s) => s.mail_mailer === 'smtp' },
+                            { key: 'mail_port', label: 'Puerto SMTP', placeholder: 'Ej: 2525, 465, 587', type: 'number', showIf: (s) => s.mail_mailer === 'smtp' },
+                            { key: 'mail_username', label: 'Usuario SMTP', placeholder: 'Usuario', showIf: (s) => s.mail_mailer === 'smtp' },
+                            { key: 'mail_password', label: 'Contraseña SMTP', type: 'password', placeholder: 'Contraseña', showIf: (s) => s.mail_mailer === 'smtp' },
+                            { key: 'mail_encryption', label: 'Encriptación', type: 'select', options: [{label: 'Ninguna', value: ''}, {label: 'TLS', value: 'tls'}, {label: 'SSL', value: 'ssl'}], showIf: (s) => s.mail_mailer === 'smtp' },
+                            { key: 'mail_from_address', label: 'Correo de Remitente (From)', placeholder: 'Ej: no-reply@tiendamirage.mx' },
+                            { key: 'mail_from_name', label: 'Nombre de Remitente (From)', placeholder: 'Ej: Tienda Mirage' },
+                        ]"
+                        :settings="settings.notifications || {}"
+                        @saved="onSaved"
+                    />
+
+                    <!-- Firebase -->
+                    <SettingsGroup
+                        title="Notificaciones Push (Firebase)"
+                        icon='<svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M4.566 17.652l-2.905-5.586a.78.78 0 01.23-.976l13.626-9.664a.78.78 0 011.134.908L14.28 10.66l2.905 5.586a.78.78 0 01-.23.976L3.33 26.886a.78.78 0 01-1.134-.908l2.37-8.326z"/></svg>'
+                        description="Credenciales para enviar notificaciones web/móvil por Firebase (FCM)."
+                        group="notifications"
+                        :fields="[
+                            { key: 'firebase_enabled', label: '¿Habilitar Firebase Push?', type: 'select', options: [{label: 'Sí, habilitar', value: '1'}, {label: 'No, deshabilitar', value: '0'}] },
+                            { key: 'firebase_project_id', label: 'Project ID', placeholder: 'Ej: mi-proyecto-123', showIf: (s) => s.firebase_enabled === '1' },
+                            { key: 'firebase_credentials_json', label: 'Credenciales (JSON)', type: 'textarea', placeholder: 'Pega aquí el contenido completo del archivo serviceAccountKey.json...', showIf: (s) => s.firebase_enabled === '1' }
+                        ]"
+                        :settings="settings.notifications || {}"
+                        @saved="onSaved"
+                    />
+                </div>
 
                 <!-- Auth -->
                 <div v-if="activeTab === 'auth'" class="space-y-6">
@@ -349,7 +366,7 @@ const tabs = [
     { key: 'tienda', label: 'Textos de Tienda', icon: '<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>' },
     { key: 'home_template', label: 'Textos de Inicio', icon: '<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>' },
     { key: 'payments', label: 'Pagos', icon: '<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" /></svg>' },
-    { key: 'mail', label: 'Correos', icon: '<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>' },
+    { key: 'notifications', label: 'Notificaciones', icon: '<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>' },
     { key: 'auth', label: 'Autenticación Social', icon: '<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.092 2.02-.273 3.003m-3.44 2.041A9.954 9.954 0 0112 18c-3.1 0-5.874-1.41-7.7-3.626M12 18c3.1 0 5.874-1.41 7.7-3.626m-7.7 3.626v3.374"/></svg>' },
     { key: 'integrations', label: 'Integraciones', icon: '<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>' },
 ];
