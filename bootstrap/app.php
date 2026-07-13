@@ -30,4 +30,22 @@ return Application::configure(basePath: dirname(__DIR__))
         $exceptions->shouldRenderJsonWhen(
             fn (Request $request) => $request->is('api/*'),
         );
+
+        $exceptions->render(function (\Illuminate\Auth\AuthenticationException $e, Request $request) {
+            if ($request->inertia()) {
+                return \Inertia\Inertia::location(route('login'));
+            }
+            if ($request->ajax()) {
+                return response()->json(['message' => 'Unauthenticated.'], 401);
+            }
+        });
+
+        $exceptions->render(function (\Illuminate\Session\TokenMismatchException $e, Request $request) {
+            if ($request->inertia()) {
+                return \Inertia\Inertia::location(route('login'));
+            }
+            if ($request->ajax()) {
+                return response()->json(['message' => 'CSRF token mismatch.'], 419);
+            }
+        });
     })->create();
