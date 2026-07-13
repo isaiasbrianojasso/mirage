@@ -30,6 +30,7 @@ class E2ECommerceSeeder extends Seeder
         try {
             // 1. Agregar Categoría
             $category = Category::create([
+                'uuid' => (string) Str::uuid(),
                 'name' => 'Categoría E2E Test',
                 'slug' => Str::slug('Categoría E2E Test'),
                 'description' => 'Categoría generada para validar el flujo completo.',

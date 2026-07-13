@@ -215,32 +215,5 @@ Route::get('/tienda/{slug}/index.html', function ($slug) {
     return redirect()->route('tienda.index');
 });
 
-// Legacy PrestaShop product routes (e.g., /tienda/refacciones/616-motor-condensador-1-ton-ykt-32-6-202l.html)
-/*
-Route::get('/tienda/{category}/{slug}.html', function ($category, $slug) {
-    $cleanSlug = preg_replace('/^\d+-/', '', $slug);
-
-    // Check if the product exists in the DB (original or clean slug)
-    $product = \App\Models\Product::where('slug', $slug)
-        ->orWhere('slug', $cleanSlug)
-        ->first();
-
-    if ($product) {
-        return redirect()->route('tienda.product', ['uuid' => $product->id]);
-    }
-
-    // If product doesn't exist, redirect to parent category (clean or original) in DB
-    $cleanCategory = preg_replace('/^\d+-/', '', $category);
-    $dbCategory = \App\Models\Category::where('slug', $category)
-        ->orWhere('slug', $cleanCategory)
-        ->first();
-
-    if ($dbCategory) {
-        return redirect()->route('tienda.category', ['uuid' => $dbCategory->uuid]);
-    }
-
-    return redirect()->route('tienda.index');
-});
-*/
 Route::get('/test-cart', function() { dd(session()->get('cart')); });
 Route::post('/module/iqitcompare/actions', [\App\Http\Controllers\CompareController::class, 'actions'])->name('compare.actions');

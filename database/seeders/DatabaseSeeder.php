@@ -29,7 +29,6 @@ class DatabaseSeeder extends Seeder
             MirageProductsSeeder::class,
             DummyProductsSeeder::class,
             BannerSeeder::class,
-            BusinessSettingSeeder::class,
             LoremIpsumSeeder::class,
             E2ECommerceSeeder::class,
         ]);
