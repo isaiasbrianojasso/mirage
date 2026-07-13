@@ -247,15 +247,15 @@
                     <SettingsGroup
                         title="Correo Electrónico"
                         icon='<svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>'
-                        description="Configuración de envío de correos. Usa 'smtp' para un servidor externo o 'log' para pruebas locales."
+                        description="Configuración de envío de correos. Usa SMTP o PHPMailer para servidores externos, y log para pruebas locales."
                         group="notifications"
                         :fields="[
-                            { key: 'mail_mailer', label: 'Mail Driver', type: 'select', options: [{label: 'SMTP', value: 'smtp'}, {label: 'Sendmail (Host Nativo)', value: 'sendmail'}, {label: 'Log (Pruebas)', value: 'log'}] },
-                            { key: 'mail_host', label: 'Host SMTP', placeholder: 'Ej: smtp.mailtrap.io', showIf: (s) => s.mail_mailer === 'smtp' },
-                            { key: 'mail_port', label: 'Puerto SMTP', placeholder: 'Ej: 2525, 465, 587', type: 'number', showIf: (s) => s.mail_mailer === 'smtp' },
-                            { key: 'mail_username', label: 'Usuario SMTP', placeholder: 'Usuario', showIf: (s) => s.mail_mailer === 'smtp' },
-                            { key: 'mail_password', label: 'Contraseña SMTP', type: 'password', placeholder: 'Contraseña', showIf: (s) => s.mail_mailer === 'smtp' },
-                            { key: 'mail_encryption', label: 'Encriptación', type: 'select', options: [{label: 'Ninguna', value: ''}, {label: 'TLS', value: 'tls'}, {label: 'SSL', value: 'ssl'}], showIf: (s) => s.mail_mailer === 'smtp' },
+                            { key: 'mail_mailer', label: 'Mail Driver', type: 'select', options: [{label: 'SMTP', value: 'smtp'}, {label: 'PHPMailer', value: 'phpmailer'}, {label: 'Sendmail (Host Nativo)', value: 'sendmail'}, {label: 'Log (Pruebas)', value: 'log'}] },
+                            { key: 'mail_host', label: 'Host SMTP', placeholder: 'Ej: smtp.mailtrap.io', showIf: (s) => ['smtp', 'phpmailer'].includes(s.mail_mailer) },
+                            { key: 'mail_port', label: 'Puerto SMTP', placeholder: 'Ej: 2525, 465, 587', type: 'number', showIf: (s) => ['smtp', 'phpmailer'].includes(s.mail_mailer) },
+                            { key: 'mail_username', label: 'Usuario SMTP', placeholder: 'Usuario', showIf: (s) => ['smtp', 'phpmailer'].includes(s.mail_mailer) },
+                            { key: 'mail_password', label: 'Contraseña SMTP', type: 'password', placeholder: 'Contraseña', showIf: (s) => ['smtp', 'phpmailer'].includes(s.mail_mailer) },
+                            { key: 'mail_encryption', label: 'Encriptación', type: 'select', options: [{label: 'Ninguna', value: ''}, {label: 'TLS', value: 'tls'}, {label: 'SSL', value: 'ssl'}], showIf: (s) => ['smtp', 'phpmailer'].includes(s.mail_mailer) },
                             { key: 'mail_from_address', label: 'Correo de Remitente (From)', placeholder: 'Ej: no-reply@tiendamirage.mx' },
                             { key: 'mail_from_name', label: 'Nombre de Remitente (From)', placeholder: 'Ej: Tienda Mirage' },
                         ]"

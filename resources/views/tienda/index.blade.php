@@ -24,7 +24,12 @@
     <div class="swiper-slide">
         <div class="swiper-slide-inner">
             <a href="{{ $banner->link ?? '#' }}">
-                <img class="swiper-slide-image" src="{{ Str::startsWith($banner->image_url, "http") ? $banner->image_url : Storage::url($banner->image_url) }}" alt="{{ $banner->title }}" style="width: 100%; height: auto;" />
+                @php
+                    $bannerImageUrl = Str::startsWith($banner->image_url, ['http://', 'https://', '/storage/'])
+                        ? $banner->image_url
+                        : Storage::url($banner->image_url);
+                @endphp
+                <img class="swiper-slide-image" src="{{ $bannerImageUrl }}" alt="{{ $banner->title }}" style="width: 100%; height: auto;" />
             </a>
         </div>
     </div>

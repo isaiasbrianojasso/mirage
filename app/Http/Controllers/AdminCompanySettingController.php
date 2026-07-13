@@ -37,8 +37,20 @@ class AdminCompanySettingController extends Controller
         ]);
 
         $group = $request->input('group');
+        $secretKeys = [
+            'facebook_client_secret',
+            'google_client_secret',
+            'mail_password',
+            'mercadopago_access_token',
+            'paypal_secret',
+            'trustlogin_client_secret',
+        ];
 
         foreach ($request->input('settings', []) as $key => $value) {
+            if (in_array($key, $secretKeys, true) && blank($value) && CompanySetting::where('key', $key)->exists()) {
+                continue;
+            }
+
             CompanySetting::set($key, $value ?? '', 'string', $group);
         }
 
