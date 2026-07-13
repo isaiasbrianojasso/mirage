@@ -1,11 +1,13 @@
 <template>
     <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
         <!-- Header -->
-        <div class="px-8 py-5 bg-gradient-to-r from-slate-700 to-slate-800 flex items-center gap-3">
-            <div class="w-9 h-9 bg-white/20 rounded-lg flex items-center justify-center text-white" v-html="icon"></div>
-            <div>
-                <h3 class="text-white font-bold text-base">{{ title }}</h3>
-                <p class="text-slate-300 text-xs">{{ description }}</p>
+        <div class="px-8 py-6 border-b border-gray-100">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center" v-html="icon"></div>
+                <div>
+                    <h3 class="text-lg font-bold text-gray-900">{{ title }}</h3>
+                    <p class="text-sm text-gray-500 mt-1">{{ description }}</p>
+                </div>
             </div>
         </div>
 
@@ -41,6 +43,55 @@
                                     {{ opt.label }}
                                 </option>
                             </select>
+
+                            <div v-else-if="field.type === 'image'" class="space-y-3">
+                                <div v-if="getPreview(field)" class="relative inline-block border border-gray-200 rounded-xl overflow-hidden bg-gray-50 group">
+                                    <img 
+                                        :src="getPreview(field)" 
+                                        class="h-32 object-contain" 
+                                        alt="Preview" 
+                                    />
+                                    <button 
+                                        v-if="typeof form.settings[field.key] !== 'string' || form.settings[field.key]"
+                                        type="button" 
+                                        @click="clearImage(field.key)" 
+                                        class="absolute top-2 right-2 bg-red-500 text-white rounded-full p-1 hover:bg-red-600 focus:outline-none shadow-sm opacity-0 group-hover:opacity-100 transition-opacity"
+                                        title="Remover imagen"
+                                    >
+                                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                                    </button>
+                                </div>
+                                <input
+                                    :id="field.key"
+                                    type="file"
+                                    accept="image/*"
+                                    @input="handleFileChange($event, field.key)"
+                                    class="block w-full text-sm text-slate-500
+                                        file:mr-4 file:py-2.5 file:px-4
+                                        file:rounded-xl file:border-0
+                                        file:text-sm file:font-semibold
+                                        file:bg-indigo-50 file:text-indigo-700
+                                        hover:file:bg-indigo-100 transition"
+                                />
+                            </div>
+
+                            <div v-else-if="field.type === 'color'" class="flex items-center gap-3">
+                                <div class="relative overflow-hidden rounded-lg w-10 h-10 border border-gray-200 shadow-sm flex-shrink-0">
+                                    <input
+                                        :id="field.key + '_color'"
+                                        type="color"
+                                        v-model="form.settings[field.key]"
+                                        class="absolute -top-2 -left-2 w-16 h-16 cursor-pointer"
+                                    />
+                                </div>
+                                <input
+                                    :id="field.key"
+                                    type="text"
+                                    v-model="form.settings[field.key]"
+                                    :placeholder="field.placeholder || '#000000'"
+                                    class="block w-full max-w-[140px] rounded-xl border-gray-200 focus:border-indigo-500 focus:ring-indigo-500 text-sm font-mono uppercase"
+                                />
+                            </div>
 
                             <input
                                 v-else
@@ -85,6 +136,7 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
 import { useForm } from '@inertiajs/vue3';
 
 const props = defineProps({
@@ -98,6 +150,8 @@ const props = defineProps({
 
 const emit = defineEmits(['saved']);
 
+const imagePreviews = ref({});
+
 // Build initial form values from current settings
 const initialSettings = {};
 props.fields.forEach(field => {
@@ -109,10 +163,46 @@ const form = useForm({
     settings: initialSettings,
 });
 
+function getPreview(field) {
+    if (imagePreviews.value[field.key]) {
+        return imagePreviews.value[field.key];
+    }
+    const val = form.settings[field.key];
+    if (typeof val === 'string' && val.trim() !== '') {
+        return val;
+    }
+    if (field.placeholder && (field.placeholder.startsWith('http') || field.placeholder.startsWith('/'))) {
+        return field.placeholder;
+    }
+    return null;
+}
+
+function handleFileChange(event, key) {
+    const file = event.target.files[0];
+    if (file) {
+        form.settings[key] = file;
+        imagePreviews.value[key] = URL.createObjectURL(file);
+    }
+}
+
+function clearImage(key) {
+    form.settings[key] = '';
+    imagePreviews.value[key] = null;
+    const input = document.getElementById(key);
+    if (input) input.value = '';
+}
+
 function submit() {
     form.post(route('company-settings.update'), {
         preserveScroll: true,
-        onSuccess: () => emit('saved'),
+        forceFormData: true,
+        onSuccess: () => {
+            emit('saved');
+            imagePreviews.value = {};
+            props.fields.forEach(field => {
+                form.settings[field.key] = props.settings[field.key]?.value ?? '';
+            });
+        },
     });
 }
 </script>

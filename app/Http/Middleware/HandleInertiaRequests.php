@@ -64,6 +64,10 @@ class HandleInertiaRequests extends Middleware
             ],
             'passkeys' => $request->user() ? $request->user()->passkeys()->get() : [],
             'google_maps_api_key' => \App\Models\CompanySetting::get('google_maps_api_key', env('GOOGLE_MAPS_API_KEY', 'AIzaSyBqTIZeFqSA4s0MyDia9OznTeN85KfpfS4')),
+            'company_settings' => [
+                'branding' => \App\Models\CompanySetting::getByGroup('branding')->map(fn($s) => $s->value),
+                'general' => \App\Models\CompanySetting::getByGroup('general')->map(fn($s) => $s->value),
+            ],
         ];
     }
 }

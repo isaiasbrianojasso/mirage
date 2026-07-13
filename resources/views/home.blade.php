@@ -56,9 +56,9 @@
                                     data-widget_type="image.default">
                                     <div class="elementor-widget-container">
                                         <img fetchpriority="high" width="1210" height="783"
-                                            src="https://mirage.mx/wp-content/uploads/2023/07/mirage_magnum22.webp"
+                                            src="{{ \App\Models\CompanySetting::get('home_banner_main_image', 'https://mirage.mx/wp-content/uploads/2023/07/mirage_magnum22.webp') }}"
                                             class="attachment-full size-full wp-image-23692" alt=""
-                                            srcset="https://mirage.mx/wp-content/uploads/2023/07/mirage_magnum22.webp 1210w, https://mirage.mx/wp-content/uploads/2023/07/mirage_magnum22-300x194.webp 300w, https://mirage.mx/wp-content/uploads/2023/07/mirage_magnum22-1024x663.webp 1024w, https://mirage.mx/wp-content/uploads/2023/07/mirage_magnum22-768x497.webp 768w, https://mirage.mx/wp-content/uploads/2023/07/mirage_magnum22-670x434.webp 670w"
+                                            srcset="{{ \App\Models\CompanySetting::get('home_banner_main_image', 'https://mirage.mx/wp-content/uploads/2023/07/mirage_magnum22.webp') }} 1210w, https://mirage.mx/wp-content/uploads/2023/07/mirage_magnum22-300x194.webp 300w, https://mirage.mx/wp-content/uploads/2023/07/mirage_magnum22-1024x663.webp 1024w, https://mirage.mx/wp-content/uploads/2023/07/mirage_magnum22-768x497.webp 768w, https://mirage.mx/wp-content/uploads/2023/07/mirage_magnum22-670x434.webp 670w"
                                             sizes="(max-width: 1210px) 100vw, 1210px" /> </div>
                                 </div>
                             </div>
@@ -74,7 +74,7 @@
                                         <div class="elementor-icon-box-wrapper">
 
                                             <div class="elementor-icon-box-icon">
-                                                <a href="https://mirage.mx/productos/todo/aire-acondicionado/minisplit/inverter/magnum-22-inverter/"
+                                                <a href="{{ \App\Models\CompanySetting::get('home_banner_info_url', 'https://mirage.mx/productos/todo/aire-acondicionado/minisplit/inverter/magnum-22-inverter/') }}"
                                                     class="elementor-icon" tabindex="-1">
                                                     <i aria-hidden="true" class="fas fa-info-circle"></i> </a>
                                             </div>
@@ -89,7 +89,7 @@
                                         <div class="elementor-icon-box-wrapper">
 
                                             <div class="elementor-icon-box-icon">
-                                                <a href="https://mirage.mx/ubicaciones/tiendas-oficiales/"
+                                                <a href="{{ \App\Models\CompanySetting::get('home_banner_cart_url', 'https://mirage.mx/ubicaciones/tiendas-oficiales/') }}"
                                                     class="elementor-icon" tabindex="-1">
                                                     <i aria-hidden="true" class="fas fa-shopping-cart"></i> </a>
                                             </div>
@@ -557,34 +557,26 @@
                                     id="su_image_carousel_6a316b792df5d">
                                     <div class="su-image-carousel-item">
                                         <div class="su-image-carousel-item-content"><a
-                                                href="{{ \App\Models\CompanySetting::get('home_specialists_url', 'https://especialistas.mirage.mx') }}" target="_blank"
+                                                href="{{ \App\Models\CompanySetting::get('home_bottom_banner_1_url', \App\Models\CompanySetting::get('home_specialists_url', 'https://especialistas.mirage.mx')) }}" target="_blank"
                                                 rel="noopener noreferrer" data-caption=""><img width="1135" height="738"
                                                     src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201135%20738'%3E%3C/svg%3E"
                                                     class="" alt="" decoding="async"
-                                                    data-lazy-srcset="https://mirage.mx/wp-content/uploads/2023/07/especialistas_mirage_web.webp 1135w, https://mirage.mx/wp-content/uploads/2023/07/especialistas_mirage_web-300x195.webp 300w, https://mirage.mx/wp-content/uploads/2023/07/especialistas_mirage_web-1024x666.webp 1024w, https://mirage.mx/wp-content/uploads/2023/07/especialistas_mirage_web-768x499.webp 768w, https://mirage.mx/wp-content/uploads/2023/07/especialistas_mirage_web-670x436.webp 670w"
-                                                    data-lazy-sizes="(max-width: 1135px) 100vw, 1135px"
-                                                    data-lazy-src="https://mirage.mx/wp-content/uploads/2023/07/especialistas_mirage_web.webp" /><noscript><img
+                                                    data-lazy-src="{{ \App\Models\CompanySetting::get('home_bottom_banner_1_image', 'https://mirage.mx/wp-content/uploads/2023/07/especialistas_mirage_web.webp') }}" /><noscript><img
                                                         loading="lazy" width="1135" height="738"
-                                                        src="https://mirage.mx/wp-content/uploads/2023/07/especialistas_mirage_web.webp"
-                                                        class="" alt="" decoding="async"
-                                                        srcset="https://mirage.mx/wp-content/uploads/2023/07/especialistas_mirage_web.webp 1135w, https://mirage.mx/wp-content/uploads/2023/07/especialistas_mirage_web-300x195.webp 300w, https://mirage.mx/wp-content/uploads/2023/07/especialistas_mirage_web-1024x666.webp 1024w, https://mirage.mx/wp-content/uploads/2023/07/especialistas_mirage_web-768x499.webp 768w, https://mirage.mx/wp-content/uploads/2023/07/especialistas_mirage_web-670x436.webp 670w"
-                                                        sizes="(max-width: 1135px) 100vw, 1135px" /></noscript></a>
+                                                        src="{{ \App\Models\CompanySetting::get('home_bottom_banner_1_image', 'https://mirage.mx/wp-content/uploads/2023/07/especialistas_mirage_web.webp') }}"
+                                                        class="" alt="" decoding="async" /></noscript></a>
                                         </div>
                                     </div>
                                     <div class="su-image-carousel-item">
                                         <div class="su-image-carousel-item-content"><a
-                                                href="mailto:lizethg@airesmirage.com" target="_blank"
+                                                href="{{ \App\Models\CompanySetting::get('home_bottom_banner_2_url', 'mailto:lizethg@airesmirage.com') }}" target="_blank"
                                                 rel="noopener noreferrer" data-caption=""><img width="1135" height="738"
                                                     src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201135%20738'%3E%3C/svg%3E"
                                                     class="" alt="" decoding="async"
-                                                    data-lazy-srcset="https://mirage.mx/wp-content/uploads/2023/07/oportunidades_mirage.webp 1135w, https://mirage.mx/wp-content/uploads/2023/07/oportunidades_mirage-300x195.webp 300w, https://mirage.mx/wp-content/uploads/2023/07/oportunidades_mirage-1024x666.webp 1024w, https://mirage.mx/wp-content/uploads/2023/07/oportunidades_mirage-768x499.webp 768w, https://mirage.mx/wp-content/uploads/2023/07/oportunidades_mirage-670x436.webp 670w"
-                                                    data-lazy-sizes="(max-width: 1135px) 100vw, 1135px"
-                                                    data-lazy-src="https://mirage.mx/wp-content/uploads/2023/07/oportunidades_mirage.webp" /><noscript><img
+                                                    data-lazy-src="{{ \App\Models\CompanySetting::get('home_bottom_banner_2_image', 'https://mirage.mx/wp-content/uploads/2023/07/oportunidades_mirage.webp') }}" /><noscript><img
                                                         loading="lazy" width="1135" height="738"
-                                                        src="https://mirage.mx/wp-content/uploads/2023/07/oportunidades_mirage.webp"
-                                                        class="" alt="" decoding="async"
-                                                        srcset="https://mirage.mx/wp-content/uploads/2023/07/oportunidades_mirage.webp 1135w, https://mirage.mx/wp-content/uploads/2023/07/oportunidades_mirage-300x195.webp 300w, https://mirage.mx/wp-content/uploads/2023/07/oportunidades_mirage-1024x666.webp 1024w, https://mirage.mx/wp-content/uploads/2023/07/oportunidades_mirage-768x499.webp 768w, https://mirage.mx/wp-content/uploads/2023/07/oportunidades_mirage-670x436.webp 670w"
-                                                        sizes="(max-width: 1135px) 100vw, 1135px" /></noscript></a>
+                                                        src="{{ \App\Models\CompanySetting::get('home_bottom_banner_2_image', 'https://mirage.mx/wp-content/uploads/2023/07/oportunidades_mirage.webp') }}"
+                                                        class="" alt="" decoding="async" /></noscript></a>
                                         </div>
                                     </div>
                                 </div>

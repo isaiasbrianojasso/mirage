@@ -33,7 +33,6 @@ class AdminCompanySettingController extends Controller
         $request->validate([
             'group' => 'required|string|in:general,branding,contact,social,content,home_template,store_template,tienda,payments,mail,notifications,auth,integrations',
             'settings' => 'required|array',
-            'settings.*' => 'nullable|string|max:4000',
         ]);
 
         $group = $request->input('group');
@@ -46,7 +45,19 @@ class AdminCompanySettingController extends Controller
             'trustlogin_client_secret',
         ];
 
+        foreach ($request->allFiles()['settings'] ?? [] as $key => $file) {
+            if ($file->isValid()) {
+                $path = $file->store('settings', 'public');
+                CompanySetting::set($key, '/storage/' . $path, 'string', $group);
+            }
+        }
+
         foreach ($request->input('settings', []) as $key => $value) {
+            // Skip if it's a file (handled above)
+            if ($request->hasFile("settings.$key")) {
+                continue;
+            }
+
             if (in_array($key, $secretKeys, true) && blank($value) && CompanySetting::where('key', $key)->exists()) {
                 continue;
             }

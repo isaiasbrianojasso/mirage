@@ -75,6 +75,9 @@ Route::middleware([
         Route::resource('admin/carriers', App\Http\Controllers\Admin\CarrierController::class)->except(['show']);
         Route::resource('admin/locations', App\Http\Controllers\Admin\LocationController::class)->except(['show']);
         Route::put('admin/carriers/{carrier}/toggle-active', [App\Http\Controllers\Admin\CarrierController::class, 'toggleActive'])->name('carriers.toggle-active');
+        Route::resource('admin/posts', App\Http\Controllers\Admin\PostController::class)->except(['show']);
+        Route::get('admin/templates/home/texts', [App\Http\Controllers\Admin\TemplateHomeController::class, 'index'])->name('templates.home.texts.index');
+        Route::get('admin/templates/store/texts', [App\Http\Controllers\Admin\TemplateStoreController::class, 'index'])->name('templates.store.texts.index');
         
         // Settings
         Route::get('/admin/company-settings', [\App\Http\Controllers\AdminCompanySettingController::class, 'edit'])->name('company-settings.edit');

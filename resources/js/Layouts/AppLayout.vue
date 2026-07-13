@@ -64,14 +64,22 @@ onMounted(() => {
             <aside 
                 :class="[
                     showingNavigationDropdown ? 'translate-x-0' : '-translate-x-full',
-                    'fixed inset-y-0 left-0 z-30 w-64 transition duration-300 transform bg-slate-900 text-slate-300 md:relative md:translate-x-0 overflow-y-auto flex flex-col shadow-xl'
+                    'fixed inset-y-0 left-0 z-30 w-64 transition duration-300 transform bg-black text-slate-300 md:relative md:translate-x-0 overflow-y-auto flex flex-col shadow-xl'
                 ]"
             >
                 <!-- Logo -->
-                <div class="flex items-center justify-center h-16 bg-slate-950 border-b border-slate-800 shrink-0">
+                <div class="flex items-center justify-center h-16 bg-black border-b border-gray-800 shrink-0">
                     <Link :href="route('dashboard')" class="flex items-center gap-2">
-                        <ApplicationMark class="block h-8 w-auto text-white" />
-                        <span class="text-white font-bold text-lg tracking-wide">Mirage Admin</span>
+                        <img v-if="$page.props.company_settings?.branding?.logo_url" 
+                             :src="$page.props.company_settings.branding.logo_url" 
+                             class="block h-8 w-auto object-contain max-w-[150px]" 
+                             alt="Logo" />
+                        <template v-else>
+                            <ApplicationMark class="block h-8 w-auto text-white" />
+                            <span class="text-white font-bold text-lg tracking-wide">
+                                {{ $page.props.company_settings?.general?.company_name || 'Mirage Admin' }}
+                            </span>
+                        </template>
                     </Link>
                 </div>
 
@@ -188,6 +196,38 @@ onMounted(() => {
                             </svg>
                             Zonas
                         </Link>
+
+                        <!-- PLANTILLAS -->
+                        <div class="pt-4 pb-1">
+                            <p class="px-3 text-xs font-semibold text-slate-500 uppercase tracking-wider">Plantillas</p>
+                        </div>
+                        <div class="px-3 py-2">
+                            <p class="text-xs font-medium text-slate-400 mb-1">Pantalla Principal</p>
+                            <Link :href="route('templates.home.texts.index')" 
+                                :class="[route().current('templates.home.texts.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800 hover:text-white', 'group flex items-center px-3 py-2 text-sm font-medium rounded-md transition-colors']">
+                                <svg class="mr-3 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                                </svg>
+                                Textos y Banners
+                            </Link>
+                            <Link :href="route('posts.index')" 
+                                :class="[route().current('posts.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800 hover:text-white', 'group flex items-center px-3 py-2 text-sm font-medium rounded-md transition-colors mt-1']">
+                                <svg class="mr-3 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                                </svg>
+                                Novedades
+                            </Link>
+                        </div>
+                        <div class="px-3 py-2">
+                            <p class="text-xs font-medium text-slate-400 mb-1">Tienda y Catálogo</p>
+                            <Link :href="route('templates.store.texts.index')" 
+                                :class="[route().current('templates.store.texts.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800 hover:text-white', 'group flex items-center px-3 py-2 text-sm font-medium rounded-md transition-colors']">
+                                <svg class="mr-3 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                                Textos de Tienda
+                            </Link>
+                        </div>
 
                         <!-- CONFIGURAR -->
                         <div class="pt-4 pb-1">

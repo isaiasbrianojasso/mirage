@@ -47,18 +47,12 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <h4 class="text-white text-sm font-bold uppercase tracking-wider mb-6">Nuestros CEDIF</h4>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-gray-500">
+                @foreach(\App\Models\Location::where('is_active', true)->get() as $location)
                 <div>
-                    <h5 class="text-gray-300 font-semibold">Corporativo Nacional</h5>
-                    <p>Ciudad Obregón, Sonora.</p>
+                    <h5 class="text-gray-300 font-semibold">{{ $location->name }}</h5>
+                    <p>{{ collect([$location->address, $location->city, $location->state, $location->country])->filter()->implode(', ') }}{{ $location->zip ? ' C.P. ' . $location->zip : '' }}{{ $location->phone ? ' - Tel ' . $location->phone : '' }}</p>
                 </div>
-                <div>
-                    <h5 class="text-gray-300 font-semibold">CEDIF Guadalajara</h5>
-                    <p>Tlajomulco de Zúñiga, Jalisco.</p>
-                </div>
-                <div>
-                    <h5 class="text-gray-300 font-semibold">CEDIF Monterrey</h5>
-                    <p>San Nicolás de los Garza. N.L.</p>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
