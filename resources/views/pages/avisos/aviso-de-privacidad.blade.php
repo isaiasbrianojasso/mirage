@@ -1,9 +1,6 @@
 @include('components.x-header')
 <body class="wp-singular page-template page-template-page_landing page-template-page_landing-php page page-id-990 page-child parent-pageid-23585 wp-theme-genesis wp-child-theme-digital-pro theme-genesis woocommerce-no-js custom-header header-image header-full-width full-width-content genesis-breadcrumbs-hidden elementor-default elementor-kit-23667 digital-landing" itemscope itemtype="https://schema.org/WebPage">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T74BMF8F"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) --><div  class="site-container">
+<div  class="site-container">
     @include('components.x-menu')
  <div  class="site-inner"><div  class="content-sidebar-wrap"><main class="content"><article class="post-990 page type-page status-publish entry justifica" aria-label="Aviso de Privacidad" itemscope itemtype="https://schema.org/CreativeWork"><header class="entry-header"><h1 class="entry-title" itemprop="headline">Aviso de Privacidad</h1>
 </header><div class="entry-content" itemprop="text">

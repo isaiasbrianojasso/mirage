@@ -1,9 +1,6 @@
 @include('components.x-header')
 <body class="wp-singular page-template-default page page-id-3305 page-child parent-pageid-3081 wp-theme-genesis wp-child-theme-digital-pro theme-genesis woocommerce-no-js custom-header header-image header-full-width full-width-content genesis-breadcrumbs-hidden genesis-footer-widgets-hidden elementor-default elementor-kit-23667" itemscope itemtype="https://schema.org/WebPage">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T74BMF8F"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) --><div  class="site-container">
+<div  class="site-container">
     @include('components.x-menu')
 <ul class="genesis-skip-link"><li><a href="../../distribuidores#genesis-content" class="screen-reader-shortcut"> Saltar al contenido principal</a></li></ul> <div  class="site-inner"><div  class="content-sidebar-wrap"><main class="content" id="genesis-content"><article class="post-3305 page type-page status-publish entry" aria-label="Distribuidores" itemscope itemtype="https://schema.org/CreativeWork"><header class="entry-header"><h1 class="entry-title" itemprop="headline">Distribuidores</h1>
 </header><div class="entry-content" itemprop="text"><style>

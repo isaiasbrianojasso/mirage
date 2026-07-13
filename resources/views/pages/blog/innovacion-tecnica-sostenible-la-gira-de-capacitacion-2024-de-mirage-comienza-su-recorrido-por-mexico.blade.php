@@ -1,9 +1,6 @@
 @include('components.x-header')
 <body class="wp-singular post-template-default single single-post postid-23944 single-format-standard wp-theme-genesis wp-child-theme-digital-pro theme-genesis woocommerce-no-js custom-header header-image header-full-width full-width-content genesis-breadcrumbs-hidden genesis-footer-widgets-visible elementor-default elementor-kit-23667" itemscope itemtype="https://schema.org/WebPage">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T74BMF8F"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) --><div  class="site-container">
+<div  class="site-container">
     @include('components.x-menu')
 <ul class="genesis-skip-link"><li><a href="#genesis-content" class="screen-reader-shortcut"> Saltar al contenido principal</a></li><li><a href="#genesis-footer-widgets" class="screen-reader-shortcut"> Saltar al pie de página</a></li></ul> <div  class="site-inner"><div  class="content-sidebar-wrap"><main class="content" id="genesis-content"><article class="post-23944 post type-post status-publish format-standard has-post-thumbnail category-corporativo category-blog entry" aria-label="Innovación Técnica Sostenible: La Gira de Capacitación 2024 de Mirage Comienza su Recorrido por México" itemscope itemtype="https://schema.org/CreativeWork"><header class="entry-header"><h1 class="entry-title" itemprop="headline">Innovación Técnica Sostenible: La Gira de Capacitación 2024 de Mirage Comienza su Recorrido por México</h1>
 </header><div class="entry-content" itemprop="text"><div class="wp-block-image">

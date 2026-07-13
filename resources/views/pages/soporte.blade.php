@@ -1,9 +1,6 @@
 @include('components.x-header')
 <body class="wp-singular page-template-default page page-id-1264 page-parent wp-theme-genesis wp-child-theme-digital-pro theme-genesis woocommerce-no-js custom-header header-image header-full-width full-width-content genesis-breadcrumbs-hidden genesis-footer-widgets-visible elementor-default elementor-kit-23667 elementor-page elementor-page-1264" itemscope itemtype="https://schema.org/WebPage">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T74BMF8F"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) --><div  class="site-container">
+<div  class="site-container">
     @include('components.x-menu')
 <ul class="genesis-skip-link"><li><a href="#genesis-content" class="screen-reader-shortcut"> Saltar al contenido principal</a></li><li><a href="#genesis-footer-widgets" class="screen-reader-shortcut"> Saltar al pie de página</a></li></ul> <div  class="site-inner"><div  class="content-sidebar-wrap"><main class="content" id="genesis-content"><article class="post-1264 page type-page status-publish entry" aria-label="Soporte al producto" itemscope itemtype="https://schema.org/CreativeWork"><header class="entry-header"><h1 class="entry-title" itemprop="headline">Soporte al producto</h1>
 </header><div class="entry-content" itemprop="text">		<div data-elementor-type="wp-page" data-elementor-id="1264" class="elementor elementor-1264" data-elementor-post-type="page">

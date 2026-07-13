@@ -1,9 +1,6 @@
 @include('components.x-header')
 <body class="wp-singular product-template-default single single-product postid-23642 wp-theme-genesis wp-child-theme-digital-pro theme-genesis woocommerce woocommerce-page woocommerce-no-js custom-header header-image header-full-width full-width-content genesis-breadcrumbs-hidden genesis-footer-widgets-visible elementor-default elementor-kit-23667" itemscope itemtype="https://schema.org/WebPage">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T74BMF8F"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) --><div  class="site-container">
+<div  class="site-container">
     @include('components.x-menu')
 <ul class="genesis-skip-link"><li><a href="#genesis-content" class="screen-reader-shortcut"> Saltar al contenido principal</a></li><li><a href="#genesis-footer-widgets" class="screen-reader-shortcut"> Saltar al pie de página</a></li></ul> <div  class="site-inner"><div  class="content-sidebar-wrap"><main class="content" id="genesis-content"><div class="woocommerce-notices-wrapper"></div>
 			<div id="product-23642" class="post-23642 product type-product status-publish has-post-thumbnail product_cat-aire-acondicionado product_cat-ci-magnum product_cat-comercial-ligero product_cat-todo product_tag-comercial-ligero entry first instock shipping-taxable product-type-simple">

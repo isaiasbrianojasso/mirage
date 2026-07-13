@@ -1,9 +1,6 @@
 @include('components.x-header')
 <body class="wp-singular post-template-default single single-post postid-20397 single-format-standard wp-theme-genesis wp-child-theme-digital-pro theme-genesis woocommerce-no-js custom-header header-image header-full-width full-width-content genesis-breadcrumbs-hidden genesis-footer-widgets-hidden elementor-default elementor-kit-23667" itemscope itemtype="https://schema.org/WebPage">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T74BMF8F"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) --><div  class="site-container">
+<div  class="site-container">
     @include('components.x-menu')
 <ul class="genesis-skip-link"><li><a href="#genesis-content" class="screen-reader-shortcut"> Saltar al contenido principal</a></li></ul> <div  class="site-inner"><div  class="content-sidebar-wrap"><main class="content" id="genesis-content"><article class="post-20397 post type-post status-publish format-standard has-post-thumbnail category-blog category-saber entry" aria-label="Elige la capacidad de tu aire correctamente" itemscope itemtype="https://schema.org/CreativeWork"><header class="entry-header"><h1 class="entry-title" itemprop="headline">Elige la capacidad de tu aire correctamente</h1>
 </header><div class="entry-content" itemprop="text"><div class="su-spacer" style="height:30px"></div>

@@ -113,10 +113,7 @@
 <body
     class="archive tax-product_cat term-todo term-200 wp-theme-genesis wp-child-theme-digital-pro theme-genesis woocommerce woocommerce-page woocommerce-no-js custom-header header-image header-full-width full-width-content genesis-breadcrumbs-hidden genesis-footer-widgets-visible elementor-default elementor-kit-23667"
     itemscope itemtype="https://schema.org/WebPage">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T74BMF8F" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    
     <div class="site-container">
         <ul class="genesis-skip-link">
             <li><a href="#genesis-content" class="screen-reader-shortcut"> Saltar al contenido principal</a></li>
