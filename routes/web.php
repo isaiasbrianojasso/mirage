@@ -33,10 +33,6 @@ Route::get('/login/{provider}', [\App\Http\Controllers\Auth\SocialLoginControlle
 Route::get('/login/{provider}/callback', [\App\Http\Controllers\Auth\SocialLoginController::class, 'callback'])->name('social.callback');
 
 
-// Catalog routes
-Route::get('/catalogo/todo/', [App\Http\Controllers\CatalogController::class, 'index'])->name('catalog.index');
-Route::get('/catalogo/todo/{category}', [App\Http\Controllers\CatalogController::class, 'category'])->name('catalog.category');
-Route::get('/catalogo/todo/{category}/{subcategory}', [App\Http\Controllers\CatalogController::class, 'subcategory'])->name('catalog.subcategory');
 
 Route::middleware([
     'auth:sanctum',
