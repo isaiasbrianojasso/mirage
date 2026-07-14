@@ -344,13 +344,13 @@
                                             <img width="563" height="679"
                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20563%20679'%3E%3C/svg%3E"
                                                 class="attachment-full size-full wp-image-23697" alt=""
-                                                data-lazy-srcset="https://mirage.mx/wp-content/uploads/2023/07/equipos_convencionales_mirage.webp 563w, https://mirage.mx/wp-content/uploads/2023/07/equipos_convencionales_mirage-249x300.webp 249w"
+                                                data-lazy-srcset="{{ \App\Models\CompanySetting::get('home_category_1_image', 'https://mirage.mx/wp-content/uploads/2023/07/equipos_convencionales_mirage.webp') }} 563w, https://mirage.mx/wp-content/uploads/2023/07/equipos_convencionales_mirage-249x300.webp 249w"
                                                 data-lazy-sizes="(max-width: 563px) 100vw, 563px"
-                                                data-lazy-src="https://mirage.mx/wp-content/uploads/2023/07/equipos_convencionales_mirage.webp" /><noscript><img
+                                                data-lazy-src="{{ \App\Models\CompanySetting::get('home_category_1_image', 'https://mirage.mx/wp-content/uploads/2023/07/equipos_convencionales_mirage.webp') }}" /><noscript><img
                                                     width="563" height="679"
-                                                    src="https://mirage.mx/wp-content/uploads/2023/07/equipos_convencionales_mirage.webp"
+                                                    src="{{ \App\Models\CompanySetting::get('home_category_1_image', 'https://mirage.mx/wp-content/uploads/2023/07/equipos_convencionales_mirage.webp') }}"
                                                     class="attachment-full size-full wp-image-23697" alt=""
-                                                    srcset="https://mirage.mx/wp-content/uploads/2023/07/equipos_convencionales_mirage.webp 563w, https://mirage.mx/wp-content/uploads/2023/07/equipos_convencionales_mirage-249x300.webp 249w"
+                                                    srcset="{{ \App\Models\CompanySetting::get('home_category_1_image', 'https://mirage.mx/wp-content/uploads/2023/07/equipos_convencionales_mirage.webp') }} 563w, https://mirage.mx/wp-content/uploads/2023/07/equipos_convencionales_mirage-249x300.webp 249w"
                                                     sizes="(max-width: 563px) 100vw, 563px" /></noscript> </a>
                                     </div>
                                 </div>
@@ -362,13 +362,13 @@
                                             <img width="563" height="679"
                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20563%20679'%3E%3C/svg%3E"
                                                 class="attachment-full size-full wp-image-23698" alt=""
-                                                data-lazy-srcset="https://mirage.mx/wp-content/uploads/2023/07/equipos_comercial_ligero_mirage.webp 563w, https://mirage.mx/wp-content/uploads/2023/07/equipos_comercial_ligero_mirage-249x300.webp 249w"
+                                                data-lazy-srcset="{{ \App\Models\CompanySetting::get('home_category_2_image', 'https://mirage.mx/wp-content/uploads/2023/07/equipos_comercial_ligero_mirage.webp') }} 563w, https://mirage.mx/wp-content/uploads/2023/07/equipos_comercial_ligero_mirage-249x300.webp 249w"
                                                 data-lazy-sizes="(max-width: 563px) 100vw, 563px"
-                                                data-lazy-src="https://mirage.mx/wp-content/uploads/2023/07/equipos_comercial_ligero_mirage.webp" /><noscript><img
+                                                data-lazy-src="{{ \App\Models\CompanySetting::get('home_category_2_image', 'https://mirage.mx/wp-content/uploads/2023/07/equipos_comercial_ligero_mirage.webp') }}" /><noscript><img
                                                     loading="lazy" width="563" height="679"
-                                                    src="https://mirage.mx/wp-content/uploads/2023/07/equipos_comercial_ligero_mirage.webp"
+                                                    src="{{ \App\Models\CompanySetting::get('home_category_2_image', 'https://mirage.mx/wp-content/uploads/2023/07/equipos_comercial_ligero_mirage.webp') }}"
                                                     class="attachment-full size-full wp-image-23698" alt=""
-                                                    srcset="https://mirage.mx/wp-content/uploads/2023/07/equipos_comercial_ligero_mirage.webp 563w, https://mirage.mx/wp-content/uploads/2023/07/equipos_comercial_ligero_mirage-249x300.webp 249w"
+                                                    srcset="{{ \App\Models\CompanySetting::get('home_category_2_image', 'https://mirage.mx/wp-content/uploads/2023/07/equipos_comercial_ligero_mirage.webp') }} 563w, https://mirage.mx/wp-content/uploads/2023/07/equipos_comercial_ligero_mirage-249x300.webp 249w"
                                                     sizes="(max-width: 563px) 100vw, 563px" /></noscript> </a>
                                     </div>
                                 </div>
@@ -380,13 +380,13 @@
                                             <img width="563" height="679"
                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20563%20679'%3E%3C/svg%3E"
                                                 class="attachment-full size-full wp-image-23699" alt=""
-                                                data-lazy-srcset="https://mirage.mx/wp-content/uploads/2023/07/linea_blanca_mirage.webp 563w, https://mirage.mx/wp-content/uploads/2023/07/linea_blanca_mirage-249x300.webp 249w"
+                                                data-lazy-srcset="{{ \App\Models\CompanySetting::get('home_category_3_image', 'https://mirage.mx/wp-content/uploads/2023/07/linea_blanca_mirage.webp') }} 563w, https://mirage.mx/wp-content/uploads/2023/07/linea_blanca_mirage-249x300.webp 249w"
                                                 data-lazy-sizes="(max-width: 563px) 100vw, 563px"
-                                                data-lazy-src="https://mirage.mx/wp-content/uploads/2023/07/linea_blanca_mirage.webp" /><noscript><img
+                                                data-lazy-src="{{ \App\Models\CompanySetting::get('home_category_3_image', 'https://mirage.mx/wp-content/uploads/2023/07/linea_blanca_mirage.webp') }}" /><noscript><img
                                                     loading="lazy" width="563" height="679"
-                                                    src="https://mirage.mx/wp-content/uploads/2023/07/linea_blanca_mirage.webp"
+                                                    src="{{ \App\Models\CompanySetting::get('home_category_3_image', 'https://mirage.mx/wp-content/uploads/2023/07/linea_blanca_mirage.webp') }}"
                                                     class="attachment-full size-full wp-image-23699" alt=""
-                                                    srcset="https://mirage.mx/wp-content/uploads/2023/07/linea_blanca_mirage.webp 563w, https://mirage.mx/wp-content/uploads/2023/07/linea_blanca_mirage-249x300.webp 249w"
+                                                    srcset="{{ \App\Models\CompanySetting::get('home_category_3_image', 'https://mirage.mx/wp-content/uploads/2023/07/linea_blanca_mirage.webp') }} 563w, https://mirage.mx/wp-content/uploads/2023/07/linea_blanca_mirage-249x300.webp 249w"
                                                     sizes="(max-width: 563px) 100vw, 563px" /></noscript> </a>
                                     </div>
                                 </div>
@@ -561,10 +561,14 @@
                                                 rel="noopener noreferrer" data-caption=""><img width="1135" height="738"
                                                     src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201135%20738'%3E%3C/svg%3E"
                                                     class="" alt="" decoding="async"
+                                                    data-lazy-srcset="{{ \App\Models\CompanySetting::get('home_bottom_banner_1_image', 'https://mirage.mx/wp-content/uploads/2023/07/especialistas_mirage_web.webp') }} 1135w"
+                                                    data-lazy-sizes="(max-width: 1135px) 100vw, 1135px"
                                                     data-lazy-src="{{ \App\Models\CompanySetting::get('home_bottom_banner_1_image', 'https://mirage.mx/wp-content/uploads/2023/07/especialistas_mirage_web.webp') }}" /><noscript><img
                                                         loading="lazy" width="1135" height="738"
                                                         src="{{ \App\Models\CompanySetting::get('home_bottom_banner_1_image', 'https://mirage.mx/wp-content/uploads/2023/07/especialistas_mirage_web.webp') }}"
-                                                        class="" alt="" decoding="async" /></noscript></a>
+                                                        class="" alt="" decoding="async"
+                                                        srcset="{{ \App\Models\CompanySetting::get('home_bottom_banner_1_image', 'https://mirage.mx/wp-content/uploads/2023/07/especialistas_mirage_web.webp') }} 1135w"
+                                                        sizes="(max-width: 1135px) 100vw, 1135px" /></noscript></a>
                                         </div>
                                     </div>
                                     <div class="su-image-carousel-item">
@@ -573,10 +577,14 @@
                                                 rel="noopener noreferrer" data-caption=""><img width="1135" height="738"
                                                     src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201135%20738'%3E%3C/svg%3E"
                                                     class="" alt="" decoding="async"
+                                                    data-lazy-srcset="{{ \App\Models\CompanySetting::get('home_bottom_banner_2_image', 'https://mirage.mx/wp-content/uploads/2023/07/oportunidades_mirage.webp') }} 1135w"
+                                                    data-lazy-sizes="(max-width: 1135px) 100vw, 1135px"
                                                     data-lazy-src="{{ \App\Models\CompanySetting::get('home_bottom_banner_2_image', 'https://mirage.mx/wp-content/uploads/2023/07/oportunidades_mirage.webp') }}" /><noscript><img
                                                         loading="lazy" width="1135" height="738"
                                                         src="{{ \App\Models\CompanySetting::get('home_bottom_banner_2_image', 'https://mirage.mx/wp-content/uploads/2023/07/oportunidades_mirage.webp') }}"
-                                                        class="" alt="" decoding="async" /></noscript></a>
+                                                        class="" alt="" decoding="async"
+                                                        srcset="{{ \App\Models\CompanySetting::get('home_bottom_banner_2_image', 'https://mirage.mx/wp-content/uploads/2023/07/oportunidades_mirage.webp') }} 1135w"
+                                                        sizes="(max-width: 1135px) 100vw, 1135px" /></noscript></a>
                                         </div>
                                     </div>
                                 </div>
