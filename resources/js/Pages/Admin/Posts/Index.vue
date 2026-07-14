@@ -60,8 +60,12 @@ const getSortIcon = (field) => {
         <div class="py-12">
             <div class="max-w-full">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-6">
-                    <div class="flex justify-between items-center mb-6">
-                        <div class="w-1/3">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6 bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                        <div class="w-full md:w-1/3">
+                            <h3 class="text-lg font-medium text-gray-900 mb-1">Listado de Novedades</h3>
+                            <p class="text-xs text-gray-500">Publica noticias, avisos o artículos de interés para tus clientes. Es como el blog de tu tienda.</p>
+                        </div>
+                        <div class="w-full md:w-1/3">
                             <input type="text" v-model="search" placeholder="Buscar novedades..." class="w-full border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm">
                         </div>
                         <Link :href="route('posts.create')" class="inline-flex items-center px-4 py-2 bg-indigo-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-indigo-700 active:bg-indigo-900 focus:outline-none focus:border-indigo-900 focus:ring focus:ring-indigo-300 disabled:opacity-25 transition">

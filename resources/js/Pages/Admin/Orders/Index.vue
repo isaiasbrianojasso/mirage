@@ -104,17 +104,17 @@ const formatDate = (dateString) => {
             <div class="max-w-full">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                     
-                    <div class="p-6 sm:px-20 bg-white border-b border-gray-200 flex justify-between items-center">
-                        <div>
-                            <div class="mt-8 text-2xl">
+                    <div class="p-6 bg-white border-b border-gray-200 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                        <div class="w-full md:w-1/2">
+                            <div class="text-lg font-medium text-gray-900 mb-1">
                                 Administración de Pedidos
                             </div>
-                            <div class="mt-2 text-gray-500">
-                                Aquí puedes revisar todos los pedidos realizados a través de la tienda, confirmar pagos y actualizar el estado de envío.
+                            <div class="text-xs text-gray-500">
+                                Aquí caen todas las compras que hacen tus clientes en la tienda. Revisa si ya pagaron, cambia el estado a "Enviado" cuando mandes el paquete, y lleva el control de tus ventas.
                             </div>
                         </div>
-                        <div class="w-1/3">
-                            <input type="text" v-model="search" placeholder="Buscar pedidos..." class="mt-8 border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm w-full">
+                        <div class="w-full md:w-1/3">
+                            <input type="text" v-model="search" placeholder="Buscar pedidos..." class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm w-full">
                         </div>
                     </div>
 

@@ -15,10 +15,13 @@
             <div class="max-w-6xl space-y-6">
 
                 <!-- Header Actions -->
-                <div class="flex justify-end mb-4">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
+                    <p class="text-gray-600 bg-white p-4 rounded-lg border border-gray-200 shadow-sm text-sm flex-1">
+                        <strong>¿Qué son los Banners?</strong> Son las imágenes grandes que aparecen en la página principal de la tienda (el carrusel). Úsalos para anunciar promociones, meses sin intereses o productos destacados.
+                    </p>
                     <Link
                         :href="route('banners.create')"
-                        class="inline-flex items-center gap-2 px-5 py-2.5 bg-[#25b9d7] hover:bg-[#1a9ab4] text-white text-sm font-semibold rounded-lg shadow transition-all hover:-translate-y-0.5 hover:shadow-md"
+                        class="inline-flex items-center gap-2 px-5 py-2.5 bg-[#25b9d7] hover:bg-[#1a9ab4] text-white text-sm font-semibold rounded-lg shadow transition-all hover:-translate-y-0.5 hover:shadow-md shrink-0"
                     >
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>

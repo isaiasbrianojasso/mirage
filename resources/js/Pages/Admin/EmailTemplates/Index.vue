@@ -28,7 +28,11 @@
                 <!-- Lista de plantillas -->
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                     <div class="p-6">
-                        <p class="mb-6 text-gray-600">Aquí puedes modificar el código fuente HTML (Blade) de las plantillas de correos enviadas a tus clientes.</p>
+                        <div class="mb-6 bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                            <p class="text-gray-600 text-sm">
+                                <strong>¿Qué son las plantillas de correo?</strong> Es el diseño y texto que reciben tus clientes por email (cuando compran, cuando se envían sus paquetes, etc). Aquí puedes modificar su apariencia y contenido.
+                            </p>
+                        </div>
 
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             <div v-for="template in templates" :key="template.name" class="border border-gray-200 rounded-lg p-5 hover:shadow-md transition">

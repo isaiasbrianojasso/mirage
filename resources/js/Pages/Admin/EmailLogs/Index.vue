@@ -9,8 +9,12 @@
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 
-                <!-- Buscador -->
-                <div class="mb-6 bg-white p-4 rounded-lg shadow-sm border border-gray-200 flex justify-between items-center">
+                <!-- Buscador y Explicacion -->
+                <div class="mb-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-lg font-medium text-gray-900 mb-1">Historial de Correos</h3>
+                        <p class="text-xs text-gray-500">Lleva el control de todos los correos electrónicos que el sistema ha enviado (confirmaciones de pedido, reseteo de contraseñas, etc). Te sirve para comprobar si un cliente sí recibió su correo.</p>
+                    </div>
                     <form @submit.prevent="searchLogs" class="w-full md:w-1/3 relative">
                         <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                             <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -21,7 +25,7 @@
                             v-model="searchForm.search" 
                             type="text" 
                             placeholder="Buscar por correo o asunto..." 
-                            class="pl-10 focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                            class="pl-10 focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md shadow-sm"
                         >
                     </form>
                 </div>

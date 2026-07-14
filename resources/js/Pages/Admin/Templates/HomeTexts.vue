@@ -14,6 +14,14 @@
         <div class="py-10">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
 
+                <!-- Explicación de la sección -->
+                <div class="mb-6 bg-white p-5 rounded-xl shadow-sm border border-gray-100">
+                    <h3 class="text-lg font-medium text-gray-900 mb-1">Página Principal (Home)</h3>
+                    <p class="text-sm text-gray-500">
+                        Aquí controlas todo lo que ven tus clientes apenas entran a tu sitio web. Puedes cambiar las imágenes del carrusel principal, el video promocional, los bloques de información sobre envíos y garantías, y hasta las tarjetas de categorías principales que invitan a explorar tu tienda.
+                    </p>
+                </div>
+
                 <!-- Flash message -->
                 <div v-if="$page.props.flash?.success"
                     class="mb-6 flex items-center gap-3 bg-green-50 border border-green-200 text-green-800 px-5 py-4 rounded-xl shadow-sm">
@@ -73,7 +81,7 @@
                                 group="home_template"
                                 :fields="[
                                     { key: 'home_video_title', label: 'Título del Video', placeholder: 'Función Sígueme' },
-                                    { key: 'home_video_url', label: 'URL del Video', placeholder: 'https://...' },
+                                    { key: 'home_video_url', type: 'video', label: 'Archivo de Video', placeholder: 'Sube un video promocional (mp4, webm...)' },
                                 ]"
                                 :settings="settings.home_template || {}"
                                 @saved="onSaved"
@@ -166,10 +174,10 @@
                                 description="Imágenes con enlace ubicadas al final de la página (Academia, Empleos, etc)."
                                 group="home_template"
                                 :fields="[
-                                    { key: 'home_bottom_banner_1_url', label: 'Enlace (Banner Izquierdo)', placeholder: 'https://especialistas.mirage.mx' },
-                                    { key: 'home_bottom_banner_1_image', type: 'image', label: 'Imagen (Banner Izquierdo)', placeholder: 'https://mirage.mx/.../banner1.webp' },
-                                    { key: 'home_bottom_banner_2_url', label: 'Enlace (Banner Derecho)', placeholder: 'mailto:correo@mirage.mx' },
-                                    { key: 'home_bottom_banner_2_image', type: 'image', label: 'Imagen (Banner Derecho)', placeholder: 'https://mirage.mx/.../banner2.webp' },
+                                    { key: 'home_bottom_banner_1_url', label: 'Enlace (Banner Izquierdo)', placeholder: 'https://www.google.com' },
+                                    { key: 'home_bottom_banner_1_image', type: 'image', label: 'Imagen (Banner Izquierdo)', placeholder: `https://midominio.com/banner1.webp` },
+                                    { key: 'home_bottom_banner_2_url', label: 'Enlace (Banner Derecho)', placeholder: `mailto:correo@midominio.com` },
+                                    { key: 'home_bottom_banner_2_image', type: 'image', label: 'Imagen (Banner Derecho)', placeholder: `https://midominio.com/banner2.webp` },
                                 ]"
                                 :settings="settings.home_template || {}"
                                 @saved="onSaved"
@@ -183,12 +191,18 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
+import { usePage } from '@inertiajs/vue3';
 import AppLayout from '@/Layouts/AppLayout.vue';
 import SettingsGroup from '../CompanySettings/SettingsGroup.vue';
 
 const props = defineProps({
     settings: Object,
+});
+
+const page = usePage();
+const companyName = computed(() => {
+    return page.props.company_settings?.general?.company_name || 'Mi Tienda';
 });
 
 const activeTab = ref(0);

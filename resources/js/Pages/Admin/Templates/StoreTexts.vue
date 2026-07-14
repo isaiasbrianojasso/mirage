@@ -14,6 +14,14 @@
         <div class="py-10">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
 
+                <!-- Explicación de la sección -->
+                <div class="mb-6 bg-white p-5 rounded-xl shadow-sm border border-gray-100">
+                    <h3 class="text-lg font-medium text-gray-900 mb-1">Personaliza tu Tienda</h3>
+                    <p class="text-sm text-gray-500">
+                        Aquí puedes cambiar las palabras y frases que ven tus clientes cuando están navegando por el catálogo de productos. Modifica los títulos, los textos de los botones y la información del pie de página para que tengan la voz de tu marca.
+                    </p>
+                </div>
+
                 <!-- Flash message -->
                 <div v-if="$page.props.flash?.success"
                     class="mb-6 flex items-center gap-3 bg-green-50 border border-green-200 text-green-800 px-5 py-4 rounded-xl shadow-sm">
@@ -108,8 +116,8 @@
                                 description="Configuración de títulos y SEO para la vista general de productos."
                                 group="content"
                                 :fields="[
-                                    { key: 'catalog_all_products_title', label: 'Título en Navegador (SEO)', placeholder: 'Todos los Productos Mirage' },
-                                    { key: 'catalog_all_products_heading', label: 'Título Principal en Página (H1)', placeholder: 'Todos los Productos Mirage' },
+                                    { key: 'catalog_all_products_title', label: 'Título en Navegador (SEO)', placeholder: `Todos los Productos de ${companyName}` },
+                                    { key: 'catalog_all_products_heading', label: 'Título Principal en Página (H1)', placeholder: `Todos los Productos de ${companyName}` },
                                 ]"
                                 :settings="settings.content || {}"
                                 @saved="onSaved"
@@ -124,9 +132,9 @@
                                 description="Textos de los botones que aparecen en el menú superior."
                                 group="content"
                                 :fields="[
-                                    { key: 'catalog_menu_company_label', label: 'Botón - Empresa', placeholder: 'Mirage' },
-                                    { key: 'catalog_menu_blog_label', label: 'Botón - Blog', placeholder: 'Mirage Blog' },
-                                    { key: 'catalog_store_label', label: 'Botón - Tienda', placeholder: 'Tienda Mirage' },
+                                    { key: 'catalog_menu_company_label', label: 'Botón - Empresa', placeholder: companyName },
+                                    { key: 'catalog_menu_blog_label', label: 'Botón - Blog', placeholder: `Blog de ${companyName}` },
+                                    { key: 'catalog_store_label', label: 'Botón - Tienda', placeholder: `Tienda ${companyName}` },
                                 ]"
                                 :settings="settings.content || {}"
                                 @saved="onSaved"
@@ -141,9 +149,9 @@
                                 description="Información de certificaciones y logística al fondo de la página."
                                 group="content"
                                 :fields="[
-                                    { key: 'catalog_certification_label', label: 'Enlace - Certificación', placeholder: 'Certificacion Mirage' },
-                                    { key: 'catalog_app_home_label', label: 'Enlace - App Home', placeholder: 'Mirage Home' },
-                                    { key: 'catalog_footer_brand_title', label: 'Título de Marca', placeholder: 'Mirage Electrodomésticos' },
+                                    { key: 'catalog_certification_label', label: 'Enlace - Certificación', placeholder: `Certificaciones de ${companyName}` },
+                                    { key: 'catalog_app_home_label', label: 'Enlace - App Home', placeholder: `${companyName} Home` },
+                                    { key: 'catalog_footer_brand_title', label: 'Título de Marca', placeholder: companyName },
                                     { key: 'catalog_logistics_image', type: 'image', label: 'Imagen de Logística', placeholder: 'Dejar vacío para imagen por defecto' },
                                 ]"
                                 :settings="settings.content || {}"
@@ -159,12 +167,19 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
+import { usePage } from '@inertiajs/vue3';
 import AppLayout from '@/Layouts/AppLayout.vue';
 import SettingsGroup from '../CompanySettings/SettingsGroup.vue';
 
 const props = defineProps({
     settings: Object,
+});
+
+const page = usePage();
+// Get company name from general settings or fallback to 'Mi Tienda'
+const companyName = computed(() => {
+    return page.props.company_settings?.general?.company_name || 'Mi Tienda';
 });
 
 const activeTab = ref(0);

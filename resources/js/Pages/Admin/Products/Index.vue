@@ -60,8 +60,11 @@ const getSortIcon = (field) => {
         <div class="py-12">
             <div class="max-w-full">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-6">
-                    <div class="flex justify-between items-center mb-6 bg-white p-4 rounded-lg shadow-sm">
-                        <h3 class="text-lg font-medium text-gray-900 w-1/4">Listado de Productos</h3>
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6 bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                        <div class="w-full md:w-1/3">
+                            <h3 class="text-lg font-medium text-gray-900 mb-1">Listado de Productos</h3>
+                            <p class="text-xs text-gray-500">Aquí puedes ver, buscar y gestionar todo lo que vendes en tu tienda. (Aires acondicionados, refrigeradores, etc.)</p>
+                        </div>
                         <div class="w-1/2 px-4">
                             <input type="text" v-model="search" placeholder="Buscar productos por nombre o SKU..." class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm w-full">
                         </div>

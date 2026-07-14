@@ -72,15 +72,19 @@ const formatDate = (dateString) => {
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 
-                <div class="mb-4 flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
-                    <div class="w-1/3">
+                <div class="mb-4 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                    <div class="w-full md:w-1/3">
+                        <h3 class="text-lg font-medium text-gray-900 mb-1">Listado de Clientes</h3>
+                        <p class="text-xs text-gray-500">Administra a las personas que compran en tu tienda. Puedes ver quiénes están suscritos al boletín y dar accesos especiales.</p>
+                    </div>
+                    <div class="w-full md:w-1/3">
                         <input type="text" v-model="search" placeholder="Buscar clientes..." class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm w-full">
                     </div>
                     <div class="flex gap-2">
-                        <a :href="route('customers.export-newsletter')" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded inline-flex items-center">
+                        <a :href="route('customers.export-newsletter')" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded inline-flex items-center text-sm">
                             Exportar CSV Boletines
                         </a>
-                        <Link :href="route('customers.create')" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">
+                        <Link :href="route('customers.create')" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded text-sm">
                             Añadir Nuevo Cliente
                         </Link>
                     </div>

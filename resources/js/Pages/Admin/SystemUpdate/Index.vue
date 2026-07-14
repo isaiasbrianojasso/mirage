@@ -98,7 +98,7 @@ const applyUpdate = async () => {
                         <h1 class="text-3xl font-semibold tracking-tight text-gray-900 mb-1">
                             Actualizaciones del Sistema
                         </h1>
-                        <p class="text-gray-500 text-sm">Gestiona y aplica actualizaciones directamente desde GitHub.</p>
+                        <p class="text-gray-500 text-sm mt-1">Aquí puedes actualizar el sistema de tu tienda cuando haya nuevas mejoras o correcciones disponibles, de forma automática y segura.</p>
                     </div>
                 </div>
 

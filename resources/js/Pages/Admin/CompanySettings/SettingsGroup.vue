@@ -75,6 +75,37 @@
                                 />
                             </div>
 
+                            <div v-else-if="field.type === 'video'" class="space-y-3">
+                                <div v-if="getPreview(field)" class="relative inline-block border border-gray-200 rounded-xl overflow-hidden bg-gray-50 group">
+                                    <video 
+                                        :src="getPreview(field)" 
+                                        class="h-32 object-contain" 
+                                        controls
+                                    ></video>
+                                    <button 
+                                        v-if="typeof form.settings[field.key] !== 'string' || form.settings[field.key]"
+                                        type="button" 
+                                        @click="clearImage(field.key)" 
+                                        class="absolute top-2 right-2 bg-red-500 text-white rounded-full p-1 hover:bg-red-600 focus:outline-none shadow-sm opacity-0 group-hover:opacity-100 transition-opacity"
+                                        title="Remover video"
+                                    >
+                                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                                    </button>
+                                </div>
+                                <input
+                                    :id="field.key"
+                                    type="file"
+                                    accept="video/*"
+                                    @input="handleFileChange($event, field.key)"
+                                    class="block w-full text-sm text-slate-500
+                                        file:mr-4 file:py-2.5 file:px-4
+                                        file:rounded-xl file:border-0
+                                        file:text-sm file:font-semibold
+                                        file:bg-indigo-50 file:text-indigo-700
+                                        hover:file:bg-indigo-100 transition"
+                                />
+                            </div>
+
                             <div v-else-if="field.type === 'color'" class="flex items-center gap-3">
                                 <div class="relative overflow-hidden rounded-lg w-10 h-10 border border-gray-200 shadow-sm flex-shrink-0">
                                     <input

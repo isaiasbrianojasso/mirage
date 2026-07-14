@@ -10,7 +10,15 @@
         </template>
 
         <div class="py-10">
-            <div class="max-w-6xl space-y-6">
+            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8 space-y-6">
+
+                <!-- Explicación de la sección -->
+                <div class="mb-6 bg-white p-5 rounded-xl shadow-sm border border-gray-100">
+                    <h3 class="text-lg font-medium text-gray-900 mb-1">Ajustes Globales del Sistema</h3>
+                    <p class="text-sm text-gray-500">
+                        Este es el centro de control principal de tu empresa. Aquí puedes modificar la información básica (nombre, logo, colores), configurar cómo te pagan tus clientes, enlazar tus redes sociales y ajustar las conexiones con otros servicios (como envíos de correos y notificaciones).
+                    </p>
+                </div>
 
                 <!-- Flash message -->
                 <div v-if="$page.props.flash?.success"
@@ -49,11 +57,11 @@
                     description="Nombre, descripción y URL del sitio web."
                     group="general"
                     :fields="[
-                        { key: 'company_name', label: 'Nombre de la empresa', placeholder: 'Ej: Mirage' },
-                        { key: 'company_name_full', label: 'Nombre completo', placeholder: 'Ej: Mirage México' },
-                        { key: 'company_description', label: 'Descripción', type: 'textarea', placeholder: 'Descripción breve...' },
+                        { key: 'company_name', label: 'Nombre de la empresa', placeholder: 'Ej: Mi Empresa' },
+                        { key: 'company_name_full', label: 'Nombre completo', placeholder: 'Ej: Mi Empresa S.A. de C.V.' },
+                        { key: 'company_description', label: 'Descripción', type: 'textarea', placeholder: 'Descripción breve de tu empresa...' },
                         { key: 'company_tagline', label: 'Tagline / Lema', placeholder: 'Ej: La máxima eficiencia' },
-                        { key: 'company_website_url', label: 'URL del sitio web', placeholder: 'https://www.ejemplo.mx' },
+                        { key: 'company_website_url', label: 'URL del sitio web', placeholder: 'https://www.midominio.com' },
                     ]"
                     :settings="settings.general || {}"
                     @saved="onSaved"
@@ -83,8 +91,8 @@
                     description="Email, teléfono y dirección."
                     group="contact"
                     :fields="[
-                        { key: 'contact_email', label: 'Email de contacto', placeholder: 'contacto@ejemplo.mx' },
-                        { key: 'contact_phone', label: 'Teléfono', placeholder: '(644) 410 9800' },
+                        { key: 'contact_email', label: 'Email de contacto', placeholder: 'contacto@midominio.com' },
+                        { key: 'contact_phone', label: 'Teléfono', placeholder: '(55) 1234 5678' },
                         { key: 'contact_address', label: 'Dirección', type: 'textarea', placeholder: 'Calle, Colonia, Ciudad...' },
                     ]"
                     :settings="settings.contact || {}"
@@ -99,17 +107,15 @@
                     description="URLs de redes sociales y portales externos."
                     group="social"
                     :fields="[
-                        { key: 'social_facebook', label: 'Facebook', placeholder: 'https://www.facebook.com/...' },
-                        { key: 'online_store_url', label: 'Tienda en línea', placeholder: 'https://www.tienda.mx' },
-                        { key: 'b2b_portal_url', label: 'Portal B2B', placeholder: 'https://b2b.ejemplo.mx' },
-                        { key: 'certification_portal_url', label: 'Portal de Certificación', placeholder: 'https://certificacion.ejemplo.mx' },
-                        { key: 'installation_service_url', label: 'Servicio de Instalación', placeholder: 'https://www.instalacion.mx' },
+                        { key: 'social_facebook', label: 'Facebook', placeholder: 'https://www.facebook.com/tu-pagina' },
+                        { key: 'online_store_url', label: 'Tienda en línea', placeholder: 'https://www.tienda.midominio.com' },
+                        { key: 'b2b_portal_url', label: 'Portal B2B', placeholder: 'https://b2b.midominio.com' },
+                        { key: 'certification_portal_url', label: 'Portal de Certificación', placeholder: 'https://certificacion.midominio.com' },
+                        { key: 'installation_service_url', label: 'Servicio de Instalación', placeholder: 'https://www.instalacion.midominio.com' },
                     ]"
                     :settings="settings.social || {}"
                     @saved="onSaved"
                 />
-
-
 
                 <!-- Payments (Separados en Módulos tipo PrestaShop) -->
                 <div v-if="activeTab === 'payments'" class="space-y-6">
@@ -155,10 +161,10 @@
                         :fields="[
                             { key: 'payment_transfer_enabled', label: '¿Habilitar Transferencia?', type: 'select', options: [{label: 'Sí, habilitar', value: '1'}, {label: 'No, deshabilitar', value: '0'}] },
                             { key: 'transfer_bank_name', label: 'Nombre del Banco', placeholder: 'Ej: BBVA Bancomer', showIf: (s) => s.payment_transfer_enabled === '1' },
-                            { key: 'transfer_account_name', label: 'Titular de la cuenta', placeholder: 'Ej: Mirage México S.A. de C.V.', showIf: (s) => s.payment_transfer_enabled === '1' },
+                            { key: 'transfer_account_name', label: 'Titular de la cuenta', placeholder: `Ej: ${companyName}`, showIf: (s) => s.payment_transfer_enabled === '1' },
                             { key: 'transfer_account_number', label: 'Número de Cuenta', placeholder: 'Ej: 0123456789', showIf: (s) => s.payment_transfer_enabled === '1' },
                             { key: 'transfer_clabe', label: 'CLABE Interbancaria', placeholder: 'Ej: 012345678901234567', showIf: (s) => s.payment_transfer_enabled === '1' },
-                            { key: 'transfer_instructions', label: 'Instrucciones adicionales', type: 'textarea', placeholder: 'Ej: Favor de enviar el comprobante de pago a pagos@mirage.mx', showIf: (s) => s.payment_transfer_enabled === '1' },
+                            { key: 'transfer_instructions', label: 'Instrucciones adicionales', type: 'textarea', placeholder: 'Ej: Favor de enviar el comprobante de pago a pagos@midominio.com', showIf: (s) => s.payment_transfer_enabled === '1' },
                         ]"
                         :settings="settings.payments || {}"
                         @saved="onSaved"
@@ -180,8 +186,8 @@
                             { key: 'mail_username', label: 'Usuario SMTP', placeholder: 'Usuario', showIf: (s) => ['smtp', 'phpmailer'].includes(s.mail_mailer) },
                             { key: 'mail_password', label: 'Contraseña SMTP', type: 'password', placeholder: 'Contraseña', showIf: (s) => ['smtp', 'phpmailer'].includes(s.mail_mailer) },
                             { key: 'mail_encryption', label: 'Encriptación', type: 'select', options: [{label: 'Ninguna', value: ''}, {label: 'TLS', value: 'tls'}, {label: 'SSL', value: 'ssl'}], showIf: (s) => ['smtp', 'phpmailer'].includes(s.mail_mailer) },
-                            { key: 'mail_from_address', label: 'Correo de Remitente (From)', placeholder: 'Ej: no-reply@tiendamirage.mx' },
-                            { key: 'mail_from_name', label: 'Nombre de Remitente (From)', placeholder: 'Ej: Tienda Mirage' },
+                            { key: 'mail_from_address', label: 'Correo de Remitente (From)', placeholder: 'Ej: no-reply@midominio.com' },
+                            { key: 'mail_from_name', label: 'Nombre de Remitente (From)', placeholder: `Ej: Tienda ${companyName}` },
                         ]"
                         :settings="settings.notifications || {}"
                         @saved="onSaved"
@@ -273,12 +279,18 @@
 </template>
 
 <script setup>
-import { ref, watch, onMounted } from 'vue';
+import { ref, watch, onMounted, computed } from 'vue';
+import { usePage } from '@inertiajs/vue3';
 import AppLayout from '@/Layouts/AppLayout.vue';
 import SettingsGroup from './SettingsGroup.vue';
 
 const props = defineProps({
     settings: Object,
+});
+
+const page = usePage();
+const companyName = computed(() => {
+    return page.props.company_settings?.general?.company_name || 'Mi Empresa';
 });
 
 const tabs = [
@@ -296,14 +308,14 @@ const tabs = [
 const activeTab = ref('general');
 
 onMounted(() => {
-    const savedTab = localStorage.getItem('mirage_settings_tab');
+    const savedTab = localStorage.getItem('company_settings_tab');
     if (savedTab) {
         activeTab.value = savedTab;
     }
 });
 
 watch(activeTab, (newVal) => {
-    localStorage.setItem('mirage_settings_tab', newVal);
+    localStorage.setItem('company_settings_tab', newVal);
 });
 
 function onSaved() {
