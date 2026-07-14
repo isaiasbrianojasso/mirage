@@ -76,6 +76,7 @@ const getSortIcon = (field) => {
                                     <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer hover:bg-gray-100" @click="sortBy('name')">
                                         Nombre <span class="ml-1">{{ getSortIcon('name') }}</span>
                                     </th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Categoría Padre</th>
                                     <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Slug</th>
                                     <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer hover:bg-gray-100" @click="sortBy('is_active')">
                                         Estado <span class="ml-1">{{ getSortIcon('is_active') }}</span>
@@ -86,6 +87,10 @@ const getSortIcon = (field) => {
                             <tbody class="bg-white divide-y divide-gray-200">
                                 <tr v-for="category in categories.data" :key="category.id">
                                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{{ category.name }}</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                        <span v-if="category.parent">{{ category.parent.name }}</span>
+                                        <span v-else class="text-gray-400 italic">-- Ninguna --</span>
+                                    </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ category.slug }}</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                         <span v-if="category.is_active" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Activo</span>

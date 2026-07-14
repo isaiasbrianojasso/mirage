@@ -173,13 +173,14 @@ const submit = () => {
                                     <input type="text" v-model="form.name" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Ej: DHL Express">
                                 </div>
                                 <div>
-                                    <label class="block text-sm font-medium text-gray-700">Tiempo de Tránsito</label>
-                                    <input type="text" v-model="form.transit_time" placeholder="Ej: 24 a 48 horas" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
-                                    <p class="mt-1 text-xs text-gray-500">Se mostrará al cliente al hacer el checkout.</p>
+                                    <label class="block text-sm font-medium text-gray-700">Tiempo de Tránsito (Estimado)</label>
+                                    <input type="text" v-model="form.transit_time" placeholder="Ej: 2 a 3 días hábiles" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                                    <p class="mt-1 text-xs text-gray-500">Este texto lo verá el cliente al momento de pagar para saber cuándo llega su pedido.</p>
                                 </div>
                                 <div>
-                                    <label class="block text-sm font-medium text-gray-700">Grado de Velocidad (0 - 9)</label>
+                                    <label class="block text-sm font-medium text-gray-700">Calificación de Velocidad (0 a 9)</label>
                                     <input type="number" min="0" max="9" v-model="form.speed_grade" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                                    <p class="mt-1 text-xs text-gray-500">Sirve para ordenar las paqueterías. 0 es la más lenta, 9 es la más rápida.</p>
                                 </div>
                                 <div>
                                     <label class="block text-sm font-medium text-gray-700">URL de Rastreo</label>
@@ -223,24 +224,26 @@ const submit = () => {
                         <div v-if="!form.is_free" class="space-y-6">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
-                                    <label class="block text-sm font-medium text-gray-700">Facturación</label>
+                                    <label class="block text-sm font-medium text-gray-700">¿Cómo se calcula el costo de envío?</label>
                                     <div class="mt-2 space-y-2">
                                         <label class="flex items-center">
                                             <input type="radio" v-model="form.billing_behavior" value="price" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
-                                            <span class="ml-2 text-sm text-gray-700">De acuerdo al precio total</span>
+                                            <span class="ml-2 text-sm text-gray-700">Por el precio total de la compra</span>
                                         </label>
                                         <label class="flex items-center">
                                             <input type="radio" v-model="form.billing_behavior" value="weight" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
-                                            <span class="ml-2 text-sm text-gray-700">De acuerdo al peso total</span>
+                                            <span class="ml-2 text-sm text-gray-700">Por el peso total (kg) de los productos</span>
                                         </label>
                                     </div>
+                                    <p class="mt-1 text-xs text-gray-500">Define si cobrarás envío según lo que gasten o según cuánto pese el paquete.</p>
                                 </div>
                                 <div>
-                                    <label class="block text-sm font-medium text-gray-700">Comportamiento fuera de rango</label>
+                                    <label class="block text-sm font-medium text-gray-700">¿Qué pasa si el pedido supera tu límite máximo?</label>
                                     <select v-model="form.out_of_range_behavior" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
-                                        <option value="highest_range">Aplicar el costo del rango más alto</option>
-                                        <option value="disable">Desactivar transportista</option>
+                                        <option value="highest_range">Cobrarle la tarifa más cara que tengas</option>
+                                        <option value="disable">Ocultar esta paquetería (no podrá elegirla)</option>
                                     </select>
+                                    <p class="mt-1 text-xs text-gray-500">Si alguien pide 100kg y tu límite son 50kg, ¿qué hacemos?</p>
                                 </div>
                             </div>
 

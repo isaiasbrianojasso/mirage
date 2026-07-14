@@ -32,7 +32,7 @@ class CategoryController extends Controller
             $sortDirection = 'asc';
         }
 
-        $categories = $query->orderBy($sortField, $sortDirection)->paginate(15)->withQueryString();
+        $categories = $query->with('parent')->orderBy($sortField, $sortDirection)->paginate(15)->withQueryString();
 
         return Inertia::render('Admin/Categories/Index', [
             'categories' => $categories,
@@ -42,7 +42,9 @@ class CategoryController extends Controller
 
     public function create()
     {
-        return Inertia::render('Admin/Categories/Form');
+        return Inertia::render('Admin/Categories/Form', [
+            'parentCategories' => Category::whereNull('parent_id')->get()
+        ]);
     }
 
     public function store(Request $request)
@@ -51,6 +53,7 @@ class CategoryController extends Controller
             'name' => 'required|string|max:255',
             'description' => 'nullable|string',
             'is_active' => 'boolean',
+            'parent_id' => 'nullable|exists:categories,id',
             'image' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
         ]);
         
@@ -68,7 +71,8 @@ class CategoryController extends Controller
     public function edit(Category $category)
     {
         return Inertia::render('Admin/Categories/Form', [
-            'category' => $category
+            'category' => $category,
+            'parentCategories' => Category::where('id', '!=', $category->id)->whereNull('parent_id')->get()
         ]);
     }
 
@@ -78,9 +82,15 @@ class CategoryController extends Controller
             'name' => 'required|string|max:255',
             'description' => 'nullable|string',
             'is_active' => 'boolean',
+            'parent_id' => 'nullable|exists:categories,id',
             'image' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
         ]);
         
+        // Prevent self-referencing loop
+        if ($validated['parent_id'] == $category->id) {
+            $validated['parent_id'] = null;
+        }
+
         $validated['slug'] = Str::slug($validated['name']);
         
         if ($request->hasFile('image')) {

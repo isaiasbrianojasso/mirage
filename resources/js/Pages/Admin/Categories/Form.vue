@@ -11,6 +11,10 @@ const props = defineProps({
     category: {
         type: Object,
         default: null
+    },
+    parentCategories: {
+        type: Array,
+        default: () => []
     }
 });
 
@@ -20,6 +24,7 @@ const form = useForm({
     _method: isEditing ? 'put' : 'post',
     name: props.category?.name || '',
     description: props.category?.description || '',
+    parent_id: props.category?.parent_id || '',
     is_active: props.category ? !!props.category.is_active : true,
     image: null,
 });
@@ -55,9 +60,24 @@ const handleImageChange = (e) => {
                     <form @submit.prevent="submit" enctype="multipart/form-data">
                         <div class="grid grid-cols-1 gap-6">
                             <div>
-                                <InputLabel for="name" value="Nombre de la Categoría" />
-                                <TextInput id="name" v-model="form.name" type="text" class="mt-1 block w-full" required autofocus autocomplete="name" />
+                                <InputLabel for="name" value="Nombre de la Categoría o Subcategoría" />
+                                <TextInput id="name" v-model="form.name" type="text" class="mt-1 block w-full" placeholder="Ej. Refrigerador, Mini Bar, etc." required autofocus autocomplete="name" />
                                 <InputError class="mt-2" :message="form.errors.name" />
+                            </div>
+
+                            <div>
+                                <InputLabel for="parent_id" value="¿Pertenece a otra categoría? (Opcional)" />
+                                <select id="parent_id" v-model="form.parent_id" class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm mt-1 block w-full">
+                                    <option value="">-- Ninguna (Es una categoría principal) --</option>
+                                    <option v-for="parent in parentCategories" :key="parent.id" :value="parent.id">
+                                        {{ parent.name }}
+                                    </option>
+                                </select>
+                                <p class="mt-2 text-sm text-gray-500">
+                                    Si dejas esto en "Ninguna", crearás una categoría grande (Ejemplo: <b>Refrigerador</b>).<br>
+                                    Si seleccionas otra de la lista, crearás una subcategoría. (Ejemplo: para crear <b>Mini Bar</b>, escribe ese nombre arriba y aquí selecciona <b>Refrigerador</b>).
+                                </p>
+                                <InputError class="mt-2" :message="form.errors.parent_id" />
                             </div>
 
                             <div>

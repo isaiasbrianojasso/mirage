@@ -71,8 +71,8 @@ const submit = () => {
                     <form @submit.prevent="submit">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div class="col-span-2 md:col-span-1">
-                                <InputLabel for="name" value="Nombre de la Ubicación" />
-                                <TextInput id="name" v-model="form.name" type="text" class="mt-1 block w-full" required autofocus autocomplete="name" />
+                                <InputLabel for="name" value="Nombre del Centro o Distribuidor" />
+                                <TextInput id="name" v-model="form.name" type="text" class="mt-1 block w-full" placeholder="Ej. Centro Mirage Norte" required autofocus autocomplete="name" />
                                 <InputError class="mt-2" :message="form.errors.name" />
                             </div>
 
@@ -86,7 +86,10 @@ const submit = () => {
                             </div>
 
                             <div class="col-span-2">
-                                <InputLabel for="address_search" value="Buscar Dirección en Mapa" />
+                                <InputLabel for="address_search" value="Escribe la dirección para buscarla en el mapa (Opcional)" />
+                                <p class="text-xs text-gray-500 mb-2 mt-1">
+                                    Al empezar a escribir aquí, el sistema buscará la dirección en el mapa automáticamente. Al seleccionarla, se llenarán solos los datos de abajo (Ciudad, Código Postal, Latitud, etc).
+                                </p>
                                 <AddressAutocomplete
                                     v-model="form.address"
                                     :with-map="true"
@@ -138,7 +141,10 @@ const submit = () => {
                             
                             <div class="col-span-2">
                                 <hr class="my-4 border-gray-200">
-                                <h3 class="text-lg font-medium text-gray-900 mb-4">Coordenadas para el Mapa</h3>
+                                <h3 class="text-lg font-medium text-gray-900 mb-1">Coordenadas Exactas para el Mapa</h3>
+                                <p class="text-sm text-gray-500 mb-4">
+                                    Estos números indican el punto exacto en el mapa (como un GPS). Si usaste el buscador de arriba o moviste el pin rojo en el mapa, estos números ya se llenaron solos y no necesitas tocarlos.
+                                </p>
                             </div>
 
                             <div>

@@ -87,6 +87,10 @@ const deleteCarrier = (id) => {
                 <div v-if="$page.props.flash && $page.props.flash.success" class="mb-4 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
                     <span class="block sm:inline">{{ $page.props.flash.success }}</span>
                 </div>
+                
+                <p class="text-gray-600 mb-6 bg-white p-4 rounded-lg border border-gray-200 shadow-sm text-sm">
+                    <strong>¿Qué son los Transportistas?</strong> Son las paqueterías o métodos de envío que ofreces (Ej: DHL, Estafeta, Envío Local). Aquí puedes configurar cuánto cobran, cuánto tardan y a qué zonas del país están disponibles.
+                </p>
 
                 <div class="bg-white overflow-hidden shadow-sm rounded-lg border border-gray-200">
                     <div class="p-6 bg-white border-b border-gray-200">

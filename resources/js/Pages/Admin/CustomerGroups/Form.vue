@@ -72,7 +72,8 @@ const toggleAllCategories = (e) => {
                                 
                                 <div>
                                     <label class="block text-sm font-medium text-gray-700">Nombre del Grupo</label>
-                                    <input type="text" v-model="form.name" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                                    <input type="text" v-model="form.name" placeholder="Ej. Mayoristas, Técnicos, VIP" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                                    <p class="mt-1 text-xs text-gray-500">Este nombre te ayudará a identificar al grupo cuando se lo asignes a un cliente.</p>
                                     <p v-if="form.errors.name" class="mt-2 text-sm text-red-600">{{ form.errors.name }}</p>
                                 </div>
 
@@ -84,34 +85,36 @@ const toggleAllCategories = (e) => {
                                             %
                                         </span>
                                     </div>
-                                    <p class="mt-1 text-xs text-gray-500">Descuento aplicado a todos los productos.</p>
+                                    <p class="mt-1 text-xs text-gray-500">
+                                        Si pones por ejemplo "20", todos los clientes de este grupo verán los precios un 20% más baratos en toda la tienda automáticamente. Pon 0 si no quieres darles descuento especial.
+                                    </p>
                                     <p v-if="form.errors.discount_percentage" class="mt-2 text-sm text-red-600">{{ form.errors.discount_percentage }}</p>
                                 </div>
 
                                 <div>
-                                    <label class="block text-sm font-medium text-gray-700">Mostrar Precios</label>
+                                    <label class="block text-sm font-medium text-gray-700">¿Pueden ver los precios de los productos?</label>
                                     <div class="mt-2 space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
                                         <div class="flex items-center">
                                             <input type="radio" :value="true" v-model="form.show_prices" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
-                                            <label class="ml-3 block text-sm font-medium text-gray-700">Sí</label>
+                                            <label class="ml-3 block text-sm font-medium text-gray-700">Sí, mostrar precios</label>
                                         </div>
                                         <div class="flex items-center">
                                             <input type="radio" :value="false" v-model="form.show_prices" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
-                                            <label class="ml-3 block text-sm font-medium text-gray-700">No (Modo Catálogo)</label>
+                                            <label class="ml-3 block text-sm font-medium text-gray-700">No (Solo verán el catálogo, como un folleto)</label>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div>
-                                    <label class="block text-sm font-medium text-gray-700">Visualización de Impuestos</label>
+                                    <label class="block text-sm font-medium text-gray-700">¿Cómo ven los precios estos clientes?</label>
                                     <div class="mt-2 space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
                                         <div class="flex items-center">
                                             <input type="radio" :value="true" v-model="form.show_taxes" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
-                                            <label class="ml-3 block text-sm font-medium text-gray-700">Con IVA incluido</label>
+                                            <label class="ml-3 block text-sm font-medium text-gray-700">Precio normal (Con IVA incluido)</label>
                                         </div>
                                         <div class="flex items-center">
                                             <input type="radio" :value="false" v-model="form.show_taxes" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
-                                            <label class="ml-3 block text-sm font-medium text-gray-700">Sin IVA</label>
+                                            <label class="ml-3 block text-sm font-medium text-gray-700">Precio para negocio (Sin IVA)</label>
                                         </div>
                                     </div>
                                     <p v-if="form.errors.show_taxes" class="mt-2 text-sm text-red-600">{{ form.errors.show_taxes }}</p>
@@ -120,8 +123,10 @@ const toggleAllCategories = (e) => {
 
                             <!-- Columna Derecha: Restricciones de Categoría -->
                             <div class="space-y-6">
-                                <h3 class="text-lg font-medium leading-6 text-gray-900 border-b pb-2">Restricción de Categorías</h3>
-                                <p class="text-sm text-gray-500">Selecciona las categorías que los clientes de este grupo pueden ver en la tienda.</p>
+                                <h3 class="text-lg font-medium leading-6 text-gray-900 border-b pb-2">Permisos de Categorías</h3>
+                                <p class="text-sm text-gray-500">
+                                    Elige qué categorías pueden ver en la tienda los clientes que pertenezcan a este grupo. Si no marcas una categoría, no podrán ver los productos de esa familia (Por ejemplo, puedes hacer que los "Mayoristas de Refrigeración" no vean los de Línea Blanca).
+                                </p>
                                 
                                 <div class="border rounded-md p-4 bg-gray-50 max-h-80 overflow-y-auto">
                                     <div class="mb-3 border-b pb-2">

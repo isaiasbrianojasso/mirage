@@ -230,6 +230,9 @@ const removeExistingDocument = (docId) => {
                                         <InputLabel value="Ficha Técnica (Especificaciones)" />
                                         <button type="button" @click="addSpecification" class="text-sm font-semibold text-blue-600 hover:text-blue-900">+ Agregar Especificación</button>
                                     </div>
+                                    <p class="text-sm text-gray-500 mb-3">
+                                        Escribe las características principales que quieres destacar. Estas aparecerán como una lista con viñetas (checkmarks verdes) justo debajo de la descripción corta en la tienda, ideal para resaltar los beneficios más importantes.
+                                    </p>
                                     <div v-for="(spec, index) in form.specifications" :key="index" class="flex items-center mb-2">
                                         <TextInput v-model="form.specifications[index]" type="text" class="block w-full text-sm" placeholder="Ej. Eficiencia energética superior" />
                                         <button type="button" @click="removeSpecification(index)" class="ml-2 text-red-500 hover:text-red-700 font-bold">&times;</button>
@@ -238,6 +241,9 @@ const removeExistingDocument = (docId) => {
 
                                 <div class="pt-4 border-t border-gray-200">
                                     <InputLabel for="documents_upload" value="Documentos Técnicos (PDFs)" />
+                                    <p class="text-sm text-gray-500 mb-2 mt-1">
+                                        Sube aquí archivos como el Manual de Usuario o Folletos en formato PDF. Estos documentos aparecerán organizados en una pestaña especial para que los clientes puedan descargarlos directamente.
+                                    </p>
                                     <input id="documents_upload" type="file" multiple @change="handleDocumentsChange" accept=".pdf,.doc,.docx,.zip" class="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100" />
                                     
                                     <div v-if="form.documents.length > 0" class="mt-4 space-y-3">
@@ -280,13 +286,16 @@ const removeExistingDocument = (docId) => {
 
                                 <!-- Variants Manager -->
                                 <div class="mt-8 pt-6 border-t border-gray-200">
-                                    <div class="flex justify-between items-center mb-4">
-                                        <h3 class="text-lg font-medium text-gray-900">Variantes / Combinaciones</h3>
-                                        <button type="button" @click="addVariant" class="px-4 py-2 bg-gray-800 text-white text-xs font-semibold rounded-md hover:bg-gray-700">+ Generar Variante</button>
+                                    <div class="flex justify-between items-center mb-1">
+                                        <h3 class="text-lg font-medium text-gray-900">Variantes y Modelos (Opcional)</h3>
+                                        <button type="button" @click="addVariant" class="px-4 py-2 bg-gray-800 text-white text-xs font-semibold rounded-md hover:bg-gray-700">+ Agregar Variante</button>
                                     </div>
+                                    <p class="text-sm text-gray-500 mb-4">
+                                        Usa las variantes si este producto tiene diferentes modelos (ejemplo: 1 Tonelada, 2 Toneladas). Cada variante generará una pestaña nueva en la página del producto para que el cliente vea los detalles técnicos específicos de ese modelo, tal como funciona en la página principal de Mirage.
+                                    </p>
                                     
                                     <div v-if="form.variants.length === 0" class="text-sm text-gray-500 py-4 text-center bg-gray-50 rounded-md border border-dashed border-gray-300">
-                                        Sin variantes. Se usarán los precios, stock y pesos del producto base.
+                                        No has creado modelos diferentes. La tienda mostrará un producto único usando el precio y la información general que llenaste arriba.
                                     </div>
 
                                     <div v-else class="space-y-4">
@@ -351,12 +360,15 @@ const removeExistingDocument = (docId) => {
                                             
                                             <!-- Variant Attributes Manager -->
                                             <div class="mt-4 border-t border-gray-200 pt-3">
-                                                <div class="flex justify-between items-center mb-2">
-                                                    <InputLabel value="Especificaciones Técnicas de la Variante" />
-                                                    <button type="button" @click="addVariantAttribute(index)" class="text-xs font-semibold text-blue-600 hover:text-blue-900">+ Agregar Especificación</button>
+                                                <div class="flex justify-between items-center mb-1">
+                                                    <InputLabel value="Tabla de Especificaciones de este Modelo" />
+                                                    <button type="button" @click="addVariantAttribute(index)" class="text-xs font-semibold text-blue-600 hover:text-blue-900">+ Agregar Fila a la Tabla</button>
                                                 </div>
+                                                <p class="text-xs text-gray-500 mb-3">
+                                                    Llena esta tabla con los datos técnicos (ej. Capacidad, Voltaje). Estos datos construirán automáticamente la tabla comparativa que el cliente ve al seleccionar esta pestaña (modelo).
+                                                </p>
                                                 <div v-if="!variant.attributes || variant.attributes.length === 0" class="text-xs text-gray-500 italic mb-2">
-                                                    Sin especificaciones personalizadas. (Ej. Capacidad Nominal, EER, etc.)
+                                                    Este modelo no tiene datos técnicos registrados en su tabla.
                                                 </div>
                                                 <div v-for="(attr, aIndex) in variant.attributes" :key="'attr-'+index+'-'+aIndex" class="flex items-center gap-2 mb-2 bg-gray-50 p-2 rounded border border-gray-200">
                                                     <div class="w-1/3">

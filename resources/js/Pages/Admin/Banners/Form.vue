@@ -8,7 +8,7 @@
                     </svg>
                 </Link>
                 <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                    {{ isEditing ? '✏️ Editar Banner' : '🆕 Nuevo Banner' }}
+                    {{ isEditing ? 'Editar Banner' : 'Nuevo Banner' }}
                 </h2>
             </div>
         </template>
@@ -20,7 +20,7 @@
                     <!-- Form Header -->
                     <div class="px-8 py-6 bg-gradient-to-r from-indigo-600 to-purple-600">
                         <p class="text-indigo-100 text-sm">
-                            {{ isEditing ? 'Modifica los datos del banner del carrusel.' : 'Completa los campos para crear un nuevo banner en el carrusel de tu tienda.' }}
+                            Los banners son las imágenes grandes que aparecen en la página principal (carrusel) y van pasando automáticamente. Puedes usarlos para mostrar promociones, nuevos productos o anuncios importantes.
                         </p>
                     </div>
 
@@ -28,37 +28,42 @@
 
                         <!-- Título -->
                         <div>
-                            <InputLabel for="title" value="Título del Banner" class="text-sm font-semibold text-gray-700 mb-1.5" />
+                            <InputLabel for="title" value="Nombre o Título del Banner" class="text-sm font-semibold text-gray-700 mb-1.5" />
                             <TextInput
                                 id="title"
                                 v-model="form.title"
                                 type="text"
                                 class="mt-1 block w-full rounded-xl border-gray-200 focus:border-indigo-500 focus:ring-indigo-500"
-                                placeholder="Ej: Promoción de Verano"
+                                placeholder="Ej: Promoción Buen Fin, Lanzamiento Mini Split, etc."
                                 required
                             />
+                            <p class="text-xs text-gray-500 mt-1">
+                                Este título es solo para que tú lo identifiques en la lista, no se mostrará en la imagen de la tienda.
+                            </p>
                             <InputError :message="form.errors.title" class="mt-2" />
                         </div>
 
                         <!-- URL de Enlace -->
                         <div>
-                            <InputLabel for="link_url" value="Enlace al hacer click (opcional)" class="text-sm font-semibold text-gray-700 mb-1.5" />
+                            <InputLabel for="link_url" value="¿A dónde quieres que lleve el banner al darle clic? (Opcional)" class="text-sm font-semibold text-gray-700 mb-1.5" />
                             <div class="relative">
-                                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-400 text-sm">🔗</span>
                                 <TextInput
                                     id="link_url"
                                     v-model="form.link_url"
                                     type="text"
-                                    class="mt-1 block w-full pl-9 rounded-xl border-gray-200 focus:border-indigo-500 focus:ring-indigo-500"
-                                    placeholder="https://tiendamirage.mx/categoria"
+                                    class="mt-1 block w-full rounded-xl border-gray-200 focus:border-indigo-500 focus:ring-indigo-500"
+                                    placeholder="Ej: https://tiendamirage.mx/promociones"
                                 />
                             </div>
+                            <p class="text-xs text-gray-500 mt-1">
+                                Si quieres que los clientes vayan a una página de un producto en específico al tocar la imagen, pega aquí ese enlace. Si lo dejas vacío, la imagen será solo visual y no hará nada al darle clic.
+                            </p>
                             <InputError :message="form.errors.link_url" class="mt-2" />
                         </div>
 
                         <!-- Orden -->
                         <div>
-                            <InputLabel for="order" value="Orden en el carrusel" class="text-sm font-semibold text-gray-700 mb-1.5" />
+                            <InputLabel for="order" value="Lugar de aparición" class="text-sm font-semibold text-gray-700 mb-1.5" />
                             <TextInput
                                 id="order"
                                 v-model="form.order"
@@ -66,7 +71,9 @@
                                 min="0"
                                 class="mt-1 block w-32 rounded-xl border-gray-200 focus:border-indigo-500 focus:ring-indigo-500"
                             />
-                            <p class="text-xs text-gray-400 mt-1">El número más bajo aparece primero.</p>
+                            <p class="text-xs text-gray-500 mt-1">
+                                Indica qué número de imagen será en el carrusel (Ej: Si pones 1, será la primera imagen en salir. Si pones 2, saldrá después de la primera).
+                            </p>
                             <InputError :message="form.errors.order" class="mt-2" />
                         </div>
 
@@ -125,10 +132,13 @@
                                 <span :class="form.is_active ? 'translate-x-6' : 'translate-x-1'" class="inline-block h-4 w-4 rounded-full bg-white shadow transition-transform"/>
                             </button>
                             <label class="text-sm font-medium text-gray-700 cursor-pointer select-none" @click="form.is_active = !form.is_active">
-                                <span v-if="form.is_active" class="text-indigo-600">✅ Banner Activo</span>
-                                <span v-else class="text-gray-400">⏸️ Banner Inactivo</span>
+                                <span v-if="form.is_active" class="text-indigo-600">Banner Visible en Tienda</span>
+                                <span v-else class="text-gray-400">Banner Apagado (Oculto)</span>
                             </label>
                         </div>
+                        <p class="text-xs text-gray-500 -mt-2">
+                            Puedes apagar el banner en lugar de borrarlo, por si quieres volver a encenderlo en el futuro (ej. en el próximo Buen Fin).
+                        </p>
 
                         <!-- Buttons -->
                         <div class="flex items-center gap-4 pt-2">
@@ -143,7 +153,7 @@
                                     <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                                     <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                                 </svg>
-                                {{ isEditing ? '💾 Guardar Cambios' : '🚀 Crear Banner' }}
+                                {{ isEditing ? 'Guardar Cambios' : 'Crear Banner' }}
                             </PrimaryButton>
                         </div>
                     </form>

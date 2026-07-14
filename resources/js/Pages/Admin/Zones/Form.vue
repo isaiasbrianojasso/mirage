@@ -51,10 +51,10 @@ const submit = () => {
                             
                             <div class="space-y-6">
                                 <div>
-                                    <label class="block text-sm font-medium text-gray-700">Nombre de la Zona <span class="text-red-500">*</span></label>
-                                    <input type="text" v-model="form.name" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Ej: Norteamérica, Europa, Nacional...">
+                                    <label class="block text-sm font-medium text-gray-700">Nombre de la Zona (o Región) <span class="text-red-500">*</span></label>
+                                    <input type="text" v-model="form.name" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Ej: Zona Norte, Zona Sur, Todo el País...">
                                     <p v-if="form.errors.name" class="mt-1 text-sm text-red-600">{{ form.errors.name }}</p>
-                                    <p class="mt-2 text-xs text-gray-500">Este nombre aparecerá en la matriz de configuración de los Transportistas.</p>
+                                    <p class="mt-2 text-xs text-gray-500">Agrupa los lugares donde cobras lo mismo de envío. Este nombre lo usarás al configurar los transportistas (paqueterías).</p>
                                 </div>
 
                                 <div class="flex items-center justify-between bg-gray-50 p-4 rounded-lg border border-gray-200">

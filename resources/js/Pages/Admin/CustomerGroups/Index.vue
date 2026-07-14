@@ -75,6 +75,12 @@ const deleteGroup = (id) => {
                     </Link>
                 </div>
 
+                <div class="mb-4 p-4 bg-indigo-50 rounded-md border border-indigo-100">
+                    <p class="text-sm text-indigo-800">
+                        Los <b>Grupos de Clientes</b> te permiten dar precios, reglas o descuentos especiales a ciertos usuarios. Por ejemplo, puedes crear un grupo llamado "Mayoristas" que siempre tenga un 20% de descuento automático o "Técnicos" que vean los precios sin IVA. Luego, asignas ese grupo a los clientes desde la sección de "Clientes".
+                    </p>
+                </div>
+
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-6">
                     <div v-if="$page.props.flash && $page.props.flash.success" class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4" role="alert">
                         <span class="block sm:inline">{{ $page.props.flash.success }}</span>

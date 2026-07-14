@@ -79,6 +79,10 @@ const deleteZone = (id) => {
                 <div v-if="$page.props.flash && $page.props.flash.success" class="mb-4 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
                     <span class="block sm:inline">{{ $page.props.flash.success }}</span>
                 </div>
+                
+                <p class="text-gray-600 mb-6 bg-white p-4 rounded-lg border border-gray-200 shadow-sm text-sm">
+                    <strong>¿Qué son las Zonas Geográficas?</strong> Sirven para agrupar lugares que tienen el mismo costo de envío. Por ejemplo, puedes crear una zona llamada "Área Metropolitana" u otra "Nacional" y luego decirle al sistema cuánto cobra DHL o FedEx por llevar paquetes a esa zona.
+                </p>
 
                 <div class="bg-white overflow-hidden shadow-sm rounded-lg border border-gray-200">
                     <div class="p-6 bg-white border-b border-gray-200">
