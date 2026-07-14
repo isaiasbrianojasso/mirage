@@ -75,7 +75,7 @@ class CategorySeeder extends Seeder
             $subCategories = [
                 [
                     'uuid'        => 'a1b2c3d4-e5f6-7890-1234-56789abcdef0',
-                    'name'        => 'Boiler',
+                    'name'        => 'Boiler / Calentadores Instantáneos de Agua',
                     'slug'        => 'boiler',
                     'description' => 'Calentadores de agua y boilers Mirage para uso doméstico e industrial. Disponibles en paso, depósito y solar, en diferentes capacidades.',
                     'image_url'   => 'https://www.tiendamirage.mx/img/category/boiler.jpg',
@@ -115,15 +115,91 @@ class CategorySeeder extends Seeder
                     'description' => 'Lavadoras de carga superior y frontal Mirage. Programas inteligentes, ciclos de lavado múltiples y alta eficiencia en el consumo de agua.',
                     'image_url'   => 'https://www.tiendamirage.mx/img/category/lavadoras.jpg',
                 ],
+                [
+                    'uuid'        => '6e1ab2f3-c4d5-4b6c-8a90-1234567890a1',
+                    'name'        => 'Congeladores',
+                    'slug'        => 'congeladores',
+                    'description' => 'Congeladores Mirage para mantener tus alimentos en perfecto estado.',
+                    'image_url'   => 'https://www.tiendamirage.mx/img/category/congeladores.jpg',
+                ],
+                [
+                    'uuid'        => '7f2bc3a4-d5e6-4c7d-9b01-2345678901b2',
+                    'name'        => 'Purificadores de Aire',
+                    'slug'        => 'purificadores-de-aire',
+                    'description' => 'Respira aire limpio y purificado con los sistemas avanzados de filtrado Mirage.',
+                    'image_url'   => 'https://www.tiendamirage.mx/img/category/purificadores.jpg',
+                ],
+                [
+                    'uuid'        => '8a3cd4b5-e6f7-4d8e-0c12-3456789012c3',
+                    'name'        => 'Refrigeradores',
+                    'slug'        => 'refrigeradores',
+                    'description' => 'Refrigeradores eficientes, diseño elegante y tecnología de conservación Mirage.',
+                    'image_url'   => 'https://www.tiendamirage.mx/img/category/refrigeradores.jpg',
+                ],
             ];
 
             foreach ($subCategories as $data) {
-                Category::firstOrCreate(
-                    ['uuid' => $data['uuid']],
+                Category::updateOrCreate(
+                    ['slug' => $data['slug']],
                     array_merge($data, ['is_active' => true, 'parent_id' => $lineaBlanca->id])
                 );
-                // Also update existing ones to have correct parent_id
-                Category::where('uuid', $data['uuid'])->update(['parent_id' => $lineaBlanca->id]);
+            }
+        }
+
+        // ---- Subcategorías de Aire Acondicionado ----
+        $aireAcondicionado = Category::where('slug', 'aire-acondicionado')->first();
+
+        if ($aireAcondicionado) {
+            $acSubCategories = [
+                [
+                    'uuid'        => '9b4de5c6-f7a8-4e9f-1d23-4567890123d4',
+                    'name'        => 'Comercial',
+                    'slug'        => 'comercial',
+                    'description' => 'Equipos de aire acondicionado comercial para grandes espacios.',
+                    'image_url'   => 'https://www.tiendamirage.mx/img/category/comercial.jpg',
+                ],
+                [
+                    'uuid'        => '0c5ef6d7-a8b9-4f0a-2e34-5678901234e5',
+                    'name'        => 'Comercial Ligero',
+                    'slug'        => 'comercial-ligero',
+                    'description' => 'Soluciones eficientes para pequeños negocios y oficinas.',
+                    'image_url'   => 'https://www.tiendamirage.mx/img/category/comercial-ligero.jpg',
+                ],
+                [
+                    'uuid'        => '1d6fa7e8-b9c0-401b-3f45-6789012345f6',
+                    'name'        => 'De Ventana',
+                    'slug'        => 'de-ventana',
+                    'description' => 'Clásicos equipos de ventana fáciles de instalar y usar.',
+                    'image_url'   => 'https://www.tiendamirage.mx/img/category/ventana.jpg',
+                ],
+                [
+                    'uuid'        => '2e7ab8f9-c0d1-412c-4a56-7890123456a7',
+                    'name'        => 'MiniSplit',
+                    'slug'        => 'minisplit',
+                    'description' => 'Sistemas MiniSplit eficientes y silenciosos para el hogar.',
+                    'image_url'   => 'https://www.tiendamirage.mx/img/category/minisplit.jpg',
+                ],
+                [
+                    'uuid'        => '3f8bc9a0-d1e2-423d-5b67-8901234567b8',
+                    'name'        => 'Multisplit',
+                    'slug'        => 'multisplit',
+                    'description' => 'Controla múltiples zonas con un solo condensador exterior.',
+                    'image_url'   => 'https://www.tiendamirage.mx/img/category/multisplit.jpg',
+                ],
+                [
+                    'uuid'        => '4a9cd0b1-e2f3-434e-6c78-9012345678c9',
+                    'name'        => 'Portátiles',
+                    'slug'        => 'portatiles',
+                    'description' => 'Lleva el clima perfecto a donde lo necesites con sistemas portátiles.',
+                    'image_url'   => 'https://www.tiendamirage.mx/img/category/portatiles.jpg',
+                ]
+            ];
+
+            foreach ($acSubCategories as $data) {
+                Category::updateOrCreate(
+                    ['slug' => $data['slug']],
+                    array_merge($data, ['is_active' => true, 'parent_id' => $aireAcondicionado->id])
+                );
             }
         }
     }

@@ -113,6 +113,10 @@ Route::get('/tienda/producto/quickview/{id}', [\App\Http\Controllers\QuickViewCo
 Route::get('/tienda/comparar/data', [\App\Http\Controllers\QuickViewController::class, 'compare'])->name('product.compare');
 Route::post('/tienda/producto/{slug}/review', [TiendaController::class, 'storeReview'])->middleware('throttle:5,1')->name('tienda.product.review');
 
+// Dynamic Routes for Catalogo (MVC)
+Route::get('/catalogo/todo/{slug}', [\App\Http\Controllers\CatalogoController::class, 'category'])->name('catalogo.category');
+Route::get('/catalogo/producto/{slug}', [\App\Http\Controllers\CatalogoController::class, 'product'])->name('catalogo.product');
+
 Route::get('/tienda/categoria/{uuid}', [TiendaController::class, 'category'])->name('tienda.category');
 Route::get('/tienda/producto/{uuid}', [TiendaController::class, 'product'])->name('tienda.product');
 Route::get('/tienda/content/{slug}', function () {

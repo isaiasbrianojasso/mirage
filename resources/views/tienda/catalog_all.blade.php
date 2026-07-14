@@ -18,7 +18,7 @@
                 <ul class="products columns-5">
                     @foreach($rootCategories as $index => $category)
                     <li class="product-category product {{ $index % 5 == 0 ? 'first' : '' }} {{ ($index + 1) % 5 == 0 ? 'last' : '' }}">
-                        <a aria-label="Visitar la categoría de producto {{ $category->name }}" href="{{ route('tienda.category', ['uuid' => $category->uuid]) }}">
+                        <a aria-label="Visitar la categoría de producto {{ $category->name }}" href="{{ route('catalogo.category', ['slug' => $category->uuid]) }}">
                             <img src="{{ $category->representative_image }}" alt="{{ $category->name }}" width="500" height="500" onerror="this.onerror=null; this.src='/tienda_assets/img/p/mx-default-home_default.jpg'" style="width: 100%; height: auto; aspect-ratio: 1; object-fit: cover;" />
                             <h2 class="woocommerce-loop-category__title">
                                 {{ $category->name }} <mark class="count">({{ $category->products_count ?? 0 }})</mark>

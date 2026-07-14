@@ -23,130 +23,29 @@
                         <a href="{{ url('/catalogo/todo') }}" itemprop="url"><span
                                 itemprop="name">Productos</span></a>
                         <ul class="sub-menu">
-                            <li id="menu-item-20282"
-                                class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-20282">
-                                <a href="{{ route('tienda.category', ['uuid' => 'aire-acondicionado']) }}" itemprop="url"><span
-                                        itemprop="name">Aire Acondicionado</span></a>
+                            @foreach($categories as $cat)
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat {{ $cat->children->isNotEmpty() ? 'menu-item-has-children' : '' }}">
+                                <a href="{{ route('catalogo.category', ['slug' => $cat->slug ?? $cat->uuid]) }}" itemprop="url"><span itemprop="name">{{ $cat->name }}</span></a>
+                                @if($cat->children->isNotEmpty())
                                 <ul class="sub-menu">
-                                    <li id="menu-item-20285"
-                                        class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-20285">
-                                        <a href="{{ url('/catalogo/todo/aire-acondicionado/minisplit') }}"
-                                            itemprop="url"><span itemprop="name">Minisplit</span></a>
+                                    @foreach($cat->children as $child)
+                                    <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat {{ $child->children->isNotEmpty() ? 'menu-item-has-children' : '' }}">
+                                        <a href="{{ route('catalogo.category', ['slug' => $child->slug ?? $child->uuid]) }}" itemprop="url"><span itemprop="name">{{ $child->name }}</span></a>
+                                        @if($child->children->isNotEmpty())
                                         <ul class="sub-menu">
-                                            <li id="menu-item-20286"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-20286">
-                                                <a href="{{ route('tienda.category', ['uuid' => 'minisplits-inverter']) }}"
-                                                    itemprop="url"><span itemprop="name">Inverter</span></a>
+                                            @foreach($child->children as $grandchild)
+                                            <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat">
+                                                <a href="{{ route('catalogo.category', ['slug' => $grandchild->slug ?? $grandchild->uuid]) }}" itemprop="url"><span itemprop="name">{{ $grandchild->name }}</span></a>
                                             </li>
-                                            <li id="menu-item-20287"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-20287">
-                                                <a href="{{ url('/catalogo/todo/aire-acondicionado/minisplit/on-off') }}"
-                                                    itemprop="url"><span itemprop="name">On / Off</span></a>
-                                            </li>
+                                            @endforeach
                                         </ul>
+                                        @endif
                                     </li>
-                                    <li id="menu-item-20284"
-                                        class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-20284">
-                                        <a href="{{ url('/catalogo/todo/aire-acondicionado/de-ventana') }}"
-                                            itemprop="url"><span itemprop="name">De Ventana</span></a>
-                                    </li>
-                                    <li id="menu-item-20299"
-                                        class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-20299">
-                                        <a href="{{ url('/catalogo/todo/aire-acondicionado/portatiles') }}"
-                                            itemprop="url"><span itemprop="name">Portátiles</span></a>
-                                    </li>
-                                    <li id="menu-item-23639"
-                                        class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-23639">
-                                        <a href="{{ url('/catalogo/todo/aire-acondicionado/comercial') }}"
-                                            itemprop="url"><span itemprop="name">Comercial</span></a>
-                                        <ul class="sub-menu">
-                                            <li id="menu-item-20289"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-20289">
-                                                <a href="{{ url('/catalogo/todo/aire-acondicionado/comercial/rvi') }}"
-                                                    itemprop="url"><span itemprop="name">RVI (VRF)</span></a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li id="menu-item-20283"
-                                        class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-20283">
-                                        <a href="{{ url('/catalogo/todo/aire-acondicionado/comercial-ligero') }}"
-                                            itemprop="url"><span itemprop="name">Comercial Ligero</span></a>
-                                        <ul class="sub-menu">
-                                            <li id="menu-item-23652"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-23652">
-                                                <a href="{{ url('/catalogo/todo/aire-acondicionado/comercial-ligero/ci-magnum') }}"
-                                                    itemprop="url"><span itemprop="name">Ci Magnum</span></a>
-                                            </li>
-                                            <li id="menu-item-20288"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-20288">
-                                                <a href="{{ url('/catalogo/todo/aire-acondicionado/multisplit') }}"
-                                                    itemprop="url"><span itemprop="name">Multisplit
-                                                        XMI</span></a>
-                                            </li>
-                                        </ul>
-                                    </li>
+                                    @endforeach
                                 </ul>
+                                @endif
                             </li>
-                            <li id="menu-item-20291"
-                                class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-20291">
-                                <a href="{{ route('tienda.category', ['uuid' => 'linea-blanca']) }}" itemprop="url"><span
-                                        itemprop="name">Línea Blanca</span></a>
-                                <ul class="sub-menu">
-                                    <li id="menu-item-20295"
-                                        class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-20295">
-                                        <a href="{{ route('tienda.category', ['uuid' => 'lavadoras']) }}"
-                                            itemprop="url"><span itemprop="name">Lavadoras y
-                                                secadoras</span></a>
-                                    </li>
-                                    <li id="menu-item-20292"
-                                        class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-20292">
-                                        <a href="{{ route('tienda.category', ['uuid' => 'boiler']) }}"
-                                            itemprop="url"><span itemprop="name">Calentadores de Agua</span></a>
-                                    </li>
-                                    <li id="menu-item-20297"
-                                        class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-20297">
-                                        <a href="{{ route('tienda.category', ['uuid' => 'parrillas']) }}"
-                                            itemprop="url"><span itemprop="name">Parrillas</span></a>
-                                    </li>
-                                    <li id="menu-item-20293"
-                                        class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-20293">
-                                        <a href="{{ route('tienda.category', ['uuid' => 'campanas']) }}"
-                                            itemprop="url"><span itemprop="name">Campanas</span></a>
-                                    </li>
-                                    <li id="menu-item-20298"
-                                        class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-20298">
-                                        <a href="{{ route('tienda.category', ['uuid' => 'dispensadores']) }}"
-                                            itemprop="url"><span itemprop="name">Purificadores y
-                                                Dispensadores</span></a>
-                                    </li>
-                                    <li id="menu-item-22876"
-                                        class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-22876">
-                                        <a href="{{ url('/catalogo/todo/linea-blanca/frigobares') }}"
-                                            itemprop="url"><span itemprop="name">Frigobares</span></a>
-                                    </li>
-                                    <li id="menu-item-22886"
-                                        class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-22886">
-                                        <a href="{{ url('/catalogo/todo/linea-blanca/refrigeradores') }}"
-                                            itemprop="url"><span itemprop="name">Refrigeradores</span></a>
-                                    </li>
-                                    <li id="menu-item-21763"
-                                        class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-21763">
-                                        <a href="{{ url('/catalogo/todo/linea-blanca/congeladores') }}"
-                                            itemprop="url"><span itemprop="name">Congeladores</span></a>
-                                    </li>
-                                    <li id="menu-item-23812"
-                                        class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-23812">
-                                        <a href="{{ route('tienda.category', ['uuid' => 'microondas']) }}"
-                                            itemprop="url"><span itemprop="name">Microondas</span></a>
-                                    </li>
-                                    <li id="menu-item-27470"
-                                        class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-27470">
-                                        <a href="{{ url('/catalogo/todo/linea-blanca/purificadores-de-aire') }}"
-                                            itemprop="url"><span itemprop="name">Purificadores de
-                                                Aire</span></a>
-                                    </li>
-                                </ul>
-                            </li>
+                            @endforeach
                         </ul>
                     </li>
                     <li id="menu-item-29630"

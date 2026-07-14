@@ -33,7 +33,25 @@
                 @endif
             </div>
 
-            <section id="products">
+            <section id="subcategories_and_products">
+                @if($subcategories->isNotEmpty())
+                <div id="subcategories" class="mb-5 mt-4">
+                    <ul class="products columns-5">
+                        @foreach($subcategories as $index => $sub)
+                        <li class="product-category product {{ $index % 5 == 0 ? 'first' : '' }} {{ ($index + 1) % 5 == 0 ? 'last' : '' }}">
+                            <a aria-label="Visitar la categoría de producto {{ $sub->name }}" href="{{ route('tienda.category', ['uuid' => $sub->slug ?? $sub->uuid]) }}">
+                                <img src="{{ Str::startsWith($sub->representative_image, 'http') ? $sub->representative_image : asset($sub->representative_image) }}" alt="{{ $sub->name }}" width="500" height="500" onerror="this.onerror=null;this.src='/tienda_assets/img/p/mx-default-home_default.jpg';" style="width: 100%; height: auto; aspect-ratio: 1; object-fit: cover;" />
+                                <h2 class="woocommerce-loop-category__title">
+                                    {{ $sub->name }} <mark class="count">({{ $sub->products_count ?? 0 }})</mark>
+                                </h2>
+                            </a>
+                        </li>
+                        @endforeach
+                    </ul>
+                </div>
+                @endif
+
+                @if($products->isNotEmpty() || $subcategories->isEmpty())
                 <div id="">
                     <div id="js-product-list">
                         <div class="products row products-grid">
@@ -95,6 +113,7 @@
                         </div>
                     </div>
                 </div>
+                @endif
             </section>
         </section>
     </div>

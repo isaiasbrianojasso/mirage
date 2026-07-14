@@ -569,7 +569,72 @@
               
               <!-- Ficha Técnica Pane -->
               <div id="tab-sheet" class="mrg-panel" style="display: none;">
-                @if($product->specifications && count($product->specifications) > 0)
+                @if($product->variants && $product->variants->count() > 0)
+                  <h4 style="font-weight: 600; color: #0f172a; font-size: 15px; margin-bottom: 20px;">Especificaciones del producto</h4>
+                  
+                  <!-- Tabs de variantes -->
+                  <ul class="nav nav-tabs variant-tabs" style="display: flex; flex-wrap: wrap; border-bottom: 1px solid #e2e8f0; margin-bottom: 0; padding-left: 0; list-style: none;">
+                    @foreach($product->variants as $index => $variant)
+                      <li style="margin-right: 2px;">
+                        <a href="#variant-spec-{{ $variant->id }}" class="variant-tab-link {{ $index === 0 ? 'active' : '' }}" onclick="switchVariantTab(event, 'variant-spec-{{ $variant->id }}')" style="display: block; padding: 10px 15px; background: {{ $index === 0 ? '#f8fafc' : '#ffffff' }}; color: {{ $index === 0 ? '#0f172a' : '#64748b' }}; border: 1px solid #e2e8f0; border-bottom: none; border-radius: 4px 4px 0 0; text-decoration: none; font-weight: 600; font-size: 13px;">
+                          {{ $variant->name }}
+                        </a>
+                      </li>
+                    @endforeach
+                  </ul>
+                  
+                  <!-- Contenido de tabs -->
+                  <div class="variant-tabs-content" style="border: 1px solid #e2e8f0; border-top: none; padding: 0; margin-bottom: 30px;">
+                    @foreach($product->variants as $index => $variant)
+                      <div id="variant-spec-{{ $variant->id }}" class="variant-spec-panel" style="display: {{ $index === 0 ? 'block' : 'none' }};">
+                        @if($variant->attributes && is_array($variant->attributes) && count($variant->attributes) > 0)
+                          <table style="width: 100%; border-collapse: collapse; font-size: 13px; text-align: center;">
+                            <thead>
+                              <tr style="background-color: #f1f5f9; border-bottom: 2px solid #e2e8f0;">
+                                <th style="padding: 12px; font-weight: 600; color: #475569; text-align: right; width: 40%;">Característica</th>
+                                <th style="padding: 12px; font-weight: 600; color: #475569; border-left: 1px solid #e2e8f0; width: 20%;">Unidad</th>
+                                <th style="padding: 12px; font-weight: 700; color: #0f172a; border-left: 1px solid #e2e8f0; width: 40%;">{{ $variant->name }}</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              @foreach($variant->attributes as $key => $value)
+                                <tr style="border-bottom: 1px solid #e2e8f0; {{ $loop->iteration % 2 === 0 ? 'background-color: #f8fafc;' : '' }}">
+                                  <td style="padding: 12px; text-align: right; color: #64748b; font-weight: 500;">{{ mb_strtoupper(str_replace('_', ' ', $key)) }}</td>
+                                  <td style="padding: 12px; color: #94a3b8; border-left: 1px solid #e2e8f0; font-size: 12px;">--</td>
+                                  <td style="padding: 12px; color: #334155; font-weight: 500; border-left: 1px solid #e2e8f0;">{{ is_array($value) ? implode(', ', $value) : $value }}</td>
+                                </tr>
+                              @endforeach
+                            </tbody>
+                          </table>
+                        @else
+                          <div style="padding: 30px; text-align: center; color: #94a3b8;">
+                            No hay especificaciones detalladas para este modelo.
+                          </div>
+                        @endif
+                      </div>
+                    @endforeach
+                  </div>
+                  
+                  <script>
+                    function switchVariantTab(event, targetId) {
+                      event.preventDefault();
+                      document.querySelectorAll('.variant-tab-link').forEach(link => {
+                        link.classList.remove('active');
+                        link.style.background = '#ffffff';
+                        link.style.color = '#64748b';
+                      });
+                      const currentLink = event.currentTarget;
+                      currentLink.classList.add('active');
+                      currentLink.style.background = '#f8fafc';
+                      currentLink.style.color = '#0f172a';
+                      
+                      document.querySelectorAll('.variant-spec-panel').forEach(panel => {
+                        panel.style.display = 'none';
+                      });
+                      document.getElementById(targetId).style.display = 'block';
+                    }
+                  </script>
+                @elseif($product->specifications && count($product->specifications) > 0)
                   <h4 style="font-weight: 600; color: #0f172a; font-size: 15px; margin-bottom: 20px;">Especificaciones técnicas</h4>
                   <table style="width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 30px;">
                     @foreach($product->specifications as $index => $spec)

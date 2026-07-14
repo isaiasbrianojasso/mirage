@@ -70,11 +70,19 @@ class TiendaController extends Controller
             return redirect()->route('tienda.index');
         }
 
-        $products = Product::with(['images', 'variants'])->where('category_id', $category->id)->where('is_active', true)->get();
+        // Obtener subcategorías (hijos directos) con su conteo de productos
+        $subcategories = $category->children()->withCount('products')->get();
+
+        // Si la categoría no tiene subcategorías, mostramos los productos directamente
+        $products = collect();
+        if ($subcategories->isEmpty()) {
+            $products = Product::with(['images', 'variants'])->where('category_id', $category->id)->where('is_active', true)->get();
+        }
+
         $categories = $this->getMenuCategories();
         $businessSetting = $this->getBusinessSetting();
 
-        return view('tienda.category', compact('category', 'products', 'categories', 'businessSetting'));
+        return view('tienda.category', compact('category', 'subcategories', 'products', 'categories', 'businessSetting'));
     }
 
     public function product($uuid)
