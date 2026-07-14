@@ -62,8 +62,8 @@ class TiendaController extends Controller
 
     public function category($uuid)
     {
-        // Buscar categoría en la base de datos por UUID
-        $category = Category::where('uuid', $uuid)->first();
+        // Buscar categoría en la base de datos por UUID o slug
+        $category = Category::where('uuid', $uuid)->orWhere('slug', $uuid)->first();
 
         // Si no existe, redirigir al index de la tienda
         if (!$category) {

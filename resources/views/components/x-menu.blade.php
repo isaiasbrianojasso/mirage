@@ -25,7 +25,7 @@
                         <ul class="sub-menu">
                             <li id="menu-item-20282"
                                 class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-20282">
-                                <a href="{{ url('/catalogo/todo/aire-acondicionado') }}" itemprop="url"><span
+                                <a href="{{ route('tienda.category', ['uuid' => 'aire-acondicionado']) }}" itemprop="url"><span
                                         itemprop="name">Aire Acondicionado</span></a>
                                 <ul class="sub-menu">
                                     <li id="menu-item-20285"
@@ -35,7 +35,7 @@
                                         <ul class="sub-menu">
                                             <li id="menu-item-20286"
                                                 class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-20286">
-                                                <a href="{{ url('/catalogo/todo/aire-acondicionado/minisplit/inverter') }}"
+                                                <a href="{{ route('tienda.category', ['uuid' => 'minisplits-inverter']) }}"
                                                     itemprop="url"><span itemprop="name">Inverter</span></a>
                                             </li>
                                             <li id="menu-item-20287"
@@ -89,33 +89,33 @@
                             </li>
                             <li id="menu-item-20291"
                                 class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-20291">
-                                <a href="{{ url('/catalogo/todo/linea-blanca') }}" itemprop="url"><span
+                                <a href="{{ route('tienda.category', ['uuid' => 'linea-blanca']) }}" itemprop="url"><span
                                         itemprop="name">Línea Blanca</span></a>
                                 <ul class="sub-menu">
                                     <li id="menu-item-20295"
                                         class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-20295">
-                                        <a href="{{ url('/catalogo/todo/linea-blanca/lavadoras-y-secadoras') }}"
+                                        <a href="{{ route('tienda.category', ['uuid' => 'lavadoras']) }}"
                                             itemprop="url"><span itemprop="name">Lavadoras y
                                                 secadoras</span></a>
                                     </li>
                                     <li id="menu-item-20292"
                                         class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-20292">
-                                        <a href="{{ url('/catalogo/todo/linea-blanca/boilers') }}"
+                                        <a href="{{ route('tienda.category', ['uuid' => 'boiler']) }}"
                                             itemprop="url"><span itemprop="name">Calentadores de Agua</span></a>
                                     </li>
                                     <li id="menu-item-20297"
                                         class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-20297">
-                                        <a href="{{ url('/catalogo/todo/linea-blanca/parrillas') }}"
+                                        <a href="{{ route('tienda.category', ['uuid' => 'parrillas']) }}"
                                             itemprop="url"><span itemprop="name">Parrillas</span></a>
                                     </li>
                                     <li id="menu-item-20293"
                                         class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-20293">
-                                        <a href="{{ url('/catalogo/todo/linea-blanca/campanas') }}"
+                                        <a href="{{ route('tienda.category', ['uuid' => 'campanas']) }}"
                                             itemprop="url"><span itemprop="name">Campanas</span></a>
                                     </li>
                                     <li id="menu-item-20298"
                                         class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-20298">
-                                        <a href="{{ url('/catalogo/todo/linea-blanca/purificadores-y-dispensadores-de-agua') }}"
+                                        <a href="{{ route('tienda.category', ['uuid' => 'dispensadores']) }}"
                                             itemprop="url"><span itemprop="name">Purificadores y
                                                 Dispensadores</span></a>
                                     </li>
@@ -131,12 +131,12 @@
                                     </li>
                                     <li id="menu-item-21763"
                                         class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-21763">
-                                        <a href="{{ url('/catalogo/todo/linea-blanca/congeladores') }}
+                                        <a href="{{ url('/catalogo/todo/linea-blanca/congeladores') }}"
                                             itemprop="url"><span itemprop="name">Congeladores</span></a>
                                     </li>
                                     <li id="menu-item-23812"
                                         class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-23812">
-                                        <a href="{{ url('/catalogo/todo/linea-blanca/microondas') }}"
+                                        <a href="{{ route('tienda.category', ['uuid' => 'microondas']) }}"
                                             itemprop="url"><span itemprop="name">Microondas</span></a>
                                     </li>
                                     <li id="menu-item-27470"

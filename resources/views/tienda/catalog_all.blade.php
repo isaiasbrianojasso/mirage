@@ -1,44 +1,42 @@
-@extends('layouts.tienda')
-
-@section('content')
-<div class="container my-5">
-    <div class="row mb-4">
-        <div class="col-12 text-center">
-            <h1 class="display-4 font-weight-bold text-uppercase" style="color: #1f2937;">Nuestro Catálogo</h1>
-            <p class="lead text-muted">Explora todas nuestras categorías y encuentra el producto ideal para ti.</p>
+@include('components.x-header')
+<body class="archive tax-product_cat wp-theme-genesis wp-child-theme-digital-pro theme-genesis woocommerce woocommerce-page woocommerce-no-js custom-header header-image header-full-width full-width-content genesis-breadcrumbs-hidden genesis-footer-widgets-visible elementor-default" itemscope itemtype="https://schema.org/WebPage">
+<div class="site-container">
+    @include('components.x-menu')
+    <ul class="genesis-skip-link">
+        <li><a href="#genesis-content" class="screen-reader-shortcut"> Saltar al contenido principal</a></li>
+        <li><a href="#genesis-footer-widgets" class="screen-reader-shortcut"> Saltar al pie de página</a></li>
+    </ul> 
+    <div class="site-inner">
+        <div class="content-sidebar-wrap">
+            <main class="content" id="genesis-content">
+                <div class="archive-description taxonomy-archive-description taxonomy-description text-center" style="margin-bottom: 40px; margin-top: 20px;">
+                    <h1 class="archive-title" style="font-size: 32px; font-weight: 700; color: #222;">Todos los Productos {{ $businessSetting->name ?? 'Mirage' }}</h1>
+                </div>
+                <div class="woocommerce-notices-wrapper"></div>
+                
+                @if(isset($rootCategories) && $rootCategories->count() > 0)
+                <ul class="products columns-5">
+                    @foreach($rootCategories as $index => $category)
+                    <li class="product-category product {{ $index % 5 == 0 ? 'first' : '' }} {{ ($index + 1) % 5 == 0 ? 'last' : '' }}">
+                        <a aria-label="Visitar la categoría de producto {{ $category->name }}" href="{{ route('tienda.category', ['uuid' => $category->uuid]) }}">
+                            <img src="{{ $category->representative_image }}" alt="{{ $category->name }}" width="500" height="500" onerror="this.onerror=null; this.src='/tienda_assets/img/p/mx-default-home_default.jpg'" style="width: 100%; height: auto; aspect-ratio: 1; object-fit: cover;" />
+                            <h2 class="woocommerce-loop-category__title">
+                                {{ $category->name }} <mark class="count">({{ $category->products_count ?? 0 }})</mark>
+                            </h2>
+                        </a>
+                    </li>
+                    @endforeach
+                </ul>
+                @else
+                <div class="text-center" style="padding: 40px;">
+                    <p>No hay categorías disponibles en este momento.</p>
+                </div>
+                @endif
+            </main>
         </div>
     </div>
-
-    <div class="row mt-4">
-        @if(isset($rootCategories) && $rootCategories->count() > 0)
-            @foreach($rootCategories as $category)
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100 shadow-sm border-0 category-card" style="transition: transform 0.3s; border-radius: 12px; overflow: hidden;">
-                        <img src="{{ $category->representative_image }}" class="card-img-top" alt="{{ $category->name }}" onerror="this.src='/tienda_assets/img/p/mx-default-home_default.jpg'" style="height: 250px; object-fit: cover;">
-                        <div class="card-body text-center d-flex flex-column justify-content-center">
-                            <h3 class="card-title font-weight-bold mb-3" style="color: #e62228;">{{ $category->name }}</h3>
-                            <p class="text-muted mb-4">{{ $category->products_count ?? 0 }} Productos disponibles</p>
-                            <a href="{{ route('tienda.category', ['uuid' => $category->uuid]) }}" class="btn btn-outline-danger btn-lg mt-auto mx-auto" style="border-radius: 30px; padding: 10px 30px; font-weight: 600;">
-                                Ver Productos <i class="fa fa-arrow-right ml-2"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            @endforeach
-        @else
-            <div class="col-12 text-center">
-                <div class="alert alert-info" style="border-radius: 10px;">
-                    <i class="fa fa-info-circle mr-2"></i> No hay categorías disponibles en este momento.
-                </div>
-            </div>
-        @endif
-    </div>
+    
+    @include('components.x-legacy-footer')
 </div>
-
-<style>
-    .category-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
-    }
-</style>
-@endsection
+</body>
+</html>

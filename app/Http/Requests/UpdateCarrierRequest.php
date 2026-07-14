@@ -24,6 +24,10 @@ class UpdateCarrierRequest extends FormRequest
                 'ranges' => json_decode($this->ranges, true)
             ]);
         }
+
+        if (filter_var($this->is_free, FILTER_VALIDATE_BOOLEAN)) {
+            $this->merge(['ranges' => []]);
+        }
     }
 
     public function rules()

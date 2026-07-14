@@ -374,6 +374,16 @@ const submit = () => {
                     </div>
                     
                     <!-- Navegación del Wizard -->
+                    <div v-if="Object.keys(form.errors).length > 0" class="px-6 py-4 bg-red-50 border-t border-red-200">
+                        <div class="flex items-center gap-2 text-red-700 font-bold mb-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                            Por favor corrige los siguientes errores:
+                        </div>
+                        <ul class="list-disc pl-5 text-sm text-red-600">
+                            <li v-for="(error, key) in form.errors" :key="key">{{ error }}</li>
+                        </ul>
+                    </div>
+                    
                     <div class="px-6 py-4 bg-gray-50 border-t border-gray-200 flex items-center justify-between">
                         <button type="button" @click="prevStep" :disabled="currentStep === 1" class="bg-white border border-gray-300 text-gray-700 hover:bg-gray-50 px-4 py-2 rounded-md shadow-sm text-sm font-medium disabled:opacity-50">
                             Anterior
