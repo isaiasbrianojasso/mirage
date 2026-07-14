@@ -110,6 +110,17 @@ const removeVariant = (index) => {
     form.variants.splice(index, 1);
 };
 
+const addVariantAttribute = (variantIndex) => {
+    if (!form.variants[variantIndex].attributes) {
+        form.variants[variantIndex].attributes = [];
+    }
+    form.variants[variantIndex].attributes.push({ name: '', unit: '', value: '' });
+};
+
+const removeVariantAttribute = (variantIndex, attrIndex) => {
+    form.variants[variantIndex].attributes.splice(attrIndex, 1);
+};
+
 const handleDocumentsChange = (e) => {
     Array.from(e.target.files).forEach(file => {
         form.documents.push({
@@ -335,6 +346,29 @@ const removeExistingDocument = (docId) => {
                                                 <div>
                                                     <InputLabel value="Costo Extra Envío ($)" />
                                                     <TextInput v-model="variant.additional_shipping_cost" type="number" step="0.01" class="mt-1 block w-full text-sm" />
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Variant Attributes Manager -->
+                                            <div class="mt-4 border-t border-gray-200 pt-3">
+                                                <div class="flex justify-between items-center mb-2">
+                                                    <InputLabel value="Especificaciones Técnicas de la Variante" />
+                                                    <button type="button" @click="addVariantAttribute(index)" class="text-xs font-semibold text-blue-600 hover:text-blue-900">+ Agregar Especificación</button>
+                                                </div>
+                                                <div v-if="!variant.attributes || variant.attributes.length === 0" class="text-xs text-gray-500 italic mb-2">
+                                                    Sin especificaciones personalizadas. (Ej. Capacidad Nominal, EER, etc.)
+                                                </div>
+                                                <div v-for="(attr, aIndex) in variant.attributes" :key="'attr-'+index+'-'+aIndex" class="flex items-center gap-2 mb-2 bg-gray-50 p-2 rounded border border-gray-200">
+                                                    <div class="w-1/3">
+                                                        <TextInput v-model="attr.name" type="text" class="block w-full text-xs" placeholder="Nombre (Ej. CAPACIDAD NOMINAL)" required />
+                                                    </div>
+                                                    <div class="w-1/4">
+                                                        <TextInput v-model="attr.unit" type="text" class="block w-full text-xs" placeholder="Unidad (Ej. TON)" />
+                                                    </div>
+                                                    <div class="w-1/3">
+                                                        <TextInput v-model="attr.value" type="text" class="block w-full text-xs" placeholder="Valor (Ej. 10)" required />
+                                                    </div>
+                                                    <button type="button" @click="removeVariantAttribute(index, aIndex)" class="text-red-500 hover:text-red-700 font-bold ml-2 px-2">&times;</button>
                                                 </div>
                                             </div>
                                         </div>

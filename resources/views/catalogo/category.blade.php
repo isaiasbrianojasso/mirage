@@ -34,7 +34,7 @@
                     <ul class="products columns-4">
                         @foreach($products as $index => $product)
                         <li class="product type-product status-publish has-post-thumbnail {{ $index % 4 == 0 ? 'first' : '' }} {{ ($index + 1) % 4 == 0 ? 'last' : '' }}">
-                            <a href="{{ route('catalogo.product', ['slug' => $product->slug ?? $product->id]) }}" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                            <a href="{{ route('catalogo.product', ['slug' => $product->id]) }}" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
                                 @php
                                   $primaryImage = $product->images->where('is_primary', true)->first() ?? $product->images->first();
                                   $imageUrl = $primaryImage ? (Str::startsWith($primaryImage->image_url, 'http') ? $primaryImage->image_url : Storage::url($primaryImage->image_url)) : '/tienda_assets/img/p/mx-default-home_default.jpg';
