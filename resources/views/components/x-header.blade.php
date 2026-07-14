@@ -550,16 +550,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="facebook-domain-verification" content="9dfaem37c4fri9ytm7a8ilkyh20wpc" />
     <title>{{config('app.name') }} – Marca especializada en aires acondicionados y línea blanca.</title>
-    <link data-rocket-preload as="style"
-        href="https://fonts.googleapis.com/css?family=Lora%3A400%2C400italic%2C700%2C700italic%7CPoppins%3A400%2C500%2C600%2C700&#038;display=swap"
-        rel="preload">
-    <link
-        href="https://fonts.googleapis.com/css?family=Lora%3A400%2C400italic%2C700%2C700italic%7CPoppins%3A400%2C500%2C600%2C700&#038;display=swap"
-        media="print" onload="this.media=&#039;all&#039;" rel="stylesheet">
-    <noscript data-wpr-hosted-gf-parameters="">
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Lora%3A400%2C400italic%2C700%2C700italic%7CPoppins%3A400%2C500%2C600%2C700&#038;display=swap">
-    </noscript>
+    <link href="https://fonts.googleapis.com/css?family=Lora%3A400%2C400italic%2C700%2C700italic%7CPoppins%3A400%2C500%2C600%2C700&#038;display=swap" rel="stylesheet">
     <link rel="preload" data-rocket-preload as="image"
         href="{{ asset('wp-content/uploads/2023/07/followme_cover.webp') }}" fetchpriority="high">
     <meta name='robots' content='max-image-preview:large' />
