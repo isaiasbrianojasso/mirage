@@ -415,19 +415,52 @@
                     <section id="custom_html-8" class="widget_text widget widget_custom_html">
                         <div class="widget_text widget-wrap">
                             <h3 class="widgettitle widget-title">Corporativo Nacional</h3>
-                    <div class="textwidget custom-html-widget">
-                        @foreach(\App\Models\Location::where('is_active', true)->get() as $index => $location)
-                            @if($index > 0)
+                            <div class="textwidget custom-html-widget">
+                                <p>Puebla #270 Sur, Col. Centro. Ciudad Obregón, Sonora, Mx. C.P. 85000 - Tel (644) 410
+                                    9800</p>
                                 <div class="su-divider su-divider-style-default"
                                     style="margin:15px 0;border-width:3px;border-color:#ffffff"></div>
-                            @endif
-                            <h5>{{ $location->name }}</h5>
-                            <p>{{ collect([$location->address, $location->city, $location->state, $location->country])->filter()->implode(', ') }}{{ $location->zip ? ' C.P. ' . $location->zip : '' }}{{ $location->phone ? ' - Tel ' . $location->phone : '' }}</p>
-                        @endforeach
-                        <div class="su-divider su-divider-style-default"
-                            style="margin:15px 0;border-width:3px;border-color:#ffffff"><a href="#"
-                                style="color:#ffffff">Ir arriba</a></div>
-                    </div>
+                                <h5>CEDIF Guadalajara</h5>
+                                <p>Carretera Guadalajara-Morelia No. 19200 Col. Buenavista, Tlajomulco de Zúñiga,
+                                    Jalisco, CP 45640</p>
+                                <div class="su-divider su-divider-style-default"
+                                    style="margin:15px 0;border-width:3px;border-color:#ffffff"></div>
+                                <h5>CEDIF Veracruz</h5>
+                                <p>Calle Fidelidad Lote 2 Mz 1. Entre Ctra. Ver. – Xal. y C. Araucarias. Fraccionamiento
+                                    Bruno Pagliai. Veracruz, Ver, Mx. C.P. 91697</p>
+                                <div class="su-divider su-divider-style-default"
+                                    style="margin:15px 0;border-width:3px;border-color:#ffffff"></div>
+                                <h5>CEDIF Monterrey</h5>
+                                <p>Carretera Miguel Alemán #800, Col. La Fe, San Nicolas de los Garza. Nuevo León, Mx.
+                                    C.P. 66477 - Tel (818) 298 2310 </p>
+                                <div class="su-divider su-divider-style-default"
+                                    style="margin:15px 0;border-width:3px;border-color:#ffffff"></div>
+                                <h5>CEDIF Merida</h5>
+                                <p>Perif. de Mérida Lic. Manuel Berzunza 33, Ampliación, 97312 Mérida, Yuc.<br>Segunda
+                                    Caseta, 4to Complejo. Bodegas: 72 a la 76.</p>
+                                <div class="su-divider su-divider-style-default"
+                                    style="margin:15px 0;border-width:3px;border-color:#ffffff"></div>
+                                <h5>CEDIF Mexicali</h5>
+                                <p>Calle Siderurgía 364 módulo A Edificio Terra Parque Industrial Vie Verte 3.0, Col.
+                                    Colorado 2 CP.21383</p>
+                                <div class="su-divider su-divider-style-default"
+                                    style="margin:15px 0;border-width:3px;border-color:#ffffff"></div>
+                                <h5>CEDIF Hermosillo</h5>
+                                <p>Carr. a "la Colorada" Casi Esq. Calesa #218 Colonia Parque Industrial, 83299</p>
+                                <div class="su-divider su-divider-style-default"
+                                    style="margin:15px 0;border-width:3px;border-color:#ffffff"></div>
+                                <h5>CEDIF Culiacán</h5>
+                                <p>Blvd. Fuerza Aérea Mexicana 4995 Parque Industrial Aeropuerto Bodega 7, Col.
+                                    Bachigualato. 80147</p>
+                                <div class="su-divider su-divider-style-default"
+                                    style="margin:15px 0;border-width:3px;border-color:#ffffff"></div>
+                                <h5>CEDIF Queretaro</h5>
+                                <p>Edificio K3 (módulos 5-10), Parque Industrial Kaizen IP, Carr. Estatal 100 No. Lote
+                                    002 Manzana 028 No. 8820, Galeras, Mpio de Colon, Queretaro. 76295</p>
+                                <div class="su-divider su-divider-style-default"
+                                    style="margin:15px 0;border-width:3px;border-color:#ffffff"><a href="#"
+                                        style="color:#ffffff">Ir arriba</a></div>
+                            </div>
                         </div>
                     </section>
                 </div>
