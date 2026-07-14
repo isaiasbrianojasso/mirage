@@ -1,17 +1,29 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 import { Head, Link, router, usePage } from '@inertiajs/vue3';
 import ApplicationMark from '@/Components/ApplicationMark.vue';
 import Banner from '@/Components/Banner.vue';
 import Dropdown from '@/Components/Dropdown.vue';
 import DropdownLink from '@/Components/DropdownLink.vue';
-import { onMounted } from 'vue';
 
 defineProps({
     title: String,
 });
 
 const showingNavigationDropdown = ref(false);
+const sidebarRef = ref(null);
+
+onMounted(() => {
+    if (sidebarRef.value && window.sidebarScrollPosition !== undefined) {
+        sidebarRef.value.scrollTop = window.sidebarScrollPosition;
+    }
+});
+
+onBeforeUnmount(() => {
+    if (sidebarRef.value) {
+        window.sidebarScrollPosition = sidebarRef.value.scrollTop;
+    }
+});
 
 const markNotificationsRead = () => {
     // Only send request if there are unread notifications
@@ -62,6 +74,7 @@ onMounted(() => {
 
             <!-- Sidebar -->
             <aside 
+                ref="sidebarRef"
                 :class="[
                     showingNavigationDropdown ? 'translate-x-0' : '-translate-x-full',
                     'fixed inset-y-0 left-0 z-30 w-64 transition duration-300 transform bg-black text-slate-300 md:relative md:translate-x-0 overflow-y-auto flex flex-col shadow-xl'
