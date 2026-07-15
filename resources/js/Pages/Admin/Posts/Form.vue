@@ -58,6 +58,21 @@ const handleImageChange = (e) => {
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-6">
+                    <!-- Explicación Intuitiva -->
+                    <div class="bg-blue-50 border border-blue-100 rounded-xl p-5 mb-6 text-sm text-blue-800">
+                        <h4 class="font-semibold mb-2 flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                            </svg>
+                            ¿Qué estás editando?
+                        </h4>
+                        <ul class="space-y-1 ml-6 list-disc marker:text-blue-400">
+                            <li><strong>Título:</strong> Es el encabezado principal de la noticia. Intenta que sea llamativo.</li>
+                            <li><strong>Contenido:</strong> El texto completo del artículo. Puedes escribir la noticia o aviso detallado aquí.</li>
+                            <li><strong>Imagen:</strong> Es la "portada" del artículo. Se mostrará en la lista de novedades y al entrar a leerlo.</li>
+                        </ul>
+                    </div>
+
                     <form @submit.prevent="submit" enctype="multipart/form-data">
                         <div class="grid grid-cols-1 gap-6">
                             <div>

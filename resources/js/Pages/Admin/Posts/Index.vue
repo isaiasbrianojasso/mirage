@@ -73,6 +73,50 @@ const getSortIcon = (field) => {
                         </Link>
                     </div>
 
+                    <!-- Vista Previa / Explicación Intuitiva -->
+                    <div class="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 mb-6">
+                        <h4 class="font-semibold text-indigo-800 mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                            </svg>
+                            ¿Cómo se ve esto en mi tienda?
+                        </h4>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                            <div class="text-sm text-indigo-700 space-y-3">
+                                <p>
+                                    La sección de <strong>Novedades</strong> funciona como un "Blog" o cartelera de anuncios. 
+                                </p>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start gap-2"><span class="text-indigo-400 mt-0.5">•</span> <strong>Visibilidad:</strong> Aparecen en una página dedicada a donde tus clientes pueden entrar a leer artículos.</li>
+                                    <li class="flex items-start gap-2"><span class="text-indigo-400 mt-0.5">•</span> <strong>Uso común:</strong> Ideal para anunciar promociones por temporada (Buen Fin, Navidad), consejos sobre tus productos, o avisos importantes.</li>
+                                    <li class="flex items-start gap-2"><span class="text-indigo-400 mt-0.5">•</span> <strong>SEO:</strong> Escribir artículos de interés ayuda a que más gente encuentre tu tienda en Google.</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Wireframe Visual -->
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 shadow-sm relative">
+                                <div class="absolute -top-3 -left-3 bg-indigo-600 text-white text-[10px] font-bold px-2 py-1 rounded shadow">Vista del Cliente</div>
+                                <div class="w-full h-4 bg-gray-100 rounded mb-4"></div>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="border border-gray-100 rounded-md p-2 bg-gray-50 flex flex-col gap-2">
+                                        <div class="w-full h-20 bg-gray-200 rounded-sm flex items-center justify-center text-gray-400 text-xs">Imagen de portada</div>
+                                        <div class="w-3/4 h-3 bg-gray-300 rounded"></div>
+                                        <div class="w-full h-2 bg-gray-200 rounded"></div>
+                                        <div class="w-full h-2 bg-gray-200 rounded"></div>
+                                        <div class="w-1/2 h-2 bg-gray-200 rounded"></div>
+                                        <div class="text-[10px] text-indigo-500 font-medium mt-1">Leer más →</div>
+                                    </div>
+                                    <div class="border border-gray-100 rounded-md p-2 bg-gray-50 flex flex-col gap-2 opacity-60">
+                                        <div class="w-full h-20 bg-gray-200 rounded-sm"></div>
+                                        <div class="w-3/4 h-3 bg-gray-300 rounded"></div>
+                                        <div class="w-full h-2 bg-gray-200 rounded"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="overflow-x-auto">
                         <table class="min-w-full divide-y divide-gray-200">
                             <thead class="bg-gray-50">
