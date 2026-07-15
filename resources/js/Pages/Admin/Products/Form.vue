@@ -291,7 +291,7 @@ const removeExistingDocument = (docId) => {
                                         <button type="button" @click="addVariant" class="px-4 py-2 bg-gray-800 text-white text-xs font-semibold rounded-md hover:bg-gray-700">+ Agregar Variante</button>
                                     </div>
                                     <p class="text-sm text-gray-500 mb-4">
-                                        Usa las variantes si este producto tiene diferentes modelos (ejemplo: 1 Tonelada, 2 Toneladas). Cada variante generará una pestaña nueva en la página del producto para que el cliente vea los detalles técnicos específicos de ese modelo, tal como funciona en la página principal de Mirage.
+                                        Usa las variantes si este producto tiene diferentes modelos (ejemplo: 1 Tonelada, 2 Toneladas). Cada variante generará una pestaña nueva en la página del producto para que el cliente vea los detalles técnicos específicos de ese modelo, tal como funciona en la página principal de tu tienda.
                                     </p>
                                     
                                     <div v-if="form.variants.length === 0" class="text-sm text-gray-500 py-4 text-center bg-gray-50 rounded-md border border-dashed border-gray-300">

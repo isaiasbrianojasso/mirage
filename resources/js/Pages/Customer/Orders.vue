@@ -48,7 +48,7 @@ const formatDate = (dateString) => {
                             Historial de Compras
                         </div>
                         <div class="mt-6 text-gray-500">
-                            Aquí puedes ver el estado de todos tus pedidos recientes en Tienda Mirage.
+                            Aquí puedes ver el estado de todos tus pedidos recientes en {{ $page.props.company_settings?.general?.company_name || 'nuestra tienda' }}.
                         </div>
                     </div>
 

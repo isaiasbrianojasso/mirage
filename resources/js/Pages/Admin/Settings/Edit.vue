@@ -37,7 +37,7 @@
                                 v-model="form.name"
                                 type="text"
                                 class="mt-1 block w-full rounded-xl border-gray-200 focus:border-indigo-500 focus:ring-indigo-500 text-base"
-                                placeholder="Ej: Tienda Mirage"
+                                placeholder="Ej: Mi Tienda"
                                 required
                             />
                             <p class="text-xs text-gray-400 mt-1.5">Este nombre aparece en el SEO y en el `alt` del logo.</p>
@@ -94,7 +94,7 @@
                                 v-model="form.email"
                                 type="email"
                                 class="mt-1 block w-full rounded-xl border-gray-200 focus:border-indigo-500 focus:ring-indigo-500 text-base"
-                                placeholder="Ej: contacto@mirage.mx"
+                                placeholder="Ej: contacto@midominio.com"
                             />
                             <InputError :message="form.errors.email" class="mt-2" />
                         </div>
@@ -180,7 +180,7 @@ const props = defineProps({
 const previewUrl = ref(null);
 
 const form = useForm({
-    name: props.setting?.name || 'Mirage',
+    name: props.setting?.name || 'Mi Tienda',
     logo: null,
     email: props.setting?.email || '',
     phone: props.setting?.phone || '',

@@ -72,7 +72,7 @@ const submit = () => {
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div class="col-span-2 md:col-span-1">
                                 <InputLabel for="name" value="Nombre del Centro o Distribuidor" />
-                                <TextInput id="name" v-model="form.name" type="text" class="mt-1 block w-full" placeholder="Ej. Centro Mirage Norte" required autofocus autocomplete="name" />
+                                <TextInput id="name" v-model="form.name" type="text" class="mt-1 block w-full" placeholder="Ej. Centro de Distribución Norte" required autofocus autocomplete="name" />
                                 <InputError class="mt-2" :message="form.errors.name" />
                             </div>
 
