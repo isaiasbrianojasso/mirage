@@ -29,7 +29,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 <!-- TikTok Pixel Code Start -->
-<script>!function (w, d, t) {w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);returne},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};ttq.load('D2VILB3C77U0G6NU48OG');ttq.page();}(window,document, 'ttq');
+<script>!function (w, d, t) {w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e;},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};ttq.load('D2VILB3C77U0G6NU48OG');ttq.page();}(window,document, 'ttq');
 </script>
 <!-- TikTok Pixel Code End -->
 
@@ -39,7 +39,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 
 
-  <title>Tienda Mirage</title>
+  <title>{{\App\Models\CompanySetting::get('store_name', 'Tienda en Línea')}}</title>
   
     
   
@@ -79,7 +79,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       "url":  "/tienda/",
       "name": "Mirage"
     },
-    "name": "Tienda Mirage",
+    "name": "{{\App\Models\CompanySetting::get('store_name', 'Tienda en Línea')}}",
     "url":  "/tienda/"
   }
 </script>
@@ -113,7 +113,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
-    <meta property="og:title" content="Tienda Mirage"/>
+    <meta property="og:title" content="{{\App\Models\CompanySetting::get('store_name', 'Tienda en Línea')}}"/>
     <meta property="og:url" content="/tienda/"/>
     <meta property="og:site_name" content="Mirage"/>
     <meta property="og:description" content="Compre linea blanca, refacciones, herramientas y souvenirs.">
@@ -140,7 +140,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
-    <link rel="stylesheet" href="/tienda_assets/themes/warehouse/assets/css/theme.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/tienda_assets/themes/warehouse/assets/css/theme.css?v=2" type="text/css" media="all">
   <link rel="stylesheet" href="/tienda_assets/modules/revsliderprestashop/public/assets/css/rs6.css" type="text/css" media="all">
   <link rel="stylesheet" href="/tienda_assets/modules/iqitcountdown/views/css/front.css" type="text/css" media="all">
   <link rel="stylesheet" href="/tienda_assets/modules/contentbox/content//Mirageinter.css" type="text/css" media="all">
@@ -170,8 +170,52 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <link rel="stylesheet" href="/tienda_assets/themes/warehouse/assets/css/font-awesome/css/font-awesome.css" type="text/css" media="all">
   <link rel="stylesheet" href="/tienda_assets/themes/warehouse/assets/css/custom.css" type="text/css" media="all">
 
-
-
+  <style>
+    /* The mobile menu panel (#_mobile_iqitmegamenu-mobile) is a Bootstrap dropdown.
+       By default it must be hidden off-screen, and only slide in when .show is added. */
+    .col-mobile-menu-push #_mobile_iqitmegamenu-mobile {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 300px !important;
+      height: 100vh !important;
+      z-index: 5005 !important;
+      overflow-x: hidden;
+      transform: translate3d(-115%, 0, 0) !important;
+      transition: transform 0.4s cubic-bezier(0.7, 0, 0.3, 1) !important;
+      background: #fff;
+      border: none !important;
+      border-radius: 0 !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+    .col-mobile-menu-push.show #_mobile_iqitmegamenu-mobile,
+    .col-mobile-menu-push #_mobile_iqitmegamenu-mobile.show {
+      transform: translate3d(0, 0, 0) !important;
+      display: block !important;
+    }
+    /* Overlay behind mobile menu */
+    #mobile_menu_click_overlay {
+      display: none;
+    }
+    .col-mobile-menu-push.show #mobile_menu_click_overlay {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 5004;
+      background: rgba(0,0,0,0.4);
+    }
+    /* On desktop (992px+), hide mobile menu entirely */
+    @media (min-width: 992px) {
+      #_desktop_iqitmegamenu-mobile,
+      #_mobile_iqitmegamenu-mobile {
+        display: none !important;
+      }
+    }
+  </style>
 
 <link rel="preload" as="font"
       href="/themes/warehouse/assets/css/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0"
@@ -200,7 +244,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         var iqitmegamenu = {"sticky":"false","containerSelector":"#wrapper > .container"};
         var iqitreviews = [];
         var iqitwishlist = {"nbProducts":0};
-        var prestashop = {"cart":{"products":[],"totals":{"total":{"type":"total","label":"Total","amount":0,"value":"$0.00"},"total_including_tax":{"type":"total","label":"Total IVA inclu\u00eddo","amount":0,"value":"$0.00"},"total_excluding_tax":{"type":"total","label":"Total sin IVA","amount":0,"value":"$0.00"}},"subtotals":{"products":{"type":"products","label":"Subtotal","amount":0,"value":"$0.00"},"discounts":null,"shipping":{"type":"shipping","label":"Env\u00edo","amount":0,"value":""},"tax":null},"products_count":0,"summary_string":"0 articulos","vouchers":{"allowed":1,"added":[]},"discounts":[],"minimalPurchase":0,"minimalPurchaseRequired":""},"currency":{"id":1,"name":"Peso mexicano","iso_code":"MXN","iso_code_num":"484","sign":"$"},"customer":{"lastname":null,"firstname":null,"email":null,"birthday":null,"newsletter":null,"newsletter_date_add":null,"optin":null,"website":null,"company":null,"siret":null,"ape":null,"is_logged":false,"gender":{"type":null,"name":null},"addresses":[]},"language":{"name":"Espa\u00f1ol MX (Spanish)","iso_code":"mx","locale":"es-MX","language_code":"es-MX","is_rtl":"0","date_format_lite":"Y-m-d","date_format_full":"Y-m-d H:i:s","id":2},"page":{"title":"","canonical":null,"meta":{"title":"Tienda Mirage","description":"Compre linea blanca, refacciones, herramientas y souvenirs.","keywords":"mirage,tienda, productos, comprar, buscar","robots":"index"},"page_name":"index","body_classes":{"lang-mx":true,"lang-rtl":false,"country-MX":true,"currency-MXN":true,"layout-full-width":true,"page-index":true,"tax-display-enabled":true},"admin_notifications":[]},"shop":{"name":"Mirage","logo":"\/tienda_assets\/img\/mirage-logo-1534899548.jpg","stores_icon":"\/tienda_assets\/img\/logo_stores.png","favicon":"\/tienda_assets\/img\/favicon.ico"},"urls":{"base_url":"\/tienda\/","current_url":"\/tienda\/","shop_domain_url":"https:\/\/www.tiendamirage.mx","img_ps_url":"\/tienda_assets\/img\/","img_cat_url":"\/tienda_assets\/img\/c\/","img_lang_url":"\/tienda_assets\/img\/l\/","img_prod_url":"\/tienda_assets\/img\/p\/","img_manu_url":"\/tienda_assets\/img\/m\/","img_sup_url":"\/tienda_assets\/img\/su\/","img_ship_url":"\/tienda_assets\/img\/s\/","img_store_url":"\/tienda_assets\/img\/st\/","img_col_url":"\/tienda_assets\/img\/co\/","img_url":"\/tienda_assets\/themes\/warehouse\/assets\/img\/","css_url":"\/tienda_assets\/themes\/warehouse\/assets\/css\/","js_url":"\/tienda_assets\/themes\/warehouse\/assets\/js\/","pic_url":"\/tienda\/upload\/","pages":{"address":"\/tienda\/direccion","addresses":"\/tienda\/direcciones","authentication":"\/tienda\/iniciar-sesion","cart":"\/tienda\/carrito","category":"\/tienda\/index.php?controller=category","cms":"\/tienda\/index.php?controller=cms","contact":"\/tienda\/contactenos","discount":"\/tienda\/descuento","guest_tracking":"\/tienda\/seguimiento-pedido-invitado","history":"\/tienda\/historial-compra","identity":"\/tienda\/datos-personales","index":"\/tienda\/","my_account":"\/tienda\/mi-cuenta","order_confirmation":"\/tienda\/confirmacion-pedido","order_detail":"\/tienda\/index.php?controller=order-detail","order_follow":"\/tienda\/seguimiento-pedido","order":"\/tienda\/pedido","order_return":"\/tienda\/index.php?controller=order-return","order_slip":"\/tienda\/nota-credito","pagenotfound":"\/tienda\/pagina-no-encontrada","password":"\/tienda\/recuperar-contrasena","pdf_invoice":"\/tienda\/index.php?controller=pdf-invoice","pdf_order_return":"\/tienda\/index.php?controller=pdf-order-return","pdf_order_slip":"\/tienda\/index.php?controller=pdf-order-slip","prices_drop":"\/tienda\/productos-rebajados","product":"\/tienda\/index.php?controller=product","search":"\/tienda\/busqueda","sitemap":"\/tienda\/Mapa del sitio","stores":"\/tienda\/tiendas","supplier":"\/tienda\/proveedor","register":"\/tienda\/iniciar-sesion?create_account=1","order_login":"\/tienda\/pedido?login=1"},"alternative_langs":[],"theme_assets":"\/themes\/warehouse\/assets\/","actions":{"logout":"\/tienda\/?mylogout="},"no_picture_image":{"bySize":{"small_default":{"url":"\/tienda_assets\/img\/p\/mx-default-small_default.jpg","width":98,"height":127},"cart_default":{"url":"\/tienda_assets\/img\/p\/mx-default-cart_default.jpg","width":125,"height":162},"home_default":{"url":"\/tienda_assets\/img\/p\/mx-default-home_default.jpg","width":236,"height":305},"large_default":{"url":"\/tienda_assets\/img\/p\/mx-default-large_default.jpg","width":381,"height":492},"medium_default":{"url":"\/tienda_assets\/img\/p\/mx-default-medium_default.jpg","width":452,"height":584},"thickbox_default":{"url":"\/tienda_assets\/img\/p\/mx-default-thickbox_default.jpg","width":1100,"height":1422}},"small":{"url":"\/tienda_assets\/img\/p\/mx-default-small_default.jpg","width":98,"height":127},"medium":{"url":"\/tienda_assets\/img\/p\/mx-default-large_default.jpg","width":381,"height":492},"large":{"url":"\/tienda_assets\/img\/p\/mx-default-thickbox_default.jpg","width":1100,"height":1422},"legend":""}},"configuration":{"display_taxes_label":true,"display_prices_tax_incl":true,"is_catalog":false,"show_prices":true,"opt_in":{"partner":true},"quantity_discount":{"type":"price","label":"Precio Unitario"},"voucher_enabled":1,"return_enabled":0},"field_required":[],"breadcrumb":{"links":[{"title":"Inicio","url":"\/tienda\/"}],"count":1},"link":{"protocol_link":"https:\/\/","protocol_content":"https:\/\/"},"time":1782411700,"static_token":"736faed44ac184681768e35d05df6cbd","token":"1da7720698848b23a01dc5e00a1f383c","debug":false};
+        var prestashop = {"cart":{"products":[],"totals":{"total":{"type":"total","label":"Total","amount":0,"value":"$0.00"},"total_including_tax":{"type":"total","label":"Total IVA inclu\u00eddo","amount":0,"value":"$0.00"},"total_excluding_tax":{"type":"total","label":"Total sin IVA","amount":0,"value":"$0.00"}},"subtotals":{"products":{"type":"products","label":"Subtotal","amount":0,"value":"$0.00"},"discounts":null,"shipping":{"type":"shipping","label":"Env\u00edo","amount":0,"value":""},"tax":null},"products_count":0,"summary_string":"0 articulos","vouchers":{"allowed":1,"added":[]},"discounts":[],"minimalPurchase":0,"minimalPurchaseRequired":""},"currency":{"id":1,"name":"Peso mexicano","iso_code":"MXN","iso_code_num":"484","sign":"$"},"customer":{"lastname":null,"firstname":null,"email":null,"birthday":null,"newsletter":null,"newsletter_date_add":null,"optin":null,"website":null,"company":null,"siret":null,"ape":null,"is_logged":false,"gender":{"type":null,"name":null},"addresses":[]},"language":{"name":"Espa\u00f1ol MX (Spanish)","iso_code":"mx","locale":"es-MX","language_code":"es-MX","is_rtl":"0","date_format_lite":"Y-m-d","date_format_full":"Y-m-d H:i:s","id":2},"page":{"title":"","canonical":null,"meta":{"title":"{{\App\Models\CompanySetting::get('store_name', 'Tienda en Línea')}}","description":"Compre linea blanca, refacciones, herramientas y souvenirs.","keywords":"mirage,tienda, productos, comprar, buscar","robots":"index"},"page_name":"index","body_classes":{"lang-mx":true,"lang-rtl":false,"country-MX":true,"currency-MXN":true,"layout-full-width":true,"page-index":true,"tax-display-enabled":true},"admin_notifications":[]},"shop":{"name":"Mirage","logo":"\/tienda_assets\/img\/mirage-logo-1534899548.jpg","stores_icon":"\/tienda_assets\/img\/logo_stores.png","favicon":"\/tienda_assets\/img\/favicon.ico"},"urls":{"base_url":"\/tienda\/","current_url":"\/tienda\/","shop_domain_url":"https:\/\/www.tiendamirage.mx","img_ps_url":"\/tienda_assets\/img\/","img_cat_url":"\/tienda_assets\/img\/c\/","img_lang_url":"\/tienda_assets\/img\/l\/","img_prod_url":"\/tienda_assets\/img\/p\/","img_manu_url":"\/tienda_assets\/img\/m\/","img_sup_url":"\/tienda_assets\/img\/su\/","img_ship_url":"\/tienda_assets\/img\/s\/","img_store_url":"\/tienda_assets\/img\/st\/","img_col_url":"\/tienda_assets\/img\/co\/","img_url":"\/tienda_assets\/themes\/warehouse\/assets\/img\/","css_url":"\/tienda_assets\/themes\/warehouse\/assets\/css\/","js_url":"\/tienda_assets\/themes\/warehouse\/assets\/js\/","pic_url":"\/tienda\/upload\/","pages":{"address":"\/tienda\/direccion","addresses":"\/tienda\/direcciones","authentication":"\/tienda\/iniciar-sesion","cart":"\/tienda\/carrito","category":"\/tienda\/index.php?controller=category","cms":"\/tienda\/index.php?controller=cms","contact":"\/tienda\/contactenos","discount":"\/tienda\/descuento","guest_tracking":"\/tienda\/seguimiento-pedido-invitado","history":"\/tienda\/historial-compra","identity":"\/tienda\/datos-personales","index":"\/tienda\/","my_account":"\/tienda\/mi-cuenta","order_confirmation":"\/tienda\/confirmacion-pedido","order_detail":"\/tienda\/index.php?controller=order-detail","order_follow":"\/tienda\/seguimiento-pedido","order":"\/tienda\/pedido","order_return":"\/tienda\/index.php?controller=order-return","order_slip":"\/tienda\/nota-credito","pagenotfound":"\/tienda\/pagina-no-encontrada","password":"\/tienda\/recuperar-contrasena","pdf_invoice":"\/tienda\/index.php?controller=pdf-invoice","pdf_order_return":"\/tienda\/index.php?controller=pdf-order-return","pdf_order_slip":"\/tienda\/index.php?controller=pdf-order-slip","prices_drop":"\/tienda\/productos-rebajados","product":"\/tienda\/index.php?controller=product","search":"\/tienda\/busqueda","sitemap":"\/tienda\/Mapa del sitio","stores":"\/tienda\/tiendas","supplier":"\/tienda\/proveedor","register":"\/tienda\/iniciar-sesion?create_account=1","order_login":"\/tienda\/pedido?login=1"},"alternative_langs":[],"theme_assets":"\/themes\/warehouse\/assets\/","actions":{"logout":"\/tienda\/?mylogout="},"no_picture_image":{"bySize":{"small_default":{"url":"\/tienda_assets\/img\/p\/mx-default-small_default.jpg","width":98,"height":127},"cart_default":{"url":"\/tienda_assets\/img\/p\/mx-default-cart_default.jpg","width":125,"height":162},"home_default":{"url":"\/tienda_assets\/img\/p\/mx-default-home_default.jpg","width":236,"height":305},"large_default":{"url":"\/tienda_assets\/img\/p\/mx-default-large_default.jpg","width":381,"height":492},"medium_default":{"url":"\/tienda_assets\/img\/p\/mx-default-medium_default.jpg","width":452,"height":584},"thickbox_default":{"url":"\/tienda_assets\/img\/p\/mx-default-thickbox_default.jpg","width":1100,"height":1422}},"small":{"url":"\/tienda_assets\/img\/p\/mx-default-small_default.jpg","width":98,"height":127},"medium":{"url":"\/tienda_assets\/img\/p\/mx-default-large_default.jpg","width":381,"height":492},"large":{"url":"\/tienda_assets\/img\/p\/mx-default-thickbox_default.jpg","width":1100,"height":1422},"legend":""}},"configuration":{"display_taxes_label":true,"display_prices_tax_incl":true,"is_catalog":false,"show_prices":true,"opt_in":{"partner":true},"quantity_discount":{"type":"price","label":"Precio Unitario"},"voucher_enabled":1,"return_enabled":0},"field_required":[],"breadcrumb":{"links":[{"title":"Inicio","url":"\/tienda\/"}],"count":1},"link":{"protocol_link":"https:\/\/","protocol_content":"https:\/\/"},"time":1782411700,"static_token":"736faed44ac184681768e35d05df6cbd","token":"1da7720698848b23a01dc5e00a1f383c","debug":false};
         var psemailsubscription_subscription = "\/tienda\/module\/ps_emailsubscription\/subscription";
       </script>
 
@@ -247,7 +291,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         "url":  "/tienda/",
         "name": "Mirage"
     }],
-    "name": "Tienda Mirage",
+    "name": "{{\App\Models\CompanySetting::get('store_name', 'Tienda en Línea')}}",
     "url": "/tienda/"
 }
 </script>
@@ -262,7 +306,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	"@@type": "WebSite",
 	"url": "/tienda/",
 	"name": "Mirage",
-	"alternateName": "Tienda Mirage",
+	"alternateName": "{{\App\Models\CompanySetting::get('store_name', 'Tienda en Línea')}}",
 	"image": [{
 		"@@type": "ImageObject",
 		"url":  "/tienda_assets/img/mirage-logo-1534899548.jpg"
@@ -1222,7 +1266,7 @@ if(window.location.pathname == "/content/4-quienes-somos" || window.location.pat
 
 
       <script src="/tienda_assets/themes/core.js" ></script>
-  <script src="/tienda_assets/themes/warehouse/assets/js/theme.js" ></script>
+  <script src="/tienda_assets/themes/warehouse/assets/js/theme.js?v=2" ></script>
   <script src="/tienda_assets/modules/ps_emailsubscription/views/js/ps_emailsubscription.js" ></script>
   <script src="/tienda_assets/modules/iqitcountdown/views/js/front.js" ></script>
   <script src="/tienda_assets/modules/facebookpsconnect/views/js/module.js" ></script>
@@ -1246,7 +1290,38 @@ if(window.location.pathname == "/content/4-quienes-somos" || window.location.pat
   <script src="/tienda_assets/modules/revsliderprestashop/public/assets/js/rbtools.min.js" ></script>
   <script src="/tienda_assets/modules/revsliderprestashop/public/assets/js/rs6.min.js" ></script>
 
+<script>
+// Fallback: ensure mobile menu toggle works with the correct container
+document.addEventListener('DOMContentLoaded', function() {
+  var mobilePanel = document.getElementById('_mobile_iqitmegamenu-mobile');
+  var menuBtn = document.querySelector('.js-m-nav-btn-menu');
+  var overlay = document.getElementById('mobile_menu_click_overlay');
+  var menuPushCol = document.querySelector('.js-col-mobile-menu-push');
 
+  function openMenu(e) {
+    if (e) { e.preventDefault(); e.stopPropagation(); }
+    if (mobilePanel) mobilePanel.classList.add('show');
+    if (menuPushCol) menuPushCol.classList.add('show');
+    document.body.classList.add('--push-menu-opened');
+  }
+  function closeMenu(e) {
+    if (e) { e.preventDefault(); e.stopPropagation(); }
+    if (mobilePanel) mobilePanel.classList.remove('show');
+    if (menuPushCol) menuPushCol.classList.remove('show');
+    document.body.classList.remove('--push-menu-opened');
+  }
+
+  if (menuBtn) menuBtn.addEventListener('click', openMenu);
+  if (overlay) overlay.addEventListener('click', closeMenu);
+  
+  // Close button is inside the moved content, so use event delegation
+  document.addEventListener('click', function(e) {
+    if (e.target.closest('.js-mobile-menu__close')) {
+      closeMenu(e);
+    }
+  });
+});
+</script>
 
 
 

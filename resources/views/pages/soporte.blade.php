@@ -51,7 +51,7 @@
 </div><script type="speculationrules">
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/digital-pro/*","/wp-content/themes/genesis/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
-<script type="text/rocketlazyloadscript">
+<script type="text/javascript">
 (function($){
   $(window).on('elementor/frontend/init', function() {
 
@@ -136,7 +136,7 @@
 
   });
 })(jQuery);
-</script><style type="text/css" media="screen"></style>			<script type="text/rocketlazyloadscript">
+</script><style type="text/css" media="screen"></style>			<script type="text/javascript">
 				const lazyloadRunObserver = () => {
 					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
 					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
@@ -162,7 +162,7 @@
 					document.addEventListener( event, lazyloadRunObserver );
 				} );
 			</script>
-				<script type="text/rocketlazyloadscript" data-rocket-type='text/javascript'>
+				<script type="text/javascript" data-rocket-type='text/javascript'>
 		(function () {
 			var c = document.body.className;
 			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
@@ -175,8 +175,8 @@
 var frontObj = {"copyFromPurchaser":"autocopy"};
 //# sourceURL=woocommerce-events-front-script-js-extra
 </script>
-<script type="text/rocketlazyloadscript" id="woocommerce-events-front-script-js" data-rocket-src="https://mirage.mx/wp-content/plugins/fooevents/js/events-frontend.js?ver=1.0.0" data-rocket-defer defer></script>
-<script type="text/rocketlazyloadscript" id="rocket-browser-checker-js-after">
+<script type="text/javascript" id="woocommerce-events-front-script-js" src="{{ asset('vendor/mirage-assets/wp-content/plugins/fooevents/js/events-frontend.js') }}"  defer></script>
+<script type="text/javascript" id="rocket-browser-checker-js-after">
 "use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
 //# sourceURL=rocket-browser-checker-js-after
 </script>
@@ -184,50 +184,50 @@ var frontObj = {"copyFromPurchaser":"autocopy"};
 var RocketPreloadLinksConfig = {"excludeUris":"/wpstream/live/|/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/reservar/??(.*)|/confirmar/?|/mi-cuenta/??(.*)|/(index.php/)?(.*)wp-json(/.*|$)|/refer/|/go/|/recommend/|/recommends/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https://mirage.mx","onHoverDelay":"100","rateThrottle":"3"};
 //# sourceURL=rocket-preload-links-js-extra
 </script>
-<script type="text/rocketlazyloadscript" id="rocket-preload-links-js-after">
+<script type="text/javascript" id="rocket-preload-links-js-after">
 (function() {
 "use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
 }());
 
 //# sourceURL=rocket-preload-links-js-after
 </script>
-<script type="text/rocketlazyloadscript" id="hoverIntent-js" data-rocket-src="https://mirage.mx/wp-includes/js/hoverIntent.min.js?ver=1.10.2" data-rocket-defer defer></script>
-<script type="text/rocketlazyloadscript" id="superfish-js" data-rocket-src="https://mirage.mx/wp-content/themes/genesis/lib/js/menu/superfish.min.js?ver=1.7.10" data-rocket-defer defer></script>
-<script type="text/rocketlazyloadscript" id="superfish-args-js" data-rocket-src="https://mirage.mx/wp-content/themes/genesis/lib/js/menu/superfish.args.min.js?ver=3.6.2" data-rocket-defer defer></script>
-<script type="text/rocketlazyloadscript" id="skip-links-js" data-rocket-src="https://mirage.mx/wp-content/themes/genesis/lib/js/skip-links.min.js?ver=3.6.2" data-rocket-defer defer></script>
-<script type="text/rocketlazyloadscript" id="digital-global-scripts-js" data-rocket-src="https://mirage.mx/wp-content/themes/digital-pro/js/global.js?ver=1.1.3" data-rocket-defer defer></script>
+<script type="text/javascript" id="hoverIntent-js" src="{{ asset('vendor/mirage-assets/wp-includes/js/hoverIntent.min.js') }}"  defer></script>
+<script type="text/javascript" id="superfish-js" src="{{ asset('vendor/mirage-assets/wp-content/themes/genesis/lib/js/menu/superfish.min.js') }}"  defer></script>
+<script type="text/javascript" id="superfish-args-js" src="{{ asset('vendor/mirage-assets/wp-content/themes/genesis/lib/js/menu/superfish.args.min.js') }}"  defer></script>
+<script type="text/javascript" id="skip-links-js" src="{{ asset('vendor/mirage-assets/wp-content/themes/genesis/lib/js/skip-links.min.js') }}"  defer></script>
+<script type="text/javascript" id="digital-global-scripts-js" src="{{ asset('vendor/mirage-assets/wp-content/themes/digital-pro/js/global.js') }}"  defer></script>
 <script id="digital-responsive-menu-js-extra">
 var genesis_responsive_menu = {"mainMenu":"Men\u00fa","menuIconClass":"ionicons-before ion-ios-drag","subMenu":"Submen\u00fa","subMenuIconClass":"ionicons-before ion-ios-arrow-down","menuClasses":{"others":[".nav-primary"]}};
 //# sourceURL=digital-responsive-menu-js-extra
 </script>
-<script type="text/rocketlazyloadscript" id="digital-responsive-menu-js" data-rocket-src="https://mirage.mx/wp-content/themes/digital-pro/js/responsive-menus.min.js?ver=1.1.3" data-rocket-defer defer></script>
-<script type="text/rocketlazyloadscript" id="sourcebuster-js-js" data-rocket-src="https://mirage.mx/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=10.8.1" data-rocket-defer defer></script>
+<script type="text/javascript" id="digital-responsive-menu-js" src="{{ asset('vendor/mirage-assets/wp-content/themes/digital-pro/js/responsive-menus.min.js') }}"  defer></script>
+<script type="text/javascript" id="sourcebuster-js-js" src="{{ asset('vendor/mirage-assets/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js') }}"  defer></script>
 <script id="wc-order-attribution-js-extra">
 var wc_order_attribution = {"params":{"lifetime":1.0000000000000000818030539140313095458623138256371021270751953125e-5,"session":30,"base64":false,"ajaxurl":"https://mirage.mx/wp-admin/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","utm_source_platform":"current.plt","utm_creative_format":"current.fmt","utm_marketing_tactic":"current.tct","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
 //# sourceURL=wc-order-attribution-js-extra
 </script>
-<script type="text/rocketlazyloadscript" id="wc-order-attribution-js" data-rocket-src="https://mirage.mx/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=10.8.1" data-rocket-defer defer></script>
-<script type="text/rocketlazyloadscript" id="elementor-webpack-runtime-js" data-rocket-src="https://mirage.mx/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=4.1.3" data-rocket-defer defer></script>
-<script type="text/rocketlazyloadscript" id="elementor-frontend-modules-js" data-rocket-src="https://mirage.mx/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=4.1.3" data-rocket-defer defer></script>
-<script id="jquery-ui-core-js" src="../wp-includes/js/jquery/ui/core.min.js%3Fver=1.13.3" data-rocket-defer defer></script>
-<script type="text/rocketlazyloadscript" id="elementor-frontend-js-before">
+<script type="text/javascript" id="wc-order-attribution-js" src="{{ asset('vendor/mirage-assets/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js') }}"  defer></script>
+<script type="text/javascript" id="elementor-webpack-runtime-js" src="{{ asset('vendor/mirage-assets/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js') }}"  defer></script>
+<script type="text/javascript" id="elementor-frontend-modules-js" src="{{ asset('vendor/mirage-assets/wp-content/plugins/elementor/assets/js/frontend-modules.min.js') }}"  defer></script>
+<script id="jquery-ui-core-js" src="../wp-includes/js/jquery/ui/core.min.js%3Fver=1.13.3"  defer></script>
+<script type="text/javascript" id="elementor-frontend-js-before">
 var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartir en Facebook","shareOnTwitter":"Compartir en Twitter","pinIt":"Fijarlo","download":"Descargar","downloadImage":"Descargar imagen","fullscreen":"Pantalla completa","zoom":"Zoom","share":"Compartir","playVideo":"Reproducir video","previous":"Previo","next":"Siguiente","close":"Cerrar","a11yCarouselPrevSlideMessage":"Diapositiva anterior","a11yCarouselNextSlideMessage":"Diapositiva siguiente","a11yCarouselFirstSlideMessage":"Esta es la primera diapositiva","a11yCarouselLastSlideMessage":"Esta es la \u00faltima diapositiva","a11yCarouselPaginationBulletMessage":"Ir a la diapositiva"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"M\u00f3vil en Retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"M\u00f3vil horizontal","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tableta vertical","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tableta horizontal","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Pantalla grande","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.1.3","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"container":true,"theme_builder_v2":true,"nested-elements":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_opt_in_v4_page":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true,"e_pro_atomic_form":true,"e_pro_variables":true,"e_pro_interactions":true},"urls":{"assets":"https:\/\/mirage.mx\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/mirage.mx\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/mirage.mx\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"f6e7c53eaa","atomicFormsSendForm":"574ddccaf0"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","woocommerce_notices_elements":[]},"post":{"id":1264,"title":"Soporte%20al%20Producto","excerpt":"","featuredImage":false}};
 //# sourceURL=elementor-frontend-js-before
 </script>
-<script type="text/rocketlazyloadscript" id="elementor-frontend-js" data-rocket-src="https://mirage.mx/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=4.1.3" data-rocket-defer defer></script>
-<script type="text/rocketlazyloadscript" id="elementor-pro-webpack-runtime-js" data-rocket-src="https://mirage.mx/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=4.1.1" data-rocket-defer defer></script>
-<script type="text/rocketlazyloadscript" id="wp-hooks-js" data-rocket-src="https://mirage.mx/wp-includes/js/dist/hooks.min.js?ver=7496969728ca0f95732d"></script>
-<script type="text/rocketlazyloadscript" id="wp-i18n-js" data-rocket-src="https://mirage.mx/wp-includes/js/dist/i18n.min.js?ver=781d11515ad3d91786ec"></script>
-<script type="text/rocketlazyloadscript" id="wp-i18n-js-after">
+<script type="text/javascript" id="elementor-frontend-js" src="{{ asset('vendor/mirage-assets/wp-content/plugins/elementor/assets/js/frontend.min.js') }}"  defer></script>
+<script type="text/javascript" id="elementor-pro-webpack-runtime-js" src="{{ asset('vendor/mirage-assets/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js') }}"  defer></script>
+<script type="text/javascript" id="wp-hooks-js" src="{{ asset('vendor/mirage-assets/wp-includes/js/dist/hooks.min.js') }}"></script>
+<script type="text/javascript" id="wp-i18n-js" src="{{ asset('vendor/mirage-assets/wp-includes/js/dist/i18n.min.js') }}"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
 wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 //# sourceURL=wp-i18n-js-after
 </script>
-<script type="text/rocketlazyloadscript" id="elementor-pro-frontend-js-before">
+<script type="text/javascript" id="elementor-pro-frontend-js-before">
 var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/mirage.mx\/wp-admin\/admin-ajax.php","nonce":"9f932c15dd","urls":{"assets":"https:\/\/mirage.mx\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/mirage.mx\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":true},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"woocommerce":{"menu_cart":{"cart_page_url":"https:\/\/mirage.mx\/confirmar\/","checkout_page_url":"https:\/\/mirage.mx\/reservar\/","fragments_nonce":"34a3beb56e"}},"facebook_sdk":{"lang":"es_MX","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/mirage.mx\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
 //# sourceURL=elementor-pro-frontend-js-before
 </script>
-<script type="text/rocketlazyloadscript" id="elementor-pro-frontend-js" data-rocket-src="https://mirage.mx/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=4.1.1" data-rocket-defer defer></script>
-<script type="text/rocketlazyloadscript" id="pro-elements-handlers-js" data-rocket-src="https://mirage.mx/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=4.1.1" data-rocket-defer defer></script>
+<script type="text/javascript" id="elementor-pro-frontend-js" src="{{ asset('vendor/mirage-assets/wp-content/plugins/elementor-pro/assets/js/frontend.min.js') }}"  defer></script>
+<script type="text/javascript" id="pro-elements-handlers-js" src="{{ asset('vendor/mirage-assets/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js') }}"  defer></script>
 		<style>
 			.unlimited-elements-background-overlay{
 				position:absolute;
@@ -243,7 +243,7 @@ var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/mirage.mx\/wp-admin\/admi
 			}
 		</style>
 
-		<script type="text/rocketlazyloadscript" data-rocket-type='text/javascript'>
+		<script type="text/javascript" data-rocket-type='text/javascript'>
 
 			jQuery(document).ready(function(){
 					

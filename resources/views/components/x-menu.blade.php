@@ -5,7 +5,7 @@
 <header class="site-header" itemscope itemtype="https://schema.org/WPHeader">
     <div class="wrap">
         <div class="title-area">
-            <p class="site-title" itemprop="headline"><a href="{{ url('/') }}">Mirage México</a></p>
+            <p class="site-title" itemprop="headline"><a href="{{ url('/') }}">{{\App\Models\CompanySetting::get('company_name', 'Nuestra Empresa')}}</a></p>
             <p class="site-description" itemprop="description">Marca especializada en aires acondicionados y
                 línea blanca.</p>
         </div>
@@ -82,7 +82,7 @@
                     <li id="menu-item-3471"
                         class="btn-tienda menu-item menu-item-type-custom menu-item-object-custom menu-item-3471">
                         <a target="_blank" href="/tienda" itemprop="url"><span
-                                itemprop="name">Tienda Mirage</span></a>
+                                itemprop="name">{{\App\Models\CompanySetting::get('store_name', 'Tienda en Línea')}}</span></a>
                     </li>
                     <!--
                     <li id="menu-item-35671"

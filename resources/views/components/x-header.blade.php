@@ -964,7 +964,7 @@
             color: #fff
         }
 
-        /*# sourceURL=https://mirage.mx/wp-content/plugins/simple-social-icons/build/style-index.css */
+        /*# sourceURL={{ asset('vendor/mirage-assets/wp-content/plugins/simple-social-icons/build/style-index.css') }} */
     </style>
     <style id="global-styles-inline-css">
         :root {
@@ -1373,7 +1373,7 @@
         media='all' />
 
     <link rel='stylesheet' id='ionicons-css'
-        href='{{ asset("vendor/ionicons/css/ionicons.min.css") }}?ver=2.0.1' media='all' />
+        href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css?ver=1.1.3' media='all' />
     <link rel='stylesheet' id='simple-social-icons-font-css'
         href='{{ asset("wp-content/plugins/simple-social-icons/css/style.css") }}?ver=4.0.0' media='all' />
     <link rel='stylesheet' id='digital-front-styles-css'
@@ -1389,11 +1389,11 @@
         };
         //# sourceURL=file_uploads_nfpluginsettings-js-extra
     </script>
-    <script type="text/rocketlazyloadscript" id="file_uploads_nfpluginsettings-js"
-        data-rocket-src="https://mirage.mx/wp-content/plugins/ninja-forms-uploads/assets/js/nfpluginsettings.js?ver=3.3.29"
-        data-rocket-defer defer></script>
+    <script type="text/javascript" id="file_uploads_nfpluginsettings-js"
+        src="{{ asset('vendor/mirage-assets/wp-content/plugins/ninja-forms-uploads/assets/js/nfpluginsettings.js') }}"
+         defer></script>
     <script data-wp-strategy="defer" defer id="wc-jquery-blockui-js"
-        src="https://mirage.mx/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.10.8.1">
+        src="{{ asset('vendor/mirage-assets/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js') }}">
     </script>
     <script id="wc-add-to-cart-js-extra">
         var wc_add_to_cart_params = {
@@ -1406,11 +1406,11 @@
         };
         //# sourceURL=wc-add-to-cart-js-extra
     </script>
-    <script type="text/rocketlazyloadscript" data-wp-strategy="defer" defer id="wc-add-to-cart-js"
-        data-rocket-src="https://mirage.mx/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=10.8.1">
+    <script type="text/javascript" data-wp-strategy="defer" defer id="wc-add-to-cart-js"
+        src="{{ asset('vendor/mirage-assets/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js') }}">
     </script>
-    <script type="text/rocketlazyloadscript" data-wp-strategy="defer" defer id="wc-js-cookie-js"
-        data-rocket-src="https://mirage.mx/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.10.8.1">
+    <script type="text/javascript" data-wp-strategy="defer" defer id="wc-js-cookie-js"
+        src="{{ asset('vendor/mirage-assets/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js') }}">
     </script>
     <script id="woocommerce-js-extra">
         var woocommerce_params = {
@@ -1421,8 +1421,8 @@
         };
         //# sourceURL=woocommerce-js-extra
     </script>
-    <script type="text/rocketlazyloadscript" data-wp-strategy="defer" defer id="woocommerce-js"
-        data-rocket-src="https://mirage.mx/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=10.8.1">
+    <script type="text/javascript" data-wp-strategy="defer" defer id="woocommerce-js"
+        src="{{ asset('vendor/mirage-assets/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js') }}">
     </script>
     <script id="url-shortify-js-extra">
         var usParams = {
@@ -1430,9 +1430,9 @@
         };
         //# sourceURL=url-shortify-js-extra
     </script>
-    <script type="text/rocketlazyloadscript" id="url-shortify-js"
-        data-rocket-src="https://mirage.mx/wp-content/plugins/url-shortify-premium/lite/dist/scripts/url-shortify.js?ver=2.4.1"
-        data-rocket-defer defer></script>
+    <script type="text/javascript" id="url-shortify-js"
+        src="{{ asset('vendor/mirage-assets/wp-content/plugins/url-shortify-premium/lite/dist/scripts/url-shortify.js') }}"
+         defer></script>
     <link rel="https://api.w.org/" href="https://mirage.mx/wp-json/" />
     <link rel="alternate" title="JSON" type="application/json" href="https://mirage.mx/wp-json/wp/v2/pages/821" />
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://mirage.mx/xmlrpc.php?rsd" />
@@ -1440,16 +1440,16 @@
     <meta itemprop="name" content="{{config('app.name') }}" />
     <meta itemprop="url" content="https://mirage.mx/" />
     <!-- Google tag (gtag.js) -->
-    <script type="text/rocketlazyloadscript" async
-        data-rocket-src="https://www.googletagmanager.com/gtag/js?id=G-1PL39TGXGK"></script>
-    <script type="text/rocketlazyloadscript">
+    <script type="text/javascript" async
+        src="https://www.googletagmanager.com/gtag/js?id=G-1PL39TGXGK"></script>
+    <script type="text/javascript">
         window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-1PL39TGXGK');
 </script> <!-- Facebook Pixel Code -->
-    <script type="text/rocketlazyloadscript">
+    <script type="text/javascript">
         !function(f,b,e,v,n,t,s)
 	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -1472,7 +1472,7 @@
         }
     </style>
     <!-- Google Tag Manager -->
-    <script type="text/rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    <script type="text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);

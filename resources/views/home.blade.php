@@ -56,9 +56,9 @@
                                     data-widget_type="image.default">
                                     <div class="elementor-widget-container">
                                         <img fetchpriority="high" width="1210" height="783"
-                                            src="{{ \App\Models\CompanySetting::get('home_banner_main_image', 'https://mirage.mx/wp-content/uploads/2023/07/mirage_magnum22.webp') }}"
+                                            src="{{ \App\Models\CompanySetting::get('home_banner_main_image', asset('vendor/mirage-assets/wp-content/uploads/2023/07/mirage_magnum22.webp')) }}"
                                             class="attachment-full size-full wp-image-23692" alt=""
-                                            srcset="{{ \App\Models\CompanySetting::get('home_banner_main_image', 'https://mirage.mx/wp-content/uploads/2023/07/mirage_magnum22.webp') }} 1210w, https://mirage.mx/wp-content/uploads/2023/07/mirage_magnum22-300x194.webp 300w, https://mirage.mx/wp-content/uploads/2023/07/mirage_magnum22-1024x663.webp 1024w, https://mirage.mx/wp-content/uploads/2023/07/mirage_magnum22-768x497.webp 768w, https://mirage.mx/wp-content/uploads/2023/07/mirage_magnum22-670x434.webp 670w"
+                                            srcset="{{ \App\Models\CompanySetting::get('home_banner_main_image', asset('vendor/mirage-assets/wp-content/uploads/2023/07/mirage_magnum22.webp')) }} 1210w, {{ asset('vendor/mirage-assets/wp-content/uploads/2023/07/mirage_magnum22-300x194.webp') }} 300w, {{ asset('vendor/mirage-assets/wp-content/uploads/2023/07/mirage_magnum22-1024x663.webp') }} 1024w, {{ asset('vendor/mirage-assets/wp-content/uploads/2023/07/mirage_magnum22-768x497.webp') }} 768w, {{ asset('vendor/mirage-assets/wp-content/uploads/2023/07/mirage_magnum22-670x434.webp') }} 670w"
                                             sizes="(max-width: 1210px) 100vw, 1210px" /> </div>
                                 </div>
                             </div>
@@ -89,7 +89,7 @@
                                         <div class="elementor-icon-box-wrapper">
 
                                             <div class="elementor-icon-box-icon">
-                                                <a href="{{ \App\Models\CompanySetting::get('home_banner_cart_url', 'https://mirage.mx/ubicaciones/tiendas-oficiales/') }}"
+                                                <a href="{{ \App\Models\CompanySetting::get('home_banner_cart_url', url('/ubicaciones')) }}"
                                                     class="elementor-icon" tabindex="-1">
                                                     <i aria-hidden="true" class="fas fa-shopping-cart"></i> </a>
                                             </div>
@@ -124,7 +124,7 @@
                                     data-widget_type="image.default">
                                     <div class="elementor-widget-container">
                                         <img fetchpriority="high"
-                                            src="https://mirage.mx/wp-content/uploads/2023/07/followme_cover.webp"
+                                            src="{{ asset('vendor/mirage-assets/wp-content/uploads/2023/07/followme_cover.webp') }}"
                                             title="{{ \App\Models\CompanySetting::get('home_video_title', 'Función Sígueme') }}" alt="{{ \App\Models\CompanySetting::get('home_video_title', 'Función Sígueme') }}" /> </div>
                                 </div>
                             </div>
@@ -150,13 +150,13 @@
 
                             <!-- start Video Play Button -->
                             <link id='font-awesome-css'
-                                href='https://mirage.mx/wp-content/plugins/unlimited-elements-for-elementor-premium/assets_libraries/font-awesome6/fontawesome-all.min.css'
+                                href="{{ asset('vendor/mirage-assets/wp-content/plugins/unlimited-elements-for-elementor-premium/assets_libraries/font-awesome6/fontawesome-all.min.css') }}"
                                 type='text/css' rel='stylesheet'>
                             <link id='font-awesome-4-shim-css'
-                                href='https://mirage.mx/wp-content/plugins/unlimited-elements-for-elementor-premium/assets_libraries/font-awesome6/fontawesome-v4-shims.min.css'
+                                href="{{ asset('vendor/mirage-assets/wp-content/plugins/unlimited-elements-for-elementor-premium/assets_libraries/font-awesome6/fontawesome-v4-shims.min.css') }}"
                                 type='text/css' rel='stylesheet'>
                             <link id='lity-css'
-                                href='https://mirage.mx/wp-content/plugins/unlimited-elements-for-elementor-premium/assets_libraries/lity/lity.min.css'
+                                href="{{ asset('vendor/mirage-assets/wp-content/plugins/unlimited-elements-for-elementor-premium/assets_libraries/lity/lity.min.css') }}"
                                 type='text/css' rel='stylesheet'>
 
                             <style>
@@ -344,13 +344,13 @@
                                             <img width="563" height="679"
                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20563%20679'%3E%3C/svg%3E"
                                                 class="attachment-full size-full wp-image-23697" alt=""
-                                                data-lazy-srcset="{{ \App\Models\CompanySetting::get('home_category_1_image', 'https://mirage.mx/wp-content/uploads/2023/07/equipos_convencionales_mirage.webp') }} 563w, https://mirage.mx/wp-content/uploads/2023/07/equipos_convencionales_mirage-249x300.webp 249w"
+                                                data-lazy-srcset="{{ \App\Models\CompanySetting::get('home_category_1_image', asset('vendor/mirage-assets/wp-content/uploads/2023/07/equipos_convencionales_mirage.webp')) }} 563w, {{ asset('vendor/mirage-assets/wp-content/uploads/2023/07/equipos_convencionales_mirage-249x300.webp') }} 249w"
                                                 data-lazy-sizes="(max-width: 563px) 100vw, 563px"
-                                                data-lazy-src="{{ \App\Models\CompanySetting::get('home_category_1_image', 'https://mirage.mx/wp-content/uploads/2023/07/equipos_convencionales_mirage.webp') }}" /><noscript><img
+                                                data-lazy-src="{{ \App\Models\CompanySetting::get('home_category_1_image', asset('vendor/mirage-assets/wp-content/uploads/2023/07/equipos_convencionales_mirage.webp')) }}" /><noscript><img
                                                     width="563" height="679"
-                                                    src="{{ \App\Models\CompanySetting::get('home_category_1_image', 'https://mirage.mx/wp-content/uploads/2023/07/equipos_convencionales_mirage.webp') }}"
+                                                    src="{{ \App\Models\CompanySetting::get('home_category_1_image', asset('vendor/mirage-assets/wp-content/uploads/2023/07/equipos_convencionales_mirage.webp')) }}"
                                                     class="attachment-full size-full wp-image-23697" alt=""
-                                                    srcset="{{ \App\Models\CompanySetting::get('home_category_1_image', 'https://mirage.mx/wp-content/uploads/2023/07/equipos_convencionales_mirage.webp') }} 563w, https://mirage.mx/wp-content/uploads/2023/07/equipos_convencionales_mirage-249x300.webp 249w"
+                                                    srcset="{{ \App\Models\CompanySetting::get('home_category_1_image', asset('vendor/mirage-assets/wp-content/uploads/2023/07/equipos_convencionales_mirage.webp')) }} 563w, {{ asset('vendor/mirage-assets/wp-content/uploads/2023/07/equipos_convencionales_mirage-249x300.webp') }} 249w"
                                                     sizes="(max-width: 563px) 100vw, 563px" /></noscript> </a>
                                     </div>
                                 </div>
@@ -362,13 +362,13 @@
                                             <img width="563" height="679"
                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20563%20679'%3E%3C/svg%3E"
                                                 class="attachment-full size-full wp-image-23698" alt=""
-                                                data-lazy-srcset="{{ \App\Models\CompanySetting::get('home_category_2_image', 'https://mirage.mx/wp-content/uploads/2023/07/equipos_comercial_ligero_mirage.webp') }} 563w, https://mirage.mx/wp-content/uploads/2023/07/equipos_comercial_ligero_mirage-249x300.webp 249w"
+                                                data-lazy-srcset="{{ \App\Models\CompanySetting::get('home_category_2_image', asset('vendor/mirage-assets/wp-content/uploads/2023/07/equipos_comercial_ligero_mirage.webp')) }} 563w, {{ asset('vendor/mirage-assets/wp-content/uploads/2023/07/equipos_comercial_ligero_mirage-249x300.webp') }} 249w"
                                                 data-lazy-sizes="(max-width: 563px) 100vw, 563px"
-                                                data-lazy-src="{{ \App\Models\CompanySetting::get('home_category_2_image', 'https://mirage.mx/wp-content/uploads/2023/07/equipos_comercial_ligero_mirage.webp') }}" /><noscript><img
+                                                data-lazy-src="{{ \App\Models\CompanySetting::get('home_category_2_image', asset('vendor/mirage-assets/wp-content/uploads/2023/07/equipos_comercial_ligero_mirage.webp')) }}" /><noscript><img
                                                     loading="lazy" width="563" height="679"
-                                                    src="{{ \App\Models\CompanySetting::get('home_category_2_image', 'https://mirage.mx/wp-content/uploads/2023/07/equipos_comercial_ligero_mirage.webp') }}"
+                                                    src="{{ \App\Models\CompanySetting::get('home_category_2_image', asset('vendor/mirage-assets/wp-content/uploads/2023/07/equipos_comercial_ligero_mirage.webp')) }}"
                                                     class="attachment-full size-full wp-image-23698" alt=""
-                                                    srcset="{{ \App\Models\CompanySetting::get('home_category_2_image', 'https://mirage.mx/wp-content/uploads/2023/07/equipos_comercial_ligero_mirage.webp') }} 563w, https://mirage.mx/wp-content/uploads/2023/07/equipos_comercial_ligero_mirage-249x300.webp 249w"
+                                                    srcset="{{ \App\Models\CompanySetting::get('home_category_2_image', asset('vendor/mirage-assets/wp-content/uploads/2023/07/equipos_comercial_ligero_mirage.webp')) }} 563w, {{ asset('vendor/mirage-assets/wp-content/uploads/2023/07/equipos_comercial_ligero_mirage-249x300.webp') }} 249w"
                                                     sizes="(max-width: 563px) 100vw, 563px" /></noscript> </a>
                                     </div>
                                 </div>
@@ -380,13 +380,13 @@
                                             <img width="563" height="679"
                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20563%20679'%3E%3C/svg%3E"
                                                 class="attachment-full size-full wp-image-23699" alt=""
-                                                data-lazy-srcset="{{ \App\Models\CompanySetting::get('home_category_3_image', 'https://mirage.mx/wp-content/uploads/2023/07/linea_blanca_mirage.webp') }} 563w, https://mirage.mx/wp-content/uploads/2023/07/linea_blanca_mirage-249x300.webp 249w"
+                                                data-lazy-srcset="{{ \App\Models\CompanySetting::get('home_category_3_image', asset('vendor/mirage-assets/wp-content/uploads/2023/07/linea_blanca_mirage.webp')) }} 563w, {{ asset('vendor/mirage-assets/wp-content/uploads/2023/07/linea_blanca_mirage-249x300.webp') }} 249w"
                                                 data-lazy-sizes="(max-width: 563px) 100vw, 563px"
-                                                data-lazy-src="{{ \App\Models\CompanySetting::get('home_category_3_image', 'https://mirage.mx/wp-content/uploads/2023/07/linea_blanca_mirage.webp') }}" /><noscript><img
+                                                data-lazy-src="{{ \App\Models\CompanySetting::get('home_category_3_image', asset('vendor/mirage-assets/wp-content/uploads/2023/07/linea_blanca_mirage.webp')) }}" /><noscript><img
                                                     loading="lazy" width="563" height="679"
-                                                    src="{{ \App\Models\CompanySetting::get('home_category_3_image', 'https://mirage.mx/wp-content/uploads/2023/07/linea_blanca_mirage.webp') }}"
+                                                    src="{{ \App\Models\CompanySetting::get('home_category_3_image', asset('vendor/mirage-assets/wp-content/uploads/2023/07/linea_blanca_mirage.webp')) }}"
                                                     class="attachment-full size-full wp-image-23699" alt=""
-                                                    srcset="{{ \App\Models\CompanySetting::get('home_category_3_image', 'https://mirage.mx/wp-content/uploads/2023/07/linea_blanca_mirage.webp') }} 563w, https://mirage.mx/wp-content/uploads/2023/07/linea_blanca_mirage-249x300.webp 249w"
+                                                    srcset="{{ \App\Models\CompanySetting::get('home_category_3_image', asset('vendor/mirage-assets/wp-content/uploads/2023/07/linea_blanca_mirage.webp')) }} 563w, {{ asset('vendor/mirage-assets/wp-content/uploads/2023/07/linea_blanca_mirage-249x300.webp') }} 249w"
                                                     sizes="(max-width: 563px) 100vw, 563px" /></noscript> </a>
                                     </div>
                                 </div>
@@ -561,34 +561,34 @@
                                                 rel="noopener noreferrer" data-caption=""><img width="1135" height="738"
                                                     src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201135%20738'%3E%3C/svg%3E"
                                                     class="" alt="" decoding="async"
-                                                    data-lazy-srcset="{{ \App\Models\CompanySetting::get('home_bottom_banner_1_image', 'https://mirage.mx/wp-content/uploads/2023/07/especialistas_mirage_web.webp') }} 1135w"
+                                                    data-lazy-srcset="{{ \App\Models\CompanySetting::get('home_bottom_banner_1_image', asset('vendor/mirage-assets/wp-content/uploads/2023/07/especialistas_mirage_web.webp')) }} 1135w"
                                                     data-lazy-sizes="(max-width: 1135px) 100vw, 1135px"
-                                                    data-lazy-src="{{ \App\Models\CompanySetting::get('home_bottom_banner_1_image', 'https://mirage.mx/wp-content/uploads/2023/07/especialistas_mirage_web.webp') }}" /><noscript><img
+                                                    data-lazy-src="{{ \App\Models\CompanySetting::get('home_bottom_banner_1_image', asset('vendor/mirage-assets/wp-content/uploads/2023/07/especialistas_mirage_web.webp')) }}" /><noscript><img
                                                         loading="lazy" width="1135" height="738"
-                                                        src="{{ \App\Models\CompanySetting::get('home_bottom_banner_1_image', 'https://mirage.mx/wp-content/uploads/2023/07/especialistas_mirage_web.webp') }}"
+                                                        src="{{ \App\Models\CompanySetting::get('home_bottom_banner_1_image', asset('vendor/mirage-assets/wp-content/uploads/2023/07/especialistas_mirage_web.webp')) }}"
                                                         class="" alt="" decoding="async"
-                                                        srcset="{{ \App\Models\CompanySetting::get('home_bottom_banner_1_image', 'https://mirage.mx/wp-content/uploads/2023/07/especialistas_mirage_web.webp') }} 1135w"
+                                                        srcset="{{ \App\Models\CompanySetting::get('home_bottom_banner_1_image', asset('vendor/mirage-assets/wp-content/uploads/2023/07/especialistas_mirage_web.webp')) }} 1135w"
                                                         sizes="(max-width: 1135px) 100vw, 1135px" /></noscript></a>
                                         </div>
                                     </div>
                                     <div class="su-image-carousel-item">
                                         <div class="su-image-carousel-item-content"><a
-                                                href="{{ \App\Models\CompanySetting::get('home_bottom_banner_2_url', 'mailto:lizethg@airesmirage.com') }}" target="_blank"
+                                                href="{{ \App\Models\CompanySetting::get('home_bottom_banner_2_url', 'mailto:' . \App\Models\CompanySetting::get('contact_email', 'contacto@empresa.com')) }}" target="_blank"
                                                 rel="noopener noreferrer" data-caption=""><img width="1135" height="738"
                                                     src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201135%20738'%3E%3C/svg%3E"
                                                     class="" alt="" decoding="async"
-                                                    data-lazy-srcset="{{ \App\Models\CompanySetting::get('home_bottom_banner_2_image', 'https://mirage.mx/wp-content/uploads/2023/07/oportunidades_mirage.webp') }} 1135w"
+                                                    data-lazy-srcset="{{ \App\Models\CompanySetting::get('home_bottom_banner_2_image', asset('vendor/mirage-assets/wp-content/uploads/2023/07/oportunidades_mirage.webp')) }} 1135w"
                                                     data-lazy-sizes="(max-width: 1135px) 100vw, 1135px"
-                                                    data-lazy-src="{{ \App\Models\CompanySetting::get('home_bottom_banner_2_image', 'https://mirage.mx/wp-content/uploads/2023/07/oportunidades_mirage.webp') }}" /><noscript><img
+                                                    data-lazy-src="{{ \App\Models\CompanySetting::get('home_bottom_banner_2_image', asset('vendor/mirage-assets/wp-content/uploads/2023/07/oportunidades_mirage.webp')) }}" /><noscript><img
                                                         loading="lazy" width="1135" height="738"
-                                                        src="{{ \App\Models\CompanySetting::get('home_bottom_banner_2_image', 'https://mirage.mx/wp-content/uploads/2023/07/oportunidades_mirage.webp') }}"
+                                                        src="{{ \App\Models\CompanySetting::get('home_bottom_banner_2_image', asset('vendor/mirage-assets/wp-content/uploads/2023/07/oportunidades_mirage.webp')) }}"
                                                         class="" alt="" decoding="async"
-                                                        srcset="{{ \App\Models\CompanySetting::get('home_bottom_banner_2_image', 'https://mirage.mx/wp-content/uploads/2023/07/oportunidades_mirage.webp') }} 1135w"
+                                                        srcset="{{ \App\Models\CompanySetting::get('home_bottom_banner_2_image', asset('vendor/mirage-assets/wp-content/uploads/2023/07/oportunidades_mirage.webp')) }} 1135w"
                                                         sizes="(max-width: 1135px) 100vw, 1135px" /></noscript></a>
                                         </div>
                                     </div>
                                 </div>
-                                <script type="text/rocketlazyloadscript" id="su_image_carousel_6a316b792df5d_script">
+                                <script type="text/javascript" id="su_image_carousel_6a316b792df5d_script">
                                     if(window.SUImageCarousel){setTimeout(function() {window.SUImageCarousel.initGallery(document.getElementById("su_image_carousel_6a316b792df5d"))}, 0);}var su_image_carousel_6a316b792df5d_script=document.getElementById("su_image_carousel_6a316b792df5d_script");if(su_image_carousel_6a316b792df5d_script){su_image_carousel_6a316b792df5d_script.parentNode.removeChild(su_image_carousel_6a316b792df5d_script);}
                                 </script>
                             </div>
@@ -614,7 +614,7 @@
 </script>
     <!-- Load Facebook SDK for JavaScript -->
     <div data-wpr-lazyrender="1" id="fb-root"></div>
-    <script type="text/rocketlazyloadscript">(function(d, s, id) {
+    <script type="text/javascript">(function(d, s, id) {
 	var js, fjs = d.getElementsByTagName(s)[0];
 	if (d.getElementById(id)) return;
 	js = d.createElement(s); js.id = id;
@@ -625,7 +625,7 @@
     <div class="fb-customerchat" attribution=install_email page_id="135782736455828"
         logged_in_greeting="¡Hola! ¿En qué te podemos ayudar?" logged_out_greeting="¡Hola! ¿En qué te podemos ayudar?">
     </div>
-    <script type="text/rocketlazyloadscript">
+    <script type="text/javascript">
         (function($){
   $(window).on('elementor/frontend/init', function() {
 
@@ -712,7 +712,7 @@
 })(jQuery);
 </script>
     <style type="text/css" media="screen"></style>
-    <script type="text/rocketlazyloadscript">
+    <script type="text/javascript">
         const lazyloadRunObserver = () => {
 					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
 					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
@@ -738,7 +738,7 @@
 					document.addEventListener( event, lazyloadRunObserver );
 				} );
 			</script>
-    <script type="text/rocketlazyloadscript" data-rocket-type='text/javascript'>
+    <script type="text/javascript" data-rocket-type='text/javascript'>
         (function () {
 			var c = document.body.className;
 			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
@@ -746,52 +746,52 @@
 		})();
 	</script>
     <link rel='stylesheet' id='wc-blocks-style-css'
-        href='https://mirage.mx/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=wc-10.8.1'
+        href="{{ asset('vendor/mirage-assets/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css') }}"
         media='all' />
     <link rel='stylesheet' id='elementor-frontend-css'
-        href='https://mirage.mx/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.1.3' media='all' />
+        href="{{ asset('vendor/mirage-assets/wp-content/plugins/elementor/assets/css/frontend.min.css') }}" media='all' />
     <link rel='stylesheet' id='elementor-post-23732-css'
-        href='https://mirage.mx/wp-content/uploads/elementor/css/post-23732.css?ver=1781623673' media='all' />
+        href="{{ asset('vendor/mirage-assets/wp-content/uploads/elementor/css/post-23732.css') }}" media='all' />
     <link rel='stylesheet' id='widget-spacer-css'
-        href='https://mirage.mx/wp-content/plugins/elementor/assets/css/widget-spacer.min.css?ver=4.1.3' media='all' />
+        href="{{ asset('vendor/mirage-assets/wp-content/plugins/elementor/assets/css/widget-spacer.min.css') }}" media='all' />
     <link rel='stylesheet' id='widget-animated-headline-css'
-        href='https://mirage.mx/wp-content/plugins/elementor-pro/assets/css/widget-animated-headline.min.css?ver=4.1.1'
+        href="{{ asset('vendor/mirage-assets/wp-content/plugins/elementor-pro/assets/css/widget-animated-headline.min.css') }}"
         media='all' />
     <link rel='stylesheet' id='widget-image-css'
-        href='https://mirage.mx/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=4.1.3' media='all' />
+        href="{{ asset('vendor/mirage-assets/wp-content/plugins/elementor/assets/css/widget-image.min.css') }}" media='all' />
     <link rel='stylesheet' id='widget-icon-box-css'
-        href='https://mirage.mx/wp-content/plugins/elementor/assets/css/widget-icon-box.min.css?ver=4.1.3'
+        href="{{ asset('vendor/mirage-assets/wp-content/plugins/elementor/assets/css/widget-icon-box.min.css') }}"
         media='all' />
     <link rel='stylesheet' id='e-motion-fx-css'
-        href='https://mirage.mx/wp-content/plugins/elementor-pro/assets/css/modules/motion-fx.min.css?ver=4.1.1'
+        href="{{ asset('vendor/mirage-assets/wp-content/plugins/elementor-pro/assets/css/modules/motion-fx.min.css') }}"
         media='all' />
     <link rel='stylesheet' id='e-sticky-css'
-        href='https://mirage.mx/wp-content/plugins/elementor-pro/assets/css/modules/sticky.min.css?ver=4.1.1'
+        href="{{ asset('vendor/mirage-assets/wp-content/plugins/elementor-pro/assets/css/modules/sticky.min.css') }}"
         media='all' />
     <link rel='stylesheet' id='widget-flip-box-css'
-        href='https://mirage.mx/wp-content/plugins/elementor-pro/assets/css/widget-flip-box.min.css?ver=4.1.1'
+        href="{{ asset('vendor/mirage-assets/wp-content/plugins/elementor-pro/assets/css/widget-flip-box.min.css') }}"
         media='all' />
     <link rel='stylesheet' id='flickity-css'
-        href='https://mirage.mx/wp-content/plugins/shortcodes-ultimate/vendor/flickity/flickity.css?ver=2.2.1'
+        href="{{ asset('vendor/mirage-assets/wp-content/plugins/shortcodes-ultimate/vendor/flickity/flickity.css') }}"
         media='all' />
     <link rel='stylesheet' id='su-shortcodes-css'
-        href='https://mirage.mx/wp-content/plugins/shortcodes-ultimate/includes/css/shortcodes.css?ver=7.8.2'
+        href="{{ asset('vendor/mirage-assets/wp-content/plugins/shortcodes-ultimate/includes/css/shortcodes.css') }}"
         media='all' />
     <link rel='stylesheet' id='elementor-icons-css'
-        href='https://mirage.mx/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.49.0'
+        href="{{ asset('vendor/mirage-assets/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css') }}"
         media='all' />
     <link rel='stylesheet' id='elementor-post-23667-css'
-        href='https://mirage.mx/wp-content/uploads/elementor/css/post-23667.css?ver=1781623671' media='all' />
+        href="{{ asset('vendor/mirage-assets/wp-content/uploads/elementor/css/post-23667.css') }}" media='all' />
     <link rel='stylesheet' id='elementor-gf-local-roboto-css'
-        href='https://mirage.mx/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1742323354' media='all' />
+        href="{{ asset('vendor/mirage-assets/wp-content/uploads/elementor/google-fonts/css/roboto.css') }}" media='all' />
     <link rel='stylesheet' id='elementor-gf-local-robotoslab-css'
-        href='https://mirage.mx/wp-content/uploads/elementor/google-fonts/css/robotoslab.css?ver=1742323365'
+        href="{{ asset('vendor/mirage-assets/wp-content/uploads/elementor/google-fonts/css/robotoslab.css') }}"
         media='all' />
     <link rel='stylesheet' id='elementor-icons-shared-0-css'
-        href='https://mirage.mx/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3'
+        href="{{ asset('vendor/mirage-assets/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css') }}"
         media='all' />
     <link rel='stylesheet' id='elementor-icons-fa-solid-css'
-        href='https://mirage.mx/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3'
+        href="{{ asset('vendor/mirage-assets/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css') }}"
         media='all' />
     <script id="woocommerce-events-front-script-js-extra">
         var frontObj = {
@@ -799,10 +799,10 @@
         };
         //# sourceURL=woocommerce-events-front-script-js-extra
     </script>
-    <script type="text/rocketlazyloadscript" id="woocommerce-events-front-script-js"
-        data-rocket-src="https://mirage.mx/wp-content/plugins/fooevents/js/events-frontend.js?ver=1.0.0"
-        data-rocket-defer defer></script>
-    <script type="text/rocketlazyloadscript" id="rocket-browser-checker-js-after">
+    <script type="text/javascript" id="woocommerce-events-front-script-js"
+        src="{{ asset('vendor/mirage-assets/wp-content/plugins/fooevents/js/events-frontend.js') }}"
+         defer></script>
+    <script type="text/javascript" id="rocket-browser-checker-js-after">
         "use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
 //# sourceURL=rocket-browser-checker-js-after
 </script>
@@ -818,27 +818,27 @@
         };
         //# sourceURL=rocket-preload-links-js-extra
     </script>
-    <script type="text/rocketlazyloadscript" id="rocket-preload-links-js-after">
+    <script type="text/javascript" id="rocket-preload-links-js-after">
         (function() {
 "use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
 }());
 
 //# sourceURL=rocket-preload-links-js-after
 </script>
-    <script type="text/rocketlazyloadscript" id="hoverIntent-js"
-        data-rocket-src="https://mirage.mx/wp-includes/js/hoverIntent.min.js?ver=1.10.2" data-rocket-defer defer>
+    <script type="text/javascript" id="hoverIntent-js"
+        src="{{ asset('vendor/mirage-assets/wp-includes/js/hoverIntent.min.js') }}"  defer>
     </script>
-    <script type="text/rocketlazyloadscript" id="superfish-js"
-        data-rocket-src="https://mirage.mx/wp-content/themes/genesis/lib/js/menu/superfish.min.js?ver=1.7.10"
-        data-rocket-defer defer></script>
-    <script type="text/rocketlazyloadscript" id="superfish-args-js"
-        data-rocket-src="https://mirage.mx/wp-content/themes/genesis/lib/js/menu/superfish.args.min.js?ver=3.6.2"
-        data-rocket-defer defer></script>
-    <script type="text/rocketlazyloadscript" id="skip-links-js"
-        data-rocket-src="https://mirage.mx/wp-content/themes/genesis/lib/js/skip-links.min.js?ver=3.6.2"
-        data-rocket-defer defer></script>
-    <script type="text/rocketlazyloadscript" id="digital-global-scripts-js"
-        data-rocket-src="https://mirage.mx/wp-content/themes/digital-pro/js/global.js?ver=1.1.3" data-rocket-defer
+    <script type="text/javascript" id="superfish-js"
+        src="{{ asset('vendor/mirage-assets/wp-content/themes/genesis/lib/js/menu/superfish.min.js') }}"
+         defer></script>
+    <script type="text/javascript" id="superfish-args-js"
+        src="{{ asset('vendor/mirage-assets/wp-content/themes/genesis/lib/js/menu/superfish.args.min.js') }}"
+         defer></script>
+    <script type="text/javascript" id="skip-links-js"
+        src="{{ asset('vendor/mirage-assets/wp-content/themes/genesis/lib/js/skip-links.min.js') }}"
+         defer></script>
+    <script type="text/javascript" id="digital-global-scripts-js"
+        src="{{ asset('vendor/mirage-assets/wp-content/themes/digital-pro/js/global.js') }}" 
         defer></script>
     <script id="digital-responsive-menu-js-extra">
         var genesis_responsive_menu = {
@@ -852,12 +852,12 @@
         };
         //# sourceURL=digital-responsive-menu-js-extra
     </script>
-    <script type="text/rocketlazyloadscript" id="digital-responsive-menu-js"
-        data-rocket-src="https://mirage.mx/wp-content/themes/digital-pro/js/responsive-menus.min.js?ver=1.1.3"
-        data-rocket-defer defer></script>
-    <script type="text/rocketlazyloadscript" id="sourcebuster-js-js"
-        data-rocket-src="https://mirage.mx/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=10.8.1"
-        data-rocket-defer defer></script>
+    <script type="text/javascript" id="digital-responsive-menu-js"
+        src="{{ asset('vendor/mirage-assets/wp-content/themes/digital-pro/js/responsive-menus.min.js') }}"
+        defer></script>
+    <script type="text/javascript" id="sourcebuster-js-js"
+        src="{{ asset('vendor/mirage-assets/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js') }}"
+         defer></script>
     <script id="wc-order-attribution-js-extra">
         var wc_order_attribution = {
             "params": {
@@ -889,36 +889,36 @@
         };
         //# sourceURL=wc-order-attribution-js-extra
     </script>
-    <script type="text/rocketlazyloadscript" id="wc-order-attribution-js"
-        data-rocket-src="https://mirage.mx/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=10.8.1"
-        data-rocket-defer defer></script>
-    <script type="text/rocketlazyloadscript" id="digital-front-script-js"
-        data-rocket-src="https://mirage.mx/wp-content/themes/digital-pro/js/front-page.js?ver=1.1.3" data-rocket-defer
+    <script type="text/javascript" id="wc-order-attribution-js"
+        src="{{ asset('vendor/mirage-assets/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js') }}"
+         defer></script>
+    <script type="text/javascript" id="digital-front-script-js"
+        src="{{ asset('vendor/mirage-assets/wp-content/themes/digital-pro/js/front-page.js') }}" 
         defer></script>
-    <script type="text/rocketlazyloadscript" id="elementor-webpack-runtime-js"
-        data-rocket-src="https://mirage.mx/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=4.1.3"
-        data-rocket-defer defer></script>
-    <script type="text/rocketlazyloadscript" id="elementor-frontend-modules-js"
-        data-rocket-src="https://mirage.mx/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=4.1.3"
-        data-rocket-defer defer></script>
-    <script id="jquery-ui-core-js" src="https://mirage.mx/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3"
-        data-rocket-defer defer></script>
-    <script type="text/rocketlazyloadscript" id="elementor-frontend-js-before">
+    <script type="text/javascript" id="elementor-webpack-runtime-js"
+        src="{{ asset('vendor/mirage-assets/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js') }}"
+         defer></script>
+    <script type="text/javascript" id="elementor-frontend-modules-js"
+        src="{{ asset('vendor/mirage-assets/wp-content/plugins/elementor/assets/js/frontend-modules.min.js') }}"
+         defer></script>
+    <script id="jquery-ui-core-js" src="{{ asset('vendor/mirage-assets/wp-includes/js/jquery/ui/core.min.js') }}"
+         defer></script>
+    <script type="text/javascript" id="elementor-frontend-js-before">
         var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartir en Facebook","shareOnTwitter":"Compartir en Twitter","pinIt":"Fijarlo","download":"Descargar","downloadImage":"Descargar imagen","fullscreen":"Pantalla completa","zoom":"Zoom","share":"Compartir","playVideo":"Reproducir video","previous":"Previo","next":"Siguiente","close":"Cerrar","a11yCarouselPrevSlideMessage":"Diapositiva anterior","a11yCarouselNextSlideMessage":"Diapositiva siguiente","a11yCarouselFirstSlideMessage":"Esta es la primera diapositiva","a11yCarouselLastSlideMessage":"Esta es la \u00faltima diapositiva","a11yCarouselPaginationBulletMessage":"Ir a la diapositiva"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"M\u00f3vil en Retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"M\u00f3vil horizontal","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tableta vertical","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tableta horizontal","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Pantalla grande","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.1.3","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"container":true,"theme_builder_v2":true,"nested-elements":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_opt_in_v4_page":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true,"e_pro_atomic_form":true,"e_pro_variables":true,"e_pro_interactions":true},"urls":{"assets":"https:\/\/mirage.mx\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/mirage.mx\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/mirage.mx\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"92eca0c79b","atomicFormsSendForm":"b8b95d9195"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","woocommerce_notices_elements":[]},"post":{"id":821,"title":"Mirage%20M%C3%A9xico%20%E2%80%93%20Marca%20especializada%20en%20aires%20acondicionados%20y%20l%C3%ADnea%20blanca.","excerpt":"","featuredImage":"https:\/\/mirage.mx\/wp-content\/uploads\/2023\/05\/mirage_icon.png"}};
 //# sourceURL=elementor-frontend-js-before
 </script>
-    <script type="text/rocketlazyloadscript" id="elementor-frontend-js"
-        data-rocket-src="https://mirage.mx/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=4.1.3"
-        data-rocket-defer defer></script>
+    <script type="text/javascript" id="elementor-frontend-js"
+        src="{{ asset('vendor/mirage-assets/wp-content/plugins/elementor/assets/js/frontend.min.js') }}"
+         defer></script>
     <script id="e-sticky-js"
-        src="https://mirage.mx/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=4.1.1"
-        data-rocket-defer defer></script>
-    <script type="text/rocketlazyloadscript" id="lity-js"
-        data-rocket-src="https://mirage.mx/wp-content/plugins/unlimited-elements-for-elementor-premium/assets_libraries/lity/lity.min.js?ver=2.0.10"
-        data-rocket-defer defer></script>
-    <script type="text/rocketlazyloadscript" id="flickity-js"
-        data-rocket-src="https://mirage.mx/wp-content/plugins/shortcodes-ultimate/vendor/flickity/flickity.js?ver=2.2.1"
-        data-rocket-defer defer></script>
+        src="{{ asset('vendor/mirage-assets/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js') }}"
+         defer></script>
+    <script type="text/javascript" id="lity-js"
+        src="{{ asset('vendor/mirage-assets/wp-content/plugins/unlimited-elements-for-elementor-premium/assets_libraries/lity/lity.min.js') }}"
+         defer></script>
+    <script type="text/javascript" id="flickity-js"
+        src="{{ asset('vendor/mirage-assets/wp-content/plugins/shortcodes-ultimate/vendor/flickity/flickity.js') }}"
+         defer></script>
     <script id="su-shortcodes-js-extra">
         var SUShortcodesL10n = {
             "noPreview": "Este shortocde no funciona con la vista previa. Por favor ins\u00e9rtalo en el editor de texto y visual\u00edzalo despu\u00e9s.",
@@ -933,33 +933,33 @@
         };
         //# sourceURL=su-shortcodes-js-extra
     </script>
-    <script type="text/rocketlazyloadscript" id="su-shortcodes-js"
-        data-rocket-src="https://mirage.mx/wp-content/plugins/shortcodes-ultimate/includes/js/shortcodes/index.js?ver=7.8.2"
-        data-rocket-defer defer></script>
-    <script type="text/rocketlazyloadscript" id="elementor-pro-webpack-runtime-js"
-        data-rocket-src="https://mirage.mx/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=4.1.1"
-        data-rocket-defer defer></script>
-    <script type="text/rocketlazyloadscript" id="wp-hooks-js"
-        data-rocket-src="https://mirage.mx/wp-includes/js/dist/hooks.min.js?ver=7496969728ca0f95732d"></script>
-    <script type="text/rocketlazyloadscript" id="wp-i18n-js"
-        data-rocket-src="https://mirage.mx/wp-includes/js/dist/i18n.min.js?ver=781d11515ad3d91786ec"></script>
-    <script type="text/rocketlazyloadscript" id="wp-i18n-js-after">
+    <script type="text/javascript" id="su-shortcodes-js"
+        src="{{ asset('vendor/mirage-assets/wp-content/plugins/shortcodes-ultimate/includes/js/shortcodes/index.js') }}"
+         defer></script>
+    <script type="text/javascript" id="elementor-pro-webpack-runtime-js"
+        src="{{ asset('vendor/mirage-assets/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js') }}"
+         defer></script>
+    <script type="text/javascript" id="wp-hooks-js"
+        src="{{ asset('vendor/mirage-assets/wp-includes/js/dist/hooks.min.js') }}"></script>
+    <script type="text/javascript" id="wp-i18n-js"
+        src="{{ asset('vendor/mirage-assets/wp-includes/js/dist/i18n.min.js') }}"></script>
+    <script type="text/javascript" id="wp-i18n-js-after">
         wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 //# sourceURL=wp-i18n-js-after
 </script>
-    <script type="text/rocketlazyloadscript" id="elementor-pro-frontend-js-before">
+    <script type="text/javascript" id="elementor-pro-frontend-js-before">
         var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/mirage.mx\/wp-admin\/admin-ajax.php","nonce":"c8dc4b157e","urls":{"assets":"https:\/\/mirage.mx\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/mirage.mx\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":true},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"woocommerce":{"menu_cart":{"cart_page_url":"https:\/\/mirage.mx\/confirmar\/","checkout_page_url":"https:\/\/mirage.mx\/reservar\/","fragments_nonce":"857c55e0e8"}},"facebook_sdk":{"lang":"es_MX","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/mirage.mx\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
 //# sourceURL=elementor-pro-frontend-js-before
 </script>
-    <script type="text/rocketlazyloadscript" id="elementor-pro-frontend-js"
-        data-rocket-src="https://mirage.mx/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=4.1.1"
-        data-rocket-defer defer></script>
-    <script type="text/rocketlazyloadscript" id="pro-elements-handlers-js"
-        data-rocket-src="https://mirage.mx/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=4.1.1"
-        data-rocket-defer defer></script>
+    <script type="text/javascript" id="elementor-pro-frontend-js"
+        src="{{ asset('vendor/mirage-assets/wp-content/plugins/elementor-pro/assets/js/frontend.min.js') }}"
+         defer></script>
+    <script type="text/javascript" id="pro-elements-handlers-js"
+        src="{{ asset('vendor/mirage-assets/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js') }}"
+         defer></script>
 
     <!--   Unlimited Elements 2.0.10 Scripts -->
-    <script type="text/rocketlazyloadscript" data-rocket-type='text/javascript' id='unlimited-elements-scripts'>
+    <script type="text/javascript" data-rocket-type='text/javascript' id='unlimited-elements-scripts'>
 
         /* Video Play Button scripts: */
 
@@ -1014,7 +1014,7 @@ jQuery(document).on('click.lity', function(){
         }
     </style>
 
-    <script type="text/rocketlazyloadscript" data-rocket-type='text/javascript'>
+    <script type="text/javascript" data-rocket-type='text/javascript'>
 
         jQuery(document).ready(function(){
 
@@ -1169,7 +1169,7 @@ jQuery(document).on('click.lity', function(){
         }, !1)
     </script>
     <script data-no-minify="1" async
-        src="https://mirage.mx/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script>
+        src="{{ asset('vendor/mirage-assets/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js') }}"></script>
     <script>
         (() => {
             class RocketElementorPreload {

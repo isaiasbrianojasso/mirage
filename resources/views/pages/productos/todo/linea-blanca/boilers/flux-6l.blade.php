@@ -6,7 +6,7 @@
 			<div id="product-1063" class="post-1063 product type-product status-publish has-post-thumbnail product_cat-boilers product_cat-flux product_cat-linea-blanca product_cat-todo product_tag-linea-blanca entry first instock featured shipping-taxable product-type-simple">
 				<div class="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images" data-columns="4" style="opacity: 0; transition: opacity .25s ease-in-out;">
 	<div class="woocommerce-product-gallery__wrapper">
-		<img fetchpriority="high" width="670" height="670" src="../../../../../wp-content/uploads/2017/06/calentador_flux_basico_mirage-670x670.png" class="wp-post-image" alt="Flux Basico" data-caption="" data-src="https://mirage.mx/wp-content/uploads/2017/06/calentador_flux_basico_mirage.png" data-large_image="https://mirage.mx/wp-content/uploads/2017/06/calentador_flux_basico_mirage.png" data-large_image_width="1080" data-large_image_height="1080" decoding="async" srcset="../../../../../wp-content/uploads/2017/06/calentador_flux_basico_mirage-670x670.png 670w, ../../../../../wp-content/uploads/2017/06/calentador_flux_basico_mirage-300x300.png 300w, ../../../../../wp-content/uploads/2017/06/calentador_flux_basico_mirage-1024x1024.png 1024w, ../../../../../wp-content/uploads/2017/06/calentador_flux_basico_mirage-150x150.png 150w, ../../../../../wp-content/uploads/2017/06/calentador_flux_basico_mirage-768x768.png 768w, ../../../../../wp-content/uploads/2017/06/calentador_flux_basico_mirage-600x600.png 600w, ../../../../../wp-content/uploads/2017/06/calentador_flux_basico_mirage-500x500.png 500w, ../../../../../wp-content/uploads/2017/06/calentador_flux_basico_mirage-100x100.png 100w, ../../../../../wp-content/uploads/2017/06/calentador_flux_basico_mirage.png 1080w" sizes="(max-width: 670px) 100vw, 670px" />	</div>
+		<img fetchpriority="high" width="670" height="670" src="../../../../../wp-content/uploads/2017/06/calentador_flux_basico_mirage-670x670.png" class="wp-post-image" alt="Flux Basico" data-caption="" data-src="{{ asset('vendor/mirage-assets/wp-content/uploads/2017/06/calentador_flux_basico_mirage.png') }}" data-large_image="{{ asset('vendor/mirage-assets/wp-content/uploads/2017/06/calentador_flux_basico_mirage.png') }}" data-large_image_width="1080" data-large_image_height="1080" decoding="async" srcset="../../../../../wp-content/uploads/2017/06/calentador_flux_basico_mirage-670x670.png 670w, ../../../../../wp-content/uploads/2017/06/calentador_flux_basico_mirage-300x300.png 300w, ../../../../../wp-content/uploads/2017/06/calentador_flux_basico_mirage-1024x1024.png 1024w, ../../../../../wp-content/uploads/2017/06/calentador_flux_basico_mirage-150x150.png 150w, ../../../../../wp-content/uploads/2017/06/calentador_flux_basico_mirage-768x768.png 768w, ../../../../../wp-content/uploads/2017/06/calentador_flux_basico_mirage-600x600.png 600w, ../../../../../wp-content/uploads/2017/06/calentador_flux_basico_mirage-500x500.png 500w, ../../../../../wp-content/uploads/2017/06/calentador_flux_basico_mirage-100x100.png 100w, ../../../../../wp-content/uploads/2017/06/calentador_flux_basico_mirage.png 1080w" sizes="(max-width: 670px) 100vw, 670px" />	</div>
 </div>
 
 				<div class="summary">
@@ -49,7 +49,7 @@
 
 <h2>CALENTADOR INSTÁNTANEO DE AGUA</h2>
 <p>Nuestros boilers ahorran hasta un 70% de consumo de gas, gracias a su tecnología Energy Saver y encendido automático obteniendo agua caliente al instante para todo tu hogar.</p>
-<p><img decoding="async" class="aligncenter wp-image-23934" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20246%20269'%3E%3C/svg%3E" alt="" width="246" height="269" data-lazy-srcset="https://mirage.mx/wp-content/uploads/2022/07/garantia_flux_2a_mirage.webp 712w, https://mirage.mx/wp-content/uploads/2022/07/garantia_flux_2a_mirage-274x300.webp 274w, https://mirage.mx/wp-content/uploads/2022/07/garantia_flux_2a_mirage-670x733.webp 670w" data-lazy-sizes="(max-width: 246px) 100vw, 246px" data-lazy-src="https://mirage.mx/wp-content/uploads/2022/07/garantia_flux_2a_mirage.webp" /><noscript><img decoding="async" class="aligncenter wp-image-23934" src="../../../../../wp-content/uploads/2022/07/garantia_flux_2a_mirage.webp" alt="" width="246" height="269" srcset="../../../../../wp-content/uploads/2022/07/garantia_flux_2a_mirage.webp 712w, ../../../../../wp-content/uploads/2022/07/garantia_flux_2a_mirage-274x300.webp 274w, ../../../../../wp-content/uploads/2022/07/garantia_flux_2a_mirage-670x733.webp 670w" sizes="(max-width: 246px) 100vw, 246px" /></noscript></p>
+<p><img decoding="async" class="aligncenter wp-image-23934" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20246%20269'%3E%3C/svg%3E" alt="" width="246" height="269" data-lazy-srcset="{{ asset('vendor/mirage-assets/wp-content/uploads/2022/07/garantia_flux_2a_mirage.webp') }} 712w, {{ asset('vendor/mirage-assets/wp-content/uploads/2022/07/garantia_flux_2a_mirage-274x300.webp') }} 274w, {{ asset('vendor/mirage-assets/wp-content/uploads/2022/07/garantia_flux_2a_mirage-670x733.webp') }} 670w" data-lazy-sizes="(max-width: 246px) 100vw, 246px" data-lazy-src="{{ asset('vendor/mirage-assets/wp-content/uploads/2022/07/garantia_flux_2a_mirage.webp') }}" /><noscript><img decoding="async" class="aligncenter wp-image-23934" src="../../../../../wp-content/uploads/2022/07/garantia_flux_2a_mirage.webp" alt="" width="246" height="269" srcset="../../../../../wp-content/uploads/2022/07/garantia_flux_2a_mirage.webp 712w, ../../../../../wp-content/uploads/2022/07/garantia_flux_2a_mirage-274x300.webp 274w, ../../../../../wp-content/uploads/2022/07/garantia_flux_2a_mirage-670x733.webp 670w" sizes="(max-width: 246px) 100vw, 246px" /></noscript></p>
 <h2>Especificaciones del producto</h2>
 <div class="su-tabs su-tabs-style-default su-tabs-mobile-stack" data-active="1" data-scroll-offset="0" data-anchor-in-url="no"><div class="su-tabs-nav"><span class="" data-url="" data-target="blank" tabindex="0" role="button">MBF06ED</span><span class="" data-url="" data-target="blank" tabindex="0" role="button">MBF06EF</span></div><div class="su-tabs-panes"><div class="su-tabs-pane su-u-clearfix su-u-trim" data-title="MBF06ED">
 <p>CAPACIDAD BAJO PRUEBA*4,3 I/min</p>
@@ -183,19 +183,19 @@
 <div class="su-spacer" style="height:30px"></div>
 <div class="su-row">
 <div class="su-column su-column-size-1-3"><div class="su-column-inner su-u-clearfix su-u-trim">
-<div class="sue-icon-text" data-url="" data-target="self" style="min-height:58px;padding-left:72px;color:#333333"><div class="sue-icon-text-icon" style="color:#333333;font-size:48px;width:48px;height:48px"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" style="width:48px" alt="" data-lazy-src="//mirage.mx/wp-content/uploads/2022/08/fluxe_alta_seguridad.svg" /><noscript><img decoding="async" src="../../../../../wp-content/uploads/2022/08/fluxe_alta_seguridad.svg" style="width:48px" alt="" /></noscript></div><div class="sue-icon-text-content sue-content-wrap" style="color:#333333">
+<div class="sue-icon-text" data-url="" data-target="self" style="min-height:58px;padding-left:72px;color:#333333"><div class="sue-icon-text-icon" style="color:#333333;font-size:48px;width:48px;height:48px"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" style="width:48px" alt="" data-lazy-src="{{ asset('vendor/mirage-assets/wp-content/uploads/2022/08/fluxe_alta_seguridad.svg') }}" /><noscript><img decoding="async" src="../../../../../wp-content/uploads/2022/08/fluxe_alta_seguridad.svg" style="width:48px" alt="" /></noscript></div><div class="sue-icon-text-content sue-content-wrap" style="color:#333333">
 <h2>SIN PILOTO DE FLAMA</h2>
 <p>Encendido electrónico automático activado por el flujo de agua<br />
 </div><div style="clear:both;height:0"></div></div>
 </div></div>
 <div class="su-column su-column-size-1-3"><div class="su-column-inner su-u-clearfix su-u-trim">
-<div class="sue-icon-text" data-url="" data-target="self" style="min-height:58px;padding-left:72px;color:#333333"><div class="sue-icon-text-icon" style="color:#333333;font-size:48px;width:48px;height:48px"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" style="width:48px" alt="" data-lazy-src="//mirage.mx/wp-content/uploads/2022/08/fluxe_precision_de_temperatura.svg" /><noscript><img decoding="async" src="../../../../../wp-content/uploads/2022/08/fluxe_precision_de_temperatura.svg" style="width:48px" alt="" /></noscript></div><div class="sue-icon-text-content sue-content-wrap" style="color:#333333">
+<div class="sue-icon-text" data-url="" data-target="self" style="min-height:58px;padding-left:72px;color:#333333"><div class="sue-icon-text-icon" style="color:#333333;font-size:48px;width:48px;height:48px"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" style="width:48px" alt="" data-lazy-src="{{ asset('vendor/mirage-assets/wp-content/uploads/2022/08/fluxe_precision_de_temperatura.svg') }}" /><noscript><img decoding="async" src="../../../../../wp-content/uploads/2022/08/fluxe_precision_de_temperatura.svg" style="width:48px" alt="" /></noscript></div><div class="sue-icon-text-content sue-content-wrap" style="color:#333333">
 <h2>FUNCIONA CON BAJA PRESIÓN</h2>
 <p>Presión mínima de encendido de “100 mg/cm2” o “1.42 PSI”<br />
 </div><div style="clear:both;height:0"></div></div>
 </div></div>
 <div class="su-column su-column-size-1-3"><div class="su-column-inner su-u-clearfix su-u-trim">
-<div class="sue-icon-text" data-url="" data-target="self" style="min-height:58px;padding-left:72px;color:#333333"><div class="sue-icon-text-icon" style="color:#333333;font-size:48px;width:48px;height:48px"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" style="width:48px" alt="" data-lazy-src="//mirage.mx/wp-content/uploads/2022/08/fluxe_bajo_coste_operativo.svg" /><noscript><img decoding="async" src="../../../../../wp-content/uploads/2022/08/fluxe_bajo_coste_operativo.svg" style="width:48px" alt="" /></noscript></div><div class="sue-icon-text-content sue-content-wrap" style="color:#333333">
+<div class="sue-icon-text" data-url="" data-target="self" style="min-height:58px;padding-left:72px;color:#333333"><div class="sue-icon-text-icon" style="color:#333333;font-size:48px;width:48px;height:48px"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" style="width:48px" alt="" data-lazy-src="{{ asset('vendor/mirage-assets/wp-content/uploads/2022/08/fluxe_bajo_coste_operativo.svg') }}" /><noscript><img decoding="async" src="../../../../../wp-content/uploads/2022/08/fluxe_bajo_coste_operativo.svg" style="width:48px" alt="" /></noscript></div><div class="sue-icon-text-content sue-content-wrap" style="color:#333333">
 <h2>CONTROLES</h2>
 <p>Perilla de control para la intensidad de la flama<br />
 </div><div style="clear:both;height:0"></div></div>
@@ -203,19 +203,19 @@
 </div>
 <div class="su-row">
 <div class="su-column su-column-size-1-3"><div class="su-column-inner su-u-clearfix su-u-trim">
-<div class="sue-icon-text" data-url="" data-target="self" style="min-height:58px;padding-left:72px;color:#333333"><div class="sue-icon-text-icon" style="color:#333333;font-size:48px;width:48px;height:48px"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" style="width:48px" alt="" data-lazy-src="//mirage.mx/wp-content/uploads/2022/08/fluxe_facil_transportacion.svg" /><noscript><img decoding="async" src="../../../../../wp-content/uploads/2022/08/fluxe_facil_transportacion.svg" style="width:48px" alt="" /></noscript></div><div class="sue-icon-text-content sue-content-wrap" style="color:#333333">
+<div class="sue-icon-text" data-url="" data-target="self" style="min-height:58px;padding-left:72px;color:#333333"><div class="sue-icon-text-icon" style="color:#333333;font-size:48px;width:48px;height:48px"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" style="width:48px" alt="" data-lazy-src="{{ asset('vendor/mirage-assets/wp-content/uploads/2022/08/fluxe_facil_transportacion.svg') }}" /><noscript><img decoding="async" src="../../../../../wp-content/uploads/2022/08/fluxe_facil_transportacion.svg" style="width:48px" alt="" /></noscript></div><div class="sue-icon-text-content sue-content-wrap" style="color:#333333">
 <h2>SEGURIDAD</h2>
 <p>Limite de seguridad para la temperatura máxima, evita quemaduras involuntarias.<br />
 </div><div style="clear:both;height:0"></div></div>
 </div></div>
 <div class="su-column su-column-size-1-3"><div class="su-column-inner su-u-clearfix su-u-trim">
-<div class="sue-icon-text" data-url="" data-target="self" style="min-height:58px;padding-left:72px;color:#333333"><div class="sue-icon-text-icon" style="color:#333333;font-size:48px;width:48px;height:48px"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" style="width:48px" alt="" data-lazy-src="//mirage.mx/wp-content/uploads/2022/08/fluxe_display_digital.svg" /><noscript><img decoding="async" src="../../../../../wp-content/uploads/2022/08/fluxe_display_digital.svg" style="width:48px" alt="" /></noscript></div><div class="sue-icon-text-content sue-content-wrap" style="color:#333333">
+<div class="sue-icon-text" data-url="" data-target="self" style="min-height:58px;padding-left:72px;color:#333333"><div class="sue-icon-text-icon" style="color:#333333;font-size:48px;width:48px;height:48px"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" style="width:48px" alt="" data-lazy-src="{{ asset('vendor/mirage-assets/wp-content/uploads/2022/08/fluxe_display_digital.svg') }}" /><noscript><img decoding="async" src="../../../../../wp-content/uploads/2022/08/fluxe_display_digital.svg" style="width:48px" alt="" /></noscript></div><div class="sue-icon-text-content sue-content-wrap" style="color:#333333">
 <h2>TECNOLOGÍA SF</h2>
 <p>Sistema de supervisión de flama y seguro contra acumulación de gas.<br />
 </div><div style="clear:both;height:0"></div></div>
 </div></div>
 <div class="su-column su-column-size-1-3"><div class="su-column-inner su-u-clearfix su-u-trim">
-<div class="sue-icon-text" data-url="" data-target="self" style="min-height:58px;padding-left:72px;color:#333333"><div class="sue-icon-text-icon" style="color:#333333;font-size:48px;width:48px;height:48px"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" style="width:48px" alt="" data-lazy-src="//mirage.mx/wp-content/uploads/2022/08/fluxe_facil_instalacion.svg" /><noscript><img decoding="async" src="../../../../../wp-content/uploads/2022/08/fluxe_facil_instalacion.svg" style="width:48px" alt="" /></noscript></div><div class="sue-icon-text-content sue-content-wrap" style="color:#333333">
+<div class="sue-icon-text" data-url="" data-target="self" style="min-height:58px;padding-left:72px;color:#333333"><div class="sue-icon-text-icon" style="color:#333333;font-size:48px;width:48px;height:48px"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" style="width:48px" alt="" data-lazy-src="{{ asset('vendor/mirage-assets/wp-content/uploads/2022/08/fluxe_facil_instalacion.svg') }}" /><noscript><img decoding="async" src="../../../../../wp-content/uploads/2022/08/fluxe_facil_instalacion.svg" style="width:48px" alt="" /></noscript></div><div class="sue-icon-text-content sue-content-wrap" style="color:#333333">
 <h2>ECO</h2>
 <p>Elegible para eco tecnologías<br />
 </div><div style="clear:both;height:0"></div></div>
@@ -274,14 +274,14 @@
                             style="margin:15px 0;border-width:3px;border-color:#ffffff"><a href="#"
                                 style="color:#ffffff">Ir arriba</a></div>
                     </div></div></section>
-</div></div></div><footer class="site-footer" itemscope itemtype="https://schema.org/WPFooter"><div class="wrap">	<div class="pagebottominfo"><p>&copy; Copyright 2021 <a href="http://www.mirage.mx/">Mirage México</a> &middot; Todos los derechos reservados &middot; <a href="../../../../../avisos/aviso-de-privacidad">Aviso de privacidad</a></p></div>
+</div></div></div><footer class="site-footer" itemscope itemtype="https://schema.org/WPFooter"><div class="wrap">	<div class="pagebottominfo"><p>&copy; Copyright 2021 <a href="http://www.mirage.mx/">{{\App\Models\CompanySetting::get('company_name', 'Nuestra Empresa')}}</a> &middot; Todos los derechos reservados &middot; <a href="../../../../../avisos/aviso-de-privacidad">Aviso de privacidad</a></p></div>
 	<p></p><nav class="nav-secondary" aria-label="Secundario" itemscope itemtype="https://schema.org/SiteNavigationElement"><div class="wrap"><ul id="menu-footer-menu" class="menu genesis-nav-menu menu-secondary js-superfish"><li id="menu-item-16" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16"><a href="https://b2b.mirage.mx/" itemprop="url"><span itemprop="name">Centro Digital</span></a></li>
 <li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="https://www.certificacionmirage.com/" itemprop="url"><span itemprop="name">Certificacion Mirage</span></a></li>
 <li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a target="_blank" href="https://www.facebook.com/miragemx" itemprop="url"><span itemprop="name">Facebook</span></a></li>
 </ul></div></nav></div></footer></div><script type="speculationrules">
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/digital-pro/*","/wp-content/themes/genesis/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
-<script type="text/rocketlazyloadscript">
+<script type="text/javascript">
 (function($){
   $(window).on('elementor/frontend/init', function() {
 
@@ -366,7 +366,7 @@
 
   });
 })(jQuery);
-</script><style type="text/css" media="screen"></style>			<script type="text/rocketlazyloadscript">
+</script><style type="text/css" media="screen"></style>			<script type="text/javascript">
 				const lazyloadRunObserver = () => {
 					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
 					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
@@ -427,7 +427,7 @@
 		</div>
 	</div>
 </div>
-	<script type="text/rocketlazyloadscript" data-rocket-type='text/javascript'>
+	<script type="text/javascript" data-rocket-type='text/javascript'>
 		(function () {
 			var c = document.body.className;
 			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
@@ -443,8 +443,8 @@
 var frontObj = {"copyFromPurchaser":"autocopy"};
 //# sourceURL=woocommerce-events-front-script-js-extra
 </script>
-<script type="text/rocketlazyloadscript" id="woocommerce-events-front-script-js" data-rocket-src="https://mirage.mx/wp-content/plugins/fooevents/js/events-frontend.js?ver=1.0.0" data-rocket-defer defer></script>
-<script type="text/rocketlazyloadscript" id="rocket-browser-checker-js-after">
+<script type="text/javascript" id="woocommerce-events-front-script-js" src="{{ asset('vendor/mirage-assets/wp-content/plugins/fooevents/js/events-frontend.js') }}"  defer></script>
+<script type="text/javascript" id="rocket-browser-checker-js-after">
 "use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
 //# sourceURL=rocket-browser-checker-js-after
 </script>
@@ -452,37 +452,37 @@ var frontObj = {"copyFromPurchaser":"autocopy"};
 var RocketPreloadLinksConfig = {"excludeUris":"/wpstream/live/|/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/reservar/??(.*)|/confirmar/?|/mi-cuenta/??(.*)|/(index.php/)?(.*)wp-json(/.*|$)|/refer/|/go/|/recommend/|/recommends/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https://mirage.mx","onHoverDelay":"100","rateThrottle":"3"};
 //# sourceURL=rocket-preload-links-js-extra
 </script>
-<script type="text/rocketlazyloadscript" id="rocket-preload-links-js-after">
+<script type="text/javascript" id="rocket-preload-links-js-after">
 (function() {
 "use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
 }());
 
 //# sourceURL=rocket-preload-links-js-after
 </script>
-<script type="text/rocketlazyloadscript" id="hoverIntent-js" data-rocket-src="https://mirage.mx/wp-includes/js/hoverIntent.min.js?ver=1.10.2" data-rocket-defer defer></script>
-<script type="text/rocketlazyloadscript" id="superfish-js" data-rocket-src="https://mirage.mx/wp-content/themes/genesis/lib/js/menu/superfish.min.js?ver=1.7.10" data-rocket-defer defer></script>
-<script type="text/rocketlazyloadscript" id="superfish-args-js" data-rocket-src="https://mirage.mx/wp-content/themes/genesis/lib/js/menu/superfish.args.min.js?ver=3.6.2" data-rocket-defer defer></script>
-<script type="text/rocketlazyloadscript" id="skip-links-js" data-rocket-src="https://mirage.mx/wp-content/themes/genesis/lib/js/skip-links.min.js?ver=3.6.2" data-rocket-defer defer></script>
-<script type="text/rocketlazyloadscript" id="digital-global-scripts-js" data-rocket-src="https://mirage.mx/wp-content/themes/digital-pro/js/global.js?ver=1.1.3" data-rocket-defer defer></script>
+<script type="text/javascript" id="hoverIntent-js" src="{{ asset('vendor/mirage-assets/wp-includes/js/hoverIntent.min.js') }}"  defer></script>
+<script type="text/javascript" id="superfish-js" src="{{ asset('vendor/mirage-assets/wp-content/themes/genesis/lib/js/menu/superfish.min.js') }}"  defer></script>
+<script type="text/javascript" id="superfish-args-js" src="{{ asset('vendor/mirage-assets/wp-content/themes/genesis/lib/js/menu/superfish.args.min.js') }}"  defer></script>
+<script type="text/javascript" id="skip-links-js" src="{{ asset('vendor/mirage-assets/wp-content/themes/genesis/lib/js/skip-links.min.js') }}"  defer></script>
+<script type="text/javascript" id="digital-global-scripts-js" src="{{ asset('vendor/mirage-assets/wp-content/themes/digital-pro/js/global.js') }}"  defer></script>
 <script id="digital-responsive-menu-js-extra">
 var genesis_responsive_menu = {"mainMenu":"Men\u00fa","menuIconClass":"ionicons-before ion-ios-drag","subMenu":"Submen\u00fa","subMenuIconClass":"ionicons-before ion-ios-arrow-down","menuClasses":{"others":[".nav-primary"]}};
 //# sourceURL=digital-responsive-menu-js-extra
 </script>
-<script type="text/rocketlazyloadscript" id="digital-responsive-menu-js" data-rocket-src="https://mirage.mx/wp-content/themes/digital-pro/js/responsive-menus.min.js?ver=1.1.3" data-rocket-defer defer></script>
-<script type="text/rocketlazyloadscript" id="sourcebuster-js-js" data-rocket-src="https://mirage.mx/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=10.8.1" data-rocket-defer defer></script>
+<script type="text/javascript" id="digital-responsive-menu-js" src="{{ asset('vendor/mirage-assets/wp-content/themes/digital-pro/js/responsive-menus.min.js') }}"  defer></script>
+<script type="text/javascript" id="sourcebuster-js-js" src="{{ asset('vendor/mirage-assets/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js') }}"  defer></script>
 <script id="wc-order-attribution-js-extra">
 var wc_order_attribution = {"params":{"lifetime":1.0000000000000000818030539140313095458623138256371021270751953125e-5,"session":30,"base64":false,"ajaxurl":"https://mirage.mx/wp-admin/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","utm_source_platform":"current.plt","utm_creative_format":"current.fmt","utm_marketing_tactic":"current.tct","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
 //# sourceURL=wc-order-attribution-js-extra
 </script>
-<script type="text/rocketlazyloadscript" id="wc-order-attribution-js" data-rocket-src="https://mirage.mx/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=10.8.1" data-rocket-defer defer></script>
-<script id="digital-match-height-js" src="../../../../../wp-content/themes/digital-pro/js/jquery.matchHeight.min.js%3Fver=1.1.3" data-rocket-defer defer></script>
-<script type="text/rocketlazyloadscript" id="digital-match-height-js-after">
+<script type="text/javascript" id="wc-order-attribution-js" src="{{ asset('vendor/mirage-assets/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js') }}"  defer></script>
+<script id="digital-match-height-js" src="../../../../../wp-content/themes/digital-pro/js/jquery.matchHeight.min.js%3Fver=1.1.3"  defer></script>
+<script type="text/javascript" id="digital-match-height-js-after">
 jQuery(document).ready( function() { jQuery( '.product .woocommerce-LoopProduct-link').matchHeight(); });
 //# sourceURL=digital-match-height-js-after
 </script>
-<script id="jquery-ui-core-js" src="../../../../../wp-includes/js/jquery/ui/core.min.js%3Fver=1.13.3" data-rocket-defer defer></script>
-<script type="text/rocketlazyloadscript" id="jquery-ui-accordion-js" data-rocket-src="https://mirage.mx/wp-includes/js/jquery/ui/accordion.min.js?ver=1.13.3" data-rocket-defer defer></script>
-<script type="text/rocketlazyloadscript" id="woocommerce-product-documents-js-after">
+<script id="jquery-ui-core-js" src="../../../../../wp-includes/js/jquery/ui/core.min.js%3Fver=1.13.3"  defer></script>
+<script type="text/javascript" id="jquery-ui-accordion-js" src="{{ asset('vendor/mirage-assets/wp-includes/js/jquery/ui/accordion.min.js') }}"  defer></script>
+<script type="text/javascript" id="woocommerce-product-documents-js-after">
 jQuery(function($) { 		$( '.woocommerce-product-documents-1063' ).accordion( {
 			heightStyle: "content",              // each panel will only be as tall as its content
 			collapsible: true,                   // all panels can be collapsed at once
@@ -495,7 +495,7 @@ jQuery(function($) { 		$( '.woocommerce-product-documents-1063' ).accordion( {
 var SUShortcodesL10n = {"noPreview":"Este shortocde no funciona con la vista previa. Por favor ins\u00e9rtalo en el editor de texto y visual\u00edzalo despu\u00e9s.","magnificPopup":{"close":"Cerrar (Esc)","loading":"Cargando...","prev":"Anterior (flecha izquierda)","next":"Siguiente (flecha derecha)","counter":"%curr% de %total%","error":"Failed to load content. \u003Ca href=\"%url%\" target=\"_blank\"\u003E\u003Cu\u003EOpen link\u003C/u\u003E\u003C/a\u003E"}};
 //# sourceURL=su-shortcodes-js-extra
 </script>
-<script type="text/rocketlazyloadscript" id="su-shortcodes-js" data-rocket-src="https://mirage.mx/wp-content/plugins/shortcodes-ultimate/includes/js/shortcodes/index.js?ver=7.8.2" data-rocket-defer defer></script>
+<script type="text/javascript" id="su-shortcodes-js" src="{{ asset('vendor/mirage-assets/wp-content/plugins/shortcodes-ultimate/includes/js/shortcodes/index.js') }}"  defer></script>
 		<style>
 			.unlimited-elements-background-overlay{
 				position:absolute;
@@ -511,7 +511,7 @@ var SUShortcodesL10n = {"noPreview":"Este shortocde no funciona con la vista pre
 			}
 		</style>
 
-		<script type="text/rocketlazyloadscript" data-rocket-type='text/javascript'>
+		<script type="text/javascript" data-rocket-type='text/javascript'>
 
 			jQuery(document).ready(function(){
 					

@@ -499,7 +499,7 @@
     <script type="speculationrules">
         {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/digital-pro/*","/wp-content/themes/genesis/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
-    <script type="text/rocketlazyloadscript">
+    <script type="text/javascript">
         (function($){
   $(window).on('elementor/frontend/init', function() {
 
@@ -586,7 +586,7 @@
 })(jQuery);
 </script>
     <style type="text/css" media="screen"></style>
-    <script type="text/rocketlazyloadscript">
+    <script type="text/javascript">
         const lazyloadRunObserver = () => {
             const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
             const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
@@ -612,23 +612,23 @@
             document.addEventListener( event, lazyloadRunObserver );
         } );
     </script>
-    <script type="text/rocketlazyloadscript" data-rocket-type='text/javascript'>
+    <script type="text/javascript" data-rocket-type='text/javascript'>
         (function () {
             var c = document.body.className;
             c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
             document.body.className = c;
         })();
     </script>
-    <link rel='stylesheet' id='wc-blocks-style-css' href='{{ asset('
-        wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=wc-10.8.1') }}' media='all' />
-    <link rel='stylesheet' id='su-shortcodes-css' href='{{ asset('
-        wp-content/plugins/shortcodes-ultimate/includes/css/shortcodes.css?ver=7.8.2') }}' media='all' />
+    <link rel='stylesheet' id='wc-blocks-style-css' href="{{ asset('
+        wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=wc-10.8.1') }}" media='all' />
+    <link rel='stylesheet' id='su-shortcodes-css' href="{{ asset('
+        wp-content/plugins/shortcodes-ultimate/includes/css/shortcodes.css?ver=7.8.2') }}" media='all' />
     <script id="woocommerce-events-front-script-js-extra">
         var frontObj = {"copyFromPurchaser":"autocopy"};
 //# sourceURL=woocommerce-events-front-script-js-extra
     </script>
-    <script type="text/rocketlazyloadscript" id="woocommerce-events-front-script-js"
-        data-rocket-src="{{ asset('wp-content/plugins/fooevents/js/events-frontend.js?ver=1.0.0') }}" data-rocket-defer
+    <script type="text/javascript" id="woocommerce-events-front-script-js"
+        src="{{ asset('wp-content/plugins/fooevents/js/events-frontend.js?ver=1.0.0') }}" 
         defer></script>
     <script id="rocket-browser-checker-js-extra">
         "use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator}});
@@ -638,7 +638,7 @@
         var RocketPreloadLinksConfig = {"excludeUris":"/wpstream/live/|/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/reservar/??(.*)|/confirmar/?|/mi-cuenta/??(.*)|/(index.php/)?(.*)wp-json(/.*|$)|/refer/|/go/|/recommend/|/recommends/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"{{ rtrim(company('company_website_url', url('/')), '/') }}","onHoverDelay":"100","rateThrottle":"3"};
 //# sourceURL=rocket-preload-links-js-extra
     </script>
-    <script type="text/rocketlazyloadscript" id="rocket-preload-links-js-after>
+    <script type="text/javascript" id="rocket-preload-links-js-after>
 (function() {
 " use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof
         e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof
@@ -657,41 +657,41 @@
 
 //# sourceURL=rocket-preload-links-js-after
 </script>
-    <script type="text/rocketlazyloadscript" id="hoverIntent-js"
-        data-rocket-src="{{ asset('wp-includes/js/hoverIntent.min.js?ver=1.10.2') }}" data-rocket-defer defer></script>
-    <script type="text/rocketlazyloadscript" id="superfish-js"
-        data-rocket-src="{{ asset('wp-content/themes/genesis/lib/js/menu/superfish.min.js?ver=1.7.10') }}"
-        data-rocket-defer defer></script>
-    <script type="text/rocketlazyloadscript" id="superfish-args-js"
-        data-rocket-src="{{ asset('wp-content/themes/genesis/lib/js/menu/superfish.args.min.js?ver=3.6.2') }}"
-        data-rocket-defer defer></script>
-    <script type="text/rocketlazyloadscript" id="skip-links-js"
-        data-rocket-src="{{ asset('wp-content/themes/genesis/lib/js/skip-links.min.js?ver=3.6.2') }}" data-rocket-defer
+    <script type="text/javascript" id="hoverIntent-js"
+        src="{{ asset('wp-includes/js/hoverIntent.min.js?ver=1.10.2') }}"  defer></script>
+    <script type="text/javascript" id="superfish-js"
+        src="{{ asset('wp-content/themes/genesis/lib/js/menu/superfish.min.js?ver=1.7.10') }}"
+         defer></script>
+    <script type="text/javascript" id="superfish-args-js"
+        src="{{ asset('wp-content/themes/genesis/lib/js/menu/superfish.args.min.js?ver=3.6.2') }}"
+         defer></script>
+    <script type="text/javascript" id="skip-links-js"
+        src="{{ asset('wp-content/themes/genesis/lib/js/skip-links.min.js?ver=3.6.2') }}" 
         defer></script>
-    <script type="text/rocketlazyloadscript" id="digital-global-scripts-js"
-        data-rocket-src="{{ asset('wp-content/themes/digital-pro/js/global.js?ver=1.1.3') }}" data-rocket-defer defer>
+    <script type="text/javascript" id="digital-global-scripts-js"
+        src="{{ asset('wp-content/themes/digital-pro/js/global.js?ver=1.1.3') }}"  defer>
     </script>
     <script id="digital-responsive-menu-js-extra">
         var genesis_responsive_menu = {"mainMenu":"Men\u00fa","menuIconClass":"ionicons-before ion-ios-drag","subMenu":"Submen\u00fa","subMenuIconClass":"ionicons-before ion-ios-arrow-down","menuClasses":{"others":[".nav-primary"]}};
 //# sourceURL=digital-responsive-menu-js-extra
     </script>
-    <script type="text/rocketlazyloadscript" id="digital-responsive-menu-js"
-        data-rocket-src="{{ asset('wp-content/themes/digital-pro/js/responsive-menus.min.js?ver=1.1.3') }}"
-        data-rocket-defer defer></script>
-    <script type="text/rocketlazyloadscript" id="sourcebuster-js-js"
-        data-rocket-src="{{ asset('wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=10.8.1') }}"
-        data-rocket-defer defer></script>
+    <script type="text/javascript" id="digital-responsive-menu-js"
+        src="{{ asset('wp-content/themes/digital-pro/js/responsive-menus.min.js?ver=1.1.3') }}"
+         defer></script>
+    <script type="text/javascript" id="sourcebuster-js-js"
+        src="{{ asset('wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=10.8.1') }}"
+         defer></script>
     <script id="wc-order-attribution-js-extra">
         var wc_order_attribution = {"params":{"lifetime":1.0000000000000000818030539140313095458623138256371021270751953125e-5,"session":30,"base64":false,"ajaxurl":"{{ url('wp-admin/admin-ajax.php') }}","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_id":"current.id","utm_term":"current.trm","utm_source_platform":"current.plt","utm_creative_format":"current.fmt","utm_marketing_tactic":"current.tct","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
 //# sourceURL=wc-order-attribution-js-extra
     </script>
-    <script type="text/rocketlazyloadscript" id="wc-order-attribution-js"
-        data-rocket-src="{{ asset('wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=10.8.1') }}"
-        data-rocket-defer defer></script>
+    <script type="text/javascript" id="wc-order-attribution-js"
+        src="{{ asset('wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=10.8.1') }}"
+         defer></script>
     <script id="digital-match-height-js"
-        src="{{ asset('wp-content/themes/digital-pro/js/jquery.matchHeight.min.js?ver=1.1.3') }}" data-rocket-defer
+        src="{{ asset('wp-content/themes/digital-pro/js/jquery.matchHeight.min.js?ver=1.1.3') }}" 
         defer></script>
-    <script type="text/rocketlazyloadscript" id="digital-match-height-js-after">
+    <script type="text/javascript" id="digital-match-height-js-after">
         jQuery(document).ready( function() { jQuery( '.product .woocommerce-LoopProduct-link').matchHeight(); });
 //# sourceURL=digital-match-height-js-after
 </script>
@@ -710,7 +710,7 @@
         }
     </style>
 
-    <script type="text/rocketlazyloadscript" data-rocket-type='text/javascript'>
+    <script type="text/javascript" data-rocket-type='text/javascript'>
 
         jQuery(document).ready(function(){
 

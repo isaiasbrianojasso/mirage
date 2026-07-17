@@ -5,7 +5,7 @@
 @section('content')
 <div class="row">
     <!-- Sidebar izquierdo recuperado -->
-    <div id="left-column" class="col-12 col-md-3 col-lg-2 order-first">
+    <div id="left-column" class="d-none d-md-block col-md-3 col-lg-2 order-first">
         <div class="block block-toggle block-categories block-links js-block-toggle">
             <h5 class="block-title"><span><a href="{{ route('tienda.index') }}">Inicio</a></span></h5>
             <div class="category-top-menu block-content">

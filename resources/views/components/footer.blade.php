@@ -59,7 +59,7 @@
 
     <div class="bg-black">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
-            <p>&copy; {{ date('Y') }} Mirage México. Todos los derechos reservados.</p>
+            <p>&copy; {{ date('Y') }} {{\App\Models\CompanySetting::get('company_name', 'Nuestra Empresa')}}. Todos los derechos reservados.</p>
             <div class="flex space-x-6 mt-4 md:mt-0">
                 <a href="#" class="hover:text-white">Aviso de Privacidad</a>
                 <a href="#" class="hover:text-white">Centro Digital</a>
