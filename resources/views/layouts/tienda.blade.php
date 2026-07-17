@@ -329,7 +329,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		
     </script>
 
-     <meta name="google-site-verification" content="-YFsqxBw4CqwayCJCX1hIYCun3Dt21W1Kha5Eew-p3U" /> </head>
+     <meta name="google-site-verification" content="-YFsqxBw4CqwayCJCX1hIYCun3Dt21W1Kha5Eew-p3U" /> 
+     <style>
+     @media(max-width: 767px) {
+         .mobile-buttons-bar { background-color: #fff !important; border-bottom: 1px solid #eee; }
+         .mobile-buttons-bar .m-nav-btn, .mobile-buttons-bar .m-nav-btn i { color: #333 !important; font-size: 22px !important; }
+         .mobile-buttons-bar .m-nav-btn span { display: none !important; }
+     }
+     </style>
+</head>
 
     <body id="index" class="lang-mx country-mx currency-mxn layout-full-width page-index tax-display-enabled body-desktop-header-style-w-2       customer-not-logged">
 
