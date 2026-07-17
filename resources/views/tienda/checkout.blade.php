@@ -62,6 +62,24 @@
                         </div>
                     @endif
 
+                    @if(isset($lastOrder) && $lastOrder)
+                        <div class="mb-6 bg-blue-50 border-l-4 border-blue-500 p-4 rounded-md">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-0.5">
+                                    <input id="use_saved_data" name="use_saved_data" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded cursor-pointer">
+                                </div>
+                                <div class="ml-3">
+                                    <label for="use_saved_data" class="text-sm font-medium text-blue-800 cursor-pointer">
+                                        Utilizar datos guardados de la cuenta
+                                    </label>
+                                    <div class="mt-1 text-sm text-blue-700">
+                                        Se autocompletarán los datos de envío, contacto y método de pago con tu última compra.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endif
+
                     <div>
                         <h2 class="text-lg font-medium text-gray-900">Información de Contacto</h2>
                         <div class="mt-4">
@@ -335,6 +353,47 @@
     }
 
     document.addEventListener('DOMContentLoaded', function() {
+        @if(isset($lastOrder) && $lastOrder)
+        const useSavedDataCheckbox = document.getElementById('use_saved_data');
+        if (useSavedDataCheckbox) {
+            useSavedDataCheckbox.addEventListener('change', function() {
+                if (this.checked) {
+                    document.getElementById('customer_email').value = "{!! addslashes($lastOrder->customer_email) !!}";
+                    document.getElementById('customer_name').value = "{!! addslashes($lastOrder->customer_name) !!}";
+                    document.getElementById('customer_phone').value = "{!! addslashes($lastOrder->customer_phone) !!}";
+                    document.getElementById('shipping_address').value = "{!! addslashes($lastOrder->shipping_address) !!}";
+                    
+                    const cityInput = document.getElementById('shipping_city');
+                    if(cityInput) cityInput.value = "{!! addslashes($lastOrder->shipping_city) !!}";
+                    
+                    const zipInput = document.getElementById('shipping_zip');
+                    if(zipInput) zipInput.value = "{!! addslashes($lastOrder->shipping_zip) !!}";
+                    
+                    const zoneSelect = document.getElementById('zone_id');
+                    const savedState = "{!! addslashes($lastOrder->shipping_state) !!}";
+                    if (zoneSelect && savedState) {
+                        const options = Array.from(zoneSelect.options);
+                        const normalize = (str) => str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+                        const matchedOption = options.find(opt => normalize(opt.text).includes(normalize(savedState)) || normalize(savedState).includes(normalize(opt.text)));
+                        if (matchedOption) {
+                            zoneSelect.value = matchedOption.value;
+                            zoneSelect.dispatchEvent(new Event('change'));
+                        }
+                    }
+
+                    const savedPayment = "{!! addslashes($lastOrder->payment_method) !!}";
+                    if (savedPayment) {
+                        const paymentRadio = document.getElementById('payment_' + savedPayment);
+                        if (paymentRadio) {
+                            paymentRadio.checked = true;
+                            paymentRadio.dispatchEvent(new Event('change'));
+                        }
+                    }
+                }
+            });
+        }
+        @endif
+
         const paymentCash = document.getElementById('payment_cash');
         const paymentPaypal = document.getElementById('payment_paypal');
         const paymentMercadopago = document.getElementById('payment_mercadopago');

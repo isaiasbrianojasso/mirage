@@ -25,7 +25,12 @@ class CheckoutController extends Controller
         $paypalCommission = (float) \App\Models\CompanySetting::get('payment_paypal_commission', 0);
         $mercadopagoCommission = (float) \App\Models\CompanySetting::get('payment_mercadopago_commission', 0);
 
-        return view('tienda.checkout', compact('cart', 'zones', 'paypalCommission', 'mercadopagoCommission'));
+        $lastOrder = null;
+        if (auth()->check()) {
+            $lastOrder = \App\Models\Order::where('user_id', auth()->id())->latest()->first();
+        }
+
+        return view('tienda.checkout', compact('cart', 'zones', 'paypalCommission', 'mercadopagoCommission', 'lastOrder'));
     }
 
     public function calculateShipping(Request $request)
