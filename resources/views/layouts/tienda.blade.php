@@ -669,7 +669,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </div>
 </div>
-<div class="container iqit-megamenu-container"><div id="iqitmegamenu-wrapper" class="iqitmegamenu-wrapper iqitmegamenu-all">
+<div class="container iqit-megamenu-container d-none d-lg-block"><div id="iqitmegamenu-wrapper" class="iqitmegamenu-wrapper iqitmegamenu-all">
 	<div class="container container-iqitmegamenu">
 		<div id="iqitmegamenu-horizontal" class="iqitmegamenu  clearfix" role="navigation">
 
