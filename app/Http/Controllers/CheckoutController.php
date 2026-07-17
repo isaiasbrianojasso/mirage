@@ -409,7 +409,7 @@ class CheckoutController extends Controller
 
         // Pasar la referencia en sesión para verificarla en la pantalla de éxito
         session()->put('order_success_reference', $order->reference);
-        return redirect()->route('checkout.success', $order->reference);
+        return redirect()->route('checkout.success', $order->reference)->with('cart_updated', true);
     }
 
     /**
@@ -451,7 +451,7 @@ class CheckoutController extends Controller
                 }
             }
 
-            return redirect()->route('checkout.success', ['reference' => $order->reference])->with('success', '¡Pago procesado exitosamente por Mercado Pago!');
+            return redirect()->route('checkout.success', ['reference' => $order->reference])->with('success', '¡Pago procesado exitosamente por Mercado Pago!')->with('cart_updated', true);
         }
 
         return redirect()->route('checkout.mercadopago.failure');

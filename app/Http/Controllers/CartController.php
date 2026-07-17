@@ -113,7 +113,7 @@ class CartController extends Controller
 
         session()->put('cart', $cart);
 
-        return redirect()->back()->with('success', 'Producto agregado al carrito exitosamente.');
+        return redirect()->back()->with('success', 'Producto agregado al carrito exitosamente.')->with('cart_updated', true);
     }
 
     public function update(Request $request, $id)
@@ -144,7 +144,7 @@ class CartController extends Controller
             session()->put('cart', $cart);
         }
 
-        return redirect()->back()->with('success', 'Carrito actualizado exitosamente.');
+        return redirect()->back()->with('success', 'Carrito actualizado exitosamente.')->with('cart_updated', true);
     }
 
     public function remove($id)
@@ -156,12 +156,12 @@ class CartController extends Controller
             session()->put('cart', $cart);
         }
 
-        return redirect()->back()->with('success', 'Producto eliminado del carrito.');
+        return redirect()->back()->with('success', 'Producto eliminado del carrito.')->with('cart_updated', true);
     }
 
     public function clear()
     {
         session()->forget('cart');
-        return redirect()->route('tienda.index')->with('success', 'Carrito vaciado exitosamente.');
+        return redirect()->route('tienda.index')->with('success', 'Carrito vaciado exitosamente.')->with('cart_updated', true);
     }
 }

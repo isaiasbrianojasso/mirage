@@ -63,8 +63,8 @@
                                                 @csrf
                                                 @method('PUT')
                                                 <label for="quantity-{{ $id }}" class="sr-only">Cantidad, {{ $item['name'] }}</label>
-                                                <input type="number" id="quantity-{{ $id }}" name="quantity" value="{{ $item['quantity'] }}" min="1" class="max-w-[80px] rounded-md border border-gray-300 text-left text-base font-medium text-gray-700 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 sm:text-sm">
-                                                <button type="submit" class="ml-2 text-sm text-indigo-600 hover:text-indigo-500">Actualizar</button>
+                                                <input type="number" id="quantity-{{ $id }}" name="quantity" value="{{ $item['quantity'] }}" min="1" class="w-20 px-3 py-1.5 rounded-md border border-gray-300 text-center text-base font-medium text-gray-700 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 sm:text-sm">
+                                                <button type="submit" class="ml-3 text-sm font-medium text-indigo-600 hover:text-indigo-500">Actualizar</button>
                                             </form>
 
                                             <!-- Eliminar Producto -->

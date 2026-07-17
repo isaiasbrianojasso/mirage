@@ -1632,5 +1632,17 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
     @include('tienda.partials.modals')
+    <!-- Cart Cross-Tab Sync -->
+    <script>
+        @if(session('cart_updated'))
+            localStorage.setItem('cart_sync', Date.now());
+        @endif
+
+        window.addEventListener('storage', function(e) {
+            if (e.key === 'cart_sync') {
+                window.location.reload();
+            }
+        });
+    </script>
 </body>
 </html>
