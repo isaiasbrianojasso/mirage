@@ -56,12 +56,16 @@ class HandleInertiaRequests extends Middleware
             }
         }
 
+        $cart = session()->get('cart', []);
+        $cartCount = array_sum(array_column($cart, 'quantity'));
+
         return [
             ...parent::share($request),
             'notifications' => [
                 'data' => $notifications,
                 'unread_count' => $unreadCount
             ],
+            'cart_count' => $cartCount,
             'passkeys' => $request->user() ? $request->user()->passkeys()->get() : [],
             'google_maps_api_key' => \App\Models\CompanySetting::get('google_maps_api_key', env('GOOGLE_MAPS_API_KEY', 'AIzaSyBqTIZeFqSA4s0MyDia9OznTeN85KfpfS4')),
             'company_settings' => [
