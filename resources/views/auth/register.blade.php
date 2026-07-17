@@ -81,8 +81,8 @@
                     <label for="birthday" class="col-md-3 col-form-label text-md-left" style="color: #555; font-size: 14px;">Fecha de nacimiento</label>
                     <div class="col-md-9 d-flex align-items-center">
                         <div class="flex-grow-1">
-                            <input type="text" id="birthday" name="birthday" class="form-control" placeholder="YYYY-MM-DD" value="{{ old('birthday') }}" style="background-color: #f6f6f6; border: 1px solid #f6f6f6; border-radius: 0; box-shadow: none;">
-                            <small class="form-text mt-2" style="color: #999; font-size: 11px;">(Ejemplo: 1970-05-31)</small>
+                            <input type="date" id="birthday" name="birthday" class="form-control" value="{{ old('birthday') }}" style="background-color: #f6f6f6; border: 1px solid #f6f6f6; border-radius: 0; box-shadow: none;">
+                            <small class="form-text mt-2" style="color: #999; font-size: 11px;">(Ejemplo: 31/05/1970)</small>
                         </div>
                         <span class="ml-3" style="color: #999; font-size: 11px;">Opcional</span>
                     </div>
