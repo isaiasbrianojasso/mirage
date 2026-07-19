@@ -56,7 +56,7 @@
 
 <main id="main-page-content">
   <header id="header" class="desktop-header-style-w-2">
-    <nav class="header-nav" style="padding: 8px 0;">
+    <nav class="header-nav d-none d-lg-block" style="padding: 8px 0;">
       <div class="container">
         <div class="row justify-content-between">
           <div class="col col-auto col-md left-nav"></div>
@@ -71,7 +71,7 @@
       </div>
     </nav>
 
-    <div id="desktop-header" class="desktop-header-style-2">
+    <div id="desktop-header" class="desktop-header-style-2 d-none d-lg-block">
       <div class="header-top">
         <div id="desktop-header-container" class="container">
           <div class="row align-items-center">
@@ -214,7 +214,7 @@
     </div>
 
     <!-- Megamenu Menu -->
-    <div class="container iqit-megamenu-container">
+    <div class="container iqit-megamenu-container d-none d-lg-block">
       <div id="iqitmegamenu-wrapper" class="iqitmegamenu-wrapper iqitmegamenu-all">
         <div class="container container-iqitmegamenu">
           <div id="iqitmegamenu-horizontal" class="iqitmegamenu clearfix" role="navigation">
@@ -253,6 +253,74 @@
                 </li>
               </ul>
             </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-header" class="mobile-header-style-3">
+      <div class="container">
+        <div class="mobile-main-bar">
+          <div class="col-mobile-logo text-center">
+            <a href="/tienda/">
+              <img class="logo img-fluid" src="{{ $businessSetting->logo_path ?? '/tienda_assets/img/mirage-logo-1534899548.jpg' }}" alt="Mirage" width="307" height="43">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="mobile-header-sticky">
+        <div class="mobile-buttons-bar">
+          <div class="container">
+            <div class="row no-gutters align-items-center row-mobile-buttons">
+              <div class="col col-mobile-btn col-mobile-btn-menu text-center col-mobile-menu-push js-col-mobile-menu-push">
+                <a class="m-nav-btn js-m-nav-btn-menu" data-toggle="dropdown" data-display="static"><i class="fa fa-bars" aria-hidden="true"></i>
+                  <span>Menú</span></a>
+                <div id="mobile_menu_click_overlay"></div>
+                <div id="_mobile_iqitmegamenu-mobile" class="text-left dropdown-menu-custom dropdown-menu"></div>
+              </div>
+              <div id="mobile-btn-search" class="col col-mobile-btn col-mobile-btn-search text-center">
+                <a class="m-nav-btn" data-toggle="dropdown" data-display="static"><i class="fa fa-search" aria-hidden="true"></i>
+                  <span>Buscar</span></a>
+                <div id="search-widget-mobile" class="dropdown-content dropdown-menu dropdown-mobile search-widget">
+                  <!-- Block search module TOP -->
+                  <div id="search_widget" class="search-widget autocomplete-wrapper" data-search-controller-url="">
+                    <form method="get" action="/tienda/buscar">
+                      <div class="input-group">
+                        <input type="text" name="q" id="search-input" value="" placeholder="Buscar productos..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="form-control form-search-control" />
+                        <button type="submit" class="search-btn">
+                          <i class="fa fa-search"></i>
+                        </button>
+                      </div>
+                    </form>
+                    <!-- Dropdown de Resultados -->
+                    <div id="search-results" class="autocomplete-dropdown hidden">
+                      <div id="search-results-list" class="autocomplete-list"></div>
+                      <div id="search-loading" class="autocomplete-loading hidden">Buscando...</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-mobile-btn col-mobile-btn-account text-center">
+                @auth
+                  <a href="{{ route('dashboard') }}" class="m-nav-btn"><i class="fa fa-user" aria-hidden="true"></i>
+                    <span>Mi Cuenta</span></a>
+                @else
+                  <a href="{{ route('login') }}" class="m-nav-btn"><i class="fa fa-user" aria-hidden="true"></i>
+                    <span>Iniciar sesión</span></a>
+                @endauth
+              </div>
+              <div class="col col-mobile-btn col-mobile-btn-cart ps-shoppingcart text-center">
+                <div id="mobile-cart-wrapper">
+                  <a id="mobile-cart-toogle" href="{{ route('cart.index') }}" class="m-nav-btn">
+                    <i class="fa fa-shopping-bag mobile-bag-icon" aria-hidden="true">
+                      <span id="mobile-cart-products-count" class="cart-products-count cart-products-count-btn {{ $cartCount > 0 ? '' : 'd-none' }}">
+                        {{ $cartCount }}
+                      </span>
+                    </i>
+                    <span>Carrito:</span>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
