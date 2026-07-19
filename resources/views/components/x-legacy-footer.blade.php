@@ -38,7 +38,7 @@
                             <li><a href="http://www.mirage.mx/corporativo/certificaciones/">Certificaciones</a></li>
                             <li><a href="http://www.mirage.mx/corporativo/infraestructura-operativa/">Infraestructura Operativa</a></li>
                             <li><a href="http://www.mirage.mx/corporativo/infraestructura-tecnologica/">Infraestructura Tecnol&oacute;gica</a></li>
-                            <li><a href="{{ \App\Models\CompanySetting::get('online_store_url', 'http://www.tiendamirage.mx') }}">Tienda en linea</a></li>
+                            <li><a href="{{ \App\Models\CompanySetting::get('online_store_url', url('/')) }}">Tienda en linea</a></li>
                         </ul>
 
                         <p>

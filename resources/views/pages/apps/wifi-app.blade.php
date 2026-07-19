@@ -38,7 +38,7 @@
 
 
 
-<p class="wp-block-paragraph">Para que la app funcione, necesita adquirir el modulo WiFi en una tienda de venta al publico, podrá encontrar una consultando <a href="{{ url('/ubicaciones') }}">nuestro directorio de tiendas</a> o en nuestra <a href="https://tiendamirage.mx" data-type="link" data-id="https://tiendamirage.mx">tienda en linea</a></p>
+<p class="wp-block-paragraph">Para que la app funcione, necesita adquirir el modulo WiFi en una tienda de venta al publico, podrá encontrar una consultando <a href="{{ url('/ubicaciones') }}">nuestro directorio de tiendas</a> o en nuestra <a href="{{ route('tienda.index') }}" data-type="link">tienda en linea</a></p>
 
 
 

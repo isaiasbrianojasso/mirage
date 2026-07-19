@@ -732,7 +732,7 @@
                     @endforeach
                   </div>
                 @else
-                  <p style="color: #94a3b8; font-size: 14px;">Para descargar la ficha técnica oficial y manuales de instalación de este equipo Mirage, por favor comuníquese con nosotros o visite tiendamirage.mx</p>
+                  <p style="color: #94a3b8; font-size: 14px;">Para descargar la ficha técnica oficial y manuales de instalación de este equipo Mirage, por favor comuníquese con nosotros.</p>
                 @endif
               </div>
               

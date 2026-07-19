@@ -333,7 +333,7 @@
                 <div class="elementor-widget-container">
             
 <div class="elementor-newsletter newsletter-form">
-    <form action="//www.tiendamirage.mx/?fc=module&module=iqitemailsubscriptionconf&controller=subscription" method="post" class="elementor-newsletter-form">
+    <form action="#" method="post" class="elementor-newsletter-form">
         <div class="row">
             <div class="col-12">
                 <input

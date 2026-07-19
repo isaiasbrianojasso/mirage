@@ -1,6 +1,6 @@
 @extends('layouts.legacy')
 
-@section('title', 'Finalizar Compra | {{\App\Models\CompanySetting::get('store_name', 'Tienda en Línea')}}')
+@section('title', 'Finalizar Compra | ' . \App\Models\CompanySetting::get('store_name', 'Tienda en Línea'))
 
 @section('content')
 <div class="bg-gray-50 min-h-screen">
