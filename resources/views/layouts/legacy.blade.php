@@ -60,7 +60,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     "@@context": "https://schema.org",
     "@@id": "#store-organization",
     "@@type": "Organization",
-    "name" : "Mirage",
+    "name" : "{{ \App\Models\CompanySetting::get('company_name', 'Tienda en Línea') }}",
     "url" : "/tienda_assets/",
   
       "logo": {
@@ -77,7 +77,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     "isPartOf": {
       "@@type": "WebSite",
       "url":  "/tienda_assets/",
-      "name": "Mirage"
+      "name": "{{ \App\Models\CompanySetting::get('company_name', 'Tienda en Línea') }}"
     },
     "name": "{{\App\Models\CompanySetting::get('store_name', 'Tienda en Línea')}}",
     "url":  "/tienda_assets/"
@@ -115,7 +115,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <meta property="og:title" content="{{\App\Models\CompanySetting::get('store_name', 'Tienda en Línea')}}"/>
     <meta property="og:url" content="/tienda_assets/"/>
-    <meta property="og:site_name" content="Mirage"/>
+    <meta property="og:site_name" content="{{ \App\Models\CompanySetting::get('company_name', 'Tienda en Línea') }}"/>
     <meta property="og:description" content="Compre linea blanca, refacciones, herramientas y souvenirs.">
     <meta property="og:type" content="website">
 
@@ -200,7 +200,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         var iqitmegamenu = {"sticky":"false","containerSelector":"#wrapper > .container"};
         var iqitreviews = [];
         var iqitwishlist = {"nbProducts":0};
-        var prestashop = {"cart":{"products":[],"totals":{"total":{"type":"total","label":"Total","amount":0,"value":"$0.00"},"total_including_tax":{"type":"total","label":"Total IVA inclu\u00eddo","amount":0,"value":"$0.00"},"total_excluding_tax":{"type":"total","label":"Total sin IVA","amount":0,"value":"$0.00"}},"subtotals":{"products":{"type":"products","label":"Subtotal","amount":0,"value":"$0.00"},"discounts":null,"shipping":{"type":"shipping","label":"Env\u00edo","amount":0,"value":""},"tax":null},"products_count":0,"summary_string":"0 articulos","vouchers":{"allowed":1,"added":[]},"discounts":[],"minimalPurchase":0,"minimalPurchaseRequired":""},"currency":{"id":1,"name":"Peso mexicano","iso_code":"MXN","iso_code_num":"484","sign":"$"},"customer":{"lastname":null,"firstname":null,"email":null,"birthday":null,"newsletter":null,"newsletter_date_add":null,"optin":null,"website":null,"company":null,"siret":null,"ape":null,"is_logged":false,"gender":{"type":null,"name":null},"addresses":[]},"language":{"name":"Espa\u00f1ol MX (Spanish)","iso_code":"mx","locale":"es-MX","language_code":"es-MX","is_rtl":"0","date_format_lite":"Y-m-d","date_format_full":"Y-m-d H:i:s","id":2},"page":{"title":"","canonical":null,"meta":{"title":"{{\App\Models\CompanySetting::get('store_name', 'Tienda en Línea')}}","description":"Compre linea blanca, refacciones, herramientas y souvenirs.","keywords":"mirage,tienda, productos, comprar, buscar","robots":"index"},"page_name":"index","body_classes":{"lang-mx":true,"lang-rtl":false,"country-MX":true,"currency-MXN":true,"layout-full-width":true,"page-index":true,"tax-display-enabled":true},"admin_notifications":[]},"shop":{"name":"Mirage","logo":"\/tienda\/img\/mirage-logo-1534899548.jpg","stores_icon":"\/tienda\/img\/logo_stores.png","favicon":"\/tienda\/img\/favicon.ico"},"urls":{"base_url":"\/tienda\/","current_url":"\/tienda\/","shop_domain_url":"{{ url('/') }}","img_ps_url":"\/tienda\/img\/","img_cat_url":"\/tienda\/img\/c\/","img_lang_url":"\/tienda\/img\/l\/","img_prod_url":"\/tienda\/img\/p\/","img_manu_url":"\/tienda\/img\/m\/","img_sup_url":"\/tienda\/img\/su\/","img_ship_url":"\/tienda\/img\/s\/","img_store_url":"\/tienda\/img\/st\/","img_col_url":"\/tienda\/img\/co\/","img_url":"\/tienda\/themes\/warehouse\/assets\/img\/","css_url":"\/tienda\/themes\/warehouse\/assets\/css\/","js_url":"\/tienda\/themes\/warehouse\/assets\/js\/","pic_url":"\/tienda\/upload\/","pages":{"address":"\/tienda\/direccion","addresses":"\/tienda\/direcciones","authentication":"\/tienda\/iniciar-sesion","cart":"\/tienda\/carrito","category":"\/tienda\/index.php?controller=category","cms":"\/tienda\/index.php?controller=cms","contact":"\/tienda\/contactenos","discount":"\/tienda\/descuento","guest_tracking":"\/tienda\/seguimiento-pedido-invitado","history":"\/tienda\/historial-compra","identity":"\/tienda\/datos-personales","index":"\/tienda\/","my_account":"\/tienda\/mi-cuenta","order_confirmation":"\/tienda\/confirmacion-pedido","order_detail":"\/tienda\/index.php?controller=order-detail","order_follow":"\/tienda\/seguimiento-pedido","order":"\/tienda\/pedido","order_return":"\/tienda\/index.php?controller=order-return","order_slip":"\/tienda\/nota-credito","pagenotfound":"\/tienda\/pagina-no-encontrada","password":"\/tienda\/recuperar-contrasena","pdf_invoice":"\/tienda\/index.php?controller=pdf-invoice","pdf_order_return":"\/tienda\/index.php?controller=pdf-order-return","pdf_order_slip":"\/tienda\/index.php?controller=pdf-order-slip","prices_drop":"\/tienda\/productos-rebajados","product":"\/tienda\/index.php?controller=product","search":"\/tienda\/busqueda","sitemap":"\/tienda\/Mapa del sitio","stores":"\/tienda\/tiendas","supplier":"\/tienda\/proveedor","register":"\/tienda\/iniciar-sesion?create_account=1","order_login":"\/tienda\/pedido?login=1"},"alternative_langs":[],"theme_assets":"\/themes\/warehouse\/assets\/","actions":{"logout":"\/tienda\/?mylogout="},"no_picture_image":{"bySize":{"small_default":{"url":"\/tienda\/img\/p\/mx-default-small_default.jpg","width":98,"height":127},"cart_default":{"url":"\/tienda\/img\/p\/mx-default-cart_default.jpg","width":125,"height":162},"home_default":{"url":"\/tienda\/img\/p\/mx-default-home_default.jpg","width":236,"height":305},"large_default":{"url":"\/tienda\/img\/p\/mx-default-large_default.jpg","width":381,"height":492},"medium_default":{"url":"\/tienda\/img\/p\/mx-default-medium_default.jpg","width":452,"height":584},"thickbox_default":{"url":"\/tienda\/img\/p\/mx-default-thickbox_default.jpg","width":1100,"height":1422}},"small":{"url":"\/tienda\/img\/p\/mx-default-small_default.jpg","width":98,"height":127},"medium":{"url":"\/tienda\/img\/p\/mx-default-large_default.jpg","width":381,"height":492},"large":{"url":"\/tienda\/img\/p\/mx-default-thickbox_default.jpg","width":1100,"height":1422},"legend":""}},"configuration":{"display_taxes_label":true,"display_prices_tax_incl":true,"is_catalog":false,"show_prices":true,"opt_in":{"partner":true},"quantity_discount":{"type":"price","label":"Precio Unitario"},"voucher_enabled":1,"return_enabled":0},"field_required":[],"breadcrumb":{"links":[{"title":"Inicio","url":"\/tienda\/"}],"count":1},"link":{"protocol_link":"https:\/\/","protocol_content":"https:\/\/"},"time":1782411700,"static_token":"736faed44ac184681768e35d05df6cbd","token":"1da7720698848b23a01dc5e00a1f383c","debug":false};
+        var prestashop = {"cart":{"products":[],"totals":{"total":{"type":"total","label":"Total","amount":0,"value":"$0.00"},"total_including_tax":{"type":"total","label":"Total IVA inclu\u00eddo","amount":0,"value":"$0.00"},"total_excluding_tax":{"type":"total","label":"Total sin IVA","amount":0,"value":"$0.00"}},"subtotals":{"products":{"type":"products","label":"Subtotal","amount":0,"value":"$0.00"},"discounts":null,"shipping":{"type":"shipping","label":"Env\u00edo","amount":0,"value":""},"tax":null},"products_count":0,"summary_string":"0 articulos","vouchers":{"allowed":1,"added":[]},"discounts":[],"minimalPurchase":0,"minimalPurchaseRequired":""},"currency":{"id":1,"name":"Peso mexicano","iso_code":"MXN","iso_code_num":"484","sign":"$"},"customer":{"lastname":null,"firstname":null,"email":null,"birthday":null,"newsletter":null,"newsletter_date_add":null,"optin":null,"website":null,"company":null,"siret":null,"ape":null,"is_logged":false,"gender":{"type":null,"name":null},"addresses":[]},"language":{"name":"Espa\u00f1ol MX (Spanish)","iso_code":"mx","locale":"es-MX","language_code":"es-MX","is_rtl":"0","date_format_lite":"Y-m-d","date_format_full":"Y-m-d H:i:s","id":2},"page":{"title":"","canonical":null,"meta":{"title":"{{\App\Models\CompanySetting::get('store_name', 'Tienda en Línea')}}","description":"Compre linea blanca, refacciones, herramientas y souvenirs.","keywords":"mirage,tienda, productos, comprar, buscar","robots":"index"},"page_name":"index","body_classes":{"lang-mx":true,"lang-rtl":false,"country-MX":true,"currency-MXN":true,"layout-full-width":true,"page-index":true,"tax-display-enabled":true},"admin_notifications":[]},"shop":{"name":"{{ \App\Models\CompanySetting::get('company_name', 'Tienda en Línea') }}","logo":"\/tienda\/img\/mirage-logo-1534899548.jpg","stores_icon":"\/tienda\/img\/logo_stores.png","favicon":"\/tienda\/img\/favicon.ico"},"urls":{"base_url":"\/tienda\/","current_url":"\/tienda\/","shop_domain_url":"{{ url('/') }}","img_ps_url":"\/tienda\/img\/","img_cat_url":"\/tienda\/img\/c\/","img_lang_url":"\/tienda\/img\/l\/","img_prod_url":"\/tienda\/img\/p\/","img_manu_url":"\/tienda\/img\/m\/","img_sup_url":"\/tienda\/img\/su\/","img_ship_url":"\/tienda\/img\/s\/","img_store_url":"\/tienda\/img\/st\/","img_col_url":"\/tienda\/img\/co\/","img_url":"\/tienda\/themes\/warehouse\/assets\/img\/","css_url":"\/tienda\/themes\/warehouse\/assets\/css\/","js_url":"\/tienda\/themes\/warehouse\/assets\/js\/","pic_url":"\/tienda\/upload\/","pages":{"address":"\/tienda\/direccion","addresses":"\/tienda\/direcciones","authentication":"\/tienda\/iniciar-sesion","cart":"\/tienda\/carrito","category":"\/tienda\/index.php?controller=category","cms":"\/tienda\/index.php?controller=cms","contact":"\/tienda\/contactenos","discount":"\/tienda\/descuento","guest_tracking":"\/tienda\/seguimiento-pedido-invitado","history":"\/tienda\/historial-compra","identity":"\/tienda\/datos-personales","index":"\/tienda\/","my_account":"\/tienda\/mi-cuenta","order_confirmation":"\/tienda\/confirmacion-pedido","order_detail":"\/tienda\/index.php?controller=order-detail","order_follow":"\/tienda\/seguimiento-pedido","order":"\/tienda\/pedido","order_return":"\/tienda\/index.php?controller=order-return","order_slip":"\/tienda\/nota-credito","pagenotfound":"\/tienda\/pagina-no-encontrada","password":"\/tienda\/recuperar-contrasena","pdf_invoice":"\/tienda\/index.php?controller=pdf-invoice","pdf_order_return":"\/tienda\/index.php?controller=pdf-order-return","pdf_order_slip":"\/tienda\/index.php?controller=pdf-order-slip","prices_drop":"\/tienda\/productos-rebajados","product":"\/tienda\/index.php?controller=product","search":"\/tienda\/busqueda","sitemap":"\/tienda\/Mapa del sitio","stores":"\/tienda\/tiendas","supplier":"\/tienda\/proveedor","register":"\/tienda\/iniciar-sesion?create_account=1","order_login":"\/tienda\/pedido?login=1"},"alternative_langs":[],"theme_assets":"\/themes\/warehouse\/assets\/","actions":{"logout":"\/tienda\/?mylogout="},"no_picture_image":{"bySize":{"small_default":{"url":"\/tienda\/img\/p\/mx-default-small_default.jpg","width":98,"height":127},"cart_default":{"url":"\/tienda\/img\/p\/mx-default-cart_default.jpg","width":125,"height":162},"home_default":{"url":"\/tienda\/img\/p\/mx-default-home_default.jpg","width":236,"height":305},"large_default":{"url":"\/tienda\/img\/p\/mx-default-large_default.jpg","width":381,"height":492},"medium_default":{"url":"\/tienda\/img\/p\/mx-default-medium_default.jpg","width":452,"height":584},"thickbox_default":{"url":"\/tienda\/img\/p\/mx-default-thickbox_default.jpg","width":1100,"height":1422}},"small":{"url":"\/tienda\/img\/p\/mx-default-small_default.jpg","width":98,"height":127},"medium":{"url":"\/tienda\/img\/p\/mx-default-large_default.jpg","width":381,"height":492},"large":{"url":"\/tienda\/img\/p\/mx-default-thickbox_default.jpg","width":1100,"height":1422},"legend":""}},"configuration":{"display_taxes_label":true,"display_prices_tax_incl":true,"is_catalog":false,"show_prices":true,"opt_in":{"partner":true},"quantity_discount":{"type":"price","label":"Precio Unitario"},"voucher_enabled":1,"return_enabled":0},"field_required":[],"breadcrumb":{"links":[{"title":"Inicio","url":"\/tienda\/"}],"count":1},"link":{"protocol_link":"https:\/\/","protocol_content":"https:\/\/"},"time":1782411700,"static_token":"736faed44ac184681768e35d05df6cbd","token":"1da7720698848b23a01dc5e00a1f383c","debug":false};
         var psemailsubscription_subscription = "\/tienda\/module\/ps_emailsubscription\/subscription";
       </script>
 
@@ -210,7 +210,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	
 <script type="application/ld+json" id="adpmicrodatos-organization-ps17v5.5.1">
 {
-    "name" : "Mirage",
+    "name" : "{{ \App\Models\CompanySetting::get('company_name', 'Tienda en Línea') }}",
     "url" : "\/tienda\/",
     "logo" : [
     	{
@@ -223,10 +223,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     			"description": "Compre linea blanca, refacciones, herramientas y souvenirs.",
 			"address": {
 	    "@@type": "PostalAddress",
-	    "addressLocality": "Ciudad Obreg\u00f3n",
-	    "postalCode": "85000",
-	    "streetAddress": "Calle No Reelecci\u00f3n #325 Ote. Altos. Col. Centro",
-	    "addressRegion": "Sonora",
+	    "addressLocality": "{{ \App\Models\CompanySetting::get('company_city', '') }}",
+	    "postalCode": "{{ \App\Models\CompanySetting::get('company_zip', '') }}",
+	    "streetAddress": "{{ \App\Models\CompanySetting::get('company_address', '') }}",
+	    "addressRegion": "{{ \App\Models\CompanySetting::get('company_state', '') }}",
 	    "addressCountry": "MX"
 	},
 				
@@ -245,7 +245,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     "isPartOf": [{
         "@@type":"WebSite",
         "url":  "/tienda_assets/",
-        "name": "Mirage"
+        "name": "{{ \App\Models\CompanySetting::get('company_name', 'Tienda en Línea') }}"
     }],
     "name": "{{\App\Models\CompanySetting::get('store_name', 'Tienda en Línea')}}",
     "url": "/tienda_assets/"
@@ -261,7 +261,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	"@@context":	"http://schema.org",
 	"@@type": "WebSite",
 	"url": "/tienda_assets/",
-	"name": "Mirage",
+	"name": "{{ \App\Models\CompanySetting::get('company_name', 'Tienda en Línea') }}",
 	"alternateName": "{{\App\Models\CompanySetting::get('store_name', 'Tienda en Línea')}}",
 	"image": [{
 		"@@type": "ImageObject",
@@ -806,7 +806,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           
 
 <ul class="social-links _footer" itemscope itemtype="https://schema.org/Organization" itemid="#store-organization">
-    <li class="facebook"><a itemprop="sameAs" href="https://www.facebook.com/miragemx/" target="_blank" rel="noreferrer noopener"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a></li>  <li class="twitter"><a itemprop="sameAs" href="https://twitter.com/MirageMEXICO" target="_blank" rel="noreferrer noopener"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a></li>        <li class="youtube"><a href="https://www.youtube.com/user/airesmirage" target="_blank" rel="noreferrer noopener"><i class="fa fa-youtube fa-fw" aria-hidden="true"></i></a></li>    </ul>
+    <li class="facebook"><a itemprop="sameAs" href="{{ \App\Models\CompanySetting::get('social_facebook', '#') }}" target="_blank" rel="noreferrer noopener"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a></li>  <li class="twitter"><a itemprop="sameAs" href="{{ \App\Models\CompanySetting::get('social_twitter', '#') }}" target="_blank" rel="noreferrer noopener"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a></li>        <li class="youtube"><a href="{{ \App\Models\CompanySetting::get('social_youtube', '#') }}" target="_blank" rel="noreferrer noopener"><i class="fa fa-youtube fa-fw" aria-hidden="true"></i></a></li>    </ul>
 
         </div>
         
@@ -828,7 +828,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div id="iqithtmlandbanners-block-2"  class="col col-md block block-toggle block-iqithtmlandbanners-html js-block-toggle">
         <h5 class="block-title"><span>¿Quiénes somos?</span></h5>
         <div class="block-content rte-content">
-            <p>Mirage, está consolidado como la marca número 1 en ventas de aires acondicionados tipo minisplit en México. Contamos con una amplia gama de productos con los más altos estándares de calidad y ahorro energético.</p>
+            <p>{{ \App\Models\CompanySetting::get('footer_about_text', 'Somos una tienda en línea comprometida con ofrecer los mejores productos y la mejor calidad para su hogar.') }}</p>
         </div>
     </div>
 
@@ -950,7 +950,7 @@ if(window.location.pathname == "/content/4-quienes-somos" || window.location.pat
                         </div>
                     
                                             <div class="col-sm-6 pull-sm-6 copyright-txt">
-                            <p><span style="color:#454545;">© 2018 Mirage. Derechos Reservados.</span></p>
+                            <p><span style="color:#454545;">© {{ date('Y') }} {{ \App\Models\CompanySetting::get('company_name', 'Tienda en Línea') }}. Derechos Reservados.</span></p>
                         </div>
                     
                 </div>
