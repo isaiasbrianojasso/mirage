@@ -1,6 +1,6 @@
 @extends('layouts.legacy')
 
-@section('title', '{{\App\Models\CompanySetting::get('store_name', 'Tienda en Línea')}} | Todo el Catálogo')
+@section('title', \App\Models\CompanySetting::get('store_name', 'Tienda en Línea') . ' | Todo el Catálogo')
 
 @section('content')
 <div class="bg-gray-50 py-12">
