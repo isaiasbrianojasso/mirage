@@ -69,7 +69,7 @@ class CompanySettingsSeeder extends Seeder
             // Contact Information
             [
                 'key' => 'contact_email',
-                'value' => 'contacto@mirage.mx',
+                'value' => 'contacto@tienda.local',
                 'type' => 'string',
                 'group' => 'contact',
                 'description' => 'Email de contacto principal'
@@ -92,28 +92,28 @@ class CompanySettingsSeeder extends Seeder
             // Social Media & External Links
             [
                 'key' => 'social_facebook',
-                'value' => 'https://www.facebook.com/miragemx',
+                'value' => '#',
                 'type' => 'string',
                 'group' => 'social',
                 'description' => 'URL de Facebook'
             ],
             [
                 'key' => 'online_store_url',
-                'value' => 'https://www.tiendamirage.mx',
+                'value' => '/tienda',
                 'type' => 'string',
                 'group' => 'social',
                 'description' => 'URL de la tienda en línea'
             ],
             [
                 'key' => 'b2b_portal_url',
-                'value' => 'https://b2b.mirage.mx',
+                'value' => '#',
                 'type' => 'string',
                 'group' => 'social',
                 'description' => 'URL del portal B2B'
             ],
             [
                 'key' => 'certification_portal_url',
-                'value' => 'https://www.certificacionmirage.com',
+                'value' => '#',
                 'type' => 'string',
                 'group' => 'social',
                 'description' => 'URL del portal de certificación'
@@ -122,7 +122,7 @@ class CompanySettingsSeeder extends Seeder
             // General - Website URL
             [
                 'key' => 'company_website_url',
-                'value' => 'https://www.mirage.mx',
+                'value' => '/',
                 'type' => 'string',
                 'group' => 'general',
                 'description' => 'URL del sitio web principal de la empresa'
@@ -131,10 +131,10 @@ class CompanySettingsSeeder extends Seeder
             // Installation service
             [
                 'key' => 'installation_service_url',
-                'value' => 'https://www.instalamirage.com',
+                'value' => '#',
                 'type' => 'string',
                 'group' => 'social',
-                'description' => 'URL del servicio de instalación externo'
+                'description' => 'URL del servicio de instalación'
             ],
 
             // Content - Catalog page labels

@@ -251,7 +251,7 @@
     	"url" : "/tienda_assets/img/mirage-logo-1534899548.jpg"
     	}
     ],
-        "email" : "{{ $businessSetting->email ?? 'no-responder@mirage.mx' }}",
+        "email" : "{{ \App\Models\CompanySetting::get('company_email', config('mail.from.address', 'contacto@tienda.com')) }}",
     			"description": "Compre linea blanca, refacciones, herramientas y souvenirs.",
 			"address": {
 	    "@@type": "PostalAddress",
@@ -1177,7 +1177,7 @@
                 <div class="part">
                     <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
                     <div class="data email">
-                        <a href="mailto:{{ $businessSetting->email ?? 'contacto@mirage.mx' }}">{{ $businessSetting->email ?? 'contacto@mirage.mx' }}</a>
+                        <a href="mailto:{{ \App\Models\CompanySetting::get('company_email', 'contacto@tienda.com') }}">{{ \App\Models\CompanySetting::get('company_email', 'contacto@tienda.com') }}</a>
                     </div>
                 </div>
                 </div>

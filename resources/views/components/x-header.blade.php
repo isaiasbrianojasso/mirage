@@ -885,58 +885,21 @@
     </script>
     <script id="url-shortify-js-extra">
         var usParams = {
-            "ajaxurl": "https://mirage.mx/wp-admin/admin-ajax.php"
+            "ajaxurl": "/api/ajax"
         };
         //# sourceURL=url-shortify-js-extra
     </script>
     <script type="text/javascript" id="url-shortify-js"
         src="{{ asset('vendor/mirage-assets/wp-content/plugins/url-shortify-premium/lite/dist/scripts/url-shortify.js') }}"
          defer></script>
-    <link rel="https://api.w.org/" href="https://mirage.mx/wp-json/" />
-    <link rel="alternate" title="JSON" type="application/json" href="https://mirage.mx/wp-json/wp/v2/pages/821" />
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://mirage.mx/xmlrpc.php?rsd" />
-    <link rel="pingback" href="https://mirage.mx/xmlrpc.php" />
     <meta itemprop="name" content="{{config('app.name') }}" />
-    <meta itemprop="url" content="https://mirage.mx/" />
-    <!-- Google tag (gtag.js) -->
-    <script type="text/javascript" async
-        src="https://www.googletagmanager.com/gtag/js?id=G-1PL39TGXGK"></script>
-    <script type="text/javascript">
-        window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-1PL39TGXGK');
-</script> <!-- Facebook Pixel Code -->
-    <script type="text/javascript">
-        !function(f,b,e,v,n,t,s)
-	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-	n.queue=[];t=b.createElement(e);t.async=!0;
-	t.src=v;s=b.getElementsByTagName(e)[0];
-	s.parentNode.insertBefore(t,s)}(window,document,'script',
-	'https://connect.facebook.net/en_US/fbevents.js');
-	fbq('init', '212979485921717');
-	fbq('track', 'PageView');
-	</script>
-    <noscript>
-        <img height="1" width="1" src="https://www.facebook.com/tr?id=212979485921717&ev=PageView
-	&noscript=1" />
-    </noscript>
-    <!-- End Facebook Pixel Code -->
+    <meta itemprop="url" content="{{ url('/') }}" />
     <style type="text/css">
         .site-title a {
             background: url({{ asset('wp-content/uploads/2017/03/cropped-logo-aires-mirage.png') }}) no-repeat !important;
         }
     </style>
-    <!-- Google Tag Manager -->
-    <script type="text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-T74BMF8F');</script>
-    <!-- End Google Tag Manager --> <noscript>
+    <noscript>
         <style>
             .woocommerce-product-gallery {
                 opacity: 1 !important;

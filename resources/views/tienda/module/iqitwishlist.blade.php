@@ -11,27 +11,7 @@
 
 
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5NJGKGF');</script>
-<!-- End Google Tag Manager -->
 
-
-
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src=https://www.googletagmanager.com/ns.html?id=GTM-5NJGKGF
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-
-
-<!-- TikTok Pixel Code Start -->
-<script>!function (w, d, t) {w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);returne},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};ttq.load('D2VILB3C77U0G6NU48OG');ttq.page();}(window,document, 'ttq');
-</script>
-<!-- TikTok Pixel Code End -->
 
 
 
@@ -230,18 +210,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	
 
 </script>
-  
-  <meta name="facebook-domain-verification" content="mv4vsw2zn9h4ptpxr8g2y6upq81xy8" />
-  	
-  
-    <script id="mcjs">
-        !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/a99d2d2a0e782d826cc71c67e/22d97dc91e38fc935a3507091.js");     </script>
+</head>
 
 
 
 
-    
-     <meta name="google-site-verification" content="-YFsqxBw4CqwayCJCX1hIYCun3Dt21W1Kha5Eew-p3U" /> </head>
+
 
     <body id="authentication" class="lang-mx country-mx currency-mxn layout-full-width page-authentication tax-display-enabled page-customer-account body-desktop-header-style-w-2       customer-not-logged">
 
@@ -1040,7 +1014,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           
 
 <ul class="social-links _footer" itemscope itemtype="https://schema.org/Organization" itemid="#store-organization">
-    <li class="facebook"><a itemprop="sameAs" href="https://www.facebook.com/miragemx/" target="_blank" rel="noreferrer noopener"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a></li>  <li class="twitter"><a itemprop="sameAs" href="https://twitter.com/MirageMEXICO" target="_blank" rel="noreferrer noopener"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a></li>        <li class="youtube"><a href="https://www.youtube.com/user/airesmirage" target="_blank" rel="noreferrer noopener"><i class="fa fa-youtube fa-fw" aria-hidden="true"></i></a></li>    </ul>
+    <li class="facebook"><a itemprop="sameAs" href="{{ \App\Models\CompanySetting::get('social_facebook', '#') }}" target="_blank" rel="noreferrer noopener"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a></li>  <li class="twitter"><a itemprop="sameAs" href="{{ \App\Models\CompanySetting::get('social_twitter', '#') }}" target="_blank" rel="noreferrer noopener"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a></li>        <li class="youtube"><a href="{{ \App\Models\CompanySetting::get('social_youtube', '#') }}" target="_blank" rel="noreferrer noopener"><i class="fa fa-youtube fa-fw" aria-hidden="true"></i></a></li>    </ul>
 
         </div>
         
@@ -1062,7 +1036,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div id="iqithtmlandbanners-block-2"  class="col col-md block block-toggle block-iqithtmlandbanners-html js-block-toggle">
         <h5 class="block-title"><span>¿Quiénes somos?</span></h5>
         <div class="block-content rte-content">
-            <p>Mirage, está consolidado como la marca número 1 en ventas de aires acondicionados tipo minisplit en México. Contamos con una amplia gama de productos con los más altos estándares de calidad y ahorro energético.</p>
+            <p>{{ \App\Models\CompanySetting::get('store_about', 'Somos una tienda especializada con los más altos estándares de calidad y servicio.') }}</p>
         </div>
     </div>
 
@@ -1142,7 +1116,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="part">
                     <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
                     <div class="data email">
-                        <a href="mailto:{{ $businessSetting->email ?? 'contacto@mirage.mx' }}">{{ $businessSetting->email ?? 'contacto@mirage.mx' }}</a>
+                        <a href="mailto:{{ \App\Models\CompanySetting::get('contact_email', 'contacto@tienda.com') }}">{{ \App\Models\CompanySetting::get('contact_email', 'contacto@tienda.com') }}</a>
                     </div>
                 </div>
                 </div>
