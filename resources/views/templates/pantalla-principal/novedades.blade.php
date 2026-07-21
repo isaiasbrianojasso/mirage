@@ -4,7 +4,7 @@
             <h3 class="widgettitle widget-title" style="color: #ffffff; text-transform: uppercase; font-weight: bold; margin-bottom: 20px;">{{\App\Models\CompanySetting::get('company_name', 'Nuestra Empresa')}}</h3>
             <div class="textwidget custom-html-widget" style="color: #d1d5db; line-height: 1.6;">
                 <p>Somos la principal marca mexicana de aires acondicionados tipo minisplit, líder nacional en ventas.</p>
-                <p>Ampliamos nuestra gama de productos introduciendo componentes de <a href="https://mirage.mx/catalogo/todo/linea-blanca/" style="color: #ffffff; font-weight: bold;">LINEA BLANCA</a> que integran los mismos estándares de eficiencia en ahorro energético logrados con nuestros diseños exclusivos, los modelos de la linea <strong style="color: #ffffff;">MAGNUM</strong>.</p>
+                <p>Ampliamos nuestra gama de productos introduciendo componentes de <a href="/catalogo/todo/linea-blanca" style="color: #ffffff; font-weight: bold;">LINEA BLANCA</a> que integran los mismos estándares de eficiencia en ahorro energético logrados con nuestros diseños exclusivos, los modelos de la linea <strong style="color: #ffffff;">MAGNUM</strong>.</p>
                 <div class="su-spacer" style="height:20px"></div>
                 <img src="{{ asset('vendor/mirage-assets/wp-content/uploads/2020/06/centro_logistico_mirage-1024x464.jpg') }}" alt="{{\App\Models\CompanySetting::get('company_name', 'Nuestra Empresa')}}" class="wp-image-20305" style="width: 100%; max-width: 800px; border-radius: 4px;" />
                 <div class="su-spacer" style="height:20px"></div>
