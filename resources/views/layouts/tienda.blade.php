@@ -11,27 +11,15 @@
 
 
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5NJGKGF');</script>
-<!-- End Google Tag Manager -->
-
-
-
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src=https://www.googletagmanager.com/ns.html?id=GTM-5NJGKGF
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-
-
-<!-- TikTok Pixel Code Start -->
-<script>!function (w, d, t) {w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e;},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};ttq.load('D2VILB3C77U0G6NU48OG');ttq.page();}(window,document, 'ttq');
-</script>
-<!-- TikTok Pixel Code End -->
+  @if($gtmId = \App\Models\CompanySetting::get('gtm_id'))
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','{{ $gtmId }}');</script>
+  <!-- End Google Tag Manager -->
+  @endif
 
 
 
@@ -60,7 +48,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     "@@context": "https://schema.org",
     "@@id": "#store-organization",
     "@@type": "Organization",
-    "name" : "Mirage",
+    "name" : "{{ \App\Models\CompanySetting::get('company_name', 'Tienda en Línea') }}",
     "url" : "/tienda/",
   
       "logo": {
@@ -77,7 +65,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     "isPartOf": {
       "@@type": "WebSite",
       "url":  "/tienda/",
-      "name": "Mirage"
+      "name": "{{ \App\Models\CompanySetting::get('company_name', 'Tienda en Línea') }}"
     },
     "name": "{{\App\Models\CompanySetting::get('store_name', 'Tienda en Línea')}}",
     "url":  "/tienda/"
@@ -114,8 +102,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
     <meta property="og:title" content="{{\App\Models\CompanySetting::get('store_name', 'Tienda en Línea')}}"/>
-    <meta property="og:url" content="/tienda/"/>
-    <meta property="og:site_name" content="Mirage"/>
+    <meta property="og:url" content="{{ url()->current() }}"/>
+    <meta property="og:site_name" content="{{ \App\Models\CompanySetting::get('company_name', 'Tienda en Línea') }}"/>
     <meta property="og:description" content="Compre linea blanca, refacciones, herramientas y souvenirs.">
     <meta property="og:type" content="website">
 
@@ -348,32 +336,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </script>
   
-  <meta name="facebook-domain-verification" content="mv4vsw2zn9h4ptpxr8g2y6upq81xy8" />
-  	
-  
-    <script id="mcjs">
-        !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/a99d2d2a0e782d826cc71c67e/22d97dc91e38fc935a3507091.js");     </script>
-
-
-
-
-    
-        <script type="application/ld+json">
-        
-		{
-			"@@context": "https://schema.org",
-			"@@type": "WebSite",
-			"url": "/tienda/",
-			"potentialAction": {
-			    "@@type": "SearchAction",
-			    "target": "/tienda/busqueda?controller=search&s={s}",
-			    "query-input": "required name=s"
-			}
-		}
-		
-    </script>
-
-     <meta name="google-site-verification" content="-YFsqxBw4CqwayCJCX1hIYCun3Dt21W1Kha5Eew-p3U" /> 
+  @if($fbVerification = \App\Models\CompanySetting::get('facebook_domain_verification'))
+    <meta name="facebook-domain-verification" content="{{ $fbVerification }}" />
+  @endif
+  @if($googleVerification = \App\Models\CompanySetting::get('google_site_verification'))
+    <meta name="google-site-verification" content="{{ $googleVerification }}" />
+  @endif 
      <style>
      @media(max-width: 767px) {
          .mobile-buttons-bar { background-color: #fff !important; border-bottom: 1px solid #eee; }

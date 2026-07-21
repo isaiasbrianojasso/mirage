@@ -4,7 +4,7 @@
     @include('components.x-menu')
  <div  class="site-inner"><div  class="content-sidebar-wrap"><main class="content"><article class="post-23815 page type-page status-publish entry" aria-label="AVISO DE PRIVACIDAD INTEGRAL (CLIENTES FINALES)" itemscope itemtype="https://schema.org/CreativeWork"><header class="entry-header"><h1 class="entry-title" itemprop="headline">AVISO DE PRIVACIDAD INTEGRAL (CLIENTES FINALES)</h1>
 </header><div class="entry-content" itemprop="text">
-<p class="wp-block-paragraph"><strong>AIRPAC, S.A. DE C.V. </strong>en adelante Mirage® en carácter de Responsable del tratamiento de los datos personales de sus Clientes Finales, pone a su disposición el presente Aviso de Privacidad Integral, el cual ha sido elaborado en apego a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares y su regulación secundaria.</p>
+<p class="wp-block-paragraph"><strong>{{ \App\Models\CompanySetting::get('company_name', 'Nuestra Empresa') }}</strong> en carácter de Responsable del tratamiento de los datos personales de sus Clientes Finales, pone a su disposición el presente Aviso de Privacidad Integral, el cual ha sido elaborado en apego a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares y su regulación secundaria.</p>
 
 
 
@@ -12,7 +12,7 @@
 
 
 
-<figure class="wp-block-table"><table><tbody><tr><td>Razón social</td><td>AIRPAC, S.A. DE C.V.</td></tr><tr><td>Nombre Comercial</td><td>Mirage ®</td></tr><tr><td>Giro</td><td>Comercializador de aires acondicionados y línea blanca</td></tr><tr><td>Sitio web</td><td><a href="../..">https://mirage.mx/</a></td></tr><tr><td>Teléfono</td><td>(644) 410 9800</td></tr><tr><td>Domicilio</td><td>Calle Puebla, Número 270 Sur, Colonia Centro. Ciudad Obregón, Sonora, México, Código Postal 85000</td></tr><tr><td>Correo electrónico</td><td>privacidad@mirage.mx</td></tr><tr><td>Horario de atención</td><td>lunes a jueves de 10 a 14h</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><table><tbody><tr><td>Razón social</td><td>{{ \App\Models\CompanySetting::get('company_name', 'Nuestra Empresa') }}</td></tr><tr><td>Nombre Comercial</td><td>{{ \App\Models\CompanySetting::get('store_name', 'Tienda en Línea') }}</td></tr><tr><td>Giro</td><td>Comercializador de aires acondicionados y línea blanca</td></tr><tr><td>Sitio web</td><td><a href="{{ url('/') }}">{{ url('/') }}</a></td></tr><tr><td>Teléfono</td><td>{{ \App\Models\CompanySetting::get('contact_phone', '(644) 410 9800') }}</td></tr><tr><td>Domicilio</td><td>{{ \App\Models\CompanySetting::get('company_address', 'Domicilio Fiscal') }}</td></tr><tr><td>Correo electrónico</td><td>{{ \App\Models\CompanySetting::get('contact_email', 'contacto@tienda.com') }}</td></tr><tr><td>Horario de atención</td><td>lunes a viernes de 9 a 18h</td></tr></tbody></table></figure>
 
 
 
@@ -162,11 +162,7 @@
 
 
 
-<p class="wp-block-paragraph"><strong>PROCEDIMIENTO PARA EJERCER LOS DERECHOS ARCO</strong><br>Para que usted ejerza cualesquiera de sus derechos ARCO, deberá realizarlo en forma personal de acuerdo con el procedimiento que se detalla en esta sección.</p>
-
-
-
-<p class="wp-block-paragraph">El titular de los datos personales deberá presentar en Calle Puebla, Número 270 Sur, Colonia Centro. Ciudad Obregón, Sonora, México, Código Postal 85000, en un horario de atención de lunes a jueves de 10 a 14h, o bien enviarlo vía correo electrónico a la dirección <a href="mailto:privacidad@mirage.mx">privacidad@mirage.mx</a>, su escrito libre el cual deberá estar dirigido al Responsable de Protección de Datos Personales de Mirage® e incluir como mínimo los siguientes datos:</p>
+<p class="wp-block-paragraph"><strong>PROCEDIMIENTO PARA EJERCER LOS DERECHOS ARCO</strong><br>Para que usted ejerza cualesquiera de sus derechos ARCO, deberá rea<p class="wp-block-paragraph">El titular de los datos personales deberá presentar en {{ \App\Models\CompanySetting::get('company_address', 'Domicilio Fiscal') }}, en un horario de atención de lunes a viernes de 9 a 18h, o bien enviarlo vía correo electrónico a la dirección <a href="mailto:{{ \App\Models\CompanySetting::get('contact_email', 'contacto@tienda.com') }}">{{ \App\Models\CompanySetting::get('contact_email', 'contacto@tienda.com') }}</a>, su escrito libre el cual deberá estar dirigido al Responsable de Protección de Datos Personales de {{ \App\Models\CompanySetting::get('company_name', 'Nuestra Empresa') }} e incluir como mínimo los siguientes datos:</p>
 
 
 
@@ -224,7 +220,7 @@
 
 
 
-<p class="wp-block-paragraph">Para más información acerca de este Aviso de Privacidad o cualquier duda sobre como ejercer sus Derechos de Acceso, Rectificación, Cancelación y Oposición (ARCO), limitar el uso o Revocar su consentimiento, deberá enviar un correo electrónico a: privacidad@mirage.mx, con el asunto “Información de Derechos ARCO” o bien llamar al número telefónico: (644) 410 9800 en los días y horarios de atención previamente mencionados.</p>
+<p class="wp-block-paragraph">Para más información acerca de este Aviso de Privacidad o cualquier duda sobre como ejercer sus Derechos de Acceso, Rectificación, Cancelación y Oposición (ARCO), limitar el uso o Revocar su consentimiento, deberá enviar un correo electrónico a: {{ \App\Models\CompanySetting::get('contact_email', 'contacto@tienda.com') }}, con el asunto “Información de Derechos ARCO” o bien llamar al número telefónico: {{ \App\Models\CompanySetting::get('contact_phone', '(644) 410 9800') }} en los días y horarios de atención previamente mencionados.</p>mx, con el asunto “Información de Derechos ARCO” o bien llamar al número telefónico: (644) 410 9800 en los días y horarios de atención previamente mencionados.</p>
 
 
 

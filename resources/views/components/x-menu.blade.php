@@ -81,7 +81,7 @@
                     </li>
                     <li id="menu-item-3471"
                         class="btn-tienda menu-item menu-item-type-custom menu-item-object-custom menu-item-3471">
-                        <a target="_blank" href="/tienda" itemprop="url"><span
+                        <a href="{{ route('tienda.index') }}" itemprop="url"><span
                                 itemprop="name">{{\App\Models\CompanySetting::get('store_name', 'Tienda en Línea')}}</span></a>
                     </li>
                     <!--

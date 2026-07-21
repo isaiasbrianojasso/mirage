@@ -45,7 +45,7 @@
                     </div>
                 @endif
 
-                <form action="#" method="POST">
+                <form action="{{ route('tienda.contact.store') }}" method="POST">
                     @csrf
 
                     <div class="form-group row">

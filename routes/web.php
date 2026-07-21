@@ -127,6 +127,15 @@ Route::get('/tienda/contacto', function () {
     return view('tienda.contact');
 })->name('tienda.contact');
 
+Route::post('/tienda/contacto', function (\Illuminate\Http\Request $request) {
+    $request->validate([
+        'from' => 'required|email',
+        'message' => 'required|string|min:5',
+        'psgdpr_consent_checkbox' => 'required',
+    ]);
+    return redirect()->back()->with('success', 'Gracias por su mensaje. Nos pondremos en contacto con usted a la brevedad.');
+})->middleware('throttle:5,1')->name('tienda.contact.store');
+
 // Search Routes
 Route::get('/buscar/autocomplete', [\App\Http\Controllers\SearchController::class, 'autocomplete'])->name('search.autocomplete');
 Route::get('/buscar', [\App\Http\Controllers\SearchController::class, 'index'])->name('search.index');
