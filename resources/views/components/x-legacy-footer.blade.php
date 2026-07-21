@@ -23,7 +23,7 @@
                         <ul>
                             <li><a href="/apps/wifi-app/">App de Control WiFi</a></li>
                             <li><a href="/apps/mirage-home/">Mirage Home</a></li>
-                            <li><a href="http://www.mirage.mx/apps/codigos-de-diagnostico/">C&oacute;digos de Diagn&oacute;stico</a></li>
+                            <li><a href="/apps/codigos-de-diagnostico/">C&oacute;digos de Diagn&oacute;stico</a></li>
                         </ul>
 
                         <p>
@@ -34,11 +34,11 @@
                         <h4>Corporativo</h4>
 
                         <ul>
-                            <li><a href="http://www.mirage.mx/corporativo/semblanza-empresarial/">Semblanza Empresarial</a></li>
-                            <li><a href="http://www.mirage.mx/corporativo/certificaciones/">Certificaciones</a></li>
-                            <li><a href="http://www.mirage.mx/corporativo/infraestructura-operativa/">Infraestructura Operativa</a></li>
-                            <li><a href="http://www.mirage.mx/corporativo/infraestructura-tecnologica/">Infraestructura Tecnol&oacute;gica</a></li>
-                            <li><a href="{{ \App\Models\CompanySetting::get('online_store_url', url('/')) }}">Tienda en linea</a></li>
+                            <li><a href="/corporativo/semblanza-empresarial/">Semblanza Empresarial</a></li>
+                            <li><a href="/corporativo/certificaciones/">Certificaciones</a></li>
+                            <li><a href="/corporativo/infraestructura-operativa/">Infraestructura Operativa</a></li>
+                            <li><a href="/corporativo/infraestructura-tecnologica/">Infraestructura Tecnol&oacute;gica</a></li>
+                            <li><a href="{{ \App\Models\CompanySetting::get('online_store_url', url('/tienda')) }}">Tienda en linea</a></li>
                         </ul>
 
                         <p>
